@@ -7,6 +7,7 @@
 127.0.0.1 a.giraff.io
 127.0.0.1 a.sakh.com
 127.0.0.1 a.teads.tv
+127.0.0.1 a.utraff.com
 127.0.0.1 aa.agkn.com
 127.0.0.1 aax-eu.amazon-adsystem.com
 127.0.0.1 abp.smartadcheck.de
@@ -42,6 +43,7 @@
 127.0.0.1 ads.servebom.com
 127.0.0.1 ads.stickyadstv.com
 127.0.0.1 ads.undertone.com
+127.0.0.1 ads.vk.com
 127.0.0.1 ads.yieldmo.com
 127.0.0.1 adservice.google.ae
 127.0.0.1 adservice.google.com
@@ -154,7 +156,6 @@
 127.0.0.1 ghb.adtelligent.com
 127.0.0.1 ghb1.adtelligent.com
 127.0.0.1 ghb2.adtelligent.com
-127.0.0.0.1 go.stirista.com
 127.0.0.1 googleads.g.doubleclick.net
 127.0.0.1 gum.criteo.com
 127.0.0.1 hb-bidder.skcrtxr.com
@@ -384,6 +385,7 @@
 127.0.0.1 www.smartredirect.de
 127.0.0.1 www.tnative.ru
 127.0.0.1 x01.aidata.io
+127.0.0.1 yastatic.net
 127.0.0.1 z.moatads.com
 127.0.0.1 zn2.2xclick.ru
 127.0.0.1 zn2.gnezdo.ru
