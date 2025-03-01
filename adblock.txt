@@ -2,7 +2,6 @@
 127.0.0.1 1xbet.com
 127.0.0.1 1xbet.kz
 127.0.0.1 1xlite-06044.top
-127.0.0.1 289310.selcdn.ru
 127.0.0.1 a.ad.gt
 127.0.0.1 a.adiam.tech
 127.0.0.1 a.bobrilka.ru
@@ -60,7 +59,6 @@
 127.0.0.1 am-wf.taboola.com
 127.0.0.1 an.yandex.ru
 127.0.0.1 androidads4-6.adcolony.com
-127.0.0.1 androidauth.wpengine.com
 127.0.0.1 api.narrativ.com
 127.0.0.1 api.sail-personalize.com
 127.0.0.1 api.sail-track.com
@@ -88,8 +86,6 @@
 127.0.0.1 cdn.adsafeprotected.com
 127.0.0.1 cdn.advg.agency
 127.0.0.1 cdn.giraff.io
-127.0.0.1 cdn.jsdelivr.net
-127.0.0.1 cdn.onesignal.com
 127.0.0.1 cdn.otm-r.com
 127.0.0.1 cdn.parsely.com
 127.0.0.1 cdn.pushwoosh.com
@@ -110,14 +106,12 @@
 127.0.0.1 code.directadvert.ru
 127.0.0.1 code.giraff.io
 127.0.0.1 config.unityads.unity3d.com
-127.0.0.1 connect.ok.ru
 127.0.0.1 content.adriver.ru
 127.0.0.1 content.hybrid.ai
 127.0.0.1 content.saas-support.com
 127.0.0.1 contextual.media.net
 127.0.0.1 criteo.com
 127.0.0.1 criteo.net
-127.0.0.1 cstatic.weborama.com
 127.0.0.1 cstatic.weborama.fr
 127.0.0.1 d.adroll.com
 127.0.0.1 d.clarity.ms
@@ -153,14 +147,11 @@
 127.0.0.1 fcgi7.gnezdo.ru
 127.0.0.1 feed.adrelayer.com
 127.0.0.1 files.netall.ru
-127.0.0.1 firebaselogging.googleapis.com
 127.0.0.1 folknet.stirista.com
-127.0.0.1 forms.azgaz-dealer.ru
 127.0.0.1 fp.hybrid.ai
 127.0.0.1 fpf.hybrid.ai
 127.0.0.1 g3zfkxwi-rlp.ops.beeline.ru
 127.0.0.1 gallery.retailrocket.net
-127.0.0.1 gateway.travelata.ru
 127.0.0.1 ghb.adtelligent.com
 127.0.0.1 ghb1.adtelligent.com
 127.0.0.1 ghb2.adtelligent.com
@@ -171,7 +162,6 @@
 127.0.0.1 hb.adtelligent.com
 127.0.0.1 hbopenbid.pubmatic.com
 127.0.0.1 hdbcome.com
-127.0.0.1 hotline.travel
 127.0.0.1 hsgdyq.com
 127.0.0.1 htlb.casalemedia.com
 127.0.0.1 i.cdnkimg.com
@@ -218,7 +208,6 @@
 127.0.0.1 mcd-sdk.playbuzz.com
 127.0.0.1 media.adfinity.pro
 127.0.0.1 mediatoday.ru
-127.0.0.1 member.neteller.com
 127.0.0.1 mh6.adriver.ru
 127.0.0.1 moe.video
 127.0.0.1 moevideo-sync.rutarget.ru
@@ -231,7 +220,6 @@
 127.0.0.1 news.2xclick.ru
 127.0.0.1 news.gnezdo.ru
 127.0.0.1 novotelecom.pushwoosh.com
-127.0.0.1 onesignal.com
 127.0.0.1 otclick-adv.ru
 127.0.0.1 ouqyid.com
 127.0.0.1 outcome-ssp.supersonicads.com
@@ -242,7 +230,6 @@
 127.0.0.1 pb.adriver.ru
 127.0.0.1 pdayyocpnvh.ru
 127.0.0.1 pdn.applovin.com
-127.0.0.1 pi.pardot.com
 127.0.0.1 pips.taboola.com
 127.0.0.1 pixel-sync.sitescout.com
 127.0.0.1 pixel.adsafeprotected.com
@@ -351,7 +338,6 @@
 127.0.0.1 static8.smi2.net
 127.0.0.1 statmedia.ru
 127.0.0.1 stats2.videonow.ru
-127.0.0.1 storage.pardot.com
 127.0.0.1 su.addthis.com
 127.0.0.1 svk-native.ru
 127.0.0.1 sync.1dmp.io
@@ -376,10 +362,8 @@
 127.0.0.1 tlx.3lift.com
 127.0.0.1 tnative.ru
 127.0.0.1 track.onef.pro
-127.0.0.1 traff.travelata.ru
 127.0.0.1 trafffgen.rambler.ru
 127.0.0.1 trc.taboola.com
-127.0.0.1 trustarc.mgr.consensu.org
 127.0.0.1 tube.buzzoola.com
 127.0.0.1 uip.semasio.net
 127.0.0.1 uipglob.semasio.net
@@ -414,8 +398,6 @@
 127.0.0.1 www.smartredirect.de
 127.0.0.1 www.tnative.ru
 127.0.0.1 x01.aidata.io
-127.0.0.1 yastatic.net
-127.0.0.1 yhb.p.otm-r.com
 127.0.0.1 z.moatads.com
 127.0.0.1 zn2.2xclick.ru
 127.0.0.1 zn2.gnezdo.ru
