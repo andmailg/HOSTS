@@ -390,3 +390,5 @@
 127.0.0.1 zn2.2xclick.ru
 127.0.0.1 zn2.gnezdo.ru
 127.0.0.1 zn4.gnezdo.ru
+127.0.0.1 cm.adform.net
+127.0.0.1 collector.brandmetrics.com
