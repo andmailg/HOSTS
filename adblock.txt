@@ -394,3 +394,17 @@
 127.0.0.1 collector.brandmetrics.com
 127.0.0.1 mobile.yandexadexchange.net
 127.0.0.1 report.appmetrica.yandex.net
+127.0.0.1 api.mindbox.ru
+127.0.0.1 aprtx.com
+127.0.0.1 cdn.al-adtech.com
+127.0.0.1 exad.smi2.ru
+127.0.0.1 hb.bumlam.com
+127.0.0.1 hit.mb9pzp.ru
+127.0.0.1 hitcrypt.mb9pzp.ru
+127.0.0.1 i.v2.flomni.com
+127.0.0.1 link.v2.flomni.com
+127.0.0.1 mb9pzp.ru
+127.0.0.1 px.hsmedia.ru
+127.0.0.1 api.mindbox.ru
+127.0.0.1 sp.ohmy.bid
+127.0.0.1 yhb.p.otm-r.com
