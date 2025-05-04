@@ -1,0 +1,12 @@
+127.0.0.1 www.acint.net
+127.0.0.1 www.clarity.ms
+127.0.0.1 www.googleadservices.com
+127.0.0.1 www.smartredirect.de
+127.0.0.1 www.tnative.ru
+127.0.0.1 x01.aidata.io
+127.0.0.1 yastatic.net
+127.0.0.1 z.moatads.com
+127.0.0.1 zn2.2xclick.ru
+127.0.0.1 zn2.gnezdo.ru
+127.0.0.1 zn4.gnezdo.ru
+
