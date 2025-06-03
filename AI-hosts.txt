@@ -108,3 +108,7 @@
 89.108.98.20  claude.ai  
 89.108.98.20  www.notion.so
 89.108.98.20  ai-chat.bsg.brave.com
+
+#grok
+89.108.98.20  x.ai  
+89.108.98.20  grok.com
