@@ -407,3 +407,5 @@
 127.0.0.1 api.mindbox.ru
 127.0.0.1 sp.ohmy.bid
 127.0.0.1 yhb.p.otm-r.com
+127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 cm.g.doubleclick.net
