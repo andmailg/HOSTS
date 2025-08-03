@@ -50,6 +50,7 @@
 89.108.98.20 alkalicore-pa.clients6.google.com
 89.108.98.20 alkalimakersuite-pa.clients6.google.com
 127.0.0.1 an.yandex.ru
+127.0.0.1 analytics.query.yahoo.com
 89.108.98.20 android.chat.openai.com
 127.0.0.1 aorta.clickagy.com
 127.0.0.1 ap.lijit.com
@@ -65,8 +66,10 @@
 127.0.0.1 api.sail-personalize.com
 127.0.0.1 api.sail-track.com
 127.0.0.1 api.segment.io
+127.0.0.1 api.taboola.com
 127.0.0.1 app-measurement.com
 127.0.0.1 app.adjust.com
+127.0.0.1 app.adjust.io
 89.108.98.20 auth.openai.com
 89.108.98.20 auth0.openai.com
 89.108.98.20 azureedge.net
@@ -126,6 +129,7 @@
 127.0.0.1 cds.connatix.com
 127.0.0.1 cds.elements.video
 127.0.0.1 ced-ns.sascdn.com
+127.0.0.1 census-app.scorecardresearch.com
 89.108.98.20 chat.com
 89.108.98.20 chatgpt.com
 89.108.98.20 claude.ai
@@ -151,6 +155,11 @@
 89.108.98.20 copilot.microsoft.com
 127.0.0.1 core.iprom.net
 127.0.0.1 cp.pushwoosh.com
+127.0.0.1 cqohtp.cdn-settings.appsflyersdk.com
+127.0.0.1 cqohtp.conversions.appsflyersdk.com
+127.0.0.1 cqohtp.gcdsdk.appsflyersdk.com
+127.0.0.1 cqohtp.inapps.appsflyersdk.com
+127.0.0.1 cqohtp.launches.appsflyersdk.com
 127.0.0.1 cr-frontend.weborama-tech.ru
 127.0.0.1 cr-p10.ladsp.com
 127.0.0.1 cs-rtb.minutemedia-prebid.com
@@ -201,6 +210,7 @@
 127.0.0.1 fksnk.com
 127.0.0.1 fxtchw.com
 127.0.0.1 ga.finam.ru
+127.0.0.1 gam.mail.yahoosandbox.net
 89.108.98.20 geller-pa.googleapis.com
 89.108.98.20 gemini.google.com
 89.108.98.20 generativeai.google
@@ -263,6 +273,7 @@
 127.0.0.1 l.sharethis.com
 127.0.0.1 l.viadata.store
 127.0.0.1 launcher.spot.im
+127.0.0.1 launches.appsflyersdk.com
 127.0.0.1 lb.eu-1-id5-sync.com
 127.0.0.1 lbs.eu-1-id5-sync.com
 127.0.0.1 lexicon.33across.com
@@ -284,7 +295,9 @@
 127.0.0.1 mc.yandex.ru
 127.0.0.1 metrika-informer.com
 127.0.0.1 mobile.yandexadexchange.net
+127.0.0.1 ms-ads-image.t-static.ru
 127.0.0.1 ms-cookie-sync.presage.io
+127.0.0.1 ms-dsp.t-bank-app.ru
 127.0.0.1 ms.applovin.com
 127.0.0.1 ms.applvn.com
 127.0.0.1 ms4.applovin.com
@@ -337,6 +350,7 @@
 127.0.0.1 prg.smartadserver.com
 127.0.0.1 privacy-cs.mail.ru
 127.0.0.1 privacy-location-edge.ccgateway.net
+127.0.0.1 privacy-sandbox.appsflyersdk.com
 89.108.98.20 proactivebackend-pa.googleapis.com
 127.0.0.1 proc.ad.cpe.dotomi.com
 127.0.0.1 profile.ad-tech.ru
@@ -357,6 +371,7 @@
 127.0.0.1 rp.liadm.com
 127.0.0.1 rpc.skcrtxr.com
 127.0.0.1 rtb-csync.smartadserver.com
+127.0.0.1 rtb-optout.t-bank-app.ru
 127.0.0.1 rtb.mfadsrvr.com
 127.0.0.1 rtb.openx.net
 127.0.0.1 ru.mmstat.com
@@ -389,6 +404,7 @@
 127.0.0.1 site.yandex.net
 127.0.0.1 siteintercept.qualtrics.com
 127.0.0.1 smi2.ru
+127.0.0.1 social-api.t-bank-app.ru
 89.108.98.20 sora.com
 127.0.0.1 sp.ohmy.bid
 127.0.0.1 ssbsync-global.smartadserver.com
