@@ -1,4 +1,4 @@
-127.0.0.127.0.0.1 13a1f-e8bf2.api.pushwoosh.com
+127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
 127.0.0.1 2-6880de657011cb00010ec209.id.adx.com.ru
 127.0.0.1 33413.ms.vk.com
 127.0.0.1 35413.ms.vk.com
@@ -29,7 +29,6 @@
 127.0.0.1 aa.agkn.com
 127.0.0.1 aax-eu.amazon-adsystem.com
 127.0.0.1 aax.amazon-adsystem.com
-89.108.98.20 ab.chatgpt.com
 127.0.0.1 abt.s3.yandex.net
 127.0.0.1 abtest.cardsmobile.ru
 127.0.0.1 acdn.adnxs.com
@@ -57,19 +56,13 @@
 127.0.0.1 aer.acs.aliexpress.ru
 127.0.0.1 af.click.ru
 127.0.0.1 aflt.market.yandex.ru
-89.108.98.20 ai-chat.bsg.brave.com
-89.108.98.20 ai.google.dev
-89.108.98.20 aistudio.google.com
 127.0.0.1 ak.sail-horizon.com
-89.108.98.20 alkalicore-pa.clients6.google.com
-89.108.98.20 alkalimakersuite-pa.clients6.google.com
 127.0.0.1 alt-ad.mail.ru
 127.0.0.1 alt-aj-https.mail.ru
 127.0.0.1 alt-mpandroid-filin.mail.ru
 127.0.0.1 alt-push-me.mail.ru
 127.0.0.1 an.yandex.ru
 127.0.0.1 analytics.query.yahoo.com
-89.108.98.20 android.chat.openai.com
 127.0.0.1 anp.mxptint.net
 127.0.0.1 aorta.clickagy.com
 127.0.0.1 ap.lijit.com
@@ -92,16 +85,12 @@
 127.0.0.1 attr.appsflyersdk.com
 127.0.0.1 audex.userreport.com
 127.0.0.1 audienceexposure.com
-89.108.98.20 auth.openai.com
-89.108.98.20 auth0.openai.com
-89.108.98.20 azureedge.net
 127.0.0.1 b1.nel.goog
 127.0.0.1 b1sync.outbrain.com
 127.0.0.1 b1sync.zemanta.com
 127.0.0.1 b9ebcf37cc52ea3a4e4a794d6f377e44.safeframe.googlesyndication.com
 127.0.0.1 banner.kaktus.media
 127.0.0.1 banners.adfox.ru
-89.108.98.20 bard.google.com
 127.0.0.1 bcgims.com
 127.0.0.1 bcp.crwdcntrl.net
 127.0.0.1 beacon.krxd.net
@@ -141,7 +130,6 @@
 127.0.0.1 cdn.advg.agency
 127.0.0.1 cdn.al-adtech.com
 127.0.0.1 cdn.alfasense.net
-89.108.98.20 cdn.auth0.com
 127.0.0.1 cdn.betweendigital.com
 127.0.0.1 cdn.cxense.com
 127.0.0.1 cdn.dsp-rambler.ru
@@ -151,7 +139,6 @@
 127.0.0.1 cdn.intergi.com
 127.0.0.1 cdn.intergient.com
 127.0.0.1 cdn.jsdelivr.net
-89.108.98.20 cdn.oaistatic.com
 127.0.0.1 cdn.onesignal.com
 127.0.0.1 cdn.onthe.io
 127.0.0.1 cdn.permutive.com
@@ -166,10 +153,7 @@
 127.0.0.1 cds.elements.video
 127.0.0.1 ced-ns.sascdn.com
 127.0.0.1 census-app.scorecardresearch.com
-89.108.98.20 chat.com
-89.108.98.20 chatgpt.com
 127.0.0.1 check.analytics.rlcdn.com
-89.108.98.20 claude.ai
 127.0.0.1 client-ml.intergient.com
 127.0.0.1 cls.ad-tech.ru
 127.0.0.1 cm-supply-web.gammaplatform.com
@@ -192,7 +176,6 @@
 127.0.0.1 connect.facebook.net
 127.0.0.1 content.adriver.ru
 127.0.0.1 conversions.appsflyersdk.com
-89.108.98.20 copilot.microsoft.com
 127.0.0.1 core.iprom.net
 127.0.0.1 cp.pushwoosh.com
 127.0.0.1 cqohtp.cdn-settings.appsflyersdk.com
@@ -222,8 +205,6 @@
 127.0.0.1 dc.xoalt.com
 127.0.0.1 dc1.ksn.kaspersky-labs.com
 127.0.0.1 de.tynt.com
-89.108.98.20 deepmind.com
-89.108.98.20 deepmind.google
 127.0.0.1 dev.viadata.store
 127.0.0.1 devpl.viadata.store
 127.0.0.1 direct-events-collector.spot.im
@@ -266,16 +247,11 @@
 127.0.0.1 fastlane.rubiconproject.com
 127.0.0.1 fcgi4.gnezdo.ru
 127.0.0.1 fid.agkn.com
-89.108.98.20 files.oaiusercontent.com
 127.0.0.1 fksnk.com
 127.0.0.1 fxtchw.com
 127.0.0.1 ga.finam.ru
 127.0.0.1 gam.mail.yahoosandbox.net
 127.0.0.1 gcdsdk.appsflyersdk.com
-89.108.98.20 geller-pa.googleapis.com
-89.108.98.20 gemini.google.com
-89.108.98.20 generativeai.google
-89.108.98.20 generativelanguage.googleapis.com
 127.0.0.1 gnezdo.ru
 127.0.0.1 go.rcvlink.com
 127.0.0.1 go1.aniview.com
@@ -284,7 +260,6 @@
 127.0.0.1 googleads.g.doubleclick.net
 127.0.0.1 graph.facebook.com
 127.0.0.1 grid-bidder.criteo.com
-89.108.98.20 grok.com
 127.0.0.1 gum.aidemsrv.com
 127.0.0.1 gum.criteo.com
 127.0.0.1 gw-iad-bid.ymmobi.com
@@ -362,7 +337,6 @@
 127.0.0.1 logs.viadata.store
 127.0.0.1 luxcdn.com
 127.0.0.1 mab.chartbeat.com
-89.108.98.20 makersuite.google.com
 127.0.0.1 match.adsrvr.org
 127.0.0.1 match.deepintent.com
 127.0.0.1 match.new-programmatic.com
@@ -394,14 +368,11 @@
 127.0.0.1 nzkjjqrcte.com
 127.0.0.1 o2.mail.ru
 127.0.0.1 oa.openxcdn.net
-89.108.98.20 oaistatic.com
-89.108.98.20 oaiusercontent.com
 127.0.0.1 oajs.openx.net
 127.0.0.1 odb.outbrain.com
 127.0.0.1 offfy.com
 127.0.0.1 onelink.to
 127.0.0.1 onetag-sys.com
-89.108.98.20 openai.com
 127.0.0.1 openfpcdn.io
 127.0.0.1 openstat.net
 127.0.0.1 openx-ums.acuityplatform.com
@@ -438,7 +409,6 @@
 127.0.0.1 pl.elements.video
 127.0.0.1 pl.viadata.store
 127.0.0.1 platform-api.sharethis.com
-89.108.98.20 platform.openai.com
 127.0.0.1 player.adtelligent.com
 127.0.0.1 player.aniview.com
 127.0.0.1 player.spotim.market
@@ -453,7 +423,6 @@
 127.0.0.1 privacy-cs.mail.ru
 127.0.0.1 privacy-location-edge.ccgateway.net
 127.0.0.1 privacy-sandbox.appsflyersdk.com
-89.108.98.20 proactivebackend-pa.googleapis.com
 127.0.0.1 proc.ad.cpe.dotomi.com
 127.0.0.1 profile.ad-tech.ru
 127.0.0.1 pub.doubleverify.com
@@ -529,7 +498,6 @@
 127.0.0.1 siteintercept.qualtrics.com
 127.0.0.1 smi2.ru
 127.0.0.1 social-api.t-bank-app.ru
-89.108.98.20 sora.com
 127.0.0.1 sp.ohmy.bid
 127.0.0.1 srtb.msn.com
 127.0.0.1 ssbsync-global.smartadserver.com
@@ -605,7 +573,6 @@
 127.0.0.1 tags.crwdcntrl.net
 127.0.0.1 targeting.unrulymedia.com
 127.0.0.1 tcheck.outbrainimg.com
-89.108.98.20 tcr9i.chat.openai.com
 127.0.0.1 td.doubleclick.net
 127.0.0.1 th.bing.com
 127.0.0.1 tlx.3lift.com
@@ -643,14 +610,12 @@
 127.0.0.1 vkpns.rustore.ru
 127.0.0.1 vtrk.doubleverify.com
 127.0.0.1 w.uptolike.com
-89.108.98.20 waa-pa.clients6.google.com
 127.0.0.1 waterfall.forbes.ru
 127.0.0.1 waterfall.vedomosti.ru
 127.0.0.1 wcm.weborama-tech.ru
 127.0.0.1 web-static-no-content.mindbox.ru
 127.0.0.1 web-static.mindbox.ru
 127.0.0.1 web.webpushs.com
-89.108.98.20 webrtc.chatgpt.com
 127.0.0.1 wg4.price.ru
 127.0.0.1 widget.sparrow.ru
 127.0.0.1 widget.svk-native.ru
@@ -662,11 +627,7 @@
 127.0.0.1 www.google-analytics.com
 127.0.0.1 www.googleadservices.com
 127.0.0.1 www.googletagservices.com
-89.108.98.20 www.notion.so
 127.0.0.1 www.tns-counter.ru
-89.108.98.20 x.ai
 127.0.0.1 x.bidswitch.net
 127.0.0.1 x01.aidata.io
-127.0.0.1 region1.analytics.google.com
-127.0.0.1 mybbc-analytics.files.bbci.co.uk
-127.0.0.1 heartbeats.omtrdc.net
+1
