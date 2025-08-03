@@ -496,7 +496,6 @@
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
 127.0.0.1 www.google-analytics.com
-127.0.0.1 www.googletagmanager.com
 89.108.98.20 www.notion.so
 127.0.0.1 www.tns-counter.ru
 89.108.98.20 x.ai
