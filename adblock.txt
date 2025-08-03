@@ -96,7 +96,6 @@
 127.0.0.1 c1.adform.net
 127.0.0.1 c2-eu.piano.io
 127.0.0.1 cackle.me
-127.0.0.1 capi.connatix.com
 127.0.0.1 capi.elements.video
 127.0.0.1 carrick-ui.advoncommerce.com
 127.0.0.1 cd.elements.video
@@ -126,7 +125,6 @@
 127.0.0.1 cdn.tds.bid
 127.0.0.1 cdn.xn--90aivcdt6dxbc.xn--p1ai
 127.0.0.1 cdnjs.smi2.ru
-127.0.0.1 cds.connatix.com
 127.0.0.1 cds.elements.video
 127.0.0.1 ced-ns.sascdn.com
 127.0.0.1 census-app.scorecardresearch.com
@@ -333,7 +331,6 @@
 127.0.0.1 pixel.adsafeprotected.com
 127.0.0.1 pixel.rubiconproject.com
 127.0.0.1 pixel.tapad.com
-127.0.0.1 pl.connatix.com
 127.0.0.1 pl.elements.video
 127.0.0.1 pl.viadata.store
 127.0.0.1 platform-api.sharethis.com
