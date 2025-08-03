@@ -3,6 +3,9 @@
 127.0.0.1 35413.ms.vk.com
 127.0.0.1 5--2--6880de657011cb00010ec209.stbid.ru
 127.0.0.1 684d0d44.akstat.io
+127.0.0.1 751111.mediascope.mail.ru
+127.0.0.1 8mudbv-inapps.appsflyersdk.com
+127.0.0.1 8mudbv-launches.appsflyersdk.com
 127.0.0.1 a.amxrtb.com
 127.0.0.1 a.atraffic.ru
 127.0.0.1 a.pub.network
@@ -27,6 +30,7 @@
 127.0.0.1 ads.adfox.ru
 127.0.0.1 ads.betweendigital.com
 127.0.0.1 ads.pubmatic.com
+127.0.0.1 ads.rustore.ru
 127.0.0.1 ads.stickyadstv.com
 127.0.0.1 ads.vk.com
 127.0.0.1 ads.yieldmo.com
@@ -231,8 +235,11 @@
 127.0.0.1 image8.pubmatic.com
 127.0.0.1 img.elements.video
 127.0.0.1 img.en25.com
+127.0.0.1 img.imgsmail.ru
 127.0.0.1 img02.ad-tech.ru
+127.0.0.1 imgs2.imgsmail.ru
 127.0.0.1 impression-inferences-edge-prod.playwire.com
+127.0.0.1 impression.appmetrica.yandex.com
 127.0.0.1 inmobi-match.dotomi.com
 127.0.0.1 ins.elements.video
 127.0.0.1 instruments.tds.bid
@@ -251,6 +258,7 @@
 127.0.0.1 kimberlite.io
 127.0.0.1 kraken-mdt.rambler.ru
 127.0.0.1 ksn-ca-geo.kaspersky-labs.com
+127.0.0.1 ktlt.cdn-vk.ru
 127.0.0.1 l.clarity.ms
 127.0.0.1 l.sharethis.com
 127.0.0.1 l.viadata.store
@@ -258,6 +266,7 @@
 127.0.0.1 lb.eu-1-id5-sync.com
 127.0.0.1 lbs.eu-1-id5-sync.com
 127.0.0.1 lexicon.33across.com
+127.0.0.1 limg.imgsmail.ru
 127.0.0.1 live.primis.tech
 127.0.0.1 logger.moviead55.ru
 127.0.0.1 logs.viadata.store
@@ -338,6 +347,7 @@
 127.0.0.1 px.ads.linkedin.com
 127.0.0.1 px.hsmedia.ru
 127.0.0.1 quotiq.ru
+127.0.0.1 r.mradx.net
 127.0.0.1 rb.infox.sg
 127.0.0.1 rcm-tr.rambler.ru
 127.0.0.1 rcmjs.rambler.ru
@@ -396,6 +406,7 @@
 127.0.0.1 ssum-sec.casalemedia.com
 127.0.0.1 ssum.casalemedia.com
 127.0.0.1 st.hybrid.ai
+127.0.0.1 stat.radar.imgsmail.ru
 127.0.0.1 static-cdn.spot.im
 127.0.0.1 static.adsafeprotected.com
 127.0.0.1 static.aio.media
@@ -415,6 +426,7 @@
 127.0.0.1 static7.smi2.net
 127.0.0.1 static8.smi2.net
 127.0.0.1 stats.g.doubleclick.net
+127.0.0.1 stats.rustore.ru
 127.0.0.1 stpd.cloud
 127.0.0.1 swft.vedomosti.ru
 127.0.0.1 sync-dsp.ad-m.asia
@@ -457,6 +469,7 @@
 127.0.0.1 trafffgen.rambler.ru
 127.0.0.1 trk.mail.ru
 127.0.0.1 tru.am
+127.0.0.1 ts.tracker-api.vk-analytics.ru
 127.0.0.1 tt.onthe.io
 127.0.0.1 tube.buzzoola.com
 127.0.0.1 u.openx.net
@@ -489,5 +502,6 @@
 89.108.98.20 x.ai
 127.0.0.1 x.bidswitch.net
 127.0.0.1 x01.aidata.io
+127.0.0.1 xray.mail.ru
 127.0.0.1 yandex.ru
 127.0.0.1 zn8qfk42azo5fsr2r-trdigital.siteintercept.qualtrics.com
