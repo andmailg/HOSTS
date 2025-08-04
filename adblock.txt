@@ -4,7 +4,6 @@
 127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
 127.0.0.1 4975265721754241204824.cm.a.mts.ru
 127.0.0.1 5--2--6880de657011cb00010ec209.stbid.ru
-127.0.0.1 54xK7^@-dnsotls-ds.metric.gstatic.com
 127.0.0.1 684d0d44.akstat.io
 127.0.0.1 731111.mediascope.mail.ru
 127.0.0.1 733111.mediascope.mail.ru
@@ -62,6 +61,7 @@
 127.0.0.1 aer.acs.aliexpress.ru
 127.0.0.1 af.click.ru
 127.0.0.1 aflt.market.yandex.ru
+127.0.0.1 aflt.travel.yandex.ru
 127.0.0.1 ak.sail-horizon.com
 127.0.0.1 alt-ad.mail.ru
 127.0.0.1 alt-mpandroid-filin.mail.ru
@@ -159,6 +159,7 @@
 127.0.0.1 cdn.segment.com
 127.0.0.1 cdn.skcrtxr.com
 127.0.0.1 cdn.tds.bid
+127.0.0.1 cdn.uxfeedback.ru
 127.0.0.1 cdn.xn--90aivcdt6dxbc.xn--p1ai
 127.0.0.1 cdnjs.smi2.ru
 127.0.0.1 cdnretkamn5t7jmy24yc.svc.cdn.yandex.net
@@ -300,6 +301,7 @@
 127.0.0.1 ident.mygaru.com
 127.0.0.1 idsync.rlcdn.com
 127.0.0.1 idx.liadm.com
+127.0.0.1 image.sendsay.ru
 127.0.0.1 image2.pubmatic.com
 127.0.0.1 image4.pubmatic.com
 127.0.0.1 image6.pubmatic.com
@@ -421,6 +423,7 @@
 127.0.0.1 pgxdqxq.pa-cd.com
 127.0.0.1 phoenix-widget.com
 127.0.0.1 ping.chartbeat.net
+127.0.0.1 pipe-collect.ebu.io
 127.0.0.1 pix.spot.im
 127.0.0.1 pixel-sync.sitescout.com
 127.0.0.1 pixel-us-east.rubiconproject.com
@@ -518,6 +521,7 @@
 127.0.0.1 secure-assets.rubiconproject.com
 127.0.0.1 secure.adnxs.com
 127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 sendsay.ru
 127.0.0.1 sentry.avs.io
 127.0.0.1 server.prebid.dianomi.com
 127.0.0.1 service.onfeed.ru
@@ -655,6 +659,7 @@
 127.0.0.1 web-static.mindbox.ru
 127.0.0.1 web.webpushs.com
 127.0.0.1 wg4.price.ru
+127.0.0.1 widget-api.uxfeedback.ru
 127.0.0.1 widget.sparrow.ru
 127.0.0.1 widget.svk-native.ru
 127.0.0.1 widgets.outbrain.com
@@ -663,4 +668,4 @@
 127.0.0.1 www.adsensecustomsearchads.com
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
-127.0.0.1 
+127.0.0.1 www.googletagservices.com
