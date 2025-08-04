@@ -1,7 +1,7 @@
-127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
 127.0.0.1 2-6880de657011cb00010ec209.id.adx.com.ru
 127.0.0.1 33413.ms.vk.com
 127.0.0.1 35413.ms.vk.com
+127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
 127.0.0.1 4975265721754241204824.cm.a.mts.ru
 127.0.0.1 5--2--6880de657011cb00010ec209.stbid.ru
 127.0.0.1 684d0d44.akstat.io
@@ -268,6 +268,7 @@
 127.0.0.1 hb.bumlam.com
 127.0.0.1 hb.yellowblue.io
 127.0.0.1 hbopenbid.pubmatic.com
+127.0.0.1 heartbeats.omtrdc.net
 127.0.0.1 hint.offfy.com
 127.0.0.1 htlb.casalemedia.com
 127.0.0.1 i.liadm.com
@@ -362,6 +363,7 @@
 127.0.0.1 ms4.applvn.com
 127.0.0.1 mug.criteo.com
 127.0.0.1 mweb-hb.presage.io
+127.0.0.1 mybbc-analytics.files.bbci.co.uk
 127.0.0.1 news.2xclick.ru
 127.0.0.1 news.gnezdo.ru
 127.0.0.1 nsdk-s09.uss.2gis.com
@@ -442,6 +444,8 @@
 127.0.0.1 rcm-tr.rambler.ru
 127.0.0.1 rcmjs.rambler.ru
 127.0.0.1 rebus.rustore.ru
+127.0.0.1 region1.analytics.google.com
+127.0.0.1 region1.app-measurement.com
 127.0.0.1 register.appsflyersdk.com
 127.0.0.1 relap.io
 127.0.0.1 report.appmetrica.yandex.net
@@ -630,4 +634,3 @@
 127.0.0.1 www.tns-counter.ru
 127.0.0.1 x.bidswitch.net
 127.0.0.1 x01.aidata.io
-1
