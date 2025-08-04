@@ -108,6 +108,9 @@
 127.0.0.1 bid.adx.com.ru
 127.0.0.1 bidder.criteo.com
 127.0.0.1 bn.viadata.store
+127.0.0.1 bobid-ip.hybrid.ai
+127.0.0.1 bobid-tls.hybrid.ai
+127.0.0.1 bobid.hybrid.ai
 127.0.0.1 browser.events.data.msn.com
 127.0.0.1 bs.serving-sys.ru
 127.0.0.1 bttrack.com
@@ -248,6 +251,8 @@
 127.0.0.1 fcgi4.gnezdo.ru
 127.0.0.1 fid.agkn.com
 127.0.0.1 fksnk.com
+127.0.0.1 fp.hybrid.ai
+127.0.0.1 fpf.hybrid.ai
 127.0.0.1 fxtchw.com
 127.0.0.1 ga.finam.ru
 127.0.0.1 gam.mail.yahoosandbox.net
@@ -511,6 +516,7 @@
 127.0.0.1 ssp.24smi.net
 127.0.0.1 ssp.al-adtech.com
 127.0.0.1 ssp.bidvol.com
+127.0.0.1 ssp.hbrd.io
 127.0.0.1 ssp.hybrid.ai
 127.0.0.1 ssp.rambler.ru
 127.0.0.1 ssp.wp.pl
@@ -518,6 +524,7 @@
 127.0.0.1 ssp10.24smi.net
 127.0.0.1 ssum-sec.casalemedia.com
 127.0.0.1 ssum.casalemedia.com
+127.0.0.1 st.hbrd.io
 127.0.0.1 st.hybrid.ai
 127.0.0.1 startup.mobile.yandex.net
 127.0.0.1 stat.online.sberbank.ru
@@ -625,6 +632,7 @@
 127.0.0.1 widget.svk-native.ru
 127.0.0.1 widgets.outbrain.com
 127.0.0.1 wrappers.geoedge.be
+127.0.0.1 www.acint.net
 127.0.0.1 www.adsensecustomsearchads.com
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
@@ -634,3 +642,4 @@
 127.0.0.1 www.tns-counter.ru
 127.0.0.1 x.bidswitch.net
 127.0.0.1 x01.aidata.io
+127.0.0.1 yandex.ru
