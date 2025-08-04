@@ -4,6 +4,7 @@
 127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
 127.0.0.1 4975265721754241204824.cm.a.mts.ru
 127.0.0.1 5--2--6880de657011cb00010ec209.stbid.ru
+127.0.0.1 54xK7^@-dnsotls-ds.metric.gstatic.com
 127.0.0.1 684d0d44.akstat.io
 127.0.0.1 731111.mediascope.mail.ru
 127.0.0.1 733111.mediascope.mail.ru
@@ -17,6 +18,11 @@
 127.0.0.1 7579671071753099539839.cm.a.mts.ru
 127.0.0.1 8mudbv-inapps.appsflyersdk.com
 127.0.0.1 8mudbv-launches.appsflyersdk.com
+127.0.0.1 EOhtyx-dnsotls-ds.metric.gstatic.com
+127.0.0.1 KmJ4c2-dnsotls-ds.metric.gstatic.com
+127.0.0.1 LmP9e4-dnsotls-ds.metric.gstatic.com
+127.0.0.1 MhN7VM-dnsotls-ds.metric.gstatic.com
+127.0.0.1 YlQl6I-dnsotls-ds.metric.gstatic.com
 127.0.0.1 a.amxrtb.com
 127.0.0.1 a.atraffic.ru
 127.0.0.1 a.pub.network
@@ -89,6 +95,7 @@
 127.0.0.1 b1.nel.goog
 127.0.0.1 b1sync.outbrain.com
 127.0.0.1 b1sync.zemanta.com
+127.0.0.1 b8t9vb-dnsotls-ds.metric.gstatic.com
 127.0.0.1 b9ebcf37cc52ea3a4e4a794d6f377e44.safeframe.googlesyndication.com
 127.0.0.1 banner.kaktus.media
 127.0.0.1 banners.adfox.ru
@@ -209,6 +216,7 @@
 127.0.0.1 data.24smi.net
 127.0.0.1 data.dianomi.com
 127.0.0.1 dc.xoalt.com
+127.0.0.1 dc1-st.ksn.kaspersky-labs.com
 127.0.0.1 dc1.ksn.kaspersky-labs.com
 127.0.0.1 de.tynt.com
 127.0.0.1 dev.viadata.store
@@ -232,6 +240,7 @@
 127.0.0.1 e.mail.ru
 127.0.0.1 e2c49.gcp.gvt2.com
 127.0.0.1 e2c76.gcp.gvt2.com
+127.0.0.1 e82D3b-dnsotls-ds.metric.gstatic.com
 127.0.0.1 eb2.3lift.com
 127.0.0.1 egress.yandex.net
 127.0.0.1 embeds.rambler.ru
@@ -250,6 +259,7 @@
 127.0.0.1 external-api.mediabilling.yandex.ru
 127.0.0.1 eye.targetads.io
 127.0.0.1 ezfweb-launches.appsflyersdk.com
+127.0.0.1 fBRAvl-dnsotls-ds.metric.gstatic.com
 127.0.0.1 fastlane.rubiconproject.com
 127.0.0.1 fcgi4.gnezdo.ru
 127.0.0.1 fid.agkn.com
@@ -339,6 +349,7 @@
 127.0.0.1 launchpad-wrapper.privacymanager.io
 127.0.0.1 lb.eu-1-id5-sync.com
 127.0.0.1 lbs.eu-1-id5-sync.com
+127.0.0.1 lbvoOy-dnsotls-ds.metric.gstatic.com
 127.0.0.1 lexicon.33across.com
 127.0.0.1 libs.outbrain.com
 127.0.0.1 limg.imgsmail.ru
@@ -448,6 +459,7 @@
 127.0.0.1 px.adhigh.net
 127.0.0.1 px.ads.linkedin.com
 127.0.0.1 px.hsmedia.ru
+127.0.0.1 qZfhsC-dnsotls-ds.metric.gstatic.com
 127.0.0.1 quotiq.ru
 127.0.0.1 r.mradx.net
 127.0.0.1 rb.infox.sg
@@ -466,6 +478,7 @@
 127.0.0.1 rp.liadm.com
 127.0.0.1 rpc.skcrtxr.com
 127.0.0.1 rs.mail.ru
+127.0.0.1 rsm.zona.mediacampaigns
 127.0.0.1 rtb-csync.smartadserver.com
 127.0.0.1 rtb-optout.t-bank-app.ru
 127.0.0.1 rtb.bid.com
@@ -495,6 +508,7 @@
 127.0.0.1 s19.upd.kaspersky.com
 127.0.0.1 s2124157686.t.eloqua.com
 127.0.0.1 s2ssc.aniview.com
+127.0.0.1 s4WyPk-dnsotls-ds.metric.gstatic.com
 127.0.0.1 sb.scorecardresearch.com
 127.0.0.1 script-api.ccgateway.net
 127.0.0.1 scripts.opti-digital.com
@@ -551,6 +565,7 @@
 127.0.0.1 static.popmechanic.ru
 127.0.0.1 static.smi2.net
 127.0.0.1 static.terratraf.com
+127.0.0.1 static.xx.fbcdn.net
 127.0.0.1 static1.smi2.net
 127.0.0.1 static2.smi2.net
 127.0.0.1 static4.smi2.net
@@ -588,6 +603,7 @@
 127.0.0.1 syndicatedsearch.goog
 127.0.0.1 syndication.twitter.com
 127.0.0.1 t.adx.opera.com
+127.0.0.1 t84ZvO-dnsotls-ds.metric.gstatic.com
 127.0.0.1 tag.a.mts.ru
 127.0.0.1 tag.digitaltarget.ru
 127.0.0.1 tags.crwdcntrl.net
@@ -647,10 +663,4 @@
 127.0.0.1 www.adsensecustomsearchads.com
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
-127.0.0.1 www.google-analytics.com
-127.0.0.1 www.googleadservices.com
-127.0.0.1 www.googletagservices.com
-127.0.0.1 www.tns-counter.ru
-127.0.0.1 x.bidswitch.net
-127.0.0.1 x01.aidata.io
-127.0.0.1 yandex.ru
+127.0.0.1 
