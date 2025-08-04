@@ -61,6 +61,7 @@
 127.0.0.1 alt-aj-https.mail.ru
 127.0.0.1 alt-mpandroid-filin.mail.ru
 127.0.0.1 alt-push-me.mail.ru
+127.0.0.1 amc.yandex.ru
 127.0.0.1 an.yandex.ru
 127.0.0.1 analytics.query.yahoo.com
 127.0.0.1 anp.mxptint.net
@@ -71,6 +72,7 @@
 127.0.0.1 api.cxense.com
 127.0.0.1 api.floors.dev
 127.0.0.1 api.mindbox.ru
+127.0.0.1 api.okcdn.ru
 127.0.0.1 api.omskinform.ru
 127.0.0.1 api.permutive.com
 127.0.0.1 api.rlcdn.com
@@ -137,6 +139,7 @@
 127.0.0.1 cdn.cxense.com
 127.0.0.1 cdn.dsp-rambler.ru
 127.0.0.1 cdn.enkod.ru
+127.0.0.1 cdn.getandgo.ru
 127.0.0.1 cdn.id5-sync.com
 127.0.0.1 cdn.indexww.com
 127.0.0.1 cdn.intergi.com
@@ -202,6 +205,7 @@
 127.0.0.1 csync.loopme.me
 127.0.0.1 csync.smartadserver.com
 127.0.0.1 cvmapi.mts.ru
+127.0.0.1 d.advscdn.com
 127.0.0.1 d.pub.network
 127.0.0.1 data.24smi.net
 127.0.0.1 data.dianomi.com
@@ -277,6 +281,7 @@
 127.0.0.1 hint.offfy.com
 127.0.0.1 htlb.casalemedia.com
 127.0.0.1 i.liadm.com
+127.0.0.1 i.mycdn.me
 127.0.0.1 ib.adnxs.com
 127.0.0.1 id.a-mx.com
 127.0.0.1 id.hadron.ad.gt
@@ -332,6 +337,7 @@
 127.0.0.1 l.viadata.store
 127.0.0.1 launcher.spot.im
 127.0.0.1 launches.appsflyersdk.com
+127.0.0.1 launchpad-wrapper.privacymanager.io
 127.0.0.1 lb.eu-1-id5-sync.com
 127.0.0.1 lbs.eu-1-id5-sync.com
 127.0.0.1 lexicon.33across.com
@@ -451,6 +457,7 @@
 127.0.0.1 rebus.rustore.ru
 127.0.0.1 region1.analytics.google.com
 127.0.0.1 region1.app-measurement.com
+127.0.0.1 region1.google-analytics.com
 127.0.0.1 register.appsflyersdk.com
 127.0.0.1 relap.io
 127.0.0.1 report.appmetrica.yandex.net
@@ -474,6 +481,7 @@
 127.0.0.1 rutrk.org
 127.0.0.1 s-v6exp1-ds.metric.gstatic.com
 127.0.0.1 s.ad.smaato.net
+127.0.0.1 s.advscdn.com
 127.0.0.1 s.amazon-adsystem.com
 127.0.0.1 s.c.appier.net
 127.0.0.1 s.company-target.com
@@ -499,6 +507,7 @@
 127.0.0.1 securepubads.g.doubleclick.net
 127.0.0.1 sentry.avs.io
 127.0.0.1 server.prebid.dianomi.com
+127.0.0.1 service.onfeed.ru
 127.0.0.1 sg.semasio.net
 127.0.0.1 sghb.spotim.market
 127.0.0.1 simage2.pubmatic.com
@@ -526,6 +535,7 @@
 127.0.0.1 ssum.casalemedia.com
 127.0.0.1 st.hbrd.io
 127.0.0.1 st.hybrid.ai
+127.0.0.1 st.vk.com
 127.0.0.1 startup.mobile.yandex.net
 127.0.0.1 stat.online.sberbank.ru
 127.0.0.1 stat.radar.imgsmail.ru
@@ -619,7 +629,9 @@
 127.0.0.1 visitor.fiftyt.com
 127.0.0.1 visitor.omnitagjs.com
 127.0.0.1 vkpns.rustore.ru
+127.0.0.1 vkvd369.okcdn.ru
 127.0.0.1 vtrk.doubleverify.com
+127.0.0.1 vu.okcdn.ru
 127.0.0.1 w.uptolike.com
 127.0.0.1 waterfall.forbes.ru
 127.0.0.1 waterfall.vedomosti.ru
