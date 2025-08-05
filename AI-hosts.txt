@@ -6,7 +6,6 @@
 89.108.98.20 openai.com
 89.108.98.20 sora.com
 
-
 # OpenAI  
 89.108.98.20  ab.chatgpt.com  
 89.108.98.20  android.chat.openai.com  
