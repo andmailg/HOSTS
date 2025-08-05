@@ -253,9 +253,12 @@
 127.0.0.1 cs.playdigo.com
 127.0.0.1 cs.yellowblue.io
 127.0.0.1 cs5ar.tdum.alibaba.com
+127.0.0.1 cstatic-ru-cv.weborama-tech.ru
+127.0.0.1 cstatic.weborama-tech.ru
 127.0.0.1 csync.copper6.com
 127.0.0.1 csync.loopme.me
 127.0.0.1 csync.smartadserver.com
+127.0.0.1 ctx.weborama.com
 127.0.0.1 cv7rn7.tdum.alibaba.com
 127.0.0.1 cvmapi.mts.ru
 127.0.0.1 d.advscdn.com
@@ -332,6 +335,7 @@
 127.0.0.1 googleads.g.doubleclick.net
 127.0.0.1 graph.facebook.com
 127.0.0.1 grid-bidder.criteo.com
+127.0.0.1 gt-frontend.weborama-tech.ru
 127.0.0.1 gum.aidemsrv.com
 127.0.0.1 gum.criteo.com
 127.0.0.1 gw-iad-bid.ymmobi.com
@@ -473,11 +477,13 @@
 127.0.0.1 p1lts2-launches.appsflyersdk.com
 127.0.0.1 pagead2.googlesyndication.com
 127.0.0.1 pb.adriver.ru
+127.0.0.1 pb.ph-bt.com
 127.0.0.1 pbs-cs.yellowblue.io
 127.0.0.1 pbs.alfasense.com
 127.0.0.1 pbs.aniview.com
 127.0.0.1 pbs.optidigital.com
 127.0.0.1 pbs.yahoo.com
+127.0.0.1 peroxide.rambler.ru
 127.0.0.1 personalization-web-stable.mindbox.ru
 127.0.0.1 pgxdqxq.pa-cd.com
 127.0.0.1 phoenix-widget.com
@@ -530,6 +536,7 @@
 127.0.0.1 rap.skcrtxr.com
 127.0.0.1 rb.infox.sg
 127.0.0.1 rcm-tr.rambler.ru
+127.0.0.1 rcm.rambler.ru
 127.0.0.1 rcmjs.rambler.ru
 127.0.0.1 rebus.rustore.ru
 127.0.0.1 redirect.appmetrica.yandex.com
@@ -732,6 +739,7 @@
 127.0.0.1 web-static-no-content.mindbox.ru
 127.0.0.1 web-static.mindbox.ru
 127.0.0.1 web.webpushs.com
+127.0.0.1 wf-ru-frontend.weborama-tech.ru
 127.0.0.1 wg4.price.ru
 127.0.0.1 widget-api.uxfeedback.ru
 127.0.0.1 widget.sparrow.ru
@@ -742,6 +750,7 @@
 127.0.0.1 www.adsensecustomsearchads.com
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
+127.0.0.1 www.google-analytics.com
 127.0.0.1 www.googletagservices.com
 127.0.0.1 x01.aidata.io
 127.0.0.1 yandex.ru
