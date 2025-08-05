@@ -65,7 +65,6 @@
 127.0.0.1 ak.sail-horizon.com
 127.0.0.1 alt-ad.mail.ru
 127.0.0.1 alt-mpandroid-filin.mail.ru
-127.0.0.1 alt-push-me.mail.ru
 127.0.0.1 amc.yandex.ru
 127.0.0.1 an.yandex.ru
 127.0.0.1 analytics.query.yahoo.com
