@@ -1,10 +1,23 @@
+127.0.0.1 10gxmy.tdum.alibaba.com
+127.0.0.1 1p0xox.tdum.alibaba.com
+127.0.0.1 1r1d25.tdum.alibaba.com
 127.0.0.1 2-6880de657011cb00010ec209.id.adx.com.ru
+127.0.0.1 2mzs9i.tdum.alibaba.com
+127.0.0.1 2yhr4o.tdum.alibaba.com
 127.0.0.1 33413.ms.vk.com
 127.0.0.1 35413.ms.vk.com
 127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
+127.0.0.1 3psi2r.tdum.alibaba.com
+127.0.0.1 3rnpbh.tdum.alibaba.com
 127.0.0.1 4975265721754241204824.cm.a.mts.ru
 127.0.0.1 5--2--6880de657011cb00010ec209.stbid.ru
+127.0.0.1 51z2x2.tdum.alibaba.com
+127.0.0.1 52wz8f.tdum.alibaba.com
+127.0.0.1 5d2ils.tdum.alibaba.com
+127.0.0.1 5irpki.tdum.alibaba.com
 127.0.0.1 684d0d44.akstat.io
+127.0.0.1 6p9nnl.tdum.alibaba.com
+127.0.0.1 6z0u8b.tdum.alibaba.com
 127.0.0.1 731111.mediascope.mail.ru
 127.0.0.1 733111.mediascope.mail.ru
 127.0.0.1 734111.mediascope.mail.ru
@@ -15,8 +28,16 @@
 127.0.0.1 753111.mediascope.mail.ru
 127.0.0.1 754111.mediascope.mail.ru
 127.0.0.1 7579671071753099539839.cm.a.mts.ru
+127.0.0.1 7ggngg.tdum.alibaba.com
+127.0.0.1 7jh7e0.tdum.alibaba.com
+127.0.0.1 870043.tdum.alibaba.com
+127.0.0.1 8ewkwf.tdum.alibaba.com
+127.0.0.1 8gc5m5.tdum.alibaba.com
 127.0.0.1 8mudbv-inapps.appsflyersdk.com
 127.0.0.1 8mudbv-launches.appsflyersdk.com
+127.0.0.1 8pvyal.tdum.alibaba.com
+127.0.0.1 9iq30.tdum.alibaba.com
+127.0.0.1 9yniaz.tdum.alibaba.com
 127.0.0.1 EOhtyx-dnsotls-ds.metric.gstatic.com
 127.0.0.1 KmJ4c2-dnsotls-ds.metric.gstatic.com
 127.0.0.1 LmP9e4-dnsotls-ds.metric.gstatic.com
@@ -30,6 +51,7 @@
 127.0.0.1 a.tribalfusion.com
 127.0.0.1 a.udsp.io
 127.0.0.1 a.utraff.com
+127.0.0.1 a3tw09.tdum.alibaba.com
 127.0.0.1 a55a84b3-9632-4869-b625-3d8ef43ed18d.prmutv.co
 127.0.0.1 aa.agkn.com
 127.0.0.1 aax-eu.amazon-adsystem.com
@@ -64,6 +86,7 @@
 127.0.0.1 aflt.market.yandex.ru
 127.0.0.1 aflt.travel.yandex.ru
 127.0.0.1 ak.sail-horizon.com
+127.0.0.1 akeq3y.tdum.alibaba.com
 127.0.0.1 alt-ad.mail.ru
 127.0.0.1 alt-mpandroid-filin.mail.ru
 127.0.0.1 alt-xray.imgsmail.ru
@@ -89,8 +112,10 @@
 127.0.0.1 api.segment.io
 127.0.0.1 api.taboola.com
 127.0.0.1 api.viglink.com
+127.0.0.1 app-measurement.com
 127.0.0.1 app.adjust.com
 127.0.0.1 app.adjust.io
+127.0.0.1 as0qr4.tdum.alibaba.com
 127.0.0.1 at.teads.tv
 127.0.0.1 attr.appsflyersdk.com
 127.0.0.1 audex.userreport.com
@@ -98,6 +123,7 @@
 127.0.0.1 b1.nel.goog
 127.0.0.1 b1sync.outbrain.com
 127.0.0.1 b1sync.zemanta.com
+127.0.0.1 b6eqcq.tdum.alibaba.com
 127.0.0.1 b8t9vb-dnsotls-ds.metric.gstatic.com
 127.0.0.1 b9ebcf37cc52ea3a4e4a794d6f377e44.safeframe.googlesyndication.com
 127.0.0.1 banner.kaktus.media
@@ -114,6 +140,7 @@
 127.0.0.1 beacons5.gvt2.com
 127.0.0.1 beacons5.gvt3.com
 127.0.0.1 betsonsport.ru
+127.0.0.1 bgo2b3.tdum.alibaba.com
 127.0.0.1 bh-xandr.contextweb.com
 127.0.0.1 bh.contextweb.com
 127.0.0.1 bid.adx.com.ru
@@ -127,11 +154,13 @@
 127.0.0.1 btloader.com
 127.0.0.1 bttrack.com
 127.0.0.1 buttons-config.sharethis.com
+127.0.0.1 bwg4q8.tdum.alibaba.com
 127.0.0.1 c.amazon-adsystem.com
 127.0.0.1 c.bing.com
 127.0.0.1 c.go-mpulse.net
 127.0.0.1 c1.adform.net
 127.0.0.1 c2-eu.piano.io
+127.0.0.1 c6n5b8.tdum.alibaba.com
 127.0.0.1 cackle.me
 127.0.0.1 cadmus2.script.ac
 127.0.0.1 capi.elements.video
@@ -186,6 +215,7 @@
 127.0.0.1 cmr.bidderstack.com
 127.0.0.1 cms.analytics.yahoo.com
 127.0.0.1 cms.quantserve.com
+127.0.0.1 cn8268.tdum.alibaba.com
 127.0.0.1 cnb.cnews.ru
 127.0.0.1 code.moviead55.ru
 127.0.0.1 collector-prod.perek.epoch8.ru
@@ -219,9 +249,11 @@
 127.0.0.1 cs.openwebmp.com
 127.0.0.1 cs.playdigo.com
 127.0.0.1 cs.yellowblue.io
+127.0.0.1 cs5ar.tdum.alibaba.com
 127.0.0.1 csync.copper6.com
 127.0.0.1 csync.loopme.me
 127.0.0.1 csync.smartadserver.com
+127.0.0.1 cv7rn7.tdum.alibaba.com
 127.0.0.1 cvmapi.mts.ru
 127.0.0.1 d.advscdn.com
 127.0.0.1 d.pub.network
@@ -272,11 +304,15 @@
 127.0.0.1 external-api.mediabilling.yandex.ru
 127.0.0.1 eye.targetads.io
 127.0.0.1 ezfweb-launches.appsflyersdk.com
+127.0.0.1 f5orzc.tdum.alibaba.com
 127.0.0.1 fBRAvl-dnsotls-ds.metric.gstatic.com
 127.0.0.1 fastlane.rubiconproject.com
 127.0.0.1 fcgi4.gnezdo.ru
 127.0.0.1 fid.agkn.com
 127.0.0.1 fksnk.com
+127.0.0.1 fourier.alibaba.com
+127.0.0.1 fourier.aliexpress.com
+127.0.0.1 fourier.taobao.com
 127.0.0.1 fp.hybrid.ai
 127.0.0.1 fpf.hybrid.ai
 127.0.0.1 fxtchw.com
@@ -284,6 +320,7 @@
 127.0.0.1 gam.mail.yahoosandbox.net
 127.0.0.1 gcdsdk.appsflyersdk.com
 127.0.0.1 get.s-onetag.com
+127.0.0.1 gm.mmstat.com
 127.0.0.1 gnezdo.ru
 127.0.0.1 go.rcvlink.com
 127.0.0.1 go1.aniview.com
@@ -295,6 +332,7 @@
 127.0.0.1 gum.aidemsrv.com
 127.0.0.1 gum.criteo.com
 127.0.0.1 gw-iad-bid.ymmobi.com
+127.0.0.1 h-adashx4ae.ut.taobao.com
 127.0.0.1 hb-api.omnitagjs.com
 127.0.0.1 hb-bidder.skcrtxr.com
 127.0.0.1 hb.bumlam.com
@@ -333,6 +371,7 @@
 127.0.0.1 invstatic101.creativecdn.com
 127.0.0.1 io.ozone.ru
 127.0.0.1 ip4.ru.tracker-api.my.com
+127.0.0.1 ip4.tracker-api.my.com
 127.0.0.1 ip4.tracker-api.vk-analytics.ru
 127.0.0.1 ip6-localhost
 127.0.0.1 itruxv.com
@@ -484,10 +523,12 @@
 127.0.0.1 qZfhsC-dnsotls-ds.metric.gstatic.com
 127.0.0.1 quotiq.ru
 127.0.0.1 r.mradx.net
+127.0.0.1 rap.skcrtxr.com
 127.0.0.1 rb.infox.sg
 127.0.0.1 rcm-tr.rambler.ru
 127.0.0.1 rcmjs.rambler.ru
 127.0.0.1 rebus.rustore.ru
+127.0.0.1 redirect.appmetrica.yandex.com
 127.0.0.1 region1.analytics.google.com
 127.0.0.1 region1.app-measurement.com
 127.0.0.1 region1.google-analytics.com
@@ -629,10 +670,12 @@
 127.0.0.1 syndicatedsearch.goog
 127.0.0.1 syndication.twitter.com
 127.0.0.1 t.adx.opera.com
+127.0.0.1 t6eub.tdum.alibaba.com
 127.0.0.1 t84ZvO-dnsotls-ds.metric.gstatic.com
 127.0.0.1 tag.a.mts.ru
 127.0.0.1 tag.digitaltarget.ru
 127.0.0.1 tags.crwdcntrl.net
+127.0.0.1 tags.soloway.ru
 127.0.0.1 targeting.unrulymedia.com
 127.0.0.1 tcheck.outbrainimg.com
 127.0.0.1 td.doubleclick.net
@@ -647,6 +690,7 @@
 127.0.0.1 tracing.obs.mts.ru
 127.0.0.1 track.onef.pro
 127.0.0.1 track1.aniview.com
+127.0.0.1 tracker-api.my.com
 127.0.0.1 tracker-api.vk-analytics.ru
 127.0.0.1 tracker-shr.ortb.net
 127.0.0.1 tracking.mygaru.com
@@ -693,4 +737,3 @@
 127.0.0.1 www.googletagservices.com
 127.0.0.1 yandex.ru
 127.0.0.1 yhb.p.otm-r.com
-
