@@ -1,6 +1,3 @@
-127.0.0.1       localhost
-::1             ip6-localhost
-
 # OpenAI  
 89.108.98.20 chatgpt.com
 89.108.98.20 chat.com
