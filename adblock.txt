@@ -45,6 +45,7 @@
 127.0.0.1 YlQl6I-dnsotls-ds.metric.gstatic.com
 127.0.0.1 a.amxrtb.com
 127.0.0.1 a.atraffic.ru
+127.0.0.1 a.lifehacker.ru
 127.0.0.1 a.pub.network
 127.0.0.1 a.sportradarserving.com
 127.0.0.1 a.teads.tv
@@ -128,6 +129,7 @@
 127.0.0.1 b9ebcf37cc52ea3a4e4a794d6f377e44.safeframe.googlesyndication.com
 127.0.0.1 banner.kaktus.media
 127.0.0.1 banners.adfox.ru
+127.0.0.1 bbg.sc.omtrdc.net
 127.0.0.1 bcgims.com
 127.0.0.1 bcp.crwdcntrl.net
 127.0.0.1 beacon.krxd.net
@@ -186,6 +188,7 @@
 127.0.0.1 cdn.jsdelivr.net
 127.0.0.1 cdn.onesignal.com
 127.0.0.1 cdn.onthe.io
+127.0.0.1 cdn.optimizely.com
 127.0.0.1 cdn.parsely.com
 127.0.0.1 cdn.permutive.com
 127.0.0.1 cdn.prod.uidapi.com
@@ -380,6 +383,7 @@
 127.0.0.1 j.cackle.me.lan
 127.0.0.1 jadserve.postrelease.com
 127.0.0.1 jay.vedomosti.ru
+127.0.0.1 jitsu.ixbt.com
 127.0.0.1 js-sec.indexww.com
 127.0.0.1 jsn.24smi.net
 127.0.0.1 k.cackle.me
@@ -560,6 +564,7 @@
 127.0.0.1 s.ad.smaato.net
 127.0.0.1 s.advscdn.com
 127.0.0.1 s.amazon-adsystem.com
+127.0.0.1 s.bfm.ru
 127.0.0.1 s.c.appier.net
 127.0.0.1 s.company-target.com
 127.0.0.1 s.go-mpulse.net
@@ -576,6 +581,7 @@
 127.0.0.1 s4WyPk-dnsotls-ds.metric.gstatic.com
 127.0.0.1 sb.scorecardresearch.com
 127.0.0.1 script-api.ccgateway.net
+127.0.0.1 script.crazyegg.com
 127.0.0.1 scripts.opti-digital.com
 127.0.0.1 sdk-api.apptracer.ru
 127.0.0.1 sdk.streamrail.com
@@ -590,11 +596,13 @@
 127.0.0.1 service.onfeed.ru
 127.0.0.1 sg.semasio.net
 127.0.0.1 sghb.spotim.market
+127.0.0.1 sgtm.ixbt.com
 127.0.0.1 simage2.pubmatic.com
 127.0.0.1 simage4.pubmatic.com
 127.0.0.1 site.yandex.net
 127.0.0.1 siteintercept.qualtrics.com
 127.0.0.1 smi2.ru
+127.0.0.1 sntr.lifehacker.ru
 127.0.0.1 social-api.t-bank-app.ru
 127.0.0.1 sp.ohmy.bid
 127.0.0.1 srtb.msn.com
@@ -735,5 +743,6 @@
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
 127.0.0.1 www.googletagservices.com
+127.0.0.1 x01.aidata.io
 127.0.0.1 yandex.ru
 127.0.0.1 yhb.p.otm-r.com
