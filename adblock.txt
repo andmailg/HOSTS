@@ -65,6 +65,7 @@
 127.0.0.1 ak.sail-horizon.com
 127.0.0.1 alt-ad.mail.ru
 127.0.0.1 alt-mpandroid-filin.mail.ru
+127.0.0.1 alt-xray.imgsmail.ru
 127.0.0.1 amc.yandex.ru
 127.0.0.1 an.yandex.ru
 127.0.0.1 analytics.query.yahoo.com
@@ -189,6 +190,7 @@
 127.0.0.1 content.adriver.ru
 127.0.0.1 conversions.appsflyersdk.com
 127.0.0.1 core.iprom.net
+127.0.0.1 corsapi.imgsmail.ru
 127.0.0.1 cp.pushwoosh.com
 127.0.0.1 cqohtp.cdn-settings.appsflyersdk.com
 127.0.0.1 cqohtp.conversions.appsflyersdk.com
