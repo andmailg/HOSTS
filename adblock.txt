@@ -38,6 +38,7 @@
 127.0.0.1 abtest.cardsmobile.ru
 127.0.0.1 acdn.adnxs.com
 127.0.0.1 acint.net
+127.0.0.1 ad-delivery.net
 127.0.0.1 ad.adriver.ru
 127.0.0.1 ad.doubleclick.net
 127.0.0.1 ad.mail.ru
@@ -74,17 +75,20 @@
 127.0.0.1 ap.lijit.com
 127.0.0.1 api-2-0.spot.im
 127.0.0.1 api.aio.media
+127.0.0.1 api.btloader.com
 127.0.0.1 api.cxense.com
 127.0.0.1 api.floors.dev
 127.0.0.1 api.mindbox.ru
 127.0.0.1 api.okcdn.ru
 127.0.0.1 api.omskinform.ru
+127.0.0.1 api.parsely.com
 127.0.0.1 api.permutive.com
 127.0.0.1 api.rlcdn.com
 127.0.0.1 api.sail-personalize.com
 127.0.0.1 api.sail-track.com
 127.0.0.1 api.segment.io
 127.0.0.1 api.taboola.com
+127.0.0.1 api.viglink.com
 127.0.0.1 app-measurement.com
 127.0.0.1 app.adjust.com
 127.0.0.1 app.adjust.io
@@ -121,6 +125,7 @@
 127.0.0.1 bobid.hybrid.ai
 127.0.0.1 browser.events.data.msn.com
 127.0.0.1 bs.serving-sys.ru
+127.0.0.1 btloader.com
 127.0.0.1 bttrack.com
 127.0.0.1 buttons-config.sharethis.com
 127.0.0.1 c.amazon-adsystem.com
@@ -153,6 +158,7 @@
 127.0.0.1 cdn.jsdelivr.net
 127.0.0.1 cdn.onesignal.com
 127.0.0.1 cdn.onthe.io
+127.0.0.1 cdn.parsely.com
 127.0.0.1 cdn.permutive.com
 127.0.0.1 cdn.prod.uidapi.com
 127.0.0.1 cdn.pushwoosh.com
@@ -160,16 +166,19 @@
 127.0.0.1 cdn.skcrtxr.com
 127.0.0.1 cdn.tds.bid
 127.0.0.1 cdn.uxfeedback.ru
+127.0.0.1 cdn.viglink.com
 127.0.0.1 cdn.xn--90aivcdt6dxbc.xn--p1ai
 127.0.0.1 cdnjs.smi2.ru
 127.0.0.1 cdnretkamn5t7jmy24yc.svc.cdn.yandex.net
 127.0.0.1 cds.elements.video
+127.0.0.1 ce.lijit.com
 127.0.0.1 ced-ns.sascdn.com
 127.0.0.1 census-app.scorecardresearch.com
 127.0.0.1 check.analytics.rlcdn.com
 127.0.0.1 client-ml.intergient.com
 127.0.0.1 cls.ad-tech.ru
 127.0.0.1 cm-supply-web.gammaplatform.com
+127.0.0.1 cm.a.mts.ru
 127.0.0.1 cm.adform.net
 127.0.0.1 cm.adgrx.com
 127.0.0.1 cm.ambientdsp.com
@@ -182,10 +191,12 @@
 127.0.0.1 code.moviead55.ru
 127.0.0.1 collector-prod.perek.epoch8.ru
 127.0.0.1 comcluster.cxense.com
+127.0.0.1 comparisons.sovrn.com
 127.0.0.1 config.aps.amazon-adsystem.com
 127.0.0.1 config.playwire.com
 127.0.0.1 config.unityads.unity3d.com
 127.0.0.1 configv2.unityads.unity3d.com
+127.0.0.1 connect-metrics-collector.s-onetag.com
 127.0.0.1 connect.facebook.net
 127.0.0.1 content.adriver.ru
 127.0.0.1 conversions.appsflyersdk.com
@@ -215,6 +226,7 @@
 127.0.0.1 cvmapi.mts.ru
 127.0.0.1 d.advscdn.com
 127.0.0.1 d.pub.network
+127.0.0.1 data-beacons.s-onetag.com
 127.0.0.1 data.24smi.net
 127.0.0.1 data.dianomi.com
 127.0.0.1 dc.xoalt.com
@@ -272,6 +284,7 @@
 127.0.0.1 ga.finam.ru
 127.0.0.1 gam.mail.yahoosandbox.net
 127.0.0.1 gcdsdk.appsflyersdk.com
+127.0.0.1 get.s-onetag.com
 127.0.0.1 gnezdo.ru
 127.0.0.1 go.rcvlink.com
 127.0.0.1 go1.aniview.com
@@ -358,6 +371,7 @@
 127.0.0.1 limg.imgsmail.ru
 127.0.0.1 live.primis.tech
 127.0.0.1 log.outbrainimg.com
+127.0.0.1 log.strm.yandex.ru
 127.0.0.1 logger.moviead55.ru
 127.0.0.1 logs.viadata.store
 127.0.0.1 luxcdn.com
@@ -398,6 +412,7 @@
 127.0.0.1 odb.outbrain.com
 127.0.0.1 offfy.com
 127.0.0.1 onelink.to
+127.0.0.1 onetag-geo.s-onetag.com
 127.0.0.1 onetag-sys.com
 127.0.0.1 openfpcdn.io
 127.0.0.1 openstat.net
@@ -409,6 +424,7 @@
 127.0.0.1 ow.pubmatic.com
 127.0.0.1 p.ozon.ru
 127.0.0.1 p.rfihub.com
+127.0.0.1 p1.parsely.com
 127.0.0.1 p1lts2-attr.appsflyersdk.com
 127.0.0.1 p1lts2-cdn-settings.appsflyersdk.com
 127.0.0.1 p1lts2-conversions.appsflyersdk.com
@@ -431,8 +447,10 @@
 127.0.0.1 pixel.adsafeprotected.com
 127.0.0.1 pixel.id.x5.ru
 127.0.0.1 pixel.onaudience.com
+127.0.0.1 pixel.quantserve.com
 127.0.0.1 pixel.rubiconproject.com
 127.0.0.1 pixel.tapad.com
+127.0.0.1 pixel.wp.com
 127.0.0.1 pl.elements.video
 127.0.0.1 pl.viadata.store
 127.0.0.1 platform-api.sharethis.com
@@ -452,6 +470,7 @@
 127.0.0.1 privacy-sandbox.appsflyersdk.com
 127.0.0.1 proc.ad.cpe.dotomi.com
 127.0.0.1 profile.ad-tech.ru
+127.0.0.1 ps.eyeota.net
 127.0.0.1 pub.doubleverify.com
 127.0.0.1 pubads.g.doubleclick.net
 127.0.0.1 publisher-assets.spot.im
@@ -483,6 +502,7 @@
 127.0.0.1 rpc.skcrtxr.com
 127.0.0.1 rs.mail.ru
 127.0.0.1 rsm.zona.mediacampaigns
+127.0.0.1 rt.applovin.com
 127.0.0.1 rtb-csync.smartadserver.com
 127.0.0.1 rtb-optout.t-bank-app.ru
 127.0.0.1 rtb.bid.com
@@ -492,6 +512,7 @@
 127.0.0.1 ru.tracker-api.my.com
 127.0.0.1 ru.viadata.store
 127.0.0.1 rucdn.viadata.store
+127.0.0.1 rules.quantcount.com
 127.0.0.1 rumcdn.geoedge.be
 127.0.0.1 rurtb.viadata.store
 127.0.0.1 rutrk.org
@@ -521,6 +542,7 @@
 127.0.0.1 sea1-sync.a-mo.net
 127.0.0.1 secure-assets.rubiconproject.com
 127.0.0.1 secure.adnxs.com
+127.0.0.1 secure.quantserve.com
 127.0.0.1 securepubads.g.doubleclick.net
 127.0.0.1 sendsay.ru
 127.0.0.1 sentry.avs.io
@@ -670,3 +692,6 @@
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
 127.0.0.1 www.googletagservices.com
+127.0.0.1 yandex.ru
+127.0.0.1 yhb.p.otm-r.com
+
