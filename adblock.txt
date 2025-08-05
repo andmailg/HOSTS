@@ -89,7 +89,6 @@
 127.0.0.1 api.segment.io
 127.0.0.1 api.taboola.com
 127.0.0.1 api.viglink.com
-127.0.0.1 app-measurement.com
 127.0.0.1 app.adjust.com
 127.0.0.1 app.adjust.io
 127.0.0.1 at.teads.tv
