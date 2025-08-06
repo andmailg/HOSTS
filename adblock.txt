@@ -7,9 +7,11 @@
 127.0.0.1 33413.ms.vk.com
 127.0.0.1 35413.ms.vk.com
 127.0.0.1 3a1f-e8bf2.api.pushwoosh.com
+127.0.0.1 3p.ampproject.net
 127.0.0.1 3psi2r.tdum.alibaba.com
 127.0.0.1 3rnpbh.tdum.alibaba.com
 127.0.0.1 4975265721754241204824.cm.a.mts.ru
+127.0.0.1 4pda-to.cdn.ampproject.org
 127.0.0.1 5--2--6880de657011cb00010ec209.stbid.ru
 127.0.0.1 51z2x2.tdum.alibaba.com
 127.0.0.1 52wz8f.tdum.alibaba.com
@@ -171,11 +173,13 @@
 127.0.0.1 cd836371f1d.cdn.intergient.com
 127.0.0.1 cdn-rtb.sape.ru
 127.0.0.1 cdn-settings.appsflyersdk.com
+127.0.0.1 cdn.adfinity.pro
 127.0.0.1 cdn.adsninja.ca
 127.0.0.1 cdn.advertronic.io
 127.0.0.1 cdn.advg.agency
 127.0.0.1 cdn.al-adtech.com
 127.0.0.1 cdn.alfasense.net
+127.0.0.1 cdn.ampproject.org
 127.0.0.1 cdn.betweendigital.com
 127.0.0.1 cdn.cxense.com
 127.0.0.1 cdn.dsp-rambler.ru
@@ -261,6 +265,7 @@
 127.0.0.1 ctx.weborama.com
 127.0.0.1 cv7rn7.tdum.alibaba.com
 127.0.0.1 cvmapi.mts.ru
+127.0.0.1 d-102121267274565559.ampproject.net
 127.0.0.1 d.advscdn.com
 127.0.0.1 d.pub.network
 127.0.0.1 data-beacons.s-onetag.com
