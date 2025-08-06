@@ -629,7 +629,6 @@
 127.0.0.1 ssum.casalemedia.com
 127.0.0.1 st.hbrd.io
 127.0.0.1 st.hybrid.ai
-127.0.0.1 st.vk.com
 127.0.0.1 startup.mobile.yandex.net
 127.0.0.1 stat.online.sberbank.ru
 127.0.0.1 stat.radar.imgsmail.ru
