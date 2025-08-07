@@ -753,7 +753,6 @@
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
 127.0.0.1 www.google-analytics.com
-127.0.0.1 www.googletagservices.com
 127.0.0.1 x01.aidata.io
 127.0.0.1 yandex.ru
 127.0.0.1 yhb.p.otm-r.com
