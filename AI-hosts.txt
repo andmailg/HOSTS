@@ -33,10 +33,10 @@
 89.108.98.20 generativeai.google
 
 # API and Backend services
-#89.108.98.20 generativelanguage.googleapis.com
-#89.108.98.20 alkalimore-pa.clients6.google.com
-#89.108.98.20 waa-pa.clients6.google.com
-#89.108.98.20 geller-pa.googleapis.com
+89.108.98.20 generativelanguage.googleapis.com
+89.108.98.20 alkalimore-pa.clients6.google.com
+89.108.98.20 waa-pa.clients6.google.com
+89.108.98.20 geller-pa.googleapis.com
 89.108.98.20 proactivebackend-pa.googleapis.com
 #89.108.98.20 notifications-pa.googleapis.com
 #89.108.98.20 searchnotifications-pa.googleapis.com
