@@ -52,7 +52,7 @@
 89.108.98.20 android.googleapis.com
 
 # Security and Infrastructure
-#89.108.98.20 o.pki.goog
+89.108.98.20 o.pki.goog
 
 # Copilot / Bing
 89.108.98.20  copilot.microsoft.com
