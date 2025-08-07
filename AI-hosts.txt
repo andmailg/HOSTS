@@ -41,7 +41,7 @@
 #89.108.98.20 notifications-pa.googleapis.com
 #89.108.98.20 searchnotifications-pa.googleapis.com
 #89.108.98.20 lamssettings-pa.googleapis.com
-#89.108.98.20 aisandbox-pa.googleapis.com
+89.108.98.20 aisandbox-pa.googleapis.com
 #89.108.98.20 firebaseinstallations.googleapis.com
 #89.108.98.20 assistant-s3-pa.googleapis.com
 #89.108.98.20 assistantfrontend-pa.googleapis.com
