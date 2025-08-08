@@ -87,7 +87,6 @@
 127.0.0.1 adx.com.ru
 127.0.0.1 adx.videonow.ru
 127.0.0.1 aemetrics.aliexpress.ru
-127.0.0.1 aer.acs.aliexpress.ru
 127.0.0.1 af.click.ru
 127.0.0.1 aflt.market.yandex.ru
 127.0.0.1 aflt.travel.yandex.ru
