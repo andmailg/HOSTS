@@ -45,6 +45,7 @@
 127.0.0.1 LmP9e4-dnsotls-ds.metric.gstatic.com
 127.0.0.1 MhN7VM-dnsotls-ds.metric.gstatic.com
 127.0.0.1 YlQl6I-dnsotls-ds.metric.gstatic.com
+127.0.0.1 a.adlook.tech
 127.0.0.1 a.amxrtb.com
 127.0.0.1 a.atraffic.ru
 127.0.0.1 a.lifehacker.ru
@@ -64,6 +65,7 @@
 127.0.0.1 acdn.adnxs.com
 127.0.0.1 acint.net
 127.0.0.1 ad-delivery.net
+127.0.0.1 ad-pixel.ru
 127.0.0.1 ad.adriver.ru
 127.0.0.1 ad.doubleclick.net
 127.0.0.1 ad.mail.ru
@@ -81,6 +83,7 @@
 127.0.0.1 adservice.google.com
 127.0.0.1 adservice.google.ru
 127.0.0.1 adsninja.ca
+127.0.0.1 adx.adform.net
 127.0.0.1 adx.com.ru
 127.0.0.1 adx.videonow.ru
 127.0.0.1 aemetrics.aliexpress.ru
@@ -95,6 +98,7 @@
 127.0.0.1 alt-xray.imgsmail.ru
 127.0.0.1 amc.yandex.ru
 127.0.0.1 an.yandex.ru
+127.0.0.1 analytics.iportal.ru
 127.0.0.1 analytics.query.yahoo.com
 127.0.0.1 anp.mxptint.net
 127.0.0.1 aorta.clickagy.com
@@ -123,6 +127,7 @@
 127.0.0.1 attr.appsflyersdk.com
 127.0.0.1 audex.userreport.com
 127.0.0.1 audienceexposure.com
+127.0.0.1 autocounter.lentainform.com
 127.0.0.1 b1.nel.goog
 127.0.0.1 b1sync.outbrain.com
 127.0.0.1 b1sync.zemanta.com
@@ -149,6 +154,7 @@
 127.0.0.1 bh.contextweb.com
 127.0.0.1 bid.adx.com.ru
 127.0.0.1 bidder.criteo.com
+127.0.0.1 bidder.smartytouch.co
 127.0.0.1 bn.viadata.store
 127.0.0.1 bobid-ip.hybrid.ai
 127.0.0.1 bobid-tls.hybrid.ai
@@ -162,6 +168,7 @@
 127.0.0.1 c.amazon-adsystem.com
 127.0.0.1 c.bing.com
 127.0.0.1 c.go-mpulse.net
+127.0.0.1 c.mgid.com
 127.0.0.1 c1.adform.net
 127.0.0.1 c2-eu.piano.io
 127.0.0.1 c6n5b8.tdum.alibaba.com
@@ -171,6 +178,7 @@
 127.0.0.1 carrick-ui.advoncommerce.com
 127.0.0.1 cd.elements.video
 127.0.0.1 cd836371f1d.cdn.intergient.com
+127.0.0.1 cdn-c.skcrtxr.com
 127.0.0.1 cdn-rtb.sape.ru
 127.0.0.1 cdn-settings.appsflyersdk.com
 127.0.0.1 cdn.adfinity.pro
@@ -182,6 +190,7 @@
 127.0.0.1 cdn.ampproject.org
 127.0.0.1 cdn.betweendigital.com
 127.0.0.1 cdn.cxense.com
+127.0.0.1 cdn.dmtgvn.com
 127.0.0.1 cdn.dsp-rambler.ru
 127.0.0.1 cdn.enkod.ru
 127.0.0.1 cdn.getandgo.ru
@@ -189,7 +198,10 @@
 127.0.0.1 cdn.indexww.com
 127.0.0.1 cdn.intergi.com
 127.0.0.1 cdn.intergient.com
+127.0.0.1 cdn.iportal.ru
 127.0.0.1 cdn.jsdelivr.net
+127.0.0.1 cdn.membrana.media
+127.0.0.1 cdn.mgid.com
 127.0.0.1 cdn.onesignal.com
 127.0.0.1 cdn.onthe.io
 127.0.0.1 cdn.optimizely.com
@@ -210,6 +222,7 @@
 127.0.0.1 ced-ns.sascdn.com
 127.0.0.1 census-app.scorecardresearch.com
 127.0.0.1 check.analytics.rlcdn.com
+127.0.0.1 clck.mgid.com
 127.0.0.1 client-ml.intergient.com
 127.0.0.1 cls.ad-tech.ru
 127.0.0.1 cm-supply-web.gammaplatform.com
@@ -219,6 +232,7 @@
 127.0.0.1 cm.ambientdsp.com
 127.0.0.1 cm.everesttech.net
 127.0.0.1 cm.g.doubleclick.net
+127.0.0.1 cm.mgid.com
 127.0.0.1 cmr.bidderstack.com
 127.0.0.1 cms.analytics.yahoo.com
 127.0.0.1 cms.quantserve.com
@@ -306,6 +320,7 @@
 127.0.0.1 euronewsfr.api.useinsider.com
 127.0.0.1 euronewsgroup.d3.sc.omtrdc.net
 127.0.0.1 eus.rubiconproject.com
+127.0.0.1 euw-ice.360yield.com
 127.0.0.1 events.cardsmobile.ru
 127.0.0.1 events.release.narrativ.com
 127.0.0.1 events.release.narrativ.com.lan
@@ -319,6 +334,7 @@
 127.0.0.1 fBRAvl-dnsotls-ds.metric.gstatic.com
 127.0.0.1 fastlane.rubiconproject.com
 127.0.0.1 fcgi4.gnezdo.ru
+127.0.0.1 fcgi5.gnezdo.ru
 127.0.0.1 fid.agkn.com
 127.0.0.1 fksnk.com
 127.0.0.1 fourier.alibaba.com
@@ -334,6 +350,7 @@
 127.0.0.1 gm.mmstat.com
 127.0.0.1 gnezdo.ru
 127.0.0.1 go.rcvlink.com
+127.0.0.1 go.rcvlinks.com
 127.0.0.1 go1.aniview.com
 127.0.0.1 gocm.c.appier.net
 127.0.0.1 google-bidout-d.openx.net
@@ -380,6 +397,7 @@
 127.0.0.1 inmobi-match.dotomi.com
 127.0.0.1 ins.elements.video
 127.0.0.1 instruments.tds.bid
+127.0.0.1 inv-nets.admixer.net
 127.0.0.1 invstatic101.creativecdn.com
 127.0.0.1 io.ozone.ru
 127.0.0.1 ip4.ru.tracker-api.my.com
@@ -394,6 +412,7 @@
 127.0.0.1 jay.vedomosti.ru
 127.0.0.1 jitsu.ixbt.com
 127.0.0.1 js-sec.indexww.com
+127.0.0.1 jsc.mgid.com
 127.0.0.1 jsn.24smi.net
 127.0.0.1 k.cackle.me
 127.0.0.1 kbr.rustore.ru
@@ -427,6 +446,7 @@
 127.0.0.1 logs.viadata.store
 127.0.0.1 luxcdn.com
 127.0.0.1 mab.chartbeat.com
+127.0.0.1 match.360yield.com
 127.0.0.1 match.adsrvr.org
 127.0.0.1 match.deepintent.com
 127.0.0.1 match.new-programmatic.com
@@ -434,9 +454,12 @@
 127.0.0.1 match.sharethrough.com
 127.0.0.1 matchid.adfox.yandex.ru
 127.0.0.1 matomo.finam.ru
+127.0.0.1 mc.acint.net
 127.0.0.1 mc.webvisor.org
+127.0.0.1 mc.yandex.com
 127.0.0.1 mc.yandex.ru
 127.0.0.1 mcdp-chidc2.outbrain.com
+127.0.0.1 membrana-cdn.media
 127.0.0.1 metrics.alfabank.ru
 127.0.0.1 metrika-informer.com
 127.0.0.1 mid.rkdms.com
@@ -450,11 +473,13 @@
 127.0.0.1 ms.applvn.com
 127.0.0.1 ms4.applovin.com
 127.0.0.1 ms4.applvn.com
+127.0.0.1 msg.iportal.ru
 127.0.0.1 mug.criteo.com
 127.0.0.1 mweb-hb.presage.io
 127.0.0.1 mybbc-analytics.files.bbci.co.uk
 127.0.0.1 news.2xclick.ru
 127.0.0.1 news.gnezdo.ru
+127.0.0.1 nr.bidderstack.com
 127.0.0.1 nsdk-s09.uss.2gis.com
 127.0.0.1 nzkjjqrcte.com
 127.0.0.1 o2.mail.ru
@@ -507,6 +532,7 @@
 127.0.0.1 pl.elements.video
 127.0.0.1 pl.viadata.store
 127.0.0.1 platform-api.sharethis.com
+127.0.0.1 player.adtcdn.com
 127.0.0.1 player.adtelligent.com
 127.0.0.1 player.aniview.com
 127.0.0.1 player.spotim.market
@@ -535,6 +561,7 @@
 127.0.0.1 px.adhigh.net
 127.0.0.1 px.ads.linkedin.com
 127.0.0.1 px.hsmedia.ru
+127.0.0.1 q-stories.ru
 127.0.0.1 qZfhsC-dnsotls-ds.metric.gstatic.com
 127.0.0.1 quotiq.ru
 127.0.0.1 r.mradx.net
@@ -570,7 +597,9 @@
 127.0.0.1 rules.quantcount.com
 127.0.0.1 rumcdn.geoedge.be
 127.0.0.1 rurtb.viadata.store
+127.0.0.1 rutarget.ru
 127.0.0.1 rutrk.org
+127.0.0.1 s-img.mgid.com
 127.0.0.1 s-v6exp1-ds.metric.gstatic.com
 127.0.0.1 s.ad.smaato.net
 127.0.0.1 s.advscdn.com
@@ -603,7 +632,9 @@
 127.0.0.1 sendsay.ru
 127.0.0.1 sentry.avs.io
 127.0.0.1 server.prebid.dianomi.com
+127.0.0.1 server.smartytech.io
 127.0.0.1 service.onfeed.ru
+127.0.0.1 servicer.mgid.com
 127.0.0.1 sg.semasio.net
 127.0.0.1 sghb.spotim.market
 127.0.0.1 sgtm.ixbt.com
@@ -611,6 +642,7 @@
 127.0.0.1 simage4.pubmatic.com
 127.0.0.1 site.yandex.net
 127.0.0.1 siteintercept.qualtrics.com
+127.0.0.1 skcrtxr.com
 127.0.0.1 smi2.ru
 127.0.0.1 sntr.lifehacker.ru
 127.0.0.1 social-api.t-bank-app.ru
@@ -634,6 +666,7 @@
 127.0.0.1 st.hbrd.io
 127.0.0.1 st.hybrid.ai
 127.0.0.1 startup.mobile.yandex.net
+127.0.0.1 stat.media
 127.0.0.1 stat.online.sberbank.ru
 127.0.0.1 stat.radar.imgsmail.ru
 127.0.0.1 static-cdn.spot.im
@@ -656,6 +689,7 @@
 127.0.0.1 static6.smi2.net
 127.0.0.1 static7.smi2.net
 127.0.0.1 static8.smi2.net
+127.0.0.1 statmedia.ru
 127.0.0.1 stats.g.doubleclick.net
 127.0.0.1 stats.rustore.ru
 127.0.0.1 stpd.cloud
@@ -705,6 +739,7 @@
 127.0.0.1 tpo.gg
 127.0.0.1 tr.blismedia.com
 127.0.0.1 tracing.obs.mts.ru
+127.0.0.1 track-events.membrana.media
 127.0.0.1 track.onef.pro
 127.0.0.1 track1.aniview.com
 127.0.0.1 tracker-api.my.com
@@ -726,7 +761,10 @@
 127.0.0.1 us.ck-ie.com
 127.0.0.1 usync.ingage.tech
 127.0.0.1 vak345.com
+127.0.0.1 vast.ufouxbwn.com
 127.0.0.1 vi.ml314.com
+127.0.0.1 video-content.b-cdn.net
+127.0.0.1 video-native.mgid.com
 127.0.0.1 visitor-gen01.omnitagjs.com
 127.0.0.1 visitor.fiftyt.com
 127.0.0.1 visitor.omnitagjs.com
@@ -753,6 +791,9 @@
 127.0.0.1 www.betsonsport.ru
 127.0.0.1 www.clarity.ms
 127.0.0.1 www.google-analytics.com
+127.0.0.1 www.googleadservices.com
 127.0.0.1 x01.aidata.io
 127.0.0.1 yandex.ru
 127.0.0.1 yhb.p.otm-r.com
+127.0.0.1 ym-tack.b-cdn.net
+127.0.0.1 z.cdn.adtarget.market
