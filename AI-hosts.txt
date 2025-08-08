@@ -34,21 +34,21 @@
 
 # API and Backend services
 89.108.98.20 generativelanguage.googleapis.com
-89.108.98.20 alkalimore-pa.clients6.google.com
-89.108.98.20 waa-pa.clients6.google.com
-89.108.98.20 geller-pa.googleapis.com
+#89.108.98.20 alkalimore-pa.clients6.google.com
+#89.108.98.20 waa-pa.clients6.google.com
+#89.108.98.20 geller-pa.googleapis.com
 89.108.98.20 proactivebackend-pa.googleapis.com
-89.108.98.20 notifications-pa.googleapis.com
-89.108.98.20 searchnotifications-pa.googleapis.com
-89.108.98.20 lamssettings-pa.googleapis.com
+#89.108.98.20 notifications-pa.googleapis.com
+#89.108.98.20 searchnotifications-pa.googleapis.com
+#89.108.98.20 lamssettings-pa.googleapis.com
 89.108.98.20 aisandbox-pa.googleapis.com
-89.108.98.20 firebaseinstallations.googleapis.com
-89.108.98.20 assistant-s3-pa.googleapis.com
-89.108.98.20 assistantfrontend-pa.googleapis.com
-89.108.98.20 speechs3proto2-pa.googleapis.com
-89.108.98.20 taskassist-pa.googleapis.com
-89.108.98.20 www.googleapis.com
-89.108.98.20 update.googleapis.com
+#89.108.98.20 firebaseinstallations.googleapis.com
+#89.108.98.20 assistant-s3-pa.googleapis.com
+#89.108.98.20 assistantfrontend-pa.googleapis.com
+#89.108.98.20 speechs3proto2-pa.googleapis.com
+#89.108.98.20 taskassist-pa.googleapis.com
+#89.108.98.20 www.googleapis.com
+#89.108.98.20 update.googleapis.com
 #89.108.98.20 android.googleapis.com
 
 # Security and Infrastructure
