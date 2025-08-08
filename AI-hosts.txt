@@ -49,7 +49,7 @@
 89.108.98.20 taskassist-pa.googleapis.com
 89.108.98.20 www.googleapis.com
 89.108.98.20 update.googleapis.com
-89.108.98.20 android.googleapis.com
+#89.108.98.20 android.googleapis.com
 
 # Security and Infrastructure
 89.108.98.20 o.pki.goog
