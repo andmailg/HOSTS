@@ -44,6 +44,7 @@
 127.0.0.1 KmJ4c2-dnsotls-ds.metric.gstatic.com
 127.0.0.1 LmP9e4-dnsotls-ds.metric.gstatic.com
 127.0.0.1 MhN7VM-dnsotls-ds.metric.gstatic.com
+127.0.0.1 Y7MMt^@-dnsotls-ds.metric.gstatic.com
 127.0.0.1 YlQl6I-dnsotls-ds.metric.gstatic.com
 127.0.0.1 a.adlook.tech
 127.0.0.1 a.amxrtb.com
@@ -82,6 +83,7 @@
 127.0.0.1 ads.yieldmo.com
 127.0.0.1 adservice.google.com
 127.0.0.1 adservice.google.ru
+127.0.0.1 adsmetadata.startappservice.com
 127.0.0.1 adsninja.ca
 127.0.0.1 adx.adform.net
 127.0.0.1 adx.com.ru
@@ -118,6 +120,7 @@
 127.0.0.1 api.segment.io
 127.0.0.1 api.taboola.com
 127.0.0.1 api.viglink.com
+127.0.0.1 api.vuukle.com
 127.0.0.1 app-measurement.com
 127.0.0.1 app.adjust.com
 127.0.0.1 app.adjust.io
@@ -188,6 +191,7 @@
 127.0.0.1 cdn.alfasense.net
 127.0.0.1 cdn.ampproject.org
 127.0.0.1 cdn.betweendigital.com
+127.0.0.1 cdn.brandmetrics.com
 127.0.0.1 cdn.cxense.com
 127.0.0.1 cdn.dmtgvn.com
 127.0.0.1 cdn.dsp-rambler.ru
@@ -213,6 +217,7 @@
 127.0.0.1 cdn.tds.bid
 127.0.0.1 cdn.uxfeedback.ru
 127.0.0.1 cdn.viglink.com
+127.0.0.1 cdn.vuukle.com
 127.0.0.1 cdn.xn--90aivcdt6dxbc.xn--p1ai
 127.0.0.1 cdnjs.smi2.ru
 127.0.0.1 cdnretkamn5t7jmy24yc.svc.cdn.yandex.net
@@ -381,6 +386,7 @@
 127.0.0.1 idsync.rlcdn.com
 127.0.0.1 idx.liadm.com
 127.0.0.1 image.sendsay.ru
+127.0.0.1 image.vuukle.com
 127.0.0.1 image2.pubmatic.com
 127.0.0.1 image4.pubmatic.com
 127.0.0.1 image6.pubmatic.com
@@ -444,6 +450,7 @@
 127.0.0.1 logger.moviead55.ru
 127.0.0.1 logs.viadata.store
 127.0.0.1 luxcdn.com
+127.0.0.1 mQntPH-dnsotls-ds.metric.gstatic.com
 127.0.0.1 mab.chartbeat.com
 127.0.0.1 match.360yield.com
 127.0.0.1 match.adsrvr.org
@@ -551,6 +558,7 @@
 127.0.0.1 ps.eyeota.net
 127.0.0.1 pub.doubleverify.com
 127.0.0.1 pubads.g.doubleclick.net
+127.0.0.1 publish.vuukle.com
 127.0.0.1 publisher-assets.spot.im
 127.0.0.1 pubmatic-match.dotomi.com
 127.0.0.1 pushmarketing.sberbank-tele.com
