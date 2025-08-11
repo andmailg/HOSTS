@@ -201,6 +201,7 @@
 127.0.0.1 cdn.indexww.com
 127.0.0.1 cdn.intergi.com
 127.0.0.1 cdn.intergient.com
+127.0.0.1 cdn.iportal.ru
 127.0.0.1 cdn.jsdelivr.net
 127.0.0.1 cdn.membrana.media
 127.0.0.1 cdn.mgid.com
