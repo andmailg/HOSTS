@@ -44,7 +44,6 @@
 127.0.0.1 KmJ4c2-dnsotls-ds.metric.gstatic.com
 127.0.0.1 LmP9e4-dnsotls-ds.metric.gstatic.com
 127.0.0.1 MhN7VM-dnsotls-ds.metric.gstatic.com
-127.0.0.1 Y7MMt^@-dnsotls-ds.metric.gstatic.com
 127.0.0.1 YlQl6I-dnsotls-ds.metric.gstatic.com
 127.0.0.1 a.adlook.tech
 127.0.0.1 a.amxrtb.com
@@ -99,6 +98,7 @@
 127.0.0.1 alt-xray.imgsmail.ru
 127.0.0.1 amc.yandex.ru
 127.0.0.1 an.yandex.ru
+127.0.0.1 analytics.important-stories.com
 127.0.0.1 analytics.iportal.ru
 127.0.0.1 analytics.query.yahoo.com
 127.0.0.1 anp.mxptint.net
@@ -108,6 +108,7 @@
 127.0.0.1 api.aio.media
 127.0.0.1 api.btloader.com
 127.0.0.1 api.cxense.com
+127.0.0.1 api.eu.arena.im
 127.0.0.1 api.floors.dev
 127.0.0.1 api.mindbox.ru
 127.0.0.1 api.okcdn.ru
@@ -124,6 +125,7 @@
 127.0.0.1 app-measurement.com
 127.0.0.1 app.adjust.com
 127.0.0.1 app.adjust.io
+127.0.0.1 arena-cdn-g.eu.getarena.im
 127.0.0.1 as0qr4.tdum.alibaba.com
 127.0.0.1 at.teads.tv
 127.0.0.1 attr.appsflyersdk.com
@@ -157,6 +159,8 @@
 127.0.0.1 bid.adx.com.ru
 127.0.0.1 bidder.criteo.com
 127.0.0.1 bidder.smartytouch.co
+127.0.0.1 blog-rt-proxy.eu.arena.im
+127.0.0.1 blog-snapshot-server.eu.arena.im
 127.0.0.1 bn.viadata.store
 127.0.0.1 bobid-ip.hybrid.ai
 127.0.0.1 bobid-tls.hybrid.ai
@@ -174,6 +178,7 @@
 127.0.0.1 c1.adform.net
 127.0.0.1 c2-eu.piano.io
 127.0.0.1 c6n5b8.tdum.alibaba.com
+127.0.0.1 cached-api.eu.arena.im
 127.0.0.1 cackle.me
 127.0.0.1 cadmus2.script.ac
 127.0.0.1 capi.elements.video
@@ -196,7 +201,9 @@
 127.0.0.1 cdn.dmtgvn.com
 127.0.0.1 cdn.dsp-rambler.ru
 127.0.0.1 cdn.enkod.ru
+127.0.0.1 cdn.eu.getarena.im
 127.0.0.1 cdn.getandgo.ru
+127.0.0.1 cdn.getarena.im
 127.0.0.1 cdn.id5-sync.com
 127.0.0.1 cdn.indexww.com
 127.0.0.1 cdn.intergi.com
@@ -290,6 +297,7 @@
 127.0.0.1 data.24smi.net
 127.0.0.1 data.dianomi.com
 127.0.0.1 dc.xoalt.com
+127.0.0.1 dc1-file.ksn.kaspersky-labs.com
 127.0.0.1 dc1-st.ksn.kaspersky-labs.com
 127.0.0.1 dc1.ksn.kaspersky-labs.com
 127.0.0.1 de.tynt.com
@@ -316,6 +324,7 @@
 127.0.0.1 e2c76.gcp.gvt2.com
 127.0.0.1 e82D3b-dnsotls-ds.metric.gstatic.com
 127.0.0.1 eb2.3lift.com
+127.0.0.1 edge.aditude.io
 127.0.0.1 egress.yandex.net
 127.0.0.1 embeds.rambler.ru
 127.0.0.1 emd.hybrid.ai
@@ -350,9 +359,11 @@
 127.0.0.1 ga.finam.ru
 127.0.0.1 gam.mail.yahoosandbox.net
 127.0.0.1 gcdsdk.appsflyersdk.com
+127.0.0.1 geo.aditude.io
 127.0.0.1 get.s-onetag.com
 127.0.0.1 gm.mmstat.com
 127.0.0.1 gnezdo.ru
+127.0.0.1 go.eu.arena.im
 127.0.0.1 go.rcvlink.com
 127.0.0.1 go.rcvlinks.com
 127.0.0.1 go1.aniview.com
@@ -396,6 +407,7 @@
 127.0.0.1 img.imgsmail.ru
 127.0.0.1 img02.ad-tech.ru
 127.0.0.1 imgs2.imgsmail.ru
+127.0.0.1 important-stories.com
 127.0.0.1 impression-inferences-edge-prod.playwire.com
 127.0.0.1 impression.appmetrica.yandex.com
 127.0.0.1 inapps.appsflyersdk.com
@@ -431,6 +443,7 @@
 127.0.0.1 ksn-crypto-dnscheck-geo.kaspersky-labs.com
 127.0.0.1 ksn-file-geo.kaspersky-labs.com
 127.0.0.1 ksn-info-geo.kaspersky-labs.com
+127.0.0.1 ksn-ml-geo.kaspersky-labs.com
 127.0.0.1 ktlt.cdn-vk.ru
 127.0.0.1 l.clarity.ms
 127.0.0.1 l.sharethis.com
@@ -573,10 +586,13 @@
 127.0.0.1 quotiq.ru
 127.0.0.1 r.mradx.net
 127.0.0.1 rap.skcrtxr.com
+127.0.0.1 raven-edge.aditude.io
+127.0.0.1 raven-static.aditude.io
 127.0.0.1 rb.infox.sg
 127.0.0.1 rcm-tr.rambler.ru
 127.0.0.1 rcm.rambler.ru
 127.0.0.1 rcmjs.rambler.ru
+127.0.0.1 realtime.eu.arena.im
 127.0.0.1 rebus.rustore.ru
 127.0.0.1 region1.analytics.google.com
 127.0.0.1 region1.app-measurement.com
@@ -618,15 +634,17 @@
 127.0.0.1 s.srvsynd.com
 127.0.0.1 s0.2mdn.net
 127.0.0.1 s02.upd.kaspersky.com
+127.0.0.1 s03.upd.kaspersky.com
 127.0.0.1 s08.upd.kaspersky.com
 127.0.0.1 s1.bss.2gis.com
+127.0.0.1 s13.upd.kaspersky.com
 127.0.0.1 s14.upd.kaspersky.com
 127.0.0.1 s19.upd.kaspersky.com
 127.0.0.1 s2124157686.t.eloqua.com
 127.0.0.1 s2ssc.aniview.com
 127.0.0.1 s4WyPk-dnsotls-ds.metric.gstatic.com
 127.0.0.1 sb.scorecardresearch.com
-127.0.0.1 script-api.ccgateway.net
+127.0.0.1 script-api.ccgateway
 127.0.0.1 script.crazyegg.com
 127.0.0.1 scripts.opti-digital.com
 127.0.0.1 sdk-api.apptracer.ru
@@ -679,6 +697,7 @@
 127.0.0.1 static-cdn.spot.im
 127.0.0.1 static.adsafeprotected.com
 127.0.0.1 static.aio.media
+127.0.0.1 static.arena.im
 127.0.0.1 static.aroa.io
 127.0.0.1 static.bumlam.com
 127.0.0.1 static.chartbeat.com
@@ -700,6 +719,7 @@
 127.0.0.1 stats.g.doubleclick.net
 127.0.0.1 stats.rustore.ru
 127.0.0.1 stpd.cloud
+127.0.0.1 support.kaspersky.com
 127.0.0.1 swft.vedomosti.ru
 127.0.0.1 sync-dsp.ad-m.asia
 127.0.0.1 sync-tm.everesttech.net
