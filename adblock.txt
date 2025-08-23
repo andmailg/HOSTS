@@ -350,7 +350,6 @@
 127.0.0.1 fid.agkn.com
 127.0.0.1 fksnk.com
 127.0.0.1 fourier.alibaba.com
-127.0.0.1 fourier.aliexpress.com
 127.0.0.1 fourier.taobao.com
 127.0.0.1 fp.hybrid.ai
 127.0.0.1 fpf.hybrid.ai
