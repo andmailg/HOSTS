@@ -114,7 +114,6 @@
 127.0.0.1 analytics.google.com
 127.0.0.1 analytics.important-stories.com
 127.0.0.1 analytics.iportal.ru
-
 127.0.0.1 anp.mxptint.net
 127.0.0.1 aorta.clickagy.com
 127.0.0.1 ap.lijit.com
@@ -275,7 +274,6 @@
 127.0.0.1 cm.g.doubleclick.net
 127.0.0.1 cm.mgid.com
 127.0.0.1 cmr.bidderstack.com
-
 127.0.0.1 cms.quantserve.com
 127.0.0.1 cn8268.tdum.alibaba.com
 127.0.0.1 cnb.cnews.ru
@@ -396,7 +394,6 @@
 127.0.0.1 fpf.hybrid.ai
 127.0.0.1 fxtchw.com
 127.0.0.1 ga.finam.ru
-
 127.0.0.1 gcdsdk.appsflyersdk.com
 127.0.0.1 geo.aditude.io
 127.0.0.1 get.s-onetag.com
@@ -590,7 +587,6 @@
 127.0.0.1 pbs.alfasense.com
 127.0.0.1 pbs.aniview.com
 127.0.0.1 pbs.optidigital.com
-
 127.0.0.1 peroxide.rambler.ru
 127.0.0.1 personalization-web-stable.mindbox.ru
 127.0.0.1 pgxdqxq.pa-cd.com
@@ -617,7 +613,6 @@
 127.0.0.1 pm-widget.taboola.com
 127.0.0.1 pm.w55c.net
 127.0.0.1 pogo.ccgateway.net
-
 127.0.0.1 prebid-server.rubiconproject.com
 127.0.0.1 prebid.a-mo.net
 127.0.0.1 prebid.admatic.de
@@ -869,7 +864,6 @@
 127.0.0.1 uipglob.semasio.net
 127.0.0.1 um.simpli.fi
 127.0.0.1 ums.acuityplatform.com
-
 127.0.0.1 us.ck-ie.com
 127.0.0.1 usync.ingage.tech
 127.0.0.1 uufkum-cdn-settings.appsflyersdk.com
