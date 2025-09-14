@@ -375,7 +375,6 @@
 127.0.0.1 exad.smi2.ru
 127.0.0.1 exchange.buzzoola.com
 127.0.0.1 ext.enkod.ru
-127.0.0.1 external-api.mediabilling.yandex.ru
 127.0.0.1 eye.targetads.io
 127.0.0.1 ezfweb-cdn-settings.appsflyersdk.com
 127.0.0.1 ezfweb-launches.appsflyersdk.com
