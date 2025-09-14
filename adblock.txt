@@ -255,7 +255,6 @@
 127.0.0.1 cdn.vuukle.com
 127.0.0.1 cdn.xn--90aivcdt6dxbc.xn--p1ai
 127.0.0.1 cdnjs.smi2.ru
-127.0.0.1 cdnretkamn5t7jmy24yc.svc.cdn.yandex.net
 127.0.0.1 cds.elements.video
 127.0.0.1 cds.taboola.com
 127.0.0.1 ce.lijit.com
