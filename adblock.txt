@@ -911,3 +911,14 @@
 127.0.0.1 z.moatads.com
 127.0.0.1 znb2b6wn008pbgkwn-autodeskfeedback.siteintercept.qualtrics.com
 127.0.0.1 zurich.performaized.com
+127.0.0.1 26d7314e-7471-11f0-86e0-002590c0647c.n3.sync.bumlam.com
+127.0.0.1 a.adiam.tech
+127.0.0.1 dm.hybrid.ai
+127.0.0.1 h.xoalt.com
+127.0.0.1 log.bumlam.com
+127.0.0.1 matchid.adfox.yandex.ru
+127.0.0.1 pix.bumlam.com
+127.0.0.1 pretarg.adhigh.net
+127.0.0.1 static.xoalt.com
+127.0.0.1 uid.bumlam.com
+
