@@ -921,4 +921,5 @@
 127.0.0.1 pretarg.adhigh.net
 127.0.0.1 static.xoalt.com
 127.0.0.1 uid.bumlam.com
+127.0.0.1 cdn.appsflyer.com
 
