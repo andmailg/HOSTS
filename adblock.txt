@@ -855,7 +855,6 @@
 127.0.0.1 tru.am
 127.0.0.1 ts.tracker-api.my.com
 127.0.0.1 ts.tracker-api.vk-analytics.ru
-127.0.0.1 tsx.x5static.net
 127.0.0.1 tt.onthe.io
 127.0.0.1 tube.buzzoola.com
 127.0.0.1 u.openx.net
