@@ -903,7 +903,6 @@
 127.0.0.1 www.googleadservices.com
 127.0.0.1 x.bidswitch.net
 127.0.0.1 x01.aidata.io
-127.0.0.1 yandex.ru
 127.0.0.1 yhb.p.otm-r.com
 127.0.0.1 ym-tack.b-cdn.net
 127.0.0.1 z.cdn.adtarget.market
