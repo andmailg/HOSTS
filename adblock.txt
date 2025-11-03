@@ -921,5 +921,19 @@
 127.0.0.1 uid.bumlam.com
 127.0.0.1 cdn.appsflyer.com
 127.0.0.1 yandex.ru
-
+127.0.0.1 adminer.space
+127.0.0.1 ads.adtec.ru
+127.0.0.1 banner.appsflyer.com
+127.0.0.1 cdn.adtec.ru
+127.0.0.1 counter.yadro.ru
+127.0.0.1 creatives-cdn.appsflyer.com
+127.0.0.1 id.adx.bid
+127.0.0.1 informer.yandex.ru
+127.0.0.1 match.ohmy.bid
+127.0.0.1 redirect.appmetrica.yandex.com
+127.0.0.1 s.suprion.ru
+127.0.0.1 stat.adtec.ru
+127.0.0.1 top-fwz1.mail.ru
+127.0.0.1 websdk.appsflyer.com
+127.0.0.1 xn--90aivcdt6dxbc.xn--p1ai
 
