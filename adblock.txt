@@ -935,5 +935,5 @@
 127.0.0.1 stat.adtec.ru
 127.0.0.1 top-fwz1.mail.ru
 127.0.0.1 websdk.appsflyer.com
-127.0.0.1 xn--90aivcdt6dxbc.xn--p1ai
+
 
