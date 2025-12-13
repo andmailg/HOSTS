@@ -569,7 +569,6 @@
 127.0.0.1 nr.bidderstack.com
 127.0.0.1 nsdk-s09.uss.2gis.com
 127.0.0.1 nzkjjqrcte.com
-127.0.0.1 o2.mail.ru
 127.0.0.1 oa.openxcdn.net
 127.0.0.1 oajs.openx.net
 127.0.0.1 odb.outbrain.com
