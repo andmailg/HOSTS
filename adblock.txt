@@ -541,7 +541,6 @@
 127.0.0.1 mc.acint.net
 127.0.0.1 mc.webvisor.org
 127.0.0.1 mc.yandex.com
-127.0.0.1 mc.yandex.ru
 127.0.0.1 mcdp-chidc2.outbrain.com
 127.0.0.1 membrana-cdn.media
 127.0.0.1 metrics.alfabank.ru
