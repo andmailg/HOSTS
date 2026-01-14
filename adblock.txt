@@ -662,7 +662,6 @@
 127.0.0.1 rcmjs.rambler.ru
 127.0.0.1 realtime.eu.arena.im
 127.0.0.1 rebus.rustore.ru
-127.0.0.1 redirect.appmetrica.yandex.com
 127.0.0.1 region1.analytics.google.com
 127.0.0.1 region1.app-measurement.com
 127.0.0.1 region1.google-analytics.com
