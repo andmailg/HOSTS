@@ -433,7 +433,7 @@
 127.0.0.1 htlb.casalemedia.com
 127.0.0.1 i.liadm.com
 127.0.0.1 i.mycdn.me
-127.0.0.1 ib.adnxs.com
+127.0.0.1 ib.
 127.0.0.1 ichnaea-web.netflix.com
 127.0.0.1 id.a-mx.com
 127.0.0.1 id.adx.bid
@@ -628,7 +628,7 @@
 127.0.0.1 prebid-server.rubiconproject.com
 127.0.0.1 prebid.a-mo.net
 127.0.0.1 prebid.admatic.de
-127.0.0.1 prebid.adnxs.com
+127.0.0.1 prebid.
 127.0.0.1 prebid.videostep.com
 127.0.0.1 pretarg.adhigh.net
 127.0.0.1 prg.smartadserver.com
@@ -735,7 +735,7 @@
 127.0.0.1 sdk.streamrail.com
 127.0.0.1 sea1-sync.a-mo.net
 127.0.0.1 secure-assets.rubiconproject.com
-127.0.0.1 secure.adnxs.com
+127.0.0.1 secure.
 127.0.0.1 secure.quantserve.com
 127.0.0.1 securepubads.g.doubleclick.net
 127.0.0.1 sendsay.ru
@@ -930,3 +930,16 @@
 127.0.0.1 z.moatads.com
 127.0.0.1 znb2b6wn008pbgkwn-autodeskfeedback.siteintercept.qualtrics.com
 127.0.0.1 zurich.performaized.com
+127.0.0.1 ib.mookie1.com
+127.0.0.1 global.ib-ibi.com
+127.0.0.1 ads.scorecardresearch.com
+127.0.0.1 tag.yieldoptimizer.com
+127.0.0.1 dp2.33across.com
+127.0.0.1 html-load.com
+127.0.0.1 idsync.rlcdn.com
+127.0.0.1 0.html-load.com
+127.0.0.1 pbs.optidigital.com
+127.0.0.1 adobe.adhaven.com
+127.0.0.1 opti-digital.com
+127.0.0.1 adnxs.com
+127.0.0.1 useinsider.com
