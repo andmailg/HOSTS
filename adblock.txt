@@ -30,15 +30,6 @@
 127.0.0.1 6n7rxf-launches.appsflyersdk.com
 127.0.0.1 6p9nnl.tdum.alibaba.com
 127.0.0.1 6z0u8b.tdum.alibaba.com
-127.0.0.1 731111.mediascope.mail.ru
-127.0.0.1 733111.mediascope.mail.ru
-127.0.0.1 734111.mediascope.mail.ru
-127.0.0.1 741111.mediascope.mail.ru
-127.0.0.1 743111.mediascope.mail.ru
-127.0.0.1 744111.mediascope.mail.ru
-127.0.0.1 751111.mediascope.mail.ru
-127.0.0.1 753111.mediascope.mail.ru
-127.0.0.1 754111.mediascope.mail.ru
 127.0.0.1 7579671071753099539839.cm.a.mts.ru
 127.0.0.1 7ggngg.tdum.alibaba.com
 127.0.0.1 7jh7e0.tdum.alibaba.com
