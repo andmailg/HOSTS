@@ -843,3 +843,125 @@
 127.0.0.1 opti-digital.com
 127.0.0.1 adnxs.com
 127.0.0.1 useinsider.com
+
+# Google & DoubleClick (Ads & Analytics)
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 ade.googlesyndication.com
+0.0.0.0 adservice.google.com
+0.0.0.0 ep1.adtrafficquality.google
+0.0.0.0 ep2.adtrafficquality.google
+0.0.0.0 fundingchoicesmessages.google.com
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 tpc.googlesyndication.com
+0.0.0.0 cm.g.doubleclick.net
+
+# Yandex (Ads & Analytics)
+0.0.0.0 ads.yandex.ru
+0.0.0.0 an.yandex.ru
+0.0.0.0 mc.yandex.com
+0.0.0.0 mc.yandex.ru
+
+# VK / Mail.ru
+0.0.0.0 ad.mail.ru
+0.0.0.0 privacy-cs.mail.ru
+0.0.0.0 top-fwz1.mail.ru
+
+# Ad Networks, Exchanges, SSP & DSP
+0.0.0.0 1070--493aed84-4fae-4657-8ce7-e43bf4327185.stbid.ru
+0.0.0.0 a.adiam.tech
+0.0.0.0 a.ussp.io
+0.0.0.0 a.utraff.com
+0.0.0.0 ad.adriver.ru
+0.0.0.0 ads.betweendigital.com
+0.0.0.0 adx.com.ru
+0.0.0.0 backend.bobid.io
+0.0.0.0 bid.sspnet.tech
+0.0.0.0 bobid-ip.hybrid.ai
+0.0.0.0 cdn.al-adtech.com
+0.0.0.0 cdn.advertronic.io
+0.0.0.0 cdn-rtb.sape.ru
+0.0.0.0 content.adriver.ru
+0.0.0.0 dsum-sec.casalemedia.com
+0.0.0.0 ev.adriver.ru
+0.0.0.0 exad.smi2.ru
+0.0.0.0 exchange.buzzoola.com
+0.0.0.0 fcgi5.gnezdo.ru
+0.0.0.0 fp.hybrid.ai
+0.0.0.0 fpf.hybrid.ai
+0.0.0.0 hb.bumlam.com
+0.0.0.0 hb-bidder.skcrtxr.com
+0.0.0.0 ib.adnxs.com
+0.0.0.0 kimberlite.io
+0.0.0.0 news.gnezdo.ru
+0.0.0.0 partners.tremorhub.com
+0.0.0.0 pb.adriver.ru
+0.0.0.0 pbs.alfasense.com
+0.0.0.0 r.ussp.io
+0.0.0.0 rutarget.ru
+0.0.0.0 s1.adform.net
+0.0.0.0 sp.linkssp.ru
+0.0.0.0 sp.ohmy.bid
+0.0.0.0 ssp.al-adtech.com
+0.0.0.0 ssp.bidvol.com
+0.0.0.0 ssp.hbrd.io
+0.0.0.0 ssp.hybrid.ai
+0.0.0.0 ssp-rtb.sape.ru
+0.0.0.0 static.kimberlite.io
+0.0.0.0 tube.buzzoola.com
+0.0.0.0 uid.ssp.bidvol.com
+0.0.0.0 us-u.openx.net
+0.0.0.0 yhb.p.otm-r.com
+
+# Analytics, Trackers & Retargeting
+0.0.0.0 48d46c84-bed6-11f1-86e0-002590c0647c.n4.sync.bumlam.com
+0.0.0.0 2829036961790996299327.cm.a.mts.ru
+0.0.0.0 acint.net
+0.0.0.0 analytics.adcanvas.com
+0.0.0.0 analytics.iportal.ru
+0.0.0.0 analytics.mediadash.ru
+0.0.0.0 api.a.mts.ru
+0.0.0.0 brame-tracking.com
+0.0.0.0 bs.serving-sys.ru
+0.0.0.0 cdn-c.skcrtxr.com
+0.0.0.0 cdn.skcrtxr.com
+0.0.0.0 cm.a.mts.ru
+0.0.0.0 counter.yadro.ru
+0.0.0.0 cr-frontend.weborama-tech.ru
+0.0.0.0 csync.skcrtxr.com
+0.0.0.0 dc.xoalt.com
+0.0.0.0 dmp.sbermarketing.ru
+0.0.0.0 eads.brame-gamification.com
+0.0.0.0 geoip.xoalt.com
+0.0.0.0 match.new-programmatic.com
+0.0.0.0 mc.acint.net
+0.0.0.0 media.adcanvas.com
+0.0.0.0 openfpcdn.io
+0.0.0.0 pix.bumlam.com
+0.0.0.0 px.adhigh.net
+0.0.0.0 px2.admon.pro
+0.0.0.0 s3sc.perfluence.net
+0.0.0.0 st.hbrd.io
+0.0.0.0 static.a.mts.ru
+0.0.0.0 static.advcake.ru
+0.0.0.0 static.bumlam.com
+0.0.0.0 static.terratraf.com
+0.0.0.0 sync.bumlam.com
+0.0.0.0 sync.dmp.otm-r.com
+0.0.0.0 sync.rambler.ru
+0.0.0.0 sync.teads.tv
+0.0.0.0 syncv2.otm-r.ru
+0.0.0.0 track.adform.net
+0.0.0.0 uid.bumlam.com
+0.0.0.0 www.acint.net
+0.0.0.0 www.tns-counter.ru
+0.0.0.0 x01.aidata.io
+
+# Native Ads & Widgets
+0.0.0.0 data.24smi.net
+0.0.0.0 fonts.24smi.net
+0.0.0.0 jsn.24smi.net
+0.0.0.0 widget.sparrow.ru
+0.0.0.0 widget.svk-native.ru
+
