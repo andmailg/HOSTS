@@ -921,9 +921,7 @@
 127.0.0.1 tag.yieldoptimizer.com
 127.0.0.1 dp2.33across.com
 127.0.0.1 html-load.com
-127.0.0.1 idsync.rlcdn.com
 127.0.0.1 0.html-load.com
-127.0.0.1 pbs.optidigital.com
 127.0.0.1 adobe.adhaven.com
 127.0.0.1 opti-digital.com
 127.0.0.1 adnxs.com
