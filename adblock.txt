@@ -275,9 +275,6 @@
 127.0.0.1 csync.loopme.me
 127.0.0.1 csync.smartadserver.com
 127.0.0.1 ctx.weborama.com
-127.0.0.1 cv7rn7.tdum.alibaba.com
-127.0.0.1 cvmapi.mts.ru
-127.0.0.1 d-102121267274565559.ampproject.net
 127.0.0.1 d.advscdn.com
 127.0.0.1 d.pub.network
 127.0.0.1 data-beacons.s-onetag.com
@@ -314,7 +311,6 @@
 127.0.0.1 e2c76.gcp.gvt2.com
 127.0.0.1 eb2.3lift.com
 127.0.0.1 edge.aditude.io
-127.0.0.1 egress.yandex.net
 127.0.0.1 embeds.rambler.ru
 127.0.0.1 emd.hybrid.ai
 127.0.0.1 ep1.adtrafficquality.google
@@ -400,7 +396,6 @@
 127.0.0.1 impression-inferences-edge-prod.playwire.com
 127.0.0.1 impression.appmetrica.yandex.com
 127.0.0.1 inapps.appsflyersdk.com
-127.0.0.1 informer.yandex.ru
 127.0.0.1 inmobi-match.dotomi.com
 127.0.0.1 ins.elements.video
 127.0.0.1 insight.adsrvr.org
@@ -475,15 +470,12 @@
 127.0.0.1 matomo.finam.ru
 127.0.0.1 mc.acint.net
 127.0.0.1 mc.webvisor.org
-127.0.0.1 mc.yandex.com
 127.0.0.1 mcdp-chidc2.outbrain.com
 127.0.0.1 membrana-cdn.media
 127.0.0.1 metrics.alfabank.ru
 127.0.0.1 metrika-informer.com
 127.0.0.1 mid.rkdms.com
 127.0.0.1 ml314.com
-127.0.0.1 mobile.yandexadexchange.net
-127.0.0.1 mpsbol.clickstream.sberbank.ru
 127.0.0.1 ms-ads-image.t-static.ru
 127.0.0.1 ms-cookie-sync.presage.io
 127.0.0.1 ms-dsp.t-bank-app.ru
@@ -501,7 +493,6 @@
 127.0.0.1 news.2xclick.ru
 127.0.0.1 news.gnezdo.ru
 127.0.0.1 nr.bidderstack.com
-127.0.0.1 nsdk-s09.uss.2gis.com
 127.0.0.1 nzkjjqrcte.com
 127.0.0.1 oa.openxcdn.net
 127.0.0.1 oajs.openx.net
@@ -576,7 +567,6 @@
 127.0.0.1 publisher-assets.spot.im
 127.0.0.1 pubmatic-match.dotomi.com
 127.0.0.1 pushmarketing.sberbank-tele.com
-127.0.0.1 pushsdk.mts.ru
 127.0.0.1 pushserver.edna.id
 127.0.0.1 pushserver.sberbank-tele.com
 127.0.0.1 px.adhigh.net
@@ -652,7 +642,6 @@
 127.0.0.1 s17.upd.kaspersky.com
 127.0.0.1 s18.upd.kaspersky.com
 127.0.0.1 s19.upd.kaspersky.com
-127.0.0.1 s1.bss.2gis.com
 127.0.0.1 s2124157686.t.eloqua.com
 127.0.0.1 s2ssc.aniview.com
 127.0.0.1 sb.scorecardresearch.com
@@ -678,7 +667,6 @@
 127.0.0.1 simage2.pubmatic.com
 127.0.0.1 simage4.pubmatic.com
 127.0.0.1 singapore.performaized.com
-127.0.0.1 site.yandex.net
 127.0.0.1 siteintercept.qualtrics.com
 127.0.0.1 skcrtxr.com
 127.0.0.1 smi2.ru
@@ -707,7 +695,6 @@
 127.0.0.1 st.hybrid.ai
 127.0.0.1 stat.adtec.ru
 127.0.0.1 stat.media
-127.0.0.1 stat.online.sberbank.ru
 127.0.0.1 stat.radar.imgsmail.ru
 127.0.0.1 static-cdn.spot.im
 127.0.0.1 static.adsafeprotected.com
@@ -780,7 +767,6 @@
 127.0.0.1 tpc.googlesyndication.com
 127.0.0.1 tpo.gg
 127.0.0.1 tr.blismedia.com
-127.0.0.1 tracing.obs.mts.ru
 127.0.0.1 track-events.membrana.media
 127.0.0.1 track.onef.pro
 127.0.0.1 track1.aniview.com
