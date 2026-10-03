@@ -882,11 +882,13 @@
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 cdn.advertronic.io
 0.0.0.0 cdn-rtb.sape.ru
+0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 content.adriver.ru
 0.0.0.0 dsum-sec.casalemedia.com
 0.0.0.0 ev.adriver.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 exchange.buzzoola.com
+0.0.0.0 fcgi4.gnezdo.ru
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fp.hybrid.ai
 0.0.0.0 fpf.hybrid.ai
@@ -898,9 +900,11 @@
 0.0.0.0 partners.tremorhub.com
 0.0.0.0 pb.adriver.ru
 0.0.0.0 pbs.alfasense.com
+0.0.0.0 quotiq.ru
 0.0.0.0 r.ussp.io
 0.0.0.0 rutarget.ru
 0.0.0.0 s1.adform.net
+0.0.0.0 smi2.ru
 0.0.0.0 sp.linkssp.ru
 0.0.0.0 sp.ohmy.bid
 0.0.0.0 ssp.al-adtech.com
@@ -909,12 +913,14 @@
 0.0.0.0 ssp.hybrid.ai
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 static.kimberlite.io
+0.0.0.0 static.smi2.net
 0.0.0.0 tube.buzzoola.com
 0.0.0.0 uid.ssp.bidvol.com
 0.0.0.0 us-u.openx.net
 0.0.0.0 yhb.p.otm-r.com
 
 # Analytics, Trackers & Retargeting
+0.0.0.0 02a67f16-befb-11f1-8e0f-002590c82436.n2.sync.bumlam.com
 0.0.0.0 48d46c84-bed6-11f1-86e0-002590c0647c.n4.sync.bumlam.com
 0.0.0.0 2829036961790996299327.cm.a.mts.ru
 0.0.0.0 acint.net
@@ -964,4 +970,3 @@
 0.0.0.0 jsn.24smi.net
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 widget.svk-native.ru
-
