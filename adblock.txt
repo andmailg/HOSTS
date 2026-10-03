@@ -314,7 +314,6 @@
 127.0.0.1 d-102121267274565559.ampproject.net
 127.0.0.1 d.advscdn.com
 127.0.0.1 d.pub.network
-127.0.0.1 d1vi3mu7ljhkg.cloudfront.net
 127.0.0.1 data-beacons.s-onetag.com
 127.0.0.1 data.24smi.net
 127.0.0.1 data.dianomi.com
@@ -484,7 +483,6 @@
 127.0.0.1 ksn-tcert-geo.kaspersky-labs.com
 127.0.0.1 ksn-url-geo.kaspersky-labs.com
 127.0.0.1 ksn-verdict-geo.kaspersky-labs.com
-127.0.0.1 ktlt.cdn-vk.ru
 127.0.0.1 l.clarity.ms
 127.0.0.1 l.sharethis.com
 127.0.0.1 l.viadata.store
@@ -667,7 +665,6 @@
 127.0.0.1 rumcdn.geoedge.be
 127.0.0.1 rurtb.viadata.store
 127.0.0.1 rutarget.ru
-127.0.0.1 rutrk.org
 127.0.0.1 s-gm.mmstat.com
 127.0.0.1 s-img.mgid.com
 127.0.0.1 s-v6exp1-ds.metric.gstatic.com
