@@ -218,7 +218,6 @@
 127.0.0.1 cdn.advg.agency
 127.0.0.1 cdn.al-adtech.com
 127.0.0.1 cdn.alfasense.net
-127.0.0.1 cdn.ampproject.org
 127.0.0.1 cdn.appsflyer.com
 127.0.0.1 cdn.betweendigital.com
 127.0.0.1 cdn.brandmetrics.com
@@ -233,7 +232,6 @@
 127.0.0.1 cdn.indexww.com
 127.0.0.1 cdn.intergi.com
 127.0.0.1 cdn.intergient.com
-127.0.0.1 cdn.jsdelivr.net
 127.0.0.1 cdn.membrana.media
 127.0.0.1 cdn.mgid.com
 127.0.0.1 cdn.onesignal.com
@@ -424,7 +422,6 @@
 127.0.0.1 htlb.casalemedia.com
 127.0.0.1 i.liadm.com
 127.0.0.1 i.mycdn.me
-127.0.0.1 ib.
 127.0.0.1 ichnaea-web.netflix.com
 127.0.0.1 id.a-mx.com
 127.0.0.1 id.adx.bid
@@ -619,7 +616,6 @@
 127.0.0.1 prebid-server.rubiconproject.com
 127.0.0.1 prebid.a-mo.net
 127.0.0.1 prebid.admatic.de
-127.0.0.1 prebid.
 127.0.0.1 prebid.videostep.com
 127.0.0.1 pretarg.adhigh.net
 127.0.0.1 prg.smartadserver.com
@@ -719,14 +715,13 @@
 127.0.0.1 s2ssc.aniview.com
 127.0.0.1 s4WyPk-dnsotls-ds.metric.gstatic.com
 127.0.0.1 sb.scorecardresearch.com
-127.0.0.1 script-api.ccgateway
+127.0.0.1 script-api.ccgateway.net
 127.0.0.1 script.crazyegg.com
 127.0.0.1 scripts.opti-digital.com
 127.0.0.1 sdk-api.apptracer.ru
 127.0.0.1 sdk.streamrail.com
 127.0.0.1 sea1-sync.a-mo.net
 127.0.0.1 secure-assets.rubiconproject.com
-127.0.0.1 secure.
 127.0.0.1 secure.quantserve.com
 127.0.0.1 securepubads.g.doubleclick.net
 127.0.0.1 sendsay.ru
@@ -914,7 +909,6 @@
 127.0.0.1 www.googleadservices.com
 127.0.0.1 x.bidswitch.net
 127.0.0.1 x01.aidata.io
-127.0.0.1 yandex.ru
 127.0.0.1 yhb.p.otm-r.com
 127.0.0.1 ym-tack.b-cdn.net
 127.0.0.1 z.cdn.adtarget.market
