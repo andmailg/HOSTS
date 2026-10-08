@@ -12,22 +12,18 @@ OUTPUT_FILE = "adblock_auto.txt"
 CLEAN_OUTPUT_FILE = "adblock_clean.txt"
 DAYS_TO_KEEP = 30
 DEBUG_MODE = os.getenv("URLSCAN_DEBUG", "").lower() in ("1", "true", "yes")
+URLS_FILE = "urls.txt"
 
-# urlscan.io больше не присваивает теги "ads"/"tracking" — ищем по ключевым словам в домене
-QUERY = "date:>now-7d"
-PAGE_SIZE = 10000
-
-# Ключевые слова для фильтрации доменов (реклама, трекеры, аналитика)
-# Избегаем слишком коротких/общих (типа "ad", "track") — дают много ложных срабатываний
+# Ключевые слова для фильтрации рекламных/трекерных доменов
 KEYWORDS = [
-    # Рекламные сети и платформы
+    # Рекламные сети
     "adsense", "adserv", "adnetwork", "adserver", "adtech",
     "doubleclick", "googlesyndication", "googleadservices",
     "googleads", "adfox", "adroll", "adspeed", "adswizz",
     "adsystem", "adtarget", "adtelligence",
-    "adadvisor", "adblade", "adcolizon", "addthis",
+    "adadvisor", "adblade", "addthis",
     "adform", "adgeneration", "adhese", "adikteev",
-    "adkernel", "adleade", "admeld", "admixer",
+    "adkernel", "admeld", "admixer",
     "admon", "adnami", "adnetics", "adnotch",
     "adreactor", "adreporting", "adriver",
     "adscale", "adsdk",
@@ -52,12 +48,16 @@ KEYWORDS = [
     "clickadhoc", "monetag", "adsterra", "plugrush",
     "richmedia", "media.net", "revcontent", "outbrain",
     "taboola", "contentabc", "recommended",
+    # Российские рекламные сети
+    "al-ads", "al-adtech", "advantag", "adriver",
+    "bidvolution", "buzzoola", "kinja", "gstat",
+    "gstatic", "yastatic", "yandexads",
+    "sberads", "sbermarket",
 ]
 
-# Регулярка для поиска ключевых слов в домене
 KEYWORDS_REGEX = re.compile(r"(" + "|".join(re.escape(k) for k in KEYWORDS) + r")", re.IGNORECASE)
 
-# Легитимные домены/поддомены, которые всегда исключаем
+# Легитимные домены, которые всегда исключаем
 WHITELIST = {
     "google.", "yandex.", "vk.com", "mail.ru", "urlscan.io", "github.",
     "microsoft.", "amazon.", "cloudflare.", "akamai.", "fastly.",
@@ -74,141 +74,130 @@ WHITELIST = {
     "tomtom.com", "orbis.tomtom",
     "stagingplatform",
 }
-# Валидация adblock-синтаксиса: ||domain^ — допускает любые TLD
+
 ADBLOCK_SYNTAX_REGEX = re.compile(r"^\|\|[a-z0-9\.\-]+\^$")
 
-# =====================================================
+
+def load_target_domains():
+    """Загружает целевые домены из urls.txt"""
+    targets = []
+    if not os.path.exists(URLS_FILE):
+        print(f"⚠️ Файл {URLS_FILE} не найден.")
+        return targets
+
+    with open(URLS_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            domain = line.strip().lower()
+            if domain and not domain.startswith("#"):
+                targets.append(domain)
+
+    print(f"📋 Целевые домены ({len(targets)}): {', '.join(targets)}")
+    return targets
 
 
-def fetch_urlscan_domains():
-    """Собирает домены из urlscan.io и фильтрует по ключевым словам"""
-    domains = set()
-    total_scanned = 0
-    matched = 0
-
+def get_scan_uuid(target):
+    """Ищет UUID последнего скана целевого домена"""
+    headers = {
+        "User-Agent": "andmailg-HOSTS-tracker-updater/2.3",
+        "X-API-Key": API_KEY or "",
+    }
+    
     try:
-        headers = {
-            "User-Agent": "andmailg-HOSTS-tracker-updater/2.3",
-            "X-API-Key": API_KEY or "",
-        }
-
-        url = "https://urlscan.io/api/v1/search/"
-        verify_ssl = True
-
-        # Запрашиваем все публичные сканы за последние 30 дней
-        params = {
-            "q": QUERY,
-            "size": PAGE_SIZE,
-        }
-
-        # Функция для выполнения запроса с SSL fallback
-        def do_request(url, params, headers):
-            nonlocal verify_ssl
-            try:
-                return requests.get(url, headers=headers, params=params, timeout=60, verify=True)
-            except requests.exceptions.SSLError as ssl_err:
-                print("⚠️ SSL-проверка не удалась (возможно, корпоративный антивирус).")
-                print("   Повторная попытка без проверки сертификата...")
-                try:
-                    resp = requests.get(url, headers=headers, params=params, timeout=60, verify=False)
-                    verify_ssl = False
-                    return resp
-                except requests.exceptions.SSLError:
-                    print("❌ SSL-ошибка при повторной попытке.")
-                    sys.exit(f"SSL error (both verified and unverified failed): {ssl_err}")
-
-        # Paginated request — urlscan.io возвращает has_more + search_after
-        import time as _time
-        page_num = 0
-        max_pages = 5  # максимум страниц (при PAGE_SIZE=10000 должно хватить 1-2)
-        while page_num < max_pages:
-            response = do_request(url, params, headers)
-            page_num += 1
-
-            # Обработка ошибок API
-            if response.status_code == 429:
-                wait_time = 60
-                print(f"⏳ Лимит запросов (429). Ждём {wait_time} сек...")
-                _time.sleep(wait_time)
-                page_num -= 1  # не считаем этот запрос
-                continue
-
-            if response.status_code in (401, 403):
-                print(f"❌ Ошибка авторизации ({response.status_code}). Проверьте URLSCAN_API_KEY!")
-                sys.exit(f"Authorization failed ({response.status_code})")
-
-            if response.status_code != 200:
-                print(f"❌ API вернул код {response.status_code}")
-                print(response.text[:500])
-                sys.exit(f"Unexpected API response: {response.status_code}")
-
-            if "application/json" not in response.headers.get("Content-Type", ""):
-                print("❌ Ожидался JSON, получен HTML!")
-                sys.exit("Invalid content type")
-
-            data = response.json()
-            results = data.get("results", [])
-            total = data.get("total", 0)
-            has_more = data.get("has_more", False)
-
-            if DEBUG_MODE:
-                print(f"\n🔍 DEBUG page {page_num}: total={total}, returned={len(results)}, has_more={has_more}")
-                print(f"🔍 DEBUG: verify_ssl={verify_ssl}")
-
-            # Фильтрация результатов по ключевым словам
-            for result in results:
-                total_scanned += 1
-                page = result.get("page", {})
-                domain = page.get("domain")
-
-                if not domain:
-                    continue
-
-                domain = domain.lower().strip()
-
-                # Пропускаем пустые и слишком короткие домены
-                if not domain or "." not in domain or len(domain) < 5:
-                    continue
-
-                # Проверяем ключевые слова
-                if not KEYWORDS_REGEX.search(domain):
-                    continue
-
-                # Пропускаем из whitelist
-                if any(whitelisted in domain for whitelisted in WHITELIST):
-                    continue
-
-                domains.add(domain)
-                matched += 1
-
-            if not has_more:
-                break
-
-            # Задержка между страницами
-            _time.sleep(1)
-
-            # Получаем search_after для следующей страницы
-            last_result = results[-1]
-            sort_val = last_result.get("sort")
-            if not sort_val:
-                print("⚠️ has_more=True, но нет sort для pagination. Остановка.")
-                break
-
-            # urlscan.io ожидает строку, join массива [timestamp, uuid]
-            params["search_after"] = ",".join(str(s) for s in sort_val)
-
-        print(f"📊 Просканировано доменов: {total_scanned}")
-        print(f"🎯 Нашлось совпадений: {matched}")
-        print(f"✅ Уникальных доменов: {len(domains)}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"❌ Сетевая ошибка: {e}")
-        sys.exit(f"Network error: {e}")
+        r = requests.get(
+            "https://urlscan.io/api/v1/search/",
+            params={"q": f"domain:{target}", "size": 1, "sort": "-time"},
+            headers=headers,
+            timeout=30,
+        )
+        
+        if r.status_code == 200:
+            data = r.json()
+            if data.get("results"):
+                return data["results"][0]["_id"]
     except Exception as e:
-        print(f"❌ Критическая ошибка: {e}")
-        sys.exit(f"Critical error: {e}")
+        print(f"  ⚠️ Ошибка поиска UUID: {e}")
+    
+    return None
 
+
+def fetch_scan_resources(scan_uuid):
+    """Получает все загруженные ресурсы из скана"""
+    headers = {
+        "User-Agent": "andmailg-HOSTS-tracker-updater/2.3",
+        "X-API-Key": API_KEY or "",
+    }
+    
+    domains = set()
+    
+    try:
+        # Получаем данные скана
+        r = requests.get(
+            f"https://urlscan.io/api/v1/result/{scan_uuid}/",
+            headers=headers,
+            timeout=60,
+        )
+        
+        if r.status_code == 403:
+            print("  ⚠️ 403: нужен API ключ для доступа к результатам")
+            return domains
+        
+        if r.status_code != 200:
+            print(f"  ⚠️ Ошибка получения скана: {r.status_code}")
+            return domains
+        
+        scan_data = r.json()
+        
+        # Извлекаем все запросы
+        requests_data = scan_data.get("requests", [])
+        print(f"  📊 Найдено запросов: {len(requests_data)}")
+        
+        for req in requests_data:
+            request_info = req.get("request", {})
+            response_info = req.get("response", {})
+            
+            url = request_info.get("url", "")
+            method = request_info.get("method", "")
+            domain = request_info.get("domain", "")
+            
+            if not url and not domain:
+                continue
+            
+            # Извлекаем домен из URL
+            if not domain:
+                match = re.match(r'https?://([^/]+)', url)
+                if match:
+                    domain = match.group(1).lower()
+            
+            if domain:
+                domains.add(domain)
+        
+        print(f"  ✅ Уникальных доменов из скана: {len(domains)}")
+        
+    except Exception as e:
+        print(f"  ❌ Ошибка: {e}")
+    
     return domains
+
+
+def filter_ad_domains(domains):
+    """Фильтрует рекламные/трекерные домены"""
+    ad_domains = set()
+    
+    for domain in domains:
+        domain = domain.lower().strip()
+        
+        if not domain or "." not in domain or len(domain) < 5:
+            continue
+        
+        # Пропускаем из whitelist
+        if any(whitelisted in domain for whitelisted in WHITELIST):
+            continue
+        
+        # Проверяем ключевые слова
+        if KEYWORDS_REGEX.search(domain):
+            ad_domains.add(domain)
+    
+    return ad_domains
 
 
 def is_valid_domain(domain):
@@ -227,13 +216,44 @@ def main():
     today_str = time.strftime("%Y-%m-%d")
     cutoff_date = datetime.now() - timedelta(days=DAYS_TO_KEEP)
 
-    print("🔄 Сбор свежих рекламных доменов из urlscan.io...")
+    # Загружаем целевые домены
+    targets = load_target_domains()
+    if not targets:
+        print("❌ Нет целевых доменов в urls.txt")
+        sys.exit("No target domains found")
 
-    new_domains = fetch_urlscan_domains()
-    if not new_domains:
-        print("⚠️ Новые домены не найдены. Возможно, API изменил формат ответа.")
+    all_ad_domains = set()
+    
+    for target in targets:
+        target = target.strip().lower()
+        if not target:
+            continue
+        
+        print(f"\n🔍 Обработка: {target}")
+        
+        # Получаем UUID скана
+        scan_uuid = get_scan_uuid(target)
+        if not scan_uuid:
+            print(f"  ⚠️ Сканы не найдены")
+            continue
+        
+        print(f"  UUID скана: {scan_uuid}")
+        
+        # Получаем ресурсы скана
+        scan_domains = fetch_scan_resources(scan_uuid)
+        
+        # Фильтруем рекламные
+        ad_domains = filter_ad_domains(scan_domains)
+        print(f"  🎯 Рекламных/трекерных: {len(ad_domains)}")
+        
+        all_ad_domains.update(ad_domains)
+    
+    print(f"\n📊 Итого рекламных доменов: {len(all_ad_domains)}")
+    
+    if not all_ad_domains:
+        print("⚠️ Рекламные домены не найдены")
         return
-
+    
     # Загружаем старые записи
     tracked_domains = {}
     old_filtered = 0
@@ -253,16 +273,15 @@ def main():
                         datetime.strptime(date_str, "%Y-%m-%d")
                     except ValueError:
                         date_str = today_str
-                    # Фильтруем старые домены по тем же правилам
                     if is_valid_domain(domain):
                         tracked_domains[domain] = date_str
                     else:
                         old_filtered += 1
 
-    print(f"🗑️ Отфильтровано старых доменов: {old_filtered}")
+    print(f"🗑️ Отфильтровано старых: {old_filtered}")
 
     # Обновляем дату
-    for domain in new_domains:
+    for domain in all_ad_domains:
         tracked_domains[domain] = today_str
 
     # Фильтруем по возрасту
@@ -280,7 +299,7 @@ def main():
         print(f"❌ Ошибка валидации: {invalid_rules[:5]}")
         sys.exit("Invalid rules detected")
 
-    # Запись файлов
+    # Запись adblock файлов
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("! Title: Target Ads & Trackers Blocklist (With Metadata)\n")
         f.write(f"! Last Updated: {time.strftime('%Y-%m-%d %H:%M:%S')} UTC\n")
@@ -295,9 +314,21 @@ def main():
         for domain in sorted(active_domains.keys()):
             f.write(f"||{domain}^\n")
 
+    # Генерация hosts-файла
+    HOSTS_FILE = "hosts_adblock.txt"
+    with open(HOSTS_FILE, "w", encoding="utf-8") as f:
+        f.write("# Target Ads & Trackers Blocklist (Hosts format)\n")
+        f.write(f"# Generated: {time.strftime('%Y-%m-%d %H:%M:%S')} UTC\n")
+        f.write(f"# Total domains: {len(active_domains)}\n\n")
+        f.write("127.0.0.1 localhost\n")
+        f.write("::1 localhost\n\n")
+        for domain in sorted(active_domains.keys()):
+            f.write(f"127.0.0.1 {domain}\n")
+
     print(f"✅ Успешно обновлено!")
     print(f"   Активных доменов: {len(active_domains)}")
     print(f"   Удалено старых: {removed_count}")
+    print(f"   Файлы: {OUTPUT_FILE}, {CLEAN_OUTPUT_FILE}, {HOSTS_FILE}")
 
 
 if __name__ == "__main__":

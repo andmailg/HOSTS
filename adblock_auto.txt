@@ -1,6 +1,6 @@
 ! Title: Target Ads & Trackers Blocklist (With Metadata)
-! Last Updated: 2026-10-08 17:23:11 UTC
-! Active domains: 11
+! Last Updated: 2026-10-08 17:30:30 UTC
+! Active domains: 13
 
 ||595f6cc3e4b0f830391ea7a8-doviz.advertune.com^ ! 2026-10-08
 ||5981c108e4b05b0a27f55724-doviz.advertune.com^ ! 2026-10-08
@@ -10,6 +10,8 @@
 ||5e7c9548e4b0fceeab005738-doviz.advertune.com^ ! 2026-10-08
 ||5e7c95a6e4b0fceeab00573e-doviz.advertune.com^ ! 2026-10-08
 ||5f159155e4b07eab2882b712-doviz.advertune.com^ ! 2026-10-08
+||analytics.tfl.capital-goods.uk^ ! 2026-10-08
+||demo.ast-metrics.dev^ ! 2026-10-08
 ||mgmt.climetrics-rating.org^ ! 2026-10-08
 ||projection-advertising.co.uk^ ! 2026-10-08
 ||sberbank.sbermarket.cdek.mg9bj65nlsod262a.pixelbrook.xyz^ ! 2026-10-08

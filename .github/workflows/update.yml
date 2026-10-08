@@ -32,9 +32,9 @@ jobs:
     - name: Commit and Push changes
       if: success()
       run: |
-        git config --local user.email "github-actions[bot]@://github.com"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add adblock.txt adblock_clean.txt
+        git add adblock_auto.txt adblock_clean.txt hosts_adblock.txt
         if ! git diff --cached --quiet; then
           git commit -m "chore: auto-update adblock files"
           git push
