@@ -1,0 +1,5 @@
+! Title: Target Ads & Trackers Blocklist with Auto-Cleanup
+! Last Updated: 2026-10-08 14:35:39 UTC
+! Active domains: 0
+! Removed outdated domains (30d+ inactive): 0
+

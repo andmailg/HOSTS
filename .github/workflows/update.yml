@@ -1,0 +1,55 @@
+name: Update Adblock List
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests certifi
+
+    - name: Run script with Validation
+      id: run_script
+      env:
+        URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
+      run: python update_adblock.py
+
+    - name: Commit and Push changes
+      if: success()
+      run: |
+        git config --local user.email "github-actions[bot]@://github.com"
+        git config --local user.name "github-actions[bot]"
+        git add adblock.txt adblock_clean.txt
+        if ! git diff --cached --quiet; then
+          git commit -m "chore: auto-update adblock files"
+          git push
+        else
+          echo "Изменений в списках нет."
+        fi
+
+    - name: Send Telegram Notification on Failure
+      if: failure()
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          ❌ Ошибка обновления репозитория andmailg/HOSTS!
+          
+          Workflow упал на этапе сборки или синтаксической валидации доменов.
+          Ссылка на лог выполнения: https://github.com{{ github.repository }}/actions/runs/${{ github.run_id }}
