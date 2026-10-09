@@ -34,7 +34,6 @@
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 cdn.ampproject.org
-0.0.0.0 cdn.hsmedia.ru
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 cdn.skcrtxr.com
 0.0.0.0 cdn.viqeo.tv
@@ -81,7 +80,6 @@
 0.0.0.0 mc.yandex.com
 0.0.0.0 mc.yandex.ru
 0.0.0.0 mweb.ck.inmobi.com
-0.0.0.0 n1s1.hsmedia.ru
 0.0.0.0 news.gnezdo.ru
 0.0.0.0 odsp.net
 0.0.0.0 openfpcdn.io
