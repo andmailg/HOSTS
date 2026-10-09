@@ -108,6 +108,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
         r"\.hsmedia\.ru", r"\.viqeo\.tv",
         r"\.bbci\.co\.uk", r"\.bbc\.co\.uk"  # ДОБАВЛЕНО: Доверенные CDN зоны BBC
+        r"\.thetruestory\.news"
     ]
 
     STRICT_DOMAINS_WHITELIST = [
@@ -116,7 +117,13 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
         "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
         "static.files.bbci.co.uk",           # ДОБАВЛЕНО: Вспомогательная статика BBC
-        "emp.bbci.co.uk"
+        "emp.bbci.co.uk",
+        "google.dk",
+        "cloudflare.com",    # ДОБАВЛЕНО: Защита cdnjs.cloudflare.com
+        "jsdelivr.net",      # ДОБАВЛЕНО: Защитаcdn.jsdelivr.net
+        "unpkg.com",          # ДОБАВЛЕНО: Защита unpkg.com
+        "thetruestory.news",
+        "gvt1.com"
     ]
 
     STRICT_SUBDOMAINS_BLACKLIST = [
@@ -196,20 +203,30 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     existing_ad_domains = read_existing_hosts(output_hosts_path)
     all_ad_domains = existing_ad_domains.union(new_ad_domains)
 
-    # --- АВТОМАТИЧЕСКАЯ ОЧИСТКА СТАРОЙ БАЗЫ ОТ ЛОЖНЫХ СРАБАТЫВАНИЙ ---
+    # --- УЛЬТРА-ОЧИСТКА БАЗЫ ОТ ЛОЖНЫХ СРАБАТЫВАНИЙ ---
     filtered_ad_domains = set()
     for domain in all_ad_domains:
         domain_apex = get_apex_domain(f"http://{domain}")
         
-        # Защита: если домен попал в белый список, удаляем его из списка блокировки
-        if domain in STRICT_DOMAINS_WHITELIST or domain == page_apex or f"www.{domain}" == page_apex:
+        # 1. ЗАЩИТА ЦЕЛЕВОГО САЙТА: Полностью запрещаем блокировать целевой Apex-домен и любые его поддомены
+        if page_apex and (domain == page_apex or domain_apex == page_apex):
+            continue  # Автоматически вырезаем сам сайт из блоклиста
+            
+        # 2. Защита глобального белого списка (по точному совпадению или по Apex-корню)
+        if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST:
             if domain not in STRICT_SUBDOMAINS_BLACKLIST:
-                continue  # Пропускаем запись, удаляя её из блоклиста
+                continue  # Вырезаем легитимную статику (cloudflare, gstatic, etc.)
                 
+        # 3. Фолбек для национальных зеркал поисковиков
+        if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
+            if domain not in STRICT_SUBDOMAINS_BLACKLIST and "tagmanager" not in domain:
+                continue
+
         filtered_ad_domains.add(domain)
 
     # Сортировка по иерархии уровней
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
+
 
     # Запись в файл hosts
     with open(output_hosts_path, "w", encoding="utf-8") as hosts_file:
@@ -230,5 +247,5 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
 
 if __name__ == "__main__":
-    TARGET_SCAN = "01a1219b-7be8-7120-93a8-11b87259469c"
+    TARGET_SCAN = "01a12213-dadb-72ef-b048-338de7459aa4"
     generate_hosts_from_api(TARGET_SCAN)

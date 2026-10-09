@@ -2,10 +2,10 @@
 # База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)
 
 0.0.0.0 acint.net
+0.0.0.0 cloudflareinsights.com
 0.0.0.0 kimberlite.io
 0.0.0.0 nnmstatic.win
 0.0.0.0 openfpcdn.io
-0.0.0.0 rutracker.org
 0.0.0.0 yandex.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
 0.0.0.0 a.adiam.tech
@@ -22,6 +22,7 @@
 0.0.0.0 analytics.mediadash.ru
 0.0.0.0 api.onesignal.com
 0.0.0.0 assets.adobedtm.com
+0.0.0.0 b.clarity.ms
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 bs.serving-sys.ru
 0.0.0.0 buy-eu.piano.io
@@ -38,6 +39,7 @@
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 cod.buzzingnippy.com
 0.0.0.0 comcluster.cxense.com
+0.0.0.0 connect.facebook.net
 0.0.0.0 content.adriver.ru
 0.0.0.0 counter.yadro.ru
 0.0.0.0 cr-frontend.weborama-tech.ru
@@ -51,8 +53,6 @@
 0.0.0.0 falcon.useinsider.com
 0.0.0.0 fcgi4.gnezdo.ru
 0.0.0.0 fcgi5.gnezdo.ru
-0.0.0.0 fonts.googleapis.com
-0.0.0.0 fundingchoicesmessages.google.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 hb-bidder.skcrtxr.com
 0.0.0.0 hb.bumlam.com
@@ -67,12 +67,11 @@
 0.0.0.0 ib.mookie1.com
 0.0.0.0 id.cxense.com
 0.0.0.0 id.rlcdn.com
-0.0.0.0 lh3.googleusercontent.com
+0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 match.sharethrough.com
-0.0.0.0 mc.yandex.com
 0.0.0.0 mc.yandex.ru
 0.0.0.0 news.gnezdo.ru
 0.0.0.0 optiyield-data.opti-digital.com
@@ -85,18 +84,23 @@
 0.0.0.0 px.adhigh.net
 0.0.0.0 px2.admon.pro
 0.0.0.0 r.ussp.io
+0.0.0.0 region1.google-analytics.com
 0.0.0.0 rm-script.dotmetrics.net
+0.0.0.0 rsm.zona.mediacampaigns
 0.0.0.0 rst.skcrtxr.com
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 s.amazon-adsystem.com
 0.0.0.0 s.ytimg.com
+0.0.0.0 s0.2mdn.net
 0.0.0.0 s01.pic4net.com
 0.0.0.0 s1.directupload.eu
 0.0.0.0 s1.dmcdn.net
 0.0.0.0 s1.hostingkartinok.com
 0.0.0.0 s2.dmcdn.net
 0.0.0.0 s3-cdn.iportal.ru
+0.0.0.0 scripts.clarity.ms
 0.0.0.0 scripts.opti-digital.com
+0.0.0.0 sessions.bugsnag.com
 0.0.0.0 sp.linkssp.ru
 0.0.0.0 sp.ohmy.bid
 0.0.0.0 ssl.google-analytics.com
@@ -121,7 +125,10 @@
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 www.acint.net
+0.0.0.0 www.clarity.ms
 0.0.0.0 www.google-analytics.com
+0.0.0.0 www.googletagmanager.com
+0.0.0.0 www.googletagservices.com
 0.0.0.0 www.tns-counter.ru
 0.0.0.0 x01.aidata.io
 0.0.0.0 cm.a.mts.ru
@@ -131,8 +138,10 @@
 0.0.0.0 px.ads.linkedin.com
 0.0.0.0 securepubads.g.doubleclick.net
 0.0.0.0 static.a.mts.ru
+0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 sync.targeting.unrulymedia.com
 0.0.0.0 yhb.p.otm-r.com
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
+0.0.0.0 d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com
 0.0.0.0 mybbc-analytics.files.bbci.co.uk
 0.0.0.0 w4jwjj6r7lesmjdsph3hrk2qhy0qpvod.lambda-url.eu-west-1.on.aws
