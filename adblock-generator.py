@@ -156,90 +156,26 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
 
 
 # --- Domain Extraction ---
-def _is_seed_domain(domain: str, seed_domains: Set[str]) -> bool:
-    """Проверяет, является ли домен seed-доменом или его поддоменом."""
-    if domain in seed_domains:
-        return True
-    for seed in seed_domains:
-        if domain.endswith("." + seed):
-            return True
-    return False
-
-
-def add_domains(source: dict, found: dict, exclude: Set[str], seed_domains: Set[str]):
+def add_domains(source: dict, found: dict, exclude: Set[str]):
     """
-    Извлекает абсолютно все домены из результата urlscan.io 
-    для последующей фильтрации рекламы.
+    Извлекает уникальные домены исключительно из готового агрегированного 
+    массива lists.domains ответа urlscan.io.
     """
     if not isinstance(source, dict):
         return
 
-    # Вспомогательная функция очистки домена (удаление портов, пробелов, перевод в нижний регистр)
-    def clean_and_add(raw_domain: str):
-        if not raw_domain or not isinstance(raw_domain, str):
-            return
-        # Очищаем от пробелов, двоеточий с портами (например, domain.com:8080 -> domain.com)
-        domain = raw_domain.strip().lower().split(':')[0]
-        if domain and domain not in exclude and not _is_seed_domain(domain, seed_domains):
-            found[domain] = True
-
-    # =========================================================================
-    # 1. data.requests — домены из цепочки HTTP-запросов
-    # =========================================================================
-    data = source.get("data", {})
-    if isinstance(data, dict):
-        requests_list = data.get("requests", [])
-        if isinstance(requests_list, list):
-            for req in requests_list:
-                if isinstance(req, dict):
-                    req_info = req.get("request", {})
-                    if isinstance(req_info, dict):
-                        url = req_info.get("url", "")
-                        if url and isinstance(url, str):
-                            try:
-                                extracted = urllib.parse.urlparse(url).netloc
-                                clean_and_add(extracted)
-                            except Exception:
-                                pass
-
-    # =========================================================================
-    # 2. page.domains — домены, зафиксированные на главной странице
-    # =========================================================================
-    page = source.get("page", {})
-    if isinstance(page, dict):
-        single_domain = page.get("domain", "")
-        clean_and_add(single_domain)
-        
-        for d in page.get("domains", []):
-            clean_and_add(d)
-
-    # =========================================================================
-    # 3. lists.domains — готовый плоский массив уникальных доменов
-    # =========================================================================
-    lists_data = source.get("lists", {})
-    if isinstance(lists_data, dict):
-        for d in lists_data.get("domains", []):
-            clean_and_add(d)
-            
-        for url in lists_data.get("urls", []):
-            if url and isinstance(url, str):
-                try:
-                    extracted = urllib.parse.urlparse(url).netloc
-                    clean_and_add(extracted)
-                except Exception:
-                    pass
-
-    # =========================================================================
-    # 4. stats.domainStats — агрегированная статистика по доменам
-    # =========================================================================
-    stats = source.get("stats", {})
-    if isinstance(stats, dict):
-        domain_stats = stats.get("domainStats", [])
-        if isinstance(domain_stats, list):
-            for item in domain_stats:
-                if isinstance(item, dict):
-                    d = item.get("domain", "")
-                    clean_and_add(d)
+    # Получаем плоский массив всех зафиксированных доменов
+    domains_list = source.get("lists", {}).get("domains", [])
+    
+    if isinstance(domains_list, list):
+        for raw_domain in domains_list:
+            if raw_domain and isinstance(raw_domain, str):
+                # Очищаем от пробелов и отсекаем порт, если он есть (например, "domain.com:443" -> "domain.com")
+                domain = raw_domain.strip().lower().split(':')[0]
+                
+                # Записываем, если домена нет в белом списке
+                if domain and domain not in exclude:
+                    found[domain] = True
 
 
 def write_adblock(found: dict):
@@ -286,7 +222,7 @@ def main():
 
     # Параметры
     scan_timeout = 180
-    poll_interval = 10
+    poll_interval = 60
 
     if len(sys.argv) > 2:
         scan_timeout = int(sys.argv[2])
@@ -313,7 +249,7 @@ def main():
         # 1. URLScan — пробуем новый скан
         result = send_to_urlscan(start_url, scan_timeout, poll_interval)
         if result:
-            add_domains(result, found, exclude, seed_domains)
+            add_domains(result, found, exclude)
             log(f"  Доменов найдено: {len(found)}", "green")
         else:
             log("  Новый скан не удался — ищем существующие...", "yellow")
@@ -329,7 +265,7 @@ def main():
                         # Считаем только если в скане есть данные
                         if source and (source.get("requests") or source.get("page")):
                             old_count = len(found)
-                            add_domains(source, found, exclude, seed_domains)
+                            add_domains(source, found, exclude)
                             new_count = len(found)
                             if new_count > old_count:
                                 log(f"    Добавлено {new_count - old_count} доменов", "green")

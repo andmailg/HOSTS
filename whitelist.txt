@@ -1,5 +1,6 @@
 yandex.ru
-hsmedia.ru
 yastatic.net
 n1s1.hsmedia.ru
 cdn.hsmedia.ru
+www.google.com
+google.com
