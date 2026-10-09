@@ -15,7 +15,6 @@ def get_api_key():
     api_key = os.environ.get("URLSCAN_API_KEY", "").strip()
     if api_key:
         return api_key
-    
     env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
     if os.path.exists(env_path):
         with open(env_path, "r", encoding="utf-8") as f:
@@ -61,7 +60,6 @@ def fetch_urlscan_data(scan_input):
     print(f"Скачивание данных с urlscan.io для сканирования {uuid}...")
 
     headers = {"x-api-key": api_key}
-
     try:
         response = requests.get(url, timeout=30, verify=False, headers=headers)
         response.raise_for_status()
@@ -72,16 +70,13 @@ def fetch_urlscan_data(scan_input):
 
 
 def read_existing_hosts(file_path):
-    """Считывает уже существующие домены из hosts-файла, чтобы не затереть их"""
     existing_domains = set()
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
-                # Пропускаем комментарии, пустые строки и префиксы без домена
                 if not line or line.startswith("#"):
                     continue
-                # Извлекаем домен (поддерживает форматы '0.0.0.0 domain.com' и '127.0.0.1 domain.com')
                 parts = line.split()
                 if len(parts) >= 2:
                     domain = parts[1].strip().lower()
@@ -91,9 +86,6 @@ def read_existing_hosts(file_path):
 
 
 def sort_domains_by_level(domain_set):
-    """Сортирует домены сначала по уровню (1-2-3-4...), а затем по алфавиту"""
-    # Функция ключа: возвращает кортеж (количество_точек, сам_домен)
-    # Например, для 'com' -> (0, 'com'), для 'yandex.ru' -> (1, 'yandex.ru')
     return sorted(list(domain_set), key=lambda d: (d.count("."), d))
 
 
@@ -101,10 +93,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     scan_uuid = extract_uuid(scan_input)
     raw_data = fetch_urlscan_data(scan_input)
 
-    requests_list = []
-    if isinstance(raw_data, dict):
-        requests_list = raw_data.get("data", {}).get("requests", [])
-
+    requests_list = raw_data.get("data", {}).get("requests", []) if isinstance(raw_data, dict) else []
     if not requests_list:
         print("Ошибка: Лог сетевых запросов в ключе ['data']['requests'] пуст.")
         return
@@ -117,16 +106,21 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
     SYSTEM_ASSETS_PATTERNS = [
         r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
-        r"\.hsmedia\.ru", r"\.viqeo\.tv"
+        r"\.hsmedia\.ru", r"\.viqeo\.tv",
+        r"\.bbci\.co\.uk", r"\.bbc\.co\.uk"  # ДОБАВЛЕНО: Доверенные CDN зоны BBC
     ]
 
     STRICT_DOMAINS_WHITELIST = [
         "yandex.ru","yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
-        "googleapis.com", "gstatic.com", "googleusercontent.com"
+        "googleapis.com", "gstatic.com", "googleusercontent.com",
+        "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
+        "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
+        "static.files.bbci.co.uk",           # ДОБАВЛЕНО: Вспомогательная статика BBC
+        "emp.bbci.co.uk"
     ]
 
     STRICT_SUBDOMAINS_BLACKLIST = [
-        "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru",
+        "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru","yandex.net",
         "google.com"
     ]
 
@@ -137,7 +131,6 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     for item in requests_list:
         req_container = item.get("request", {})
         resp_container = item.get("response", {})
-
         network_req = req_container.get("request", {})
         network_resp = resp_container.get("response", {})
 
@@ -188,8 +181,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
             elif mime_type in ["font/woff2", "text/css", "image/svg+xml"]:
                 domain_verdicts[req_domain]["clean_score"] += 10
 
-    # Сбор новых рекламных доменов текущей сессии
-    page_apex = None
+    # Обработка текущей сессии
     for domain, score in domain_verdicts.items():
         if domain in STRICT_SUBDOMAINS_BLACKLIST:
             new_ad_domains.add(domain)
@@ -200,24 +192,33 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         else:
             clean_domains.add(domain)
 
-    # --- ИНТЕГРАЦИЯ: ДОПОЛНЕНИЕ И ДЕДУПЛИКАЦИЯ ---
-    # Читаем старые домены, если файл уже существовал
+    # Чтение старой базы доменов
     existing_ad_domains = read_existing_hosts(output_hosts_path)
-    
-    # Объединяем старые домены с вновь найденными (автоматическая дедупликация через set)
     all_ad_domains = existing_ad_domains.union(new_ad_domains)
 
-    # Сортируем весь объединенный список по уровням вложенности домена
-    sorted_ad_domains = sort_domains_by_level(all_ad_domains)
+    # --- АВТОМАТИЧЕСКАЯ ОЧИСТКА СТАРОЙ БАЗЫ ОТ ЛОЖНЫХ СРАБАТЫВАНИЙ ---
+    filtered_ad_domains = set()
+    for domain in all_ad_domains:
+        domain_apex = get_apex_domain(f"http://{domain}")
+        
+        # Защита: если домен попал в белый список, удаляем его из списка блокировки
+        if domain in STRICT_DOMAINS_WHITELIST or domain == page_apex or f"www.{domain}" == page_apex:
+            if domain not in STRICT_SUBDOMAINS_BLACKLIST:
+                continue  # Пропускаем запись, удаляя её из блоклиста
+                
+        filtered_ad_domains.add(domain)
 
-    # Записываем обновленный отсортированный список в файл
+    # Сортировка по иерархии уровней
+    sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
+
+    # Запись в файл hosts
     with open(output_hosts_path, "w", encoding="utf-8") as hosts_file:
         hosts_file.write("# [Advanced URLScan Filters Generated Advertising Blocklist]\n")
         hosts_file.write("# База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)\n\n")
         for domain in sorted_ad_domains:
             hosts_file.write(f"0.0.0.0 {domain}\n")
 
-    # ВЫВОД ПРОПУЩЕННЫХ ДОМЕНОВ ТЕКУЩЕЙ СЕССИИ В ТЕРМИНАЛ
+    # Вывод пропущенных доменов в терминал
     print(f"\n--- СПИСОК ПРОПУЩЕННЫХ ЛЕГИТИМНЫХ ДОМЕНОВ ТЕКУЩЕЙ СЕССИИ ({len(clean_domains)}) ---")
     for idx, domain in enumerate(sorted(clean_domains), 1):
         score = domain_verdicts[domain]
@@ -229,5 +230,5 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
 
 if __name__ == "__main__":
-    TARGET_SCAN = "01a11f72-6104-7663-a988-55a46b3027b9"
+    TARGET_SCAN = "01a1219b-7be8-7120-93a8-11b87259469c"
     generate_hosts_from_api(TARGET_SCAN)
