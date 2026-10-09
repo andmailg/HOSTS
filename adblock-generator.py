@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Optional, List, Set, Dict, Any
 
 # --- Config ---
-ADBLOCK_FILE = Path(__file__).parent / "adblock.txt"
+ADBLOCK_FILE = Path(__file__).parent / "adblock_auto.txt"
 DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
 URLSCAN_SEARCH = "https://urlscan.io/api/v1/search/"
@@ -39,6 +39,13 @@ def get_base_url(url: str) -> str:
 def is_same_site(url1: str, url2: str) -> bool:
     u1, u2 = urllib.parse.urlparse(url1), urllib.parse.urlparse(url2)
     return u1.netloc == u2.netloc and u1.scheme == u2.scheme
+
+
+def ensure_scheme(url: str) -> str:
+    """Добавляет https:// если схема отсутствует."""
+    if re.match(r'^https?://', url, re.I):
+        return url
+    return f"https://{url}"
 
 
 def normalize_url(url: str) -> str:
@@ -117,7 +124,7 @@ def urlscan_request(method: str, url: str, data: Optional[bytes] = None,
         return None
 
 
-def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 5) -> Optional[dict]:
+def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -> Optional[dict]:
     """Отправляет URL на сканирование и ждёт результата."""
     payload = json.dumps({"url": url}).encode("utf-8")
     result = urlscan_request("POST", URLSCAN_SCAN, payload)
@@ -132,7 +139,10 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 5) ->
     uuid = result["uuid"]
     log(f"Scan ID: {uuid} — ожидание (timeout: {timeout_sec}с)...", "cyan")
 
-    # Ждём обработки с опросом
+    # Результат urlscan.io становится доступен через ~60 секунд
+    # Бесплатный аккаунт не поддерживает поиск по _id — используем result endpoint
+    result_url = f"https://urlscan.io/api/v1/result/{uuid}/"
+    
     start = time.time()
     retries = 0
     while time.time() - start < timeout_sec:
@@ -141,18 +151,19 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 5) ->
         log(f"  Опрос #{retries} (осталось ~{remaining}с)...", "yellow")
         time.sleep(poll_interval)
 
-        # urlscan.io требует POST-запрос с телом для поиска
-        search_payload = json.dumps({"query": {"term": {"_id": uuid}}}).encode("utf-8")
-        data = urlscan_request("POST", URLSCAN_SEARCH, search_payload)
+        # Прямой запрос к result endpoint
+        data = urlscan_request("GET", result_url)
 
+        # 404 = скан ещё не готов — продолжаем опрос
         if data is None:
             continue
 
-        hits = data.get("hits", {}).get("hits", [])
-        if hits:
-            source = hits[0].get("_source", {})
-            log(f"  Результат получен на опросе #{retries}!", "green")
-            return source
+        # 200 — результат готов
+        if "requests" in data or "page" in data:
+            log(f"  Результат получен на опросе #{retries}! ({len(data.get('requests', []))} запросов)", "green")
+            return data
+        else:
+            log(f"  Ответ без данных: {list(data.keys())[:5]}", "yellow")
 
     log(f"Таймаут ({timeout_sec}с) после {retries} опросов", "red")
     return None
@@ -168,7 +179,7 @@ def extract_domains_from_url(url: str) -> Optional[str]:
 
 
 def add_domains(source: dict, found: dict):
-    """Извлекает домены из результата urlscan.io."""
+    """Извлекает домены из результата urlscan.io (search или result API)."""
     # 1. request.domains — основной источник
     request = source.get("request", {})
     if isinstance(request, dict):
@@ -208,6 +219,35 @@ def add_domains(source: dict, found: dict):
                 domain = extract_domains_from_url(res_url)
                 if domain:
                     found[domain] = True
+    
+    # 3. task — дополнительная информация
+    task = source.get("task", {})
+    if isinstance(task, dict):
+        # task.url
+        domain = extract_domains_from_url(task.get("url", ""))
+        if domain:
+            found[domain] = True
+        
+        # task.domain
+        if task.get("domain"):
+            found[task["domain"].lower()] = True
+    
+    # 4. requests — массив загруженных ресурсов
+    requests_list = source.get("requests", [])
+    if isinstance(requests_list, list):
+        for req in requests_list:
+            if isinstance(req, dict):
+                # req.request.url
+                req_info = req.get("request", {})
+                if isinstance(req_info, dict):
+                    url = req_info.get("url", "")
+                    if url:
+                        domain = extract_domains_from_url(url)
+                        if domain:
+                            found[domain] = True
+                    # req.request.domain
+                    if req_info.get("domain"):
+                        found[req_info["domain"].lower()] = True
 
 
 # --- Adblock File ---
@@ -250,14 +290,14 @@ def main():
         log(f"Файл не найден: {url_file}", "red")
         sys.exit(1)
 
-    urls = [line.strip() for line in url_file.read_text(encoding="utf-8").splitlines() if line.strip()]
+    urls = [ensure_scheme(line.strip()) for line in url_file.read_text(encoding="utf-8").splitlines() if line.strip()]
     log(f"Загружено {len(urls)} URL из {url_file}", "green")
 
     # Параметры
     max_depth = 1
     max_pages = 50
     scan_timeout = 180
-    poll_interval = 5
+    poll_interval = 10
 
     if len(sys.argv) > 2:
         max_depth = int(sys.argv[2])
@@ -272,24 +312,39 @@ def main():
 
     found: Dict[str, bool] = {}
     visited: Set[str] = set()
+    seed_hosts: Set[str] = set()
 
     for start_url in urls:
         seed_host = urllib.parse.urlparse(start_url).netloc
+        seed_hosts.add(seed_host)
         log(f"\n{'='*60}", "cyan")
         log(f"Обработка: {start_url}", "green")
 
-        # 1. URLScan
+        # 1. URLScan — пробуем новый скан
         result = send_to_urlscan(start_url, scan_timeout, poll_interval)
         if result:
             add_domains(result, found)
             log(f"  Доменов найдено: {len(found)}", "green")
         else:
-            log("  Результат не получен, пропускаем", "yellow")
+            log("  Новый скан не удался — ищем существующие...", "yellow")
+            # Fallback: ищем существующие сканы домена
+            existing = urlscan_request("GET", f"{URLSCAN_SEARCH}?q=domain:{seed_host}&size=1&sort=-time")
+            if existing:
+                hits = existing.get("hits", {}).get("hits", [])
+                if hits:
+                    source = hits[0].get("_source", {})
+                    add_domains(source, found)
+                    log(f"  Найден существующий скан, доменов: {len(found)}", "green")
+                else:
+                    log("  Существующих сканов не найдено", "yellow")
+            else:
+                log("  Ошибка поиска существующих сканов", "red")
         time.sleep(DELAY_SEC)
 
         # 2. Crawling
         if max_depth > 0:
             log(f"Обход сайта {seed_host} (глубина до {max_depth})...", "cyan")
+            visited.add(start_url)  # Исключаем дубль сканирования seed-URL
             queue = [(start_url, 0)]
             depth_map = {start_url: 0}
             processed = 0
@@ -320,9 +375,15 @@ def main():
 
             log(f"Обход завершён: {processed} страниц", "green")
 
-    log(f"\{'='*60}", "green")
-    log(f"Найдено уникальных доменов: {len(found)}", "green")
-    write_adblock(found)
+    # Исключаем seed-домены (сам сканируемый сайт и его поддомены)
+    filtered = {d: True for d in found if not any(d == sh or d.endswith('.' + sh) for sh in seed_hosts)}
+    excluded = len(found) - len(filtered)
+    if excluded:
+        log(f"Исключено seed-доменов: {excluded}", "yellow")
+
+    log(f"{'='*60}", "green")
+    log(f"Найдено уникальных доменов: {len(found)} (после фильтрации: {len(filtered)})", "green")
+    write_adblock(filtered)
     log("=== Готово ===", "green")
 
 

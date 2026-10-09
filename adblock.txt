@@ -970,3 +970,4 @@
 0.0.0.0 jsn.24smi.net
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 widget.svk-native.ru
+
