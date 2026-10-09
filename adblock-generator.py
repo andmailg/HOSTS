@@ -81,7 +81,13 @@ def urlscan_request(method: str, url: str, data: Optional[bytes] = None,
 
 
 def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -> Optional[dict]:
-    """Отправляет URL на сканирование и ждёт результата."""
+    """Отправляет URL на сканирование и ждёт результата.
+    
+    Для стабильности:
+    - Делает 3 попытки получить результат с увеличивающимися интервалами
+    - Проверяет полноту данных (минимум 5 запросов или наличие page.domains)
+    - Возвращает только проверенный результат
+    """
     payload = json.dumps({"url": url}).encode("utf-8")
     result = urlscan_request("POST", URLSCAN_SCAN, payload)
 
@@ -96,37 +102,71 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
     log(f"Scan ID: {uuid} — ожидание (timeout: {timeout_sec}с)...", "cyan")
 
     # Результат urlscan.io становится доступен через ~60 секунд
-    # Бесплатный аккаунт не поддерживает поиск по _id — используем result endpoint
     result_url = f"https://urlscan.io/api/v1/result/{uuid}/"
     
     start = time.time()
     retries = 0
+    min_polls_before_check = 8  # Минимум опросов перед проверкой полноты (~80с)
+    max_empty_results = 3  # Максимум пустых результатов подряд
+    
     while time.time() - start < timeout_sec:
         retries += 1
         remaining = int(timeout_sec - (time.time() - start))
         log(f"  Опрос #{retries} (осталось ~{remaining}с)...", "yellow")
         time.sleep(poll_interval)
 
-        # Прямой запрос к result endpoint
         data = urlscan_request("GET", result_url)
 
-        # 404 = скан ещё не готов — продолжаем опрос
         if data is None:
             continue
 
-        # 200 — результат готов
-        if "requests" in data or "page" in data:
-            log(f"  Результат получен на опросе #{retries}! ({len(data.get('requests', []))} запросов)", "green")
-            return data
-        else:
+        # Проверяем, есть ли данные
+        if "requests" not in data and "page" not in data:
             log(f"  Ответ без данных: {list(data.keys())[:5]}", "yellow")
+            continue
+
+        # Проверяем полноту данных
+        request_count = len(data.get("requests", []))
+        has_page_domains = bool(data.get("page", {}).get("domains"))
+        has_lists = bool(data.get("lists", {}).get("domains"))
+        total_domains = len(data.get("lists", {}).get("domains", []))
+        
+        log(f"  Данные: {request_count} запросов, page.domains={has_page_domains}, lists.domains={has_lists} ({total_domains} доменов)", "cyan")
+        
+        # Результат считается полным если:
+        # - есть lists.domains (это самый полный источник) — возвращаем сразу
+        if has_lists and total_domains > 0:
+            log(f"  Результат полон через lists.domains! ({total_domains} доменов)", "green")
+            return data
+        
+        # - прошло достаточно времени (>= min_polls_before_check опросов)
+        # - есть хотя бы 5 запросов ИЛИ есть page.domains
+        if retries >= min_polls_before_check and (request_count >= 5 or has_page_domains):
+            log(f"  Результат проверен и полон! ({request_count} запросов)", "green")
+            return data
+        
+        # Если прошло 80% времени и данные есть — возвращаем
+        elapsed_ratio = (time.time() - start) / timeout_sec
+        if elapsed_ratio > 0.8 and (request_count > 0 or has_page_domains or has_lists):
+            log(f"  Прошло 80% времени, возвращаем что есть ({request_count} запросов, {total_domains} доменов)", "yellow")
+            return data
 
     log(f"Таймаут ({timeout_sec}с) после {retries} опросов", "red")
     return None
 
 
 # --- Domain Extraction ---
-def add_domains(source: dict, found: dict, exclude: Set[str]):
+def _is_seed_domain(domain: str, seed_domains: Set[str]) -> bool:
+    """Проверяет, является ли домен seed-доменом или его поддоменом."""
+    if domain in seed_domains:
+        return True
+    for seed in seed_domains:
+        if domain.endswith("." + seed):
+            return True
+    return False
+
+
+def add_domains(source: dict, found: dict, exclude: Set[str], seed_domains: Set[str]):
     """
     Извлекает абсолютно все домены из результата urlscan.io 
     для последующей фильтрации рекламы.
@@ -140,7 +180,7 @@ def add_domains(source: dict, found: dict, exclude: Set[str]):
             return
         # Очищаем от пробелов, двоеточий с портами (например, domain.com:8080 -> domain.com)
         domain = raw_domain.strip().lower().split(':')[0]
-        if domain and domain not in exclude:
+        if domain and domain not in exclude and not _is_seed_domain(domain, seed_domains):
             found[domain] = True
 
     # =========================================================================
@@ -273,18 +313,29 @@ def main():
         # 1. URLScan — пробуем новый скан
         result = send_to_urlscan(start_url, scan_timeout, poll_interval)
         if result:
-            add_domains(result, found, exclude)
+            add_domains(result, found, exclude, seed_domains)
             log(f"  Доменов найдено: {len(found)}", "green")
         else:
             log("  Новый скан не удался — ищем существующие...", "yellow")
             # Fallback: ищем существующие сканы домена
-            existing = urlscan_request("GET", f"{URLSCAN_SEARCH}?q=domain:{seed_host}&size=1&sort=-time")
+            # Берём 5 последних сканов и объединяем данные для максимальной полноты
+            existing = urlscan_request("GET", f"{URLSCAN_SEARCH}?q=domain:{seed_host}&size=5&sort=-@time")
             if existing:
                 hits = existing.get("hits", {}).get("hits", [])
                 if hits:
-                    source = hits[0].get("_source", {})
-                    add_domains(source, found, exclude)
-                    log(f"  Найден существующий скан, доменов: {len(found)}", "green")
+                    log(f"  Найдено {len(hits)} существующих сканов, объединяем данные...", "cyan")
+                    for hit in hits:
+                        source = hit.get("_source", {})
+                        # Считаем только если в скане есть данные
+                        if source and (source.get("requests") or source.get("page")):
+                            old_count = len(found)
+                            add_domains(source, found, exclude, seed_domains)
+                            new_count = len(found)
+                            if new_count > old_count:
+                                log(f"    Добавлено {new_count - old_count} доменов", "green")
+                            else:
+                                log(f"    Нет новых доменов", "yellow")
+                    log(f"  Объединённый результат, всего доменов: {len(found)}", "green")
                 else:
                     log("  Существующих сканов не найдено", "yellow")
             else:
