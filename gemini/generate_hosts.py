@@ -7,7 +7,7 @@ import requests
 import tldextract
 import urllib3
 
-# Отключаем предупреждения о небезопасном HTTPS (корпоративные прокси/сертификаты)
+# Отключаем предупреждения о небезопасном HTTPS
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
@@ -71,6 +71,32 @@ def fetch_urlscan_data(scan_input):
         sys.exit(1)
 
 
+def read_existing_hosts(file_path):
+    """Считывает уже существующие домены из hosts-файла, чтобы не затереть их"""
+    existing_domains = set()
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                # Пропускаем комментарии, пустые строки и префиксы без домена
+                if not line or line.startswith("#"):
+                    continue
+                # Извлекаем домен (поддерживает форматы '0.0.0.0 domain.com' и '127.0.0.1 domain.com')
+                parts = line.split()
+                if len(parts) >= 2:
+                    domain = parts[1].strip().lower()
+                    if domain:
+                        existing_domains.add(domain)
+    return existing_domains
+
+
+def sort_domains_by_level(domain_set):
+    """Сортирует домены сначала по уровню (1-2-3-4...), а затем по алфавиту"""
+    # Функция ключа: возвращает кортеж (количество_точек, сам_домен)
+    # Например, для 'com' -> (0, 'com'), для 'yandex.ru' -> (1, 'yandex.ru')
+    return sorted(list(domain_set), key=lambda d: (d.count("."), d))
+
+
 def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     scan_uuid = extract_uuid(scan_input)
     raw_data = fetch_urlscan_data(scan_input)
@@ -83,42 +109,30 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         print("Ошибка: Лог сетевых запросов в ключе ['data']['requests'] пуст.")
         return
 
-    # Рекламные паттерны
     AD_TRACKER_PATTERNS = [
         r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding",
         r"\/ads\/system\/", r"sync-loader", r"counter", r"analytics",
         r"gnezdo\.ru", r"fundingchoices", r"\/cm\.", r"context\.js"
     ]
 
-    # Системные ассеты CDN сайта
     SYSTEM_ASSETS_PATTERNS = [
         r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
         r"\.hsmedia\.ru", r"\.viqeo\.tv"
     ]
 
-    # Точечный список безопасных доменов статики и инфраструктуры
     STRICT_DOMAINS_WHITELIST = [
-        "yastatic.net",
-        "yandex.ru",
-        "avatars.mds.yandex.net",
-        "favicon.yandex.net",
-        "googleapis.com",
-        "gstatic.com",
-        "googleusercontent.com"
+        "yandex.ru","yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
+        "googleapis.com", "gstatic.com", "googleusercontent.com"
     ]
 
-    # Жесткий черный список для поддоменов Яндекса/Google (отменяет белый список)
     STRICT_SUBDOMAINS_BLACKLIST = [
-        "mc.yandex.ru", 
-        "an.yandex.ru", 
-        "ads.yandex.ru",
+        "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru",
         "google.com"
     ]
 
     clean_domains = set()
-    ad_domains = set()
+    new_ad_domains = set()
     domain_verdicts = {}
-    page_apex = None
 
     for item in requests_list:
         req_container = item.get("request", {})
@@ -149,7 +163,6 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         is_ad_pattern = any(re.search(pattern, req_url, re.IGNORECASE) for pattern in AD_TRACKER_PATTERNS)
         is_system_asset = any(re.search(pattern, req_url, re.IGNORECASE) for pattern in SYSTEM_ASSETS_PATTERNS)
 
-        # --- КОРРЕКЦИЯ ВЕСОВ ---
         if is_ad_pattern:
             domain_verdicts[req_domain]["ad_score"] += 30
         elif is_system_asset:
@@ -158,7 +171,6 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         if page_apex and req_apex == page_apex:
             domain_verdicts[req_domain]["clean_score"] += 12
         else:
-            # Увеличен базовый штраф за чужой домен, чтобы срезать mts, weborama, adriver
             domain_verdicts[req_domain]["ad_score"] += 6
 
         if initiator_type == "parser":
@@ -176,36 +188,44 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
             elif mime_type in ["font/woff2", "text/css", "image/svg+xml"]:
                 domain_verdicts[req_domain]["clean_score"] += 10
 
-    # Обработка результатов с умными фильтрами
+    # Сбор новых рекламных доменов текущей сессии
+    page_apex = None
     for domain, score in domain_verdicts.items():
-        # Правило 1: Если поддомен в жестком черном списке — это реклама
         if domain in STRICT_SUBDOMAINS_BLACKLIST:
-            ad_domains.add(domain)
-        # Правило 2: Если домен в строгом белом списке — пропускаем
+            new_ad_domains.add(domain)
         elif domain in STRICT_DOMAINS_WHITELIST or domain == page_apex or f"www.{domain}" == page_apex:
             clean_domains.add(domain)
-        # Правило 3: Стандартная проверка по весам
         elif score["ad_score"] > score["clean_score"]:
-            ad_domains.add(domain)
+            new_ad_domains.add(domain)
         else:
             clean_domains.add(domain)
 
-    # Запись в файл hosts
+    # --- ИНТЕГРАЦИЯ: ДОПОЛНЕНИЕ И ДЕДУПЛИКАЦИЯ ---
+    # Читаем старые домены, если файл уже существовал
+    existing_ad_domains = read_existing_hosts(output_hosts_path)
+    
+    # Объединяем старые домены с вновь найденными (автоматическая дедупликация через set)
+    all_ad_domains = existing_ad_domains.union(new_ad_domains)
+
+    # Сортируем весь объединенный список по уровням вложенности домена
+    sorted_ad_domains = sort_domains_by_level(all_ad_domains)
+
+    # Записываем обновленный отсортированный список в файл
     with open(output_hosts_path, "w", encoding="utf-8") as hosts_file:
         hosts_file.write("# [Advanced URLScan Filters Generated Advertising Blocklist]\n")
-        hosts_file.write(f"# Источник сканирования: {scan_uuid}\n\n")
-        for domain in sorted(ad_domains):
+        hosts_file.write("# База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)\n\n")
+        for domain in sorted_ad_domains:
             hosts_file.write(f"0.0.0.0 {domain}\n")
 
-    # ВЫВОД ПРОПУЩЕННЫХ ДОМЕНОВ В ТЕРМИНАЛ
-    print(f"\n--- СПИСОК ПРОПУЩЕННЫХ ЛЕГИТИМНЫХ ДОМЕНОВ ({len(clean_domains)}) ---")
+    # ВЫВОД ПРОПУЩЕННЫХ ДОМЕНОВ ТЕКУЩЕЙ СЕССИИ В ТЕРМИНАЛ
+    print(f"\n--- СПИСОК ПРОПУЩЕННЫХ ЛЕГИТИМНЫХ ДОМЕНОВ ТЕКУЩЕЙ СЕССИИ ({len(clean_domains)}) ---")
     for idx, domain in enumerate(sorted(clean_domains), 1):
         score = domain_verdicts[domain]
         print(f"{idx:02d}. [OK] {domain:<40} (clean: {score['clean_score']}, ad: {score['ad_score']})")
 
-    print(f"\n УСПЕШНО: Файл '{output_hosts_path}' сгенерирован!")
-    print(f"Всего рекламных доменов добавлено в блоклист: {len(ad_domains)}")
-    print(f"Всего легитимных доменов сайта пропущено: {len(clean_domains)}")
+    print(f"\n УСПЕШНО: Обновленный файл '{output_hosts_path}' сохранен!")
+    print(f"Добавлено новых рекламных доменов в этой сессии: {len(new_ad_domains)}")
+    print(f"Общее количество уникальных доменов в блоклисте: {len(sorted_ad_domains)}")
 
 
 if __name__ == "__main__":
