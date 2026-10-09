@@ -120,7 +120,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     ]
 
     STRICT_SUBDOMAINS_BLACKLIST = [
-        "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru","yandex.net",
+        "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru","yandex.ru",
         "google.com"
     ]
 

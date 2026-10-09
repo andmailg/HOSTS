@@ -6,7 +6,7 @@
 0.0.0.0 nnmstatic.win
 0.0.0.0 openfpcdn.io
 0.0.0.0 rutracker.org
-0.0.0.0 yandex.net
+0.0.0.0 yandex.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
 0.0.0.0 a.adiam.tech
 0.0.0.0 a.ussp.io
