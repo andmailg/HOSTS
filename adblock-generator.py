@@ -14,8 +14,6 @@ from typing import Optional, Set, Dict, Any
 
 # --- Config ---
 ADBLOCK_FILE = Path(__file__).parent / "adblock_auto.txt"
-REQUEST_DOMAINS_FILE = Path(__file__).parent / "request_domains.txt"
-PAGE_DOMAINS_FILE = Path(__file__).parent / "page_domains.txt"
 DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
 URLSCAN_SEARCH = "https://urlscan.io/api/v1/search/"
@@ -107,7 +105,6 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
         # 200 — результат готов
         if "requests" in data or "page" in data:
             log(f"  Результат получен на опросе #{retries}! ({len(data.get('requests', []))} запросов)", "green")
-            log(f"  Ключи ответа: {list(data.keys())}", "cyan")
             return data
         else:
             log(f"  Ответ без данных: {list(data.keys())[:5]}", "yellow")
@@ -117,17 +114,9 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
 
 
 # --- Domain Extraction ---
-def extract_domains_from_url(url: str) -> Optional[str]:
-    """Извлекает хост из URL."""
-    try:
-        return urllib.parse.urlparse(url).netloc.lower()
-    except Exception:
-        return None
-
-
-def add_domains(source: dict, request_domains: dict, page_domains: dict, exclude: Set[str]):
-    """Извлекает домены из результата urlscan.io по категориям."""
-    # 1. request.domains — домены из HTTP-запросов (data.requests[].request.request.domain)
+def add_domains(source: dict, found: dict, exclude: Set[str]):
+    """Извлекает домены из результата urlscan.io."""
+    # 1. data.requests — домены из HTTP-запросов
     data = source.get("data", {})
     if isinstance(data, dict):
         requests_list = data.get("requests", [])
@@ -136,18 +125,14 @@ def add_domains(source: dict, request_domains: dict, page_domains: dict, exclude
                 if isinstance(req, dict):
                     req_info = req.get("request", {})
                     if isinstance(req_info, dict):
-                        # Вложенная структура: request.request.domain
-                        inner_req = req_info.get("request", {})
-                        if isinstance(inner_req, dict):
-                            domain = inner_req.get("domain", "")
-                            url = inner_req.get("url", "")
-                            if domain and domain not in exclude:
-                                request_domains[domain.lower()] = True
-                            elif url:
-                                # Извлекаем домен из URL если domain пустой
-                                extracted = extract_domains_from_url(url)
-                                if extracted and extracted not in exclude:
-                                    request_domains[extracted] = True
+                        domain = req_info.get("domain", "")
+                        url = req_info.get("url", "")
+                        if domain and domain not in exclude:
+                            found[domain.lower()] = True
+                        elif url:
+                            extracted = urllib.parse.urlparse(url).netloc.lower()
+                            if extracted and extracted not in exclude:
+                                found[extracted] = True
 
     # 2. page.domains — домены со страницы
     page = source.get("page", {})
@@ -155,22 +140,7 @@ def add_domains(source: dict, request_domains: dict, page_domains: dict, exclude
         for d in page.get("domains", []):
             domain = d.lower()
             if domain and domain not in exclude:
-                page_domains[domain] = True
-
-
-# --- Write Domain Files ---
-def write_domains_file(filepath: Path, domains: dict):
-    """Записывает домены в файл (один домен на строку)."""
-    sorted_domains = sorted(domains.keys())
-    
-    with open(filepath, "w", encoding="utf-8") as f:
-        for domain in sorted_domains:
-            f.write(f"{domain}\n")
-    
-    if sorted_domains:
-        log(f"Записано {len(sorted_domains)} доменов в {filepath}", "green")
-    else:
-        log(f"Нет доменов для {filepath}", "yellow")
+                found[domain] = True
 
 
 def write_adblock(found: dict):
@@ -226,8 +196,7 @@ def main():
 
     log(f"Параметры: timeout={scan_timeout}с, poll={poll_interval}с", "cyan")
 
-    request_domains: Dict[str, bool] = {}
-    page_domains: Dict[str, bool] = {}
+    found: Dict[str, bool] = {}
 
     for start_url in urls:
         seed_host = urllib.parse.urlparse(start_url).netloc
@@ -238,8 +207,8 @@ def main():
         # 1. URLScan — пробуем новый скан
         result = send_to_urlscan(start_url, scan_timeout, poll_interval)
         if result:
-            add_domains(result, request_domains, page_domains, exclude)
-            log(f"  request.domains: {len(request_domains)}, page.domains: {len(page_domains)}", "green")
+            add_domains(result, found, exclude)
+            log(f"  Доменов найдено: {len(found)}", "green")
         else:
             log("  Новый скан не удался — ищем существующие...", "yellow")
             # Fallback: ищем существующие сканы домена
@@ -248,8 +217,8 @@ def main():
                 hits = existing.get("hits", {}).get("hits", [])
                 if hits:
                     source = hits[0].get("_source", {})
-                    add_domains(source, request_domains, page_domains, exclude)
-                    log(f"  Найден существующий скан, request.domains: {len(request_domains)}, page.domains: {len(page_domains)}", "green")
+                    add_domains(source, found, exclude)
+                    log(f"  Найден существующий скан, доменов: {len(found)}", "green")
                 else:
                     log("  Существующих сканов не найдено", "yellow")
             else:
@@ -257,15 +226,8 @@ def main():
         time.sleep(DELAY_SEC)
 
     log(f"{'='*60}", "green")
-    log(f"request.domains: {len(request_domains)}", "green")
-    log(f"page.domains: {len(page_domains)}", "green")
-    
-    write_domains_file(REQUEST_DOMAINS_FILE, request_domains)
-    write_domains_file(PAGE_DOMAINS_FILE, page_domains)
-    
-    # Объединяем для adblock
-    all_domains = {**request_domains, **page_domains}
-    write_adblock(all_domains)
+    log(f"Найдено уникальных доменов: {len(found)}", "green")
+    write_adblock(found)
     log("=== Готово ===", "green")
 
 

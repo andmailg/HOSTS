@@ -1,5 +1,3 @@
-
-
 0.0.0.0 a.utraff.com
 0.0.0.0 acint.net
 0.0.0.0 ad.mail.ru
