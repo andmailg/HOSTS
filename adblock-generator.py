@@ -1,25 +1,27 @@
 #!/usr/bin/env python3
-"""adblock-generator.py — Обходит сайты через urlscan.io и наполняет adblock.txt"""
+"""adblock-generator.py — Сканирует сайты через urlscan.io и извлекает рекламные домены"""
 
 import sys
 import re
+import os
 import time
 import json
 import urllib.request
 import urllib.parse
 from urllib.error import URLError, HTTPError
-from html.parser import HTMLParser
 from pathlib import Path
-from typing import Optional, List, Set, Dict, Any
+from typing import Optional, Set, Dict, Any
 
 # --- Config ---
 ADBLOCK_FILE = Path(__file__).parent / "adblock_auto.txt"
+REQUEST_DOMAINS_FILE = Path(__file__).parent / "request_domains.txt"
+PAGE_DOMAINS_FILE = Path(__file__).parent / "page_domains.txt"
 DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
 URLSCAN_SEARCH = "https://urlscan.io/api/v1/search/"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AdBlockBot/1.0"
 DELAY_SEC = 3
-API_KEY = "01a11b20-0d0f-72bc-a329-dfb6c8d04352"  # ← Вставь свой API ключ urlscan.io (получить на https://urlscan.io/user/profile/)
+API_KEY = os.environ.get("URLSCAN_API_KEY", "")
 
 
 # --- Logging ---
@@ -31,67 +33,11 @@ def log(msg: str, color: str = "white"):
 
 
 # --- URL Helpers ---
-def get_base_url(url: str) -> str:
-    parsed = urllib.parse.urlparse(url)
-    return f"{parsed.scheme}://{parsed.netloc}"
-
-
-def is_same_site(url1: str, url2: str) -> bool:
-    u1, u2 = urllib.parse.urlparse(url1), urllib.parse.urlparse(url2)
-    return u1.netloc == u2.netloc and u1.scheme == u2.scheme
-
-
 def ensure_scheme(url: str) -> str:
     """Добавляет https:// если схема отсутствует."""
     if re.match(r'^https?://', url, re.I):
         return url
     return f"https://{url}"
-
-
-def normalize_url(url: str) -> str:
-    parsed = urllib.parse.urlparse(url)
-    path = parsed.path.rstrip("/") or "/"
-    return f"{parsed.scheme}://{parsed.netloc}{path}"
-
-
-def is_internal(link: str, base_url: str, seed_host: str) -> bool:
-    if re.match(r'^(mailto:|javascript:|#|tel:)', link, re.I):
-        return False
-    if re.match(r'^https?://', link, re.I):
-        if not is_same_site(link, base_url):
-            return False
-        return urllib.parse.urlparse(link).netloc == seed_host
-    return True
-
-
-# --- HTML Link Extractor ---
-class LinkExtractor(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.links: List[str] = []
-
-    def handle_starttag(self, tag, attrs):
-        if tag == "a":
-            attrs_dict = dict(attrs)
-            href = attrs_dict.get("href", "")
-            if href:
-                self.links.append(href)
-
-
-def extract_links(html: str, base_url: str, seed_host: str) -> List[str]:
-    parser = LinkExtractor()
-    parser.feed(html)
-    links = []
-    for href in parser.links:
-        href = re.sub(r'#.*$', '', href)
-        if re.match(r'^https?://', href, re.I):
-            if is_internal(href, base_url, seed_host):
-                links.append(normalize_url(href))
-        elif href.startswith("/"):
-            links.append(f"{get_base_url(base_url)}{href}")
-        else:
-            links.append(f"{get_base_url(base_url)}/{href}")
-    return links
 
 
 # --- URLScan API ---
@@ -161,6 +107,7 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
         # 200 — результат готов
         if "requests" in data or "page" in data:
             log(f"  Результат получен на опросе #{retries}! ({len(data.get('requests', []))} запросов)", "green")
+            log(f"  Ключи ответа: {list(data.keys())}", "cyan")
             return data
         else:
             log(f"  Ответ без данных: {list(data.keys())[:5]}", "yellow")
@@ -178,79 +125,54 @@ def extract_domains_from_url(url: str) -> Optional[str]:
         return None
 
 
-def add_domains(source: dict, found: dict):
-    """Извлекает домены из результата urlscan.io (search или result API)."""
-    # 1. request.domains — основной источник
-    request = source.get("request", {})
-    if isinstance(request, dict):
-        for d in request.get("domains", []):
-            if d:
-                found[d.lower()] = True
+def add_domains(source: dict, request_domains: dict, page_domains: dict, exclude: Set[str]):
+    """Извлекает домены из результата urlscan.io по категориям."""
+    # 1. request.domains — домены из HTTP-запросов (data.requests[].request.request.domain)
+    data = source.get("data", {})
+    if isinstance(data, dict):
+        requests_list = data.get("requests", [])
+        if isinstance(requests_list, list):
+            for req in requests_list:
+                if isinstance(req, dict):
+                    req_info = req.get("request", {})
+                    if isinstance(req_info, dict):
+                        # Вложенная структура: request.request.domain
+                        inner_req = req_info.get("request", {})
+                        if isinstance(inner_req, dict):
+                            domain = inner_req.get("domain", "")
+                            url = inner_req.get("url", "")
+                            if domain and domain not in exclude:
+                                request_domains[domain.lower()] = True
+                            elif url:
+                                # Извлекаем домен из URL если domain пустой
+                                extracted = extract_domains_from_url(url)
+                                if extracted and extracted not in exclude:
+                                    request_domains[extracted] = True
 
-        # request.url
-        domain = extract_domains_from_url(request.get("url", ""))
-        if domain:
-            found[domain] = True
-
-        # request.body — ищем домены в теле запроса
-        body = request.get("body", "")
-        if body:
-            for m in re.finditer(r'(?:https?://)?([a-zA-Z0-9][-a-zA-Z0-9]*\.[a-zA-Z]{2,})', body):
-                d = m.group(1).lower()
-                if d and not d.isdigit() and not d.endswith('.ru.') and not d.endswith('.com.'):
-                    found[d] = True
-
-    # 2. page.domains — домены страницы
+    # 2. page.domains — домены со страницы
     page = source.get("page", {})
     if isinstance(page, dict):
         for d in page.get("domains", []):
-            if d:
-                found[d.lower()] = True
+            domain = d.lower()
+            if domain and domain not in exclude:
+                page_domains[domain] = True
 
-        # page.url
-        domain = extract_domains_from_url(page.get("url", ""))
-        if domain:
-            found[domain] = True
 
-        # page.details.resources — URL ресурсов
-        details = page.get("details", {})
-        if isinstance(details, dict):
-            for res_url in details.get("resources", []):
-                domain = extract_domains_from_url(res_url)
-                if domain:
-                    found[domain] = True
+# --- Write Domain Files ---
+def write_domains_file(filepath: Path, domains: dict):
+    """Записывает домены в файл (один домен на строку)."""
+    sorted_domains = sorted(domains.keys())
     
-    # 3. task — дополнительная информация
-    task = source.get("task", {})
-    if isinstance(task, dict):
-        # task.url
-        domain = extract_domains_from_url(task.get("url", ""))
-        if domain:
-            found[domain] = True
-        
-        # task.domain
-        if task.get("domain"):
-            found[task["domain"].lower()] = True
+    with open(filepath, "w", encoding="utf-8") as f:
+        for domain in sorted_domains:
+            f.write(f"{domain}\n")
     
-    # 4. requests — массив загруженных ресурсов
-    requests_list = source.get("requests", [])
-    if isinstance(requests_list, list):
-        for req in requests_list:
-            if isinstance(req, dict):
-                # req.request.url
-                req_info = req.get("request", {})
-                if isinstance(req_info, dict):
-                    url = req_info.get("url", "")
-                    if url:
-                        domain = extract_domains_from_url(url)
-                        if domain:
-                            found[domain] = True
-                    # req.request.domain
-                    if req_info.get("domain"):
-                        found[req_info["domain"].lower()] = True
+    if sorted_domains:
+        log(f"Записано {len(sorted_domains)} доменов в {filepath}", "green")
+    else:
+        log(f"Нет доменов для {filepath}", "yellow")
 
 
-# --- Adblock File ---
 def write_adblock(found: dict):
     sorted_domains = sorted(found.keys())
     new_entries = []
@@ -294,37 +216,30 @@ def main():
     log(f"Загружено {len(urls)} URL из {url_file}", "green")
 
     # Параметры
-    max_depth = 1
-    max_pages = 50
     scan_timeout = 180
     poll_interval = 10
 
     if len(sys.argv) > 2:
-        max_depth = int(sys.argv[2])
+        scan_timeout = int(sys.argv[2])
     if len(sys.argv) > 3:
-        max_pages = int(sys.argv[3])
-    if len(sys.argv) > 4:
-        scan_timeout = int(sys.argv[4])
-    if len(sys.argv) > 5:
-        poll_interval = int(sys.argv[5])
+        poll_interval = int(sys.argv[3])
 
-    log(f"Параметры: depth={max_depth}, pages={max_pages}, timeout={scan_timeout}с, poll={poll_interval}с", "cyan")
+    log(f"Параметры: timeout={scan_timeout}с, poll={poll_interval}с", "cyan")
 
-    found: Dict[str, bool] = {}
-    visited: Set[str] = set()
-    seed_hosts: Set[str] = set()
+    request_domains: Dict[str, bool] = {}
+    page_domains: Dict[str, bool] = {}
 
     for start_url in urls:
         seed_host = urllib.parse.urlparse(start_url).netloc
-        seed_hosts.add(seed_host)
+        exclude = {seed_host}
         log(f"\n{'='*60}", "cyan")
         log(f"Обработка: {start_url}", "green")
 
         # 1. URLScan — пробуем новый скан
         result = send_to_urlscan(start_url, scan_timeout, poll_interval)
         if result:
-            add_domains(result, found)
-            log(f"  Доменов найдено: {len(found)}", "green")
+            add_domains(result, request_domains, page_domains, exclude)
+            log(f"  request.domains: {len(request_domains)}, page.domains: {len(page_domains)}", "green")
         else:
             log("  Новый скан не удался — ищем существующие...", "yellow")
             # Fallback: ищем существующие сканы домена
@@ -333,57 +248,24 @@ def main():
                 hits = existing.get("hits", {}).get("hits", [])
                 if hits:
                     source = hits[0].get("_source", {})
-                    add_domains(source, found)
-                    log(f"  Найден существующий скан, доменов: {len(found)}", "green")
+                    add_domains(source, request_domains, page_domains, exclude)
+                    log(f"  Найден существующий скан, request.domains: {len(request_domains)}, page.domains: {len(page_domains)}", "green")
                 else:
                     log("  Существующих сканов не найдено", "yellow")
             else:
                 log("  Ошибка поиска существующих сканов", "red")
         time.sleep(DELAY_SEC)
 
-        # 2. Crawling
-        if max_depth > 0:
-            log(f"Обход сайта {seed_host} (глубина до {max_depth})...", "cyan")
-            visited.add(start_url)  # Исключаем дубль сканирования seed-URL
-            queue = [(start_url, 0)]
-            depth_map = {start_url: 0}
-            processed = 0
-
-            while queue and processed < max_pages:
-                current, depth = queue.pop(0)
-                if current in visited:
-                    continue
-                if depth_map.get(current, 0) > max_depth:
-                    continue
-
-                log(f"\n[{processed + 1}/{max_pages}] Глубина {depth}: {current}", "yellow")
-
-                scan_result = send_to_urlscan(current, scan_timeout, poll_interval)
-                if scan_result:
-                    add_domains(scan_result, found)
-                visited.add(current)
-                processed += 1
-                time.sleep(DELAY_SEC)
-
-                if depth < max_depth:
-                    base = get_base_url(current)
-                    links = extract_links(current, base, seed_host)
-                    for link in links:
-                        if link not in visited and link not in depth_map:
-                            depth_map[link] = depth + 1
-                            queue.append((link, depth + 1))
-
-            log(f"Обход завершён: {processed} страниц", "green")
-
-    # Исключаем seed-домены (сам сканируемый сайт и его поддомены)
-    filtered = {d: True for d in found if not any(d == sh or d.endswith('.' + sh) for sh in seed_hosts)}
-    excluded = len(found) - len(filtered)
-    if excluded:
-        log(f"Исключено seed-доменов: {excluded}", "yellow")
-
     log(f"{'='*60}", "green")
-    log(f"Найдено уникальных доменов: {len(found)} (после фильтрации: {len(filtered)})", "green")
-    write_adblock(filtered)
+    log(f"request.domains: {len(request_domains)}", "green")
+    log(f"page.domains: {len(page_domains)}", "green")
+    
+    write_domains_file(REQUEST_DOMAINS_FILE, request_domains)
+    write_domains_file(PAGE_DOMAINS_FILE, page_domains)
+    
+    # Объединяем для adblock
+    all_domains = {**request_domains, **page_domains}
+    write_adblock(all_domains)
     log("=== Готово ===", "green")
 
 

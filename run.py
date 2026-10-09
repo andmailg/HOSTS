@@ -11,8 +11,6 @@ sys.exit(subprocess.run([
     sys.executable,
     str(script),
     str(Path(__file__).parent / "urls.txt"),
-    "10",      # max_depth
-    "1",     # max_pages
     "180",    # scan_timeout (сек)
     "60"       # poll_interval (сек)
 ]).returncode)
