@@ -261,10 +261,12 @@ def main():
         log(f"Whitelist загружена: {len(whitelist)} доменов", "cyan")
 
     found: Dict[str, bool] = {}
+    seed_domains: Set[str] = set()
 
     for start_url in urls:
         seed_host = urllib.parse.urlparse(start_url).netloc
-        exclude = {seed_host} | whitelist
+        seed_domains.add(seed_host)
+        exclude = seed_domains | whitelist
         log(f"\n{'='*60}", "cyan")
         log(f"Обработка: {start_url}", "green")
 
