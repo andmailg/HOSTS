@@ -12,10 +12,13 @@ from urllib.error import URLError, HTTPError
 from pathlib import Path
 from typing import Optional, Set, Dict, Any
 
+# Импорт модулей анализа доменов
+import whitelist_analyzer
+import blacklist_analyzer
+
 # --- Config ---
 ADBLOCK_FILE = Path(__file__).parent / "hosts_auto.txt"
 DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
-WHITELIST_FILE = Path(__file__).parent / "whitelist.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
 URLSCAN_SEARCH = "https://urlscan.io/api/v1/search/"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AdBlockBot/1.0"
@@ -23,15 +26,8 @@ DELAY_SEC = 3
 API_KEY = os.environ.get("URLSCAN_API_KEY", "")
 
 
-def load_whitelist() -> Set[str]:
-    """Загружает белый список доменов."""
-    whitelist: Set[str] = set()
-    if WHITELIST_FILE.exists():
-        for line in WHITELIST_FILE.read_text(encoding="utf-8").splitlines():
-            domain = line.strip().lower()
-            if domain and not domain.startswith("#"):
-                whitelist.add(domain)
-    return whitelist
+# Alias для обратной совместимости
+load_whitelist = whitelist_analyzer.load_whitelist
 
 
 # --- Logging ---
@@ -155,56 +151,6 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
     return None
 
 
-# --- Domain Extraction ---
-def add_domains(source: dict, found: dict, exclude: Set[str]):
-    """
-    Извлекает уникальные домены исключительно из готового агрегированного 
-    массива lists.domains ответа urlscan.io.
-    """
-    if not isinstance(source, dict):
-        return
-
-    # Получаем плоский массив всех зафиксированных доменов
-    domains_list = source.get("lists", {}).get("domains", [])
-    
-    if isinstance(domains_list, list):
-        for raw_domain in domains_list:
-            if raw_domain and isinstance(raw_domain, str):
-                # Очищаем от пробелов и отсекаем порт, если он есть (например, "domain.com:443" -> "domain.com")
-                domain = raw_domain.strip().lower().split(':')[0]
-                
-                # Записываем, если домена нет в белом списке
-                if domain and domain not in exclude:
-                    found[domain] = True
-
-
-def write_adblock(found: dict):
-    sorted_domains = sorted(found.keys())
-    new_entries = []
-
-    # Читаем существующие домены
-    existing = set()
-    if ADBLOCK_FILE.exists():
-        for line in ADBLOCK_FILE.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if line and not line.startswith("#"):
-                parts = line.split()
-                if len(parts) >= 2:
-                    existing.add(parts[1].lower())
-
-    for domain in sorted_domains:
-        if domain.lower() not in existing:
-            new_entries.append(f"0.0.0.0 {domain}")
-
-    if not new_entries:
-        log("Новых доменов не найдено", "yellow")
-        return
-
-    with open(ADBLOCK_FILE, "a", encoding="utf-8") as f:
-        f.write("\n" + "\n".join(new_entries) + "\n")
-    log(f"Добавлено {len(new_entries)} доменов в {ADBLOCK_FILE}", "green")
-
-
 # --- Main ---
 def main():
     log("=== AdBlock Generator (urlscan.io) ===", "green")
@@ -249,7 +195,7 @@ def main():
         # 1. URLScan — пробуем новый скан
         result = send_to_urlscan(start_url, scan_timeout, poll_interval)
         if result:
-            add_domains(result, found, exclude)
+            blacklist_analyzer.add_domains(result, found, exclude, seed_domains)
             log(f"  Доменов найдено: {len(found)}", "green")
         else:
             log("  Новый скан не удался — ищем существующие...", "yellow")
@@ -265,7 +211,7 @@ def main():
                         # Считаем только если в скане есть данные
                         if source and (source.get("requests") or source.get("page")):
                             old_count = len(found)
-                            add_domains(source, found, exclude)
+                            blacklist_analyzer.add_domains(source, found, exclude, seed_domains)
                             new_count = len(found)
                             if new_count > old_count:
                                 log(f"    Добавлено {new_count - old_count} доменов", "green")
@@ -280,7 +226,7 @@ def main():
 
     log(f"{'='*60}", "green")
     log(f"Найдено уникальных доменов: {len(found)}", "green")
-    write_adblock(found)
+    blacklist_analyzer.write_adblock(found)
     log("=== Готово ===", "green")
 
 
