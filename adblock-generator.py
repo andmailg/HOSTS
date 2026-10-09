@@ -15,11 +15,23 @@ from typing import Optional, Set, Dict, Any
 # --- Config ---
 ADBLOCK_FILE = Path(__file__).parent / "adblock_auto.txt"
 DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
+WHITELIST_FILE = Path(__file__).parent / "whitelist.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
 URLSCAN_SEARCH = "https://urlscan.io/api/v1/search/"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AdBlockBot/1.0"
 DELAY_SEC = 3
 API_KEY = os.environ.get("URLSCAN_API_KEY", "")
+
+
+def load_whitelist() -> Set[str]:
+    """Загружает белый список доменов."""
+    whitelist: Set[str] = set()
+    if WHITELIST_FILE.exists():
+        for line in WHITELIST_FILE.read_text(encoding="utf-8").splitlines():
+            domain = line.strip().lower()
+            if domain and not domain.startswith("#"):
+                whitelist.add(domain)
+    return whitelist
 
 
 # --- Logging ---
@@ -115,8 +127,25 @@ def send_to_urlscan(url: str, timeout_sec: int = 180, poll_interval: int = 10) -
 
 # --- Domain Extraction ---
 def add_domains(source: dict, found: dict, exclude: Set[str]):
-    """Извлекает домены из результата urlscan.io."""
-    # 1. data.requests — домены из HTTP-запросов
+    """
+    Извлекает абсолютно все домены из результата urlscan.io 
+    для последующей фильтрации рекламы.
+    """
+    if not isinstance(source, dict):
+        return
+
+    # Вспомогательная функция очистки домена (удаление портов, пробелов, перевод в нижний регистр)
+    def clean_and_add(raw_domain: str):
+        if not raw_domain or not isinstance(raw_domain, str):
+            return
+        # Очищаем от пробелов, двоеточий с портами (например, domain.com:8080 -> domain.com)
+        domain = raw_domain.strip().lower().split(':')[0]
+        if domain and domain not in exclude:
+            found[domain] = True
+
+    # =========================================================================
+    # 1. data.requests — домены из цепочки HTTP-запросов
+    # =========================================================================
     data = source.get("data", {})
     if isinstance(data, dict):
         requests_list = data.get("requests", [])
@@ -125,22 +154,52 @@ def add_domains(source: dict, found: dict, exclude: Set[str]):
                 if isinstance(req, dict):
                     req_info = req.get("request", {})
                     if isinstance(req_info, dict):
-                        domain = req_info.get("domain", "")
                         url = req_info.get("url", "")
-                        if domain and domain not in exclude:
-                            found[domain.lower()] = True
-                        elif url:
-                            extracted = urllib.parse.urlparse(url).netloc.lower()
-                            if extracted and extracted not in exclude:
-                                found[extracted] = True
+                        if url and isinstance(url, str):
+                            try:
+                                extracted = urllib.parse.urlparse(url).netloc
+                                clean_and_add(extracted)
+                            except Exception:
+                                pass
 
-    # 2. page.domains — домены со страницы
+    # =========================================================================
+    # 2. page.domains — домены, зафиксированные на главной странице
+    # =========================================================================
     page = source.get("page", {})
     if isinstance(page, dict):
+        single_domain = page.get("domain", "")
+        clean_and_add(single_domain)
+        
         for d in page.get("domains", []):
-            domain = d.lower()
-            if domain and domain not in exclude:
-                found[domain] = True
+            clean_and_add(d)
+
+    # =========================================================================
+    # 3. lists.domains — готовый плоский массив уникальных доменов
+    # =========================================================================
+    lists_data = source.get("lists", {})
+    if isinstance(lists_data, dict):
+        for d in lists_data.get("domains", []):
+            clean_and_add(d)
+            
+        for url in lists_data.get("urls", []):
+            if url and isinstance(url, str):
+                try:
+                    extracted = urllib.parse.urlparse(url).netloc
+                    clean_and_add(extracted)
+                except Exception:
+                    pass
+
+    # =========================================================================
+    # 4. stats.domainStats — агрегированная статистика по доменам
+    # =========================================================================
+    stats = source.get("stats", {})
+    if isinstance(stats, dict):
+        domain_stats = stats.get("domainStats", [])
+        if isinstance(domain_stats, list):
+            for item in domain_stats:
+                if isinstance(item, dict):
+                    d = item.get("domain", "")
+                    clean_and_add(d)
 
 
 def write_adblock(found: dict):
@@ -196,11 +255,16 @@ def main():
 
     log(f"Параметры: timeout={scan_timeout}с, poll={poll_interval}с", "cyan")
 
+    # Загружаем whitelist
+    whitelist = load_whitelist()
+    if whitelist:
+        log(f"Whitelist загружена: {len(whitelist)} доменов", "cyan")
+
     found: Dict[str, bool] = {}
 
     for start_url in urls:
         seed_host = urllib.parse.urlparse(start_url).netloc
-        exclude = {seed_host}
+        exclude = {seed_host} | whitelist
         log(f"\n{'='*60}", "cyan")
         log(f"Обработка: {start_url}", "green")
 

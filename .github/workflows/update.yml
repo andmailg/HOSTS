@@ -27,7 +27,7 @@ jobs:
       id: run_script
       env:
         URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
-      run: python update_adblock.py
+      run: python adblock-generator.py
 
     - name: Commit and Push changes
       if: success()
