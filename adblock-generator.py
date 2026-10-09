@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Optional, Set, Dict, Any
 
 # --- Config ---
-ADBLOCK_FILE = Path(__file__).parent / "adblock_auto.txt"
+ADBLOCK_FILE = Path(__file__).parent / "hosts_auto.txt"
 DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
 WHITELIST_FILE = Path(__file__).parent / "whitelist.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
