@@ -3,6 +3,7 @@
 
 0.0.0.0 acint.net
 0.0.0.0 cloudflareinsights.com
+0.0.0.0 dzen.ru
 0.0.0.0 kimberlite.io
 0.0.0.0 nnmstatic.win
 0.0.0.0 openfpcdn.io
@@ -10,6 +11,8 @@
 0.0.0.0 smi2.net
 0.0.0.0 smi2.ru
 0.0.0.0 stat.media
+0.0.0.0 vk.com
+0.0.0.0 vk.ru
 0.0.0.0 yandex.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
 0.0.0.0 a.adiam.tech
@@ -17,7 +20,6 @@
 0.0.0.0 a.utraff.com
 0.0.0.0 aax-eu.amazon-adsystem.com
 0.0.0.0 ad.adriver.ru
-0.0.0.0 ad.mail.ru
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 ads.adfox.ru
 0.0.0.0 ads.betweendigital.com
@@ -29,6 +31,7 @@
 0.0.0.0 analytics.mediadash.ru
 0.0.0.0 api.onesignal.com
 0.0.0.0 assets.adobedtm.com
+0.0.0.0 avatars.dzeninfra.ru
 0.0.0.0 b.clarity.ms
 0.0.0.0 b1-chidc2.outbrain.com
 0.0.0.0 b1t-chidc2.outbrain.com
@@ -43,6 +46,7 @@
 0.0.0.0 cdn.ad-tech.ru
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 cdn.binsiad.com
+0.0.0.0 cdn.consentmanager.net
 0.0.0.0 cdn.cxense.com
 0.0.0.0 cdn.dsp-rambler.ru
 0.0.0.0 cdn.onesignal.com
@@ -84,10 +88,14 @@
 0.0.0.0 id.cxense.com
 0.0.0.0 id.rlcdn.com
 0.0.0.0 images.outbrainimg.com
+0.0.0.0 img.imgsmail.ru
+0.0.0.0 imgs2.imgsmail.ru
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 libs.outbrain.com
+0.0.0.0 limg.imgsmail.ru
 0.0.0.0 log.outbrainimg.com
 0.0.0.0 log.rutube.ru
+0.0.0.0 login.vk.com
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
@@ -108,6 +116,7 @@
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 ping.chartbeat.net
 0.0.0.0 pixel.tapad.com
+0.0.0.0 pogoda.imgsmail.ru
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 pub.doubleverify.com
 0.0.0.0 px.adhigh.net
@@ -146,6 +155,7 @@
 0.0.0.0 static.chartbeat.com
 0.0.0.0 static.cloudflareinsights.com
 0.0.0.0 static.criteo.net
+0.0.0.0 static.dzeninfra.ru
 0.0.0.0 static.kimberlite.io
 0.0.0.0 static.terratraf.com
 0.0.0.0 sync.1dmp.io
@@ -157,10 +167,13 @@
 0.0.0.0 sync.upravel.com
 0.0.0.0 t.rtbwave.com
 0.0.0.0 tcheck.outbrainimg.com
-0.0.0.0 top-fwz1.mail.ru
+0.0.0.0 telemetry.dzen.ru
 0.0.0.0 tube.buzzoola.com
 0.0.0.0 uid.bumlam.com
 0.0.0.0 uk-script.dotmetrics.net
+0.0.0.0 vd647.okcdn.ru
+0.0.0.0 vd680.okcdn.ru
+0.0.0.0 vd760.okcdn.ru
 0.0.0.0 widget-pixels.outbrain.com
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 widgets.outbrain.com
@@ -176,6 +189,9 @@
 0.0.0.0 x01.aidata.io
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
+0.0.0.0 531311.ms.dzen.ru
+0.0.0.0 a.delivery.consentmanager.net
+0.0.0.0 b.delivery.consentmanager.net
 0.0.0.0 bbg.sc.omtrdc.net
 0.0.0.0 cm.a.mts.ru
 0.0.0.0 cm.g.doubleclick.net
@@ -188,6 +204,7 @@
 0.0.0.0 redirect.frontend.weborama.fr
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 stat.radar.imgsmail.ru
 0.0.0.0 static.a.mts.ru
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 sync.dmp.otm-r.com
