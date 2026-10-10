@@ -113,12 +113,11 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
     STRICT_DOMAINS_WHITELIST = [
         "yandex.ru","yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
-        "googleapis.com", "gstatic.com", "googleusercontent.com",
+        "googleapis.com", "gstatic.com", "googleusercontent.com", "google.dk",
         "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
         "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
         "static.files.bbci.co.uk",           # ДОБАВЛЕНО: Вспомогательная статика BBC
         "emp.bbci.co.uk",
-        "google.dk",
         "cloudflare.com",    # ДОБАВЛЕНО: Защита cdnjs.cloudflare.com
         "jsdelivr.net",      # ДОБАВЛЕНО: Защитаcdn.jsdelivr.net
         "unpkg.com",          # ДОБАВЛЕНО: Защита unpkg.com
@@ -136,7 +135,11 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         "pic4net.com",             # Хостинг картинок Pic4Net
         "directupload.eu",         # Немецкий хостинг картинок
         "hostingkartinok.com",     # Российский хостинг картинок
-        "rackcdn.com"              # Облачный CDN Rackspace
+        "rackcdn.com",              # Облачный CDN Rackspace
+        "mos.ru",                 # Портал государственных услуг Москвы
+        "sberbank.ru",            # Сервисы Сбера
+        "sbrf.ru",                # Старая техническая зона Сбербанка
+        "vigo.tech"               # Оптимизация и метрики видеостриминга
     ]
 
     STRICT_SUBDOMAINS_BLACKLIST = [
@@ -260,5 +263,5 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
 
 if __name__ == "__main__":
-    TARGET_SCAN = "01a123b0-b3b1-7288-acde-3fbf38f23594"
+    TARGET_SCAN = "01a124fa-0db5-742b-9cae-4d0f008e439a"
     generate_hosts_from_api(TARGET_SCAN)
