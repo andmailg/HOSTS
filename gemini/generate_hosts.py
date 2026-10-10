@@ -123,7 +123,20 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         "jsdelivr.net",      # ДОБАВЛЕНО: Защитаcdn.jsdelivr.net
         "unpkg.com",          # ДОБАВЛЕНО: Защита unpkg.com
         "thetruestory.news",
-        "gvt1.com"
+        "gvt1.com",
+        "youtube.com",             # Видеохостинг YouTube
+        "ytimg.com",               # Статика YouTube
+        "nflximg.net",             # Картинки Netflix
+        "dmcdn.net",               # Видеохостинг Dailymotion
+        "rutracker.cc",            # Статика RuTracker
+        "imgchest.com",            # Хостинг картинок
+        "rferl.org",               # Медиа-ресурсы RFERL
+        "fastpic.org",             # Хостинг картинок FastPic
+        "imageban.ru",             # Хостинг картинок ImageBan
+        "pic4net.com",             # Хостинг картинок Pic4Net
+        "directupload.eu",         # Немецкий хостинг картинок
+        "hostingkartinok.com",     # Российский хостинг картинок
+        "rackcdn.com"              # Облачный CDN Rackspace
     ]
 
     STRICT_SUBDOMAINS_BLACKLIST = [
@@ -247,5 +260,5 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
 
 if __name__ == "__main__":
-    TARGET_SCAN = "01a12213-dadb-72ef-b048-338de7459aa4"
+    TARGET_SCAN = "01a123b0-b3b1-7288-acde-3fbf38f23594"
     generate_hosts_from_api(TARGET_SCAN)
