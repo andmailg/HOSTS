@@ -32,7 +32,6 @@
 0.0.0.0 api.okcdn.ru
 0.0.0.0 api.onesignal.com
 0.0.0.0 assets.adobedtm.com
-0.0.0.0 avatars.dzeninfra.ru
 0.0.0.0 b.clarity.ms
 0.0.0.0 b1-chidc2.outbrain.com
 0.0.0.0 b1t-chidc2.outbrain.com
@@ -165,7 +164,6 @@
 0.0.0.0 static.chartbeat.com
 0.0.0.0 static.cloudflareinsights.com
 0.0.0.0 static.criteo.net
-0.0.0.0 static.dzeninfra.ru
 0.0.0.0 static.kimberlite.io
 0.0.0.0 static.terratraf.com
 0.0.0.0 stats.vk-portal.net

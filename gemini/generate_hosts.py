@@ -114,7 +114,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
     STRICT_DOMAINS_WHITELIST = [
         "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
-        "dzen.ru", "vk.com", "vk.ru",
+        "dzen.ru","dzeninfra.ru","vk.com", "vk.ru",
         "googleapis.com", "gstatic.com", "googleusercontent.com", "google.dk",
         "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
         "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
