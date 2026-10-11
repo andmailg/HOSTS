@@ -20,6 +20,7 @@
 0.0.0.0 a.utraff.com
 0.0.0.0 aax-eu.amazon-adsystem.com
 0.0.0.0 ad.adriver.ru
+0.0.0.0 ad.mail.ru
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 ads.adfox.ru
 0.0.0.0 ads.betweendigital.com
@@ -29,6 +30,7 @@
 0.0.0.0 an.yandex.ru
 0.0.0.0 analytics.iportal.ru
 0.0.0.0 analytics.mediadash.ru
+0.0.0.0 api.okcdn.ru
 0.0.0.0 api.onesignal.com
 0.0.0.0 assets.adobedtm.com
 0.0.0.0 avatars.dzeninfra.ru
@@ -91,11 +93,13 @@
 0.0.0.0 img.imgsmail.ru
 0.0.0.0 imgs2.imgsmail.ru
 0.0.0.0 ingestion.contentinsights.com
+0.0.0.0 iv.okcdn.ru
 0.0.0.0 libs.outbrain.com
 0.0.0.0 limg.imgsmail.ru
 0.0.0.0 log.outbrainimg.com
 0.0.0.0 log.rutube.ru
 0.0.0.0 login.vk.com
+0.0.0.0 login.vk.ru
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
@@ -117,6 +121,7 @@
 0.0.0.0 ping.chartbeat.net
 0.0.0.0 pixel.tapad.com
 0.0.0.0 pogoda.imgsmail.ru
+0.0.0.0 privacy-cs.mail.ru
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 pub.doubleverify.com
 0.0.0.0 px.adhigh.net
@@ -125,6 +130,7 @@
 0.0.0.0 r.ussp.io
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 rm-script.dotmetrics.net
+0.0.0.0 rs.mail.ru
 0.0.0.0 rsm.zona.mediacampaigns
 0.0.0.0 rst.skcrtxr.com
 0.0.0.0 rtb-csync.smartadserver.com
@@ -139,6 +145,7 @@
 0.0.0.0 script.crazyegg.com
 0.0.0.0 scripts.clarity.ms
 0.0.0.0 scripts.opti-digital.com
+0.0.0.0 sdk-api.apptracer.ru
 0.0.0.0 sentry-saas.rambler-co.ru
 0.0.0.0 sessions.bugsnag.com
 0.0.0.0 sp.linkssp.ru
@@ -158,6 +165,8 @@
 0.0.0.0 static.dzeninfra.ru
 0.0.0.0 static.kimberlite.io
 0.0.0.0 static.terratraf.com
+0.0.0.0 stats.vk-portal.net
+0.0.0.0 sun9-53.vkuserphoto.ru
 0.0.0.0 sync.1dmp.io
 0.0.0.0 sync.bumlam.com
 0.0.0.0 sync.gonet-ads.com
@@ -168,12 +177,14 @@
 0.0.0.0 t.rtbwave.com
 0.0.0.0 tcheck.outbrainimg.com
 0.0.0.0 telemetry.dzen.ru
+0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 tube.buzzoola.com
 0.0.0.0 uid.bumlam.com
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 vd647.okcdn.ru
 0.0.0.0 vd680.okcdn.ru
 0.0.0.0 vd760.okcdn.ru
+0.0.0.0 vkvd260.okcdn.ru
 0.0.0.0 widget-pixels.outbrain.com
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 widgets.outbrain.com
@@ -189,6 +200,7 @@
 0.0.0.0 x01.aidata.io
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
+0.0.0.0 33412.ms.vk.ru
 0.0.0.0 531311.ms.dzen.ru
 0.0.0.0 a.delivery.consentmanager.net
 0.0.0.0 b.delivery.consentmanager.net

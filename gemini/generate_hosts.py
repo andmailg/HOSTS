@@ -263,5 +263,5 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
 
 if __name__ == "__main__":
-    TARGET_SCAN = "01a126f5-e5b9-72af-9bcb-9309c973b2b3"
+    TARGET_SCAN = "01a12a5a-29b7-7199-8276-4e6733fd4000"
     generate_hosts_from_api(TARGET_SCAN)
