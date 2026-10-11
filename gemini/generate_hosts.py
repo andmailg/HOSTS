@@ -101,7 +101,8 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     AD_TRACKER_PATTERNS = [
         r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding",
         r"\/ads\/system\/", r"sync-loader", r"counter", r"analytics",
-        r"gnezdo\.ru", r"fundingchoices", r"\/cm\.", r"context\.js"
+        r"gnezdo\.ru", r"fundingchoices", r"\/cm\.", r"context\.js",
+        r"telemetry"
     ]
 
     SYSTEM_ASSETS_PATTERNS = [
@@ -113,6 +114,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
     STRICT_DOMAINS_WHITELIST = [
         "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
+        "dzen.ru", "vk.com", "vk.ru",
         "googleapis.com", "gstatic.com", "googleusercontent.com", "google.dk",
         "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
         "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
@@ -142,10 +144,15 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         "vigo.tech"               # Оптимизация и метрики видеостриминга
     ]
 
-    STRICT_SUBDOMAINS_BLACKLIST = [
-        "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru","yandex.ru",
-        "sdk-api.apptracer.ru", "trace-flow.ru" # российские системы мобильной аналитики и трекинга эффективности рекламы.
-        "tracker-api.vk-analytics.ru","tracker-api.my.com" # аналитические платформы корпорации VK для мобильных разработчиков (бывший MyTracker).
+    # ИСПРАВЛЕНИЕ: Переводим черный список на регулярные выражения (маски поддоменов)
+    STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
+        r"^mc\.yandex\.ru$", r"^an\.yandex\.ru$", r"^ads\.yandex\.ru$", r"^yandex\.ru$",
+        r"^sdk-api\.apptracer\.ru$", r"^trace-flow\.ru$", 
+        r"^tracker-api\.vk-analytics\.ru$", r"^tracker-api\.my\.com$", 
+        r"^telemetry\.dzen\.ru$",
+        # Новые маски для блокировки медиа-метрических поддоменов VK и Дзен
+        r"\.ms\.vk\.ru$",      # Заблокирует 33412.ms.vk.ru и любые другие ID
+        r"\.ms\.dzen\.ru$"     # Заблокирует 531311.ms.dzen.ru и любые другие ID
     ]
 
     clean_domains = set()
@@ -205,9 +212,10 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
             elif mime_type in ["font/woff2", "text/css", "image/svg+xml"]:
                 domain_verdicts[req_domain]["clean_score"] += 10
 
-    # Обработка текущей сессии
+    # Перед проверкой нахождения в черном списке текущей сессии также используем паттерны:
     for domain, score in domain_verdicts.items():
-        if domain in STRICT_SUBDOMAINS_BLACKLIST:
+        is_blacklisted = any(re.search(pat, domain, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS)
+        if is_blacklisted:
             new_ad_domains.add(domain)
         elif domain in STRICT_DOMAINS_WHITELIST or domain == page_apex or f"www.{domain}" == page_apex:
             clean_domains.add(domain)
@@ -220,29 +228,36 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     existing_ad_domains = read_existing_hosts(output_hosts_path)
     all_ad_domains = existing_ad_domains.union(new_ad_domains)
 
-    # --- УЛЬТРА-ОЧИСТКА БАЗЫ ОТ ЛОЖНЫХ СРАБАТЫВАНИЙ ---
+    # --- УЛЬТРА-ОЧИСТКА БАЗЫ С УЧЕТОМ МАСОК ЧЕРНОГО СПИСКА ---
     filtered_ad_domains = set()
     for domain in all_ad_domains:
         domain_apex = get_apex_domain(f"http://{domain}")
         
-        # 1. ЗАЩИТА ЦЕЛЕВОГО САЙТА: Полностью запрещаем блокировать целевой Apex-домен и любые его поддомены
+        # ИСПРАВЛЕНИЕ ШАГА 1: Проверяем домен по маскам регулярных выражений черного списка
+        is_strict_ad = any(re.search(pat, domain, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS)
+        
+        if is_strict_ad:
+            filtered_ad_domains.add(domain)
+            continue  # Абсолютный приоритет бана: игнорируем белые списки ниже
+
+        # ШАГ 2: Защита целевого сайта
         if page_apex and (domain == page_apex or domain_apex == page_apex):
-            continue  # Автоматически вырезаем сам сайт из блоклиста
+            continue  
             
-        # 2. Защита глобального белого списка (по точному совпадению или по Apex-корню)
+        # ШАГ 3: Защита глобального белого списка
         if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST:
-            if domain not in STRICT_SUBDOMAINS_BLACKLIST:
-                continue  # Вырезаем легитимную статику (cloudflare, gstatic, etc.)
+            continue  
                 
-        # 3. Фолбек для национальных зеркал поисковиков
+        # ШАГ 4: Защита поисковых национальных зеркал
         if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
-            if domain not in STRICT_SUBDOMAINS_BLACKLIST and "tagmanager" not in domain:
+            if "tagmanager" not in domain:
                 continue
 
         filtered_ad_domains.add(domain)
 
     # Сортировка по иерархии уровней
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
+
 
 
     # Запись в файл hosts
@@ -264,5 +279,5 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
 
 if __name__ == "__main__":
-    TARGET_SCAN = "01a12a5a-29b7-7199-8276-4e6733fd4000"
+    TARGET_SCAN = "01a12a79-6655-737d-b2a1-a2d6ed8e8b2b"
     generate_hosts_from_api(TARGET_SCAN)

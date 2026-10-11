@@ -3,7 +3,6 @@
 
 0.0.0.0 acint.net
 0.0.0.0 cloudflareinsights.com
-0.0.0.0 dzen.ru
 0.0.0.0 kimberlite.io
 0.0.0.0 nnmstatic.win
 0.0.0.0 openfpcdn.io
@@ -12,8 +11,6 @@
 0.0.0.0 smi2.ru
 0.0.0.0 stat.media
 0.0.0.0 trace-flow.ru
-0.0.0.0 vk.com
-0.0.0.0 vk.ru
 0.0.0.0 yandex.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
 0.0.0.0 a.adiam.tech
@@ -26,6 +23,7 @@
 0.0.0.0 ads.adfox.ru
 0.0.0.0 ads.betweendigital.com
 0.0.0.0 ads.pubmatic.com
+0.0.0.0 adv.mail.ru
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 amplify-imp.outbrain.com
 0.0.0.0 an.yandex.ru
@@ -55,6 +53,7 @@
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 cdn.optimizely.com
 0.0.0.0 cdn.skcrtxr.com
+0.0.0.0 cdn.taboola.com
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 cmr.bidderstack.com
 0.0.0.0 cod.buzzingnippy.com
@@ -71,6 +70,7 @@
 0.0.0.0 dsp.mpartner.digital
 0.0.0.0 dsp.outbrainimg.com
 0.0.0.0 e.clarity.ms
+0.0.0.0 ec.yimg.com
 0.0.0.0 euronewsgroup.demdex.net
 0.0.0.0 euw-ice.360yield.com
 0.0.0.0 ev.adriver.ru
@@ -99,8 +99,6 @@
 0.0.0.0 limg.imgsmail.ru
 0.0.0.0 log.outbrainimg.com
 0.0.0.0 log.rutube.ru
-0.0.0.0 login.vk.com
-0.0.0.0 login.vk.ru
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
@@ -112,6 +110,7 @@
 0.0.0.0 news.gnezdo.ru
 0.0.0.0 nr.bidderstack.com
 0.0.0.0 odb.outbrain.com
+0.0.0.0 ok6-5.vkuser.net
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 pb.adriver.ru
@@ -128,6 +127,7 @@
 0.0.0.0 px.adhigh.net
 0.0.0.0 px.arcspire.io
 0.0.0.0 px2.admon.pro
+0.0.0.0 r.mradx.net
 0.0.0.0 r.ussp.io
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 rm-script.dotmetrics.net
@@ -140,8 +140,10 @@
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 s.amazon-adsystem.com
 0.0.0.0 s.company-target.com
+0.0.0.0 s.yimg.com
 0.0.0.0 s0.2mdn.net
 0.0.0.0 s3-cdn.iportal.ru
+0.0.0.0 s3.dzeninfra.ru
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 script.crazyegg.com
 0.0.0.0 scripts.clarity.ms
@@ -159,6 +161,7 @@
 0.0.0.0 ssp.hybrid.ai
 0.0.0.0 ssp.rutube.ru
 0.0.0.0 st.top100.ru
+0.0.0.0 stacks.vk-portal.net
 0.0.0.0 static.bumlam.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 static.cloudflareinsights.com
@@ -206,10 +209,12 @@
 0.0.0.0 33412.ms.vk.ru
 0.0.0.0 531311.ms.dzen.ru
 0.0.0.0 a.delivery.consentmanager.net
+0.0.0.0 analytics-455007615.collector.yahoo.net
 0.0.0.0 b.delivery.consentmanager.net
 0.0.0.0 bbg.sc.omtrdc.net
 0.0.0.0 cm.a.mts.ru
 0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 consent.cmp.oath.com
 0.0.0.0 euronewsfr.api.useinsider.com
 0.0.0.0 lbs-ru1.ads.betweendigital.com
 0.0.0.0 match.prod.bidr.io
