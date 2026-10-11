@@ -143,7 +143,6 @@
 0.0.0.0 s.yimg.com
 0.0.0.0 s0.2mdn.net
 0.0.0.0 s3-cdn.iportal.ru
-0.0.0.0 s3.dzeninfra.ru
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 script.crazyegg.com
 0.0.0.0 scripts.clarity.ms
