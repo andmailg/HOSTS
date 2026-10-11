@@ -152,7 +152,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         r"^telemetry\.dzen\.ru$",
         # Новые маски для блокировки медиа-метрических поддоменов VK и Дзен
         r"\.ms\.vk\.ru$",      # Заблокирует 33412.ms.vk.ru и любые другие ID
-        r"\.ms\.dzen\.ru$"     # Заблокирует 531311.ms.dzen.ru и любые другие ID
+        #r"\.ms\.dzen\.ru$"     # Заблокирует 531311.ms.dzen.ru и любые другие ID
     ]
 
     clean_domains = set()

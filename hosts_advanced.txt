@@ -207,7 +207,6 @@
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 33412.ms.vk.ru
-0.0.0.0 531311.ms.dzen.ru
 0.0.0.0 a.delivery.consentmanager.net
 0.0.0.0 analytics-455007615.collector.yahoo.net
 0.0.0.0 b.delivery.consentmanager.net
