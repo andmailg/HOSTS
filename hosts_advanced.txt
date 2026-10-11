@@ -11,6 +11,7 @@
 0.0.0.0 smi2.net
 0.0.0.0 smi2.ru
 0.0.0.0 stat.media
+0.0.0.0 trace-flow.ru
 0.0.0.0 vk.com
 0.0.0.0 vk.ru
 0.0.0.0 yandex.ru
@@ -178,6 +179,8 @@
 0.0.0.0 tcheck.outbrainimg.com
 0.0.0.0 telemetry.dzen.ru
 0.0.0.0 top-fwz1.mail.ru
+0.0.0.0 tracker-api.my.com
+0.0.0.0 tracker-api.vk-analytics.ru
 0.0.0.0 tube.buzzoola.com
 0.0.0.0 uid.bumlam.com
 0.0.0.0 uk-script.dotmetrics.net

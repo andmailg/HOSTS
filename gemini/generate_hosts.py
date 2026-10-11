@@ -112,7 +112,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     ]
 
     STRICT_DOMAINS_WHITELIST = [
-        "yandex.ru","yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
+        "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
         "googleapis.com", "gstatic.com", "googleusercontent.com", "google.dk",
         "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
         "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
@@ -144,7 +144,8 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
 
     STRICT_SUBDOMAINS_BLACKLIST = [
         "mc.yandex.ru", "an.yandex.ru", "ads.yandex.ru","yandex.ru",
-        "google.com"
+        "sdk-api.apptracer.ru", "trace-flow.ru" # российские системы мобильной аналитики и трекинга эффективности рекламы.
+        "tracker-api.vk-analytics.ru","tracker-api.my.com" # аналитические платформы корпорации VK для мобильных разработчиков (бывший MyTracker).
     ]
 
     clean_domains = set()
