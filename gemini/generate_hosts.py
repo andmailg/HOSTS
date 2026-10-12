@@ -108,7 +108,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     SYSTEM_ASSETS_PATTERNS = [
         r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
         r"\.hsmedia\.ru", r"\.viqeo\.tv",
-        r"\.bbci\.co\.uk", r"\.bbc\.co\.uk"  # ДОБАВЛЕНО: Доверенные CDN зоны BBC
+        r"\.bbci\.co\.uk", r"\.bbc\.co\.uk",  # ДОБАВЛЕНО: Доверенные CDN зоны BBC
         r"\.thetruestory\.news"
     ]
 
@@ -160,6 +160,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
     clean_domains = set()
     new_ad_domains = set()
     domain_verdicts = {}
+    page_apex = ""
 
     for item in requests_list:
         req_container = item.get("request", {})
