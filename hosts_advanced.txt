@@ -4,6 +4,7 @@
 0.0.0.0 acint.net
 0.0.0.0 kimberlite.io
 0.0.0.0 nnmstatic.win
+0.0.0.0 openfpcdn.io
 0.0.0.0 rutarget.ru
 0.0.0.0 shopnetic.com
 0.0.0.0 smi2.net
@@ -93,6 +94,7 @@
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcpe.beeline.ru
 0.0.0.0 geoip.xoalt.com
+0.0.0.0 goya.rutube.ru
 0.0.0.0 hb-bidder.skcrtxr.com
 0.0.0.0 hb.bumlam.com
 0.0.0.0 hb.trustedstack.com
@@ -105,6 +107,7 @@
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 libs.outbrain.com
 0.0.0.0 log.outbrainimg.com
+0.0.0.0 log.rutube.ru
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
@@ -128,6 +131,7 @@
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 ping.chartbeat.net
 0.0.0.0 pix.bumlam.com
+0.0.0.0 pixel.rambler.ru
 0.0.0.0 pixel.tapad.com
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 pub.doubleverify.com
@@ -169,6 +173,7 @@
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 ssp.hybrid.ai
 0.0.0.0 ssp.rambler.ru
+0.0.0.0 ssp.rutube.ru
 0.0.0.0 ssp01.rambler.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 static.bumlam.com
@@ -214,6 +219,7 @@
 0.0.0.0 128cd4dca019fe06e856dcdf2e41de45.safeframe.googlesyndication.com
 0.0.0.0 14e8aeb7201f00819a5a64abb48c8930.safeframe.googlesyndication.com
 0.0.0.0 53fc5a1f9fe6adae48a8255f2f79005e.safeframe.googlesyndication.com
+0.0.0.0 7ebebb6c54baee02cd88171ff0220737.safeframe.googlesyndication.com
 0.0.0.0 9a31ebd4c0b67577b40ba6aa4ac67d57.safeframe.googlesyndication.com
 0.0.0.0 a.delivery.consentmanager.net
 0.0.0.0 a508dee1c84724455d87555f0230e2a8.safeframe.googlesyndication.com
