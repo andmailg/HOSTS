@@ -33,7 +33,6 @@ STRICT_DOMAINS_WHITELIST = [
     "cloudflare.com", "jsdelivr.net", "unpkg.com", "googleapis.com", 
     "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
     "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
-    "cloudflareinsights.com", "openfpcdn.io",
     
     # Инфраструктура Яндекса, Дзена и Mail.ru
     "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
@@ -47,8 +46,8 @@ STRICT_DOMAINS_WHITELIST = [
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
     
     # Медиасерверы и CDN Rutube
-    "rutube.ru", "static.rutube.ru", "goya.rutube.ru", "log.rutube.ru", 
-    "ssp.rutube.ru", "rutubelist.ru", "blrutube.ru",
+    "rutube.ru", "static.rutube.ru", 
+    "rutubelist.ru", "blrutube.ru",
     
     # Государственные и банковские сервисы
     "mos.ru", "sberbank.ru", "sbrf.ru", "sber.ru",
@@ -70,6 +69,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^goya\.rutube\.ru",
     r"^adx\.videonow\.ru",
     r"^px\.hsmedia\.ru",
+    r"\.adriver\.ru",
     r"\.24smi\.net",
     r"\.hybrid\.ai",
     r"\.ohmy\.bid",
@@ -85,6 +85,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^embeds\.rambler\.ru$", # Встраиваемые видео-блоки Рамблера со встроенной рекламой
     r"^ssp\.rambler\.ru$",
     r"^ssp01\.rambler\.ru$",
+    r"^pixel\.rambler\.ru$",
+    r"^o2\.mail\.ru$",
     r"^rs\.mail\.ru$",        # Рекламный сервер Mail.ru (активно раздает видео-кампании)
     
     # Предыдущие правила...

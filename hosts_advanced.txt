@@ -93,7 +93,6 @@
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcpe.beeline.ru
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 goya.rutube.ru
 0.0.0.0 hb-bidder.skcrtxr.com
 0.0.0.0 hb.bumlam.com
 0.0.0.0 hb.trustedstack.com
@@ -106,7 +105,6 @@
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 libs.outbrain.com
 0.0.0.0 log.outbrainimg.com
-0.0.0.0 log.rutube.ru
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
@@ -119,6 +117,7 @@
 0.0.0.0 mv.outbrain.com
 0.0.0.0 news.gnezdo.ru
 0.0.0.0 nr.bidderstack.com
+0.0.0.0 o2.mail.ru
 0.0.0.0 odb.outbrain.com
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 pagead2.googlesyndication.com
@@ -128,6 +127,7 @@
 0.0.0.0 pebed.dm-event.net
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 ping.chartbeat.net
+0.0.0.0 pix.bumlam.com
 0.0.0.0 pixel.tapad.com
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 pub.doubleverify.com
@@ -169,11 +169,11 @@
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 ssp.hybrid.ai
 0.0.0.0 ssp.rambler.ru
-0.0.0.0 ssp.rutube.ru
 0.0.0.0 ssp01.rambler.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 static.bumlam.com
 0.0.0.0 static.chartbeat.com
+0.0.0.0 static.cloudflareinsights.com
 0.0.0.0 static.criteo.net
 0.0.0.0 static.kimberlite.io
 0.0.0.0 static.terratraf.com
