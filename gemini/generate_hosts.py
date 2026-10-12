@@ -117,7 +117,7 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         "dzen.ru","dzeninfra.ru","vk.com", "vk.ru",
         "googleapis.com", "gstatic.com", "googleusercontent.com", "google.dk",
         "ichef.bbci.co.uk",                  # ДОБАВЛЕНО: Картинки BBC
-        "static.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
+        "static.bbci.co.uk","ichef.bbci.co.uk",                 # ДОБАВЛЕНО: Стили и скрипты BBC
         "static.files.bbci.co.uk",           # ДОБАВЛЕНО: Вспомогательная статика BBC
         "emp.bbci.co.uk",
         "cloudflare.com",    # ДОБАВЛЕНО: Защита cdnjs.cloudflare.com
