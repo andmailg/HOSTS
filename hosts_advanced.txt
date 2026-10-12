@@ -105,6 +105,7 @@
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 match.sharethrough.com
+0.0.0.0 mc.yandex.com
 0.0.0.0 mc.yandex.ru
 0.0.0.0 mcdp-chidc2.outbrain.com
 0.0.0.0 mitdmp.whiteboxdigital.ru
@@ -129,6 +130,7 @@
 0.0.0.0 r.mradx.net
 0.0.0.0 r.ussp.io
 0.0.0.0 region1.google-analytics.com
+0.0.0.0 reklama.mail.ru
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 rsm.zona.mediacampaigns
 0.0.0.0 rst.skcrtxr.com
