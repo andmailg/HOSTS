@@ -80,7 +80,10 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^sdk-api\.apptracer\.[a-z]+$",
     r"^trace-flow\.[a-z]+$", 
     r"^tracker-api\.vk-analytics\.[a-z]+$",
-    r"^telemetry\.dzen\.[a-z]+$"
+    r"^telemetry\.dzen\.[a-z]+$",
+    r"^ad\.mail\.ru$"
+    r"^reklama\.mail\.ru$"
+    r"\.ms\.dzen\.[a-z]+$"
 ]
 
 
@@ -156,20 +159,22 @@ def sort_domains_by_level(domain_set):
 
 
 def should_block_domain(domain, page_apex=None, score=None):
-    """ЕДИНАЯ ФУНКЦИЯ ФИЛЬТРАЦИИ И ПРИНЯТИЯ РЕШЕНИЙ ПО БЛОКИРОВКЕ."""
+    """ЕДИНАЯ ФУНКЦИЯ ФИЛЬТРАЦИИ С ИСПРАВЛЕННЫМ ПРИОРИТЕТОМ ЧЕРНОГО СПИСКА."""
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
 
-    # 1. Жесткий черный список (Приоритет №1) — игнорирует любые "полезные" баллы домена
+    # 1. СТРОГИЙ ЧЕРНЫЙ СПИСОК (Абсолютный приоритет №1)
+    # Если поддомен в черном списке — блокируем ВСЕГДА, даже если apex в белом списке!
     is_strict_ad = any(re.search(pat, domain, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS)
     if is_strict_ad:
         return True
 
-    # 2. Защита белого списка (Пропускаем только чистые корневые сервисы)
+    # 2. ЗАЩИТА БЕЛОГО СПИСКА (Приоритет №2)
     if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST:
+        # Карневые домены (mail.ru, yandex.ru) пропускаем
         if domain == domain_apex:
             return False
-        # Поддомены из белого списка пропускаем, если они не забанены в пункте 1
+        # Поддомены из белого списка пропускаем, ТОЛЬКО если они не забанены в пункте 1
         return False
 
     # 3. Исключения для базовых доменов текущей сканируемой страницы
@@ -177,24 +182,23 @@ def should_block_domain(domain, page_apex=None, score=None):
         if domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex:
             return False
 
-    # 4. Проверка инфраструктуры поисковиков
+    # 4. Проверка инфраструктуры поисковиков (Google/Yandex) во всех зонах
     if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
         if "tagmanager" in domain or "analytics" in domain:
             return True
         return False
 
-    # 5. Анализ весов из логов сканирования
+    # 5. Анализ весов из логов сканирования с защитой легитимных медиа-CDN
     if score is not None:
-        # Если домен набрал хоть какой-то рекламный балл и при этом является сторонним (3rd-party cdn),
-        # мы снижаем планку блокировки, чтобы не пропускать скрытые трекеры
-        if score["ad_score"] > 0 and score["clean_score"] > 0:
-            # Если это сторонний CDN-домен, подмешивающий рекламу — блокируем
-            if "cdn" in domain and score["ad_score"] >= 12:
-                return True
+        # Защита крупных медийных CDN (Hearst Shkulev, Городские порталы, Google AMP)
+        if any(x in domain for x in ["hsmedia.ru", "iportal.ru", "ampproject.org"]):
+            return False
+            
         return score["ad_score"] > score["clean_score"]
 
     # По умолчанию блокируем сторонние неопознанные домены
     return True
+
 
 def process_scan_json(raw_data):
     """Основная логика анализа сетевого лога из ответа URLScan API."""
@@ -421,20 +425,37 @@ async def main_async():
         
         # Формирование структурированного лога аналитики
         log_lines = [
-            "=" * 60, "ЛОГ АНАЛИЗА URLSCAN", "=" * 60,
+            "=" * 60, "ЛОГ АНАЛИЗА URLSCAN (ФИЛЬТРАЦИЯ ОТЛАЖЕНА)", "=" * 60,
             f"Успешно: {success_count}/{len(urls)}", f"Ошибки: {fail_count}/{len(urls)}",
-            f"Новых доменов добавлено: {len(all_new_domains)}", f"Всего в базе: {len(sorted_ad_domains)}", ""
+            f"Всего рекламных доменов в базе hosts: {len(sorted_ad_domains)}", ""
         ]
         
-        if all_new_domains:
-            log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---")
-            for idx, (domain, scores) in enumerate(sorted(all_new_domains.items()), 1):
+        # Пересобираем списки на основе финального вердикта эталонной функции
+        final_ad_log = {}
+        final_clean_log = {}
+
+        for domain, scores in all_new_domains.items():
+            if should_block_domain(domain):
+                final_ad_log[domain] = scores
+            else:
+                final_clean_log[domain] = scores
+
+        for domain, scores in all_clean_domains.items():
+            # Если домен из "чистых" на самом деле должен быть заблокирован жестким паттерном
+            if should_block_domain(domain):
+                final_ad_log[domain] = scores
+            else:
+                final_clean_log[domain] = scores
+        
+        if final_ad_log:
+            log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ (СТРОГИЙ БАН) ---")
+            for idx, (domain, scores) in enumerate(sorted(final_ad_log.items()), 1):
                 log_lines.append(f"{idx:02d}. [AD] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
             log_lines.append("")
         
-        if all_clean_domains:
-            log_lines.append("--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---")
-            for idx, (domain, scores) in enumerate(sorted(all_clean_domains.items()), 1):
+        if final_clean_log:
+            log_lines.append("--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ (КОНТЕНТ/CDN) ---")
+            for idx, (domain, scores) in enumerate(sorted(final_clean_log.items()), 1):
                 log_lines.append(f"{idx:02d}. [OK] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
             log_lines.append("")
             

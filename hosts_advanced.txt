@@ -69,6 +69,7 @@
 0.0.0.0 csync.skcrtxr.com
 0.0.0.0 dc.xoalt.com
 0.0.0.0 dm.hybrid.ai
+0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 dmp.sbermarketing.ru
 0.0.0.0 dpm.demdex.net
 0.0.0.0 dsp.mpartner.digital
