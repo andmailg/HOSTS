@@ -61,22 +61,28 @@ STRICT_DOMAINS_WHITELIST = [
 ]
 
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$",
-    r"^sdk-api\.apptracer\.[a-z]+$", r"^trace-flow\.[a-z]+$", 
-    r"^tracker-api\.vk-analytics\.[a-z]+$", r"^tracker-api\.my\.com$", 
-    r"^telemetry\.dzen\.[a-z]+$",
-    r"\.ms\.vk\.[a-z]+$",
-    r"\.ms\.dzen\.[a-z]+$",
-    r"^mradx\.net$", r"\.mradx\.net$",  # Полная блокировка баннерообменника Mail.ru
-    r"\.appsflyersdk\.com$",
-    r"^alt-ad\.mail\.ru$",
-    r"\.mediascope\.mail\.ru$",
-    r"^alt-aj-https\.mail\.ru$",
-    r"^ads\.vk\.ru$",
-    r"^target\.vk\.ru$",
-    r"^ad\.mail\.ru$",
-    r"^reklama\.mail\.ru$"
+    # Блокировка Метрики, Директа и рекламных серверов во ВСЕХ зонах (.ru, .com, .by и т.д.)
+    r"^mc\.yandex\.[a-z]+$", 
+    r"^an\.yandex\.[a-z]+$", 
+    r"^ads\.yandex\.[a-z]+$",
+    r"^share\.yandex\.[a-z]+$", # Кнопки "Поделиться" (тоже собирают аналитику)
+    
+    # Блокировка дочерней рекламной сети AdFox
+    r"^ads\.adfox\.ru$",
+    r"^banners\.adfox\.ru$",
+    r"^adfox\.ru$",
+    
+    # Рекламные RTB-синхронизаторы Яндекса
+    r"^yandex-sync\.rutarget\.ru$",
+    r"^yandex-dmp-sync\.rutarget\.ru$",
+    
+    # Остальные ваши правила...
+    r"^sdk-api\.apptracer\.[a-z]+$",
+    r"^trace-flow\.[a-z]+$", 
+    r"^tracker-api\.vk-analytics\.[a-z]+$",
+    r"^telemetry\.dzen\.[a-z]+$"
 ]
+
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 def get_api_key():
@@ -203,7 +209,9 @@ def process_scan_json(raw_data):
         r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding",
         r"\/ads\/system\/", r"sync-loader", r"counter", r"analytics",
         r"gnezdo\.ru", r"fundingchoices", r"\/cm\.", r"context\.js",
-        r"telemetry", r"adriver", r"bs\.serving-sys", r"advert"
+        r"telemetry", r"adriver", r"bs\.serving-sys", r"advert",
+        r"adfox",     # Перехват любых скриптов AdFox Яндекса
+        r"awaps"      # Рекламные движки Яндекса (старые и зеркальные системы)
     ]
 
     SYSTEM_ASSETS_PATTERNS = [
