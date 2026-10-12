@@ -90,12 +90,9 @@
 0.0.0.0 id.cxense.com
 0.0.0.0 id.rlcdn.com
 0.0.0.0 images.outbrainimg.com
-0.0.0.0 img.imgsmail.ru
-0.0.0.0 imgs2.imgsmail.ru
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 iv.okcdn.ru
 0.0.0.0 libs.outbrain.com
-0.0.0.0 limg.imgsmail.ru
 0.0.0.0 log.outbrainimg.com
 0.0.0.0 log.rutube.ru
 0.0.0.0 logx.optimizely.com
@@ -119,7 +116,6 @@
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 ping.chartbeat.net
 0.0.0.0 pixel.tapad.com
-0.0.0.0 pogoda.imgsmail.ru
 0.0.0.0 privacy-cs.mail.ru
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 pub.doubleverify.com
@@ -220,7 +216,6 @@
 0.0.0.0 redirect.frontend.weborama.fr
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 securepubads.g.doubleclick.net
-0.0.0.0 stat.radar.imgsmail.ru
 0.0.0.0 static.a.mts.ru
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 sync.dmp.otm-r.com

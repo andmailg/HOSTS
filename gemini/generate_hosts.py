@@ -141,7 +141,8 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         "mos.ru",                 # Портал государственных услуг Москвы
         "sberbank.ru",            # Сервисы Сбера
         "sbrf.ru",                # Старая техническая зона Сбербанка
-        "vigo.tech"               # Оптимизация и метрики видеостриминга
+        "vigo.tech",               # Оптимизация и метрики видеостриминга
+        "imgsmail.ru"
     ]
 
     # ИСПРАВЛЕНИЕ: Переводим черный список на регулярные выражения (маски поддоменов)
@@ -152,7 +153,8 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         r"^telemetry\.dzen\.ru$",
         # Новые маски для блокировки медиа-метрических поддоменов VK и Дзен
         r"\.ms\.vk\.ru$",      # Заблокирует 33412.ms.vk.ru и любые другие ID
-        r"\.ms\.dzen\.ru$"     # Заблокирует 531311.ms.dzen.ru и любые другие ID
+        r"\.ms\.dzen\.ru$",     # Заблокирует 531311.ms.dzen.ru и любые другие ID
+        r"mradx\.net$"  # Жесткая блокировка рекламной сети MyTarget (mradx.net)
     ]
 
     clean_domains = set()
