@@ -229,5 +229,4 @@
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 yhb.p.otm-r.com
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
-0.0.0.0 mybbc-analytics.files.bbci.co.uk
 0.0.0.0 w4jwjj6r7lesmjdsph3hrk2qhy0qpvod.lambda-url.eu-west-1.on.aws
