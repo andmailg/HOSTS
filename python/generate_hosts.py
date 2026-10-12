@@ -61,24 +61,24 @@ STRICT_DOMAINS_WHITELIST = [
 ]
 
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
+    # --- Рекламная развязка Rutube и единого видео VK ---
+    r"^ad\.vkvideo\.ru$",
+    r"^stats\.vkvideo\.ru$",
+    r"^tr\.vkvideo\.ru$",
+    r"^top\.vkvideo\.ru$",
+    
+    # Специфические рекламные шлюзы Rutube
+    r"^ssp\.rutube\.ru$",
+    r"^log\.rutube\.ru$",
+    
+    # Реклама Газпром-Медиа / ГПМ-Дата (крутится на Rutube)
+    r"^cdn\.gpmdata\.ru$",
+    r"^match\.gpmdata\.ru$",
+    
+    # Предыдущие правила...
     r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$",
-    r"^sdk-api\.apptracer\.[a-z]+$", r"^trace-flow\.[a-z]+$", 
-    r"^tracker-api\.vk-analytics\.[a-z]+$", r"^tracker-api\.my\.com$", 
-    r"telemetry\.dzen\.[a-z]+$",
-    r"\.ms\.vk\.[a-z]+$",
-    r"\.ms\.dzen\.[a-z]+$",
-    r".*ms\.dzen\.[a-z]+$",
-    r"mradx\.net$",
-    r"\.appsflyersdk\.com$",
-    r"alt-ad\.mail\.ru$",
-    r"\.mediascope\.mail\.ru$",
-    r"alt-aj-https\.mail\.ru$",
-    r"ads\.vk\.ru$",
-    r"target\.vk\.ru$",
-    r"ad\.mail\.ru$",
-    r"reklama\.mail\.ru$"
+    r"ad\.mail\.ru$", r"reklama\.mail\.ru$"
 ]
-
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 def get_api_key():
@@ -203,9 +203,11 @@ def process_scan_json(raw_data):
         r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding",
         r"\/ads\/system\/", r"sync-loader", r"counter", r"analytics",
         r"gnezdo\.ru", r"fundingchoices", r"\/cm\.", r"context\.js",
-        r"telemetry", r"adriver", r"bs\.serving-sys", r"advert",
-        r"adfox",     # Перехват любых скриптов AdFox Яндекса
-        r"awaps"      # Рекламные движки Яндекса (старые и зеркальные системы)
+        r"telemetry", r"adriver", r"bs\.serving-sys", r"advert", r"adfox",
+        # Новые маркеры для Rutube / VK
+        r"vkvideo\.ru\/ad",
+        r"vkvideo\.ru\/stat",
+        r"gpmdata"
     ]
 
     SYSTEM_ASSETS_PATTERNS = [

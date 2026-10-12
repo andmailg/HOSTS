@@ -14,6 +14,7 @@
 0.0.0.0 1070--27814ea7-6fae-4608-933d-ac0c158c6eae.stbid.ru
 0.0.0.0 1070--8a27ad07-f335-47cd-97ce-f0fef55355e1.stbid.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
+0.0.0.0 4--00000bbc6acd125485bfab0600058201--r.stbid.ru
 0.0.0.0 8mudbv-inapps.appsflyersdk.com
 0.0.0.0 8mudbv-launches.appsflyersdk.com
 0.0.0.0 a.adiam.tech
@@ -174,7 +175,6 @@
 0.0.0.0 sync.upravel.com
 0.0.0.0 t.rtbwave.com
 0.0.0.0 tcheck.outbrainimg.com
-0.0.0.0 telemetry.dzen.ru
 0.0.0.0 tpc.googlesyndication.com
 0.0.0.0 tracker-api.my.com
 0.0.0.0 tracker-api.vk-analytics.ru
