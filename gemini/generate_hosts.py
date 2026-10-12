@@ -154,7 +154,10 @@ def generate_hosts_from_api(scan_input, output_hosts_path="hosts_advanced.txt"):
         # Новые маски для блокировки медиа-метрических поддоменов VK и Дзен
         r"\.ms\.vk\.ru$",      # Заблокирует 33412.ms.vk.ru и любые другие ID
         r"\.ms\.dzen\.ru$",     # Заблокирует 531311.ms.dzen.ru и любые другие ID
-        r"mradx\.net$"  # Жесткая блокировка рекламной сети MyTarget (mradx.net)
+        r"mradx\.net$",  # Жесткая блокировка рекламной сети MyTarget (mradx.net)
+        r"\.appsflyersdk\.com$",      # Заблокирует любые ID-префиксы AppsFlyer
+        r"^alt-ad\.mail\.ru$",        # Блокировка рекламного сервера Mail.ru
+        r"\.mediascope\.mail\.ru$"    # Блокировка всех шпионских поддоменов Mediascope
     ]
 
     clean_domains = set()
