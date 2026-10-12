@@ -34,6 +34,7 @@
 0.0.0.0 an.yandex.ru
 0.0.0.0 analytics.mediadash.ru
 0.0.0.0 api.onesignal.com
+0.0.0.0 api.vigo.tech
 0.0.0.0 assets.adobedtm.com
 0.0.0.0 b.clarity.ms
 0.0.0.0 b1-chidc2.outbrain.com
@@ -59,6 +60,7 @@
 0.0.0.0 cdn.skcrtxr.com
 0.0.0.0 cdn.taboola.com
 0.0.0.0 cdn.tinypass.com
+0.0.0.0 cdn.viqeo.tv
 0.0.0.0 cmr.bidderstack.com
 0.0.0.0 cod.buzzingnippy.com
 0.0.0.0 comcluster.cxense.com
@@ -76,6 +78,7 @@
 0.0.0.0 dsp.outbrainimg.com
 0.0.0.0 e.clarity.ms
 0.0.0.0 ec.yimg.com
+0.0.0.0 embeds.rambler.ru
 0.0.0.0 euronewsgroup.demdex.net
 0.0.0.0 euw-ice.360yield.com
 0.0.0.0 ev.adriver.ru
@@ -103,6 +106,7 @@
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 match.sharethrough.com
+0.0.0.0 mc.acint.net
 0.0.0.0 mc.yandex.com
 0.0.0.0 mc.yandex.ru
 0.0.0.0 mcdp-chidc2.outbrain.com
@@ -125,11 +129,13 @@
 0.0.0.0 px.adhigh.net
 0.0.0.0 px.arcspire.io
 0.0.0.0 px2.admon.pro
+0.0.0.0 r.bidswitch.net
 0.0.0.0 r.mradx.net
 0.0.0.0 r.ussp.io
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 reklama.mail.ru
 0.0.0.0 rm-script.dotmetrics.net
+0.0.0.0 rs.mail.ru
 0.0.0.0 rsm.zona.mediacampaigns
 0.0.0.0 rst.skcrtxr.com
 0.0.0.0 rtb-csync.smartadserver.com
@@ -157,6 +163,7 @@
 0.0.0.0 ssp.al-adtech.com
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 ssp.hybrid.ai
+0.0.0.0 ssp.rambler.ru
 0.0.0.0 ssp01.rambler.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 static.bumlam.com
@@ -231,6 +238,7 @@
 0.0.0.0 uid.ssp.bidvol.com
 0.0.0.0 yhb.p.otm-r.com
 0.0.0.0 2293326691791816444596.cm.a.mts.ru
+0.0.0.0 41c8422c-c65f-11f1-8e0f-002590c82436.n7.sync.bumlam.com
 0.0.0.0 4834826861791812208850.cm.a.mts.ru
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
 0.0.0.0 9727487581791824088183.cm.a.mts.ru

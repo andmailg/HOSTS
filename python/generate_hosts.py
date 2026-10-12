@@ -56,24 +56,21 @@ STRICT_DOMAINS_WHITELIST = [
     # Доверенные СМИ, хостинги картинок и форумы
     "thetruestory.news", "rferl.org", "fastpic.org", "imageban.ru", 
     "pic4net.com", "directupload.eu", "hostingkartinok.com", "rutracker.cc", 
-    "imgchest.com", "vigo.tech", "ichef.bbci.co.uk", "static.bbci.co.uk", 
+    "imgchest.com", "ichef.bbci.co.uk", "static.bbci.co.uk", 
     "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk"
 ]
 
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    # --- Рекламная развязка Rutube и единого видео VK ---
-    r"^ad\.vkvideo\.ru$",
-    r"^stats\.vkvideo\.ru$",
-    r"^tr\.vkvideo\.ru$",
-    r"^top\.vkvideo\.ru$",
+    # --- Видеоплатформы и видео-CDN, крутящие рекламу на Фонтанке ---
+    r"\.viqeo\.tv$",          # Плееры Viqeo (основной источник навязчивого видео)
+    r"api\.vigo\.tech$",      # Vigo — трекер и оптимизатор коммерческого видеопотока
+    r"vigo\.tech$",
     
-    # Специфические рекламные шлюзы Rutube
-    r"^ssp\.rutube\.ru$",
-    r"^log\.rutube\.ru$",
-    
-    # Реклама Газпром-Медиа / ГПМ-Дата (крутится на Rutube)
-    r"^cdn\.gpmdata\.ru$",
-    r"^match\.gpmdata\.ru$",
+    # --- Рекламные видеошлюзы Rambler и Mail.ru на внешних сайтах ---
+    r"^embeds\.rambler\.ru$", # Встраиваемые видео-блоки Рамблера со встроенной рекламой
+    r"^ssp\.rambler\.ru$",
+    r"^ssp01\.rambler\.ru$",
+    r"^rs\.mail\.ru$",        # Рекламный сервер Mail.ru (активно раздает видео-кампании)
     
     # Предыдущие правила...
     r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$",
@@ -204,10 +201,10 @@ def process_scan_json(raw_data):
         r"\/ads\/system\/", r"sync-loader", r"counter", r"analytics",
         r"gnezdo\.ru", r"fundingchoices", r"\/cm\.", r"context\.js",
         r"telemetry", r"adriver", r"bs\.serving-sys", r"advert", r"adfox",
-        # Новые маркеры для Rutube / VK
-        r"vkvideo\.ru\/ad",
-        r"vkvideo\.ru\/stat",
-        r"gpmdata"
+        # Новые маркеры видеорекламы для Фонтанки
+        r"viqeo",
+        r"vigo\.tech",
+        r"embeds\.rambler"
     ]
 
     SYSTEM_ASSETS_PATTERNS = [
