@@ -11,8 +11,9 @@ import tldextract
 import urllib3
 
 # --- Config ---
-HOSTS_FILE = Path(__file__).parent / "hosts_advanced.txt"
-DEFAULT_URL_FILE = Path(__file__).parent.parent / "urls.txt"
+HOSTS_FILE = Path(__file__).parent.parent / "hosts_advanced.txt"
+LOG_FILE = Path(__file__).parent.parent / "log.txt"
+DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
 URLSCAN_SCAN = "https://urlscan.io/api/v1/scan/"
 URLSCAN_SEARCH = "https://urlscan.io/api/v1/search/"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
@@ -23,21 +24,39 @@ MAX_CONCURRENT = 10
 
 # Фильтры для итогового файла
 STRICT_DOMAINS_WHITELIST = [
-    "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
-    "dzen.ru","dzeninfra.ru","vk.com", "vk.ru",
-    "googleapis.com", "gstatic.com", "googleusercontent.com", "google.dk",
-    "ichef.bbci.co.uk", "static.bbci.co.uk", "mybbc-analytics.files.bbci.co.uk",
-    "static.files.bbci.co.uk", "emp.bbci.co.uk",
-    "cloudflare.com", "jsdelivr.net", "unpkg.com",
-    "thetruestory.news", "gvt1.com", "youtube.com", "ytimg.com",
-    "nflximg.net", "dmcdn.net", "rutracker.cc", "imgchest.com",
-    "rferl.org", "fastpic.org", "imageban.ru", "pic4net.com",
-    "directupload.eu", "hostingkartinok.com", "rackcdn.com",
-    "mos.ru", "sberbank.ru", "sbrf.ru", "vigo.tech", "imgsmail.ru"
-]
+        # --- ГЛОБАЛЬНЫЕ СЕРВИСЫ И CDN ---
+        "cloudflare.com", "jsdelivr.net", "unpkg.com", "googleapis.com", 
+        "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
+        "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
+        "cloudflareinsights.com", "openfpcdn.io",
+        
+        # --- ИНФРАСТРУКТУРА ЯНДЕКСА И DZEN ---
+        "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
+        "dzen.ru", "dzeninfra.ru", "imgsmail.ru",
+        
+        # --- МЕДИАСЕРВЕРЫ И CDN ВКОНТАКТЕ (VK) ---
+        "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
+        "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
+        
+        # --- МЕДИАСЕРВЕРЫ И CDN ОДНОКЛАССНИКОВ (OK) ---
+        "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
+        
+        # --- МЕДИАСЕРВЕРЫ И CDN RUTUBE ---
+        "rutube.ru", "static.rutube.ru", "goya.rutube.ru", "log.rutube.ru", 
+        "ssp.rutube.ru", "rutubelist.ru", "blrutube.ru",
+        
+        # --- ГОСУДАРСТВЕННЫЕ И БАНКОВСКИЕ СЕРВИСЫ ---
+        "mos.ru", "sberbank.ru", "sbrf.ru", "sber.ru",
+        
+        # --- ДОВЕРЕННЫЕ СМИ И ИХ CDN (ИЗ КОДА) ---
+        "thetruestory.news", "rferl.org", "fastpic.org", "imageban.ru", 
+        "pic4net.com", "directupload.eu", "hostingkartinok.com", "rutracker.cc", 
+        "imgchest.com", "vigo.tech", "ichef.bbci.co.uk", "static.bbci.co.uk", 
+        "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk"
+    ]
 
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    r"mc\.yandex\.ru", r"an\.yandex\.ru", r"ads\.yandex\.ru", r"yandex\.ru",
+    r"mc\.yandex\.ru", r"an\.yandex\.ru", r"ads\.yandex\.ru", r"^yandex\.ru$",
     r"sdk-api\.apptracer\.ru", r"trace-flow\.ru", 
     r"tracker-api\.vk-analytics\.ru", r"tracker-api\.my\.com", 
     r"telemetry\.dzen\.ru",
@@ -202,17 +221,17 @@ def sort_domains_by_level(domain_set):
 
 def process_scan_json(raw_data, existing_domains=None):
     """Основная логика анализа сетевого лога и генерации блоклиста.
-    Возвращает кортеж: (новые рекламные домены, пропущенные легитимные домены).
+    Возвращает кортеж: (новые рекламные домены, пропущенные легитимные домены с весами).
     """
     if existing_domains is None:
         existing_domains = read_existing_hosts(str(HOSTS_FILE))
     if not raw_data or not isinstance(raw_data, dict):
-        return set(), set()
+        return {}, {}
 
     requests_list = raw_data.get("data", {}).get("requests", [])
     if not requests_list:
         print("Предупреждение: Лог сетевых запросов в ключе ['data']['requests'] пуст.")
-        return set(), set()
+        return {}, {}
 
     AD_TRACKER_PATTERNS = [
         r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding",
@@ -228,8 +247,8 @@ def process_scan_json(raw_data, existing_domains=None):
         r"\.thetruestory\.news"
     ]
 
-    clean_domains = set()
-    new_ad_domains = set()
+    clean_domains = {}
+    new_ad_domains = {}
     domain_verdicts = {}
 
     doc_url = raw_data.get("page", {}).get("url", "")
@@ -292,45 +311,54 @@ def process_scan_json(raw_data, existing_domains=None):
             for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS
         )
         if is_blacklisted:
-            new_ad_domains.add(domain)
+            new_ad_domains[domain] = domain_verdicts[domain]
         elif (
             domain in STRICT_DOMAINS_WHITELIST
             or domain == page_apex
             or f"www.{domain}" == page_apex
         ):
-            clean_domains.add(domain)
+            clean_domains[domain] = domain_verdicts[domain]
         elif score["ad_score"] > score["clean_score"]:
-            new_ad_domains.add(domain)
+            new_ad_domains[domain] = domain_verdicts[domain]
         else:
-            clean_domains.add(domain)
+            clean_domains[domain] = domain_verdicts[domain]
 
-    existing_ad_domains = existing_domains
-    all_ad_domains = existing_ad_domains.union(new_ad_domains)
-    filtered_ad_domains = set()
+        # --- ИСПРАВЛЕННЫЙ БЛОК ФИЛЬТРАЦИИ ---
+        existing_domains = read_existing_hosts(str(HOSTS_FILE))
+        all_ad_domains = existing_domains.union(new_ad_domains.keys())
+        filtered_ad_domains = set()
+        
+        for domain in all_ad_domains:
+            domain_apex = get_apex_domain(domain)
+            
+            # 1. ПРИОРИТЕТ БЕЛОГО СПИСКА: Если сам домен или его apex в белом списке
+            if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST:
+                # Исключение: блокируем только если это строго заданный рекламный поддомен
+                # (например, mc.yandex.ru или ad.mail.ru), но НЕ сам корневой yandex.ru
+                is_strict_ad_subdomain = any(
+                    re.search(pat, domain, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS
+                )
+                # Если это корневой домен из белого списка — пропускаем блокировку
+                if domain == domain_apex and domain in STRICT_DOMAINS_WHITELIST:
+                    continue
+                # Если поддомен не подпадает под паттерны рекламы — пропускаем блокировку
+                if not is_strict_ad_subdomain:
+                    continue
 
-    for domain in all_ad_domains:
-        domain_apex = get_apex_domain(domain)
-        is_strict_ad = any(
-            re.search(pat, domain, re.IGNORECASE)
-            for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS
-        )
-        if is_strict_ad:
-            filtered_ad_domains.add(domain)
-            continue
-
-        if page_apex and (domain == page_apex or domain_apex == page_apex):
-            continue
-
-        if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST:
-            continue
-
-        if domain_apex and (
-            domain_apex.startswith("google.") or domain_apex.startswith("yandex.")
-        ):
-            if "tagmanager" not in domain:
+            # 2. ЧЕРНЫЙ СПИСОК: Проверяем на соответствие паттернам рекламы
+            is_strict_ad = any(
+                re.search(pat, domain, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS
+            )
+            if is_strict_ad:
+                filtered_ad_domains.add(domain)
                 continue
 
-        filtered_ad_domains.add(domain)
+            # 3. Дополнительные правила для Google/Yandex (за исключением tagmanager)
+            if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
+                if "tagmanager" not in domain:
+                    continue
+
+            filtered_ad_domains.add(domain)
 
     return new_ad_domains, clean_domains
 
@@ -368,8 +396,8 @@ async def main_async():
         
         semaphore = asyncio.Semaphore(MAX_CONCURRENT)
         hosts_lock = asyncio.Lock()
-        all_new_domains = set()
-        all_clean_domains = set()
+        all_new_domains = {}
+        all_clean_domains = {}
         failed_urls = set()
         
         tasks = [
@@ -384,7 +412,7 @@ async def main_async():
         
         # Запись итогового hosts-файла
         existing_domains = read_existing_hosts(str(HOSTS_FILE))
-        all_ad_domains = existing_domains.union(all_new_domains)
+        all_ad_domains = existing_domains.union(all_new_domains.keys())
         filtered_ad_domains = set()
         
         for domain in all_ad_domains:
@@ -431,20 +459,54 @@ async def main_async():
         # Вывод добавленных доменов
         if all_new_domains:
             print(f"\n--- СПИСОК ДОБАВЛЕННЫХ РЕКЛАМНЫХ ДОМЕНОВ ({len(all_new_domains)}) ---")
-            for idx, domain in enumerate(sorted(all_new_domains), 1):
-                print(f"{idx:02d}. [AD] {domain}")
+            for idx, (domain, scores) in enumerate(sorted(all_new_domains.items()), 1):
+                print(f"{idx:02d}. [AD] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
         
         # Вывод пропущенных легитимных доменов
         if all_clean_domains:
             print(f"\n--- СПИСОК ПРОПУЩЕННЫХ ЛЕГИТИМНЫХ ДОМЕНОВ ({len(all_clean_domains)}) ---")
-            for idx, domain in enumerate(sorted(all_clean_domains), 1):
-                print(f"{idx:02d}. [OK] {domain}")
+            for idx, (domain, scores) in enumerate(sorted(all_clean_domains.items()), 1):
+                print(f"{idx:02d}. [OK] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
         
         # Вывод не просканированных seed-доменов
         if failed_urls:
             print(f"\n--- СПИСОК НЕ ПРОСКОНИРОВАННЫХ URL ({len(failed_urls)}) ---")
             for idx, url in enumerate(sorted(failed_urls), 1):
                 print(f"{idx:02d}. [FAIL] {url}")
+        
+        # Сохранение лога в файл
+        log_lines = []
+        log_lines.append("=" * 60)
+        log_lines.append("ЛОГ АНАЛИЗА URLSCAN")
+        log_lines.append("=" * 60)
+        log_lines.append(f"Успешно: {success_count}/{len(urls)}")
+        log_lines.append(f"Ошибки: {fail_count}/{len(urls)}")
+        log_lines.append(f"Новых доменов добавлено: {len(all_new_domains)}")
+        log_lines.append(f"Всего в базе: {len(sorted_ad_domains)}")
+        log_lines.append("")
+        
+        if all_new_domains:
+            log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---")
+            for idx, (domain, scores) in enumerate(sorted(all_new_domains.items()), 1):
+                log_lines.append(f"{idx:02d}. [AD] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
+            log_lines.append("")
+        
+        if all_clean_domains:
+            log_lines.append("--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---")
+            for idx, (domain, scores) in enumerate(sorted(all_clean_domains.items()), 1):
+                log_lines.append(f"{idx:02d}. [OK] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
+            log_lines.append("")
+        
+        if failed_urls:
+            log_lines.append("--- НЕ ПРОСКОНИРОВАННЫЕ URL ---")
+            for idx, url in enumerate(sorted(failed_urls), 1):
+                log_lines.append(f"{idx:02d}. [FAIL] {url}")
+            log_lines.append("")
+        
+        with open(LOG_FILE, "w", encoding="utf-8") as f:
+            f.write("\n".join(log_lines))
+        
+        print(f"\nЛог сохранён в '{LOG_FILE}'")
 
 
 if __name__ == "__main__":
