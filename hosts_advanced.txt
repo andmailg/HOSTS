@@ -13,6 +13,8 @@
 0.0.0.0 trace-flow.ru
 0.0.0.0 yandex.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
+0.0.0.0 8mudbv-inapps.appsflyersdk.com
+0.0.0.0 8mudbv-launches.appsflyersdk.com
 0.0.0.0 a.adiam.tech
 0.0.0.0 a.ussp.io
 0.0.0.0 a.utraff.com
@@ -25,6 +27,8 @@
 0.0.0.0 ads.pubmatic.com
 0.0.0.0 adv.mail.ru
 0.0.0.0 ae.dmxleo.com
+0.0.0.0 alt-ad.mail.ru
+0.0.0.0 alt-aj-https.mail.ru
 0.0.0.0 amplify-imp.outbrain.com
 0.0.0.0 an.yandex.ru
 0.0.0.0 analytics.iportal.ru
@@ -200,6 +204,8 @@
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 33412.ms.vk.ru
+0.0.0.0 731111.mediascope.mail.ru
+0.0.0.0 741111.mediascope.mail.ru
 0.0.0.0 a.delivery.consentmanager.net
 0.0.0.0 analytics-455007615.collector.yahoo.net
 0.0.0.0 b.delivery.consentmanager.net
@@ -208,6 +214,7 @@
 0.0.0.0 cm.g.doubleclick.net
 0.0.0.0 consent.cmp.oath.com
 0.0.0.0 euronewsfr.api.useinsider.com
+0.0.0.0 ip4.tracker-api.vk-analytics.ru
 0.0.0.0 lbs-ru1.ads.betweendigital.com
 0.0.0.0 match.prod.bidr.io
 0.0.0.0 prebid.admatic.com.tr
@@ -222,6 +229,7 @@
 0.0.0.0 sync.targeting.unrulymedia.com
 0.0.0.0 t.adx.opera.com
 0.0.0.0 tms.dmp.wi-fi.ru
+0.0.0.0 ts.tracker-api.vk-analytics.ru
 0.0.0.0 yhb.p.otm-r.com
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
 0.0.0.0 w4jwjj6r7lesmjdsph3hrk2qhy0qpvod.lambda-url.eu-west-1.on.aws
