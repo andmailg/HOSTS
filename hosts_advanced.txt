@@ -21,16 +21,12 @@
 0.0.0.0 aax-eu.amazon-adsystem.com
 0.0.0.0 ad.adriver.ru
 0.0.0.0 ad.doubleclick.net
-0.0.0.0 ad.mail.ru
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 ads.adfox.ru
 0.0.0.0 ads.betweendigital.com
 0.0.0.0 ads.pubmatic.com
-0.0.0.0 ads.vk.ru
 0.0.0.0 adx.com.ru
 0.0.0.0 ae.dmxleo.com
-0.0.0.0 alt-ad.mail.ru
-0.0.0.0 alt-aj-https.mail.ru
 0.0.0.0 amplify-imp.outbrain.com
 0.0.0.0 an.yandex.ru
 0.0.0.0 analytics.iportal.ru
@@ -56,6 +52,7 @@
 0.0.0.0 cdn.consentmanager.net
 0.0.0.0 cdn.cxense.com
 0.0.0.0 cdn.dsp-rambler.ru
+0.0.0.0 cdn.hsmedia.ru
 0.0.0.0 cdn.ngs.ru
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 cdn.optimizely.com
@@ -130,7 +127,6 @@
 0.0.0.0 r.mradx.net
 0.0.0.0 r.ussp.io
 0.0.0.0 region1.google-analytics.com
-0.0.0.0 reklama.mail.ru
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 rsm.zona.mediacampaigns
 0.0.0.0 rst.skcrtxr.com
@@ -142,6 +138,7 @@
 0.0.0.0 s.company-target.com
 0.0.0.0 s.yimg.com
 0.0.0.0 s0.2mdn.net
+0.0.0.0 s1.eda.ru
 0.0.0.0 s3-cdn.iportal.ru
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 script.crazyegg.com
@@ -176,7 +173,6 @@
 0.0.0.0 sync.teads.tv
 0.0.0.0 sync.upravel.com
 0.0.0.0 t.rtbwave.com
-0.0.0.0 target.vk.ru
 0.0.0.0 tcheck.outbrainimg.com
 0.0.0.0 telemetry.dzen.ru
 0.0.0.0 tpc.googlesyndication.com
@@ -202,12 +198,9 @@
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 0ee1b95a53290aadeddb12cf9fee4456.safeframe.googlesyndication.com
 0.0.0.0 128cd4dca019fe06e856dcdf2e41de45.safeframe.googlesyndication.com
-0.0.0.0 33412.ms.vk.ru
-0.0.0.0 531311.ms.dzen.ru
-0.0.0.0 731111.mediascope.mail.ru
-0.0.0.0 741111.mediascope.mail.ru
 0.0.0.0 9a31ebd4c0b67577b40ba6aa4ac67d57.safeframe.googlesyndication.com
 0.0.0.0 a.delivery.consentmanager.net
+0.0.0.0 a508dee1c84724455d87555f0230e2a8.safeframe.googlesyndication.com
 0.0.0.0 analytics-455007615.collector.yahoo.net
 0.0.0.0 api.a.mts.ru
 0.0.0.0 b.delivery.consentmanager.net
@@ -239,4 +232,5 @@
 0.0.0.0 2293326691791816444596.cm.a.mts.ru
 0.0.0.0 4834826861791812208850.cm.a.mts.ru
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
+0.0.0.0 f846c890-c64e-11f1-8e0f-002590c82436.n4.sync.bumlam.com
 0.0.0.0 w4jwjj6r7lesmjdsph3hrk2qhy0qpvod.lambda-url.eu-west-1.on.aws
