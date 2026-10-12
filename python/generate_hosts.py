@@ -61,29 +61,22 @@ STRICT_DOMAINS_WHITELIST = [
 ]
 
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    # Блокировка Метрики, Директа и рекламных серверов во ВСЕХ зонах (.ru, .com, .by и т.д.)
-    r"^mc\.yandex\.[a-z]+$", 
-    r"^an\.yandex\.[a-z]+$", 
-    r"^ads\.yandex\.[a-z]+$",
-    r"^share\.yandex\.[a-z]+$", # Кнопки "Поделиться" (тоже собирают аналитику)
-    
-    # Блокировка дочерней рекламной сети AdFox
-    r"^ads\.adfox\.ru$",
-    r"^banners\.adfox\.ru$",
-    r"^adfox\.ru$",
-    
-    # Рекламные RTB-синхронизаторы Яндекса
-    r"^yandex-sync\.rutarget\.ru$",
-    r"^yandex-dmp-sync\.rutarget\.ru$",
-    
-    # Остальные ваши правила...
-    r"^sdk-api\.apptracer\.[a-z]+$",
-    r"^trace-flow\.[a-z]+$", 
-    r"^tracker-api\.vk-analytics\.[a-z]+$",
-    r"^telemetry\.dzen\.[a-z]+$",
-    r"^ad\.mail\.ru$"
-    r"^reklama\.mail\.ru$"
-    r"\.ms\.dzen\.[a-z]+$"
+    r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$",
+    r"^sdk-api\.apptracer\.[a-z]+$", r"^trace-flow\.[a-z]+$", 
+    r"^tracker-api\.vk-analytics\.[a-z]+$", r"^tracker-api\.my\.com$", 
+    r"telemetry\.dzen\.[a-z]+$",
+    r"\.ms\.vk\.[a-z]+$",
+    r"\.ms\.dzen\.[a-z]+$",
+    r".*ms\.dzen\.[a-z]+$",
+    r"mradx\.net$",
+    r"\.appsflyersdk\.com$",
+    r"alt-ad\.mail\.ru$",
+    r"\.mediascope\.mail\.ru$",
+    r"alt-aj-https\.mail\.ru$",
+    r"ads\.vk\.ru$",
+    r"target\.vk\.ru$",
+    r"ad\.mail\.ru$",
+    r"reklama\.mail\.ru$"
 ]
 
 
@@ -159,22 +152,23 @@ def sort_domains_by_level(domain_set):
 
 
 def should_block_domain(domain, page_apex=None, score=None):
-    """ЕДИНАЯ ФУНКЦИЯ ФИЛЬТРАЦИИ С ИСПРАВЛЕННЫМ ПРИОРИТЕТОМ ЧЕРНОГО СПИСКА."""
+    """ЕТАЛОННАЯ ФУНКЦИЯ ФИЛЬТРАЦИИ И ПРИНЯТИЯ РЕШЕНИЙ ПО БЛОКИРОВКЕ."""
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
 
-    # 1. СТРОГИЙ ЧЕРНЫЙ СПИСОК (Абсолютный приоритет №1)
-    # Если поддомен в черном списке — блокируем ВСЕГДА, даже если apex в белом списке!
+    # 1. Жесткий черный список (Абсолютный приоритет №1)
     is_strict_ad = any(re.search(pat, domain, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS)
     if is_strict_ad:
         return True
 
-    # 2. ЗАЩИТА БЕЛОГО СПИСКА (Приоритет №2)
+    # Жесткое исключение для известных контентных медиа-CDN (Hearst Shkulev, Городские порталы, Ведомости)
+    if any(x in domain for x in ["hsmedia.ru", "iportal.ru", "vedomosti.ru", "ampproject.org"]):
+        return False
+
+    # 2. Защита белого списка (Приоритет №2)
     if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST:
-        # Карневые домены (mail.ru, yandex.ru) пропускаем
         if domain == domain_apex:
             return False
-        # Поддомены из белого списка пропускаем, ТОЛЬКО если они не забанены в пункте 1
         return False
 
     # 3. Исключения для базовых доменов текущей сканируемой страницы
@@ -182,21 +176,17 @@ def should_block_domain(domain, page_apex=None, score=None):
         if domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex:
             return False
 
-    # 4. Проверка инфраструктуры поисковиков (Google/Yandex) во всех зонах
+    # 4. Специфическая проверка для Google и Yandex инфраструктуры
     if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
         if "tagmanager" in domain or "analytics" in domain:
             return True
         return False
 
-    # 5. Анализ весов из логов сканирования с защитой легитимных медиа-CDN
+    # 5. Если переданы веса
     if score is not None:
-        # Защита крупных медийных CDN (Hearst Shkulev, Городские порталы, Google AMP)
-        if any(x in domain for x in ["hsmedia.ru", "iportal.ru", "ampproject.org"]):
-            return False
-            
         return score["ad_score"] > score["clean_score"]
 
-    # По умолчанию блокируем сторонние неопознанные домены
+    # По умолчанию блокируем, если домен не попал под правила исключений выше
     return True
 
 
@@ -423,29 +413,26 @@ async def main_async():
         print(f"Успешно: {success_count}/{len(urls)} • Ошибки: {fail_count}/{len(urls)}")
         print(f"Новых доменов добавлено: {len(all_new_domains)} • Всего в базе: {len(sorted_ad_domains)}")
         
-        # Формирование структурированного лога аналитики
+        # Формирование структурированного лога аналитики с передачей весов (score)
         log_lines = [
-            "=" * 60, "ЛОГ АНАЛИЗА URLSCAN (ФИЛЬТРАЦИЯ ОТЛАЖЕНА)", "=" * 60,
+            "=" * 60, "ЛОГ АНАЛИЗА URLSCAN (ФИЛЬТРАЦИЯ ИСПРАВЛЕНА)", "=" * 60,
             f"Успешно: {success_count}/{len(urls)}", f"Ошибки: {fail_count}/{len(urls)}",
             f"Всего рекламных доменов в базе hosts: {len(sorted_ad_domains)}", ""
         ]
         
-        # Пересобираем списки на основе финального вердикта эталонной функции
         final_ad_log = {}
         final_clean_log = {}
 
-        for domain, scores in all_new_domains.items():
-            if should_block_domain(domain):
-                final_ad_log[domain] = scores
-            else:
-                final_clean_log[domain] = scores
+        # Объединяем результаты сканирования для честной проверки лога
+        merged_scans = {}
+        for d, s in all_new_domains.items(): merged_scans[d] = s
+        for d, s in all_clean_domains.items(): merged_scans[d] = s
 
-        for domain, scores in all_clean_domains.items():
-            # Если домен из "чистых" на самом деле должен быть заблокирован жестким паттерном
-            if should_block_domain(domain):
-                final_ad_log[domain] = scores
+        for domain, score in merged_scans.items():
+            if should_block_domain(domain, score=score):
+                final_ad_log[domain] = score
             else:
-                final_clean_log[domain] = scores
+                final_clean_log[domain] = score
         
         if final_ad_log:
             log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ (СТРОГИЙ БАН) ---")
