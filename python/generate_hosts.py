@@ -65,6 +65,21 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"\.viqeo\.tv$",          # Плееры Viqeo (основной источник навязчивого видео)
     r"api\.vigo\.tech$",      # Vigo — трекер и оптимизатор коммерческого видеопотока
     r"vigo\.tech$",
+    r"^log\.rutube\.ru",
+    r"^ssp\.rutube\.ru",
+    r"^goya\.rutube\.ru",
+    r"^adx\.videonow\.ru",
+    r"^px\.hsmedia\.ru",
+    r"\.24smi\.net",
+    r"\.hybrid\.ai",
+    r"\.ohmy\.bid",
+    r"\.adseedtech\.com",
+    r"\.appsflyersdk\.com",
+    r"\.betweendigital\.com",
+    r"\.bidderstack\.com",
+    r"\.bidvol\.com",
+    r"\.bumlam\.com",
+    r"\.buzzoola\.com",
     
     # --- Рекламные видеошлюзы Rambler и Mail.ru на внешних сайтах ---
     r"^embeds\.rambler\.ru$", # Встраиваемые видео-блоки Рамблера со встроенной рекламой

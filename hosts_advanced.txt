@@ -13,6 +13,7 @@
 0.0.0.0 1070--061bfffe-80ae-46c5-a29d-aec9e7ae16a0.stbid.ru
 0.0.0.0 1070--27814ea7-6fae-4608-933d-ac0c158c6eae.stbid.ru
 0.0.0.0 1070--8a27ad07-f335-47cd-97ce-f0fef55355e1.stbid.ru
+0.0.0.0 1070--b2da1a1f-2fd5-4906-82d6-a3bfaa1ec368.stbid.ru
 0.0.0.0 1070--bb4f004c-cdd1-46de-9d55-d202d4171dda.stbid.ru
 0.0.0.0 4--00000bbc6acd125485bfab0600058201--r.stbid.ru
 0.0.0.0 8mudbv-inapps.appsflyersdk.com
@@ -79,6 +80,8 @@
 0.0.0.0 e.clarity.ms
 0.0.0.0 ec.yimg.com
 0.0.0.0 embeds.rambler.ru
+0.0.0.0 ep1.adtrafficquality.google
+0.0.0.0 ep2.adtrafficquality.google
 0.0.0.0 euronewsgroup.demdex.net
 0.0.0.0 euw-ice.360yield.com
 0.0.0.0 ev.adriver.ru
@@ -90,6 +93,7 @@
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcpe.beeline.ru
 0.0.0.0 geoip.xoalt.com
+0.0.0.0 goya.rutube.ru
 0.0.0.0 hb-bidder.skcrtxr.com
 0.0.0.0 hb.bumlam.com
 0.0.0.0 hb.trustedstack.com
@@ -102,6 +106,7 @@
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 libs.outbrain.com
 0.0.0.0 log.outbrainimg.com
+0.0.0.0 log.rutube.ru
 0.0.0.0 logx.optimizely.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 match.new-programmatic.com
@@ -164,6 +169,7 @@
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 ssp.hybrid.ai
 0.0.0.0 ssp.rambler.ru
+0.0.0.0 ssp.rutube.ru
 0.0.0.0 ssp01.rambler.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 static.bumlam.com
@@ -200,11 +206,13 @@
 0.0.0.0 www.googletagmanager.com
 0.0.0.0 www.googletagservices.com
 0.0.0.0 www.tns-counter.ru
+0.0.0.0 x.bidswitch.net
 0.0.0.0 x01.aidata.io
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 0ee1b95a53290aadeddb12cf9fee4456.safeframe.googlesyndication.com
 0.0.0.0 128cd4dca019fe06e856dcdf2e41de45.safeframe.googlesyndication.com
+0.0.0.0 14e8aeb7201f00819a5a64abb48c8930.safeframe.googlesyndication.com
 0.0.0.0 53fc5a1f9fe6adae48a8255f2f79005e.safeframe.googlesyndication.com
 0.0.0.0 9a31ebd4c0b67577b40ba6aa4ac67d57.safeframe.googlesyndication.com
 0.0.0.0 a.delivery.consentmanager.net
@@ -237,6 +245,7 @@
 0.0.0.0 ts.tracker-api.vk-analytics.ru
 0.0.0.0 uid.ssp.bidvol.com
 0.0.0.0 yhb.p.otm-r.com
+0.0.0.0 1863992061791825716406.cm.a.mts.ru
 0.0.0.0 2293326691791816444596.cm.a.mts.ru
 0.0.0.0 41c8422c-c65f-11f1-8e0f-002590c82436.n7.sync.bumlam.com
 0.0.0.0 4834826861791812208850.cm.a.mts.ru
