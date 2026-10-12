@@ -20,6 +20,7 @@
 0.0.0.0 a.utraff.com
 0.0.0.0 aax-eu.amazon-adsystem.com
 0.0.0.0 ad.adriver.ru
+0.0.0.0 ad.doubleclick.net
 0.0.0.0 ad.mail.ru
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 ads.adfox.ru
@@ -149,6 +150,7 @@
 0.0.0.0 sdk-api.apptracer.ru
 0.0.0.0 sentry-saas.rambler-co.ru
 0.0.0.0 sessions.bugsnag.com
+0.0.0.0 snap.licdn.com
 0.0.0.0 sp.linkssp.ru
 0.0.0.0 sp.ohmy.bid
 0.0.0.0 ssl.google-analytics.com
@@ -223,6 +225,7 @@
 0.0.0.0 redirect.frontend.weborama.fr
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 sentry.adtech.vk.team
 0.0.0.0 static.a.mts.ru
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 sync.dmp.otm-r.com
