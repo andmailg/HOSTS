@@ -566,7 +566,8 @@
 0.0.0.0 f846c890-c64e-11f1-8e0f-002590c82436.n4.sync.bumlam.com
 0.0.0.0 mdd.yandex.net
 0.0.0.0 hdrc.yandex.net
-0.0.0.1 awaps.yandex.ru
-0.0.0.1 adstat.yandex.ru
-0.0.0.1 bs.yandex.ru
-0.0.0.1 direct.yandex.ru
+0.0.0.0 awaps.yandex.ru
+0.0.0.0 adstat.yandex.ru
+0.0.0.0 bs.yandex.ru
+0.0.0.0 direct.yandex.ru
+0.0.0.0 yandex.ru

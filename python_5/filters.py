@@ -42,7 +42,7 @@ STRICT_DOMAINS_WHITELIST = [
     "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
     "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
     "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
-    "dzen.ru", "dzeninfra.ru", "imgsmail.ru", "mail.ru", "yandex.ru",
+    "dzen.ru", "dzeninfra.ru", "imgsmail.ru", "mail.ru",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
@@ -62,7 +62,6 @@ STRICT_DOMAINS_WHITELIST = [
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    r"(^|\.)yandex\.ru/ads/"
     r"(^|\.)log\.strm\.yandex\.ru$", r"(^|\.)viqeo\.tv$", r"(^|\.)vigo\.tech$",
     r"(^|\.)log\.rutube\.ru$", r"^ssp\.rutube\.ru$", r"^goya\.rutube\.ru$",
     r"^adx\.videonow\.ru$", r"^px\.hsmedia\.ru$", r"(^|\.)adriver\.ru$",
