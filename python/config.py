@@ -20,7 +20,7 @@ SCAN_TIMEOUT = 180
 POLL_INTERVAL = 20
 MAX_CONCURRENT = 10
 MAX_DEPTH = 1  # Добавлено: Глобальная глубина сканирования для краулера
-TARGET_SCAN = ""
+TARGET_SCAN = "01a13499-7428-763d-ba40-2617566123ef"
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

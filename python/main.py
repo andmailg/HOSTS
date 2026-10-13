@@ -40,89 +40,100 @@ async def main_async():
     parser.add_argument("--max-reqs-per-sec", type=int, default=1, help="Лимит запросов краулера в секунду")
     args = parser.parse_args()
 
-    # Считываем исходный файл с адресами (seed URLs)
-    if not DEFAULT_URL_FILE.exists(): 
-        print(f"Ошибка: Исходный файл '{DEFAULT_URL_FILE}' не найден.")
-        sys.exit(1)
-        
-    with DEFAULT_URL_FILE.open("r", encoding="utf-8") as f:
-        seed_urls = [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
+    # Инициализация структур данных результатов
+    all_new_domains, all_clean_domains, failed_urls = {}, {}, set()
+    url_to_uuid_map = {}
+    crawl_relations = {}
+    urls_to_scan = []
+    success_count = 0
+    fail_count = 0
 
-    if not seed_urls:
-        print(f"Файл '{DEFAULT_URL_FILE}' пуст. Нечего обрабатывать.")
-        sys.exit(0)
+    # Считываем исходный файл с адресами (seed URLs) для построения логов обычного режима
+    if DEFAULT_URL_FILE.exists():
+        with DEFAULT_URL_FILE.open("r", encoding="utf-8") as f:
+            seed_urls = [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
+    else:
+        seed_urls = []
 
+    # =========================================================================
+    # РЕЖИМ 1: Принудительная обработка только одного TARGET_SCAN UUID
+    # =========================================================================
     if TARGET_SCAN:
         print(f"[Внимание] Обнаружен принудительный TARGET_SCAN: {TARGET_SCAN}. Обычный обход пропущен.")
-
-    # --- Выбор режима работы и сбор ссылок ---
-    # Автоматическая проверка: если MAX_DEPTH из config.py не равен 0, принудительно включаем краулер
-    is_crawl_active = args.crawl or MAX_DEPTH != 0
-    
-    # Словарь для связи исходного URL и ссылок, которые из него достал краулер
-    crawl_relations = {}
-
-    if is_crawl_active:
-        # Режим 1: Работа с чистым Python-краулером без использования внешних .exe и Node.js утилит
-        current_depth = args.max_depth if args.max_depth != 0 else 1
+        print(f"[{TARGET_SCAN}] Получение готовых результатов из URLScan...")
         
-        # Получаем плоский список всех собранных ссылок
-        all_crawled_urls = run_external_crawler_for_urls(seed_urls, max_depth=current_depth, max_reqs=args.max_reqs_per_sec)
+        from urlscan_client import poll_scan_results, process_scan_json
         
-        # Заполняем связи для логов
-        for seed in seed_urls:
-            normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
-            seed_domain = urlparse(normalized_seed).netloc
+        async with aiohttp.ClientSession() as session:
+            # Сразу опрашиваем результаты по указанному UUID
+            scan_data = await poll_scan_results(TARGET_SCAN, api_key, session)
             
-            # СПЕЦИАЛЬНАЯ ЛОГИКА ДЛЯ ДЗЕНА:
-            # Если сид является сюжетом Дзена, забираем из общего пула все ссылки, которые НЕ принадлежат другим сидам
-            if "dzen.ru" in normalized_seed:
-                other_seeds_domains = {urlparse(s if s.startswith(('http://', 'https://')) else f'https://{s}').netloc for s in seed_urls if "dzen.ru" not in s}
-                crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc not in other_seeds_domains and urlparse(u).netloc != seed_domain]
-                # Если краулер ничего не достал, оставим сам Дзен
-                if not crawled_for_seed:
-                    crawled_for_seed = [normalized_seed]
-            else:
-                # Стандартная логика для обычных сайтов (строгое совпадение домена)
-                crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc == seed_domain]
+        if scan_data:
+            target_url = scan_data.get("page", {}).get("url", "Указанный UUID")
+            print(f"[{TARGET_SCAN}] Результаты успешно получены для страницы: {target_url}")
             
-            # Ограничиваем количество подстраниц до 2 штук (как у вас в конфиге)
-            crawl_relations[seed] = crawled_for_seed[:2] if crawled_for_seed else [normalized_seed]
+            new_domains, clean_domains = process_scan_json(scan_data)
+            if new_domains: all_new_domains.update(new_domains)
+            if clean_domains: all_clean_domains.update(clean_domains)
+            
+            # Заполняем минимальную карту для сохранения структуры логов
+            url_to_uuid_map[target_url] = {"uuid": TARGET_SCAN, "status": True}
+            crawl_relations[target_url] = [target_url]
+            seed_urls = [target_url]  # Подменяем seed для корректного вывода дерева в лог
+            success_count = 1
+        else:
+            print(f"Ошибка: Не удалось получить данные для UUID {TARGET_SCAN}. Проверьте правильность UUID или таймаут.")
+            sys.exit(1)
+
+    # =========================================================================
+    # РЕЖИМ 2: Стандартный обход сайтов и сканирование через API
+    # =========================================================================
     else:
-        # Режим 2: Прямая отправка без краулера (MAX_DEPTH == 0 и флаг --crawl отсутствует)
-        print("\n[Пул] Краулер отключен (MAX_DEPTH = 0). Будут отправлены только исходные адреса.")
-        for seed in seed_urls:
-            normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
-            crawl_relations[seed] = [normalized_seed]
+        if not seed_urls:
+            print(f"Файл '{DEFAULT_URL_FILE}' пуст или отсутствует. Нечего обрабатывать.")
+            sys.exit(0)
 
-    # Создаем плоский список уникальных URL для отправки по API
-    urls_to_scan = list(set(url for sublist in crawl_relations.values() for url in sublist))
-    print(f"[Пул] Подготовлено уникальных страниц для URLScan API: {len(urls_to_scan)}")
+        # Выбор режима работы и сбор ссылок
+        is_crawl_active = args.crawl or MAX_DEPTH != 0
 
-    # --- Асинхронная отправка пула собранных ссылок в URLScan ---
-    all_new_domains, all_clean_domains, failed_urls = {}, {}, set()
+        if is_crawl_active:
+            current_depth = args.max_depth if args.max_depth != 0 else 1
+            all_crawled_urls = run_external_crawler_for_urls(seed_urls, max_depth=current_depth, max_reqs=args.max_reqs_per_sec)
+            
+            for seed in seed_urls:
+                normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
+                seed_domain = urlparse(normalized_seed).netloc
+                crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc == seed_domain]
+                crawl_relations[seed] = crawled_for_seed[:15] if crawled_for_seed else [normalized_seed]
+        else:
+            print("\n[Пул] Краулер отключен (MAX_DEPTH = 0). Будут отправлены только исходные адреса.")
+            for seed in seed_urls:
+                normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
+                crawl_relations[seed] = [normalized_seed]
 
-    async with aiohttp.ClientSession() as session:
-        semaphore = asyncio.Semaphore(MAX_CONCURRENT)
-        hosts_lock = asyncio.Lock()
-        tasks = [
-            process_single_url(u, api_key, session, semaphore, hosts_lock, all_new_domains, all_clean_domains, failed_urls) 
-            for u in urls_to_scan
-        ]
-        scan_raw_results = await asyncio.gather(*tasks, return_exceptions=True)
-        
-    # Формируем карту результатов для быстрого поиска UUID по URL подстраницы
-    url_to_uuid_map = {}
-    success_count = 0
-    for r in scan_raw_results:
-        if isinstance(r, dict):
-            url_to_uuid_map[r["url"]] = {"uuid": r["uuid"], "status": r["status"]}
-            if r["status"]: 
-                success_count += 1
+        urls_to_scan = list(set(url for sublist in crawl_relations.values() for url in sublist))
+        print(f"[Пул] Подготовлено уникальных страниц для URLScan API: {len(urls_to_scan)}")
 
-    fail_count = len(urls_to_scan) - success_count
+        async with aiohttp.ClientSession() as session:
+            semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+            hosts_lock = asyncio.Lock()
+            tasks = [
+                process_single_url(u, api_key, session, semaphore, hosts_lock, all_new_domains, all_clean_domains, failed_urls) 
+                for u in urls_to_scan
+            ]
+            scan_raw_results = await asyncio.gather(*tasks, return_exceptions=True)
+            
+        for r in scan_raw_results:
+            if isinstance(r, dict):
+                url_to_uuid_map[r["url"]] = {"uuid": r["uuid"], "status": r["status"]}
+                if r["status"]: 
+                    success_count += 1
 
-    # --- СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS ---
+        fail_count = len(urls_to_scan) - success_count
+
+    # =========================================================================
+    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ (Общая для обоих режимов часть)
+    # =========================================================================
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
     filtered_ad_domains = {d for d in existing_domains.union(all_new_domains.keys()) if should_block_domain(d)}
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
@@ -131,14 +142,14 @@ async def main_async():
         for domain in sorted_ad_domains: 
             h_file.write(f"0.0.0.0 {domain}\n")
     
-    # --- СБОРКА И ЗАПИСЬ ФАЙЛА СТРУКТУРИРОВАННЫХ ЛОГОВ ---
+    # Формирование логов
+    total_total = len(urls_to_scan) if not TARGET_SCAN else 1
     log_lines = [
         "="*60, "ЛОГ АНАЛИЗА URLSCAN (CRAWLER MAP)", "="*60, 
-        f"Всего отправлено подстраниц: {success_count}/{len(urls_to_scan)} • Сбои: {fail_count}/{len(urls_to_scan)}", ""
+        f"Всего обработано подстраниц: {success_count}/{total_total} • Сбои: {fail_count}/{total_total}", ""
     ]
     
-    # Секция древовидной группировки Исходник -> Подстраницы -> UUID
-    log_lines.append("--- ИДЕНТИФИКАТОРЫ СЕССИЙ С КРАУЛЕРОМ (ГРУППИРОВКА) ---")
+    log_lines.append("--- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---")
     for s_idx, seed in enumerate(seed_urls, 1):
         log_lines.append(f"\n{s_idx:02d}. [SEED] {seed}")
         sub_urls = crawl_relations.get(seed, [])
@@ -174,6 +185,7 @@ async def main_async():
         f.write("\n".join(log_lines))
         
     print(f"\nГотово! Результаты обработки сохранены в '{LOG_FILE}'")
+
 
 if __name__ == "__main__":
     asyncio.run(main_async())
