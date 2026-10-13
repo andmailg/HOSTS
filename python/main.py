@@ -66,16 +66,27 @@ async def main_async():
         # Режим 1: Работа с чистым Python-краулером без использования внешних .exe и Node.js утилит
         current_depth = args.max_depth if args.max_depth != 0 else 1
         
-        # Получаем плоский список всех ссылок сразу из crawler.py
+        # Получаем плоский список всех собранных ссылок
         all_crawled_urls = run_external_crawler_for_urls(seed_urls, max_depth=current_depth, max_reqs=args.max_reqs_per_sec)
         
-        # Заполняем связи для логов: привязываем найденные урлы к их seed-родителям
+        # Заполняем связи для логов
         for seed in seed_urls:
             normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
             seed_domain = urlparse(normalized_seed).netloc
             
-            # Собираем подстраницы для текущего сида и ограничиваем их количество до 15 штук
-            crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc == seed_domain]
+            # СПЕЦИАЛЬНАЯ ЛОГИКА ДЛЯ ДЗЕНА:
+            # Если сид является сюжетом Дзена, забираем из общего пула все ссылки, которые НЕ принадлежат другим сидам
+            if "dzen.ru" in normalized_seed:
+                other_seeds_domains = {urlparse(s if s.startswith(('http://', 'https://')) else f'https://{s}').netloc for s in seed_urls if "dzen.ru" not in s}
+                crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc not in other_seeds_domains and urlparse(u).netloc != seed_domain]
+                # Если краулер ничего не достал, оставим сам Дзен
+                if not crawled_for_seed:
+                    crawled_for_seed = [normalized_seed]
+            else:
+                # Стандартная логика для обычных сайтов (строгое совпадение домена)
+                crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc == seed_domain]
+            
+            # Ограничиваем количество подстраниц до 2 штук (как у вас в конфиге)
             crawl_relations[seed] = crawled_for_seed[:2] if crawled_for_seed else [normalized_seed]
     else:
         # Режим 2: Прямая отправка без краулера (MAX_DEPTH == 0 и флаг --crawl отсутствует)
