@@ -487,8 +487,8 @@ async def main_async():
     
     # Запись hosts-файла
     with open(HOSTS_FILE, "w", encoding="utf-8") as hosts_file:
-        hosts_file.write("# [Advanced URLScan Filters Generated Advertising Blocklist]\n")
-        hosts_file.write("# База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)\n\n")
+        #hosts_file.write("# [Advanced URLScan Filters Generated Advertising Blocklist]\n")
+        #hosts_file.write("# База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)\n\n")
         for domain in sorted_ad_domains:
             hosts_file.write(f"0.0.0.0 {domain}\n")
     
