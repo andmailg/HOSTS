@@ -104,15 +104,32 @@ async def main_async():
             
             for seed in seed_urls:
                 normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
+                seed_domain = urlparse(normalized_seed).netloc.lower()
                 seed_apex = get_apex_domain(normalized_seed)
                 
-                # ИСПРАВЛЕНА АДАПТАЦИЯ ДЛЯ ДЗЕНА:
+                # Адаптация для Дзена
                 if "dzen.ru" in normalized_seed:
-                    # Из общего списка краулера забираем только его внутренние статьи /a/ или показы новостей
                     crawled_for_seed = [u for u in all_crawled_urls if "dzen.ru/a/" in u or "dzen.ru/news/show/" in u]
                     if not crawled_for_seed:
                         crawled_for_seed = [normalized_seed]
                     crawl_relations[seed] = crawled_for_seed[:MAX_CONCURRENT]
+                
+                # Адаптация для Mail.ru и Sportmail.ru
+                elif "mail.ru" in seed_domain or "sportmail.ru" in seed_domain:
+                    # Ищем любые ссылки из пула краулера, где фигурирует mail.ru или sportmail.ru
+                    crawled_for_seed = [
+                        u for u in all_crawled_urls 
+                        if "mail.ru" in urlparse(u).netloc.lower() or "sportmail.ru" in urlparse(u).netloc.lower()
+                    ]
+                    # Убираем из выдачи Mail.ru сухие главные страницы, если есть глубокие статьи
+                    deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
+                    if deep_articles:
+                        crawled_for_seed = deep_articles
+                        
+                    if not crawled_for_seed:
+                        crawled_for_seed = [normalized_seed]
+                    crawl_relations[seed] = crawled_for_seed[:MAX_CONCURRENT]
+                    
                 else:
                     # Стандартный режим фильтрации для остальных классических сайтов
                     crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]

@@ -19,7 +19,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 SCAN_TIMEOUT = 180
 POLL_INTERVAL = 20
 MAX_CONCURRENT = 2
-MAX_DEPTH = 1  # Добавлено: Глобальная глубина сканирования для краулера
+MAX_DEPTH = 10  # Добавлено: Глобальная глубина сканирования для краулера
 TARGET_SCAN = ""
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
