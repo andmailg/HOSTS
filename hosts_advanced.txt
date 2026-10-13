@@ -13,6 +13,7 @@
 0.0.0.0 stat.media
 0.0.0.0 trace-flow.ru
 0.0.0.0 1070--061bfffe-80ae-46c5-a29d-aec9e7ae16a0.stbid.ru
+0.0.0.0 1070--072681dd-9be7-4c16-b9a8-dc9475916168.stbid.ru
 0.0.0.0 1070--27814ea7-6fae-4608-933d-ac0c158c6eae.stbid.ru
 0.0.0.0 1070--8a27ad07-f335-47cd-97ce-f0fef55355e1.stbid.ru
 0.0.0.0 1070--b2da1a1f-2fd5-4906-82d6-a3bfaa1ec368.stbid.ru
@@ -35,6 +36,7 @@
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 amplify-imp.outbrain.com
 0.0.0.0 an.yandex.ru
+0.0.0.0 analytics.google.com
 0.0.0.0 analytics.mediadash.ru
 0.0.0.0 api.onesignal.com
 0.0.0.0 api.vigo.tech
@@ -66,6 +68,7 @@
 0.0.0.0 cdn.taboola.com
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 cdn.viqeo.tv
+0.0.0.0 cm.pxltag.com
 0.0.0.0 cmr.bidderstack.com
 0.0.0.0 cod.buzzingnippy.com
 0.0.0.0 comcluster.cxense.com
@@ -78,6 +81,7 @@
 0.0.0.0 dm.hybrid.ai
 0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 dmp.sbermarketing.ru
+0.0.0.0 dp2.33across.com
 0.0.0.0 dpm.demdex.net
 0.0.0.0 dsp.mpartner.digital
 0.0.0.0 dsp.outbrainimg.com
@@ -108,6 +112,7 @@
 0.0.0.0 ib.mookie1.com
 0.0.0.0 id.cxense.com
 0.0.0.0 id.rlcdn.com
+0.0.0.0 idsync.rlcdn.com
 0.0.0.0 images.outbrainimg.com
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 jsn.24smi.net
@@ -202,6 +207,7 @@
 0.0.0.0 sync.teads.tv
 0.0.0.0 sync.upravel.com
 0.0.0.0 t.rtbwave.com
+0.0.0.0 taro.amongstmask.com
 0.0.0.0 tcheck.outbrainimg.com
 0.0.0.0 tpc.googlesyndication.com
 0.0.0.0 tracker-api.my.com
@@ -245,6 +251,7 @@
 0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 ip4.tracker-api.vk-analytics.ru
 0.0.0.0 lbs-ru1.ads.betweendigital.com
+0.0.0.0 log.strm.yandex.ru
 0.0.0.0 match.prod.bidr.io
 0.0.0.0 prebid.admatic.com.tr
 0.0.0.0 pubads.g.doubleclick.net
@@ -265,6 +272,7 @@
 0.0.0.0 1863992061791825716406.cm.a.mts.ru
 0.0.0.0 2293326691791816444596.cm.a.mts.ru
 0.0.0.0 41c8422c-c65f-11f1-8e0f-002590c82436.n7.sync.bumlam.com
+0.0.0.0 4501710691791875866109.cm.a.mts.ru
 0.0.0.0 4834826861791812208850.cm.a.mts.ru
 0.0.0.0 6244d8b0-c6cf-11f1-86e0-002590c0647c.n2.sync.bumlam.com
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
