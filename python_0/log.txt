@@ -1,0 +1,37 @@
+============================================================
+ЛОГ АНАЛИЗА URLSCAN (ФИЛЬТРАЦИЯ ИСПРАВЛЕНА)
+============================================================
+Успешно: 1/1
+Ошибки: 0/1
+Всего рекламных доменов в базе hosts: 326
+
+--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ (СТРОГИЙ БАН) ---
+01. [AD] ad.mail.ru                               (clean: 10, ad: 165)
+02. [AD] mc.yandex.com                            (clean: 25, ad: 268)
+03. [AD] mc.yandex.ru                             (clean: 5, ad: 160)
+04. [AD] r.mradx.net                              (clean: 0, ad: 27)
+05. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 44)
+
+--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ (КОНТЕНТ/CDN) ---
+01. [OK] adv.mail.ru                              (clean: 0, ad: 32)
+02. [OK] api.vk.ru                                (clean: 0, ad: 16)
+03. [OK] avatars.dzeninfra.ru                     (clean: 180, ad: 216)
+04. [OK] csp.yandex.net                           (clean: 5, ad: 10)
+05. [OK] dzen.ru                                  (clean: 178, ad: 72)
+06. [OK] id.vk.ru                                 (clean: 0, ad: 12)
+07. [OK] login.vk.com                             (clean: 0, ad: 24)
+08. [OK] login.vk.ru                              (clean: 0, ad: 16)
+09. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 30)
+10. [OK] s3.dzeninfra.ru                          (clean: 5, ad: 6)
+11. [OK] sso.dzen.ru                              (clean: 36, ad: 12)
+12. [OK] sso.passport.yandex.ru                   (clean: 0, ad: 22)
+13. [OK] stacks.vk-portal.net                     (clean: 0, ad: 12)
+14. [OK] static-mon.yandex.net                    (clean: 0, ad: 27)
+15. [OK] static.dzeninfra.ru                      (clean: 93, ad: 384)
+16. [OK] static.vk.ru                             (clean: 20, ad: 27)
+17. [OK] suggest.sso.dzen.ru                      (clean: 101, ad: 72)
+18. [OK] top-fwz1.mail.ru                         (clean: 15, ad: 132)
+19. [OK] vk.com                                   (clean: 10, ad: 42)
+20. [OK] vk.ru                                    (clean: 0, ad: 16)
+21. [OK] yandex.ru                                (clean: 5, ad: 603)
+22. [OK] yastatic.net                             (clean: 17, ad: 234)
