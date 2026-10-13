@@ -19,7 +19,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 SCAN_TIMEOUT = 180
 POLL_INTERVAL = 20
 MAX_CONCURRENT = 5          # Сколько сайтов сканируем одновременно в API
-MAX_URLS_PER_SITE = 5       # Сколько страниц берем с одного домена из urls.txt
+MAX_URLS_PER_SITE = 10       # Сколько страниц берем с одного домена из urls.txt
 MAX_DEPTH = 100             # Добавлено: Глобальная глубина сканирования для краулера
 TARGET_SCAN = ""
 

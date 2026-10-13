@@ -56,7 +56,9 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)bumlam\.com$", r"(^|\.)buzzoola\.com$", r"(^|\.)viadata\.store$",
     r"(^|\.)hbrd\.io$", r"(^|\.)mediatoday\.ru$", r"^embeds\.rambler\.ru$",
     r"^ssp\.rambler\.ru$", r"^ssp01\.rambler\.ru$", r"^pixel\.rambler\.ru$",
-    r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$", r"ad\.mail\.ru$", r"reklama\.mail\.ru$"
+    r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$",
+    r"^mdd\.yandex\.[a-z]+$", r"^hdrc\.yandex\.[a-z]+$",
+    r"ad\.mail\.ru$", r"reklama\.mail\.ru$"
 ]
 
 def _extract_domain_regex(url):
