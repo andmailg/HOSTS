@@ -5,6 +5,7 @@
 0.0.0.0 kimberlite.io
 0.0.0.0 nnmstatic.win
 0.0.0.0 openfpcdn.io
+0.0.0.0 quotiq.ru
 0.0.0.0 rutarget.ru
 0.0.0.0 shopnetic.com
 0.0.0.0 smi2.net
@@ -41,8 +42,10 @@
 0.0.0.0 b.clarity.ms
 0.0.0.0 b1-chidc2.outbrain.com
 0.0.0.0 b1t-chidc2.outbrain.com
+0.0.0.0 backend.bobid.io
 0.0.0.0 banners.adfox.ru
 0.0.0.0 bid.sspnet.tech
+0.0.0.0 bobid-ip.hybrid.ai
 0.0.0.0 bs.serving-sys.ru
 0.0.0.0 buy-eu.piano.io
 0.0.0.0 c.amazon-adsystem.com
@@ -93,6 +96,8 @@
 0.0.0.0 fcgi4.gnezdo.ru
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcpe.beeline.ru
+0.0.0.0 fp.hybrid.ai
+0.0.0.0 fpf.hybrid.ai
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 goya.rutube.ru
 0.0.0.0 hb-bidder.skcrtxr.com
@@ -105,6 +110,7 @@
 0.0.0.0 id.rlcdn.com
 0.0.0.0 images.outbrainimg.com
 0.0.0.0 ingestion.contentinsights.com
+0.0.0.0 jsn.24smi.net
 0.0.0.0 libs.outbrain.com
 0.0.0.0 log.outbrainimg.com
 0.0.0.0 log.rutube.ru
@@ -156,6 +162,7 @@
 0.0.0.0 s.yimg.com
 0.0.0.0 s0.2mdn.net
 0.0.0.0 s1.eda.ru
+0.0.0.0 s3sc.perfluence.net
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 script.crazyegg.com
 0.0.0.0 scripts.clarity.ms
@@ -171,11 +178,14 @@
 0.0.0.0 ssp.adriver.ru
 0.0.0.0 ssp.al-adtech.com
 0.0.0.0 ssp.bidvol.com
+0.0.0.0 ssp.hbrd.io
 0.0.0.0 ssp.hybrid.ai
 0.0.0.0 ssp.rambler.ru
 0.0.0.0 ssp.rutube.ru
 0.0.0.0 ssp01.rambler.ru
+0.0.0.0 st.hbrd.io
 0.0.0.0 st.top100.ru
+0.0.0.0 static.advcake.ru
 0.0.0.0 static.bumlam.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 static.cloudflareinsights.com
@@ -255,6 +265,7 @@
 0.0.0.0 2293326691791816444596.cm.a.mts.ru
 0.0.0.0 41c8422c-c65f-11f1-8e0f-002590c82436.n7.sync.bumlam.com
 0.0.0.0 4834826861791812208850.cm.a.mts.ru
+0.0.0.0 6244d8b0-c6cf-11f1-86e0-002590c0647c.n2.sync.bumlam.com
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
 0.0.0.0 9727487581791824088183.cm.a.mts.ru
 0.0.0.0 f846c890-c64e-11f1-8e0f-002590c82436.n4.sync.bumlam.com

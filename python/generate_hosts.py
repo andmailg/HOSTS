@@ -26,6 +26,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 SCAN_TIMEOUT = 180
 POLL_INTERVAL = 20
 MAX_CONCURRENT = 10
+TARGET_SCAN = "01a133f3-3c4d-74e9-b61d-d3040bfd3688"
 
 # --- БЕЛЫЙ СПИСОК ДОМЕНОВ (Исключения из блокировки) ---
 STRICT_DOMAINS_WHITELIST = [
@@ -378,12 +379,24 @@ async def main_async():
     else:
         print(f"API-ключ успешно считан. Длина: {len(api_key)} символов.")
 
-    url_file = DEFAULT_URL_FILE
-    if not url_file.exists():
-        print(f"Файл '{url_file}' не найден.")
-        sys.exit(1)
+    # --- Режим сканирования по заданному UUID ---
+    uuid_pattern = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+    use_target_uuid = bool(TARGET_SCAN and uuid_pattern.match(TARGET_SCAN))
 
-    async with aiohttp.ClientSession() as session:
+    urls = []
+    all_new_domains = {}
+    all_clean_domains = {}
+    failed_urls = set()
+    success_count = 0
+    fail_count = 0
+
+    if use_target_uuid:
+        print(f"[TARGET_SCAN] Сканирование только по UUID: {TARGET_SCAN}")
+        url_file = DEFAULT_URL_FILE
+        if not url_file.exists():
+            print(f"Файл '{url_file}' не найден.")
+            sys.exit(1)
+
         with url_file.open("r", encoding="utf-8") as f:
             urls = [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
 
@@ -391,86 +404,131 @@ async def main_async():
             print(f"Файл '{url_file}' пуст.")
             sys.exit(0)
 
-        semaphore = asyncio.Semaphore(MAX_CONCURRENT)
-        hosts_lock = asyncio.Lock()
-        all_new_domains = {}
-        all_clean_domains = {}
-        failed_urls = set()
-        
-        tasks = [
-            process_single_url(url, api_key, session, semaphore, hosts_lock, all_new_domains, all_clean_domains, failed_urls)
-            for url in urls
-        ]
-        
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        success_count = sum(1 for r in results if r is True)
-        fail_count = sum(1 for r in results if r is False)
-        
-        # --- ФИНАЛЬНАЯ СБОРКА И ПЕРЕПРОВЕРКА ЧЕРЕЗ ЕДИНЫЙ ФИЛЬТР ---
-        existing_domains = read_existing_hosts(str(HOSTS_FILE))
-        all_ad_domains = existing_domains.union(all_new_domains.keys())
-        filtered_ad_domains = set()
-        
-        # Прогоняем абсолютно каждый домен базы через эталонную функцию фильтрации
-        for domain in all_ad_domains:
-            if should_block_domain(domain):
-                filtered_ad_domains.add(domain)
+        async with aiohttp.ClientSession() as session:
+            # Получаем данные сканирования напрямую по UUID
+            scan_data = None
+            try:
+                result_url = f"{URLSCAN_RESULT}{TARGET_SCAN}/"
+                async with session.get(result_url, headers={"x-api-key": api_key}, timeout=aiohttp.ClientTimeout(total=20), verify_ssl=False) as resp:
+                    if resp.status == 200:
+                        scan_data = await resp.json()
+                        target_url = scan_data.get("page", {}).get("url", "")
+                        print(f"[TARGET_SCAN] Найден URL: {target_url}")
+                    elif resp.status == 404:
+                        print(f"[TARGET_SCAN] UUID {TARGET_SCAN} не найден в базе urlscan.io")
+                        sys.exit(1)
+                    else:
+                        print(f"[TARGET_SCAN] Ошибка получения данных: {resp.status}")
+                        sys.exit(1)
+            except Exception as e:
+                print(f"[TARGET_SCAN] Ошибка при получении данных: {repr(e)}")
+                sys.exit(1)
 
-        sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
-        
-        # Запись hosts-файла
-        with open(HOSTS_FILE, "w", encoding="utf-8") as hosts_file:
-            hosts_file.write("# [Advanced URLScan Filters Generated Advertising Blocklist]\n")
-            hosts_file.write("# База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)\n\n")
-            for domain in sorted_ad_domains:
-                hosts_file.write(f"0.0.0.0 {domain}\n")
-        
-        print(f"\n{'='*60}\nОБРАБОТКА ЗАВЕРШЕНА!")
-        print(f"Успешно: {success_count}/{len(urls)} • Ошибки: {fail_count}/{len(urls)}")
-        print(f"Новых доменов добавлено: {len(all_new_domains)} • Всего в базе: {len(sorted_ad_domains)}")
-        
-        # Формирование структурированного лога аналитики с передачей весов (score)
-        log_lines = [
-            "=" * 60, "ЛОГ АНАЛИЗА URLSCAN (ФИЛЬТРАЦИЯ ИСПРАВЛЕНА)", "=" * 60,
-            f"Успешно: {success_count}/{len(urls)}", f"Ошибки: {fail_count}/{len(urls)}",
-            f"Всего рекламных доменов в базе hosts: {len(sorted_ad_domains)}", ""
-        ]
-        
-        final_ad_log = {}
-        final_clean_log = {}
+            if not scan_data:
+                print("[TARGET_SCAN] Данные не получены.")
+                sys.exit(1)
 
-        # Объединяем результаты сканирования для честной проверки лога
-        merged_scans = {}
-        for d, s in all_new_domains.items(): merged_scans[d] = s
-        for d, s in all_clean_domains.items(): merged_scans[d] = s
+            # Обрабатываем полученные данные сканирования
+            new_domains, clean_domains = process_scan_json(scan_data)
+            if new_domains:
+                all_new_domains.update(new_domains)
+            if clean_domains:
+                all_clean_domains.update(clean_domains)
+            success_count = 1
+            fail_count = 0
+    else:
+        # --- Обычный режим: сканируем все URL из urls.txt ---
+        url_file = DEFAULT_URL_FILE
+        if not url_file.exists():
+            print(f"Файл '{url_file}' не найден.")
+            sys.exit(1)
 
-        for domain, score in merged_scans.items():
-            if should_block_domain(domain, score=score):
-                final_ad_log[domain] = score
-            else:
-                final_clean_log[domain] = score
-        
-        if final_ad_log:
-            log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ (СТРОГИЙ БАН) ---")
-            for idx, (domain, scores) in enumerate(sorted(final_ad_log.items()), 1):
-                log_lines.append(f"{idx:02d}. [AD] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
-            log_lines.append("")
-        
-        if final_clean_log:
-            log_lines.append("--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ (КОНТЕНТ/CDN) ---")
-            for idx, (domain, scores) in enumerate(sorted(final_clean_log.items()), 1):
-                log_lines.append(f"{idx:02d}. [OK] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
-            log_lines.append("")
+        with url_file.open("r", encoding="utf-8") as f:
+            urls = [line.strip() for line in f if line.strip() and not line.strip().startswith("#")]
+
+        if not urls:
+            print(f"Файл '{url_file}' пуст.")
+            sys.exit(0)
+
+        async with aiohttp.ClientSession() as session:
+            semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+            hosts_lock = asyncio.Lock()
             
-        if failed_urls:
-            log_lines.append("--- НЕ ПРОСКОНИРОВАННЫЕ URL ---")
-            for idx, url in enumerate(sorted(failed_urls), 1):
-                log_lines.append(f"{idx:02d}. [FAIL] {url}")
-            log_lines.append("")
+            tasks = [
+                process_single_url(url, api_key, session, semaphore, hosts_lock, all_new_domains, all_clean_domains, failed_urls)
+                for url in urls
+            ]
+            
+            results = await asyncio.gather(*tasks, return_exceptions=True)
+            success_count = sum(1 for r in results if r is True)
+            fail_count = sum(1 for r in results if r is False)
+
+    # --- ФИНАЛЬНАЯ СБОРКА И ПЕРЕПРОВЕРКА ЧЕРЕЗ ЕДИНЫЙ ФИЛЬТР ---
+    existing_domains = read_existing_hosts(str(HOSTS_FILE))
+    all_ad_domains = existing_domains.union(all_new_domains.keys())
+    filtered_ad_domains = set()
+    
+    # Прогоняем абсолютно каждый домен базы через эталонную функцию фильтрации
+    for domain in all_ad_domains:
+        if should_block_domain(domain):
+            filtered_ad_domains.add(domain)
+
+    sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
+    
+    # Запись hosts-файла
+    with open(HOSTS_FILE, "w", encoding="utf-8") as hosts_file:
+        hosts_file.write("# [Advanced URLScan Filters Generated Advertising Blocklist]\n")
+        hosts_file.write("# База дополняется автоматически, отсортирована по уровням доменов (1-2-3...)\n\n")
+        for domain in sorted_ad_domains:
+            hosts_file.write(f"0.0.0.0 {domain}\n")
+    
+    display_total = len(urls) if urls else 1
+    print(f"\n{'='*60}\nОБРАБОТКА ЗАВЕРШЕНА!")
+    print(f"Успешно: {success_count}/{display_total} • Ошибки: {fail_count}/{display_total}")
+    print(f"Новых доменов добавлено: {len(all_new_domains)} • Всего в базе: {len(sorted_ad_domains)}")
+    
+    # Формирование структурированного лога аналитики с передачей весов (score)
+    log_lines = [
+        "=" * 60, "ЛОГ АНАЛИЗА URLSCAN (ФИЛЬТРАЦИЯ ИСПРАВЛЕНА)", "=" * 60,
+        f"Успешно: {success_count}/{display_total}", f"Ошибки: {fail_count}/{display_total}",
+        f"Всего рекламных доменов в базе hosts: {len(sorted_ad_domains)}", ""
+    ]
+    
+    final_ad_log = {}
+    final_clean_log = {}
+
+    # Объединяем результаты сканирования для честной проверки лога
+    merged_scans = {}
+    for d, s in all_new_domains.items(): merged_scans[d] = s
+    for d, s in all_clean_domains.items(): merged_scans[d] = s
+
+    for domain, score in merged_scans.items():
+        if should_block_domain(domain, score=score):
+            final_ad_log[domain] = score
+        else:
+            final_clean_log[domain] = score
+    
+    if final_ad_log:
+        log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ (СТРОГИЙ БАН) ---")
+        for idx, (domain, scores) in enumerate(sorted(final_ad_log.items()), 1):
+            log_lines.append(f"{idx:02d}. [AD] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
+        log_lines.append("")
+    
+    if final_clean_log:
+        log_lines.append("--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ (КОНТЕНТ/CDN) ---")
+        for idx, (domain, scores) in enumerate(sorted(final_clean_log.items()), 1):
+            log_lines.append(f"{idx:02d}. [OK] {domain:<40} (clean: {scores['clean_score']}, ad: {scores['ad_score']})")
+        log_lines.append("")
         
-        with open(LOG_FILE, "w", encoding="utf-8") as f:
-            f.write("\n".join(log_lines))
-        print(f"Лог сохранён в '{LOG_FILE}'")
+    if failed_urls:
+        log_lines.append("--- НЕ ПРОСКАНИРОВАННЫЕ URL ---")
+        for idx, url in enumerate(sorted(failed_urls), 1):
+            log_lines.append(f"{idx:02d}. [FAIL] {url}")
+        log_lines.append("")
+    
+    with open(LOG_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(log_lines))
+    print(f"Лог сохранён в '{LOG_FILE}'")
 
 
 if __name__ == "__main__":
