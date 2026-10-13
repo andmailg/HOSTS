@@ -62,6 +62,7 @@ STRICT_DOMAINS_WHITELIST = [
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
+    r"^yandex\.ru$",
     r"(^|\.)log\.strm\.yandex\.ru$", r"(^|\.)viqeo\.tv$", r"(^|\.)vigo\.tech$",
     r"(^|\.)log\.rutube\.ru$", r"^ssp\.rutube\.ru$", r"^goya\.rutube\.ru$",
     r"^adx\.videonow\.ru$", r"^px\.hsmedia\.ru$", r"(^|\.)adriver\.ru$",
