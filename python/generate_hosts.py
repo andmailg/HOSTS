@@ -26,7 +26,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 SCAN_TIMEOUT = 180
 POLL_INTERVAL = 20
 MAX_CONCURRENT = 10
-TARGET_SCAN = "01a133f3-3c4d-74e9-b61d-d3040bfd3688"
+TARGET_SCAN = ""
 
 # --- БЕЛЫЙ СПИСОК ДОМЕНОВ (Исключения из блокировки) ---
 STRICT_DOMAINS_WHITELIST = [
@@ -62,25 +62,32 @@ STRICT_DOMAINS_WHITELIST = [
 
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # --- Видеоплатформы и видео-CDN, крутящие рекламу на Фонтанке ---
-    r"\.viqeo\.tv$",          # Плееры Viqeo (основной источник навязчивого видео)
-    r"api\.vigo\.tech$",      # Vigo — трекер и оптимизатор коммерческого видеопотока
-    r"vigo\.tech$",
-    r"^log\.rutube\.ru",
-    r"^ssp\.rutube\.ru",
-    r"^goya\.rutube\.ru",
-    r"^adx\.videonow\.ru",
-    r"^px\.hsmedia\.ru",
-    r"\.adriver\.ru",
-    r"\.24smi\.net",
-    r"\.hybrid\.ai",
-    r"\.ohmy\.bid",
-    r"\.adseedtech\.com",
-    r"\.appsflyersdk\.com",
-    r"\.betweendigital\.com",
-    r"\.bidderstack\.com",
-    r"\.bidvol\.com",
-    r"\.bumlam\.com",
-    r"\.buzzoola\.com",
+    r"(^|\.)log\.strm\.yandex\.ru$",
+    r"(^|\.)viqeo\.tv$",          # Плееры Viqeo (основной источник навязчивого видео)
+    r"(^|\.)vigo\.tech$",      # Vigo — трекер и оптимизатор коммерческого видеопотока
+    r"(^|\.)log\.rutube\.ru$",
+    r"^ssp\.rutube\.ru$",
+    r"^goya\.rutube\.ru$",
+    r"^adx\.videonow\.ru$",
+    r"^px\.hsmedia\.ru$",
+    r"(^|\.)adriver\.ru$",
+    r"\.ms\.dzen\.ru$",
+    r"\.cu\.dzen\.ru$",
+    r"(^|\.)supercdn\.ru$",
+    r"(^|\.)mrgcdn\.ru$",
+    r"(^|\.)24smi\.net$",
+    r"(^|\.)hybrid\.ai$",
+    r"(^|\.)ohmy\.bid$",
+    r"(^|\.)adseedtech\.com$",
+    r"(^|\.)appsflyersdk\.com$",
+    r"(^|\.)betweendigital\.com$",
+    r"(^|\.)bidderstack\.com$",
+    r"(^|\.)bidvol\.com$",
+    r"(^|\.)bumlam\.com$",
+    r"(^|\.)buzzoola\.com$",
+    r"(^|\.)viadata\.store$",
+    r"(^|\.)hbrd\.io$",
+    r"(^|\.)mediatoday\.ru$",
     
     # --- Рекламные видеошлюзы Rambler и Mail.ru на внешних сайтах ---
     r"^embeds\.rambler\.ru$", # Встраиваемые видео-блоки Рамблера со встроенной рекламой
@@ -91,8 +98,11 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^rs\.mail\.ru$",        # Рекламный сервер Mail.ru (активно раздает видео-кампании)
     
     # Предыдущие правила...
-    r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$",
-    r"ad\.mail\.ru$", r"reklama\.mail\.ru$"
+    r"^mc\.yandex\.[a-z]+$",
+    r"^an\.yandex\.[a-z]+$",
+    r"^ads\.yandex\.[a-z]+$",
+    r"ad\.mail\.ru$",
+    r"reklama\.mail\.ru$"
 ]
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -313,7 +323,7 @@ async def submit_url_to_scan(target_url, api_key, session):
     headers = {"Content-Type": "application/json", "User-Agent": USER_AGENT, "x-api-key": api_key}
     data = {"url": target_url, "visibility": "public"}
     try:
-        async with session.post(URLSCAN_SCAN, headers=headers, json=data, timeout=aiohttp.ClientTimeout(total=30), verify_ssl=False) as response:
+        async with session.post(URLSCAN_SCAN, headers=headers, json=data, timeout=aiohttp.ClientTimeout(total=30), ssl=False) as response:
             if response.status == 429:
                 print("Превышен лимит запросов API (Rate Limit). Ожидание 60 секунд...")
                 await asyncio.sleep(60)
@@ -334,7 +344,7 @@ async def poll_scan_results(uuid, api_key, session, max_wait_sec=SCAN_TIMEOUT):
     await asyncio.sleep(POLL_INTERVAL)
     while time.time() - start_time < max_wait_sec:
         try:
-            async with session.get(result_url, headers=headers, timeout=aiohttp.ClientTimeout(total=20), verify_ssl=False) as response:
+            async with session.get(result_url, headers=headers, timeout=aiohttp.ClientTimeout(total=20), ssl=False) as response:
                 if response.status == 200:
                     return await response.json()
                 elif response.status == 404:
@@ -409,7 +419,7 @@ async def main_async():
             scan_data = None
             try:
                 result_url = f"{URLSCAN_RESULT}{TARGET_SCAN}/"
-                async with session.get(result_url, headers={"x-api-key": api_key}, timeout=aiohttp.ClientTimeout(total=20), verify_ssl=False) as resp:
+                async with session.get(result_url, headers={"x-api-key": api_key}, timeout=aiohttp.ClientTimeout(total=20), ssl=False) as resp:
                     if resp.status == 200:
                         scan_data = await resp.json()
                         target_url = scan_data.get("page", {}).get("url", "")

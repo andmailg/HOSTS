@@ -228,6 +228,7 @@
 0.0.0.0 0ee1b95a53290aadeddb12cf9fee4456.safeframe.googlesyndication.com
 0.0.0.0 128cd4dca019fe06e856dcdf2e41de45.safeframe.googlesyndication.com
 0.0.0.0 14e8aeb7201f00819a5a64abb48c8930.safeframe.googlesyndication.com
+0.0.0.0 531311.ms.dzen.ru
 0.0.0.0 53fc5a1f9fe6adae48a8255f2f79005e.safeframe.googlesyndication.com
 0.0.0.0 7ebebb6c54baee02cd88171ff0220737.safeframe.googlesyndication.com
 0.0.0.0 9a31ebd4c0b67577b40ba6aa4ac67d57.safeframe.googlesyndication.com
@@ -268,5 +269,6 @@
 0.0.0.0 6244d8b0-c6cf-11f1-86e0-002590c0647c.n2.sync.bumlam.com
 0.0.0.0 8158338881791528955290.cm.a.mts.ru
 0.0.0.0 9727487581791824088183.cm.a.mts.ru
+0.0.0.0 b69dfb48-c6d5-11f1-8e0f-002590c82436.n7.sync.bumlam.com
 0.0.0.0 f846c890-c64e-11f1-8e0f-002590c82436.n4.sync.bumlam.com
 0.0.0.0 w4jwjj6r7lesmjdsph3hrk2qhy0qpvod.lambda-url.eu-west-1.on.aws
