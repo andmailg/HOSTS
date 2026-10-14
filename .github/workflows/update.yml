@@ -36,7 +36,7 @@ jobs:
       id: run_script
       env:
         URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
-      run: python main.py
+      run: python /python/main.py
 
     - name: Commit and Push changes
       if: success()
