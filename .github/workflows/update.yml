@@ -1,4 +1,4 @@
-name: Update Adblock List
+name: Update Hosts
 
 on:
   schedule:
