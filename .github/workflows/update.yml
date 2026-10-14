@@ -43,7 +43,7 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add hosts_advanced.txt
+        git add hosts_advanced.txt log.txt
         if ! git diff --cached --quiet; then
           git commit -m "chore: auto-update adblock files"
           git push
