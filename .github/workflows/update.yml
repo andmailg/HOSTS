@@ -18,23 +18,32 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.11' # Рекомендуется зафиксировать стабильную версию вместо '3.x'
+        cache: 'pip'          # Включает встроенное кэширование зависимостей для ускорения запуска
 
     - name: Install dependencies
-      run: pip install requests certifi
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Ensure Playwright Browsers are Installed
+      run: |
+        # Устанавливаем только Chromium (поскольку в коде жестко прописан browser.chromium)
+        # и необходимые системные зависимости для работы в Ubuntu
+        playwright install chromium --with-deps
 
     - name: Run script with Validation
       id: run_script
       env:
         URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}
-      run: python adblock-generator.py
+      run: python main.py
 
     - name: Commit and Push changes
       if: success()
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add adblock_auto.txt adblock_clean.txt hosts_adblock.txt
+        git add hosts_advanced.txt
         if ! git diff --cached --quiet; then
           git commit -m "chore: auto-update adblock files"
           git push
@@ -42,14 +51,3 @@ jobs:
           echo "Изменений в списках нет."
         fi
 
-    - name: Send Telegram Notification on Failure
-      if: failure()
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: |
-          ❌ Ошибка обновления репозитория andmailg/HOSTS!
-          
-          Workflow упал на этапе сборки или синтаксической валидации доменов.
-          Ссылка на лог выполнения: https://github.com{{ github.repository }}/actions/runs/${{ github.run_id }}
