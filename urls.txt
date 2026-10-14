@@ -16,3 +16,5 @@ cnews.ru
 interfax.ru
 pikabu.ru
 securitylab.ru
+rosbalt.ru
+yuga.ru
