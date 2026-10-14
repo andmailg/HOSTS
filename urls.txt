@@ -13,3 +13,4 @@ ria.ru
 e1.ru
 ngs.ru
 cnews.ru
+interfax.ru
