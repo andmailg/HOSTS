@@ -12,7 +12,7 @@ from crawler import run_external_crawler_for_urls
 from urlscan_client import process_single_url
 
 def read_existing_hosts(file_path):
-    """Считывает домены из текущего hosts-файла."""
+    """Считывает домены из текущего hosts-файла с нормализацией строк."""
     existing_domains = set()
     if os.path.exists(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
@@ -22,6 +22,7 @@ def read_existing_hosts(file_path):
                     continue
                 parts = line.split()
                 if len(parts) >= 2:
+                    # Извлекаем домен, очищаем от пробелов и приводим к нижнему регистру
                     domain = parts[1].strip().lower()
                     if domain: 
                         existing_domains.add(domain)
@@ -76,7 +77,6 @@ async def main_async():
         else:
             print(f"Ошибка: Не удалось получить данные для UUID {TARGET_SCAN}.")
             sys.exit(1)
-
     else:
         if not seed_urls:
             print(f"Файл '{DEFAULT_URL_FILE}' пуст или отсутствует. Нечего обрабатывать.")
@@ -86,7 +86,6 @@ async def main_async():
 
         if is_crawl_active:
             current_depth = args.max_depth if args.max_depth != 0 else 1
-            # ДОБАВЛЕН AWAIT НА ВЫЗОВ КРАУЛЕРА:
             all_crawled_urls = await run_external_crawler_for_urls(
                 seed_urls, 
                 max_depth=current_depth, 
@@ -99,14 +98,12 @@ async def main_async():
                 seed_domain = urlparse(normalized_seed).netloc.lower()
                 seed_apex = get_apex_domain(normalized_seed)
                 
-                # 1. Группировка для Дзена
                 if "dzen.ru" in normalized_seed:
                     crawled_for_seed = [u for u in all_crawled_urls if "dzen.ru/a/" in u or "dzen.ru/news/show/" in u]
                     if not crawled_for_seed:
                         crawled_for_seed = [normalized_seed]
                     crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
                 
-                # 2. ИСПРАВЛЕННАЯ ИНТЕГРАЦИЯ ДЛЯ ПОДДОМЕНОВ MAIL.RU:
                 elif "mail.ru" in seed_domain or "sportmail.ru" in seed_domain:
                     crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc.lower() == seed_domain]
                     deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
@@ -114,12 +111,8 @@ async def main_async():
                     if not crawled_for_seed: crawled_for_seed = [normalized_seed]
                     crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
                     
-                # 3. ИНТЕГРАЦИЯ ДЛЯ ЭКОСИСТЕМ GAZETA.RU И KP.RU:
                 elif seed_apex in ["gazeta.ru", "kp.ru"]:
-                    # Собираем все ссылки, у которых apex-домен совпадает с сидом (включая любые поддомены)
                     crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]
-                    
-                    # Отсекаем чистые главные страницы поддоменов, оставляя только конкретные статьи/страницы
                     deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
                     if deep_articles: 
                         crawled_for_seed = deep_articles
@@ -128,7 +121,6 @@ async def main_async():
                         crawled_for_seed = [normalized_seed]
                     crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
 
-                # 4. ИНТЕГРАЦИЯ ДЛЯ ДЛЯ ROSBALT.RU ===
                 elif seed_apex == "rosbalt.ru":
                     crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == "rosbalt.ru"]
                     deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
@@ -137,7 +129,6 @@ async def main_async():
                     crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
                     
                 else:
-                    # Стандартный режим фильтрации для остальных классических сайтов
                     crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]
                     crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE] if crawled_for_seed else [normalized_seed]
         else:
@@ -170,7 +161,10 @@ async def main_async():
     # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ
     # =========================================================================
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
-    filtered_ad_domains = {d for d in existing_domains.union(all_new_domains.keys()) if should_block_domain(d)}
+    combined_domains = existing_domains.union(all_new_domains.keys())
+    filtered_ad_domains = {d for d in combined_domains if should_block_domain(d)}
+    
+    # Исправленная многоуровневая сортировка доменов (по уровню вложенности + по алфавиту)
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
     
     with open(HOSTS_FILE, "w", encoding="utf-8") as h_file:

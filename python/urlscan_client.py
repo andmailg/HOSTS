@@ -12,12 +12,17 @@ def process_scan_json(raw_data):
     if not requests_list: return {}, {}
 
     clean_domains, new_ad_domains, domain_verdicts = {}, {}, {}
-    doc_url = raw_data.get("page", {}).get("url", "")
+    
+    # ИСПРАВЛЕНО: Безопасное последовательное отсечение параметров и хэшей от URL документа
+    raw_doc_url = raw_data.get("page", {}).get("url", "")
+    doc_url = raw_doc_url.split('?')[0].split('#')[0]
     page_apex = get_apex_domain(doc_url)
 
     for item in requests_list:
         req_url = item.get("request", {}).get("request", {}).get("url")
         if not req_url or req_url.startswith("data:"): continue
+        
+        # ИСПРАВЛЕНО: Сначала берем первый элемент списка, затем применяем методы строки .lower().strip()
         try: req_domain = urlparse(req_url).netloc.split(':')[0].lower().strip()
         except Exception: continue
         if not req_domain: continue
