@@ -5,30 +5,31 @@
 
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
-01. [SEED] mail.ru
-    ├── 01. [OK] https://mail.ru
-    └── UUID: 01a13a13-0ab9-7418-a19b-27049b85a7af
+01. [SEED] https://nnmclub.to/
+    ├── 01. [OK] https://nnmclub.to/
+    └── UUID: 01a13e99-f945-729e-a879-0035db74ee30
 
 ============================================================
 --- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---
-01. [AD] ad.mail.ru                               (clean: 51, ad: 30)
-02. [AD] counter.yadro.ru                         (clean: 5, ad: 36)
-03. [AD] mc.yandex.com                            (clean: 10, ad: 89)
-04. [AD] mc.yandex.ru                             (clean: 5, ad: 63)
-05. [AD] r.mradx.net                              (clean: 5, ad: 6)
-06. [AD] reklama.mail.ru                          (clean: 17, ad: 0)
-07. [AD] www.google-analytics.com                 (clean: 0, ad: 42)
-08. [AD] www.googletagmanager.com                 (clean: 5, ad: 21)
+01. [AD] counter.yadro.ru                         (clean: 5, ad: 36)
+02. [AD] googleads.g.doubleclick.net              (clean: 0, ad: 24)
+03. [AD] i.ibb.co                                 (clean: 15, ad: 18)
+04. [AD] mc.yandex.com                            (clean: 15, ad: 68)
+05. [AD] mc.yandex.ru                             (clean: 5, ad: 63)
+06. [AD] pagead2.googlesyndication.com            (clean: 15, ad: 75)
+07. [AD] ssl.google-analytics.com                 (clean: 0, ad: 57)
+08. [AD] static.cloudflareinsights.com            (clean: 5, ad: 21)
+09. [AD] www.google-analytics.com                 (clean: 5, ad: 51)
 
 --- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---
-01. [OK] account.mail.ru                          (clean: 12, ad: 0)
-02. [OK] an.mail.ru                               (clean: 17, ad: 0)
-03. [OK] b2.mail.ru                               (clean: 17, ad: 0)
-04. [OK] home.imgsmail.ru                         (clean: 55, ad: 60)
-05. [OK] imgs2.imgsmail.ru                        (clean: 15, ad: 60)
-06. [OK] limg.imgsmail.ru                         (clean: 15, ad: 18)
-07. [OK] mail.ru                                  (clean: 36, ad: 18)
-08. [OK] privacy-cs.mail.ru                       (clean: 48, ad: 48)
-09. [OK] rs.mail.ru                               (clean: 51, ad: 0)
-10. [OK] stat.radar.imgsmail.ru                   (clean: 5, ad: 6)
-11. [OK] top-fwz1.mail.ru                         (clean: 46, ad: 66)
+01. [OK] i1.imageban.ru                           (clean: 5, ad: 6)
+02. [OK] i128.fastpic.org                         (clean: 10, ad: 12)
+03. [OK] i2.imageban.ru                           (clean: 10, ad: 12)
+04. [OK] i3.imageban.ru                           (clean: 5, ad: 6)
+05. [OK] i4.imageban.ru                           (clean: 5, ad: 6)
+06. [OK] i7.imageban.ru                           (clean: 5, ad: 6)
+07. [OK] nnmclub.to                               (clean: 12, ad: 0)
+08. [OK] nnmstatic.win                            (clean: 395, ad: 609)
+09. [OK] s.ytimg.com                              (clean: 0, ad: 27)
+10. [OK] s1.directupload.eu                       (clean: 5, ad: 6)
+11. [OK] s1.hostingkartinok.com                   (clean: 10, ad: 12)

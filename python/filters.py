@@ -65,7 +65,9 @@ STRICT_DOMAINS_WHITELIST = [
     "kp.ru", "s1.kpcdn.net", "s2.kpcdn.net", "s3.kpcdn.net", "s4.kpcdn.net", "static.kpcdn.net",
 
     # --- Экосистема Росбалт ---
-    "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru", "rosbalt.ru/news"
+    "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru", "rosbalt.ru/news",
+    # --- nnmclub.to ---
+    "nnmstatic.win"
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
