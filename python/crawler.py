@@ -53,7 +53,6 @@ async def crawl_rosbalt_async(normalized_seed, max_depth):
                     
                     if parts.scheme in ("http", "https") and get_apex_domain(full_url) == "rosbalt.ru":
                         if article_pattern.match(parts.path):
-                            # Проверка на служебные пути
                             if is_ignored_path(parts.path):
                                 continue
                             clean_url = urlunsplit((parts.scheme, parts.netloc, parts.path, "", ""))
@@ -66,11 +65,10 @@ async def crawl_rosbalt_async(normalized_seed, max_depth):
     
     return current_seed_urls
 
-# ВАЖНО: Делаем всю основную функцию run_external_crawler_for_urls асинхронной (async def)
 async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=1, max_urls_per_seed=2):
     """
-    Универсальный асинхронный краулер с поддержкой поддоменов Mail.ru, Gazeta, KP, 
-    асинхронного Playwright для Росбалта, а также с фильтрацией хабов/рубрик для Yuga, Interfax и SecurityLab.
+    Универсальный асинхронный краулер с поддержкой поддоменов, очисткой меток/хэшей
+    и глубокой структурной фильтрацией хабов/рубрик любого уровня.
     """
     aggregated_urls = set()
     total_seeds = len(url_list)
@@ -91,14 +89,12 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
             
         current_seed_urls = set()
         
-        # --- ВЕТКА ROSBALT (ВЫЗЫВАЕМ АСИНХРОННЫЙ ПЛЕЙРАЙТ) ---
         if seed_apex == "rosbalt.ru":
             rosbalt_urls = await crawl_rosbalt_async(normalized_seed, max_depth)
             current_seed_urls.update(rosbalt_urls)
                 
-        # --- КЛАССИЧЕСКИЙ СБОР ДЛЯ ОСТАЛЬНЫХ САЙТОВ (ЧЕРЕЗ REQUESTS) ---
         else:
-            if seed_apex in ["mail.ru", "sportmail.ru", "dzen.ru", "gazeta.ru", "kp.ru"]:
+            if seed_apex in ["mail.ru", "sportmail.ru", "dzen.ru", "gazeta.ru", "kp.ru", "ria.ru", "rambler.ru"]:
                 headers = {
                     "User-Agent": "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com)",
                     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -113,7 +109,6 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
                 }
             
             try:
-                # Синхронный requests.get внутри async цикла допустим, так как это последовательный подготовительный этап
                 response = requests.get(normalized_seed, headers=headers, timeout=10, verify=False)
                 if response.status_code >= 400:
                     print(f" -> [Пропущено] Код ответа сервера: {response.status_code}")
@@ -131,40 +126,37 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
                     base_url = "https://dzen.ru" if seed_apex == "dzen.ru" else normalized_seed
                     full_url = urljoin(base_url, href)
                     
-                    # ПАРСИНГ ПУТИ ДЛЯ ФИЛЬТРАЦИИ RSS/SEARCH/ХАБОВ
-                    url_parts = urlparse(full_url)
+                    # ИСПРАВЛЕНО: Безопасное последовательное разделение строки вместо цепного вызова методов списка
+                    clean_url = full_url.split('?')[0].split('#')[0]
+                    url_parts = urlparse(clean_url)
                     
-                    # 1. Глобальная фильтрация по паттернам путей (убирает /opinion/, /go/, /rss и т.д.)
+                    # Глобальная проверка очищенного пути на хабы, разделы и рубрики первого уровня
                     if is_ignored_path(url_parts.path):
                         continue  
                         
-                    # 2. Дополнительная фильтрация параметров (для cnews_menu и маркетплейсов)
-                    if "p=cnews_menu" in url_parts.query or url_parts.netloc.startswith("market."):
+                    # Дополнительная фильтрация параметров исходного url
+                    if "p=cnews_menu" in full_url or "market." in url_parts.netloc:
                         continue
 
-                    req_apex = get_apex_domain(full_url)
-                    path = url_parts.path.lower().rstrip('/')
+                    req_apex = get_apex_domain(clean_url)
                     
                     if seed_apex == "dzen.ru":
-                        if "/a/" in full_url or "/news/show/" in full_url:
-                            current_seed_urls.add(full_url.split('?')[0])
+                        if "/a/" in url_parts.path or "/news/show/" in url_parts.path:
+                            current_seed_urls.add(clean_url)
                             
-                    elif seed_apex in ["mail.ru", "sportmail.ru", "gazeta.ru", "kp.ru"]:
-                        req_domain = urlparse(full_url).netloc.lower()
+                    elif seed_apex in ["mail.ru", "sportmail.ru", "gazeta.ru", "kp.ru", "ria.ru", "rambler.ru"]:
+                        req_domain = url_parts.netloc.lower()
                         if seed_apex in req_domain or "mail.ru" in req_domain:
-                            if not any(full_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
-                                current_seed_urls.add(full_url.split('?')[0])
+                            if not any(clean_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
+                                current_seed_urls.add(clean_url)
                                 
                     else:
-                        # Стандартный режим для всех остальных классических сайтов
+                        # Стандартный режим для всех остальных сайтов (e1.ru, ngs.ru, cnews.ru, yuga.ru)
                         if seed_apex and req_apex == seed_apex:
-                            if any(full_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
+                            if any(clean_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
                                 continue
-
-                            # Все точечные if/elif блоки для yuga, interfax, securitylab удалены,
-                            # так как их теперь обрабатывает функция is_ignored_path выше.
-
-                            current_seed_urls.add(full_url)
+                            
+                            current_seed_urls.add(clean_url)
                                 
             except Exception as e:
                 print(f" -> [Предупреждение] Ошибка при обходе {target_url}: {repr(e)}")
@@ -174,7 +166,7 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
             
         print(f" -> Успешно извлечено ссылок для сессии: {len(current_seed_urls)}")
         aggregated_urls.update(current_seed_urls)
-        await asyncio.sleep(delay)  # Заменили синхронный time.sleep на асинхронный
+        await asyncio.sleep(delay)  
             
     print(f"[Кроулер] Всего уникальных адресов собрано для всех сайтов: {len(aggregated_urls)}")
     return list(aggregated_urls)

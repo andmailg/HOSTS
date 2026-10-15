@@ -19,16 +19,16 @@ URLSCAN_RESULT = "https://urlscan.io/api/v1/result/"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 SCAN_TIMEOUT = 180
 POLL_INTERVAL = 20
-MAX_CONCURRENT = 5          # Сколько сайтов сканируем одновременно в API
-MAX_URLS_PER_SITE = 2       # Сколько страниц берем с одного домена из urls.txt
-MAX_DEPTH = 100             # Добавлено: Глобальная глубина сканирования для краулера
+MAX_CONCURRENT = 5          
+MAX_URLS_PER_SITE = 2       
+MAX_DEPTH = 100             
 TARGET_SCAN = ""
 
 # --- Настройки для Playwright обхода (Rosbalt.ru) ---
 HEADLESS_MODE = True
 PAGE_TIMEOUT_MS = 30000
 
-# Паттерны для поиска служебных разделов, хабов и мусорных путей в URL (регистронезависимые)
+# Паттерны для поиска служебных разделов, хабов и мусорных путей в URL
 IGNORED_PATH_PATTERNS = [
     r'/rss', 
     r'/search', 
@@ -38,44 +38,73 @@ IGNORED_PATH_PATTERNS = [
     r'/login', 
     r'/auth',
     r'/deposit',
-    
+    r'/contacts',                  # Страницы контактов
+    r'cookie',                     # Политики использования cookie
+    r'mediakit',                   # Медиакиты и рекламные прайсы
+    r'/lenta/?$',                  # Жесткое исключение общих лент новостей (ria.ru/lenta)
+    r'xmlfeeds\.php',              # СТРОГАЯ БЛОКИРОВКА RSS-ФИДА ПИКАБУ
     # --- НОВЫЕ СИСТЕМНЫЕ И ХАБОВЫЕ ПАТТЕРНЫ ---
-    r'^/opinion/?$',              # Исключает ровно /opinion или /opinion/ (главная мнений)
-    r'^/blog/personal/[^/]+/?$',  # Исключает главную страницу блога автора без статей
-    r'^/go(/|$)',                 # Исключает редиректы Пикабу /go/
-    r'^/articles/?$',             # Исключает общие хабы статей (например, на yuga.ru)
-    r'^/articles/[^/]+/?$',       # Исключает рубрики статей первого уровня (/articles/economy)
+    r'^/opinion/?$',              
+    r'^/blog/personal/[^/]+/?$',  
+    r'^/go(/|$)',                 
+    r'^/articles/?$',             
+    r'^/articles/[^/]+/?$',       
     r'^/community/[^/]+/?$',
-    r'^/book/[^/]+/?$',           # Исключает хабы каталогов CNews (например, /book/Microsoft_Office)
-    r'^/currency/?$',             # Исключает главную страницу курсов валют (например, на bank.yuga.ru)
-    r'^/blog/company/[^/]+/?$',   # Исключает главные страницы блогов компаний (например, /blog/company/CyberEd/)
-    r'^/russia/?$',               # Исключает раздел /russia/ на interfax.ru
-    r'/quiz/',                    # Исключает любые викторины /quiz/ на yuga.ru
-    r'^/region/[^/]+\.html$',     # Исключает абсолютно все страницы регионов (чечня, краснодар, адыгея и др.)
-    r'^/cookie/?$',               # Исключает страницу кук на interfax.ru (работает через url_parts.path)
-    r'^/@[^/]+/?$',               # Обобщенное правило: исключает любые профили никнеймов (например, /@reprobank)
-    r'^/pressreleases/?$',        # Исключает ровно /pressreleases или /pressreleases/ (главную ленту релизов)
+    r'^/book/[^/]+/?$',           
+    r'^/currency/?$',             
+    r'^/blog/company/[^/]+/?$',   
+    r'^/russia/?$',               
+    r'/quiz/',                    
+    r'^/region/[^/]+\.html$',     
+    r'^/cookie/?$',               
+    r'^/@[^/]+/?$',               
+    r'^/pressreleases/?$',        
     r'^/news/?$',
     
     # --- ИСКЛЮЧЕНИЕ СЕРВИСНЫХ СТРАНИЦ ---
-    r'^/map\.php$',                # Строго исключает карту сайта
-    r'/rules\.php$'               # Исключает rules.php в корне и в любых подпапках
+    r'^/map\.php$',                
+    r'/rules\.php$'               
 ]
-
-
 
 # Предварительная компиляция для ускорения работы регулярных выражений
 _COMPILED_IGNORED_PATHS = [re.compile(pat, re.IGNORECASE) for pat in IGNORED_PATH_PATTERNS]
 
 def is_ignored_path(path: str) -> bool:
     """
-    Проверяет, содержит ли переданный путь (path) служебные или мусорные разделы.
-    Принимает на вход только path (например, из urlparse(url).path).
+    Проверяет, содержит ли переданный путь (path) служебные разделы или рубрики.
+    Реализует динамический анализ структуры пути для отсечения бесконечных хабов.
     """
-    if not path:
+    if not path or path == "/":
         return False
         
-    return any(pat.search(path) for pat in _COMPILED_IGNORED_PATHS)
+    clean_path = "/" + path.strip("/").lower()
+    
+    # 1. Проверка по жесткому списку регулярных выражений
+    if any(pat.search(clean_path) for pat in _COMPILED_IGNORED_PATHS):
+        return True
+        
+    # 2. Динамический анализ рубрик
+    segments = [s for s in path.strip("/").lower().split("/") if s]
+    
+    if segments:
+        last_segment = segments[-1]
+        
+        # Фиксация проскочивших рубрик (ria.ru/politics, ria.ru/lenta и т.д.):
+        # Если путь короткий (состоит всего из 1 уровня вложенности) и является чисто буквенным словом — 
+        # это главная страница рубрики или глобальный хаб. Фильтруем его.
+        if len(segments) == 1 and last_segment.isalpha():
+            return True
+            
+        # Если весь путь оканчивается на буквенный сегмент без цифр и знаков дефиса (не слаг статьи)
+        if last_segment.isalpha() and not last_segment.endswith(('.html', '.htm', '.php', '.phtml')):
+            return True
+            
+        # Защита от валютных хабов Рамблера и РБК (вида /currencies/usd, /currencies/eur)
+        if "currencies" in segments or "currency" in segments:
+            if len(last_segment) <= 4:
+                return True
+
+    return False
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

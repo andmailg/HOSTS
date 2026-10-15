@@ -46,7 +46,7 @@ STRICT_DOMAINS_WHITELIST = [
     "cloudflare.com", "jsdelivr.net", "unpkg.com", "googleapis.com", 
     "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
     "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
-    "yastatic.net", "avatars.mds.yandex.net", "favicon.yandex.net",
+    "avatars.mds.yandex.net", "favicon.yandex.net",
     "dzen.ru", "dzeninfra.ru", "imgsmail.ru", "mail.ru",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
