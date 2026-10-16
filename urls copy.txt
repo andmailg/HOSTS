@@ -8,8 +8,6 @@ rbc.ru
 gazeta.ru
 lenta.ru
 iz.ru
-kp.ru
-ria.ru
 e1.ru
 ngs.ru
 cnews.ru
@@ -18,3 +16,6 @@ pikabu.ru
 securitylab.ru
 rosbalt.ru
 yuga.ru
+ru.euronews.com
+bbc.com
+yahoo.com
