@@ -205,7 +205,7 @@ def should_block_domain(domain, page_apex=None, score=None):
         return False
         
     # 6. Динамический скоринг по результатам анализа URLScan API
-    if score is not None: 
+    if score is not None:
         return score["ad_score"] > score["clean_score"]
         
     return True
