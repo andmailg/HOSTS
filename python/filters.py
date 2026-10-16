@@ -156,5 +156,9 @@ def should_block_domain(domain, page_apex=None, score=None):
     return True
 
 def sort_domains_by_level(domains):
-    """Сортирует домены по уровню вложенности: сначала домены верхнего уровня, потом поддомены."""
-    return sorted(domains, key=lambda d: len(d.split(".")))
+    """Сортирует по apex-домену, внутри — по уровню вложенности, затем алфавитно."""
+    def sort_key(d):
+        apex = get_apex_domain(d) or d
+        depth = len(d.split(".")) - len(apex.split("."))
+        return (apex, depth, d)
+    return sorted(domains, key=sort_key)
