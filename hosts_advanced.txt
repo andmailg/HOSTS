@@ -69,6 +69,7 @@
 0.0.0.0 ev.adriver.ru
 0.0.0.0 pb.adriver.ru
 0.0.0.0 ssp.adriver.ru
+0.0.0.0 tracker.ads-tinyorbit.com
 0.0.0.0 dt.adsafeprotected.com
 0.0.0.0 fw.adsafeprotected.com
 0.0.0.0 jsconfig.adsafeprotected.com
@@ -94,6 +95,8 @@
 0.0.0.0 d.agkn.com
 0.0.0.0 fid.agkn.com
 0.0.0.0 x01.aidata.io
+0.0.0.0 aj3105.top
+0.0.0.0 cdn77.aj3105.top
 0.0.0.0 qsearch-a.akamaihd.net
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 ssp.al-adtech.com
@@ -104,6 +107,7 @@
 0.0.0.0 c.amazon-adsystem.com
 0.0.0.0 s.amazon-adsystem.com
 0.0.0.0 cognitiv-public.s3.amazonaws.com
+0.0.0.0 tracker.exchange.amitydigital.io
 0.0.0.0 taro.amongstmask.com
 0.0.0.0 np1-cs.amx1.net
 0.0.0.0 a.amxrtb.com
@@ -186,6 +190,7 @@
 0.0.0.0 cs.ssp.cadent.com
 0.0.0.0 dcs.ssp.cadent.com
 0.0.0.0 e1.ssp.cadent.com
+0.0.0.0 pcs.ssp.cadent.com
 0.0.0.0 a1566.casalemedia.com
 0.0.0.0 a2025.casalemedia.com
 0.0.0.0 a2517.casalemedia.com
@@ -235,6 +240,7 @@
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
+0.0.0.0 sync.copper6.live
 0.0.0.0 script.crazyegg.com
 0.0.0.0 code.createjs.com
 0.0.0.0 grid-bidder.criteo.com
@@ -397,6 +403,7 @@
 0.0.0.0 www.gazeta.press
 0.0.0.0 adserver.gear-hub.ru
 0.0.0.0 rumcdn.geoedge.be
+0.0.0.0 usersync.getpublica.com
 0.0.0.0 a.giraff.io
 0.0.0.0 fcgi4.gnezdo.ru
 0.0.0.0 fcgi5.gnezdo.ru
@@ -431,9 +438,11 @@
 0.0.0.0 a97611aff4deb507ce381cff735c105c.safeframe.googlesyndication.com
 0.0.0.0 be066de84fdd2353d82531fe2aa9232d.safeframe.googlesyndication.com
 0.0.0.0 c4b1b5e127fb2e57d4c669098d668b61.safeframe.googlesyndication.com
+0.0.0.0 ca6769b4d95d2f89addec6c18b0275de.safeframe.googlesyndication.com
 0.0.0.0 ca9daa0e61445b80a727d2c469755534.safeframe.googlesyndication.com
 0.0.0.0 cfcd33e21db90814905a930cb7ca0ab1.safeframe.googlesyndication.com
 0.0.0.0 d7ebc3976f223593022f10f97cbd8447.safeframe.googlesyndication.com
+0.0.0.0 e4d7f3814bead17d3857bcba49b099a0.safeframe.googlesyndication.com
 0.0.0.0 ed6951831c4ac66ea3c52f6bd5630244.safeframe.googlesyndication.com
 0.0.0.0 www.googletagmanager.com
 0.0.0.0 www.googletagservices.com
@@ -506,6 +515,7 @@
 0.0.0.0 s9.stc.all.kpcdn.net
 0.0.0.0 cs.krushmedia.com
 0.0.0.0 usermatch.krxd.net
+0.0.0.0 sync.kueez.com
 0.0.0.0 sync.kueezrtb.com
 0.0.0.0 i.liadm.com
 0.0.0.0 i6.liadm.com
@@ -643,6 +653,7 @@
 0.0.0.0 pbs-cs.openwebmp.com
 0.0.0.0 us-east-1-cs-rtb.openwebmp.com
 0.0.0.0 eu-u.openx.net
+0.0.0.0 pbs-us-east.openx.net
 0.0.0.0 rtb.openx.net
 0.0.0.0 u.openx.net
 0.0.0.0 us-u.openx.net
@@ -720,6 +731,9 @@
 0.0.0.0 s.rbk.ru
 0.0.0.0 s0.rbk.ru
 0.0.0.0 relap.io
+0.0.0.0 ads-yahoo.revjet.com
+0.0.0.0 cdn.revjet.com
+0.0.0.0 pix-yahoo.revjet.com
 0.0.0.0 live.rezync.com
 0.0.0.0 a.rfihub.com
 0.0.0.0 sjc-227.sjc-rtb1.rfihub.com
@@ -758,8 +772,10 @@
 0.0.0.0 census-app.scorecardresearch.com
 0.0.0.0 census-web.scorecardresearch.com
 0.0.0.0 sb.scorecardresearch.com
+0.0.0.0 cadmus.script.ac
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
+0.0.0.0 su.semasio.net
 0.0.0.0 uipglob.semasio.net
 0.0.0.0 sendsay.ru
 0.0.0.0 image.sendsay.ru
@@ -981,7 +997,7 @@
 0.0.0.0 counter.yadro.ru
 0.0.0.0 analytics-455007615.collector.yahoo.net
 0.0.0.0 analytics-456562683.collector.yahoo.net
-0.0.0.0 cdn.yahoofinance.com
+0.0.0.0 gpt.mail.yahoo.net
 0.0.0.0 mc.yandex.com
 0.0.0.0 yandex.ru
 0.0.0.0 an.yandex.ru
@@ -997,7 +1013,5 @@
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-beeswax.ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
-0.0.0.0 ec.yimg.com
-0.0.0.0 s.yimg.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 b1sync.zemanta.com

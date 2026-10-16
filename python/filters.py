@@ -67,7 +67,10 @@ STRICT_DOMAINS_WHITELIST = [
     # --- Экосистема Росбалт ---
     "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru", "rosbalt.ru/news",
     # --- nnmclub.to ---
-    "nnmstatic.win"
+    "nnmstatic.win",
+
+    # --- Экосистема Yahoo ---
+    "yahoo.com", "yimg.com", "yahoofinance.com"
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
