@@ -84,6 +84,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)hbrd\.io$", r"(^|\.)mediatoday\.ru$", r"^embeds\.rambler\.ru$",
     r"^ssp\.rambler\.ru$", r"^ssp01\.rambler\.ru$", r"^pixel\.rambler\.ru$",
     r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$", r"ad\.mail\.ru$", r"reklama\.mail\.ru$",
+    r"(^|\.)scorecardresearch\.com$",
     
     # --- Специфичные тизерные сети и счетчики для Gazeta.ru и KP.ru ---
     r"(^|\.)smi2\.ru$",           # Новостной агрегатор-обменник рекламы СМИ2

@@ -708,3 +708,4 @@
 0.0.0.0 s12.stc.yc.kpcdn.net
 0.0.0.0 1852274561791897962649.cm.a.mts.ru
 0.0.0.0 b8d430e6-c6e7-11f1-86e0-002590c0647c.n7.sync.bumlam.com
+0.0.0.0 census-app.scorecardresearch.com
