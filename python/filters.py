@@ -43,20 +43,37 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
 STRICT_DOMAINS_WHITELIST = [
+    # --- Глобальные CDN и служебная инфраструктура Google ---
     "cloudflare.com", "jsdelivr.net", "unpkg.com", "googleapis.com", 
     "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
+    
+    # --- Медиа-контент и видеохостинги ---
     "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
-    "avatars.mds.yandex.net", "favicon.yandex.net",
-    "dzen.ru", "dzeninfra.ru", "imgsmail.ru", "mail.ru",
+    
+    # --- Экосистема Яндекс / Дзен (Служебные CDN, медиа-серверы и капча) ---
+    "avatars.mds.yandex.net", "favicon.yandex.net", "yastatic.net", 
+    "yastatic-net.ru", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", 
+    
+    # --- Экосистема VK / Mail.ru / Одноклассники ---
+    "imgsmail.ru", "mail.ru",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
+    
+    # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
+    "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
+    
+    # --- Видео и стриминг (РФ) ---
     "rutube.ru", "static.rutube.ru", "rutubelist.ru", "blrutube.ru",
+    
+    # --- Государственные, банковские и новостные ресурсы ---
     "mos.ru", "sberbank.ru", "sbrf.ru", "sber.ru",
-    "thetruestory.news", "rferl.org", "fastpic.org", "imageban.ru", 
-    "pic4net.com", "directupload.eu", "hostingkartinok.com", "rutracker.cc", 
-    "imgchest.com", "ichef.bbci.co.uk", "static.bbci.co.uk", 
+    "thetruestory.news", "rferl.org", "ichef.bbci.co.uk", "static.bbci.co.uk", 
     "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk",
+    
+    # --- Фотохостинги и файловые хранилища ---
+    "fastpic.org", "imageban.ru", "pic4net.com", "directupload.eu", 
+    "hostingkartinok.com", "imgchest.com",
     
     # --- Экосистема Газета.ru (Служебные домены) ---
     "gazeta.ru", "s.gazeta.ru", "img.gazeta.ru", "static.gazeta.ru",
@@ -66,45 +83,80 @@ STRICT_DOMAINS_WHITELIST = [
 
     # --- Экосистема Росбалт ---
     "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru", "rosbalt.ru/news",
-    # --- nnmclub.to ---
-    "nnmstatic.win",
-
-    # --- Экосистема Yahoo ---
-    "yahoo.com", "yimg.com", "yahoofinance.com"
+    
+    # --- Торрент-трекеры и их статика ---
+    "rutracker.cc", "nnmstatic.win"
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    r"^yandex\.ru$",
-    r"(^|\.)log\.strm\.yandex\.ru$", r"(^|\.)viqeo\.tv$", r"(^|\.)vigo\.tech$",
-    r"(^|\.)log\.rutube\.ru$", r"^ssp\.rutube\.ru$", r"^goya\.rutube\.ru$",
-    r"^adx\.videonow\.ru$", r"^px\.hsmedia\.ru$", r"(^|\.)adriver\.ru$",
-    r"\.ms\.dzen\.ru$", r"\.cu\.dzen\.ru$", r"(^|\.)supercdn\.ru$",
-    r"(^|\.)mrgcdn\.ru$", r"(^|\.)24smi\.net$", r"(^|\.)hybrid\.ai$",
-    r"(^|\.)ohmy\.bid$", r"(^|\.)adseedtech\.com$", r"(^|\.)appsflyersdk\.com$",
-    r"(^|\.)betweendigital\.com$", r"(^|\.)bidderstack\.com$", r"(^|\.)bidvol\.com$",
-    r"(^|\.)bumlam\.com$", r"(^|\.)buzzoola\.com$", r"(^|\.)viadata\.store$",
-    r"(^|\.)hbrd\.io$", r"(^|\.)mediatoday\.ru$", r"^embeds\.rambler\.ru$",
-    r"^ssp\.rambler\.ru$", r"^ssp01\.rambler\.ru$", r"^pixel\.rambler\.ru$",
-    r"^mc\.yandex\.[a-z]+$", r"^an\.yandex\.[a-z]+$", r"^ads\.yandex\.[a-z]+$", r"ad\.mail\.ru$", r"reklama\.mail\.ru$",
-    r"(^|\.)scorecardresearch\.com$",
+    # --- Таргетированная реклама и метрики Яндекса (без блокировки yastatic/cloud) ---
+    r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$",
+    r"(^|\.)log\.strm\.yandex\.ru$",
     
-    # --- Специфичные тизерные сети и счетчики для Gazeta.ru и KP.ru ---
-    r"(^|\.)smi2\.ru$",           # Новостной агрегатор-обменник рекламы СМИ2
-    r"(^|\.)tns-counter\.ru$",    # Mediascope (бывший TNS) — трекер статистики
-    r"(^|\.)mediascope\.net$",    # Главные аналитические скрипты Mediascope
-    r"(^|\.)gnezdo\.ru$",         # Крупная тизерная сеть женской тематики
-    r"(^|\.)relap\.io$",          # Рекомендательный виджет Relap с нативной рекламой
-    r"(^|\.)rambler\.ru\/banner", # Баннерная сеть Рамблера
-    r"^[a-z0-9\-]+\.adfox\.ru$",   # Динамические поддомены таргетинга AdFox
+    # --- Рекламная экосистема VK / Mail.ru ---
+    r"^ad\.mail\.ru$", 
+    r"^reklama\.mail\.ru$",
+    r"(^|\.)tracker-api\.vk-analytics\.ru$",
+    
+    # --- Видео-реклама и трекеры Rutube ---
+    r"(^|\.)log\.rutube\.ru$", 
+    r"^ssp\.rutube\.ru$", 
+    r"^goya\.rutube\.ru$",
+    
+    # --- Инфраструктура Дзена (Рекламные и рекомендательные блоки) ---
+    r"\.ms\.dzen\.ru$", 
+    r"\.cu\.dzen\.ru$", 
 
-    # --- Рекламные и обменные сети экосистемы Росбалта (1МИ) ---
-    r"(^|\.)24smi\.info$",        # Тизерная сеть 24СМИ (дополнительный домен)
-    r"(^|\.)mirtesen\.ru$",       # Рекомендательная сеть МирТесен (часто склеен с СМИ2)
-    r"(^|\.)lentainform\.ru$",    # Вариация Лентаинформ
+    # --- Рекламные и баннерные сети Рамблера ---
+    r"^embeds\.rambler\.ru$",
+    r"^ssp\.rambler\.ru$", 
+    r"^ssp01\.rambler\.ru$", 
+    r"^pixel\.rambler\.ru$",
+    r"(^|\.)rambler\.ru/banner", 
+
+    # --- Медиа-трекеры, пиксели и видео-реклама СМИ ---
+    r"(^|\.)viqeo\.tv$", 
+    r"(^|\.)vigo\.tech$",
+    r"^adx\.videonow\.ru$", 
+    r"^sync\.videonow\.ru$",
+    r"^px\.hsmedia\.ru$", 
+    r"(^|\.)adriver\.ru$",
+    r"(^|\.)supercdn\.ru$",
+    r"(^|\.)mrgcdn\.ru$", 
+    
+    # --- Новостные тизерные сети и агрегаторы рекламы (Росбалт / 1МИ / СМИ2) ---
+    r"(^|\.)smi2\.ru$",           # Обменник СМИ2
+    r"(^|\.)smi2\.net$",          # Зеркала и статика СМИ2
+    r"(^|\.)24smi\.net$",         # Тизерная сеть 24СМИ
+    r"(^|\.)24smi\.info$",        # Дополнительные домены 24СМИ
+    r"(^|\.)mirtesen\.ru$",       # Рекомендательная сеть МирТесен
+    r"(^|\.)lentainform\.ru$",    # Тизерная сеть Лентаинформ
     r"(^|\.)marketgid\.com$",     # Старая тизерная сеть / MGID
-    r"(^|\.)mgid\.com$",          # Глобальный MGID, часто присутствующий на новостных ресурсах
-    r"(^|\.)adverticum\.com$"     # Провайдер баннерной рекламы
+    r"(^|\.)mgid\.com$",          # Глобальный медиа-агрегатор рекламы
+    r"(^|\.)adverticum\.com$",    # Провайдер баннеров
+    r"(^|\.)gnezdo\.ru$",         # Тизерная сеть Гнездо
+    r"(^|\.)relap\.io$",          # Нативная реклама Relap
+    r"^[a-z0-9\-]+\.adfox\.ru$",   # Динамический таргетинг AdFox
+    
+    # --- Системы веб-аналитики и глобальные трекеры статистики ---
+    r"(^|\.)tns-counter\.ru$",    # Mediascope (бывший TNS)
+    r"(^|\.)mediascope\.net$",    # Аналитика Mediascope
+    r"(^|\.)scorecardresearch\.com$", # Глобальный трекер Comscore
+    
+    # --- Зарубежные рекламные RTB-биржи и SSP-платформы ---
+    r"(^|\.)hybrid\.ai$", 
+    r"(^|\.)ohmy\.bid$", 
+    r"(^|\.)adseedtech\.com$", 
+    r"(^|\.)appsflyersdk\.com$",
+    r"(^|\.)betweendigital\.com$", 
+    r"(^|\.)bidderstack\.com$", 
+    r"(^|\.)bidvol\.com$",
+    r"(^|\.)bumlam\.com$", 
+    r"(^|\.)buzzoola\.com$", 
+    r"(^|\.)viadata\.store$",
+    r"(^|\.)hbrd\.io$", 
+    r"(^|\.)mediatoday\.ru$"
 ]
 
 # Кэшируем скомпилированные регулярные выражения для ускорения обработки больших списков
