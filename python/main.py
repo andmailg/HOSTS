@@ -2,6 +2,7 @@ import asyncio
 import sys
 import os
 import argparse
+import re
 from urllib.parse import urlparse
 
 import aiohttp
@@ -10,6 +11,48 @@ from config import HOSTS_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_U
 from filters import should_block_domain, sort_domains_by_level, get_apex_domain
 from crawler import run_external_crawler_for_urls
 from urlscan_client import process_single_url
+
+def normalize_and_detect_dynamic_domain(domain):
+    """
+    Детектирует динамические хэш-поддомены и нормализует их до базового узла.
+    Возвращает (is_dynamic, normalized_domain).
+    """
+    domain = domain.lower().strip()
+    parts = domain.split('.')
+    if len(parts) <= 2:
+        # Если домен второго уровня (apex), ничего не схлопываем, чтобы не заблокировать корень
+        return False, domain
+        
+    left_segment = parts[0]
+    
+    # Строгие паттерны для динамического мусора
+    is_hash = (
+        re.search(r"^[a-f0-9]{32}$", left_segment) or           # MD5 (Google safeframe)
+        re.search(r"^[a-f0-9]{8}-[a-f0-9]{4}-", left_segment) or # Часть UUID
+        re.search(r"^\d{6,}$", left_segment) or                  # Чисто числовые ID от 6 знаков
+        (r"-" in left_segment and len(re.findall(r"[0-9a-f]", left_segment)) > 15) # Хэши с дефисами (stbid)
+    )
+
+    if is_hash:
+        apex = get_apex_domain(domain)
+        if not apex:
+            return False, domain
+            
+        # Защита крупных экосистем, где корень (apex) блокировать НЕЛЬЗЯ:
+        if "googlesyndication.com" in domain:
+            # Блокируем строго изолированный фрейм для рекламы
+            return True, "safeframe.googlesyndication.com"
+        if "dzen.ru" in domain:
+            for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
+                if sub in domain:
+                    return True, sub
+            return False, domain # Защищаем dzen.ru от полной блокировки
+            
+        # Для ВСЕХ остальных рекламных сетей (Adfox, Stbid, Bumlam, Hybrid и др.)
+        # просто возвращаем их чистый базовый домен второго уровня (apex)
+        return True, apex
+
+    return False, domain
 
 def read_existing_hosts(file_path):
     """Считывает домены из текущего hosts-файла с нормализацией строк."""
@@ -161,10 +204,18 @@ async def main_async():
     # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ
     # =========================================================================
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
-    combined_domains = existing_domains.union(all_new_domains.keys())
-    filtered_ad_domains = {d for d in combined_domains if should_block_domain(d)}
+    raw_combined = existing_domains.union(all_new_domains.keys())
     
-    # Исправленная многоуровневая сортировка доменов (по уровню вложенности + по алфавиту)
+    # Нормализуем все собранные домены, избавляясь от дубликатов хэшей
+    normalized_combined = set()
+    for d in raw_combined:
+        is_dyn, norm_d = normalize_and_detect_dynamic_domain(d)
+        normalized_combined.add(norm_d)
+        
+    # Теперь фильтруем уже чистый, сжатый список
+    filtered_ad_domains = {d for d in normalized_combined if should_block_domain(d)}
+    
+    # Сортировка и запись
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
     
     with open(HOSTS_FILE, "w", encoding="utf-8") as h_file:

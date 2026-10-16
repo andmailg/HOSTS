@@ -105,8 +105,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^goya\.rutube\.ru$",
     
     # --- Инфраструктура Дзена (Рекламные и рекомендательные блоки) ---
-    r"\.ms\.dzen\.ru$", 
-    r"\.cu\.dzen\.ru$", 
+    r"(^|\.)ms\.dzen\.ru$", 
+    r"(^|\.)cu\.dzen\.ru$", 
 
     # --- Рекламные и баннерные сети Рамблера ---
     r"^embeds\.rambler\.ru$",

@@ -1,140 +1,47 @@
 ============================================================
 ЛОГ АНАЛИЗА URLSCAN (CRAWLER MAP)
 ============================================================
-Всего обработано подстраниц: 20/20 • Сбои: 0/20
+Всего обработано подстраниц: 1/1 • Сбои: 0/1
 
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
 01. [SEED] dzen.ru
-    ├── 01. [OK] https://dzen.ru/a/atHTCYwtABJAGaH4
-    └── UUID: 01a14417-89ab-76f9-8525-aff0d59dd9a7
-    ├── 02. [OK] https://dzen.ru/a/atHTXYhyeVtzXPV2
-    └── UUID: 01a14417-8e26-70eb-a1b8-176dd5313dfd
-    ├── 03. [OK] https://dzen.ru/a/atHS984BhR87a90s
-    └── UUID: 01a14417-9095-7151-9acd-5bbaac39ba24
-    ├── 04. [OK] https://dzen.ru/a/atHTSc4BhR87a95d
-    └── UUID: 01a14416-9cb2-722d-9df6-230b64076c76
-    ├── 05. [OK] https://dzen.ru/a/atHTha5MNHd0WLug
-    └── UUID: 01a14416-9cb1-7123-b4d7-1608b729376b
-    ├── 06. [OK] https://dzen.ru/a/atHTP84BhR87a94_
-    └── UUID: 01a14417-dd53-756c-badd-d07475543fa5
-    ├── 07. [OK] https://dzen.ru/a/atHSbYwtABJAGZ5m
-    └── UUID: 01a14418-2b88-7338-87e2-6ac6c392400b
-    ├── 08. [OK] https://dzen.ru/a/atHS-ohyeVtzXPKl
-    └── UUID: 01a14418-2f86-76f0-a475-4dd6ad6ac1cc
-    ├── 09. [OK] https://dzen.ru/a/atHTm84BhR87a991
-    └── UUID: 01a14416-9bf6-76f9-9c72-47a4258b8ed0
-    ├── 10. [OK] https://dzen.ru/a/atHTlM4BhR87a99m
-    └── UUID: 01a14416-9c81-728e-acf0-b8f507055567
-    ├── 11. [OK] https://dzen.ru/a/atHUBs4BhR87a-Et
-    └── UUID: 01a14418-2fcf-747d-903b-b19663a7e153
-    ├── 12. [OK] https://dzen.ru/a/atHS94hyeVtzXPJN
-    └── UUID: 01a14416-9ce4-736e-9a81-7c180e623e7e
-    ├── 13. [OK] https://dzen.ru/a/atHSm4hyeVtzXPCj
-    └── UUID: 01a14418-30ad-72cb-9df6-27c0289cc5a0
-    ├── 14. [OK] https://dzen.ru/a/atHTIK5MNHd0WLoO
-    └── UUID: 01a14418-7d5f-73df-b5a6-ffcb78fdc410
-    ├── 15. [OK] https://dzen.ru/a/atHURohyeVtzXPu3
-    └── UUID: 01a14416-efb0-70dd-b72e-005f4ac0fd9a
-    ├── 16. [OK] https://dzen.ru/a/atHS0IwtABJAGaAq
-    └── UUID: 01a14418-80eb-7171-a2ed-9a577797ea37
-    ├── 17. [OK] https://dzen.ru/a/atHTzIhyeVtzXPf4
-    └── UUID: 01a14418-d03c-7150-a399-32aa0ac6132b
-    ├── 18. [OK] https://dzen.ru/a/atHTtK5MNHd0WLwF
-    └── UUID: 01a14417-3de5-77cf-bed8-76bcf6acaa80
-    ├── 19. [OK] https://dzen.ru/a/atHTJ4wtABJAGaKr
-    └── UUID: 01a14417-8b37-7695-91c7-7d114bee53d6
-    ├── 20. [OK] https://dzen.ru/a/atHTZM4BhR87a97P
-    └── UUID: 01a14419-1bd2-705c-beab-ae84c018a5ad
+    ├── 01. [OK] https://dzen.ru/a/atHI-4hyeVtzXLLf
+    └── UUID: 01a14446-33ba-7749-b912-f39a4efaebe9
 
 ============================================================
 --- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---
-01. [AD] 1792143698-832737583330819711--1626836885497055330.cu.dzen.ru (clean: 12, ad: 6)
-02. [AD] 1792143699-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-03. [AD] 1792143702-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-04. [AD] 1792143702-832737583330819711--1626836885497055330.cu.dzen.ru (clean: 12, ad: 6)
-05. [AD] 1792143703-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-06. [AD] 1792143704-832737583330819711--1626836885497055330.cu.dzen.ru (clean: 12, ad: 6)
-07. [AD] 1792143705-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-08. [AD] 1792143708-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-09. [AD] 1792143709-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-10. [AD] 1792143712-2763553624665133619--7928521291153772664.cu.dzen.ru (clean: 12, ad: 6)
-11. [AD] 1792143715-8992080993783774384-5865586598020743501.cu.dzen.ru (clean: 12, ad: 6)
-12. [AD] 1792143719-8992080993783774384-5865586598020743501.cu.dzen.ru (clean: 12, ad: 6)
-13. [AD] 1792143721-8992080993783774384-5865586598020743501.cu.dzen.ru (clean: 12, ad: 6)
-14. [AD] 1792143724-8992080993783774384-5865586598020743501.cu.dzen.ru (clean: 12, ad: 6)
-15. [AD] 1792143725--2005677049583661332-3311469151768895433.cu.dzen.ru (clean: 12, ad: 6)
-16. [AD] 1792143725-8992080993783774384-5865586598020743501.cu.dzen.ru (clean: 12, ad: 6)
-17. [AD] 1792143728-8992080993783774384-5865586598020743501.cu.dzen.ru (clean: 12, ad: 6)
-18. [AD] 1792143729--2005677049583661332-3311469151768895433.cu.dzen.ru (clean: 12, ad: 6)
-19. [AD] 1792143731--2005677049583661332-3311469151768895433.cu.dzen.ru (clean: 12, ad: 6)
-20. [AD] 1792143734--2005677049583661332-3311469151768895433.cu.dzen.ru (clean: 12, ad: 6)
-21. [AD] 1792143735--2005677049583661332-3311469151768895433.cu.dzen.ru (clean: 12, ad: 6)
-22. [AD] 1792143738--2005677049583661332-3311469151768895433.cu.dzen.ru (clean: 12, ad: 6)
-23. [AD] 1792143740-2491741129838814332-6895300909172440475.cu.dzen.ru (clean: 12, ad: 6)
-24. [AD] 1792143744-2491741129838814332-6895300909172440475.cu.dzen.ru (clean: 12, ad: 6)
-25. [AD] 1792143746-2491741129838814332-6895300909172440475.cu.dzen.ru (clean: 12, ad: 6)
-26. [AD] 1792143759--6815502499618531122--7738533578025534020.cu.dzen.ru (clean: 12, ad: 6)
-27. [AD] 1792143760-2330140894449648596--316883269255610135.cu.dzen.ru (clean: 12, ad: 6)
-28. [AD] 1792143763--6815502499618531122--7738533578025534020.cu.dzen.ru (clean: 12, ad: 6)
-29. [AD] 1792143764-2330140894449648596--316883269255610135.cu.dzen.ru (clean: 12, ad: 6)
-30. [AD] 1792143765--6815502499618531122--7738533578025534020.cu.dzen.ru (clean: 12, ad: 6)
-31. [AD] 1792143766-2330140894449648596--316883269255610135.cu.dzen.ru (clean: 12, ad: 6)
-32. [AD] 1792143768--6815502499618531122--7738533578025534020.cu.dzen.ru (clean: 12, ad: 6)
-33. [AD] 1792143769--6815502499618531122--7738533578025534020.cu.dzen.ru (clean: 12, ad: 6)
-34. [AD] 1792143781--336813268548577397--3563997469811311691.cu.dzen.ru (clean: 12, ad: 6)
-35. [AD] 1792143785--336813268548577397--3563997469811311691.cu.dzen.ru (clean: 12, ad: 6)
-36. [AD] 1792143787--336813268548577397--3563997469811311691.cu.dzen.ru (clean: 12, ad: 6)
-37. [AD] 1792143801-4388167839635022027-6895300909172440475.cu.dzen.ru (clean: 12, ad: 6)
-38. [AD] 1792143805-4388167839635022027-6895300909172440475.cu.dzen.ru (clean: 12, ad: 6)
-39. [AD] 1792143806-2604798464668617048--3020972364340829909.cu.dzen.ru (clean: 12, ad: 6)
-40. [AD] 1792143807-4388167839635022027-6895300909172440475.cu.dzen.ru (clean: 12, ad: 6)
-41. [AD] 1792143810-2604798464668617048--3020972364340829909.cu.dzen.ru (clean: 12, ad: 6)
-42. [AD] 1792143812-2604798464668617048--3020972364340829909.cu.dzen.ru (clean: 12, ad: 6)
-43. [AD] 1792143815-2604798464668617048--3020972364340829909.cu.dzen.ru (clean: 12, ad: 6)
-44. [AD] 1792143816-2604798464668617048--3020972364340829909.cu.dzen.ru (clean: 12, ad: 6)
-45. [AD] 1792143821-2771564243869222047-5314178288318106242.cu.dzen.ru (clean: 12, ad: 6)
-46. [AD] 1792143825-2771564243869222047-5314178288318106242.cu.dzen.ru (clean: 12, ad: 6)
-47. [AD] 1792143827-2771564243869222047-5314178288318106242.cu.dzen.ru (clean: 12, ad: 6)
-48. [AD] 1792143842--8249766841630775898-6924199387483054487.cu.dzen.ru (clean: 12, ad: 6)
-49. [AD] 1792143845--8249766841630775898-6924199387483054487.cu.dzen.ru (clean: 12, ad: 6)
-50. [AD] 1792143846--8249766841630775898-6924199387483054487.cu.dzen.ru (clean: 12, ad: 6)
-51. [AD] 1792143848--8249766841630775898-6924199387483054487.cu.dzen.ru (clean: 12, ad: 6)
-52. [AD] 1792143861--1778176615254532992--3420686721999521244.cu.dzen.ru (clean: 12, ad: 6)
-53. [AD] 1792143865--1778176615254532992--3420686721999521244.cu.dzen.ru (clean: 12, ad: 6)
-54. [AD] 1792143867--1778176615254532992--3420686721999521244.cu.dzen.ru (clean: 12, ad: 6)
-55. [AD] 531211.ms.dzen.ru                        (clean: 24, ad: 12)
-56. [AD] 551211.ms.dzen.ru                        (clean: 12, ad: 6)
-57. [AD] ad.mail.ru                               (clean: 5, ad: 204)
-58. [AD] an.yandex.ru                             (clean: 0, ad: 6)
-59. [AD] bs.serving-sys.ru                        (clean: 5, ad: 36)
-60. [AD] mc.yandex.com                            (clean: 35, ad: 396)
-61. [AD] mc.yandex.ru                             (clean: 10, ad: 69)
-62. [AD] r.mradx.net                              (clean: 5, ad: 33)
-63. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 36)
+01. [AD] 1792146818-5062743920118918124--164683545377172304.cu.dzen.ru (clean: 12, ad: 6)
+02. [AD] 1792146822-5062743920118918124--164683545377172304.cu.dzen.ru (clean: 12, ad: 6)
+03. [AD] 1792146824-5062743920118918124--164683545377172304.cu.dzen.ru (clean: 12, ad: 6)
+04. [AD] 531211.ms.dzen.ru                        (clean: 24, ad: 12)
+05. [AD] 551211.ms.dzen.ru                        (clean: 12, ad: 6)
+06. [AD] ad.mail.ru                               (clean: 5, ad: 204)
+07. [AD] mc.yandex.com                            (clean: 40, ad: 390)
+08. [AD] mc.yandex.ru                             (clean: 10, ad: 69)
+09. [AD] r.mradx.net                              (clean: 10, ad: 39)
+10. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 36)
 
 --- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---
 01. [OK] api.vk.ru                                (clean: 0, ad: 12)
 02. [OK] avatars.dzeninfra.ru                     (clean: 25, ad: 30)
 03. [OK] avatars.mds.yandex.net                   (clean: 5, ad: 6)
-04. [OK] dzen.ru                                  (clean: 132, ad: 54)
-05. [OK] id.vk.com                                (clean: 0, ad: 12)
-06. [OK] id.vk.ru                                 (clean: 0, ad: 12)
-07. [OK] login.vk.com                             (clean: 0, ad: 18)
-08. [OK] login.vk.ru                              (clean: 0, ad: 12)
-09. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 93)
-10. [OK] rs.mail.ru                               (clean: 5, ad: 6)
-11. [OK] rum.dzen.ru                              (clean: 12, ad: 6)
-12. [OK] s3.dzeninfra.ru                          (clean: 15, ad: 18)
-13. [OK] sso.dzen.ru                              (clean: 36, ad: 12)
-14. [OK] sso.passport.yandex.ru                   (clean: 0, ad: 18)
-15. [OK] stacks.vk-portal.net                     (clean: 0, ad: 12)
-16. [OK] static-mon.yandex.net                    (clean: 0, ad: 27)
-17. [OK] static.dzeninfra.ru                      (clean: 45, ad: 510)
-18. [OK] static.vk.com                            (clean: 20, ad: 12)
-19. [OK] static.vk.ru                             (clean: 20, ad: 27)
-20. [OK] top-fwz1.mail.ru                         (clean: 30, ad: 225)
-21. [OK] vk.com                                   (clean: 10, ad: 12)
-22. [OK] vk.ru                                    (clean: 0, ad: 12)
-23. [OK] yandex.ru                                (clean: 5, ad: 240)
-24. [OK] yastatic.net                             (clean: 0, ad: 228)
+04. [OK] dzen.ru                                  (clean: 120, ad: 60)
+05. [OK] id.vk.ru                                 (clean: 0, ad: 12)
+06. [OK] login.vk.com                             (clean: 0, ad: 24)
+07. [OK] login.vk.ru                              (clean: 0, ad: 12)
+08. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 93)
+09. [OK] rs.mail.ru                               (clean: 10, ad: 12)
+10. [OK] s3.dzeninfra.ru                          (clean: 15, ad: 18)
+11. [OK] sso.dzen.ru                              (clean: 36, ad: 12)
+12. [OK] sso.passport.yandex.ru                   (clean: 0, ad: 18)
+13. [OK] stacks.vk-portal.net                     (clean: 0, ad: 12)
+14. [OK] static-mon.yandex.net                    (clean: 0, ad: 27)
+15. [OK] static.dzeninfra.ru                      (clean: 45, ad: 510)
+16. [OK] static.vk.ru                             (clean: 20, ad: 27)
+17. [OK] sun1-94.vkuserphoto.ru                   (clean: 5, ad: 6)
+18. [OK] top-fwz1.mail.ru                         (clean: 30, ad: 207)
+19. [OK] vk.com                                   (clean: 10, ad: 42)
+20. [OK] vk.ru                                    (clean: 0, ad: 12)
+21. [OK] yandex.ru                                (clean: 5, ad: 228)
+22. [OK] yastatic.net                             (clean: 0, ad: 228)
