@@ -1,47 +1,42 @@
 ============================================================
 ЛОГ АНАЛИЗА URLSCAN (CRAWLER MAP)
 ============================================================
-Всего обработано подстраниц: 1/1 • Сбои: 0/1
+Всего обработано подстраниц: 2/2 • Сбои: 0/2
 
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
 01. [SEED] dzen.ru
-    ├── 01. [OK] https://dzen.ru/a/atHI-4hyeVtzXLLf
-    └── UUID: 01a14446-33ba-7749-b912-f39a4efaebe9
+    ├── 01. [OK] https://dzen.ru/a/atLM465MNHd0XKqU
+    └── UUID: 01a147db-16de-713b-979e-db3a34efe7ef
+    ├── 02. [OK] https://dzen.ru/a/atLMMK5MNHd0XKUM
+    └── UUID: 01a147db-18b5-7488-a6c1-96e55605fc4b
 
 ============================================================
 --- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---
-01. [AD] 1792146818-5062743920118918124--164683545377172304.cu.dzen.ru (clean: 12, ad: 6)
-02. [AD] 1792146822-5062743920118918124--164683545377172304.cu.dzen.ru (clean: 12, ad: 6)
-03. [AD] 1792146824-5062743920118918124--164683545377172304.cu.dzen.ru (clean: 12, ad: 6)
+01. [AD] 1792206906--3686715252728120626--2618479771100073040.cu.dzen.ru (clean: 12, ad: 6)
+02. [AD] 1792206910--3686715252728120626--2618479771100073040.cu.dzen.ru (clean: 12, ad: 6)
+03. [AD] 1792206912--3686715252728120626--2618479771100073040.cu.dzen.ru (clean: 12, ad: 6)
 04. [AD] 531211.ms.dzen.ru                        (clean: 24, ad: 12)
 05. [AD] 551211.ms.dzen.ru                        (clean: 12, ad: 6)
 06. [AD] ad.mail.ru                               (clean: 5, ad: 204)
-07. [AD] mc.yandex.com                            (clean: 40, ad: 390)
+07. [AD] mc.yandex.com                            (clean: 40, ad: 434)
 08. [AD] mc.yandex.ru                             (clean: 10, ad: 69)
-09. [AD] r.mradx.net                              (clean: 10, ad: 39)
-10. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 36)
+09. [AD] r.mradx.net                              (clean: 5, ad: 33)
 
 --- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---
-01. [OK] api.vk.ru                                (clean: 0, ad: 12)
-02. [OK] avatars.dzeninfra.ru                     (clean: 25, ad: 30)
-03. [OK] avatars.mds.yandex.net                   (clean: 5, ad: 6)
-04. [OK] dzen.ru                                  (clean: 120, ad: 60)
-05. [OK] id.vk.ru                                 (clean: 0, ad: 12)
-06. [OK] login.vk.com                             (clean: 0, ad: 24)
-07. [OK] login.vk.ru                              (clean: 0, ad: 12)
-08. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 93)
-09. [OK] rs.mail.ru                               (clean: 10, ad: 12)
-10. [OK] s3.dzeninfra.ru                          (clean: 15, ad: 18)
-11. [OK] sso.dzen.ru                              (clean: 36, ad: 12)
-12. [OK] sso.passport.yandex.ru                   (clean: 0, ad: 18)
-13. [OK] stacks.vk-portal.net                     (clean: 0, ad: 12)
-14. [OK] static-mon.yandex.net                    (clean: 0, ad: 27)
-15. [OK] static.dzeninfra.ru                      (clean: 45, ad: 510)
-16. [OK] static.vk.ru                             (clean: 20, ad: 27)
-17. [OK] sun1-94.vkuserphoto.ru                   (clean: 5, ad: 6)
-18. [OK] top-fwz1.mail.ru                         (clean: 30, ad: 207)
-19. [OK] vk.com                                   (clean: 10, ad: 42)
-20. [OK] vk.ru                                    (clean: 0, ad: 12)
-21. [OK] yandex.ru                                (clean: 5, ad: 228)
-22. [OK] yastatic.net                             (clean: 0, ad: 228)
+01. [OK] avatars.dzeninfra.ru                     (clean: 20, ad: 24)
+02. [OK] dzen.ru                                  (clean: 132, ad: 54)
+03. [OK] id.vk.ru                                 (clean: 0, ad: 12)
+04. [OK] login.vk.com                             (clean: 0, ad: 18)
+05. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 93)
+06. [OK] rs.mail.ru                               (clean: 5, ad: 6)
+07. [OK] s3.dzeninfra.ru                          (clean: 5, ad: 6)
+08. [OK] sso.dzen.ru                              (clean: 36, ad: 12)
+09. [OK] sso.passport.yandex.ru                   (clean: 0, ad: 18)
+10. [OK] static-mon.yandex.net                    (clean: 0, ad: 27)
+11. [OK] static.dzeninfra.ru                      (clean: 60, ad: 516)
+12. [OK] top-fwz1.mail.ru                         (clean: 30, ad: 225)
+13. [OK] vk.com                                   (clean: 10, ad: 42)
+14. [OK] vk.ru                                    (clean: 0, ad: 12)
+15. [OK] yandex.ru                                (clean: 5, ad: 264)
+16. [OK] yastatic.net                             (clean: 0, ad: 228)
