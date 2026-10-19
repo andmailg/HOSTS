@@ -201,21 +201,31 @@ async def main_async():
         fail_count = len(urls_to_scan) - success_count
 
     # =========================================================================
-    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ
+    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ (ОБНОВЛЕННАЯ ЛОГИКА)
     # =========================================================================
+    # 1. Считываем старые заблокированные домены
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
-    raw_combined = existing_domains.union(all_new_domains.keys())
     
-    # Нормализуем все собранные домены, избавляясь от дубликатов хэшей
+    # 2. Фильтруем СТАРЫЕ домены по ОБНОВЛЕННЫМ правилам (без учета старого скоринга)
+    # Если по новым правилам домен теперь разрешен, он НЕ попадет в valid_existing_ad
+    valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
+    
+    # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии (с учетом их свежего скоринга)
+    current_session_ad = {d for d, s in all_new_domains.items() if should_block_domain(d, score=s)}
+    
+    # 4. Объединяем валидные старые и новые рекламные домены
+    raw_combined = valid_existing_ad.union(current_session_ad)
+    
+    # 5. Нормализуем объединенный список (схлопываем динамические хэши)
     normalized_combined = set()
     for d in raw_combined:
         is_dyn, norm_d = normalize_and_detect_dynamic_domain(d)
         normalized_combined.add(norm_d)
         
-    # Теперь фильтруем уже чистый, сжатый список
-    filtered_ad_domains = {d for d in normalized_combined if should_block_domain(d)}
+    # 6. Финальная контрольная фильтрация очищенного списка
+    filtered_ad_domains = {d for d in normalized_combined if should_block_domain(d, score=all_new_domains.get(d))}
     
-    # Сортировка и запись
+    # 7. Сортировка и запись в файл hosts
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
     
     with open(HOSTS_FILE, "w", encoding="utf-8") as h_file:

@@ -5,51 +5,16 @@
 
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
-01. [SEED] dzen.ru
-    ├── 01. [OK] https://dzen.ru/a/atYY365MNHd0cLmB
-    └── UUID: 01a15498-6504-708f-aed9-efb22b22eab6
-    ├── 02. [OK] https://dzen.ru/a/atYZ565MNHd0cMHk
-    └── UUID: 01a15498-6424-73bf-a9f9-c343604f4ccc
+01. [SEED] rosbalt.ru
+    ├── 01. [OK] https://www.rosbalt.ru/news/2026-10-19/na-tsentralnom-uchastke-zsd-ustranili-povrezhdeniya-posle-voskresnoy-ataki-bpla-5711112
+    └── UUID: 01a154b1-f031-716a-bdc2-068ae91ffd51
+    ├── 02. [OK] https://www.rosbalt.ru/news/2026-10-19/na-peterburgskoy-birzhe-zaregistrirovali-pervye-sdelki-s-nefteproduktami-5710986
+    └── UUID: 01a154b1-efdc-75db-b2dd-a149f9a03aa2
 
 ============================================================
---- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---
-01. [AD] 1792420638-191753760535263742--5033114789362042631.cu.dzen.ru (clean: 12, ad: 6)
-02. [AD] 1792420642-191753760535263742--5033114789362042631.cu.dzen.ru (clean: 12, ad: 6)
-03. [AD] 1792420644-191753760535263742--5033114789362042631.cu.dzen.ru (clean: 12, ad: 6)
-04. [AD] 1792420647-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-05. [AD] 1792420650-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-06. [AD] 1792420651-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-07. [AD] 1792420653-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-08. [AD] 1792420656-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-09. [AD] 1792420657-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-10. [AD] 1792420660-3466404847930125922--3301937363984001138.cu.dzen.ru (clean: 12, ad: 6)
-11. [AD] 531211.ms.dzen.ru                        (clean: 24, ad: 12)
-12. [AD] 551211.ms.dzen.ru                        (clean: 12, ad: 6)
-13. [AD] ad.mail.ru                               (clean: 5, ad: 168)
-14. [AD] an.yandex.ru                             (clean: 0, ad: 12)
-15. [AD] mc.yandex.com                            (clean: 35, ad: 356)
-16. [AD] mc.yandex.ru                             (clean: 10, ad: 69)
-17. [AD] r.mradx.net                              (clean: 0, ad: 27)
-18. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 36)
 
 --- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---
-01. [OK] api.vk.ru                                (clean: 0, ad: 12)
-02. [OK] avatars.dzeninfra.ru                     (clean: 30, ad: 42)
-03. [OK] dzen.ru                                  (clean: 192, ad: 78)
-04. [OK] id.vk.ru                                 (clean: 0, ad: 12)
-05. [OK] login.vk.com                             (clean: 0, ad: 12)
-06. [OK] login.vk.ru                              (clean: 0, ad: 12)
-07. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 93)
-08. [OK] rum.dzen.ru                              (clean: 12, ad: 6)
-09. [OK] s3.dzeninfra.ru                          (clean: 10, ad: 12)
-10. [OK] sso.dzen.ru                              (clean: 36, ad: 12)
-11. [OK] sso.passport.yandex.ru                   (clean: 0, ad: 18)
-12. [OK] stacks.vk-portal.net                     (clean: 0, ad: 12)
-13. [OK] static-mon.yandex.net                    (clean: 0, ad: 27)
-14. [OK] static.dzeninfra.ru                      (clean: 45, ad: 471)
-15. [OK] static.vk.ru                             (clean: 20, ad: 27)
-16. [OK] top-fwz1.mail.ru                         (clean: 35, ad: 231)
-17. [OK] vk.com                                   (clean: 5, ad: 21)
-18. [OK] vk.ru                                    (clean: 0, ad: 12)
-19. [OK] yandex.ru                                (clean: 5, ad: 144)
-20. [OK] yastatic.net                             (clean: 0, ad: 240)
+01. [OK] files.1mi.media                          (clean: 110, ad: 132)
+02. [OK] www.rosbalt.ru                           (clean: 36, ad: 6)
+03. [OK] yandex.ru                                (clean: 10, ad: 102)
+04. [OK] yastatic.net                             (clean: 0, ad: 228)

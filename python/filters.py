@@ -39,11 +39,7 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "vedomosti.ru", 
     "ampproject.org",
     "rambler.ru",      # Спасает служебную авторизацию и движок Рамблера на Газете.ru
-    # Добавлено для rosbalt.ru
-    "1mi-media.ru",  # Добавьте сюда корень холдинга Росбалта
-    "smi2.ru",       # Добавьте для пропуска служебных скриптов СМИ2
-    "smi2.net",
-    "stbid.ru"       # Добавьте базовый узел распределения контента
+    "files.1mi.media",
 ]
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
@@ -150,17 +146,17 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)scorecardresearch\.com$", # Глобальный трекер Comscore
     
     # --- Зарубежные рекламные RTB-биржи и SSP-платформы ---
-    r"(^|\.)hybrid\.ai$", 
-    r"(^|\.)ohmy\.bid$", 
-    r"(^|\.)adseedtech\.com$", 
+    r"(^|\.)hybrid\.ai$",
+    r"(^|\.)ohmy\.bid$",
+    r"(^|\.)adseedtech\.com$",
     r"(^|\.)appsflyersdk\.com$",
-    r"(^|\.)betweendigital\.com$", 
-    r"(^|\.)bidderstack\.com$", 
+    r"(^|\.)betweendigital\.com$",
+    r"(^|\.)bidderstack\.com$",
     r"(^|\.)bidvol\.com$",
-    r"(^|\.)bumlam\.com$", 
-    r"(^|\.)buzzoola\.com$", 
+    r"(^|\.)bumlam\.com$",
+    r"(^|\.)buzzoola\.com$",
     r"(^|\.)viadata\.store$",
-    r"(^|\.)hbrd\.io$", 
+    r"(^|\.)hbrd\.io$",
     r"(^|\.)mediatoday\.ru$"
 ]
 
@@ -186,18 +182,18 @@ def get_apex_domain(url):
 def should_block_domain(domain, page_apex=None, score=None):
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
-    
-    # 1. Проверка по жесткому черному списку (скомпилированные регулярные выражения)
-    if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
-        return True
         
-    # 2. Мягкий инфраструктурный белый список (Поиск частичного совпадения подстроки)
+    # 1. Мягкий инфраструктурный белый список (Поиск частичного совпадения подстроки)
     if any(infra_domain in domain for infra_domain in MEDIA_INFRASTRUCTURE_WHITELIST): 
         return False
         
-    # 3. Глобальный белый список (Точное совпадение корня / apex-домена)
+    # 2. Глобальный белый список (Точное совпадение корня / apex-домена)
     if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST: 
         return False
+
+    # 3. Проверка по жесткому черному списку (скомпилированные регулярные выражения)
+    if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
+        return True
         
     # 4. Защита от самоблокировки сканируемого в данный момент сайта
     if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 

@@ -1,5 +1,4 @@
 0.0.0.0 sync.1dmp.io
-0.0.0.0 files.1mi.media
 0.0.0.0 snippets.1mi.media
 0.0.0.0 sync.1rx.io
 0.0.0.0 exchange.24smi.info
@@ -275,8 +274,6 @@
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 sync.dxtech.ai
 0.0.0.0 rtb.dynotech.io
-0.0.0.0 cu.dzen.ru
-0.0.0.0 ms.dzen.ru
 0.0.0.0 static.eaglecdn.com
 0.0.0.0 hlsvod.rambler.eaglecdn.com
 0.0.0.0 s1.eda.ru
@@ -427,8 +424,6 @@
 0.0.0.0 sync.lunamedia.live
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
-0.0.0.0 ad.mail.ru
-0.0.0.0 reklama.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com
@@ -593,10 +588,6 @@
 0.0.0.0 quotiq.ru
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 sentry-saas.rambler-co.ru
-0.0.0.0 embeds.rambler.ru
-0.0.0.0 pixel.rambler.ru
-0.0.0.0 ssp.rambler.ru
-0.0.0.0 ssp01.rambler.ru
 0.0.0.0 s.rbk.ru
 0.0.0.0 s0.rbk.ru
 0.0.0.0 sync.rbstsystems.live
@@ -633,9 +624,6 @@
 0.0.0.0 adfox-hb-bidder.rutarget.ru
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
-0.0.0.0 goya.rutube.ru
-0.0.0.0 log.rutube.ru
-0.0.0.0 ssp.rutube.ru
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 ced-ns.sascdn.com
