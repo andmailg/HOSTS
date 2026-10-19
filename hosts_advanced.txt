@@ -712,8 +712,6 @@
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
 0.0.0.0 statmedia.ru
-0.0.0.0 stbid.ru
-0.0.0.0 2002--slt.stbid.ru
 0.0.0.0 cookie-sync-service-prod.steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
 0.0.0.0 idsync.live.streamtheworld.com
