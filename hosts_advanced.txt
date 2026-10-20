@@ -60,6 +60,7 @@
 0.0.0.0 static.cdn.admatic.de
 0.0.0.0 eu-rtbstack-cm.admixer.net
 0.0.0.0 px2.admon.pro
+0.0.0.0 z.cdn.adnetwork.bet
 0.0.0.0 acdn.adnxs.com
 0.0.0.0 ib.adnxs.com
 0.0.0.0 secure.adnxs.com
@@ -96,6 +97,7 @@
 0.0.0.0 static.advcake.ru
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
+0.0.0.0 hunt.aforearound.com
 0.0.0.0 aa.agkn.com
 0.0.0.0 d.agkn.com
 0.0.0.0 fid.agkn.com
@@ -131,6 +133,10 @@
 0.0.0.0 pbs-yahoo-us.ay.delivery
 0.0.0.0 wnsrvbjmeprtfrnfx.ay.delivery
 0.0.0.0 c.bannerflow.net
+0.0.0.0 emp.bbc.co.uk
+0.0.0.0 www.bbc.com
+0.0.0.0 gn-web-assets.api.bbc.com
+0.0.0.0 nav.files.bbci.co.uk
 0.0.0.0 fcpe.beeline.ru
 0.0.0.0 ads.betweendigital.com
 0.0.0.0 cache.betweendigital.com
@@ -249,6 +255,7 @@
 0.0.0.0 euronewsgroup.demdex.net
 0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 tag.digitaltarget.ru
+0.0.0.0 code.directadvert.ru
 0.0.0.0 pebed.dm-event.net
 0.0.0.0 bob.dmpxs.com
 0.0.0.0 ae.dmxleo.com
@@ -314,6 +321,9 @@
 0.0.0.0 geoip-js.com
 0.0.0.0 usersync.getpublica.com
 0.0.0.0 a.giraff.io
+0.0.0.0 code.giraff.io
+0.0.0.0 data.giraff.io
+0.0.0.0 cdn.giraff.media
 0.0.0.0 fcgi4.gnezdo.ru
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcgi7.gnezdo.ru
@@ -522,6 +532,7 @@
 0.0.0.0 pbs.optidigital.com
 0.0.0.0 cdn.optimizely.com
 0.0.0.0 logx.optimizely.com
+0.0.0.0 a4621041136.cdn.optimizely.com
 0.0.0.0 tracker-shr.ortb.net
 0.0.0.0 otclick-adv.ru
 0.0.0.0 sync.dmp.otm-r.com
@@ -688,10 +699,12 @@
 0.0.0.0 exad.smi2.ru
 0.0.0.0 static2.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
+0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 iad-2.go.sonobi.com
 0.0.0.0 sync.go.sonobi.com
+0.0.0.0 images.sparrow.ru
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 api-ssp.spot.im
@@ -700,6 +713,8 @@
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
 0.0.0.0 statmedia.ru
+0.0.0.0 stbid.ru
+0.0.0.0 2002--slt.stbid.ru
 0.0.0.0 cookie-sync-service-prod.steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
 0.0.0.0 idsync.live.streamtheworld.com
@@ -773,6 +788,7 @@
 0.0.0.0 sync.upravel.com
 0.0.0.0 falcon.useinsider.com
 0.0.0.0 euronewsfr.api.useinsider.com
+0.0.0.0 sun9-2.userapi.com
 0.0.0.0 sun9-46.userapi.com
 0.0.0.0 a.ussp.io
 0.0.0.0 r.ussp.io
@@ -790,12 +806,17 @@
 0.0.0.0 adx.videonow.ru
 0.0.0.0 sync.videonow.ru
 0.0.0.0 api.vigo.tech
+0.0.0.0 api.viqeo.tv
 0.0.0.0 cdn.viqeo.tv
+0.0.0.0 metrics.viqeo.tv
+0.0.0.0 sentry.viqeo.tv
+0.0.0.0 stats.viqeo.tv
 0.0.0.0 cpm.vistarsagency.com
 0.0.0.0 tracker-api.vk-analytics.ru
 0.0.0.0 ip4.tracker-api.vk-analytics.ru
 0.0.0.0 ts.tracker-api.vk-analytics.ru
 0.0.0.0 sentry.adtech.vk.team
+0.0.0.0 master-bucket.hb.ru-msk.vkcloud-storage.ru
 0.0.0.0 cm-ssp.voxexchange.io
 0.0.0.0 watchfeed.tv
 0.0.0.0 cr-frontend.weborama-tech.ru
@@ -808,6 +829,7 @@
 0.0.0.0 ds.frontend.weborama.fr
 0.0.0.0 idsync.frontend.weborama.fr
 0.0.0.0 redirect.frontend.weborama.fr
+0.0.0.0 wf-ru.frontend.weborama.fr
 0.0.0.0 wf.frontend.weborama.fr
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
