@@ -254,6 +254,7 @@
 0.0.0.0 uswest-beacon.deepintent.com
 0.0.0.0 dpm.demdex.net
 0.0.0.0 euronewsgroup.demdex.net
+0.0.0.0 sync.digitalcaramel.com
 0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 tag.digitaltarget.ru
 0.0.0.0 code.directadvert.ru
@@ -377,6 +378,8 @@
 0.0.0.0 cs.ingage.tech
 0.0.0.0 usync.ingage.tech
 0.0.0.0 sync.inmobi.com
+0.0.0.0 www.instagram.com
+0.0.0.0 tail.insteadjell.com
 0.0.0.0 rtb-eu-warsaw.intent.ai
 0.0.0.0 sync.intentiq.com
 0.0.0.0 syncv4.intentiq.com
@@ -386,7 +389,15 @@
 0.0.0.0 code.jquery.com
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
+0.0.0.0 kinescope.io
+0.0.0.0 player-metrics.kinescope.io
+0.0.0.0 player.kinescope.io
+0.0.0.0 preview.kinescope.io
+0.0.0.0 edge-ams-1.kinescopecdn.net
+0.0.0.0 edge-msk-1.kinescopecdn.net
 0.0.0.0 klkmdsync.site
+0.0.0.0 cdn.knightlab.com
+0.0.0.0 uploads.knightlab.com
 0.0.0.0 m.kombinat.digital
 0.0.0.0 s01.stc.yc.kpcdn.net
 0.0.0.0 s02.api.yc.kpcdn.net
@@ -515,6 +526,8 @@
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
 0.0.0.0 asr.openssp.ru
+0.0.0.0 a.tile.openstreetmap.org
+0.0.0.0 b.tile.openstreetmap.org
 0.0.0.0 cs.openwebmp.com
 0.0.0.0 eu-west-1-cs-rtb.openwebmp.com
 0.0.0.0 pbs-cs.openwebmp.com
@@ -530,6 +543,7 @@
 0.0.0.0 t.oa.opera.com
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 scripts.opti-digital.com
+0.0.0.0 analytics.optidigital.com
 0.0.0.0 pbs.optidigital.com
 0.0.0.0 cdn.optimizely.com
 0.0.0.0 logx.optimizely.com
@@ -572,6 +586,7 @@
 0.0.0.0 cdn.plyr.io
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 ms-cookie-sync.presage.io
+0.0.0.0 api.privacy-center.org
 0.0.0.0 fei.pro-market.net
 0.0.0.0 prodmp.ru
 0.0.0.0 sync.programmatica.com
@@ -698,6 +713,7 @@
 0.0.0.0 smi2.ru
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
+0.0.0.0 static.smi2cdn.ru
 0.0.0.0 static2.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
@@ -715,6 +731,8 @@
 0.0.0.0 stat.media
 0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
+0.0.0.0 1033--mmjjotbkote4mtbhmti1na.stbid.ru
+0.0.0.0 1033--mmjjotm0ytq2mjfmyti3mw.stbid.ru
 0.0.0.0 2002--slt.stbid.ru
 0.0.0.0 cookie-sync-service-prod.steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
@@ -806,6 +824,7 @@
 0.0.0.0 ru.viadata.store
 0.0.0.0 rucdn.viadata.store
 0.0.0.0 tg.viadata.store
+0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru
 0.0.0.0 sync.videonow.ru
 0.0.0.0 api.vigo.tech
@@ -821,6 +840,8 @@
 0.0.0.0 sentry.adtech.vk.team
 0.0.0.0 master-bucket.hb.ru-msk.vkcloud-storage.ru
 0.0.0.0 cm-ssp.voxexchange.io
+0.0.0.0 ads.vqserve.com
+0.0.0.0 cdn.vqserve.com
 0.0.0.0 watchfeed.tv
 0.0.0.0 cr-frontend.weborama-tech.ru
 0.0.0.0 cstatic-ru-cv.weborama-tech.ru
@@ -855,3 +876,4 @@
 0.0.0.0 sync-km.ads.yieldmo.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 b1sync.zemanta.com
+0.0.0.0 sync.zentotem.net
