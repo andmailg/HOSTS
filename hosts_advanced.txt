@@ -8,6 +8,7 @@
 0.0.0.0 jsn.24smi.net
 0.0.0.0 ssp.24smi.net
 0.0.0.0 s0.2mdn.net
+0.0.0.0 rr3---sn-aj5go5-5i.c.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 cms-xch-chicago.33across.com
 0.0.0.0 cms-xch.33across.com
@@ -105,6 +106,7 @@
 0.0.0.0 d.agkn.com
 0.0.0.0 fid.agkn.com
 0.0.0.0 x01.aidata.io
+0.0.0.0 gum.aidemsrv.com
 0.0.0.0 aj3105.top
 0.0.0.0 cdn77.aj3105.top
 0.0.0.0 qsearch-a.akamaihd.net
@@ -191,6 +193,7 @@
 0.0.0.0 a2025.casalemedia.com
 0.0.0.0 a2517.casalemedia.com
 0.0.0.0 a2600.casalemedia.com
+0.0.0.0 a4170.casalemedia.com
 0.0.0.0 a6218.casalemedia.com
 0.0.0.0 a6277.casalemedia.com
 0.0.0.0 a6296.casalemedia.com
@@ -251,6 +254,7 @@
 0.0.0.0 cdn.cxense.com
 0.0.0.0 comcluster.cxense.com
 0.0.0.0 id.cxense.com
+0.0.0.0 check.ddos-guard.net
 0.0.0.0 d5p.de17a.com
 0.0.0.0 cdn.deepintent.com
 0.0.0.0 match.deepintent.com
@@ -269,6 +273,7 @@
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 tpt.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
+0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 cm.g.doubleclick.net
 0.0.0.0 googleads.g.doubleclick.net
@@ -333,6 +338,7 @@
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcgi7.gnezdo.ru
 0.0.0.0 news.gnezdo.ru
+0.0.0.0 products.gobankingrates.com
 0.0.0.0 sync.gonet-ads.com
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 ssl.google-analytics.com
@@ -425,6 +431,8 @@
 0.0.0.0 s.luxcdn.com
 0.0.0.0 ad.mail.ru
 0.0.0.0 privacy-cs.mail.ru
+0.0.0.0 r.mail.ru
+0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
@@ -480,6 +488,7 @@
 0.0.0.0 static.a.mts.ru
 0.0.0.0 pmp.mxptint.net
 0.0.0.0 tracker-api.my.com
+0.0.0.0 events.myweb3id.io
 0.0.0.0 sync.nemedia.codes
 0.0.0.0 zn4.cdn.net.ru
 0.0.0.0 zn5.cdn.net.ru
@@ -492,6 +501,7 @@
 0.0.0.0 static.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 consent.cmp.oath.com
+0.0.0.0 adv.office-partner.de
 0.0.0.0 match.ohmy.bid
 0.0.0.0 sp.ohmy.bid
 0.0.0.0 visitor-iqzone.omnitagjs.com
@@ -566,6 +576,7 @@
 0.0.0.0 cs.playdigo.com
 0.0.0.0 sync.plusoneads.com
 0.0.0.0 cdn.plyr.io
+0.0.0.0 sync.pmbmonetize.live
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 ms-cookie-sync.presage.io
 0.0.0.0 api.privacy-center.org
@@ -600,6 +611,8 @@
 0.0.0.0 s.rbk.ru
 0.0.0.0 s0.rbk.ru
 0.0.0.0 sync.rbstsystems.live
+0.0.0.0 hal9000.redintelligence.net
+0.0.0.0 hal900020.redintelligence.net
 0.0.0.0 relap.io
 0.0.0.0 ads-yahoo.revjet.com
 0.0.0.0 cdn.revjet.com
@@ -714,7 +727,10 @@
 0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 1033--mmjjotbkote4mtbhmti1na.stbid.ru
+0.0.0.0 1033--mmjjotfhntfkmzk1ndc1mq.stbid.ru
+0.0.0.0 1033--mmjjotjjytkyzgfjyzy4yw.stbid.ru
 0.0.0.0 1033--mmjjotm0ytq2mjfmyti3mw.stbid.ru
+0.0.0.0 1033--mmjjotrmyze1odhkzdfhmw.stbid.ru
 0.0.0.0 2002--slt.stbid.ru
 0.0.0.0 cookie-sync-service-prod.steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
@@ -773,6 +789,7 @@
 0.0.0.0 choices.truste.com
 0.0.0.0 hb.trustedstack.com
 0.0.0.0 tsdtocl.com
+0.0.0.0 tt.ttarget.ru
 0.0.0.0 sf16-website-login.neutral.ttwstatic.com
 0.0.0.0 ad.turn.com
 0.0.0.0 d.turn.com
@@ -827,10 +844,14 @@
 0.0.0.0 ads.vqserve.com
 0.0.0.0 cdn.vqserve.com
 0.0.0.0 watchfeed.tv
+0.0.0.0 track.webgains.com
+0.0.0.0 analytics.webgains.io
+0.0.0.0 api.webgains.io
 0.0.0.0 cr-frontend.weborama-tech.ru
 0.0.0.0 cstatic-ru-cv.weborama-tech.ru
 0.0.0.0 ctx.weborama-tech.ru
 0.0.0.0 ds-frontend.weborama-tech.ru
+0.0.0.0 redirect-frontend.weborama-tech.ru
 0.0.0.0 wf-ru-frontend.weborama-tech.ru
 0.0.0.0 dx.frontend.weborama.com
 0.0.0.0 cstatic.weborama.fr
