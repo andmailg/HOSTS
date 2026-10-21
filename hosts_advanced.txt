@@ -35,6 +35,7 @@
 0.0.0.0 www.acint.net
 0.0.0.0 ums.acuityplatform.com
 0.0.0.0 ad-delivery.net
+0.0.0.0 at.ad-pixel.ru
 0.0.0.0 cdn.ad-tech.ru
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 ad4m.at
@@ -734,6 +735,8 @@
 0.0.0.0 display.bidder.taboola.com
 0.0.0.0 pandg.tapad.com
 0.0.0.0 pixel.tapad.com
+0.0.0.0 cdn.targetads.io
+0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
 0.0.0.0 ads.tds.bid
 0.0.0.0 widgets.teads-xo.com

@@ -1,14 +1,15 @@
 import re
-import requests
-import urllib3
 import asyncio
+import urllib3
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse, urlsplit, urlunsplit
-from config import MAX_DEPTH
-from filters import get_apex_domain
-from config import is_ignored_path
 
-# Отключаем предупреждения об отсутствии SSL-верификации
+import aiohttp  # Заменили requests на асинхронный клиент
+
+from config import MAX_DEPTH, is_ignored_path, HEADLESS_MODE, PAGE_TIMEOUT_MS
+from filters import get_apex_domain
+
+# Отключаем предупреждения об отсутствии SSL-верификации для корпоративных сетей
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def is_interstitial_page(html):
@@ -25,7 +26,6 @@ async def crawl_rosbalt_async(normalized_seed, max_depth):
     current_seed_urls = set()
     try:
         from playwright.async_api import async_playwright
-        from config import HEADLESS_MODE, PAGE_TIMEOUT_MS
         
         print(f" -> [Playwright Async] Запуск браузера для {normalized_seed}...")
         async with async_playwright() as playwright:
@@ -69,6 +69,7 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
     """
     Универсальный асинхронный краулер с поддержкой поддоменов, очисткой меток/хэшей
     и глубокой структурной фильтрацией хабов/рубрик любого уровня.
+    Полностью переведен на aiohttp для исключения ReadTimeout и блокировки Event Loop.
     """
     aggregated_urls = set()
     total_seeds = len(url_list)
@@ -76,97 +77,106 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
     
     print(f"\n[Кроулер] Запуск сканирования для {total_seeds} адресов...")
     
-    for idx, target_url in enumerate(url_list, 1):
-        normalized_seed = target_url if target_url.startswith(('http://', 'https://')) else f'https://{target_url}'
-        seed_domain = urlparse(normalized_seed).netloc.lower()
-        seed_apex = get_apex_domain(normalized_seed)
-        
-        print(f"[{idx}/{total_seeds}] Сканирование: {normalized_seed} (Глубина: {max_depth})")
-        
-        if max_depth == 0:
-            aggregated_urls.add(normalized_seed)
-            continue
+    # Создаем единую сессию с увеличенным таймаутом на чтение тяжелых страниц (например, kp.ru)
+    timeout_settings = aiohttp.ClientTimeout(total=20, connect=5, sock_read=15)
+    
+    async with aiohttp.ClientSession(timeout=timeout_settings) as session:
+        for idx, target_url in enumerate(url_list, 1):
+            normalized_seed = target_url if target_url.startswith(('http://', 'https://')) else f'https://{target_url}'
+            seed_domain = urlparse(normalized_seed).netloc.lower()
+            seed_apex = get_apex_domain(normalized_seed)
             
-        current_seed_urls = set()
-        
-        if seed_apex == "rosbalt.ru":
-            rosbalt_urls = await crawl_rosbalt_async(normalized_seed, max_depth)
-            current_seed_urls.update(rosbalt_urls)
+            print(f"[{idx}/{total_seeds}] Сканирование: {normalized_seed} (Глубина: {max_depth})")
+            
+            if max_depth == 0:
+                aggregated_urls.add(normalized_seed)
+                continue
                 
-        else:
-            if seed_apex in ["mail.ru", "sportmail.ru", "dzen.ru", "gazeta.ru", "kp.ru", "ria.ru", "rambler.ru"]:
-                headers = {
-                    "User-Agent": "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com)",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                    "Accept-Language": "ru,en-US;q=0.7,en;q=0.3",
-                    "Referer": f"https://{seed_apex}"
-                }
+            current_seed_urls = set()
+            
+            if seed_apex == "rosbalt.ru":
+                rosbalt_urls = await crawl_rosbalt_async(normalized_seed, max_depth)
+                current_seed_urls.update(rosbalt_urls)
+                    
             else:
-                headers = {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-                    "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8"
-                }
-            
-            try:
-                response = requests.get(normalized_seed, headers=headers, timeout=10, verify=False)
-                if response.status_code >= 400:
-                    print(f" -> [Пропущено] Код ответа сервера: {response.status_code}")
-                    current_seed_urls.add(normalized_seed)
-                    aggregated_urls.update(current_seed_urls)
-                    continue
-                    
-                soup = BeautifulSoup(response.text, 'html.parser')
+                # Настройка заголовков для обхода защит
+                if seed_apex in ["mail.ru", "sportmail.ru", "dzen.ru", "gazeta.ru", "kp.ru", "ria.ru", "rambler.ru"]:
+                    headers = {
+                        "User-Agent": "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com)",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                        "Accept-Language": "ru,en-US;q=0.7,en;q=0.3",
+                        "Referer": f"https://{seed_apex}"
+                    }
+                else:
+                    headers = {
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                        "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.8"
+                    }
                 
-                for a_tag in soup.find_all('a', href=True):
-                    href = str(a_tag['href']).strip()
-                    if href.startswith('#') or href.startswith('javascript:'):
-                        continue
-                        
-                    base_url = "https://dzen.ru" if seed_apex == "dzen.ru" else normalized_seed
-                    full_url = urljoin(base_url, href)
-                    
-                    # ИСПРАВЛЕНО: Безопасное последовательное разделение строки вместо цепного вызова методов списка
-                    clean_url = full_url.split('?')[0].split('#')[0]
-                    url_parts = urlparse(clean_url)
-                    
-                    # Глобальная проверка очищенного пути на хабы, разделы и рубрики первого уровня
-                    if is_ignored_path(url_parts.path):
-                        continue  
-                        
-                    # Дополнительная фильтрация параметров исходного url
-                    if "p=cnews_menu" in full_url or "market." in url_parts.netloc:
-                        continue
-
-                    req_apex = get_apex_domain(clean_url)
-                    
-                    if seed_apex == "dzen.ru":
-                        if "/a/" in url_parts.path or "/news/show/" in url_parts.path:
-                            current_seed_urls.add(clean_url)
+                try:
+                    # Асинхронный GET-запрос без проверки SSL (ssl=False замещает verify=False)
+                    async with session.get(normalized_seed, headers=headers, ssl=False) as response:
+                        if response.status >= 400:
+                            print(f" -> [Пропущено] Код ответа сервера: {response.status}")
+                            current_seed_urls.add(normalized_seed)
+                            aggregated_urls.update(current_seed_urls)
+                            continue
                             
-                    elif seed_apex in ["mail.ru", "sportmail.ru", "gazeta.ru", "kp.ru", "ria.ru", "rambler.ru"]:
-                        req_domain = url_parts.netloc.lower()
-                        if seed_apex in req_domain or "mail.ru" in req_domain:
-                            if not any(clean_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
+                        html_content = await response.text()
+                        soup = BeautifulSoup(html_content, 'html.parser')
+                    
+                    for a_tag in soup.find_all('a', href=True):
+                        href = str(a_tag['href']).strip()
+                        if href.startswith('#') or href.startswith('javascript:'):
+                            continue
+                            
+                        base_url = "https://dzen.ru" if seed_apex == "dzen.ru" else normalized_seed
+                        full_url = urljoin(base_url, href)
+                        
+                        clean_url = full_url.split('?')[0].split('#')[0]
+                        url_parts = urlparse(clean_url)
+                        
+                        # Глобальная проверка очищенного пути на хабы, разделы и рубрики первого уровня
+                        if is_ignored_path(url_parts.path):
+                            continue  
+                            
+                        # Дополнительная фильтрация параметров исходного url
+                        if "p=cnews_menu" in full_url or "market." in url_parts.netloc:
+                            continue
+
+                        req_apex = get_apex_domain(clean_url)
+                        
+                        if seed_apex == "dzen.ru":
+                            if "/a/" in url_parts.path or "/news/show/" in url_parts.path:
                                 current_seed_urls.add(clean_url)
                                 
-                    else:
-                        # Стандартный режим для всех остальных сайтов (e1.ru, ngs.ru, cnews.ru, yuga.ru)
-                        if seed_apex and req_apex == seed_apex:
-                            if any(clean_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
-                                continue
-                            
-                            current_seed_urls.add(clean_url)
+                        elif seed_apex in ["mail.ru", "sportmail.ru", "gazeta.ru", "kp.ru", "ria.ru", "rambler.ru"]:
+                            req_domain = url_parts.netloc.lower()
+                            if seed_apex in req_domain or "mail.ru" in req_domain:
+                                if not any(clean_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
+                                    current_seed_urls.add(clean_url)
+                                    
+                        else:
+                            # Стандартный режим для всех остальных сайтов (e1.ru, ngs.ru, cnews.ru, yuga.ru)
+                            if seed_apex and req_apex == seed_apex:
+                                if any(clean_url.lower().endswith(e) for e in ['.jpg', '.jpeg', '.png', '.gif', '.css', '.woff2', '.js', '.ico', '.svg', '.webp']):
+                                    continue
                                 
-            except Exception as e:
-                print(f" -> [Предупреждение] Ошибка при обходе {target_url}: {repr(e)}")
-        
-        if not current_seed_urls:
-            current_seed_urls.add(normalized_seed)
+                                current_seed_urls.add(clean_url)
+                                    
+                except asyncio.TimeoutError:
+                    print(f" -> [Предупреждение] Тайм-аут ожидания ответа (TimeoutError) при обходе {target_url}. Защита удержала соединение.")
+                    current_seed_urls.add(normalized_seed)
+                except Exception as e:
+                    print(f" -> [Предупреждение] Ошибка при обходе {target_url}: {repr(e)}")
             
-        print(f" -> Успешно извлечено ссылок для сессии: {len(current_seed_urls)}")
-        aggregated_urls.update(current_seed_urls)
-        await asyncio.sleep(delay)  
-            
+            if not current_seed_urls:
+                current_seed_urls.add(normalized_seed)
+                
+            print(f" -> Успешно извлечено ссылок для сессии: {len(current_seed_urls)}")
+            aggregated_urls.update(current_seed_urls)
+            await asyncio.sleep(delay)  
+                
     print(f"[Кроулер] Всего уникальных адресов собрано для всех сайтов: {len(aggregated_urls)}")
     return list(aggregated_urls)
