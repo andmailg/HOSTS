@@ -40,6 +40,7 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "ampproject.org",
     "rambler.ru",      # Спасает служебную авторизацию и движок Рамблера на Газете.ru
     "files.1mi.media",
+    "kpcdn.net",
 ]
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
@@ -56,7 +57,7 @@ STRICT_DOMAINS_WHITELIST = [
     "yastatic-net.ru", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", 
     
     # --- Экосистема VK / Mail.ru / Одноклассники ---
-    "imgsmail.ru", "mail.ru",
+    "imgsmail.ru",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
@@ -183,29 +184,32 @@ def should_block_domain(domain, page_apex=None, score=None):
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
         
-    # 1. Мягкий инфраструктурный белый список (Поиск частичного совпадения подстроки)
+    # 1. ЗАЩИТА СЛУЖЕБНОЙ ИНФРАСТРУКТУРЫ (Мягкий белый список по подстроке)
+    # Если домен содержит системную подстроку холдингов, разрешаем его БЕЗУСЛОВНО
     if any(infra_domain in domain for infra_domain in MEDIA_INFRASTRUCTURE_WHITELIST): 
         return False
         
-    # 2. Глобальный белый список (Точное совпадение корня / apex-домена)
-    if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST: 
-        return False
-
-    # 3. Проверка по жесткому черному списку (скомпилированные регулярные выражения)
+    # 2. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения)
+    # Имеет приоритет над глобальным белым списком, чтобы перехватывать ad.mail.ru, context.yandex.ru и т.д.
     if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
         return True
-        
-    # 4. Защита от самоблокировки сканируемого в данный момент сайта
-    if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 
-        return False
-        
-    # 5. Исключения для инфраструктуры поисковиков (кроме их систем аналитики и менеджеров тегов)
+
+    # 3. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ (Специфичные правила Яндекс/Google)
     if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
         if "tagmanager" in domain or "analytics" in domain: 
             return True
         return False
+
+    # 4. ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК (Точное совпадение корня или полного домена)
+    # Если домен легитимен и не попал под жесткие регулярки рекламы — разрешаем безусловно
+    if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST: 
+        return False
+
+    # 5. ЗАЩИТА ОТ САМОБЛОКИРОВКИ (Сайт, который сканируем прямо сейчас)
+    if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 
+        return False
         
-    # 6. Динамический скоринг по результатам анализа URLScan API
+    # 6. ДИНАМИЧЕСКИЙ СКОРИНГ (Применяется только к неизвестным системе доменам)
     if score is not None:
         return score["ad_score"] > score["clean_score"]
         

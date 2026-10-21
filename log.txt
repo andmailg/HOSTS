@@ -6,64 +6,24 @@
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
 01. [SEED] kp.ru
-    ├── 01. [OK] https://kp.ru/online/news/7233650/
-    └── UUID: 01a15e37-ce87-754e-a678-3a25cfe9aaf7
-    ├── 02. [OK] https://kp.ru/online/news/7233722/
-    └── UUID: 01a15e37-ccdf-72e9-b5b0-6843015d8302
-    ├── 03. [OK] https://kp.ru/daily/277826/5318183/
-    └── UUID: 01a15e37-cc8a-765b-81fd-f6d5270202e4
-    ├── 04. [OK] https://kp.ru/daily/277825.4/5318069/
-    └── UUID: 01a15e37-ce25-7123-9e6d-f349741d7cd8
+    ├── 01. [OK] https://kp.ru/daily/277825.4/5318073/
+    └── UUID: 01a15e3d-e98b-7359-a266-cc7a664651b2
+    ├── 02. [OK] https://kp.ru/online/news/7233731/
+    └── UUID: 01a15e3d-e80d-74c3-8957-ce431f248c1b
+    ├── 03. [OK] https://kp.ru/online/news/7233656/
+    └── UUID: 01a15e3d-e93b-70f4-8c01-bf188aace3f7
+    ├── 04. [OK] https://kp.ru/daily/277825.4/5318115/
+    └── UUID: 01a15e3d-e983-7558-a537-0283efcb44cc
 
 ============================================================
 --- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---
-01. [AD] acint.net                                (clean: 5, ad: 6)
-02. [AD] ads.betweendigital.com                   (clean: 0, ad: 42)
-03. [AD] at.ad-pixel.ru                           (clean: 0, ad: 12)
-04. [AD] cdn-c.skcrtxr.com                        (clean: 10, ad: 42)
-05. [AD] cdn-roxot-seller.skcrtxr.com             (clean: 110, ad: 162)
-06. [AD] cdn.punchmedia.ru                        (clean: 0, ad: 27)
-07. [AD] cdn.targetads.io                         (clean: 10, ad: 27)
-08. [AD] counter.yadro.ru                         (clean: 0, ad: 36)
-09. [AD] csync.skcrtxr.com                        (clean: 0, ad: 24)
-10. [AD] data.punchmedia.ru                       (clean: 0, ad: 27)
-11. [AD] exad.smi2.ru                             (clean: 0, ad: 12)
-12. [AD] exchange.buzzoola.com                    (clean: 15, ad: 108)
-13. [AD] eye.targetads.io                         (clean: 5, ad: 30)
-14. [AD] fcgi4.gnezdo.ru                          (clean: 0, ad: 84)
-15. [AD] hb-bidder.skcrtxr.com                    (clean: 0, ad: 63)
-16. [AD] hb.bumlam.com                            (clean: 0, ad: 24)
-17. [AD] image.sendsay.ru                         (clean: 0, ad: 12)
-18. [AD] mc.yandex.com                            (clean: 0, ad: 320)
-19. [AD] mc.yandex.ru                             (clean: 0, ad: 57)
-20. [AD] pb.adriver.ru                            (clean: 0, ad: 84)
-21. [AD] pl2.skwstat.ru                           (clean: 0, ad: 12)
-22. [AD] req.pm2.punchmedia.ru                    (clean: 0, ad: 6)
-23. [AD] rst.skcrtxr.com                          (clean: 0, ad: 160)
-24. [AD] s01.stc.yc.kpcdn.net                     (clean: 120, ad: 144)
-25. [AD] s02.api.yc.kpcdn.net                     (clean: 0, ad: 12)
-26. [AD] s09.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
-27. [AD] s10.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
-28. [AD] s14.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
-29. [AD] sendsay.ru                               (clean: 0, ad: 12)
-30. [AD] smi2.net                                 (clean: 0, ad: 6)
-31. [AD] smi2.ru                                  (clean: 0, ad: 105)
-32. [AD] ssp-rtb.sape.ru                          (clean: 0, ad: 42)
-33. [AD] ssp.24smi.net                            (clean: 0, ad: 12)
-34. [AD] stat.media                               (clean: 0, ad: 27)
-35. [AD] sys.punchmedia.ru                        (clean: 0, ad: 36)
-36. [AD] target.smi2.net                          (clean: 0, ad: 33)
-37. [AD] tns-counter.ru                           (clean: 0, ad: 84)
-38. [AD] www.googletagmanager.com                 (clean: 0, ad: 27)
+01. [AD] image.sendsay.ru                         (clean: 0, ad: 12)
 
 --- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---
-01. [OK] ad.mail.ru                               (clean: 0, ad: 12)
-02. [OK] avatars.mds.yandex.net                   (clean: 0, ad: 72)
-03. [OK] fonts.googleapis.com                     (clean: 0, ad: 24)
-04. [OK] fonts.gstatic.com                        (clean: 60, ad: 24)
-05. [OK] kp.ru                                    (clean: 12, ad: 0)
-06. [OK] privacy-cs.mail.ru                       (clean: 0, ad: 93)
-07. [OK] top-fwz1.mail.ru                         (clean: 0, ad: 102)
-08. [OK] www.kp.ru                                (clean: 29, ad: 0)
-09. [OK] yandex.ru                                (clean: 0, ad: 114)
-10. [OK] yastatic.net                             (clean: 0, ad: 228)
+01. [OK] kp.ru                                    (clean: 12, ad: 0)
+02. [OK] s01.stc.yc.kpcdn.net                     (clean: 120, ad: 144)
+03. [OK] s09.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
+04. [OK] s14.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
+05. [OK] www.kp.ru                                (clean: 29, ad: 0)
+06. [OK] yandex.ru                                (clean: 0, ad: 114)
+07. [OK] yastatic.net                             (clean: 0, ad: 228)
