@@ -90,6 +90,7 @@
 0.0.0.0 dsp-service.adtarget.biz
 0.0.0.0 prebid.adtarget.biz
 0.0.0.0 s.console.adtarget.com.tr
+0.0.0.0 z.cdn.adtarget.market
 0.0.0.0 ads.adtec.ru
 0.0.0.0 ghb.adtelligent.com
 0.0.0.0 sync.adtelligent.com
@@ -98,6 +99,7 @@
 0.0.0.0 static.advcake.ru
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
+0.0.0.0 id.adx.bid
 0.0.0.0 hunt.aforearound.com
 0.0.0.0 aa.agkn.com
 0.0.0.0 d.agkn.com
@@ -168,6 +170,7 @@
 0.0.0.0 fastly.live.brightcove.com
 0.0.0.0 players.brightcove.net
 0.0.0.0 fastly-signed-us-east-1-prod.brightcovecdn.com
+0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 sessions.bugsnag.com
 0.0.0.0 bumlam.com
@@ -421,6 +424,8 @@
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
 0.0.0.0 ad.mail.ru
+0.0.0.0 privacy-cs.mail.ru
+0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com
@@ -443,6 +448,7 @@
 0.0.0.0 cm.mgid.com
 0.0.0.0 api.mindbox.ru
 0.0.0.0 web-static.mindbox.ru
+0.0.0.0 personalization-speedtest.g.mindbox.ru
 0.0.0.0 personalization-web.g.mindbox.ru
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
@@ -474,6 +480,7 @@
 0.0.0.0 static.a.mts.ru
 0.0.0.0 pmp.mxptint.net
 0.0.0.0 tracker-api.my.com
+0.0.0.0 sync.nemedia.codes
 0.0.0.0 zn4.cdn.net.ru
 0.0.0.0 zn5.cdn.net.ru
 0.0.0.0 match.new-programmatic.com
@@ -756,6 +763,7 @@
 0.0.0.0 tracookiepixel.xyz
 0.0.0.0 t.trafmag.com
 0.0.0.0 yahoo2.global.transmit.live
+0.0.0.0 f78lz4fal0.a.trbcdn.net
 0.0.0.0 b.trboad.com
 0.0.0.0 fc-us-west-2.trboad.com
 0.0.0.0 partners.tremorhub.com
@@ -793,6 +801,7 @@
 0.0.0.0 s.uuidksinc.net
 0.0.0.0 cdn.vdmsti.ru
 0.0.0.0 ortb.vdo.ai
+0.0.0.0 ad-eu-bid.veonadx.com
 0.0.0.0 hb.viadata.store
 0.0.0.0 ll.viadata.store
 0.0.0.0 rtb-msk.viadata.store

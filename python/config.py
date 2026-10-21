@@ -2,6 +2,7 @@ import os
 import urllib3
 from pathlib import Path
 import re
+from urllib.parse import urlparse
 
 # --- Настройки путей проекта ---
 HOSTS_FILE = Path(__file__).parent.parent / "hosts_advanced.txt"
@@ -30,77 +31,72 @@ PAGE_TIMEOUT_MS = 30000
 
 # Паттерны для поиска служебных разделов, хабов и мусорных путей в URL
 IGNORED_PATH_PATTERNS = [
-    r'/rss', 
-    r'/search', 
-    r'/feed', 
-    r'/archive', 
-    r'/tag', 
-    r'/login', 
-    r'/auth',
-    r'/deposit',
-    r'/contacts',                  # Страницы контактов
-    r'cookie',                     # Политики использования cookie
-    r'mediakit',                   # Медиакиты и рекламные прайсы
-    r'/lenta/?$',                  # Жесткое исключение общих лент новостей (ria.ru/lenta)
-    r'xmlfeeds\.php',              # СТРОГАЯ БЛОКИРОВКА RSS-ФИДА ПИКАБУ
-    # --- НОВЫЕ СИСТЕМНЫЕ И ХАБОВЫЕ ПАТТЕРНЫ ---
-    r'^/opinion/?$',              
-    r'^/blog/personal/[^/]+/?$',  
-    r'^/go(/|$)',                 
-    r'^/articles/?$',             
-    r'^/articles/[^/]+/?$',       
-    r'^/community/[^/]+/?$',
-    r'^/book/[^/]+/?$',           
-    r'^/currency/?$',             
-    r'^/blog/company/[^/]+/?$',   
-    r'^/russia/?$',               
-    r'/quiz/',                    
-    r'^/region/[^/]+\.html$',     
-    r'^/cookie/?$',               
-    r'^/@[^/]+/?$',               
-    r'^/pressreleases/?$',        
-    r'^/news/?$',
+    # --- 1. ТЕХНИЧЕСКИЕ РЕСУРСЫ, ФИДЫ И ИГРЫ ---
+    r'/(rss|feed|archive|xmlfeeds)',  # Фиды и архивы (включая Пикабу)
+    r'/(search|tag|quiz|games?)[$/\.]', # Поиск, теги, тесты и мини-игры (Лента/Дзен)
     
-    # --- ИСКЛЮЧЕНИЕ СЕРВИСНЫХ СТРАНИЦ ---
-    r'^/map\.php$',                
-    r'/rules\.php$',
-    r'search\.yahoo\.com',        # Прямое исключение поддомена Yahoo Search
+    # --- 2. АВТОРИЗАЦИЯ, ЛИЧНЫЕ КАБИНЕТЫ И ПОЧТА ---
+    r'/(login|auth|deposit|registration|passport)($|/|\.)', 
+    r'://(mail|profile|account)\.',   # Служебные поддомены авторизации
+    
+    # --- 3. СЛУЖЕБНЫЕ, ЮРИДИЧЕСКИЕ И СПРАВОЧНЫЕ СТРАНИЦЫ ---
+    r'/(map|rules|contacts|cookie|mediakit|vacancies|support)($|/|\.)', 
+    r'/(about|info|privacy|agreement|terms|disclaimer|copyright)($|/|\.)', 
+    r'/(reklama|feedback)($|/|\.)',   # Рекламодателям и обратная связь
+    r'/adv(ertising)?($|/|\.)',        # Международная реклама
+    
+    # --- 4. ХАБЫ, ОБЩИЕ ЛЕНТЫ И РУБРИКИ ПЕРВОГО УРОВНЯ (Отсечение хабов-пустышек) ---
+    r'/(lenta|opinion|articles|community|book|currency|russia|pressreleases|news)/?$',
+    r'/blog/(personal|company)/[^/]+/?$', 
+    r'/region/[^/]+\.html$',               
+    r'/go(/|$)',                          
+    r'/@[^/]+/?$',                         # Каналы Дзена/Пикабу и авторы
+    
+    # --- 5. СПЕЦИФИЧНЫЕ ИСКЛЮЧЕНИЯ ИЗДАННИЙ ИЗ НАБОРА ---
+    # РБК: Исключает служебные/региональные поддомены, кроме главных контентных
+    r'://(?!(www|pro|quote|finance|news)(\.|$))[a-z0-9\-]+\.rbc\.ru',
+    r'://www\.rbc\.ru/?$',                 # Только зеркало главной страницы РБК
+    r'/short_news($|/|\.)',                # Лента коротких новостей РБК
+    
+    # YAHOO & BBC & EURONEWS: Технические и поисковые хабы зарубежных СМИ
+    r'(search|my|style|login)\.yahoo\.com',
+    r'://www\.(bbc\.com|ru\.euronews\.com)/?$', # Исключает только главные страницы-агрегаторы
+    
+    # СЕТЬ ШКУЛЁВ МЕДИА (Фонтанка, НГС, Е1): Отсекает общие личные кабинеты, форумы и знакомства
+    r'://(passport|forum|love|dating)\.(fontanka|ngs|e1)\.ru',
+    r'/(promokody|games)($|/|\.)',         # Коммерческие промокоды и игры региональных сетей
 ]
+
 
 # Предварительная компиляция для ускорения работы регулярных выражений
 _COMPILED_IGNORED_PATHS = [re.compile(pat, re.IGNORECASE) for pat in IGNORED_PATH_PATTERNS]
 
 def is_ignored_path(path: str) -> bool:
     """
-    Проверяет, содержит ли переданный путь (path) служебные разделы или рубрики.
-    Реализует динамический анализ структуры пути для отсечения бесконечных хабов.
+    Проверяет, содержит ли переданный путь (или полный URL) служебные разделы или рубрики.
     """
     if not path or path == "/":
         return False
         
-    clean_path = "/" + path.strip("/").lower()
+    clean_path = path.strip().lower()
+    if not clean_path.startswith('/') and '://' not in clean_path:
+        clean_path = "/" + clean_path
     
-    # 1. Проверка по жесткому списку регулярных выражений
+    # 1. Проверка по жесткому списку регулярных выражений (теперь поддерживает и полные URL)
     if any(pat.search(clean_path) for pat in _COMPILED_IGNORED_PATHS):
         return True
         
     # 2. Динамический анализ рубрик
-    segments = [s for s in path.strip("/").lower().split("/") if s]
+    # Отрезаем доменную часть для корректного анализа сегментов, если передан полный URL
+    path_only = urlparse(clean_path).path if '://' in clean_path else clean_path
+    segments = [s for s in path_only.strip("/").split("/") if s]
     
     if segments:
         last_segment = segments[-1]
-        
-        # Фиксация проскочивших рубрик (ria.ru/politics, ria.ru/lenta и т.д.):
-        # Если путь короткий (состоит всего из 1 уровня вложенности) и является чисто буквенным словом — 
-        # это главная страница рубрики или глобальный хаб. Фильтруем его.
         if len(segments) == 1 and last_segment.isalpha():
             return True
-            
-        # Если весь путь оканчивается на буквенный сегмент без цифр и знаков дефиса (не слаг статьи)
         if last_segment.isalpha() and not last_segment.endswith(('.html', '.htm', '.php', '.phtml')):
             return True
-            
-        # Защита от валютных хабов Рамблера и РБК (вида /currencies/usd, /currencies/eur)
         if "currencies" in segments or "currency" in segments:
             if len(last_segment) <= 4:
                 return True

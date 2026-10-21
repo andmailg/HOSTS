@@ -133,10 +133,13 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
                             
                         base_url = "https://dzen.ru" if seed_apex == "dzen.ru" else normalized_seed
                         full_url = urljoin(base_url, href)
-                        
                         clean_url = full_url.split('?')[0].split('#')[0]
                         url_parts = urlparse(clean_url)
-                        
+
+                        # ПРОВЕРКА: Передаем в is_ignored_path как чистый путь, так и полный URL для отлова поддоменов
+                        if is_ignored_path(clean_url) or is_ignored_path(urlparse(clean_url).path):
+                            continue
+
                         # Глобальная проверка очищенного пути на хабы, разделы и рубрики первого уровня
                         if is_ignored_path(url_parts.path):
                             continue  
