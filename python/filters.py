@@ -87,7 +87,12 @@ STRICT_DOMAINS_WHITELIST = [
     "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru", "rosbalt.ru/news",
     
     # --- Торрент-трекеры и их статика ---
-    "rutracker.cc", "nnmstatic.win"
+    "rutracker.cc", "nnmstatic.win",
+
+    "tildacdn.com", "tildaapi.com",   # Конструктор сайтов Tilda (к нему обращаются тысячи чистых сайтов)
+    "cnews.ru",                      # Издание CNews
+    "ngs.ru", "fontanka.ru", "e1.ru",# Городские порталы Шкулёв Медиа (блокировать их целиком нельзя)
+    "openstreetmap.org",             # Картографический сервис (используется на чистых сайтах)
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
@@ -125,7 +130,9 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^px\.hsmedia\.ru$", 
     r"(^|\.)adriver\.ru$",
     r"(^|\.)supercdn\.ru$",
-    r"(^|\.)mrgcdn\.ru$", 
+    r"(^|\.)mrgcdn\.ru$",
+    r"(^|\.)stbid\.ru$",                 # Блокирует stbid.ru со ВСЕМИ его динамическими хэш-поддоменами целиком
+    r"^[a-z0-9\-]{15,}\.stbid\.ru$",     # Альтернативная точечная ловушка для длинных хвостов stbid
     
     # --- Новостные тизерные сети и агрегаторы рекламы (Росбалт / 1МИ / СМИ2) ---
     r"(^|\.)smi2\.ru$",           # Обменник СМИ2
@@ -158,10 +165,21 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)buzzoola\.com$",
     r"(^|\.)viadata\.store$",
     r"(^|\.)hbrd\.io$",
-    r"(^|\.)mediatoday\.ru$"
+    r"(^|\.)mediatoday\.ru$",
+    r"(^|\.)casalemedia\.com$",
+    r"(^|\.)outbrain\.com$",
+    r"(^|\.)outbrainimg\.com$",
+    r"(^|\.)33across\.com$",
+    r"(^|\.)weborama-tech\.ru$",
+    r"(^|\.)weborama\.fr$",
+    r"(^|\.)skcrtxr\.com$",
+    r"(^|\.)facecast\.net$",
+    r"(^|\.)brightcove\.com$",
+    r"(^|\.)kinescope\.io$",
+    r"(^|\.)pubmatic\.com$",
 ]
 
-# Кэшируем скомпилированные регулярные выражения для ускорения обработки больших списков
+# Кэшируем скомпилированные регулярные выражения
 _COMPILED_BLACKLIST_PATTERNS = [re.compile(pat, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS]
 
 def _extract_domain_regex(url):
@@ -183,33 +201,36 @@ def get_apex_domain(url):
 def should_block_domain(domain, page_apex=None, score=None):
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
+    
+    # ВАЖНОЕ ДОПОЛНЕНИЕ: Если сам APEX-домен (например, stbid.ru или casalemedia.com) 
+    # явно совпадает с правилом из черного списка, блокируем БЕЗУСЛОВНО,
+    # не дожидаясь шага динамического скоринга неизвестных доменов.
+    if domain_apex and any(pat.search(domain_apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
+        return True
         
     # 1. ЗАЩИТА СЛУЖЕБНОЙ ИНФРАСТРУКТУРЫ (Мягкий белый список по подстроке)
-    # Если домен содержит системную подстроку холдингов, разрешаем его БЕЗУСЛОВНО
     if any(infra_domain in domain for infra_domain in MEDIA_INFRASTRUCTURE_WHITELIST): 
         return False
         
-    # 2. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения)
-    # Имеет приоритет над глобальным белым списком, чтобы перехватывать ad.mail.ru, context.yandex.ru и т.д.
+    # 2. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения для текущего поддомена)
     if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
         return True
 
-    # 3. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ (Специфичные правила Яндекс/Google)
+    # 3. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ
     if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
         if "tagmanager" in domain or "analytics" in domain: 
             return True
         return False
 
-    # 4. ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК (Точное совпадение корня или полного домена)
-    # Если домен легитимен и не попал под жесткие регулярки рекламы — разрешаем безусловно
+    # 4. ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК
     if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST: 
         return False
 
-    # 5. ЗАЩИТА ОТ САМОБЛОКИРОВКИ (Сайт, который сканируем прямо сейчас)
+    # 5. ЗАЩИТА ОТ САМОБЛОКИРОВКИ
     if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 
         return False
         
-    # 6. ДИНАМИЧЕСКИЙ СКОРИНГ (Применяется только к неизвестным системе доменам)
+    # 6. ДИНАМИЧЕСКИЙ СКОРИНГ
     if score is not None:
         return score["ad_score"] > score["clean_score"]
         
