@@ -420,6 +420,7 @@
 0.0.0.0 sync.lunamedia.live
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
+0.0.0.0 ad.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com

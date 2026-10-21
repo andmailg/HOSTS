@@ -5,25 +5,68 @@
 
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
-01. [SEED] kp.ru
-    ├── 01. [OK] https://kp.ru/daily/277825.4/5318073/
-    └── UUID: 01a15e3d-e98b-7359-a266-cc7a664651b2
-    ├── 02. [OK] https://kp.ru/online/news/7233731/
-    └── UUID: 01a15e3d-e80d-74c3-8957-ce431f248c1b
-    ├── 03. [OK] https://kp.ru/online/news/7233656/
-    └── UUID: 01a15e3d-e93b-70f4-8c01-bf188aace3f7
-    ├── 04. [OK] https://kp.ru/daily/277825.4/5318115/
-    └── UUID: 01a15e3d-e983-7558-a537-0283efcb44cc
+01. [SEED] iz.ru
+    ├── 01. [OK] https://iz.ru/2178339/video/ekonomika-rf-perezhivaet-krupnuiu-perestroiku-za-poslednie-30-let
+    └── UUID: 01a15e42-14c7-701f-9886-cde8747b7208
+    ├── 02. [OK] https://iz.ru/story/izvestiia-pro-dengi
+    └── UUID: 01a15e42-1581-7130-9947-aa533bcaf98d
+    ├── 03. [OK] https://iz.ru/2138393/video/universitety-rf-pereidut-na-novuiu-sistemu-obrazovaniia
+    └── UUID: 01a15e42-1583-7777-b13d-0916cd2562ff
+    ├── 04. [OK] https://iz.ru/2187891/peskov-nazval-prichinu-resheniia-putina-ob-osvobozhdenii-amerikantca-khabbarda
+    └── UUID: 01a15e42-1582-738d-8422-84817a8ea918
 
 ============================================================
 --- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---
-01. [AD] image.sendsay.ru                         (clean: 0, ad: 12)
+01. [AD] a.adspector.io                           (clean: 5, ad: 6)
+02. [AD] a.ussp.io                                (clean: 5, ad: 6)
+03. [AD] ad.adriver.ru                            (clean: 10, ad: 72)
+04. [AD] ad.mail.ru                               (clean: 0, ad: 24)
+05. [AD] bid.sspnet.tech                          (clean: 5, ad: 6)
+06. [AD] cdnjs.smi2.ru                            (clean: 0, ad: 27)
+07. [AD] counter.yadro.ru                         (clean: 5, ad: 36)
+08. [AD] data.24smi.net                           (clean: 0, ad: 66)
+09. [AD] dmg.digitaltarget.ru                     (clean: 10, ad: 12)
+10. [AD] exchange.24smi.info                      (clean: 5, ad: 6)
+11. [AD] exchange.buzzoola.com                    (clean: 5, ad: 36)
+12. [AD] fonts.24smi.net                          (clean: 105, ad: 42)
+13. [AD] gum.criteo.com                           (clean: 0, ad: 12)
+14. [AD] iz.push4site.com                         (clean: 10, ad: 51)
+15. [AD] jsn.24smi.net                            (clean: 10, ad: 54)
+16. [AD] match.new-programmatic.com               (clean: 5, ad: 6)
+17. [AD] mc.yandex.com                            (clean: 20, ad: 286)
+18. [AD] mc.yandex.ru                             (clean: 0, ad: 134)
+19. [AD] mug.criteo.com                           (clean: 5, ad: 6)
+20. [AD] pb.adriver.ru                            (clean: 0, ad: 84)
+21. [AD] region1.analytics.google.com             (clean: 0, ad: 42)
+22. [AD] smi2.net                                 (clean: 5, ad: 6)
+23. [AD] smi2.ru                                  (clean: 20, ad: 423)
+24. [AD] ssp-rtb.sape.ru                          (clean: 0, ad: 126)
+25. [AD] ssp.bidvol.com                           (clean: 0, ad: 24)
+26. [AD] static.criteo.net                        (clean: 5, ad: 21)
+27. [AD] static.smi2.net                          (clean: 0, ad: 27)
+28. [AD] static2.smi2.net                         (clean: 5, ad: 6)
+29. [AD] static3.smi2.net                         (clean: 5, ad: 6)
+30. [AD] static4.smi2.net                         (clean: 5, ad: 6)
+31. [AD] static5.smi2.net                         (clean: 10, ad: 12)
+32. [AD] static7.smi2.net                         (clean: 5, ad: 6)
+33. [AD] statmedia.ru                             (clean: 10, ad: 72)
+34. [AD] stats.g.doubleclick.net                  (clean: 0, ad: 12)
+35. [AD] sync.dmp.otm-r.com                       (clean: 5, ad: 6)
+36. [AD] sys.punchmedia.ru                        (clean: 0, ad: 12)
+37. [AD] tag.digitaltarget.ru                     (clean: 0, ad: 27)
+38. [AD] tns-counter.ru                           (clean: 5, ad: 78)
+39. [AD] www.google-analytics.com                 (clean: 0, ad: 57)
+40. [AD] www.googletagmanager.com                 (clean: 10, ad: 69)
+41. [AD] www.tns-counter.ru                       (clean: 10, ad: 72)
 
 --- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---
-01. [OK] kp.ru                                    (clean: 12, ad: 0)
-02. [OK] s01.stc.yc.kpcdn.net                     (clean: 120, ad: 144)
-03. [OK] s09.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
-04. [OK] s14.stc.yc.kpcdn.net                     (clean: 5, ad: 6)
-05. [OK] www.kp.ru                                (clean: 29, ad: 0)
-06. [OK] yandex.ru                                (clean: 0, ad: 114)
-07. [OK] yastatic.net                             (clean: 0, ad: 228)
+01. [OK] avatars.mds.yandex.net                   (clean: 5, ad: 36)
+02. [OK] cdn.iz.ru                                (clean: 1469, ad: 72)
+03. [OK] fonts.googleapis.com                     (clean: 30, ad: 12)
+04. [OK] fonts.gstatic.com                        (clean: 30, ad: 12)
+05. [OK] iz.ru                                    (clean: 274, ad: 12)
+06. [OK] webasr.yandex.net                        (clean: 10, ad: 12)
+07. [OK] www.google.ch                            (clean: 5, ad: 6)
+08. [OK] www.google.fr                            (clean: 5, ad: 6)
+09. [OK] yandex.ru                                (clean: 20, ad: 510)
+10. [OK] yastatic.net                             (clean: 5, ad: 276)
