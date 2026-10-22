@@ -229,8 +229,15 @@ async def main_async():
 
     with open(LOG_FILE, "w", encoding="utf-8") as f: 
         f.write("\n".join(log_lines))
-        
-    print(f"\nГотово! Результаты обработки сохранены в '{LOG_FILE}'")
+    
+    # Выводим полный лог в stdout — это нужно для GitHub Actions,
+    # чтобы подробный лог был виден в логах workflow, а не только в log.txt
+    print("\n" + "=" * 60)
+    print("ПОДРОБНЫЙ ЛОГ (log.txt):")
+    print("=" * 60)
+    with open(LOG_FILE, "r", encoding="utf-8") as f:
+        print(f.read())
+    print("=" * 60)
 
 if __name__ == "__main__":
     asyncio.run(main_async())
