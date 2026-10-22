@@ -348,6 +348,7 @@
 0.0.0.0 rb.infox.sg
 0.0.0.0 cs.ingage.tech
 0.0.0.0 usync.ingage.tech
+0.0.0.0 coil.injectoften.com
 0.0.0.0 sync.inmobi.com
 0.0.0.0 www.instagram.com
 0.0.0.0 tail.insteadjell.com
@@ -436,12 +437,6 @@
 0.0.0.0 dsp.mpartner.digital
 0.0.0.0 dmp.mpsuadv.ru
 0.0.0.0 mrgcdn.ru
-0.0.0.0 mts.ru
-0.0.0.0 vma.mts.ru
-0.0.0.0 api.a.mts.ru
-0.0.0.0 cm.a.mts.ru
-0.0.0.0 sm.rtb.mts.ru
-0.0.0.0 static.a.mts.ru
 0.0.0.0 pmp.mxptint.net
 0.0.0.0 tracker-api.my.com
 0.0.0.0 events.myweb3id.io
@@ -677,6 +672,7 @@
 0.0.0.0 tracookiepixel.xyz
 0.0.0.0 t.trafmag.com
 0.0.0.0 yahoo2.global.transmit.live
+0.0.0.0 ads.travelaudience.com
 0.0.0.0 f78lz4fal0.a.trbcdn.net
 0.0.0.0 b.trboad.com
 0.0.0.0 fc-us-west-2.trboad.com

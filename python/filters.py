@@ -61,6 +61,9 @@ STRICT_DOMAINS_WHITELIST = [
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
+
+    # --- Экосистема МТС ---
+    "mts.ru",
     
     # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
     "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
