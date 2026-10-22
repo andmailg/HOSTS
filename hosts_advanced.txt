@@ -18,6 +18,7 @@
 0.0.0.0 ad.360yield.com
 0.0.0.0 dsp.360yield.com
 0.0.0.0 euw-ice.360yield.com
+0.0.0.0 match.360yield.com
 0.0.0.0 eb2.3lift.com
 0.0.0.0 ib.3lift.com
 0.0.0.0 tlx.3lift.com
@@ -219,10 +220,6 @@
 0.0.0.0 d29szjachogqwa.cloudfront.net
 0.0.0.0 d2eucxqqcsb0mb.cloudfront.net
 0.0.0.0 d2mqt2joll4fma.cloudfront.net
-0.0.0.0 cnb.cnews.ru
-0.0.0.0 filearchive.cnews.ru
-0.0.0.0 static.cnews.ru
-0.0.0.0 www.cnews.ru
 0.0.0.0 t.cog-tr101.com
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 sync.colossusssp.com
@@ -321,6 +318,7 @@
 0.0.0.0 d9.flashtalking.com
 0.0.0.0 secure.flashtalking.com
 0.0.0.0 servedby.flashtalking.com
+0.0.0.0 z.cdn.ftd.agency
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
 0.0.0.0 user-sync.fwmrm.net
@@ -430,6 +428,7 @@
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
 0.0.0.0 ad.mail.ru
+0.0.0.0 adv.mail.ru
 0.0.0.0 privacy-cs.mail.ru
 0.0.0.0 r.mail.ru
 0.0.0.0 rs.mail.ru
@@ -495,10 +494,6 @@
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 cookies.nextmillmedia.com
 0.0.0.0 rtb.nexverse.ai
-0.0.0.0 cdn.ngs.ru
-0.0.0.0 passport.ngs.ru
-0.0.0.0 s.ngs.ru
-0.0.0.0 static.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 consent.cmp.oath.com
 0.0.0.0 adv.office-partner.de
@@ -518,8 +513,6 @@
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
 0.0.0.0 asr.openssp.ru
-0.0.0.0 a.tile.openstreetmap.org
-0.0.0.0 b.tile.openstreetmap.org
 0.0.0.0 cs.openwebmp.com
 0.0.0.0 eu-west-1-cs-rtb.openwebmp.com
 0.0.0.0 pbs-cs.openwebmp.com
@@ -646,6 +639,9 @@
 0.0.0.0 adfox-hb-bidder.rutarget.ru
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
+0.0.0.0 goya.rutube.ru
+0.0.0.0 log.rutube.ru
+0.0.0.0 ssp.rutube.ru
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 ced-ns.sascdn.com
@@ -727,6 +723,7 @@
 0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 1033--mmjjotbkote4mtbhmti1na.stbid.ru
+0.0.0.0 1033--mmjjotdiowywodniy2m0na.stbid.ru
 0.0.0.0 1033--mmjjotfhntfkmzk1ndc1mq.stbid.ru
 0.0.0.0 1033--mmjjotjjytkyzgfjyzy4yw.stbid.ru
 0.0.0.0 1033--mmjjotm0ytq2mjfmyti3mw.stbid.ru
@@ -763,14 +760,6 @@
 0.0.0.0 elb.the-ozone-project.com
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
-0.0.0.0 stat.tildaapi.com
-0.0.0.0 store.tildaapi.com
-0.0.0.0 neo.tildacdn.com
-0.0.0.0 optim.tildacdn.com
-0.0.0.0 static.tildacdn.com
-0.0.0.0 static3.tildacdn.com
-0.0.0.0 thb.tildacdn.com
-0.0.0.0 upwidget.tildacdn.com
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 www.tns-counter.ru
@@ -862,6 +851,7 @@
 0.0.0.0 wf.frontend.weborama.fr
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
+0.0.0.0 fun.whollyeven.com
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
 0.0.0.0 syndication.x.com
