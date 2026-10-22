@@ -29,7 +29,7 @@ def normalize_and_detect_dynamic_domain(domain):
     # --- СТРАТЕГИЯ 1: Защита крупных легитимных экосистем ---
     # (где корень блокировать НЕЛЬЗЯ, но нужно изолировать рекламные фреймы)
     if apex == "googlesyndication.com":
-        return True, "googlesyndication.com"
+        return True, "safeframe.googlesyndication.com"
         
     if apex == "dzen.ru":
         for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
