@@ -196,10 +196,15 @@ async def main_async():
         sub_urls = crawl_relations.get(seed, [])
         
         for u_idx, sub_url in enumerate(sub_urls, 1):
-            scan_info = url_to_uuid_map.get(sub_url, {"uuid": "Не отправлялся", "status": False})
+            scan_info = url_to_uuid_map.get(sub_url, {"uuid": None, "status": False})
             marker = "[OK]" if scan_info["status"] else "[FAIL]"
             log_lines.append(f"    ├── {u_idx:02d}. {marker} {sub_url}")
-            log_lines.append(f"    └── UUID: {scan_info['uuid']}")
+            
+            # ИСПРАВЛЕНО: Вместо UUID записываем полную кликабельную ссылку на urlscan
+            if scan_info["uuid"]:
+                log_lines.append(f"    └── Ссылка: https://urlscan.io/{scan_info['uuid']}/")
+            else:
+                log_lines.append(f"    └── Ссылка: Не отправлялся / Ошибка")
             
     log_lines.append("\n" + "="*60)
     
