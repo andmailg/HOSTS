@@ -62,8 +62,8 @@ STRICT_DOMAINS_WHITELIST = [
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
 
-    # --- Экосистема МТС ---
-    "mts.ru",
+    # --- Экосистема МТС, Tele2 ---
+    "mts.ru", "t2.ru",
 
     # --- Экосистема X (Twitter) ---
     "twimg.com",
