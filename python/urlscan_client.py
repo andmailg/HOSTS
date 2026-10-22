@@ -77,20 +77,33 @@ async def poll_scan_results(uuid, api_key, session):
 
 async def process_single_url(target_url, api_key, session, semaphore, hosts_lock, all_new_domains, all_clean_domains, failed_urls):
     async with semaphore:
-        print(f"[{target_url}] Отправка на сканирование...")
+        # 1. Отправляем URL на сканирование
+        print(f"[{target_url}] Отправка на сканирование...", flush=True)
         uuid = await submit_url_to_scan(target_url, api_key, session)
+        
         if not uuid:
-            async with hosts_lock: failed_urls.add(target_url)
+            print(f"[{target_url}] Отправка на сканирование... [FAIL] (Не удалось получить UUID)", flush=True)
+            async with hosts_lock: 
+                failed_urls.add(target_url)
             return {"status": False, "url": target_url, "uuid": None}
             
+        # 2. Опрашиваем API и ждем завершения анализа страницы
         scan_data = await poll_scan_results(uuid, api_key, session)
+        
         if not scan_data:
-            async with hosts_lock: failed_urls.add(target_url)
+            # Если urlscan.io не успел обработать страницу за отведенный таймаут
+            print(f"[{target_url}] Отправка на сканирование... [TIMEOUT] | Ссылка: https://urlscan.io{uuid}/", flush=True)
+            async with hosts_lock: 
+                failed_urls.add(target_url)
             return {"status": False, "url": target_url, "uuid": uuid}
             
+        # 3. Успешное завершение: парсим домены и выводим статус вместе с постоянной ссылкой
+        print(f"[{target_url}] Отправка на сканирование... [SUCCESS] | Ссылка: https://urlscan.io{uuid}/", flush=True)
+        
         new_domains, clean_domains = process_scan_json(scan_data)
         async with hosts_lock:
             if new_domains: all_new_domains.update(new_domains)
             if clean_domains: all_clean_domains.update(clean_domains)
             
         return {"status": True, "url": target_url, "uuid": uuid}
+
