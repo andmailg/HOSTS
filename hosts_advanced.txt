@@ -285,6 +285,8 @@
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 sync.dxtech.ai
 0.0.0.0 rtb.dynotech.io
+0.0.0.0 cu.dzen.ru
+0.0.0.0 ms.dzen.ru
 0.0.0.0 static.eaglecdn.com
 0.0.0.0 hlsvod.rambler.eaglecdn.com
 0.0.0.0 s1.eda.ru
@@ -807,6 +809,7 @@
 0.0.0.0 rtb-msk.viadata.store
 0.0.0.0 ru.viadata.store
 0.0.0.0 rucdn.viadata.store
+0.0.0.0 rurtb.viadata.store
 0.0.0.0 tg.viadata.store
 0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru

@@ -80,7 +80,11 @@ async def run_external_crawler_for_urls(url_list, max_depth=MAX_DEPTH, max_reqs=
     # Создаем единую сессию с увеличенным таймаутом на чтение тяжелых страниц (например, kp.ru)
     timeout_settings = aiohttp.ClientTimeout(total=20, connect=5, sock_read=15)
     
-    async with aiohttp.ClientSession(timeout=timeout_settings) as session:
+    async with aiohttp.ClientSession(
+        timeout=timeout_settings,
+        max_line_size=65536,  # 64 KB вместо 8190 байт
+        max_field_size=65536  # 64 KB на размер одного поля заголовка
+    ) as session:
         for idx, target_url in enumerate(url_list, 1):
             normalized_seed = target_url if target_url.startswith(('http://', 'https://')) else f'https://{target_url}'
             seed_domain = urlparse(normalized_seed).netloc.lower()
