@@ -64,6 +64,11 @@ STRICT_DOMAINS_WHITELIST = [
 
     # --- Экосистема МТС ---
     "mts.ru",
+
+    # --- Экосистема X (Twitter) ---
+    "twimg.com",
+    "twitter.com",
+    "x.com",
     
     # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
     "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
