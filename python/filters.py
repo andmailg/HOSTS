@@ -180,6 +180,13 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)pubmatic\.com$",
 ]
 
+# --- Паттерны для детекции динамических хэш-поддоменов ---
+_IS_HASH_PATTERNS = [
+    re.compile(r"^[a-f0-9]{32}$", re.IGNORECASE),             # MD5 (Google safeframe и др.)
+    re.compile(r"^[a-f0-9]{8}-[a-f0-9]{4}-", re.IGNORECASE),  # Часть UUID
+    re.compile(r"^\d{6,}$"),                                   # Чисто числовые ID от 6 знаков
+]
+
 # Кэшируем скомпилированные регулярные выражения
 _COMPILED_BLACKLIST_PATTERNS = [re.compile(pat, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS]
 
@@ -236,6 +243,55 @@ def should_block_domain(domain, page_apex=None, score=None):
         return score["ad_score"] > score["clean_score"]
         
     return True
+
+def _is_hash(left_segment):
+    """Проверяет, является ли сегмент домена хэшем или идентификатором."""
+    if any(pat.search(left_segment) for pat in _IS_HASH_PATTERNS):
+        return True
+    # Хэши с дефисами (буквы + цифры)
+    if "-" in left_segment and len(re.findall(r"[a-z0-9]", left_segment)) > 15:
+        return True
+    return False
+
+def normalize_and_detect_dynamic_domain(domain):
+    """
+    Детектирует динамические хэш-поддомены и нормализует их до базового узла.
+    Возвращает (is_dynamic, normalized_domain).
+    """
+    domain = domain.lower().strip()
+    parts = domain.split('.')
+    if len(parts) <= 2:
+        # Если домен второго уровня (apex), ничего не схлопываем, чтобы не заблокировать корень
+        return False, domain
+        
+    left_segment = parts[0]
+    apex = get_apex_domain(domain)
+    
+    # --- СТРАТЕГИЯ 1: Защита крупных легитимных экосистем ---
+    # (где корень блокировать НЕЛЬЗЯ, но нужно изолировать рекламные фреймы)
+    if apex == "googlesyndication.com":
+        return True, "safeframe.googlesyndication.com"
+        
+    if apex == "dzen.ru":
+        for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
+            if sub in domain:
+                return True, sub
+        return False, domain  # Защищаем dzen.ru от полной блокировки
+
+    # --- СТРАТЕГИЯ 2: Безусловное схлопывание для известных рекламных сетей ---
+    # Если базовый домен (например, stbid.ru или adfox.ru) уже находится в черном списке,
+    # любой его глубокий поддомен автоматически признается динамическим мусором и схлопывается до корня.
+    if apex:
+        if any(pat.search(apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
+            return True, apex
+
+    # --- СТРАТЕГИЯ 3: Строгие паттерны для динамического мусора (универсальные ловушки) ---
+    is_hash = _is_hash(left_segment)
+
+    if is_hash and apex:
+        return True, apex
+
+    return False, domain
 
 def sort_domains_by_level(domains):
     """Сортирует по apex-домену, внутри — по уровню вложенности, затем алфавитно."""

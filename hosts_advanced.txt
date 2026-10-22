@@ -313,7 +313,7 @@
 0.0.0.0 region1.analytics.google.com
 0.0.0.0 partner.googleadservices.com
 0.0.0.0 www.googleadservices.com
-0.0.0.0 googlesyndication.com
+0.0.0.0 safeframe.googlesyndication.com
 0.0.0.0 www.googletagmanager.com
 0.0.0.0 www.googletagservices.com
 0.0.0.0 ads.gpm-ssp.ru

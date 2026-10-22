@@ -8,55 +8,9 @@ from urllib.parse import urlparse
 import aiohttp
 
 from config import HOSTS_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_URLS_PER_SITE, MAX_DEPTH, TARGET_SCAN, get_api_key
-from filters import should_block_domain, sort_domains_by_level, get_apex_domain
+from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain
 from crawler import run_external_crawler_for_urls
 from urlscan_client import process_single_url
-
-def normalize_and_detect_dynamic_domain(domain):
-    """
-    Детектирует динамические хэш-поддомены и нормализует их до базового узла.
-    Возвращает (is_dynamic, normalized_domain).
-    """
-    domain = domain.lower().strip()
-    parts = domain.split('.')
-    if len(parts) <= 2:
-        # Если домен второго уровня (apex), ничего не схлопываем, чтобы не заблокировать корень
-        return False, domain
-        
-    left_segment = parts[0]
-    apex = get_apex_domain(domain)
-    
-    # --- СТРАТЕГИЯ 1: Защита крупных легитимных экосистем ---
-    # (где корень блокировать НЕЛЬЗЯ, но нужно изолировать рекламные фреймы)
-    if apex == "googlesyndication.com":
-        return True, "safeframe.googlesyndication.com"
-        
-    if apex == "dzen.ru":
-        for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
-            if sub in domain:
-                return True, sub
-        return False, domain  # Защищаем dzen.ru от полной блокировки
-
-    # --- СТРАТЕГИЯ 2: Безусловное схлопывание для известных рекламных сетей ---
-    # Если базовый домен (например, stbid.ru или adfox.ru) уже находится в черном списке,
-    # любой его глубокий поддомен автоматически признается динамическим мусором и схлопывается до корня.
-    if apex:
-        from filters import _COMPILED_BLACKLIST_PATTERNS
-        if any(pat.search(apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
-            return True, apex
-
-    # --- СТРАТЕГИЯ 3: Строгие паттерны для динамического мусора (универсальные ловушки) ---
-    is_hash = (
-        re.search(r"^[a-f0-9]{32}$", left_segment) or             # MD5 (Google safeframe и др.)
-        re.search(r"^[a-f0-9]{8}-[a-f0-9]{4}-", left_segment) or   # Часть UUID
-        re.search(r"^\d{6,}$", left_segment) or                    # Чисто числовые ID от 6 знаков
-        ("-" in left_segment and len(re.findall(r"[a-z0-9]", left_segment)) > 15)  # ИСПРАВЛЕНО: хэши с дефисами (буквы + цифры)
-    )
-
-    if is_hash and apex:
-        return True, apex
-
-    return False, domain
 
 def read_existing_hosts(file_path):
     """Считывает домены из текущего hosts-файла с нормализацией строк."""
