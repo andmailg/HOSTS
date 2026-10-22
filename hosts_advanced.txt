@@ -26,6 +26,7 @@
 0.0.0.0 u-las.4dex.io
 0.0.0.0 u.4dex.io
 0.0.0.0 usync.4dex.io
+0.0.0.0 t.6sc.co
 0.0.0.0 prebid.a-mo.net
 0.0.0.0 sync.a-mo.net
 0.0.0.0 use3-sync.a-mo.net
@@ -40,7 +41,13 @@
 0.0.0.0 at.ad-pixel.ru
 0.0.0.0 cdn.ad-tech.ru
 0.0.0.0 profile.ad-tech.ru
+0.0.0.0 a.ad.gt
+0.0.0.0 ids.ad.gt
+0.0.0.0 ids4.ad.gt
+0.0.0.0 p.ad.gt
+0.0.0.0 pixels.ad.gt
 0.0.0.0 ad4m.at
+0.0.0.0 ads.adelement.com
 0.0.0.0 rtb.adentifi.com
 0.0.0.0 c1.adform.net
 0.0.0.0 cm.adform.net
@@ -84,6 +91,7 @@
 0.0.0.0 a.adspector.io
 0.0.0.0 sync.adspend.space
 0.0.0.0 ad.adsrvr.org
+0.0.0.0 azenduser.adsrvr.org
 0.0.0.0 enduser.adsrvr.org
 0.0.0.0 match.adsrvr.org
 0.0.0.0 ny4-bid.adsrvr.org
@@ -101,6 +109,7 @@
 0.0.0.0 static.advcake.ru
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
+0.0.0.0 cm-mx.advolve.io
 0.0.0.0 id.adx.bid
 0.0.0.0 hunt.aforearound.com
 0.0.0.0 aa.agkn.com
@@ -151,6 +160,7 @@
 0.0.0.0 nrr.bidderstack.com
 0.0.0.0 track.bidgx.com
 0.0.0.0 adapter.bidmatic.io
+0.0.0.0 media.bidr.io
 0.0.0.0 match.prod.bidr.io
 0.0.0.0 us-east-1.event.prod.bidr.io
 0.0.0.0 us-west-2.event.prod.bidr.io
@@ -172,6 +182,7 @@
 0.0.0.0 fastly-signed-us-east-1-prod.brightcovecdn.com
 0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
+0.0.0.0 bttrack.com
 0.0.0.0 sessions.bugsnag.com
 0.0.0.0 bumlam.com
 0.0.0.0 hb.bumlam.com
@@ -188,10 +199,12 @@
 0.0.0.0 pcs.ssp.cadent.com
 0.0.0.0 a1241.casalemedia.com
 0.0.0.0 a1566.casalemedia.com
+0.0.0.0 a1754.casalemedia.com
 0.0.0.0 a2025.casalemedia.com
 0.0.0.0 a2517.casalemedia.com
 0.0.0.0 a2600.casalemedia.com
 0.0.0.0 a4170.casalemedia.com
+0.0.0.0 a5757.casalemedia.com
 0.0.0.0 a6218.casalemedia.com
 0.0.0.0 a6277.casalemedia.com
 0.0.0.0 a6296.casalemedia.com
@@ -237,10 +250,13 @@
 0.0.0.0 sync.copper6.live
 0.0.0.0 script.crazyegg.com
 0.0.0.0 code.createjs.com
+0.0.0.0 cgrid.criteo.com
 0.0.0.0 grid-bidder.criteo.com
+0.0.0.0 grid-mercury.criteo.com
 0.0.0.0 gum.criteo.com
 0.0.0.0 mug.criteo.com
 0.0.0.0 ssp-sync.criteo.com
+0.0.0.0 gat.us5.us.criteo.com
 0.0.0.0 static.criteo.net
 0.0.0.0 sync.crwdcntrl.net
 0.0.0.0 ipac.ctnsnet.com
@@ -253,6 +269,7 @@
 0.0.0.0 cdn.deepintent.com
 0.0.0.0 match.deepintent.com
 0.0.0.0 uswest-beacon.deepintent.com
+0.0.0.0 comcast.demdex.net
 0.0.0.0 dpm.demdex.net
 0.0.0.0 euronewsgroup.demdex.net
 0.0.0.0 sync.digitalcaramel.com
@@ -278,10 +295,13 @@
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 cdn.doubleverify.com
 0.0.0.0 pub.doubleverify.com
+0.0.0.0 rtb0.doubleverify.com
 0.0.0.0 tps.doubleverify.com
 0.0.0.0 tpsc-ue1.doubleverify.com
 0.0.0.0 vast.doubleverify.com
 0.0.0.0 sync.drift-pixel.ai
+0.0.0.0 sync.driftpixel.live
+0.0.0.0 maestro-ue1.tps.dv.tech
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 sync.dxtech.ai
 0.0.0.0 rtb.dynotech.io
@@ -292,6 +312,8 @@
 0.0.0.0 s1.eda.ru
 0.0.0.0 ittpx-us-e.eskimi.com
 0.0.0.0 ittpx.eskimi.com
+0.0.0.0 lb.eu-1-id5-sync.com
+0.0.0.0 lbs.eu-1-id5-sync.com
 0.0.0.0 rtd-tm.everesttech.net
 0.0.0.0 sync-tm.everesttech.net
 0.0.0.0 example.com
@@ -323,6 +345,8 @@
 0.0.0.0 user-sync.fwmrm.net
 0.0.0.0 rtb.gamoshi.io
 0.0.0.0 www.gazeta.press
+0.0.0.0 ids.api.gcprivacy.id
+0.0.0.0 s.cdn.gcprivacy.net
 0.0.0.0 adserver.gear-hub.ru
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 geoip-js.com
@@ -353,6 +377,8 @@
 0.0.0.0 ads.gpm-ssp.ru
 0.0.0.0 rtb.gumgum.com
 0.0.0.0 usersync.gumgum.com
+0.0.0.0 cdn.hadronid.net
+0.0.0.0 id.hadronid.net
 0.0.0.0 ssp.hbrd.io
 0.0.0.0 st.hbrd.io
 0.0.0.0 js.hcaptcha.com
@@ -369,16 +395,21 @@
 0.0.0.0 ia.box
 0.0.0.0 i.ibb.co
 0.0.0.0 id5-sync.com
+0.0.0.0 cdn.id5-sync.com
 0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 ad.impactify.media
 0.0.0.0 sonic.impactify.media
+0.0.0.0 ads.imprressly.com
+0.0.0.0 trk.imprressly.com
 0.0.0.0 secure-gg.imrworldwide.com
+0.0.0.0 secure-gl.imrworldwide.com
 0.0.0.0 secure-us.imrworldwide.com
 0.0.0.0 js-sec.indexww.com
 0.0.0.0 k8s1-event-tracker-la.lb.indexww.com
 0.0.0.0 k8s1-event-tracker-sj.lb.indexww.com
 0.0.0.0 resources.infolinks.com
 0.0.0.0 router.infolinks.com
+0.0.0.0 rt3063.infolinks.com
 0.0.0.0 rb.infox.ru
 0.0.0.0 rb.infox.sg
 0.0.0.0 cs.ingage.tech
@@ -387,6 +418,8 @@
 0.0.0.0 www.instagram.com
 0.0.0.0 tail.insteadjell.com
 0.0.0.0 rtb-eu-warsaw.intent.ai
+0.0.0.0 agent.intentiq.com
+0.0.0.0 api.intentiq.com
 0.0.0.0 sync.intentiq.com
 0.0.0.0 syncv4.intentiq.com
 0.0.0.0 core.iprom.net
@@ -409,6 +442,7 @@
 0.0.0.0 usermatch.krxd.net
 0.0.0.0 sync.kueez.com
 0.0.0.0 sync.kueezrtb.com
+0.0.0.0 d-code.liadm.com
 0.0.0.0 i.liadm.com
 0.0.0.0 i6.liadm.com
 0.0.0.0 idx.liadm.com
@@ -493,6 +527,7 @@
 0.0.0.0 adv.office-partner.de
 0.0.0.0 match.ohmy.bid
 0.0.0.0 sp.ohmy.bid
+0.0.0.0 resources.omni-sync.io
 0.0.0.0 visitor-iqzone.omnitagjs.com
 0.0.0.0 visitor-krushmedia_video.omnitagjs.com
 0.0.0.0 visitor-programmaticx.omnitagjs.com
@@ -569,6 +604,7 @@
 0.0.0.0 api.privacy-center.org
 0.0.0.0 fei.pro-market.net
 0.0.0.0 prodmp.ru
+0.0.0.0 buyer.programmatica.com
 0.0.0.0 sync.programmatica.com
 0.0.0.0 sync.programmaticx.ai
 0.0.0.0 usync.proper.io
@@ -589,6 +625,7 @@
 0.0.0.0 sys.punchmedia.ru
 0.0.0.0 req.pm2.punchmedia.ru
 0.0.0.0 iz.push4site.com
+0.0.0.0 cdn.pushwoosh.com
 0.0.0.0 cm.pxltag.com
 0.0.0.0 sp.q-bid.ru
 0.0.0.0 match.qtarget.tech
@@ -646,6 +683,8 @@
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 cadmus.script.ac
 0.0.0.0 cadmus2.script.ac
+0.0.0.0 a2.seadform.net
+0.0.0.0 s2.seadform.net
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
 0.0.0.0 su.semasio.net
@@ -659,6 +698,8 @@
 0.0.0.0 bs.serving-sys.ru
 0.0.0.0 b.sharethrough.com
 0.0.0.0 match.sharethrough.com
+0.0.0.0 cdn.rendering.sharethrough.com
+0.0.0.0 eqt-gc.rendering.sharethrough.com
 0.0.0.0 groundcontrol.rendering.sharethrough.com
 0.0.0.0 us.shb-sync.com
 0.0.0.0 us4.shb-sync.com
@@ -676,13 +717,17 @@
 0.0.0.0 openrtb.skcrtxr.com
 0.0.0.0 rap.skcrtxr.com
 0.0.0.0 rst.skcrtxr.com
+0.0.0.0 sketchfab.com
 0.0.0.0 pl2.skwstat.ru
 0.0.0.0 s.ad.smaato.net
+0.0.0.0 csync-us.smartadserver.com
 0.0.0.0 csync.smartadserver.com
 0.0.0.0 rtb-csync.smartadserver.com
 0.0.0.0 ssbsync-global.smartadserver.com
 0.0.0.0 ssbsync.smartadserver.com
 0.0.0.0 sync.smartadserver.com
+0.0.0.0 tracking-api-use1.smartadserver.com
+0.0.0.0 tracking-api-usw1.smartadserver.com
 0.0.0.0 server.smartytech.io
 0.0.0.0 smi2.net
 0.0.0.0 static.smi2.net
@@ -701,6 +746,7 @@
 0.0.0.0 static.smi2cdn.ru
 0.0.0.0 static2.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
+0.0.0.0 static5.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
 0.0.0.0 csync.smilewanted.com
@@ -719,6 +765,7 @@
 0.0.0.0 1033--mmjjotbkote4mtbhmti1na.stbid.ru
 0.0.0.0 1033--mmjjotdiowywodniy2m0na.stbid.ru
 0.0.0.0 1033--mmjjotfhntfkmzk1ndc1mq.stbid.ru
+0.0.0.0 1033--mmjjotjjowiyzme5zdaznw.stbid.ru
 0.0.0.0 1033--mmjjotjjytkyzgfjyzy4yw.stbid.ru
 0.0.0.0 1033--mmjjotm0ytq2mjfmyti3mw.stbid.ru
 0.0.0.0 1033--mmjjotrmyze1odhkzdfhmw.stbid.ru
@@ -729,8 +776,10 @@
 0.0.0.0 worker.sttsmntz.ru
 0.0.0.0 probe999-13.supercdn.ru
 0.0.0.0 probe999-19.supercdn.ru
+0.0.0.0 probe999-5.supercdn.ru
 0.0.0.0 probeanycast.supercdn.ru
 0.0.0.0 probeiakly077.supercdn.ru
+0.0.0.0 probeizjm06bn.supercdn.ru
 0.0.0.0 probew7o9c5gt.supercdn.ru
 0.0.0.0 s.suprion.ru
 0.0.0.0 widget.svk-native.ru
@@ -768,6 +817,7 @@
 0.0.0.0 b.trboad.com
 0.0.0.0 fc-us-west-2.trboad.com
 0.0.0.0 partners.tremorhub.com
+0.0.0.0 b.triptease.io
 0.0.0.0 b.trueanthem.com
 0.0.0.0 dmp.truoptik.com
 0.0.0.0 choices.trustarc.com
@@ -796,6 +846,8 @@
 0.0.0.0 euronewsfr.api.useinsider.com
 0.0.0.0 sun9-2.userapi.com
 0.0.0.0 sun9-46.userapi.com
+0.0.0.0 sun9-7.userapi.com
+0.0.0.0 sun9-83.userapi.com
 0.0.0.0 a.ussp.io
 0.0.0.0 r.ussp.io
 0.0.0.0 a.utraff.com
@@ -829,6 +881,7 @@
 0.0.0.0 cm-ssp.voxexchange.io
 0.0.0.0 ads.vqserve.com
 0.0.0.0 cdn.vqserve.com
+0.0.0.0 pm.w55c.net
 0.0.0.0 watchfeed.tv
 0.0.0.0 track.webgains.com
 0.0.0.0 analytics.webgains.io
@@ -852,6 +905,7 @@
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
 0.0.0.0 syndication.x.com
+0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
@@ -866,6 +920,7 @@
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-beeswax.ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
+0.0.0.0 sync-pm.ads.yieldmo.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 b1sync.zemanta.com
 0.0.0.0 sync.zentotem.net
