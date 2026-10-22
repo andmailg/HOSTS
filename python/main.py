@@ -24,32 +24,36 @@ def normalize_and_detect_dynamic_domain(domain):
         return False, domain
         
     left_segment = parts[0]
+    apex = get_apex_domain(domain)
     
-    # Строгие паттерны для динамического мусора
+    # --- СТРАТЕГИЯ 1: Защита крупных легитимных экосистем ---
+    # (где корень блокировать НЕЛЬЗЯ, но нужно изолировать рекламные фреймы)
+    if apex == "googlesyndication.com":
+        return True, "googlesyndication.com"
+        
+    if apex == "dzen.ru":
+        for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
+            if sub in domain:
+                return True, sub
+        return False, domain  # Защищаем dzen.ru от полной блокировки
+
+    # --- СТРАТЕГИЯ 2: Безусловное схлопывание для известных рекламных сетей ---
+    # Если базовый домен (например, stbid.ru или adfox.ru) уже находится в черном списке,
+    # любой его глубокий поддомен автоматически признается динамическим мусором и схлопывается до корня.
+    if apex:
+        from filters import _COMPILED_BLACKLIST_PATTERNS
+        if any(pat.search(apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
+            return True, apex
+
+    # --- СТРАТЕГИЯ 3: Строгие паттерны для динамического мусора (универсальные ловушки) ---
     is_hash = (
-        re.search(r"^[a-f0-9]{32}$", left_segment) or           # MD5 (Google safeframe)
-        re.search(r"^[a-f0-9]{8}-[a-f0-9]{4}-", left_segment) or # Часть UUID
-        re.search(r"^\d{6,}$", left_segment) or                  # Чисто числовые ID от 6 знаков
-        (r"-" in left_segment and len(re.findall(r"[0-9a-f]", left_segment)) > 15) # Хэши с дефисами (stbid)
+        re.search(r"^[a-f0-9]{32}$", left_segment) or             # MD5 (Google safeframe и др.)
+        re.search(r"^[a-f0-9]{8}-[a-f0-9]{4}-", left_segment) or   # Часть UUID
+        re.search(r"^\d{6,}$", left_segment) or                    # Чисто числовые ID от 6 знаков
+        ("-" in left_segment and len(re.findall(r"[a-z0-9]", left_segment)) > 15)  # ИСПРАВЛЕНО: хэши с дефисами (буквы + цифры)
     )
 
-    if is_hash:
-        apex = get_apex_domain(domain)
-        if not apex:
-            return False, domain
-            
-        # Защита крупных экосистем, где корень (apex) блокировать НЕЛЬЗЯ:
-        if "googlesyndication.com" in domain:
-            # Блокируем строго изолированный фрейм для рекламы
-            return True, "safeframe.googlesyndication.com"
-        if "dzen.ru" in domain:
-            for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
-                if sub in domain:
-                    return True, sub
-            return False, domain # Защищаем dzen.ru от полной блокировки
-            
-        # Для ВСЕХ остальных рекламных сетей (Adfox, Stbid, Bumlam, Hybrid и др.)
-        # просто возвращаем их чистый базовый домен второго уровня (apex)
+    if is_hash and apex:
         return True, apex
 
     return False, domain
