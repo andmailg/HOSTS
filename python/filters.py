@@ -102,6 +102,15 @@ STRICT_DOMAINS_WHITELIST = [
     "cnews.ru",                      # Издание CNews
     "ngs.ru", "fontanka.ru", "e1.ru",# Городские порталы Шкулёв Медиа (блокировать их целиком нельзя)
     "openstreetmap.org",             # Картографический сервис (используется на чистых сайтах)
+
+    # --- Системные CDN, библиотеки и медиа-инфраструктура (Защита от FP) ---
+    "jquery.com", 
+    "createjs.com", 
+    "userapi.com", 
+    "sketchfab.com", 
+    "plyr.io", 
+    "brightcove.com",
+    "openfpcdn.io"
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
