@@ -139,9 +139,6 @@
 0.0.0.0 pbs-yahoo-us.ay.delivery
 0.0.0.0 wnsrvbjmeprtfrnfx.ay.delivery
 0.0.0.0 c.bannerflow.net
-0.0.0.0 emp.bbc.co.uk
-0.0.0.0 www.bbc.com
-0.0.0.0 gn-web-assets.api.bbc.com
 0.0.0.0 nav.files.bbci.co.uk
 0.0.0.0 fcpe.beeline.ru
 0.0.0.0 ads.betweendigital.com
@@ -428,11 +425,6 @@
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
 0.0.0.0 ad.mail.ru
-0.0.0.0 adv.mail.ru
-0.0.0.0 privacy-cs.mail.ru
-0.0.0.0 r.mail.ru
-0.0.0.0 rs.mail.ru
-0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com
@@ -734,8 +726,10 @@
 0.0.0.0 idsync.live.streamtheworld.com
 0.0.0.0 worker.sttsmntz.ru
 0.0.0.0 probe999-13.supercdn.ru
+0.0.0.0 probe999-19.supercdn.ru
 0.0.0.0 probeanycast.supercdn.ru
 0.0.0.0 probeiakly077.supercdn.ru
+0.0.0.0 probew7o9c5gt.supercdn.ru
 0.0.0.0 s.suprion.ru
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com

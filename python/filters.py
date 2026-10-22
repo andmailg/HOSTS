@@ -57,7 +57,7 @@ STRICT_DOMAINS_WHITELIST = [
     "yastatic-net.ru", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", 
     
     # --- Экосистема VK / Mail.ru / Одноклассники ---
-    "imgsmail.ru",
+    "mail.ru", "www.mail.ru", "imgsmail.ru",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
@@ -72,6 +72,7 @@ STRICT_DOMAINS_WHITELIST = [
     "mos.ru", "sberbank.ru", "sbrf.ru", "sber.ru",
     "thetruestory.news", "rferl.org", "ichef.bbci.co.uk", "static.bbci.co.uk", 
     "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk",
+    "bbc.com", "www.bbc.com", "bbc.co.uk",
     
     # --- Фотохостинги и файловые хранилища ---
     "fastpic.org", "imageban.ru", "pic4net.com", "directupload.eu", 
