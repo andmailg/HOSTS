@@ -39,6 +39,8 @@
 0.0.0.0 p.ad.gt
 0.0.0.0 pixels.ad.gt
 0.0.0.0 ad4m.at
+0.0.0.0 analytics.adcanvas.com
+0.0.0.0 media.adcanvas.com
 0.0.0.0 ads.adelement.com
 0.0.0.0 rtb.adentifi.com
 0.0.0.0 c1.adform.net
@@ -53,6 +55,7 @@
 0.0.0.0 dsp-cookie.adfarm1.adition.com
 0.0.0.0 sync.adkernel.com
 0.0.0.0 tagan.adlightning.com
+0.0.0.0 sync.adlook.online
 0.0.0.0 sync1.adlook.online
 0.0.0.0 a.adlook.tech
 0.0.0.0 cs.admanmedia.com
@@ -75,6 +78,7 @@
 0.0.0.0 jsconfig.adsafeprotected.com
 0.0.0.0 pixel.adsafeprotected.com
 0.0.0.0 static.adsafeprotected.com
+0.0.0.0 bid.adsensei.ai
 0.0.0.0 statistics.adsource.pro
 0.0.0.0 sync.adsp.io
 0.0.0.0 a.adspector.io
@@ -136,6 +140,9 @@
 0.0.0.0 pbs-yahoo-us.ay.delivery
 0.0.0.0 wnsrvbjmeprtfrnfx.ay.delivery
 0.0.0.0 c.bannerflow.net
+0.0.0.0 icv.bannernow.com
+0.0.0.0 stats.bannernow.com
+0.0.0.0 storage.bannernow.com
 0.0.0.0 nav.files.bbci.co.uk
 0.0.0.0 fcpe.beeline.ru
 0.0.0.0 betweendigital.com
@@ -156,6 +163,8 @@
 0.0.0.0 tr.blismedia.com
 0.0.0.0 backend.bobid.io
 0.0.0.0 manifest.prod.boltdns.net
+0.0.0.0 eads.brame-gamification.com
+0.0.0.0 brame-tracking.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 brightcove.com
 0.0.0.0 players.brightcove.net
@@ -210,6 +219,7 @@
 0.0.0.0 script.crazyegg.com
 0.0.0.0 code.createjs.com
 0.0.0.0 cgrid.criteo.com
+0.0.0.0 dis.criteo.com
 0.0.0.0 grid-bidder.criteo.com
 0.0.0.0 grid-mercury.criteo.com
 0.0.0.0 gum.criteo.com
@@ -328,6 +338,7 @@
 0.0.0.0 meta.hostingradio.ru
 0.0.0.0 hybrid.ai
 0.0.0.0 ia.box
+0.0.0.0 global.ib-ibi.com
 0.0.0.0 i.ibb.co
 0.0.0.0 id5-sync.com
 0.0.0.0 cdn.id5-sync.com
@@ -350,6 +361,7 @@
 0.0.0.0 usync.ingage.tech
 0.0.0.0 coil.injectoften.com
 0.0.0.0 sync.inmobi.com
+0.0.0.0 mweb.ck.inmobi.com
 0.0.0.0 www.instagram.com
 0.0.0.0 tail.insteadjell.com
 0.0.0.0 rtb-eu-warsaw.intent.ai
@@ -375,6 +387,7 @@
 0.0.0.0 usermatch.krxd.net
 0.0.0.0 sync.kueez.com
 0.0.0.0 sync.kueezrtb.com
+0.0.0.0 jsc.lentainform.com
 0.0.0.0 d-code.liadm.com
 0.0.0.0 i.liadm.com
 0.0.0.0 i6.liadm.com
@@ -587,6 +600,7 @@
 0.0.0.0 sendsay.ru
 0.0.0.0 image.sendsay.ru
 0.0.0.0 browser.sentry-cdn.com
+0.0.0.0 sentry.io
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
@@ -604,6 +618,8 @@
 0.0.0.0 pixel-sync.sitescout.com
 0.0.0.0 skcrtxr.com
 0.0.0.0 sketchfab.com
+0.0.0.0 media.sketchfab.com
+0.0.0.0 static.sketchfab.com
 0.0.0.0 pl2.skwstat.ru
 0.0.0.0 s.ad.smaato.net
 0.0.0.0 csync-us.smartadserver.com
@@ -630,6 +646,7 @@
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 api-ssp.spot.im
+0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com

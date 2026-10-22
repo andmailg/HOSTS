@@ -94,44 +94,38 @@ async def main_async():
                 max_urls_per_seed=MAX_URLS_PER_SITE
             )
             
+            # =========================================================================
+            # УНИВЕРСАЛЬНАЯ АВТОМАТИЧЕСКАЯ ГРУППИРОВКА ССЫЛОК ПО ИСХОДНЫМ САЙТАМ
+            # =========================================================================
             for seed in seed_urls:
                 normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
-                seed_domain = urlparse(normalized_seed).netloc.lower()
                 seed_apex = get_apex_domain(normalized_seed)
                 
-                if "dzen.ru" in normalized_seed:
-                    crawled_for_seed = [u for u in all_crawled_urls if "dzen.ru/a/" in u or "dzen.ru/news/show/" in u]
-                    if not crawled_for_seed:
-                        crawled_for_seed = [normalized_seed]
-                    crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
-                
-                elif "mail.ru" in seed_domain or "sportmail.ru" in seed_domain:
-                    crawled_for_seed = [u for u in all_crawled_urls if urlparse(u).netloc.lower() == seed_domain]
-                    deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
-                    if deep_articles: crawled_for_seed = deep_articles
-                    if not crawled_for_seed: crawled_for_seed = [normalized_seed]
-                    crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
-                    
-                elif seed_apex in ["gazeta.ru", "kp.ru"]:
-                    crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]
-                    deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
-                    if deep_articles: 
-                        crawled_for_seed = deep_articles
-                        
-                    if not crawled_for_seed: 
-                        crawled_for_seed = [normalized_seed]
-                    crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
+                if not seed_apex:
+                    crawl_relations[seed] = [normalized_seed]
+                    continue
 
-                elif seed_apex == "rosbalt.ru":
-                    crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == "rosbalt.ru"]
-                    deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
-                    if deep_articles: crawled_for_seed = deep_articles
-                    if not crawled_for_seed: crawled_for_seed = [normalized_seed]
-                    crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE]
-                    
-                else:
-                    crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]
-                    crawl_relations[seed] = crawled_for_seed[:MAX_URLS_PER_SITE] if crawled_for_seed else [normalized_seed]
+                # 1. Отбираем только те ссылки, которые принадлежат этому же apex-домену
+                crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]
+                
+                # Специфичное исключение для экосистемы Mail.ru (так как у них много поддоменов типа sportmail.ru)
+                if "mail.ru" in seed_apex:
+                    crawled_for_seed = [u for u in all_crawled_urls if "mail.ru" in (get_apex_domain(u) or "")]
+
+                # 2. Фильтруем "глубокие" страницы (статьи), отсекая главную страницу и пустые хабы
+                deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
+                
+                # Особое правило для Дзена: нам нужны только статьи (/a/) или новости (/news/show/)
+                if seed_apex == "dzen.ru":
+                    deep_articles = [u for u in crawled_for_seed if "/a/" in urlparse(u).path or "/news/show/" in urlparse(u).path]
+
+                # Если нашли глубокие статьи — берем их, если нет — оставляем то, что нашли, либо сам seed
+                final_urls = deep_articles if deep_articles else crawled_for_seed
+                if not final_urls:
+                    final_urls = [normalized_seed]
+
+                # Ограничиваем количество подстраниц для одного сайта согласно лимитам из config
+                crawl_relations[seed] = final_urls[:MAX_URLS_PER_SITE]
         else:
             print("\n[Пул] Краулер отключен (MAX_DEPTH = 0). Будут отправлены только исходные адреса.")
             for seed in seed_urls:
