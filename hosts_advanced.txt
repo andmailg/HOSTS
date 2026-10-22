@@ -664,7 +664,6 @@
 0.0.0.0 s.suprion.ru
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
-0.0.0.0 t2.ru
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
 0.0.0.0 pm-widget.taboola.com
