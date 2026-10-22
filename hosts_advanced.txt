@@ -32,6 +32,7 @@
 0.0.0.0 ad-delivery.net
 0.0.0.0 at.ad-pixel.ru
 0.0.0.0 cdn.ad-tech.ru
+0.0.0.0 cs.ad-tech.ru
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 a.ad.gt
 0.0.0.0 ids.ad.gt
@@ -187,6 +188,7 @@
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 ping.chartbeat.net
+0.0.0.0 cpm.chocolateplatform.com
 0.0.0.0 us.ck-ie.com
 0.0.0.0 claritas.com
 0.0.0.0 b.clarity.ms
@@ -218,6 +220,7 @@
 0.0.0.0 sync.copper6.live
 0.0.0.0 script.crazyegg.com
 0.0.0.0 code.createjs.com
+0.0.0.0 creativecdn.com
 0.0.0.0 cgrid.criteo.com
 0.0.0.0 dis.criteo.com
 0.0.0.0 grid-bidder.criteo.com
@@ -705,12 +708,6 @@
 0.0.0.0 ttwstatic.com
 0.0.0.0 ad.turn.com
 0.0.0.0 d.turn.com
-0.0.0.0 pbs.twimg.com
-0.0.0.0 video.twimg.com
-0.0.0.0 cdn.syndication.twimg.com
-0.0.0.0 api.twitter.com
-0.0.0.0 platform.twitter.com
-0.0.0.0 syndication.twitter.com
 0.0.0.0 de.tynt.com
 0.0.0.0 hde.tynt.com
 0.0.0.0 u-login.com
@@ -761,7 +758,6 @@
 0.0.0.0 fun.whollyeven.com
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
-0.0.0.0 syndication.x.com
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
@@ -774,6 +770,7 @@
 0.0.0.0 cs-server-s2s.yellowblue.io
 0.0.0.0 cs.yellowblue.io
 0.0.0.0 pbs-cs.yellowblue.io
+0.0.0.0 ad.yieldlab.net
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-beeswax.ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
