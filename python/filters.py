@@ -57,7 +57,7 @@ STRICT_DOMAINS_WHITELIST = [
     "yastatic-net.ru", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", 
     
     # --- Экосистема VK / Mail.ru / Одноклассники ---
-    "mail.ru", "www.mail.ru", "imgsmail.ru",
+    "mail.ru", "www.mail.ru", "imgsmail.ru", "r.mradx.net",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",

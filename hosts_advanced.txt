@@ -435,7 +435,6 @@
 0.0.0.0 code.moviead55.ru
 0.0.0.0 dsp.mpartner.digital
 0.0.0.0 dmp.mpsuadv.ru
-0.0.0.0 r.mradx.net
 0.0.0.0 mrgcdn.ru
 0.0.0.0 mts.ru
 0.0.0.0 vma.mts.ru
