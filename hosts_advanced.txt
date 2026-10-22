@@ -219,7 +219,6 @@
 0.0.0.0 sync.cootlogix.com
 0.0.0.0 sync.copper6.live
 0.0.0.0 script.crazyegg.com
-0.0.0.0 code.createjs.com
 0.0.0.0 creativecdn.com
 0.0.0.0 cgrid.criteo.com
 0.0.0.0 dis.criteo.com
@@ -376,7 +375,6 @@
 0.0.0.0 pxl.iqm.com
 0.0.0.0 cs.iqzone.com
 0.0.0.0 jobcart.ru
-0.0.0.0 code.jquery.com
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
 0.0.0.0 kinescope.io
@@ -478,7 +476,6 @@
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 sync.opendsp.ru
-0.0.0.0 openfpcdn.io
 0.0.0.0 asr.openssp.ru
 0.0.0.0 cs.openwebmp.com
 0.0.0.0 eu-west-1-cs-rtb.openwebmp.com
@@ -520,7 +517,6 @@
 0.0.0.0 prebid.pixad.com.tr
 0.0.0.0 cs.playdigo.com
 0.0.0.0 sync.plusoneads.com
-0.0.0.0 cdn.plyr.io
 0.0.0.0 sync.pmbmonetize.live
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 ms-cookie-sync.presage.io
@@ -620,9 +616,6 @@
 0.0.0.0 um.simpli.fi
 0.0.0.0 pixel-sync.sitescout.com
 0.0.0.0 skcrtxr.com
-0.0.0.0 sketchfab.com
-0.0.0.0 media.sketchfab.com
-0.0.0.0 static.sketchfab.com
 0.0.0.0 pl2.skwstat.ru
 0.0.0.0 s.ad.smaato.net
 0.0.0.0 csync-us.smartadserver.com
@@ -717,10 +710,6 @@
 0.0.0.0 sync.upravel.com
 0.0.0.0 falcon.useinsider.com
 0.0.0.0 euronewsfr.api.useinsider.com
-0.0.0.0 sun9-2.userapi.com
-0.0.0.0 sun9-46.userapi.com
-0.0.0.0 sun9-7.userapi.com
-0.0.0.0 sun9-83.userapi.com
 0.0.0.0 a.ussp.io
 0.0.0.0 r.ussp.io
 0.0.0.0 a.utraff.com
