@@ -61,6 +61,7 @@
 0.0.0.0 sync1.adlook.online
 0.0.0.0 a.adlook.tech
 0.0.0.0 cs.admanmedia.com
+0.0.0.0 gtracenep.admaster.cc
 0.0.0.0 prebid.admatic.com.tr
 0.0.0.0 dsp-service.admatic.de
 0.0.0.0 prebid.admatic.de
@@ -170,12 +171,12 @@
 0.0.0.0 c.bing.com
 0.0.0.0 cdn.binsiad.com
 0.0.0.0 tr.blismedia.com
+0.0.0.0 cm.bluevoox.com
 0.0.0.0 backend.bobid.io
 0.0.0.0 manifest.prod.boltdns.net
 0.0.0.0 eads.brame-gamification.com
 0.0.0.0 brame-tracking.com
 0.0.0.0 pbsj.bricks-co.com
-0.0.0.0 brightcove.com
 0.0.0.0 players.brightcove.net
 0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
@@ -370,7 +371,6 @@
 0.0.0.0 rb.infox.sg
 0.0.0.0 cs.ingage.tech
 0.0.0.0 usync.ingage.tech
-0.0.0.0 coil.injectoften.com
 0.0.0.0 sync.inmobi.com
 0.0.0.0 mweb.ck.inmobi.com
 0.0.0.0 www.instagram.com
@@ -386,7 +386,6 @@
 0.0.0.0 jobcart.ru
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
-0.0.0.0 kinescope.io
 0.0.0.0 klkmdsync.site
 0.0.0.0 cdn.knightlab.com
 0.0.0.0 uploads.knightlab.com
@@ -405,6 +404,7 @@
 0.0.0.0 snap.licdn.com
 0.0.0.0 pool.liftdsp.com
 0.0.0.0 ap.lijit.com
+0.0.0.0 bb.lijit.com
 0.0.0.0 ce.lijit.com
 0.0.0.0 px.ads.linkedin.com
 0.0.0.0 sp.linkssp.ru
@@ -773,6 +773,7 @@
 0.0.0.0 sync-beeswax.ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
 0.0.0.0 sync-pm.ads.yieldmo.com
+0.0.0.0 tag.yieldoptimizer.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 b1sync.zemanta.com
 0.0.0.0 sync.zentotem.net
