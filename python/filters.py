@@ -125,8 +125,7 @@ STRICT_DOMAINS_WHITELIST = [
     "createjs.com", 
     "userapi.com", 
     "sketchfab.com", 
-    "plyr.io", 
-    "brightcove.com",
+    "plyr.io",
     "openfpcdn.io",
 ]
 
@@ -209,8 +208,6 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)weborama\.fr$",
     r"(^|\.)skcrtxr\.com$",
     r"(^|\.)facecast\.net$",
-    r"(^|\.)brightcove\.com$",
-    r"(^|\.)kinescope\.io$",
     r"(^|\.)pubmatic\.com$",
 ]
 
