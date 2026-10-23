@@ -222,6 +222,7 @@
 0.0.0.0 tracking.contanuity.com
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 bh.contextweb.com
+0.0.0.0 case.coolbonsai.com
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -235,8 +236,13 @@
 0.0.0.0 gum.criteo.com
 0.0.0.0 mug.criteo.com
 0.0.0.0 ssp-sync.criteo.com
+0.0.0.0 ads.eu.criteo.com
+0.0.0.0 cat.nl3.eu.criteo.com
 0.0.0.0 gat.us5.us.criteo.com
+0.0.0.0 rtb.fr3.eu.criteo.com
+0.0.0.0 criteo.net
 0.0.0.0 static.criteo.net
+0.0.0.0 imageproxy.eu.criteo.net
 0.0.0.0 sync.crwdcntrl.net
 0.0.0.0 ipac.ctnsnet.com
 0.0.0.0 x.ctrltech.ai
@@ -284,8 +290,6 @@
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 sync.dxtech.ai
 0.0.0.0 rtb.dynotech.io
-0.0.0.0 cu.dzen.ru
-0.0.0.0 ms.dzen.ru
 0.0.0.0 static.eaglecdn.com
 0.0.0.0 hlsvod.rambler.eaglecdn.com
 0.0.0.0 s1.eda.ru
@@ -373,6 +377,7 @@
 0.0.0.0 usync.ingage.tech
 0.0.0.0 sync.inmobi.com
 0.0.0.0 mweb.ck.inmobi.com
+0.0.0.0 inplayer.ru
 0.0.0.0 www.instagram.com
 0.0.0.0 tail.insteadjell.com
 0.0.0.0 rtb-eu-warsaw.intent.ai
@@ -415,6 +420,7 @@
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
 0.0.0.0 ad.mail.ru
+0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com
@@ -430,7 +436,10 @@
 0.0.0.0 warp.media.net
 0.0.0.0 idpix.media6degrees.com
 0.0.0.0 analytics.mediadash.ru
+0.0.0.0 cdn.mediago.io
 0.0.0.0 gtrace.mediago.io
+0.0.0.0 images.mediago.io
+0.0.0.0 trace-eu.mediago.io
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 tpt.mediaplex.com
 0.0.0.0 mediatoday.ru
@@ -692,6 +701,8 @@
 0.0.0.0 www.btd-cmh.tq-tungsten.com
 0.0.0.0 trace-flow.ru
 0.0.0.0 tracookiepixel.xyz
+0.0.0.0 traffaret.com
+0.0.0.0 cdn.traffaret.com
 0.0.0.0 t.trafmag.com
 0.0.0.0 yahoo2.global.transmit.live
 0.0.0.0 ads.travelaudience.com
