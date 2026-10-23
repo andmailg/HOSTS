@@ -308,6 +308,8 @@
 0.0.0.0 ids.api.gcprivacy.id
 0.0.0.0 s.cdn.gcprivacy.net
 0.0.0.0 adserver.gear-hub.ru
+0.0.0.0 gamd.hit.gemius.pl
+0.0.0.0 ls.hit.gemius.pl
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 geoip-js.com
 0.0.0.0 usersync.getpublica.com
@@ -635,6 +637,7 @@
 0.0.0.0 static5.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
+0.0.0.0 static8.smi2cdn.ru
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 iad-2.go.sonobi.com
 0.0.0.0 sync.go.sonobi.com
@@ -766,3 +769,8 @@
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 b1sync.zemanta.com
 0.0.0.0 sync.zentotem.net
+0.0.0.0 zvuk.com
+0.0.0.0 alloy-web.zvuk.com
+0.0.0.0 cdn-embed.zvuk.com
+0.0.0.0 cdn-image.zvuk.com
+0.0.0.0 report.zvuk.com
