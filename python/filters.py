@@ -41,6 +41,7 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "rambler.ru",      # Спасает служебную авторизацию и движок Рамблера на Газете.ru
     "files.1mi.media",
     "kpcdn.net",
+    "openwebmp.com",
 ]
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
@@ -110,7 +111,7 @@ STRICT_DOMAINS_WHITELIST = [
     "sketchfab.com", 
     "plyr.io", 
     "brightcove.com",
-    "openfpcdn.io"
+    "openfpcdn.io",
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
