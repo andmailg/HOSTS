@@ -59,6 +59,9 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "jwplayer.com",       # Независимые плееры JW Player в СМИ
     "bunny.net",          # Bunny Stream инфраструктура
     "injectoften.com",    # Служебный домен доставки плеера Connatix
+    
+    # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
+    "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
 ]
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
@@ -80,6 +83,8 @@ STRICT_DOMAINS_WHITELIST = [
     "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
     "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
 
+    "securitylab.ru",
+
     # --- Экосистема МТС, Tele2 ---
     "mts.ru", "t2.ru",
 
@@ -87,9 +92,6 @@ STRICT_DOMAINS_WHITELIST = [
     "twimg.com",
     "twitter.com",
     "x.com",
-    
-    # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
-    "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
     
     # --- Видео и стриминг (РФ) ---
     "rutube.ru", "static.rutube.ru", "rutubelist.ru", "blrutube.ru",
@@ -132,6 +134,10 @@ STRICT_DOMAINS_WHITELIST = [
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
+    # Yahoo
+    r"^analytics.*\.yahoo\.[a-z]+$",
+    r"^geo\.yahoo\.com$",
+
     # --- Таргетированная реклама и метрики Яндекса (без блокировки yastatic/cloud) ---
     r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$",
     r"(^|\.)log\.strm\.yandex\.ru$",
@@ -140,6 +146,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^ad\.mail\.ru$", 
     r"^reklama\.mail\.ru$",
     r"(^|\.)tracker-api\.vk-analytics\.ru$",
+    r"^top(-[a-z0-9]+)?\.mail\.ru$",
     
     # --- Видео-реклама и трекеры Rutube ---
     r"(^|\.)log\.rutube\.ru$", 
@@ -147,8 +154,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^goya\.rutube\.ru$",
     
     # --- Инфраструктура Дзена (Рекламные и рекомендательные блоки) ---
-    r"(^|\.)ms\.dzen\.ru$", 
-    r"(^|\.)cu\.dzen\.ru$", 
+    #r"(^|\.)ms\.dzen\.ru$", 
+    #r"(^|\.)cu\.dzen\.ru$", 
 
     # --- Рекламные и баннерные сети Рамблера ---
     r"^embeds\.rambler\.ru$",
