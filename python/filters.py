@@ -38,10 +38,26 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "iportal.ru", 
     "vedomosti.ru", 
     "ampproject.org",
-    "rambler.ru",      # Спасает служебную авторизацию и движок Рамблера на Газете.ru
+    "rambler.ru",      
     "files.1mi.media",
     "kpcdn.net",
-    "openwebmp.com",
+    "vdmsti.ru",       
+    "rbk.ru",          
+    "openwebmp.com",   
+    "viafoura.co",     
+    "viafoura.net",
+    "disqus.com",      
+    "disquscdn.com",
+    "spot.im",         
+    "infogram.com",    
+    "apester.com",
+    "kinescope.io",       # Видеохостинг и стриминг Kinescope
+    "kinescopecdn.net",   # Распределенная сеть доставки видео Kinescope
+    "brightcove.com",     # Плееры Brightcove (BBC, Аль-Джазира и др.)
+    "brightcovecdn.com",  # Статика и медиа-потоки Brightcove
+    "wistia.com",         # Платформа Wistia
+    "jwplayer.com",       # Независимые плееры JW Player в СМИ
+    "bunny.net",          # Bunny Stream инфраструктура
 ]
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
