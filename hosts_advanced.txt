@@ -28,6 +28,7 @@
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 www.acint.net
+0.0.0.0 openx-ums.acuityplatform.com
 0.0.0.0 ums.acuityplatform.com
 0.0.0.0 ad-delivery.net
 0.0.0.0 at.ad-pixel.ru
@@ -121,9 +122,15 @@
 0.0.0.0 plugin-cdn.alphaintent.com
 0.0.0.0 sync.alphonso.tv
 0.0.0.0 ads.altitude-arena.com
+0.0.0.0 amazon-adsystem.com
 0.0.0.0 aax-eu.amazon-adsystem.com
 0.0.0.0 c.amazon-adsystem.com
 0.0.0.0 s.amazon-adsystem.com
+0.0.0.0 sq-tungsten-ts.amazon-adsystem.com
+0.0.0.0 ts.amazon-adsystem.com
+0.0.0.0 aes.us-east.3px.axp.amazon-adsystem.com
+0.0.0.0 aes.us-west.3px.axp.amazon-adsystem.com
+0.0.0.0 unagi-na.amazon.com
 0.0.0.0 cognitiv-public.s3.amazonaws.com
 0.0.0.0 tracker.exchange.amitydigital.io
 0.0.0.0 taro.amongstmask.com
@@ -140,6 +147,7 @@
 0.0.0.0 cookiesync.axis-marketplace.com
 0.0.0.0 pbs-yahoo-us.ay.delivery
 0.0.0.0 wnsrvbjmeprtfrnfx.ay.delivery
+0.0.0.0 tracker.ssp.balance-x.com
 0.0.0.0 c.bannerflow.net
 0.0.0.0 icv.bannernow.com
 0.0.0.0 stats.bannernow.com
@@ -169,7 +177,6 @@
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 brightcove.com
 0.0.0.0 players.brightcove.net
-0.0.0.0 brightcovecdn.com
 0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 bttrack.com
@@ -380,8 +387,6 @@
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
 0.0.0.0 kinescope.io
-0.0.0.0 edge-ams-1.kinescopecdn.net
-0.0.0.0 edge-msk-1.kinescopecdn.net
 0.0.0.0 klkmdsync.site
 0.0.0.0 cdn.knightlab.com
 0.0.0.0 uploads.knightlab.com
@@ -413,6 +418,7 @@
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com
+0.0.0.0 m.media-amazon.com
 0.0.0.0 c21lg-d.media.net
 0.0.0.0 contextual.media.net
 0.0.0.0 cs.media.net
@@ -430,6 +436,7 @@
 0.0.0.0 mediatoday.ru
 0.0.0.0 rtb.mfadsrvr.com
 0.0.0.0 mgid.com
+0.0.0.0 mhjfbmdgcfjbbpaeojofohoefgiehjai
 0.0.0.0 mindbox.ru
 0.0.0.0 api.mindbox.ru
 0.0.0.0 web-static.mindbox.ru
@@ -540,8 +547,6 @@
 0.0.0.0 quotiq.ru
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 sentry-saas.rambler-co.ru
-0.0.0.0 s.rbk.ru
-0.0.0.0 s0.rbk.ru
 0.0.0.0 sync.rbstsystems.live
 0.0.0.0 hal9000.redintelligence.net
 0.0.0.0 hal900020.redintelligence.net
@@ -551,6 +556,7 @@
 0.0.0.0 pix-yahoo.revjet.com
 0.0.0.0 live.rezync.com
 0.0.0.0 a.rfihub.com
+0.0.0.0 p.rfihub.com
 0.0.0.0 ewr-647.ewr-rtb1.rfihub.com
 0.0.0.0 sjc-227.sjc-rtb1.rfihub.com
 0.0.0.0 sjc-366.sjc-rtb1.rfihub.com
@@ -567,12 +573,14 @@
 0.0.0.0 tracker.rtb-stellormedia.com
 0.0.0.0 id.rtb.mx
 0.0.0.0 pic.rtbcdn.ru
+0.0.0.0 river-3-357.rtbcdn.ru
 0.0.0.0 t.rtbwave.com
 0.0.0.0 eus.rubiconproject.com
 0.0.0.0 fastlane.rubiconproject.com
 0.0.0.0 pixel-us-east.rubiconproject.com
 0.0.0.0 pixel.rubiconproject.com
 0.0.0.0 prebid-server.rubiconproject.com
+0.0.0.0 secure-assets.rubiconproject.com
 0.0.0.0 token.rubiconproject.com
 0.0.0.0 rutarget.ru
 0.0.0.0 adfox-hb-bidder.rutarget.ru
@@ -640,9 +648,9 @@
 0.0.0.0 images.sparrow.ru
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
-0.0.0.0 api-ssp.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
+0.0.0.0 images-na.ssl-images-amazon.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
@@ -671,6 +679,8 @@
 0.0.0.0 widgets.teads-xo.com
 0.0.0.0 sync.teads.tv
 0.0.0.0 sync.techdsp.ru
+0.0.0.0 px316056579051a1e83.telecid.ru
+0.0.0.0 px3167b37a01a685b52.telecid.ru
 0.0.0.0 www.temu.com
 0.0.0.0 static.terratraf.com
 0.0.0.0 elb.the-ozone-project.com
@@ -679,6 +689,7 @@
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 st.top100.ru
+0.0.0.0 www.btd-cmh.tq-tungsten.com
 0.0.0.0 trace-flow.ru
 0.0.0.0 tracookiepixel.xyz
 0.0.0.0 t.trafmag.com
@@ -694,6 +705,7 @@
 0.0.0.0 choices.trustarc.com
 0.0.0.0 choices.truste.com
 0.0.0.0 hb.trustedstack.com
+0.0.0.0 lg1.hb.trustedstack.com
 0.0.0.0 tsdtocl.com
 0.0.0.0 tt.ttarget.ru
 0.0.0.0 ttwstatic.com
@@ -714,7 +726,6 @@
 0.0.0.0 a.utraff.com
 0.0.0.0 a.utraff.info
 0.0.0.0 s.uuidksinc.net
-0.0.0.0 cdn.vdmsti.ru
 0.0.0.0 ortb.vdo.ai
 0.0.0.0 ad-eu-bid.veonadx.com
 0.0.0.0 viadata.store
