@@ -479,10 +479,6 @@
 0.0.0.0 onetag-sys.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 asr.openssp.ru
-0.0.0.0 cs.openwebmp.com
-0.0.0.0 eu-west-1-cs-rtb.openwebmp.com
-0.0.0.0 pbs-cs.openwebmp.com
-0.0.0.0 us-east-1-cs-rtb.openwebmp.com
 0.0.0.0 openx.net
 0.0.0.0 eu-u.openx.net
 0.0.0.0 pbs-us-east.openx.net
