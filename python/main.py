@@ -153,13 +153,12 @@ async def main_async():
         fail_count = len(urls_to_scan) - success_count
 
     # =========================================================================
-    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ (ОБНОВЛЕННАЯ ЛОГИКА)
+    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ (ОБНОВЛЕННАЯ ЛОГИКА С NEED_REVIEW)
     # =========================================================================
     # 1. Считываем старые заблокированные домены
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
     
     # 2. Фильтруем СТАРЫЕ домены по ОБНОВЛЕННЫМ правилам (без учета старого скоринга)
-    # Если по новым правилам домен теперь разрешен, он НЕ попадет в valid_existing_ad
     valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
     
     # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии (с учетом их свежего скоринга)
@@ -200,9 +199,8 @@ async def main_async():
             marker = "[OK]" if scan_info["status"] else "[FAIL]"
             log_lines.append(f"    ├── {u_idx:02d}. {marker} {sub_url}")
             
-            # ИСПРАВЛЕНО: Вместо UUID записываем полную кликабельную ссылку на urlscan
             if scan_info["uuid"]:
-                log_lines.append(f"    └── Ссылка: https://urlscan.io/{scan_info['uuid']}/")
+                log_lines.append(f"    └── Ссылка: https://urlscan.io/result{scan_info['uuid']}/")
             else:
                 log_lines.append(f"    └── Ссылка: Не отправлялся / Ошибка")
             
@@ -217,10 +215,25 @@ async def main_async():
         else: 
             final_clean_log[d] = s
 
+    # ВЫВОД ЗАБЛОКИРОВАННЫХ ДОМЕНОВ С СЕПАРАЦИЕЙ НА ЖЕСТКИЙ BAN И NEED_REVIEW
     if final_ad_log:
         log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---")
-        for i, (d, s) in enumerate(sorted(final_ad_log.items()), 1): 
-            log_lines.append(f"{i:02d}. [AD] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']})")
+        ad_counter = 1
+        review_counter = 1
+        
+        # Сначала выводим чистый рекламный мусор (clean_score == 0)
+        log_lines.append("\n[ КАТЕГОРИЯ: СТРОГИЙ БАН (100% РЕКЛАМА / ТРЕКЕРЫ) ]")
+        for d, s in sorted(final_ad_log.items()):
+            if s.get("clean_score", 0) == 0:
+                log_lines.append(f"{ad_counter:02d}. [AD] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']})")
+                ad_counter += 1
+                
+        # Затем выводим кандидатов на ручной разбор (clean_score > 0)
+        log_lines.append("\n[ КАТЕГОРИЯ: КАНДИДАТЫ НА БЕЛЫЙ СПИСОК (ПЛЕЕРЫ/ВИДЖЕТЫ?) ]")
+        for d, s in sorted(final_ad_log.items()):
+            if s.get("clean_score", 0) > 0:
+                log_lines.append(f"{review_counter:02d}. [NEED_REVIEW] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']}) -> Обрати внимание!")
+                review_counter += 1
             
     if final_clean_log:
         log_lines.append("\n--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---")
@@ -230,14 +243,13 @@ async def main_async():
     with open(LOG_FILE, "w", encoding="utf-8") as f: 
         f.write("\n".join(log_lines))
     
-    # Выводим полный лог в stdout — это нужно для GitHub Actions,
-    # чтобы подробный лог был виден в логах workflow, а не только в log.txt
     print("\n" + "=" * 60)
     print("ПОДРОБНЫЙ ЛОГ (log.txt):")
     print("=" * 60)
     with open(LOG_FILE, "r", encoding="utf-8") as f:
         print(f.read())
     print("=" * 60)
+
 
 if __name__ == "__main__":
     asyncio.run(main_async())

@@ -58,6 +58,7 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "wistia.com",         # Платформа Wistia
     "jwplayer.com",       # Независимые плееры JW Player в СМИ
     "bunny.net",          # Bunny Stream инфраструктура
+    "injectoften.com",    # Служебный домен доставки плеера Connatix
 ]
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
