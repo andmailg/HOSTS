@@ -6,6 +6,7 @@
 0.0.0.0 s0.2mdn.net
 0.0.0.0 rr3---sn-aj5go5-5i.c.2mdn.net
 0.0.0.0 news.2xclick.ru
+0.0.0.0 news.2xclock.com
 0.0.0.0 33across.com
 0.0.0.0 ad.360yield.com
 0.0.0.0 dsp.360yield.com
@@ -69,6 +70,7 @@
 0.0.0.0 eu-rtbstack-cm.admixer.net
 0.0.0.0 inv-nets.admixer.net
 0.0.0.0 px2.admon.pro
+0.0.0.0 px4.admon.pro
 0.0.0.0 z.cdn.adnetwork.bet
 0.0.0.0 acdn.adnxs.com
 0.0.0.0 ib.adnxs.com
@@ -224,11 +226,11 @@
 0.0.0.0 tracking.contanuity.com
 0.0.0.0 ingestion.contentinsights.com
 0.0.0.0 bh.contextweb.com
-0.0.0.0 case.coolbonsai.com
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
 0.0.0.0 sync.copper6.live
+0.0.0.0 fcgi5.count-new.ru
 0.0.0.0 script.crazyegg.com
 0.0.0.0 creativecdn.com
 0.0.0.0 cgrid.criteo.com
@@ -360,6 +362,7 @@
 0.0.0.0 i.ibb.co
 0.0.0.0 id5-sync.com
 0.0.0.0 cdn.id5-sync.com
+0.0.0.0 cs.ifedata.ru
 0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 ad.impactify.media
 0.0.0.0 sonic.impactify.media
@@ -481,6 +484,7 @@
 0.0.0.0 cookies.nextmillmedia.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 lciapi.ninthdecimal.com
+0.0.0.0 ru.ssp-statistics.dsp.nt.technology
 0.0.0.0 consent.cmp.oath.com
 0.0.0.0 adv.office-partner.de
 0.0.0.0 ohmy.bid
@@ -495,6 +499,7 @@
 0.0.0.0 api.onesignal.com
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
+0.0.0.0 pixel.dsp.onetarget.ru
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 asr.openssp.ru
 0.0.0.0 openx.net
@@ -585,6 +590,7 @@
 0.0.0.0 id.rtb.mx
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 river-3-357.rtbcdn.ru
+0.0.0.0 river-3-372.rtbcdn.ru
 0.0.0.0 t.rtbwave.com
 0.0.0.0 eus.rubiconproject.com
 0.0.0.0 fastlane.rubiconproject.com
@@ -643,10 +649,12 @@
 0.0.0.0 sync.smartadserver.com
 0.0.0.0 tracking-api-use1.smartadserver.com
 0.0.0.0 tracking-api-usw1.smartadserver.com
+0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 server.smartytech.io
 0.0.0.0 smi2.net
 0.0.0.0 smi2.ru
 0.0.0.0 static.smi2cdn.ru
+0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 static2.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static5.smi2cdn.ru
@@ -691,6 +699,8 @@
 0.0.0.0 sync.teads.tv
 0.0.0.0 sync.techdsp.ru
 0.0.0.0 px316056579051a1e83.telecid.ru
+0.0.0.0 px31616dc7ecc25514c.telecid.ru
+0.0.0.0 px316597d9519ffc011.telecid.ru
 0.0.0.0 px3167b37a01a685b52.telecid.ru
 0.0.0.0 www.temu.com
 0.0.0.0 static.terratraf.com
@@ -769,6 +779,7 @@
 0.0.0.0 fun.whollyeven.com
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
+0.0.0.0 ads-media.wildberries.ru
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
