@@ -161,20 +161,28 @@ async def main_async():
     # 2. Фильтруем СТАРЫЕ домены по ОБНОВЛЕННЫМ правилам (без учета старого скоринга)
     valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
     
-    # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии (с учетом их свежего скоринга)
-    current_session_ad = {d for d, s in all_new_domains.items() if should_block_domain(d, score=s)}
+    # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии 
+    # ВАЖНО: В hosts должны идти ТОЛЬКО те, у кого clean_score == 0 (100% мусор)
+    current_session_ad = {
+        d for d, s in all_new_domains.items() 
+        if should_block_domain(d, score=s) and s.get("clean_score", 0) == 0
+    }
     
-    # 4. Объединяем валидные старые и новые рекламные домены
+    # 4. Объединяем валидные старые и новые жесткие рекламные домены
     raw_combined = valid_existing_ad.union(current_session_ad)
     
-    # 5. Нормализуем объединенный список (схлопываем динамические хэши)
+    # 5. Нормализуем список (схлопываем динамические хэши)
     normalized_combined = set()
     for d in raw_combined:
         is_dyn, norm_d = normalize_and_detect_dynamic_domain(d)
         normalized_combined.add(norm_d)
         
-    # 6. Финальная контрольная фильтрация очищенного списка
-    filtered_ad_domains = {d for d in normalized_combined if should_block_domain(d, score=all_new_domains.get(d))}
+    # 6. Финальная контрольная фильтрация для hosts (только явный бан)
+    filtered_ad_domains = {
+        d for d in normalized_combined 
+        if should_block_domain(d, score=all_new_domains.get(d)) 
+        and all_new_domains.get(d, {}).get("clean_score", 0) == 0
+    }
     
     # 7. Сортировка и запись в файл hosts
     sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)

@@ -70,6 +70,10 @@ STRICT_DOMAINS_WHITELIST = [
     # --- Глобальные CDN и служебная инфраструктура Google ---
     "cloudflare.com", "jsdelivr.net", "unpkg.com", "googleapis.com", 
     "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
+    "googletagmanager.com", "googletagservices.com", "google-analytics.com", "google.com",
+    
+    "wildberries.ru",       # Ритейл (ломался из-за ads-media)     
+    "tinypass.com",
     
     # --- Медиа-контент и видеохостинги ---
     "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
@@ -81,8 +85,8 @@ STRICT_DOMAINS_WHITELIST = [
     # --- Экосистема VK / Mail.ru / Одноклассники ---
     "mail.ru", "www.mail.ru", "imgsmail.ru", "r.mradx.net",
     "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
-    "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru",
-    "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me",
+    "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru", "vk.team",
+    "vkcloud-storage.ru", "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me", "top-fwz1.mail.ru",
 
     "securitylab.ru",
 
@@ -102,6 +106,7 @@ STRICT_DOMAINS_WHITELIST = [
     "thetruestory.news", "rferl.org", "ichef.bbci.co.uk", "static.bbci.co.uk", 
     "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk",
     "bbc.com", "www.bbc.com", "bbc.co.uk",
+    "piano.io" # Инфраструктура подписок Ведомостей/СМИ
     
     # --- Фотохостинги и файловые хранилища ---
     "fastpic.org", "imageban.ru", "pic4net.com", "directupload.eu", 
@@ -131,6 +136,9 @@ STRICT_DOMAINS_WHITELIST = [
     "sketchfab.com", 
     "plyr.io",
     "openfpcdn.io",
+    "sentry.io",            # Сборщик ошибок UI, без него ломаются скрипты
+    "browser-intake-datadoghq.com",
+    "sentry-saas.rambler-co.ru",
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
@@ -278,9 +286,19 @@ def should_block_domain(domain, page_apex=None, score=None):
     if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 
         return False
         
-    # 6. ДИНАМИЧЕСКИЙ СКОРИНГ
+    # 6. ДИНАМИЧЕСКИЙ СКОРИНГ (С защитой от случайных срабатываний)
     if score is not None:
-        return score["ad_score"] > score["clean_score"]
+        ad_score = score.get("ad_score", 0)
+        clean_score = score.get("clean_score", 0)
+        
+        # Если домен явно полезен (много системных ассетов), 
+        # рекламный скор должен быть значительно выше для блокировки
+        if clean_score > 0:
+            return ad_score > (clean_score * 2) + 15  # Требуем уверенного перевеса
+            
+        # Если clean_score == 0, блокируем только при явном триггере,
+        # а не из-за случайного "+6 за сторонний запрос"
+        return ad_score >= 20 
         
     return True
 
