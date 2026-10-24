@@ -59,6 +59,7 @@ MEDIA_INFRASTRUCTURE_WHITELIST = [
     "jwplayer.com",       # Независимые плееры JW Player в СМИ
     "bunny.net",          # Bunny Stream инфраструктура
     "injectoften.com",    # Служебный домен доставки плеера Connatix
+    "coolbonsai.com",     # Служебное контентное зеркало Connatix
     
     # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
     "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
