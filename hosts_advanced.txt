@@ -193,6 +193,8 @@
 0.0.0.0 catsnetwork.ru
 0.0.0.0 st-ok.cdn-vk.ru
 0.0.0.0 cdn.celtra.com
+0.0.0.0 factors.championat.com
+0.0.0.0 img.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 ping.chartbeat.net
@@ -786,6 +788,7 @@
 0.0.0.0 sync-pm.ads.yieldmo.com
 0.0.0.0 tag.yieldoptimizer.com
 0.0.0.0 gw-iad-bid.ymmobi.com
+0.0.0.0 www.yuga.ru
 0.0.0.0 b1sync.zemanta.com
 0.0.0.0 sync.zentotem.net
 0.0.0.0 zvuk.com
