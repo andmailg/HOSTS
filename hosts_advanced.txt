@@ -3,6 +3,7 @@
 0.0.0.0 sync.1rx.io
 0.0.0.0 24smi.info
 0.0.0.0 24smi.net
+0.0.0.0 s0.2mdn.net
 0.0.0.0 rr3---sn-aj5go5-5i.c.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 news.2xclock.com
@@ -50,7 +51,6 @@
 0.0.0.0 s1.adform.net
 0.0.0.0 track.adform.net
 0.0.0.0 ads.adfox.ru
-0.0.0.0 banners.adfox.ru
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 px.adhigh.net
 0.0.0.0 a.adiam.tech
@@ -72,7 +72,6 @@
 0.0.0.0 px4.admon.pro
 0.0.0.0 z.cdn.adnetwork.bet
 0.0.0.0 acdn.adnxs.com
-0.0.0.0 ib.adnxs.com
 0.0.0.0 secure.adnxs.com
 0.0.0.0 assets.adobedtm.com
 0.0.0.0 adriver.ru
@@ -116,6 +115,7 @@
 0.0.0.0 cdn77.aj3105.top
 0.0.0.0 qsearch-a.akamaihd.net
 0.0.0.0 cdn.al-adtech.com
+0.0.0.0 ssp.al-adtech.com
 0.0.0.0 p.alcmpn.com
 0.0.0.0 pbs.alfasense.com
 0.0.0.0 plugin-cdn.alphaintent.com
@@ -270,7 +270,6 @@
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
-0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
 0.0.0.0 googleads6.g.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
@@ -498,7 +497,6 @@
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 scripts.opti-digital.com
 0.0.0.0 analytics.optidigital.com
-0.0.0.0 pbs.optidigital.com
 0.0.0.0 logx.optimizely.com
 0.0.0.0 a4621041136.cdn.optimizely.com
 0.0.0.0 tracker-shr.ortb.net
@@ -538,7 +536,6 @@
 0.0.0.0 data.punchmedia.ru
 0.0.0.0 sys.punchmedia.ru
 0.0.0.0 req.pm2.punchmedia.ru
-0.0.0.0 iz.push4site.com
 0.0.0.0 cdn.pushwoosh.com
 0.0.0.0 sp.q-bid.ru
 0.0.0.0 match.qtarget.tech
@@ -585,8 +582,6 @@
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 goya.rutube.ru
-0.0.0.0 log.rutube.ru
-0.0.0.0 ssp.rutube.ru
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 ced-ns.sascdn.com
@@ -650,6 +645,7 @@
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
+0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
@@ -683,6 +679,7 @@
 0.0.0.0 elb.the-ozone-project.com
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
+0.0.0.0 tns-counter.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 www.btd-cmh.tq-tungsten.com
 0.0.0.0 trace-flow.ru
@@ -753,7 +750,6 @@
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 an.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 cs-ob.yellowblue.io
 0.0.0.0 cs-server-s2s.yellowblue.io
