@@ -20,3 +20,4 @@ ru.euronews.com
 bbc.com
 yahoo.com
 kp.ru
+retail.ru
