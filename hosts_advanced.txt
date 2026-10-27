@@ -27,7 +27,6 @@
 0.0.0.0 id.a-mx.com
 0.0.0.0 c.aaxads.com
 0.0.0.0 t.dsp.abdm.ru
-0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 www.acint.net
 0.0.0.0 openx-ums.acuityplatform.com
@@ -118,6 +117,7 @@
 0.0.0.0 qsearch-a.akamaihd.net
 0.0.0.0 vod-dash-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
+0.0.0.0 ssp.al-adtech.com
 0.0.0.0 p.alcmpn.com
 0.0.0.0 pbs.alfasense.com
 0.0.0.0 plugin-cdn.alphaintent.com
@@ -256,6 +256,7 @@
 0.0.0.0 match.deepintent.com
 0.0.0.0 uswest-beacon.deepintent.com
 0.0.0.0 comcast.demdex.net
+0.0.0.0 dpm.demdex.net
 0.0.0.0 euronewsgroup.demdex.net
 0.0.0.0 sync.digitalcaramel.com
 0.0.0.0 dmg.digitaltarget.ru
@@ -266,10 +267,12 @@
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 rm-script.dotmetrics.net
+0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 tpt.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
+0.0.0.0 cm.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
 0.0.0.0 googleads6.g.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
@@ -601,7 +604,6 @@
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
-0.0.0.0 bs.serving-sys.ru
 0.0.0.0 b.sharethrough.com
 0.0.0.0 match.sharethrough.com
 0.0.0.0 cdn.rendering.sharethrough.com
@@ -624,7 +626,6 @@
 0.0.0.0 sync.smartadserver.com
 0.0.0.0 tracking-api-use1.smartadserver.com
 0.0.0.0 tracking-api-usw1.smartadserver.com
-0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 server.smartytech.io
 0.0.0.0 smi2.net
 0.0.0.0 smi2.ru
@@ -640,6 +641,7 @@
 0.0.0.0 iad-2.go.sonobi.com
 0.0.0.0 sync.go.sonobi.com
 0.0.0.0 images.sparrow.ru
+0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
@@ -751,7 +753,6 @@
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 an.yandex.ru
 0.0.0.0 mc.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 cs-ob.yellowblue.io
@@ -773,4 +774,3 @@
 0.0.0.0 cdn-embed.zvuk.com
 0.0.0.0 cdn-image.zvuk.com
 0.0.0.0 report.zvuk.com
-0.0.0.0 ad.mail.ru
