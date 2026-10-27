@@ -27,6 +27,7 @@
 0.0.0.0 id.a-mx.com
 0.0.0.0 c.aaxads.com
 0.0.0.0 t.dsp.abdm.ru
+0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 www.acint.net
 0.0.0.0 openx-ums.acuityplatform.com
@@ -51,6 +52,7 @@
 0.0.0.0 s1.adform.net
 0.0.0.0 track.adform.net
 0.0.0.0 ads.adfox.ru
+0.0.0.0 banners.adfox.ru
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 px.adhigh.net
 0.0.0.0 a.adiam.tech
@@ -272,7 +274,9 @@
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
+0.0.0.0 static.doubleclick.net
 0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
 0.0.0.0 googleads6.g.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
@@ -514,8 +518,6 @@
 0.0.0.0 plugin.ai.partner-alphaintent.com
 0.0.0.0 s3sc.perfluence.net
 0.0.0.0 pghub.io
-0.0.0.0 buy-eu.piano.io
-0.0.0.0 c2-eu.piano.io
 0.0.0.0 sync.pinklion.io
 0.0.0.0 pippio.com
 0.0.0.0 dsp-service.pixad.com.tr
@@ -544,6 +546,8 @@
 0.0.0.0 match.qtarget.tech
 0.0.0.0 quotiq.ru
 0.0.0.0 s-cs.rmp.rakuten.com
+0.0.0.0 ssp.rambler.ru
+0.0.0.0 ssp01.rambler.ru
 0.0.0.0 sync.rbstsystems.live
 0.0.0.0 hal9000.redintelligence.net
 0.0.0.0 hal900020.redintelligence.net
@@ -604,6 +608,7 @@
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
+0.0.0.0 bs.serving-sys.ru
 0.0.0.0 b.sharethrough.com
 0.0.0.0 match.sharethrough.com
 0.0.0.0 cdn.rendering.sharethrough.com
@@ -627,8 +632,6 @@
 0.0.0.0 tracking-api-use1.smartadserver.com
 0.0.0.0 tracking-api-usw1.smartadserver.com
 0.0.0.0 server.smartytech.io
-0.0.0.0 smi2.net
-0.0.0.0 smi2.ru
 0.0.0.0 static.smi2cdn.ru
 0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 static2.smi2cdn.ru
@@ -649,7 +652,6 @@
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
-0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
@@ -753,7 +755,7 @@
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 mc.yandex.ru
+0.0.0.0 an.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 cs-ob.yellowblue.io
 0.0.0.0 cs-server-s2s.yellowblue.io
