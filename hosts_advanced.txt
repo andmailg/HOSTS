@@ -27,7 +27,6 @@
 0.0.0.0 id.a-mx.com
 0.0.0.0 c.aaxads.com
 0.0.0.0 t.dsp.abdm.ru
-0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 www.acint.net
 0.0.0.0 openx-ums.acuityplatform.com
@@ -101,6 +100,7 @@
 0.0.0.0 ads.adtec.ru
 0.0.0.0 ghb.adtelligent.com
 0.0.0.0 sync.adtelligent.com
+0.0.0.0 ep1.adtrafficquality.google
 0.0.0.0 ep2.adtrafficquality.google
 0.0.0.0 static.advcake.ru
 0.0.0.0 pixel.advertising.com
@@ -111,6 +111,7 @@
 0.0.0.0 aa.agkn.com
 0.0.0.0 d.agkn.com
 0.0.0.0 fid.agkn.com
+0.0.0.0 x01.aidata.io
 0.0.0.0 gum.aidemsrv.com
 0.0.0.0 aj3105.top
 0.0.0.0 cdn77.aj3105.top
@@ -155,6 +156,7 @@
 0.0.0.0 storage.bannernow.com
 0.0.0.0 nav.files.bbci.co.uk
 0.0.0.0 fcpe.beeline.ru
+0.0.0.0 0.cook.bestdahlia.com
 0.0.0.0 betweendigital.com
 0.0.0.0 sync.bfmio.com
 0.0.0.0 bidderstack.com
@@ -267,14 +269,18 @@
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 rm-script.dotmetrics.net
+0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 tpt.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 static.doubleclick.net
+0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
 0.0.0.0 googleads6.g.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 cdn.doubleverify.com
 0.0.0.0 pub.doubleverify.com
@@ -383,6 +389,7 @@
 0.0.0.0 pxl.iqm.com
 0.0.0.0 cs.iqzone.com
 0.0.0.0 jobcart.ru
+0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
 0.0.0.0 klkmdsync.site
 0.0.0.0 cdn.knightlab.com
@@ -439,6 +446,7 @@
 0.0.0.0 mgid.com
 0.0.0.0 mhjfbmdgcfjbbpaeojofohoefgiehjai
 0.0.0.0 mindbox.ru
+0.0.0.0 api.mindbox.ru
 0.0.0.0 web-static.mindbox.ru
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
@@ -471,7 +479,6 @@
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 ru.ssp-statistics.dsp.nt.technology
-0.0.0.0 consent.cmp.oath.com
 0.0.0.0 adv.office-partner.de
 0.0.0.0 ohmy.bid
 0.0.0.0 resources.omni-sync.io
@@ -500,6 +507,8 @@
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 scripts.opti-digital.com
 0.0.0.0 analytics.optidigital.com
+0.0.0.0 pbs.optidigital.com
+0.0.0.0 cdn.optimizely.com
 0.0.0.0 logx.optimizely.com
 0.0.0.0 a4621041136.cdn.optimizely.com
 0.0.0.0 tracker-shr.ortb.net
@@ -607,6 +616,7 @@
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
+0.0.0.0 bs.serving-sys.ru
 0.0.0.0 b.sharethrough.com
 0.0.0.0 match.sharethrough.com
 0.0.0.0 cdn.rendering.sharethrough.com
@@ -644,6 +654,7 @@
 0.0.0.0 iad-2.go.sonobi.com
 0.0.0.0 sync.go.sonobi.com
 0.0.0.0 images.sparrow.ru
+0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
@@ -749,6 +760,7 @@
 0.0.0.0 weborama-tech.ru
 0.0.0.0 dx.frontend.weborama.com
 0.0.0.0 weborama.fr
+0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 fun.whollyeven.com
 0.0.0.0 tms.dmp.wi-fi.ru
@@ -756,6 +768,7 @@
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
+0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 an.yandex.ru
