@@ -1,5 +1,4 @@
 0.0.0.0 b24retailru.1c.ru
-0.0.0.0 sync.1dmp.io
 0.0.0.0 snippets.1mi.media
 0.0.0.0 sync.1rx.io
 0.0.0.0 24smi.info
@@ -53,6 +52,7 @@
 0.0.0.0 ads.adfox.ru
 0.0.0.0 banners.adfox.ru
 0.0.0.0 adobe.adhaven.com
+0.0.0.0 adhigh.net
 0.0.0.0 a.adiam.tech
 0.0.0.0 dsp-cookie.adfarm1.adition.com
 0.0.0.0 sync.adkernel.com
@@ -71,8 +71,7 @@
 0.0.0.0 px2.admon.pro
 0.0.0.0 px4.admon.pro
 0.0.0.0 z.cdn.adnetwork.bet
-0.0.0.0 acdn.adnxs.com
-0.0.0.0 secure.adnxs.com
+0.0.0.0 adnxs.com
 0.0.0.0 assets.adobedtm.com
 0.0.0.0 adriver.ru
 0.0.0.0 tracker.ads-tinyorbit.com
@@ -156,7 +155,7 @@
 0.0.0.0 storage.bannernow.com
 0.0.0.0 nav.files.bbci.co.uk
 0.0.0.0 fcpe.beeline.ru
-0.0.0.0 0.cook.bestdahlia.com
+0.0.0.0 bestdahlia.com
 0.0.0.0 betweendigital.com
 0.0.0.0 sync.bfmio.com
 0.0.0.0 bidderstack.com
@@ -290,6 +289,7 @@
 0.0.0.0 vast.doubleverify.com
 0.0.0.0 sync.drift-pixel.ai
 0.0.0.0 sync.driftpixel.live
+0.0.0.0 cdn.dsp-rambler.ru
 0.0.0.0 maestro-ue1.tps.dv.tech
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 sync.dxtech.ai
@@ -297,6 +297,7 @@
 0.0.0.0 static.eaglecdn.com
 0.0.0.0 hlsvod.rambler.eaglecdn.com
 0.0.0.0 s1.eda.ru
+0.0.0.0 a-nrzh6.data.emb-api.com
 0.0.0.0 ittpx-us-e.eskimi.com
 0.0.0.0 ittpx.eskimi.com
 0.0.0.0 lb.eu-1-id5-sync.com
@@ -412,6 +413,7 @@
 0.0.0.0 bb.lijit.com
 0.0.0.0 ce.lijit.com
 0.0.0.0 px.ads.linkedin.com
+0.0.0.0 linkssp.ru
 0.0.0.0 cs.lkqd.net
 0.0.0.0 csync.loopme.me
 0.0.0.0 a.lotus-dsp.ru
@@ -546,6 +548,7 @@
 0.0.0.0 data.punchmedia.ru
 0.0.0.0 sys.punchmedia.ru
 0.0.0.0 req.pm2.punchmedia.ru
+0.0.0.0 push4site.com
 0.0.0.0 cdn.pushwoosh.com
 0.0.0.0 sp.q-bid.ru
 0.0.0.0 match.qtarget.tech
@@ -597,6 +600,7 @@
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 goya.rutube.ru
 0.0.0.0 log.rutube.ru
+0.0.0.0 ssp.rutube.ru
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 ced-ns.sascdn.com
