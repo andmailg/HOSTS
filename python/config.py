@@ -5,7 +5,7 @@ import re
 from urllib.parse import urlparse
 
 # --- Настройки путей проекта ---
-HOSTS_FILE = Path(__file__).parent.parent / "hosts_advanced.txt"
+HOSTS_FILE = Path(__file__).parent.parent / "hosts.txt"
 LOG_FILE = Path(__file__).parent.parent / "log.txt"
 DEFAULT_URL_FILE = Path(__file__).parent.parent / "urls.txt"
 TLDEXTRACT_CACHE_DIR = Path(__file__).parent / ".tldextract_cache"
