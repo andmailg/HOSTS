@@ -99,6 +99,9 @@ STRICT_DOMAINS_WHITELIST = [
     "twimg.com",
     "twitter.com",
     "x.com",
+
+    # --- Экосистема Yahoo ---
+    "consent.cmp.oath.com",     # Сбор согласий и трекинг кук Oath/Yahoo
     
     # --- Видео и стриминг (РФ) ---
     "rutube.ru", "static.rutube.ru", "rutubelist.ru", "blrutube.ru",
@@ -228,6 +231,11 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)skcrtxr\.com$",
     r"(^|\.)facecast\.net$",
     r"(^|\.)pubmatic\.com$",
+    r"(^|\.)bestdahlia\.com$",  # Рекламная синхронизация кук Bestdahlia
+    r"(^|\.)adnxs\.com$",          # Рекламная RTB-биржа AppNexus
+    r"(^|\.)push4site\.com$",      # Пуш-уведомления и реклама Push4site
+    r"(^|\.)adhigh\.net$",         # Рекламный пиксель и трекер AdHigh
+    r"(^|\.)linkssp\.ru$",         # Рекламообменная сеть SSP
 ]
 
 # --- Паттерны для детекции динамических хэш-поддоменов ---
