@@ -82,6 +82,7 @@ STRICT_DOMAINS_WHITELIST = [
     "google.com",                       # Глобальные CDN и служебная инфраструктура Google
     "google.dk",                        # Глобальные CDN и служебная инфраструктура Google
     "googleapis.com",                   # Глобальные CDN и служебная инфраструктура Google
+    "googlesyndication.com",            # Глобальные CDN и служебная инфраструктура Google
     "googletagmanager.com",             # Глобальные CDN и служебная инфраструктура Google
     "googletagservices.com",            # Глобальные CDN и служебная инфраструктура Google
     "googleusercontent.com",            # Глобальные CDN и служебная инфраструктура Google
@@ -125,6 +126,7 @@ STRICT_DOMAINS_WHITELIST = [
     "nnmstatic.win",                    # Торрент-трекеры и их статика
 
     # === O ===
+    "oath.com",                         # Окно согласия с условиями использования (Privacy GDPR) для Yahoo
     "odnoklassniki.ru",                 # Одноклассники
     "ok.ru",                            # Одноклассники
     "okcdn.ru",                         # Одноклассники CDN
@@ -216,13 +218,25 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)24smi\.(net|info)$",         # Тизерная сеть 24СМИ (объединено .net и .info)
 
     # === A ===
+    r"(^|\.)1dmp\.io$",                  # Синхронизатор данных DMP (Из NEED_REVIEW)
+    r"(^|\.)acint\.net$",                # Рекплатформа и синхронизатор Acint
+    r"(^|\.)ad-delivery\.net$",          # Сеть доставки рекламы Ad-Delivery
+    r"(^|\.)adiam\.tech$",               # Рекламные технологии Adiam (Из NEED_REVIEW)
+    r"(^|\.)adlook\.online$",            # Реклатформа Adlook (Из NEED_REVIEW)
+    r"(^|\.)admatic\.com\.tr$",          # Турецкая рекламная сеть Admatic (Из NEED_REVIEW)
     r"(^|\.)adriver\.ru$",               # Медиа-трекер Adriver
     r"(^|\.)adverticum\.com$",           # Провайдер баннеров
     r"(^|\.)adhigh\.net$",               # Рекламный пиксель и трекер AdHigh
     r"(^|\.)adnxs\.com$",                # Рекламная RTB-биржа AppNexus
     r"(^|\.)adseedtech\.com$",           # Зарубежная рекламная RTB-биржа / SSP
     r"^[a-z0-9\-]+\.adfox\.ru$",         # Динамический таргетинг AdFox
+    r"(^|\.)adserver\.gear-hub\.ru$",    # Локальный adserver / Gear-Hub
+    r"(^|\.)adsp\.io$",                  # Рекламный синхронизатор Adsp (Из NEED_REVIEW)
+    r"(^|\.)adx\.(com\.ru|videonow\.ru)$", # Биржи AdX (объединены adx.com.ru и adx.videonow.ru)
+    r"(^|\.)alfasense\.com$",            # Рекламная платформа Alfasense (://alfasense.com)
+    r"(^|\.)apptracer\.ru$",             # Трекер мобильной и веб-аналитики Apptracer
     r"(^|\.)appsflyersdk\.com$",         # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)arcspire\.io$",              # Рекламный пиксель Arcspire (Из NEED_REVIEW)
 
     # === B ===
     r"(^|\.)bestdahlia\.com$",           # Рекламная синхронизация кук Bestdahlia
@@ -234,41 +248,66 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === C ===
     r"(^|\.)casalemedia\.com$",          # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)cxense\.com$",               # Аналитическая и рекомендательная платформа Cxense
+
+    # === D ===
+    r"(^|\.)dynotech\.io$",              # Рекламный шлюз Dynotech RTB (Из NEED_REVIEW)
 
     # === F ===
     r"(^|\.)facecast\.net$",             # Зарубежная рекламная RTB-биржа / SSP
 
     # === G ===
     r"(^|\.)gnezdo\.ru$",                # Тизерная сеть Гнездо
+    r"(^|\.)gonet-ads\.com$",            # Рекламная сеть GoNet (Из NEED_REVIEW)
 
     # === H ===
     r"(^|\.)hybrid\.ai$",                # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)hbrd\.io$",                  # Зарубежная рекламная RTB-биржа / SSP
     r"^px\.hsmedia\.ru$",                # Медиа-трекер Hearst Shkulev Media
 
+    # === I ===
+    r"(^|\.)intent\.ai$",                # Платформа таргетинга Intent.AI (Из NEED_REVIEW)
+
     # === L ===
     r"(^|\.)lentainform\.ru$",           # Тизерная сеть Лентаинформ
     r"(^|\.)linkssp\.ru$",               # Рекламообменная сеть SSP
+    r"(^|\.)lotus-dsp\.ru$",             # Рекламная платформа Lotus DSP
 
     # === M ===
     r"^ad\.mail\.ru$",                   # Рекламная экосистема VK / Mail.ru
     r"^reklama\.mail\.ru$",              # Рекламная экосистема VK / Mail.ru
     r"^top(-[a-z0-9]+)?\.mail\.ru$",     # Трекер Top.Mail.ru
     r"(^|\.)marketgid\.com$",            # Старая тизерная сеть / MGID
+    r"(^|\.)mediadash\.ru$",             # Аналитика и трекинг Mediadash
     r"(^|\.)mediascope\.net$",           # Аналитика Mediascope
     r"(^|\.)mediatoday\.ru$",            # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)mgid\.com$",                 # Глобальный медиа-агрегатор рекламы
+    r"(^|\.)mindbox\.ru$",               # Платформа автоматизации маркетинга и трекинга Mindbox
     r"(^|\.)mirtesen\.ru$",              # Рекомендательная сеть МирТесен
+    r"(^|\.)moe\.video$",                # Рекламная видеосеть MoeVideo (cdn1 / rtb)
+    r"(^|\.)mpartner\.digital$",         # Рекламный programmatic-шлюз Mpartner (Из NEED_REVIEW)
     r"(^|\.)mrgcdn\.ru$",                # Медиа-трекеры / CDN Mail.ru
+
+    # === N ===
+    r"(^|\.)new-programmatic\.com$",     # Синхронизатор кук New Programmatic (Из NEED_REVIEW)
 
     # === O ===
     r"(^|\.)ohmy\.bid$",                 # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)onesignal\.com$",            # Маркетинговые пуш-уведомления OneSignal
+    r"(^|\.)opti-digital\.com$",         # Рекламная монетизация Opti-Digital (включая .optidigital.com)
+    r"(^|\.)optidigital\.com$",          # Дублирующий корень Opti-Digital
+    r"(^|\.)optimizely\.com$",           # Платформа A/B тестирования и трекинга Optimizely
+    r"(^|\.)openssp\.ru$",               # Рекламный шлюз OpenSSP (asr.openssp.ru)
     r"(^|\.)outbrain\.com$",             # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)outbrainimg\.com$",          # Зарубежная рекламная RTB-биржа / SSP
 
     # === P ===
+    r"(^|\.)presage\.io$",               # Мобильный рекламный трекер Presage
     r"(^|\.)pubmatic\.com$",             # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)push4site\.com$",            # Пуш-уведомления и реклама Push4site
+
+    # === Q ===
+    r"(^|\.)q-bid\.ru$",                 # Рекламная биржа Q-Bid (Из NEED_REVIEW)
 
     # === R ===
     r"^embeds\.rambler\.ru$",            # Рекламные сети Рамблера
@@ -281,14 +320,22 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)log\.rutube\.ru$",           # Трекер Rutube
 
     # === S ===
+    r"(^|\.)sape\.ru$",                  # Рекламно-ссылочная биржа Sape (cdn-rtb / ssp-rtb)
+    r"(^|\.)sbermarketing\.ru$",         # Рекламный трекер СберМаркетинг (dmp.sbermarketing.ru)
     r"(^|\.)scorecardresearch\.com$",    # Глобальный трекер Comscore
     r"(^|\.)skcrtxr\.com$",              # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)smartcallback\.ru$",         # Маркетинговый трекер SmartCallback
     r"(^|\.)smi2\.(ru|net)$",            # Обменник и зеркала СМИ2 (объединено .ru и .net)
+    r"(^|\.)sparrow\.ru$",               # Тизерная и рекламная сеть Sparrow (widget.sparrow.ru)
     r"(^|\.)stbid\.ru$",                 # Блокирует stbid.ru со ВСЕМИ поддоменами целиком
     r"(^|\.)supercdn\.ru$",              # Рекламный CDN медиахолдингов
 
     # === T ===
+    r"(^|\.)terratraf\.com$",            # Тизерная и баннерная сеть TerraTraf (Из NEED_REVIEW)
     r"(^|\.)tns-counter\.ru$",           # Mediascope (бывший TNS)
+
+    # === U ===
+    r"(^|\.)upravel\.com$",              # Маркетинговый трекер Upravel (Из NEED_REVIEW)
 
     # === V ===
     r"^adx\.videonow\.ru$",              # Видео-реклама СМИ Videonow
@@ -296,6 +343,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)viadata\.store$",            # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)vigo\.tech$",                # Медиа-метрики Vigo
     r"(^|\.)viqeo\.tv$",                 # Видео-трекеры Viqeo
+    r"(^|\.)voxexchange\.io$",           # Биржа SSP / VoxExchange
     r"(^|\.)tracker-api\.vk-analytics\.ru$", # Рекламная экосистема VK / Mail.ru
 
     # === W ===
@@ -306,6 +354,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^analytics.*\.yahoo\.[a-z]+$",     # Метрики Yahoo
     r"^geo\.yahoo\.com$",                # Гео-трекер Yahoo
     r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$", # Таргетированная реклама и метрики Яндекса
+    r"^yandex-(dmp-)?sync\.rutarget\.ru$", # Синхронизация Яндекса на Rutarget (Из NEED_REVIEW)
     r"(^|\.)log\.strm\.yandex\.ru$",     # Метрики Яндекс Стриминга
 ]
 
