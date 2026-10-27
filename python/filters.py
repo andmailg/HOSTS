@@ -2,7 +2,7 @@ import re
 import os
 import tldextract
 import requests
-from config import TLDEXTRACT_CACHE_DIR, RELATED_APEXES
+from config import TLDEXTRACT_CACHE_DIR, RELATED_APEXES, STRICT_BAN_RATIO, STRICT_BAN_MARGIN, HOST_HINT_BONUS
 
 # Отключаем SSL-верификацию для tldextract (корпоративный SSL-сертификат)
 # Включается только явно: TLDEXTRACT_INSECURE=1 (на GitHub Actions не нужно).
@@ -323,6 +323,73 @@ def should_block_domain(domain, page_apex=None, score=None):
         return ad_score >= 20 
         
     return True
+
+# --- Сессионная классификация: агрегирование по страницам и группам «реплик» ---
+_AD_HOST_LABEL_RE = re.compile(
+    r"^(?:ads?|adx|adserver|adserv|adsrv|adtech|adnetwork|ssp|dsp|rtb|bid|bidder|prebid|pixel|px|sync|track|tracker|tracking|beacon)\d*$"
+)
+
+def host_ad_hint(domain):
+    """True, если среди меток хоста (без TLD, с разбиением по дефису) есть рекламный термин: ads, ssp, dsp, rtb, px, sync ..."""
+    labels = []
+    for part in domain.lower().split(".")[:-1]:
+        labels.extend(part.split("-"))
+    return any(_AD_HOST_LABEL_RE.match(label) for label in labels)
+
+def service_group_key(domain):
+    """Ключ «одного сервиса»: реплики вида hal9000.x.net / hal90005.x.net, px2.x.pro / px4.x.pro, cs13.x.ru / cs2.x.ru
+    получают общий ключ (первая метка без хвостовых цифр). У доменов 2-го уровня ключ — сам домен."""
+    domain = domain.lower().strip()
+    parts = domain.split(".")
+    if len(parts) < 3:
+        return domain
+    stripped = re.sub(r"\d+$", "", parts[0]) or "#"
+    return ".".join([stripped] + parts[1:])
+
+def is_confident_ad(domain, score=None):
+    """Строгий бан (идёт в hosts): явный чёрный список, нет данных скоринга (старые записи hosts),
+    clean_score == 0 или ad_score > clean_score * STRICT_BAN_RATIO + STRICT_BAN_MARGIN."""
+    if is_hard_blacklisted(domain):
+        return True
+    if not score:
+        return True
+    clean = score.get("clean_score", 0)
+    ad = score.get("ad_score", 0)
+    return clean == 0 or ad > clean * STRICT_BAN_RATIO + STRICT_BAN_MARGIN
+
+def classify_session(domain_stats):
+    """
+    Единое решение по домену на основе очков со ВСЕХ страниц сессии (а не последней страницы).
+    domain_stats: {domain: {"clean_score", "ad_score", "pages", "own_site"}}.
+    Реплики одного сервиса (service_group_key) оцениваются по суммарным очкам группы;
+    рекламный признак в имени хоста добавляет HOST_HINT_BONUS один раз на группу.
+    Домен, который хотя бы раз был «своим» для сканируемой страницы (own_site), защищён от самоблокировки.
+    Возвращает (ad_domains, clean_domains); в записях clean_score/ad_score — итоговые очки решения.
+    """
+    groups = {}
+    for d in domain_stats:
+        groups.setdefault(service_group_key(d), []).append(d)
+
+    ad_domains, clean_domains = {}, {}
+    for members in groups.values():
+        clean = sum(domain_stats[m].get("clean_score", 0) for m in members)
+        ad = sum(domain_stats[m].get("ad_score", 0) for m in members)
+        own_site = any(domain_stats[m].get("own_site") for m in members)
+        hint = any(host_ad_hint(m) for m in members)
+        if hint:
+            ad += HOST_HINT_BONUS
+        for d in members:
+            entry = {
+                "clean_score": clean, "ad_score": ad,
+                "pages": domain_stats[d].get("pages", 1),
+                "group": len(members), "hint": hint,
+            }
+            page_apex = get_apex_domain(d) if own_site else None
+            if should_block_domain(d, page_apex=page_apex, score=entry):
+                ad_domains[d] = entry
+            else:
+                clean_domains[d] = entry
+    return ad_domains, clean_domains
 
 def _is_hash(left_segment):
     """Проверяет, является ли сегмент домена хэшем или идентификатором."""

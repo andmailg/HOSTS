@@ -8,9 +8,9 @@ from urllib.parse import urlparse
 import aiohttp
 
 from config import HOSTS_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_URLS_PER_SITE, MAX_DEPTH, TARGET_SCAN, get_api_key
-from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site, is_hard_blacklisted
+from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site, is_confident_ad, classify_session
 from crawler import run_external_crawler_for_urls
-from urlscan_client import process_single_url
+from urlscan_client import process_single_url, collect_scan_verdicts, merge_scan_verdicts
 
 def read_existing_hosts(file_path):
     """Считывает домены из текущего hosts-файла с нормализацией строк."""
@@ -41,7 +41,7 @@ async def main_async():
     parser.add_argument("--max-reqs-per-sec", type=int, default=1, help="Лимит запросов краулера в секунду")
     args = parser.parse_args()
 
-    all_new_domains, all_clean_domains, failed_urls = {}, {}, set()
+    domain_stats, failed_urls = {}, set()   # очки всех страниц сессии суммируются в domain_stats
     url_to_uuid_map = {}
     crawl_relations = {}
     urls_to_scan = []
@@ -58,7 +58,7 @@ async def main_async():
         print(f"[Внимание] Обнаружен принудительный TARGET_SCAN: {TARGET_SCAN}. Обычный обход пропущен.")
         print(f"[{TARGET_SCAN}] Получение готовых результатов из URLScan...")
         
-        from urlscan_client import poll_scan_results, process_scan_json
+        from urlscan_client import poll_scan_results
         
         async with aiohttp.ClientSession() as session:
             scan_data = await poll_scan_results(TARGET_SCAN, api_key, session)
@@ -67,9 +67,8 @@ async def main_async():
             target_url = scan_data.get("page", {}).get("url", "Указанный UUID")
             print(f"[{TARGET_SCAN}] Результаты успешно получены для страницы: {target_url}")
             
-            new_domains, clean_domains = process_scan_json(scan_data)
-            if new_domains: all_new_domains.update(new_domains)
-            if clean_domains: all_clean_domains.update(clean_domains)
+            verdicts, _ = collect_scan_verdicts(scan_data)
+            merge_scan_verdicts(domain_stats, verdicts)
             
             url_to_uuid_map[target_url] = {"uuid": TARGET_SCAN, "status": True}
             crawl_relations[target_url] = [target_url]
@@ -133,7 +132,7 @@ async def main_async():
             semaphore = asyncio.Semaphore(MAX_CONCURRENT)
             hosts_lock = asyncio.Lock()
             tasks = [
-                process_single_url(u, api_key, session, semaphore, hosts_lock, all_new_domains, all_clean_domains, failed_urls) 
+                process_single_url(u, api_key, session, semaphore, hosts_lock, domain_stats, failed_urls) 
                 for u in urls_to_scan
             ]
             scan_raw_results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -149,6 +148,9 @@ async def main_async():
     # =========================================================================
     # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ (ОБНОВЛЕННАЯ ЛОГИКА С NEED_REVIEW)
     # =========================================================================
+    # 0. Единое решение по каждому домену на основе очков со ВСЕХ страниц (+ группировка реплик сервиса)
+    all_new_domains, all_clean_domains = classify_session(domain_stats)
+
     # 1. Считываем старые заблокированные домены
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
     
@@ -156,12 +158,10 @@ async def main_async():
     valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
     
     # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии 
-    # ВАЖНО: В hosts идут те, у кого clean_score == 0 (100% мусор) ЛИБО явные попадания в чёрный список
+    # ВАЖНО: В hosts идёт «строгий бан» (см. filters.is_confident_ad): clean_score == 0, ЛИБО
+    # ad_score > clean_score*STRICT_BAN_RATIO + STRICT_BAN_MARGIN, ЛИБО явный чёрный список
     # (у ad.mail.ru на странице mail.ru clean_score > 0 из-за бонуса «свой apex», но это реклама)
-    current_session_ad = {
-        d for d, s in all_new_domains.items() 
-        if should_block_domain(d, score=s) and (s.get("clean_score", 0) == 0 or is_hard_blacklisted(d))
-    }
+    current_session_ad = {d for d, s in all_new_domains.items() if is_confident_ad(d, s)}
     
     # 4. Объединяем валидные старые и новые жесткие рекламные домены
     raw_combined = valid_existing_ad.union(current_session_ad)
@@ -176,7 +176,7 @@ async def main_async():
     filtered_ad_domains = {
         d for d in normalized_combined 
         if should_block_domain(d, score=all_new_domains.get(d)) 
-        and (all_new_domains.get(d, {}).get("clean_score", 0) == 0 or is_hard_blacklisted(d))
+        and is_confident_ad(d, all_new_domains.get(d))
     }
     
     # 7. Сортировка и запись в файл hosts
@@ -209,14 +209,14 @@ async def main_async():
             
     log_lines.append("\n" + "="*60)
     
-    final_ad_log, final_clean_log = {}, {}
-    merged_scans = {**all_clean_domains, **all_new_domains}
-    
-    for d, s in merged_scans.items():
-        if should_block_domain(d, score=s): 
-            final_ad_log[d] = s
-        else: 
-            final_clean_log[d] = s
+    # Решение уже принято в classify_session: домен либо в ad, либо в clean (не в обоих сразу)
+    final_ad_log, final_clean_log = all_new_domains, all_clean_domains
+
+    def fmt_scores(s):
+        extra = f", pages: {s.get('pages', 1)}"
+        if s.get("group", 1) > 1: extra += f", группа x{s['group']}"
+        if s.get("hint"): extra += ", name-hint"
+        return f"(clean: {s['clean_score']}, ad: {s['ad_score']}{extra})"
 
     # ВЫВОД ЗАБЛОКИРОВАННЫХ ДОМЕНОВ С СЕПАРАЦИЕЙ НА ЖЕСТКИЙ BAN И NEED_REVIEW
     if final_ad_log:
@@ -227,21 +227,21 @@ async def main_async():
         # Сначала выводим чистый рекламный мусор (clean_score == 0)
         log_lines.append("\n[ КАТЕГОРИЯ: СТРОГИЙ БАН (100% РЕКЛАМА / ТРЕКЕРЫ) ]")
         for d, s in sorted(final_ad_log.items()):
-            if s.get("clean_score", 0) == 0 or is_hard_blacklisted(d):
-                log_lines.append(f"{ad_counter:02d}. [AD] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']})")
+            if is_confident_ad(d, s):
+                log_lines.append(f"{ad_counter:02d}. [AD] {d:<40} {fmt_scores(s)}")
                 ad_counter += 1
                 
-        # Затем выводим кандидатов на ручной разбор (clean_score > 0)
+        # Затем выводим кандидатов на ручной разбор (заблокированы по скорингу, но есть заметные признаки полезности)
         log_lines.append("\n[ КАТЕГОРИЯ: КАНДИДАТЫ НА БЕЛЫЙ СПИСОК (ПЛЕЕРЫ/ВИДЖЕТЫ?) ]")
         for d, s in sorted(final_ad_log.items()):
-            if s.get("clean_score", 0) > 0 and not is_hard_blacklisted(d):
-                log_lines.append(f"{review_counter:02d}. [NEED_REVIEW] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']}) -> Обрати внимание!")
+            if not is_confident_ad(d, s):
+                log_lines.append(f"{review_counter:02d}. [NEED_REVIEW] {d:<40} {fmt_scores(s)} -> Обрати внимание!")
                 review_counter += 1
             
     if final_clean_log:
-        log_lines.append("\n--- ПРОПУЩЕННЫЕ ЛЕГИТИМНЫЕ ДОМЕНЫ ---")
+        log_lines.append("\n--- НЕ ЗАБЛОКИРОВАНО В ЭТОМ ЗАПУСКЕ (недостаточно признаков рекламы; это не гарантия легитимности) ---")
         for i, (d, s) in enumerate(sorted(final_clean_log.items()), 1): 
-            log_lines.append(f"{i:02d}. [OK] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']})")
+            log_lines.append(f"{i:02d}. [OK] {d:<40} {fmt_scores(s)}")
 
     with open(LOG_FILE, "w", encoding="utf-8") as f: 
         f.write("\n".join(log_lines))
