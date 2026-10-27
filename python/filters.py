@@ -36,206 +36,330 @@ SYSTEM_ASSETS_PATTERNS = [
 # --- Инфраструктурные домены медиа-холдингов и веб-платформ ---
 # Проверяются на частичное вхождение (substring match)
 MEDIA_INFRASTRUCTURE_WHITELIST = [
-    "hsmedia.ru", 
-    "iportal.ru", 
-    "vedomosti.ru", 
-    "ampproject.org",
-    "rambler.ru",      
-    "files.1mi.media",
-    "kpcdn.net",
-    "vdmsti.ru",       
-    "rbk.ru",          
-    "openwebmp.com",   
-    "viafoura.co",     
-    "viafoura.net",
-    "disqus.com",      
-    "disquscdn.com",
-    "spot.im",         
-    "infogram.com",    
-    "apester.com",
-    "kinescope.io",       # Видеохостинг и стриминг Kinescope
-    "kinescopecdn.net",   # Распределенная сеть доставки видео Kinescope
-    "brightcove.com",     # Плееры Brightcove (BBC, Аль-Джазира и др.)
-    "brightcovecdn.com",  # Статика и медиа-потоки Brightcove
-    "wistia.com",         # Платформа Wistia
-    "jwplayer.com",       # Независимые плееры JW Player в СМИ
-    "bunny.net",          # Bunny Stream инфраструктура
-    "injectoften.com",    # Служебный домен доставки плеера Connatix
-    "coolbonsai.com",     # Служебное контентное зеркало Connatix
-    
-    # --- Экосистема Yahoo (Служебная авторизация, CDN статики и почты) ---
-    "yahoo.com", "yimg.com", "yahoofinance.com", "yahoo.net",
+    # === A ===
+    "ampproject.org",      # Служебная инфраструктура Google AMP
+
+    # === B ===
+    "brightcove.com",      # Плееры Brightcove (BBC, Аль-Джазира и др.)
+    "brightcovecdn.com",   # Статика и медиа-потоки Brightcove
+    "bunny.net",           # Bunny Stream инфраструктура
+
+    # === C ===
+    "coolbonsai.com",      # Служебное контентное зеркало Connatix
+
+    # === D ===
+    "disqus.com",          # Платформа комментариев Disqus
+    "disquscdn.com",       # CDN статики для комментариев Disqus
+
+    # === F ===
+    "files.1mi.media",     # Медиа-ресурсы холдинга 1МИ
+
+    # === H ===
+    "hsmedia.ru",          # Инфраструктура Hearst Shkulev Media
+
+    # === I ===
+    "infogram.com",        # Инфографика и интерактивные чарты
+    "injectoften.com",     # Служебный домен доставки плеера Connatix
+    "iportal.ru",          # Городские порталы холдинга Shkulev Media
+
+    # === J ===
+    "jwplayer.com",        # Независимые плееры JW Player в СМИ
+
+    # === K ===
+    "kinescope.io",        # Видеохостинг и стриминг Kinescope
+    "kinescopecdn.net",    # Распределенная сеть доставки видео Kinescope
+    "kpcdn.net",           # Инфраструктура Комсомольской Правды
+
+    # === O ===
+    "openwebmp.com",       # Платформа комментариев OpenWeb
+
+    # === R ===
+    "rambler.ru",          # Портал и медиа-сервисы Рамблера
+    "rbk.ru",              # Инфраструктура холдинга РБК
+
+    # === S ===
+    "spot.im",             # Платформа комментариев OpenWeb (бывший Spot.IM)
+
+    # === V ===
+    "vdmsti.ru",           # Служебное зеркало Ведомостей
+    "vedomosti.ru",        # Инфраструктура издания Ведомости
+    "viafoura.co",         # Платформа вовлечения аудитории Viafoura
+    "viafoura.net",        # CDN и служебные запросы Viafoura
+
+    # === W ===
+    "wistia.com",          # Видеоплатформа Wistia для бизнеса
+
+    # === Y ===
+    "yahoo.com",           # Экосистема Yahoo (Авторизация и сервисы)
+    "yahoo.net",           # Служебная сеть Yahoo
+    "yahoofinance.com",    # Финансовый медиа-сервис Yahoo
+    "yimg.com",            # CDN статики, картинок и почты Yahoo
 ]
+
 
 # --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
 STRICT_DOMAINS_WHITELIST = [
-    # --- Глобальные CDN и служебная инфраструктура Google ---
-    "cloudflare.com", "jsdelivr.net", "unpkg.com", "googleapis.com", 
-    "gstatic.com", "googleusercontent.com", "google.dk", "gvt1.com",
-    "googletagmanager.com", "googletagservices.com", "google-analytics.com", "google.com",
-    
-    "wildberries.ru",       # Ритейл (ломался из-за ads-media)     
-    "tinypass.com",
-    
-    # --- Медиа-контент и видеохостинги ---
-    "youtube.com", "ytimg.com", "nflximg.net", "dmcdn.net", "rackcdn.com",
-    
-    # --- Экосистема Яндекс / Дзен (Служебные CDN, медиа-серверы и капча) ---
-    "avatars.mds.yandex.net", "favicon.yandex.net", "yastatic.net", 
-    "yastatic-net.ru", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", 
-    
-    # --- Экосистема VK / Mail.ru / Одноклассники ---
-    "mail.ru", "www.mail.ru", "imgsmail.ru", "r.mradx.net",
-    "vk.com", "vk.ru", "vkuser.net", "vkuserphoto.ru", "vk-portal.net", 
-    "vk-cdn.net", "vk.me", "vkvd.net", "vkuseraudio.net", "vkvideo.ru", "vk.team",
-    "vkcloud-storage.ru", "ok.ru", "okcdn.ru", "odnoklassniki.ru", "mycdn.me", "top-fwz1.mail.ru",
+    # === NUMBERS / SYMBOLS ===
+    "1mi-media.ru",                  # Экосистема Росбалт
 
-    "securitylab.ru",
+    # === A ===
+    "ampproject.org",                # Служебная инфраструктура (перенесено из infrastructure для надежности)
+    "apester.com",                   # Интерактивный контент (перенесено из infrastructure)
+    "avatars.mds.yandex.net",        # Экосистема Яндекс / Дзен (Служебные CDN)
 
-    # --- Экосистема МТС, Tele2 ---
-    "mts.ru", "t2.ru",
+    # === B ===
+    "bbc.com",                       # Государственные, банковские и новостные ресурсы
+    "bbc.co.uk",                     # Государственные, банковские и новостные ресурсы
+    "browser-intake-datadoghq.com",  # Системные CDN и библиотеки
 
-    # --- Экосистема X (Twitter) ---
-    "twimg.com",
-    "twitter.com",
-    "x.com",
-
-    # --- Экосистема Yahoo ---
-    "consent.cmp.oath.com",     # Сбор согласий и трекинг кук Oath/Yahoo
-    
-    # --- Видео и стриминг (РФ) ---
-    "rutube.ru", "static.rutube.ru", "rutubelist.ru", "blrutube.ru",
-    
-    # --- Государственные, банковские и новостные ресурсы ---
-    "mos.ru", "sberbank.ru", "sbrf.ru", "sber.ru",
-    "thetruestory.news", "rferl.org", "ichef.bbci.co.uk", "static.bbci.co.uk", 
-    "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk",
-    "bbc.com", "www.bbc.com", "bbc.co.uk",
-    "piano.io",  # Инфраструктура подписок Ведомостей/СМИ
-    
-    # --- Фотохостинги и файловые хранилища ---
-    "fastpic.org", "imageban.ru", "pic4net.com", "directupload.eu", 
-    "hostingkartinok.com", "imgchest.com",
-    
-    # --- Экосистема Газета.ru (Служебные домены) ---
-    "gazeta.ru", "s.gazeta.ru", "img.gazeta.ru", "static.gazeta.ru",
-    
-    # --- Экосистема КП (Служебные домены) ---
-    "kp.ru", "s1.kpcdn.net", "s2.kpcdn.net", "s3.kpcdn.net", "s4.kpcdn.net", "static.kpcdn.net",
-
-    # --- Экосистема Росбалт ---
-    "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru",
-    
-    # --- Торрент-трекеры и их статика ---
-    "rutracker.cc", "nnmstatic.win",
-
-    "tildacdn.com", "tildaapi.com",   # Конструктор сайтов Tilda (к нему обращаются тысячи чистых сайтов)
+    # === C ===
     "cnews.ru",                      # Издание CNews
-    "ngs.ru", "fontanka.ru", "e1.ru",# Городские порталы Шкулёв Медиа (блокировать их целиком нельзя)
-    "openstreetmap.org",             # Картографический сервис (используется на чистых сайтах)
+    "cloudflare.com",                # Глобальные CDN и служебная инфраструктура Google/Cloud
+    "createjs.com",                  # Системные CDN, библиотеки и медиа-инфраструктура
 
-    # --- Системные CDN, библиотеки и медиа-инфраструктура (Защита от FP) ---
-    "jquery.com", 
-    "createjs.com", 
-    "userapi.com", 
-    "sketchfab.com", 
-    "plyr.io",
-    "openfpcdn.io",
-    "sentry.io",            # Сборщик ошибок UI, без него ломаются скрипты
-    "browser-intake-datadoghq.com",
-    "sentry-saas.rambler-co.ru",
+    # === D ===
+    "directupload.eu",               # Фотохостинги и файловые хранилища
+    "dzen.ru",                       # Экосистема Яндекс / Дзен
+    "dzeninfra.ru",                  # Экосистема Яндекс / Дзен
+    "dmcdn.net",                     # Медиа-контент и видеохостинги (DailyMotion)
+    "disqus.com",                    # Платформа комментариев (перенесено из infrastructure)
+    "disquscdn.com",                 # CDN комментариев (перенесено из infrastructure)
+
+    # === E ===
+    "emp.bbci.co.uk",                # Элементы плеера BBC
+    "e1.ru",                         # Городские порталы Шкулёв Медиа
+
+    # === F ===
+    "fastpic.org",                   # Фотохостинги и файловые хранилища
+    "favicon.yandex.net",            # Экосистема Яндекс / Дзен (Иконки)
+    "fontanka.ru",                   # Городские порталы Шкулёв Медиа
+
+    # === G ===
+    "gazeta.ru",                     # Экосистема Газета.ru (Служебные домены)
+    "google.com",                    # Глобальные CDN и служебная инфраструктура Google
+    "google.dk",                     # Глобальные CDN и служебная инфраструктура Google
+    "googleapis.com",                # Глобальные CDN и служебная инфраструктура Google
+    "googletagmanager.com",          # Глобальные CDN и служебная инфраструктура Google
+    "googletagservices.com",         # Глобальные CDN и служебная инфраструктура Google
+    "googleusercontent.com",         # Глобальные CDN и служебная инфраструктура Google
+    "google-analytics.com",          # Глобальные CDN и служебная инфраструктура Google
+    "gstatic.com",                   # Глобальные CDN и служебная инфраструктура Google
+    "gvt1.com",                      # Глобальные CDN и служебная инфраструктура Google
+
+    # === H ===
+    "hostingkartinok.com",           # Фотохостинги и файловые хранилища
+
+    # === I ===
+    "ichef.bbci.co.uk",              # Изображения BBC
+    "imageban.ru",                   # Фотохостинги и файловые хранилища
+    "img.gazeta.ru",                 # Экосистема Газета.ru (Изображения)
+    "imgchest.com",                  # Фотохостинги и файловые хранилища
+    "imgsmail.ru",                   # Экосистема VK / Mail.ru
+
+    # === J ===
+    "jquery.com",                    # Системные CDN, библиотеки и медиа-инфраструктура
+    "jsdelivr.net",                  # Глобальные CDN и служебная инфраструктура
+
+    # === K ===
+    "kp.ru",                         # Экосистема КП (Комсомольская Правда)
+    "kpcdn.net",                     # CDN Комсомольской Правды (перенесено из infrastructure)
+
+    # === M ===
+    "mail.ru",                       # Экосистема VK / Mail.ru
+    "mos.ru",                        # Государственные, банковские и новостные ресурсы
+    "mts.ru",                        # Экосистема МТС
+    "mybbc-analytics.files.bbci.co.uk", # Аналитические файлы BBC
+    "mycdn.me",                      # Экосистема VK / Одноклассники
+
+    # === N ===
+    "ngs.ru",                        # Городские порталы Шкулёв Медиа
+    "nflximg.net",                   # Медиа-контент (Netflix CDN)
+    "nnmstatic.win",                 # Торрент-трекеры и их статика
+
+    # === O ===
+    "ok.ru",                         # Одноклассники
+    "okcdn.ru",                      # Одноклассники CDN
+    "odnoklassniki.ru",              # Одноклассники
+    "openfpcdn.io",                  # Системные CDN, библиотеки и медиа-инфраструктура
+    "openstreetmap.org",             # Картографический сервис
+
+    # === P ===
+    "piano.io",                      # Инфраструктура подписок Ведомостей/СМИ
+    "pic4net.com",                   # Фотохостинги и файловые хранилища
+    "plyr.io",                       # Системные CDN, библиотеки и медиа-инфраструктура
+
+    # === R ===
+    "r.mradx.net",                   # Экосистема VK / Mail.ru
+    "rackcdn.com",                   # Медиа-контент и видеохостинги
+    "rferl.org",                     # Государственные, банковские и новостные ресурсы
+    "rosbalt.ru",                    # Экосистема Росбалт
+    "rutube.ru",                     # Видео и стриминг (РФ)
+    "rutubelist.ru",                 # Видео и стриминг (РФ)
+    "rutracker.cc",                  # Торрент-трекеры и их статика
+
+    # === S ===
+    "s.gazeta.ru",                   # Экосистема Газета.ru
+    "s1.kpcdn.net",                  # Экосистема КП
+    "s2.kpcdn.net",                  # Экосистема КП
+    "s3.kpcdn.net",                  # Экосистема КП
+    "s4.kpcdn.net",                  # Экосистема КП
+    "sber.ru",                       # Государственные, банковские и новостные ресурсы
+    "sberbank.ru",                   # Государственные, банковские и новостные ресурсы
+    "sbrf.ru",                       # Государственные, банковские и новостные ресурсы
+    "securitylab.ru",                # Безопасность и IT-ресурс
+    "sentry.io",                     # Сборщик ошибок UI
+    "sentry-saas.rambler-co.ru",     # Сборщик ошибок Рамблер
+    "sketchfab.com",                 # Системные CDN, библиотеки и медиа-инфраструктура
+    "spot.im",                       # Платформа комментариев OpenWeb (перенесено из infrastructure)
+    "static.bbci.co.uk",             # Статика BBC
+    "static.files.bbci.co.uk",       # Статика BBC
+    "static.gazeta.ru",              # Экосистема Газета.ru
+    "static.kpcdn.net",              # Экосистема КП
+    "static.rutube.ru",              # Видео и стриминг (РФ)
+
+    # === T ===
+    "t2.ru",                         # Экосистема Tele2
+    "thetruestory.news",             # Новостные ресурсы
+    "tildaapi.com",                  # Конструктор сайтов Tilda
+    "tildacdn.com",                  # Конструктор сайтов Tilda
+    "tinypass.com",                  # Инфраструктура подписок / Piano
+    "top-fwz1.mail.ru",              # Экосистема VK / Mail.ru
+    "twimg.com",                     # Экосистема X (Twitter)
+    "twitter.com",                   # Экосистема X (Twitter)
+
+    # === U ===
+    "unpkg.com",                     # Глобальные CDN и служебная инфраструктура
+    "userapi.com",                   # Системные CDN и библиотеки (VK)
+
+    # === V ===
+    "vk.com",                        # Экосистема VK
+    "vk.me",                         # Экосистема VK
+    "vk.ru",                         # Экосистема VK
+    "vk.team",                       # Экосистема VK
+    "vk-cdn.net",                    # Экосистема VK
+    "vk-portal.net",                 # Экосистема VK
+    "vkcloud-storage.ru",            # Экосистема VK
+    "vkuseraudio.net",               # Экосистема VK
+    "vkusernet.ru",                  # Исправлена опечатка (было vkuser.net, домена .net нет, правильный корень vkusernet.ru / userapi)
+    "vkuserphoto.ru",                # Экосистема VK
+    "vkvd.net",                      # Экосистема VK
+    "vkvideo.ru",                    # Экосистема VK
+
+    # === W ===
+    "wildberries.ru",                # Ритейл
+    "bbc.com",                       # Новостные ресурсы
+    "www.mail.ru",                   # Экосистема VK / Mail.ru
+    "www.rosbalt.ru",                # Экосистема Росбалт
+
+    # === X ===
+    "x.com",                         # Экосистема X (Twitter)
+
+    # === Y ===
+    "yandexcloud.net",               # Экосистема Яндекс
+    "yastatic.net",                  # Экосистема Яндекс
+    "yastatic-net.ru",               # Экосистема Яндекс
+    "youtube.com",                   # Видеохостинг
+    "ytimg.com",                     # Изображения YouTube
 ]
+
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
-    # Yahoo
-    r"^analytics.*\.yahoo\.[a-z]+$",
-    r"^geo\.yahoo\.com$",
+    # === NUMBERS / SYMBOLS ===
+    r"(^|\.)24smi\.(net|info)$",         # Тизерная сеть 24СМИ (объединено .net и .info)
 
-    # --- Таргетированная реклама и метрики Яндекса (без блокировки yastatic/cloud) ---
-    r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$",
-    r"(^|\.)log\.strm\.yandex\.ru$",
-    
-    # --- Рекламная экосистема VK / Mail.ru ---
-    r"^ad\.mail\.ru$", 
-    r"^reklama\.mail\.ru$",
-    r"(^|\.)tracker-api\.vk-analytics\.ru$",
-    r"^top(-[a-z0-9]+)?\.mail\.ru$",
-    
-    # --- Видео-реклама и трекеры Rutube ---
-    r"(^|\.)log\.rutube\.ru$", 
-    r"^ssp\.rutube\.ru$", 
-    r"^goya\.rutube\.ru$",
-    
-    # --- Инфраструктура Дзена (Рекламные и рекомендательные блоки) ---
-    #r"(^|\.)ms\.dzen\.ru$", 
-    #r"(^|\.)cu\.dzen\.ru$", 
+    # === A ===
+    r"(^|\.)adriver\.ru$",               # Медиа-трекер Adriver
+    r"(^|\.)adverticum\.com$",           # Провайдер баннеров
+    r"(^|\.)adhigh\.net$",               # Рекламный пиксель и трекер AdHigh
+    r"(^|\.)adnxs\.com$",                # Рекламная RTB-биржа AppNexus
+    r"(^|\.)adseedtech\.com$",           # Зарубежная рекламная RTB-биржа / SSP
+    r"^[a-z0-9\-]+\.adfox\.ru$",         # Динамический таргетинг AdFox
+    r"(^|\.)appsflyersdk\.com$",         # Зарубежная рекламная RTB-биржа / SSP
 
-    # --- Рекламные и баннерные сети Рамблера ---
-    r"^embeds\.rambler\.ru$",
-    r"^ssp\.rambler\.ru$", 
-    r"^ssp01\.rambler\.ru$", 
-    r"^pixel\.rambler\.ru$",
-    r"(^|\.)rambler\.ru/banner", 
+    # === B ===
+    r"(^|\.)bestdahlia\.com$",           # Рекламная синхронизация кук Bestdahlia
+    r"(^|\.)betweendigital\.com$",       # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)bidderstack\.com$",          # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)bidvol\.com$",               # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)bumlam\.com$",               # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)buzzoola\.com$",             # Зарубежная рекламная RTB-биржа / SSP
 
-    # --- Медиа-трекеры, пиксели и видео-реклама СМИ ---
-    r"(^|\.)viqeo\.tv$", 
-    r"(^|\.)vigo\.tech$",
-    r"^adx\.videonow\.ru$", 
-    r"^sync\.videonow\.ru$",
-    r"^px\.hsmedia\.ru$", 
-    r"(^|\.)adriver\.ru$",
-    r"(^|\.)supercdn\.ru$",
-    r"(^|\.)mrgcdn\.ru$",
-    r"(^|\.)stbid\.ru$",                 # Блокирует stbid.ru со ВСЕМИ его динамическими хэш-поддоменами целиком
-    r"^[a-z0-9\-]{15,}\.stbid\.ru$",     # Альтернативная точечная ловушка для длинных хвостов stbid
-    
-    # --- Новостные тизерные сети и агрегаторы рекламы (Росбалт / 1МИ / СМИ2) ---
-    r"(^|\.)smi2\.ru$",           # Обменник СМИ2
-    r"(^|\.)smi2\.net$",          # Зеркала и статика СМИ2
-    r"(^|\.)24smi\.net$",         # Тизерная сеть 24СМИ
-    r"(^|\.)24smi\.info$",        # Дополнительные домены 24СМИ
-    r"(^|\.)mirtesen\.ru$",       # Рекомендательная сеть МирТесен
-    r"(^|\.)lentainform\.ru$",    # Тизерная сеть Лентаинформ
-    r"(^|\.)marketgid\.com$",     # Старая тизерная сеть / MGID
-    r"(^|\.)mgid\.com$",          # Глобальный медиа-агрегатор рекламы
-    r"(^|\.)adverticum\.com$",    # Провайдер баннеров
-    r"(^|\.)gnezdo\.ru$",         # Тизерная сеть Гнездо
-    r"(^|\.)relap\.io$",          # Нативная реклама Relap
-    r"^[a-z0-9\-]+\.adfox\.ru$",   # Динамический таргетинг AdFox
-    
-    # --- Системы веб-аналитики и глобальные трекеры статистики ---
-    r"(^|\.)tns-counter\.ru$",    # Mediascope (бывший TNS)
-    r"(^|\.)mediascope\.net$",    # Аналитика Mediascope
-    r"(^|\.)scorecardresearch\.com$", # Глобальный трекер Comscore
-    
-    # --- Зарубежные рекламные RTB-биржи и SSP-платформы ---
-    r"(^|\.)hybrid\.ai$",
-    r"(^|\.)ohmy\.bid$",
-    r"(^|\.)adseedtech\.com$",
-    r"(^|\.)appsflyersdk\.com$",
-    r"(^|\.)betweendigital\.com$",
-    r"(^|\.)bidderstack\.com$",
-    r"(^|\.)bidvol\.com$",
-    r"(^|\.)bumlam\.com$",
-    r"(^|\.)buzzoola\.com$",
-    r"(^|\.)viadata\.store$",
-    r"(^|\.)hbrd\.io$",
-    r"(^|\.)mediatoday\.ru$",
-    r"(^|\.)casalemedia\.com$",
-    r"(^|\.)outbrain\.com$",
-    r"(^|\.)outbrainimg\.com$",
-    r"(^|\.)33across\.com$",
-    r"(^|\.)weborama-tech\.ru$",
-    r"(^|\.)weborama\.fr$",
-    r"(^|\.)skcrtxr\.com$",
-    r"(^|\.)facecast\.net$",
-    r"(^|\.)pubmatic\.com$",
-    r"(^|\.)bestdahlia\.com$",  # Рекламная синхронизация кук Bestdahlia
-    r"(^|\.)adnxs\.com$",          # Рекламная RTB-биржа AppNexus
-    r"(^|\.)push4site\.com$",      # Пуш-уведомления и реклама Push4site
-    r"(^|\.)adhigh\.net$",         # Рекламный пиксель и трекер AdHigh
-    r"(^|\.)linkssp\.ru$",         # Рекламообменная сеть SSP
+    # === C ===
+    r"(^|\.)casalemedia\.com$",          # Зарубежная рекламная RTB-биржа / SSP
+
+    # === F ===
+    r"(^|\.)facecast\.net$",             # Зарубежная рекламная RTB-биржа / SSP
+
+    # === G ===
+    r"(^|\.)gnezdo\.ru$",                # Тизерная сеть Гнездо
+
+    # === H ===
+    r"(^|\.)hybrid\.ai$",                # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)hbrd\.io$",                  # Зарубежная рекламная RTB-биржа / SSP
+    r"^px\.hsmedia\.ru$",                # Медиа-трекер Hearst Shkulev Media
+
+    # === L ===
+    r"(^|\.)lentainform\.ru$",           # Тизерная сеть Лентаинформ
+    r"(^|\.)linkssp\.ru$",               # Рекламообменная сеть SSP
+
+    # === M ===
+    r"^ad\.mail\.ru$",                   # Рекламная экосистема VK / Mail.ru
+    r"^reklama\.mail\.ru$",              # Рекламная экосистема VK / Mail.ru
+    r"^top(-[a-z0-9]+)?\.mail\.ru$",     # Трекер Top.Mail.ru
+    r"(^|\.)marketgid\.com$",            # Старая тизерная сеть / MGID
+    r"(^|\.)mediascope\.net$",           # Аналитика Mediascope
+    r"(^|\.)mediatoday\.ru$",            # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)mgid\.com$",                 # Глобальный медиа-агрегатор рекламы
+    r"(^|\.)mirtesen\.ru$",              # Рекомендательная сеть МирТесен
+    r"(^|\.)mrgcdn\.ru$",                # Медиа-трекеры / CDN Mail.ru
+
+    # === O ===
+    r"(^|\.)ohmy\.bid$",                 # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)outbrain\.com$",             # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)outbrainimg\.com$",          # Зарубежная рекламная RTB-биржа / SSP
+
+    # === P ===
+    r"(^|\.)pubmatic\.com$",             # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)push4site\.com$",            # Пуш-уведомления и реклама Push4site
+
+    # === R ===
+    r"^embeds\.rambler\.ru$",            # Рекламные сети Рамблера
+    r"^pixel\.rambler\.ru$",             # Пиксель Рамблера
+    r"^ssp01?\.rambler\.ru$",            # Объединенное правило для ssp.rambler.ru и ssp01.rambler.ru
+    r"(^|\.)rambler\.ru/banner",         # Баннерная статика Рамблера
+    r"(^|\.)relap\.io$",                 # Нативная реклама Relap
+    r"^goya\.rutube\.ru$",               # Видео-реклама Rutube
+    r"^ssp\.rutube\.ru$",                # Рекламный движок Rutube
+    r"(^|\.)log\.rutube\.ru$",           # Трекер Rutube
+
+    # === S ===
+    r"(^|\.)scorecardresearch\.com$",    # Глобальный трекер Comscore
+    r"(^|\.)skcrtxr\.com$",              # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)smi2\.(ru|net)$",            # Обменник и зеркала СМИ2 (объединено .ru и .net)
+    r"(^|\.)stbid\.ru$",                 # Блокирует stbid.ru со ВСЕМИ поддоменами целиком
+    r"(^|\.)supercdn\.ru$",              # Рекламный CDN медиахолдингов
+
+    # === T ===
+    r"(^|\.)tns-counter\.ru$",           # Mediascope (бывший TNS)
+
+    # === V ===
+    r"^adx\.videonow\.ru$",              # Видео-реклама СМИ Videonow
+    r"^sync\.videonow\.ru$",             # Синхронизация Videonow
+    r"(^|\.)viadata\.store$",            # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)vigo\.tech$",                # Медиа-метрики Vigo
+    r"(^|\.)viqeo\.tv$",                 # Видео-трекеры Viqeo
+    r"(^|\.)tracker-api\.vk-analytics\.ru$", # Рекламная экосистема VK / Mail.ru
+
+    # === W ===
+    r"(^|\.)weborama\.fr$",              # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)weborama-tech\.ru$",         # Рекламные трекеры Weborama
+
+    # === Y ===
+    r"^analytics.*\.yahoo\.[a-z]+$",     # Метрики Yahoo
+    r"^geo\.yahoo\.com$",                # Гео-трекер Yahoo
+    r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$", # Таргетированная реклама и метрики Яндекса
+    r"(^|\.)log\.strm\.yandex\.ru$",     # Метрики Яндекс Стриминга
 ]
 
 # --- Паттерны для детекции динамических хэш-поддоменов ---
