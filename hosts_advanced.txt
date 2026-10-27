@@ -54,7 +54,6 @@
 0.0.0.0 ads.adfox.ru
 0.0.0.0 banners.adfox.ru
 0.0.0.0 adobe.adhaven.com
-0.0.0.0 px.adhigh.net
 0.0.0.0 a.adiam.tech
 0.0.0.0 dsp-cookie.adfarm1.adition.com
 0.0.0.0 sync.adkernel.com
@@ -102,7 +101,6 @@
 0.0.0.0 ads.adtec.ru
 0.0.0.0 ghb.adtelligent.com
 0.0.0.0 sync.adtelligent.com
-0.0.0.0 ep1.adtrafficquality.google
 0.0.0.0 ep2.adtrafficquality.google
 0.0.0.0 static.advcake.ru
 0.0.0.0 pixel.advertising.com
@@ -269,14 +267,11 @@
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 rm-script.dotmetrics.net
-0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 tpt.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 static.doubleclick.net
-0.0.0.0 cm.g.doubleclick.net
-0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
 0.0.0.0 googleads6.g.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
@@ -416,6 +411,8 @@
 0.0.0.0 sync.lunamedia.live
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
+0.0.0.0 ad.mail.ru
+0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 rt.marphezis.com
 0.0.0.0 matilda-design.ru
 0.0.0.0 measureadv.com
@@ -503,7 +500,6 @@
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 scripts.opti-digital.com
 0.0.0.0 analytics.optidigital.com
-0.0.0.0 pbs.optidigital.com
 0.0.0.0 logx.optimizely.com
 0.0.0.0 a4621041136.cdn.optimizely.com
 0.0.0.0 tracker-shr.ortb.net
@@ -546,6 +542,8 @@
 0.0.0.0 match.qtarget.tech
 0.0.0.0 quotiq.ru
 0.0.0.0 s-cs.rmp.rakuten.com
+0.0.0.0 embeds.rambler.ru
+0.0.0.0 pixel.rambler.ru
 0.0.0.0 ssp.rambler.ru
 0.0.0.0 ssp01.rambler.ru
 0.0.0.0 sync.rbstsystems.live
@@ -589,6 +587,7 @@
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 goya.rutube.ru
+0.0.0.0 log.rutube.ru
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 ced-ns.sascdn.com
@@ -608,7 +607,6 @@
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
-0.0.0.0 bs.serving-sys.ru
 0.0.0.0 b.sharethrough.com
 0.0.0.0 match.sharethrough.com
 0.0.0.0 cdn.rendering.sharethrough.com
@@ -632,6 +630,8 @@
 0.0.0.0 tracking-api-use1.smartadserver.com
 0.0.0.0 tracking-api-usw1.smartadserver.com
 0.0.0.0 server.smartytech.io
+0.0.0.0 smi2.net
+0.0.0.0 smi2.ru
 0.0.0.0 static.smi2cdn.ru
 0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 static2.smi2cdn.ru
@@ -644,7 +644,6 @@
 0.0.0.0 iad-2.go.sonobi.com
 0.0.0.0 sync.go.sonobi.com
 0.0.0.0 images.sparrow.ru
-0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
@@ -652,6 +651,7 @@
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
+0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 steelhousemedia.com
 0.0.0.0 ads.stickyadstv.com
@@ -685,6 +685,7 @@
 0.0.0.0 elb.the-ozone-project.com
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
+0.0.0.0 tns-counter.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 www.btd-cmh.tq-tungsten.com
 0.0.0.0 trace-flow.ru
@@ -755,7 +756,10 @@
 0.0.0.0 xdeep.space
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
+0.0.0.0 geo.yahoo.com
+0.0.0.0 mc.yandex.com
 0.0.0.0 an.yandex.ru
+0.0.0.0 mc.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 cs-ob.yellowblue.io
 0.0.0.0 cs-server-s2s.yellowblue.io
