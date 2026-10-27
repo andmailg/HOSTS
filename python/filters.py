@@ -370,8 +370,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)upravel\.com$",                          # Маркетинговый трекер Upravel (Из NEED_REVIEW)
 
     # === V ===
-    r"^adx\.videonow\.ru$",                          # Видео-реклама СМИ Videonow
-    r"^sync\.videonow\.ru$",                         # Синхронизация Videonow
+    r"^(adx|sync)\.videonow\.ru$",
     r"(^|\.)vdo\.ai$",                               # Видео-рекламная сеть Vdo.ai / ortb.vdo (Из NEED_REVIEW)
     r"(^|\.)viadata\.store$",                        # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)vigo\.tech$",                            # Медиа-метрики Vigo
