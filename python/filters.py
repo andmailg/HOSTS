@@ -251,6 +251,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)cxense\.com$",               # Аналитическая и рекомендательная платформа Cxense
 
     # === D ===
+    r"(^|\.)demdex\.net$",               # Платформа управления данными Adobe AudienceManager (dpm.demdex.net)
     r"(^|\.)dynotech\.io$",              # Рекламный шлюз Dynotech RTB (Из NEED_REVIEW)
 
     # === F ===
@@ -298,6 +299,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)optidigital\.com$",          # Дублирующий корень Opti-Digital
     r"(^|\.)optimizely\.com$",           # Платформа A/B тестирования и трекинга Optimizely
     r"(^|\.)openssp\.ru$",               # Рекламный шлюз OpenSSP (asr.openssp.ru)
+    r"^t\.adx\.opera\.com$",             # Рекламный движок встроенной рекламы браузера Opera
+    r"(^|\.)otm-r\.com$",                # Рекламная сеть OTM (sync.dmp.otm-r.com)
     r"(^|\.)outbrain\.com$",             # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)outbrainimg\.com$",          # Зарубежная рекламная RTB-биржа / SSP
 
@@ -326,6 +329,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)skcrtxr\.com$",              # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)smartcallback\.ru$",         # Маркетинговый трекер SmartCallback
     r"(^|\.)smi2\.(ru|net)$",            # Обменник и зеркала СМИ2 (объединено .ru и .net)
+    r"(^|\.)smi2cdn\.ru$",               # Рекламный CDN сети СМИ2
     r"(^|\.)sparrow\.ru$",               # Тизерная и рекламная сеть Sparrow (widget.sparrow.ru)
     r"(^|\.)stbid\.ru$",                 # Блокирует stbid.ru со ВСЕМИ поддоменами целиком
     r"(^|\.)supercdn\.ru$",              # Рекламный CDN медиахолдингов
