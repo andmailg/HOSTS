@@ -33,235 +33,182 @@ SYSTEM_ASSETS_PATTERNS = [
     r"\.hsmedia\.ru", r"\.viqeo\.tv", r"\.bbci\.co\.uk", r"\.bbc\.co\.uk", r"\.thetruestory\.news", r"cdn.*iportal\.ru"
 ]
 
-# --- Инфраструктурные домены медиа-холдингов и веб-платформ ---
-# Проверяются на частичное вхождение (substring match)
-MEDIA_INFRASTRUCTURE_WHITELIST = [
-    # === A ===
-    "ampproject.org",      # Служебная инфраструктура Google AMP
-
-    # === B ===
-    "brightcove.com",      # Плееры Brightcove (BBC, Аль-Джазира и др.)
-    "brightcovecdn.com",   # Статика и медиа-потоки Brightcove
-    "bunny.net",           # Bunny Stream инфраструктура
-
-    # === C ===
-    "coolbonsai.com",      # Служебное контентное зеркало Connatix
-
-    # === D ===
-    "disqus.com",          # Платформа комментариев Disqus
-    "disquscdn.com",       # CDN статики для комментариев Disqus
-
-    # === F ===
-    "files.1mi.media",     # Медиа-ресурсы холдинга 1МИ
-
-    # === H ===
-    "hsmedia.ru",          # Инфраструктура Hearst Shkulev Media
-
-    # === I ===
-    "infogram.com",        # Инфографика и интерактивные чарты
-    "injectoften.com",     # Служебный домен доставки плеера Connatix
-    "iportal.ru",          # Городские порталы холдинга Shkulev Media
-
-    # === J ===
-    "jwplayer.com",        # Независимые плееры JW Player в СМИ
-
-    # === K ===
-    "kinescope.io",        # Видеохостинг и стриминг Kinescope
-    "kinescopecdn.net",    # Распределенная сеть доставки видео Kinescope
-    "kpcdn.net",           # Инфраструктура Комсомольской Правды
-
-    # === O ===
-    "openwebmp.com",       # Платформа комментариев OpenWeb
-
-    # === R ===
-    "rambler.ru",          # Портал и медиа-сервисы Рамблера
-    "rbk.ru",              # Инфраструктура холдинга РБК
-
-    # === S ===
-    "spot.im",             # Платформа комментариев OpenWeb (бывший Spot.IM)
-
-    # === V ===
-    "vdmsti.ru",           # Служебное зеркало Ведомостей
-    "vedomosti.ru",        # Инфраструктура издания Ведомости
-    "viafoura.co",         # Платформа вовлечения аудитории Viafoura
-    "viafoura.net",        # CDN и служебные запросы Viafoura
-
-    # === W ===
-    "wistia.com",          # Видеоплатформа Wistia для бизнеса
-
-    # === Y ===
-    "yahoo.com",           # Экосистема Yahoo (Авторизация и сервисы)
-    "yahoo.net",           # Служебная сеть Yahoo
-    "yahoofinance.com",    # Финансовый медиа-сервис Yahoo
-    "yimg.com",            # CDN статики, картинок и почты Yahoo
-]
-
-
-# --- ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК ДОМЕНОВ (Точное совпадение домена или его корня) ---
+# --- ЕДИНЫЙ БЕЛЫЙ СПИСОК: инфраструктура медиа-холдингов, веб-платформы, CDN и глобальные сервисы ---
+# Совпадение: точный домен или любой его поддомен (см. _in_list).
 STRICT_DOMAINS_WHITELIST = [
-    # === NUMBERS / SYMBOLS ===
-    "1mi-media.ru",                  # Экосистема Росбалт
+    # === 0-9 ===
+    "1mi-media.ru",                     # Экосистема Росбалт
 
     # === A ===
-    "ampproject.org",                # Служебная инфраструктура (перенесено из infrastructure для надежности)
-    "apester.com",                   # Интерактивный контент (перенесено из infrastructure)
-    "avatars.mds.yandex.net",        # Экосистема Яндекс / Дзен (Служебные CDN)
+    "ampproject.org",                   # Служебная инфраструктура Google AMP
+    "apester.com",                      # Интерактивный контент
+    "avatars.mds.yandex.net",           # Экосистема Яндекс / Дзен (Служебные CDN)
 
     # === B ===
-    "bbc.com",                       # Государственные, банковские и новостные ресурсы
-    "bbc.co.uk",                     # Государственные, банковские и новостные ресурсы
-    "browser-intake-datadoghq.com",  # Системные CDN и библиотеки
+    "bbc.co.uk",                        # Государственные, банковские и новостные ресурсы
+    "bbc.com",                          # Государственные, банковские и новостные ресурсы
+    "brightcove.com",                   # Плееры Brightcove (BBC, Аль-Джазира и др.)
+    "brightcovecdn.com",                # Статика и медиа-потоки Brightcove
+    "browser-intake-datadoghq.com",     # Системные CDN и библиотеки
+    "bunny.net",                        # Bunny Stream инфраструктура
 
     # === C ===
-    "cnews.ru",                      # Издание CNews
-    "cloudflare.com",                # Глобальные CDN и служебная инфраструктура Google/Cloud
-    "createjs.com",                  # Системные CDN, библиотеки и медиа-инфраструктура
+    "cloudflare.com",                   # Глобальные CDN и служебная инфраструктура Google/Cloud
+    "cnews.ru",                         # Издание CNews
+    "coolbonsai.com",                   # Служебное контентное зеркало Connatix
+    "createjs.com",                     # Системные CDN, библиотеки и медиа-инфраструктура
 
     # === D ===
-    "directupload.eu",               # Фотохостинги и файловые хранилища
-    "dzen.ru",                       # Экосистема Яндекс / Дзен
-    "dzeninfra.ru",                  # Экосистема Яндекс / Дзен
-    "dmcdn.net",                     # Медиа-контент и видеохостинги (DailyMotion)
-    "disqus.com",                    # Платформа комментариев (перенесено из infrastructure)
-    "disquscdn.com",                 # CDN комментариев (перенесено из infrastructure)
+    "directupload.eu",                  # Фотохостинги и файловые хранилища
+    "disqus.com",                       # Платформа комментариев Disqus
+    "disquscdn.com",                    # CDN статики для комментариев Disqus
+    "dmcdn.net",                        # Медиа-контент и видеохостинги (DailyMotion)
+    "dzen.ru",                          # Экосистема Яндекс / Дзен
+    "dzeninfra.ru",                     # Экосистема Яндекс / Дзен
 
     # === E ===
-    "emp.bbci.co.uk",                # Элементы плеера BBC
-    "e1.ru",                         # Городские порталы Шкулёв Медиа
+    "e1.ru",                            # Городские порталы Шкулёв Медиа
+    "emp.bbci.co.uk",                   # Элементы плеера BBC
 
     # === F ===
-    "fastpic.org",                   # Фотохостинги и файловые хранилища
-    "favicon.yandex.net",            # Экосистема Яндекс / Дзен (Иконки)
-    "fontanka.ru",                   # Городские порталы Шкулёв Медиа
+    "fastpic.org",                      # Фотохостинги и файловые хранилища
+    "favicon.yandex.net",               # Экосистема Яндекс / Дзен (Иконки)
+    "files.1mi.media",                  # Медиа-ресурсы холдинга 1МИ
+    "fontanka.ru",                      # Городские порталы Шкулёв Медиа
 
     # === G ===
-    "gazeta.ru",                     # Экосистема Газета.ru (Служебные домены)
-    "google.com",                    # Глобальные CDN и служебная инфраструктура Google
-    "google.dk",                     # Глобальные CDN и служебная инфраструктура Google
-    "googleapis.com",                # Глобальные CDN и служебная инфраструктура Google
-    "googletagmanager.com",          # Глобальные CDN и служебная инфраструктура Google
-    "googletagservices.com",         # Глобальные CDN и служебная инфраструктура Google
-    "googleusercontent.com",         # Глобальные CDN и служебная инфраструктура Google
-    "google-analytics.com",          # Глобальные CDN и служебная инфраструктура Google
-    "gstatic.com",                   # Глобальные CDN и служебная инфраструктура Google
-    "gvt1.com",                      # Глобальные CDN и служебная инфраструктура Google
+    "gazeta.ru",                        # Экосистема Газета.ru (Служебные домены)
+    "google-analytics.com",             # Глобальные CDN и служебная инфраструктура Google
+    "google.com",                       # Глобальные CDN и служебная инфраструктура Google
+    "google.dk",                        # Глобальные CDN и служебная инфраструктура Google
+    "googleapis.com",                   # Глобальные CDN и служебная инфраструктура Google
+    "googletagmanager.com",             # Глобальные CDN и служебная инфраструктура Google
+    "googletagservices.com",            # Глобальные CDN и служебная инфраструктура Google
+    "googleusercontent.com",            # Глобальные CDN и служебная инфраструктура Google
+    "gstatic.com",                      # Глобальные CDN и служебная инфраструктура Google
+    "gvt1.com",                         # Глобальные CDN и служебная инфраструктура Google
 
     # === H ===
-    "hostingkartinok.com",           # Фотохостинги и файловые хранилища
+    "hostingkartinok.com",              # Фотохостинги и файловые хранилища
+    "hsmedia.ru",                       # Инфраструктура Hearst Shkulev Media
 
     # === I ===
-    "ichef.bbci.co.uk",              # Изображения BBC
-    "imageban.ru",                   # Фотохостинги и файловые хранилища
-    "img.gazeta.ru",                 # Экосистема Газета.ru (Изображения)
-    "imgchest.com",                  # Фотохостинги и файловые хранилища
-    "imgsmail.ru",                   # Экосистема VK / Mail.ru
+    "ichef.bbci.co.uk",                 # Изображения BBC
+    "imageban.ru",                      # Фотохостинги и файловые хранилища
+    "imgchest.com",                     # Фотохостинги и файловые хранилища
+    "imgsmail.ru",                      # Экосистема VK / Mail.ru
+    "infogram.com",                     # Инфографика и интерактивные чарты
+    "injectoften.com",                  # Служебный домен доставки плеера Connatix
+    "iportal.ru",                       # Городские порталы холдинга Shkulev Media
 
     # === J ===
-    "jquery.com",                    # Системные CDN, библиотеки и медиа-инфраструктура
-    "jsdelivr.net",                  # Глобальные CDN и служебная инфраструктура
+    "jquery.com",                       # Системные CDN, библиотеки и медиа-инфраструктура
+    "jsdelivr.net",                     # Глобальные CDN и служебная инфраструктура
+    "jwplayer.com",                     # Независимые плееры JW Player в СМИ
 
     # === K ===
-    "kp.ru",                         # Экосистема КП (Комсомольская Правда)
-    "kpcdn.net",                     # CDN Комсомольской Правды (перенесено из infrastructure)
+    "kinescope.io",                     # Видеохостинг и стриминг Kinescope
+    "kinescopecdn.net",                 # Распределенная сеть доставки видео Kinescope
+    "kp.ru",                            # Экосистема КП (Комсомольская Правда)
+    "kpcdn.net",                        # Инфраструктура Комсомольской Правды
 
     # === M ===
-    "mail.ru",                       # Экосистема VK / Mail.ru
-    "mos.ru",                        # Государственные, банковские и новостные ресурсы
-    "mts.ru",                        # Экосистема МТС
+    "mail.ru",                          # Экосистема VK / Mail.ru
+    "mos.ru",                           # Государственные, банковские и новостные ресурсы
+    "mts.ru",                           # Экосистема МТС
     "mybbc-analytics.files.bbci.co.uk", # Аналитические файлы BBC
-    "mycdn.me",                      # Экосистема VK / Одноклассники
+    "mycdn.me",                         # Экосистема VK / Одноклассники
 
     # === N ===
-    "ngs.ru",                        # Городские порталы Шкулёв Медиа
-    "nflximg.net",                   # Медиа-контент (Netflix CDN)
-    "nnmstatic.win",                 # Торрент-трекеры и их статика
+    "nflximg.net",                      # Медиа-контент (Netflix CDN)
+    "ngs.ru",                           # Городские порталы Шкулёв Медиа
+    "nnmstatic.win",                    # Торрент-трекеры и их статика
 
     # === O ===
-    "ok.ru",                         # Одноклассники
-    "okcdn.ru",                      # Одноклассники CDN
-    "odnoklassniki.ru",              # Одноклассники
-    "openfpcdn.io",                  # Системные CDN, библиотеки и медиа-инфраструктура
-    "openstreetmap.org",             # Картографический сервис
+    "odnoklassniki.ru",                 # Одноклассники
+    "ok.ru",                            # Одноклассники
+    "okcdn.ru",                         # Одноклассники CDN
+    "openfpcdn.io",                     # Системные CDN, библиотеки и медиа-инфраструктура
+    "openstreetmap.org",                # Картографический сервис
+    "openwebmp.com",                    # Платформа комментариев OpenWeb
 
     # === P ===
-    "piano.io",                      # Инфраструктура подписок Ведомостей/СМИ
-    "pic4net.com",                   # Фотохостинги и файловые хранилища
-    "plyr.io",                       # Системные CDN, библиотеки и медиа-инфраструктура
+    "piano.io",                         # Инфраструктура подписок Ведомостей/СМИ
+    "pic4net.com",                      # Фотохостинги и файловые хранилища
+    "plyr.io",                          # Системные CDN, библиотеки и медиа-инфраструктура
 
     # === R ===
-    "r.mradx.net",                   # Экосистема VK / Mail.ru
-    "rackcdn.com",                   # Медиа-контент и видеохостинги
-    "rferl.org",                     # Государственные, банковские и новостные ресурсы
-    "rosbalt.ru",                    # Экосистема Росбалт
-    "rutube.ru",                     # Видео и стриминг (РФ)
-    "rutubelist.ru",                 # Видео и стриминг (РФ)
-    "rutracker.cc",                  # Торрент-трекеры и их статика
+    "r.mradx.net",                      # Экосистема VK / Mail.ru
+    "rackcdn.com",                      # Медиа-контент и видеохостинги
+    "rambler.ru",                       # Портал и медиа-сервисы Рамблера
+    "rbk.ru",                           # Инфраструктура холдинга РБК
+    "rferl.org",                        # Государственные, банковские и новостные ресурсы
+    "rosbalt.ru",                       # Экосистема Росбалт
+    "rutracker.cc",                     # Торрент-трекеры и их статика
+    "rutube.ru",                        # Видео и стриминг (РФ)
+    "rutubelist.ru",                    # Видео и стриминг (РФ)
 
     # === S ===
-    "s.gazeta.ru",                   # Экосистема Газета.ru
-    "s1.kpcdn.net",                  # Экосистема КП
-    "s2.kpcdn.net",                  # Экосистема КП
-    "s3.kpcdn.net",                  # Экосистема КП
-    "s4.kpcdn.net",                  # Экосистема КП
-    "sber.ru",                       # Государственные, банковские и новостные ресурсы
-    "sberbank.ru",                   # Государственные, банковские и новостные ресурсы
-    "sbrf.ru",                       # Государственные, банковские и новостные ресурсы
-    "securitylab.ru",                # Безопасность и IT-ресурс
-    "sentry.io",                     # Сборщик ошибок UI
-    "sentry-saas.rambler-co.ru",     # Сборщик ошибок Рамблер
-    "sketchfab.com",                 # Системные CDN, библиотеки и медиа-инфраструктура
-    "spot.im",                       # Платформа комментариев OpenWeb (перенесено из infrastructure)
-    "static.bbci.co.uk",             # Статика BBC
-    "static.files.bbci.co.uk",       # Статика BBC
-    "static.gazeta.ru",              # Экосистема Газета.ru
-    "static.kpcdn.net",              # Экосистема КП
-    "static.rutube.ru",              # Видео и стриминг (РФ)
+    "sber.ru",                          # Государственные, банковские и новостные ресурсы
+    "sberbank.ru",                      # Государственные, банковские и новостные ресурсы
+    "sbrf.ru",                          # Государственные, банковские и новостные ресурсы
+    "securitylab.ru",                   # Безопасность и IT-ресурс
+    "sentry-saas.rambler-co.ru",        # Сборщик ошибок Рамблер
+    "sentry.io",                        # Сборщик ошибок UI
+    "sketchfab.com",                    # Системные CDN, библиотеки и медиа-инфраструктура
+    "spot.im",                          # Платформа комментариев OpenWeb (бывший Spot.IM)
+    "static.bbci.co.uk",                # Статика BBC
+    "static.files.bbci.co.uk",          # Статика BBC
 
     # === T ===
-    "t2.ru",                         # Экосистема Tele2
-    "thetruestory.news",             # Новостные ресурсы
-    "tildaapi.com",                  # Конструктор сайтов Tilda
-    "tildacdn.com",                  # Конструктор сайтов Tilda
-    "tinypass.com",                  # Инфраструктура подписок / Piano
-    "top-fwz1.mail.ru",              # Экосистема VK / Mail.ru
-    "twimg.com",                     # Экосистема X (Twitter)
-    "twitter.com",                   # Экосистема X (Twitter)
+    "t2.ru",                            # Экосистема Tele2
+    "thetruestory.news",                # Новостные ресурсы
+    "tildaapi.com",                     # Конструктор сайтов Tilda
+    "tildacdn.com",                     # Конструктор сайтов Tilda
+    "tinypass.com",                     # Инфраструктура подписок / Piano
+    "twimg.com",                        # Экосистема X (Twitter)
+    "twitter.com",                      # Экосистема X (Twitter)
 
     # === U ===
-    "unpkg.com",                     # Глобальные CDN и служебная инфраструктура
-    "userapi.com",                   # Системные CDN и библиотеки (VK)
+    "unpkg.com",                        # Глобальные CDN и служебная инфраструктура
+    "userapi.com",                      # Системные CDN и библиотеки (VK)
 
     # === V ===
-    "vk.com",                        # Экосистема VK
-    "vk.me",                         # Экосистема VK
-    "vk.ru",                         # Экосистема VK
-    "vk.team",                       # Экосистема VK
-    "vk-cdn.net",                    # Экосистема VK
-    "vk-portal.net",                 # Экосистема VK
-    "vkcloud-storage.ru",            # Экосистема VK
-    "vkuseraudio.net",               # Экосистема VK
-    "vkusernet.ru",                  # Исправлена опечатка (было vkuser.net, домена .net нет, правильный корень vkusernet.ru / userapi)
-    "vkuserphoto.ru",                # Экосистема VK
-    "vkvd.net",                      # Экосистема VK
-    "vkvideo.ru",                    # Экосистема VK
+    "vdmsti.ru",                        # Служебное зеркало Ведомостей
+    "vedomosti.ru",                     # Инфраструктура издания Ведомости
+    "viafoura.co",                      # Платформа вовлечения аудитории Viafoura
+    "viafoura.net",                     # CDN и служебные запросы Viafoura
+    "vk-cdn.net",                       # Экосистема VK
+    "vk-portal.net",                    # Экосистема VK
+    "vk.com",                           # Экосистема VK
+    "vk.me",                            # Экосистема VK
+    "vk.ru",                            # Экосистема VK
+    "vk.team",                          # Экосистема VK
+    "vkcloud-storage.ru",               # Экосистема VK
+    "vkuseraudio.net",                  # Экосистема VK
+    "vkusernet.ru",                     # Исправлена опечатка (было vkuser.net, домена .net нет, правильный корень vkusernet.ru / userapi)
+    "vkuserphoto.ru",                   # Экосистема VK
+    "vkvd.net",                         # Экосистема VK
+    "vkvideo.ru",                       # Экосистема VK
 
     # === W ===
-    "wildberries.ru",                # Ритейл
-    "bbc.com",                       # Новостные ресурсы
-    "www.mail.ru",                   # Экосистема VK / Mail.ru
-    "www.rosbalt.ru",                # Экосистема Росбалт
+    "wildberries.ru",                   # Ритейл
+    "wistia.com",                       # Видеоплатформа Wistia для бизнеса
 
     # === X ===
-    "x.com",                         # Экосистема X (Twitter)
+    "x.com",                            # Экосистема X (Twitter)
 
     # === Y ===
-    "yandexcloud.net",               # Экосистема Яндекс
-    "yastatic.net",                  # Экосистема Яндекс
-    "yastatic-net.ru",               # Экосистема Яндекс
-    "youtube.com",                   # Видеохостинг
-    "ytimg.com",                     # Изображения YouTube
+    "yahoo.com",                        # Экосистема Yahoo (Авторизация и сервисы)
+    "yahoo.net",                        # Служебная сеть Yahoo
+    "yahoofinance.com",                 # Финансовый медиа-сервис Yahoo
+    "yandexcloud.net",                  # Экосистема Яндекс
+    "yastatic-net.ru",                  # Экосистема Яндекс
+    "yastatic.net",                     # Экосистема Яндекс
+    "yimg.com",                         # CDN статики, картинок и почты Yahoo
+    "youtube.com",                      # Видеохостинг
+    "ytimg.com",                        # Изображения YouTube
 ]
-
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
@@ -422,25 +369,22 @@ def should_block_domain(domain, page_apex=None, score=None):
     if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
         return True
 
-    # 2. ЗАЩИТА СЛУЖЕБНОЙ ИНФРАСТРУКТУРЫ (совпадение домена или его поддомена)
-    if _in_list(domain, MEDIA_INFRASTRUCTURE_WHITELIST):
-        return False
-
-    # 3. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ
+    # 2. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ
     if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
         if "tagmanager" in domain or "analytics" in domain: 
             return True
         return False
 
-    # 4. ГЛОБАЛЬНЫЙ БЕЛЫЙ СПИСОК
-    if domain in STRICT_DOMAINS_WHITELIST or domain_apex in STRICT_DOMAINS_WHITELIST: 
+    # 3. ЕДИНЫЙ БЕЛЫЙ СПИСОК (инфраструктура + глобальный; домен или его поддомен).
+    # Стоит ПОСЛЕ шага 2, чтобы google.com в списке не отключал блок tagmanager/analytics.
+    if _in_list(domain, STRICT_DOMAINS_WHITELIST):
         return False
 
-    # 5. ЗАЩИТА ОТ САМОБЛОКИРОВКИ
+    # 4. ЗАЩИТА ОТ САМОБЛОКИРОВКИ
     if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 
         return False
         
-    # 6. ДИНАМИЧЕСКИЙ СКОРИНГ (С защитой от случайных срабатываний)
+    # 5. ДИНАМИЧЕСКИЙ СКОРИНГ (С защитой от случайных срабатываний)
     if score is not None:
         ad_score = score.get("ad_score", 0)
         clean_score = score.get("clean_score", 0)
