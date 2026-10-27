@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 import aiohttp
 
 from config import HOSTS_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_URLS_PER_SITE, MAX_DEPTH, TARGET_SCAN, get_api_key
-from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site
+from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site, is_hard_blacklisted
 from crawler import run_external_crawler_for_urls
 from urlscan_client import process_single_url
 
@@ -156,10 +156,11 @@ async def main_async():
     valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
     
     # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии 
-    # ВАЖНО: В hosts должны идти ТОЛЬКО те, у кого clean_score == 0 (100% мусор)
+    # ВАЖНО: В hosts идут те, у кого clean_score == 0 (100% мусор) ЛИБО явные попадания в чёрный список
+    # (у ad.mail.ru на странице mail.ru clean_score > 0 из-за бонуса «свой apex», но это реклама)
     current_session_ad = {
         d for d, s in all_new_domains.items() 
-        if should_block_domain(d, score=s) and s.get("clean_score", 0) == 0
+        if should_block_domain(d, score=s) and (s.get("clean_score", 0) == 0 or is_hard_blacklisted(d))
     }
     
     # 4. Объединяем валидные старые и новые жесткие рекламные домены
@@ -175,7 +176,7 @@ async def main_async():
     filtered_ad_domains = {
         d for d in normalized_combined 
         if should_block_domain(d, score=all_new_domains.get(d)) 
-        and all_new_domains.get(d, {}).get("clean_score", 0) == 0
+        and (all_new_domains.get(d, {}).get("clean_score", 0) == 0 or is_hard_blacklisted(d))
     }
     
     # 7. Сортировка и запись в файл hosts
@@ -226,14 +227,14 @@ async def main_async():
         # Сначала выводим чистый рекламный мусор (clean_score == 0)
         log_lines.append("\n[ КАТЕГОРИЯ: СТРОГИЙ БАН (100% РЕКЛАМА / ТРЕКЕРЫ) ]")
         for d, s in sorted(final_ad_log.items()):
-            if s.get("clean_score", 0) == 0:
+            if s.get("clean_score", 0) == 0 or is_hard_blacklisted(d):
                 log_lines.append(f"{ad_counter:02d}. [AD] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']})")
                 ad_counter += 1
                 
         # Затем выводим кандидатов на ручной разбор (clean_score > 0)
         log_lines.append("\n[ КАТЕГОРИЯ: КАНДИДАТЫ НА БЕЛЫЙ СПИСОК (ПЛЕЕРЫ/ВИДЖЕТЫ?) ]")
         for d, s in sorted(final_ad_log.items()):
-            if s.get("clean_score", 0) > 0:
+            if s.get("clean_score", 0) > 0 and not is_hard_blacklisted(d):
                 log_lines.append(f"{review_counter:02d}. [NEED_REVIEW] {d:<40} (clean: {s['clean_score']}, ad: {s['ad_score']}) -> Обрати внимание!")
                 review_counter += 1
             

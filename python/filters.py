@@ -260,6 +260,14 @@ def _in_list(domain, entries):
     """Точное совпадение или поддомен записи (а не подстрока: notyahoo.com != yahoo.com)."""
     return any(domain == e or domain.endswith("." + e) for e in entries)
 
+def is_hard_blacklisted(domain):
+    """True, если домен (или его apex) явно попадает под STRICT_SUBDOMAINS_BLACKLIST_PATTERNS.
+    Такие домены блокируются независимо от скоринга: у ad.mail.ru на странице mail.ru
+    clean_score раздувается бонусом «тот же apex-домен», но это всё равно реклама."""
+    domain = domain.lower().strip()
+    apex = get_apex_domain(domain)
+    return any(pat.search(domain) or (apex and pat.search(apex)) for pat in _COMPILED_BLACKLIST_PATTERNS)
+
 def is_same_site(url, seed_apex):
     """True, если URL принадлежит сайту сида: тот же apex-домен (любой поддомен) или явно связанный из RELATED_APEXES."""
     apex = get_apex_domain(url)
@@ -271,10 +279,9 @@ def should_block_domain(domain, page_apex=None, score=None):
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
     
-    # ВАЖНОЕ ДОПОЛНЕНИЕ: Если сам APEX-домен (например, stbid.ru или casalemedia.com) 
-    # явно совпадает с правилом из черного списка, блокируем БЕЗУСЛОВНО,
-    # не дожидаясь шага динамического скоринга неизвестных доменов.
-    if domain_apex and any(pat.search(domain_apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
+    # Если сам домен или его APEX (например, stbid.ru, casalemedia.com, ad.mail.ru) явно совпадает
+    # с правилом из черного списка, блокируем БЕЗУСЛОВНО, не дожидаясь динамического скоринга.
+    if is_hard_blacklisted(domain):
         return True
         
     # 1. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения для текущего поддомена).
