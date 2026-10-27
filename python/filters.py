@@ -2,14 +2,16 @@ import re
 import os
 import tldextract
 import requests
-from config import TLDEXTRACT_CACHE_DIR
+from config import TLDEXTRACT_CACHE_DIR, RELATED_APEXES
 
 # Отключаем SSL-верификацию для tldextract (корпоративный SSL-сертификат)
-_original_get = requests.get
-def _patched_get(*args, **kwargs):
-    kwargs['verify'] = False
-    return _original_get(*args, **kwargs)
-requests.get = _patched_get
+# Включается только явно: TLDEXTRACT_INSECURE=1 (на GitHub Actions не нужно).
+if os.environ.get("TLDEXTRACT_INSECURE") == "1":
+    _original_get = requests.get
+    def _patched_get(*args, **kwargs):
+        kwargs['verify'] = False
+        return _original_get(*args, **kwargs)
+    requests.get = _patched_get
 
 _extract = tldextract.TLDExtract(cache_dir=str(TLDEXTRACT_CACHE_DIR))
 
@@ -106,7 +108,7 @@ STRICT_DOMAINS_WHITELIST = [
     "thetruestory.news", "rferl.org", "ichef.bbci.co.uk", "static.bbci.co.uk", 
     "mybbc-analytics.files.bbci.co.uk", "static.files.bbci.co.uk", "emp.bbci.co.uk",
     "bbc.com", "www.bbc.com", "bbc.co.uk",
-    "piano.io" # Инфраструктура подписок Ведомостей/СМИ
+    "piano.io",  # Инфраструктура подписок Ведомостей/СМИ
     
     # --- Фотохостинги и файловые хранилища ---
     "fastpic.org", "imageban.ru", "pic4net.com", "directupload.eu", 
@@ -119,7 +121,7 @@ STRICT_DOMAINS_WHITELIST = [
     "kp.ru", "s1.kpcdn.net", "s2.kpcdn.net", "s3.kpcdn.net", "s4.kpcdn.net", "static.kpcdn.net",
 
     # --- Экосистема Росбалт ---
-    "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru", "rosbalt.ru/news",
+    "rosbalt.ru", "www.rosbalt.ru", "1mi-media.ru",
     
     # --- Торрент-трекеры и их статика ---
     "rutracker.cc", "nnmstatic.win",
@@ -254,6 +256,17 @@ def get_apex_domain(url):
     domain = _extract_domain_regex(url)
     return domain if domain else None
 
+def _in_list(domain, entries):
+    """Точное совпадение или поддомен записи (а не подстрока: notyahoo.com != yahoo.com)."""
+    return any(domain == e or domain.endswith("." + e) for e in entries)
+
+def is_same_site(url, seed_apex):
+    """True, если URL принадлежит сайту сида: тот же apex-домен (любой поддомен) или явно связанный из RELATED_APEXES."""
+    apex = get_apex_domain(url)
+    if not apex or not seed_apex:
+        return False
+    return apex == seed_apex or apex in RELATED_APEXES.get(seed_apex, ())
+
 def should_block_domain(domain, page_apex=None, score=None):
     domain = domain.lower().strip()
     domain_apex = get_apex_domain(domain)
@@ -264,13 +277,15 @@ def should_block_domain(domain, page_apex=None, score=None):
     if domain_apex and any(pat.search(domain_apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
         return True
         
-    # 1. ЗАЩИТА СЛУЖЕБНОЙ ИНФРАСТРУКТУРЫ (Мягкий белый список по подстроке)
-    if any(infra_domain in domain for infra_domain in MEDIA_INFRASTRUCTURE_WHITELIST): 
-        return False
-        
-    # 2. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения для текущего поддомена)
+    # 1. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения для текущего поддомена).
+    # Проверяется ДО белого списка, иначе точечные правила (analytics.yahoo.com,
+    # ssp.rambler.ru, px.hsmedia.ru ...) перекрываются белым списком корня.
     if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
         return True
+
+    # 2. ЗАЩИТА СЛУЖЕБНОЙ ИНФРАСТРУКТУРЫ (совпадение домена или его поддомена)
+    if _in_list(domain, MEDIA_INFRASTRUCTURE_WHITELIST):
+        return False
 
     # 3. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ
     if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):

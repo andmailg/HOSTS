@@ -51,13 +51,16 @@ def process_scan_json(raw_data):
         else: clean_domains[domain] = score
     return new_ad_domains, clean_domains
 
-async def submit_url_to_scan(target_url, api_key, session):
+async def submit_url_to_scan(target_url, api_key, session, _retries=3):
     headers = {"Content-Type": "application/json", "User-Agent": USER_AGENT, "x-api-key": api_key}
     try:
         async with session.post(URLSCAN_SCAN, headers=headers, json={"url": target_url, "visibility": "public"}, timeout=aiohttp.ClientTimeout(total=30), ssl=False) as response:
             if response.status == 429:
+                if _retries <= 0:
+                    print(f"Лимит запросов (429), попытки исчерпаны: {target_url}")
+                    return None
                 await asyncio.sleep(60)
-                return await submit_url_to_scan(target_url, api_key, session)
+                return await submit_url_to_scan(target_url, api_key, session, _retries - 1)
             response.raise_for_status()
             return (await response.json()).get("uuid")
     except Exception as e: print(f"Ошибка отправки URL ({target_url}): {repr(e)}")
@@ -92,13 +95,13 @@ async def process_single_url(target_url, api_key, session, semaphore, hosts_lock
         
         if not scan_data:
             # Если urlscan.io не успел обработать страницу за отведенный таймаут
-            print(f"[{target_url}] Отправка на сканирование... [TIMEOUT] | Ссылка: https://urlscan.io{uuid}/", flush=True)
+            print(f"[{target_url}] Отправка на сканирование... [TIMEOUT] | Ссылка: https://urlscan.io/result/{uuid}/", flush=True)
             async with hosts_lock: 
                 failed_urls.add(target_url)
             return {"status": False, "url": target_url, "uuid": uuid}
             
         # 3. Успешное завершение: парсим домены и выводим статус вместе с постоянной ссылкой
-        print(f"[{target_url}] Отправка на сканирование... [SUCCESS] | Ссылка: https://urlscan.io{uuid}/", flush=True)
+        print(f"[{target_url}] Отправка на сканирование... [SUCCESS] | Ссылка: https://urlscan.io/result/{uuid}/", flush=True)
         
         new_domains, clean_domains = process_scan_json(scan_data)
         async with hosts_lock:

@@ -33,7 +33,7 @@ PAGE_TIMEOUT_MS = 30000
 IGNORED_PATH_PATTERNS = [
     # --- 1. ТЕХНИЧЕСКИЕ РЕСУРСЫ, ФИДЫ И ИГРЫ ---
     r'/(rss|feed|archive|xmlfeeds)',  # Фиды и архивы (включая Пикабу)
-    r'/(search|tag|quiz|games?)[$/\.]', # Поиск, теги, тесты и мини-игры (Лента/Дзен)
+    r'/(search|tag|quiz|games?)($|/|\.)', # Поиск, теги, тесты и мини-игры (Лента/Дзен)
     
     # --- 2. АВТОРИЗАЦИЯ, ЛИЧНЫЕ КАБИНЕТЫ И ПОЧТА ---
     r'/(login|auth|deposit|registration|passport)($|/|\.)', 
@@ -68,6 +68,16 @@ IGNORED_PATH_PATTERNS = [
 ]
 
 
+# Сайты, чьи ссылки считаются «своими» для сида, хотя apex-домен у них другой
+# (раньше это угадывалось подстрокой: "mail.ru" in "sportmail.ru", но так же сработало бы на "notmail.ru").
+RELATED_APEXES = {
+    "mail.ru": ("sportmail.ru",),
+}
+
+# Если предпоследний сегмент пути — один из этих, последний сегмент считается ID статьи, а не рубрикой
+# (Дзен: /a/<id>, /news/show/<id>)
+ARTICLE_PARENT_SEGMENTS = {"a", "show"}
+
 # Предварительная компиляция для ускорения работы регулярных выражений
 _COMPILED_IGNORED_PATHS = [re.compile(pat, re.IGNORECASE) for pat in IGNORED_PATH_PATTERNS]
 
@@ -93,9 +103,12 @@ def is_ignored_path(path: str) -> bool:
     
     if segments:
         last_segment = segments[-1]
-        if len(segments) == 1 and last_segment.isalpha():
-            return True
-        if last_segment.isalpha() and not last_segment.endswith(('.html', '.htm', '.php', '.phtml')):
+        # Рубрика: путь целиком из букв (/politics, /news/economy).
+        # Если где-то в пути есть цифра (дата, ID) или это /a/<id>, /show/<id> — это статья, а не хаб.
+        # isalpha() уже исключает точки, поэтому проверка расширений не нужна.
+        parent = segments[-2] if len(segments) > 1 else ""
+        has_digit = any(ch.isdigit() for ch in path_only)
+        if last_segment.isalpha() and not has_digit and parent not in ARTICLE_PARENT_SEGMENTS:
             return True
         if "currencies" in segments or "currency" in segments:
             if len(last_segment) <= 4:

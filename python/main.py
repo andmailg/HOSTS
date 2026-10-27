@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 import aiohttp
 
 from config import HOSTS_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_URLS_PER_SITE, MAX_DEPTH, TARGET_SCAN, get_api_key
-from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain
+from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site
 from crawler import run_external_crawler_for_urls
 from urlscan_client import process_single_url
 
@@ -37,7 +37,7 @@ async def main_async():
 
     parser = argparse.ArgumentParser(description="URLScan Scanner with SiteOne Crawler Integration")
     parser.add_argument("--crawl", action="store_true", help="Запустить краулер для углубленного сбора ссылок")
-    parser.add_argument("--max-depth", type=int, default=MAX_DEPTH, help="Глубина краулера для каждого исходного сайта")
+    parser.add_argument("--max-depth", type=int, default=MAX_DEPTH, help="0 — отключить краулер и сканировать только сами сиды; любое другое значение — краулер включён (обход идёт на один уровень, глубина не используется)")
     parser.add_argument("--max-reqs-per-sec", type=int, default=1, help="Лимит запросов краулера в секунду")
     args = parser.parse_args()
 
@@ -83,15 +83,12 @@ async def main_async():
             print(f"Файл '{DEFAULT_URL_FILE}' пуст или отсутствует. Нечего обрабатывать.")
             sys.exit(0)
 
-        is_crawl_active = args.crawl or MAX_DEPTH != 0
+        is_crawl_active = args.crawl or args.max_depth != 0
 
         if is_crawl_active:
-            current_depth = args.max_depth if args.max_depth != 0 else 1
             all_crawled_urls = await run_external_crawler_for_urls(
                 seed_urls, 
-                max_depth=current_depth, 
-                max_reqs=args.max_reqs_per_sec,
-                max_urls_per_seed=MAX_URLS_PER_SITE
+                max_reqs=args.max_reqs_per_sec
             )
             
             # =========================================================================
@@ -106,11 +103,8 @@ async def main_async():
                     continue
 
                 # 1. Отбираем только те ссылки, которые принадлежат этому же apex-домену
-                crawled_for_seed = [u for u in all_crawled_urls if get_apex_domain(u) == seed_apex]
-                
-                # Специфичное исключение для экосистемы Mail.ru (так как у них много поддоменов типа sportmail.ru)
-                if "mail.ru" in seed_apex:
-                    crawled_for_seed = [u for u in all_crawled_urls if "mail.ru" in (get_apex_domain(u) or "")]
+                # (связанные домены вроде sportmail.ru для mail.ru задаются в config.RELATED_APEXES)
+                crawled_for_seed = [u for u in all_crawled_urls if is_same_site(u, seed_apex)]
 
                 # 2. Фильтруем "глубокие" страницы (статьи), отсекая главную страницу и пустые хабы
                 deep_articles = [u for u in crawled_for_seed if urlparse(u).path not in ["", "/"]]
@@ -127,7 +121,7 @@ async def main_async():
                 # Ограничиваем количество подстраниц для одного сайта согласно лимитам из config
                 crawl_relations[seed] = final_urls[:MAX_URLS_PER_SITE]
         else:
-            print("\n[Пул] Краулер отключен (MAX_DEPTH = 0). Будут отправлены только исходные адреса.")
+            print("\n[Пул] Краулер отключен (--max-depth 0). Будут отправлены только исходные адреса.")
             for seed in seed_urls:
                 normalized_seed = seed if seed.startswith(('http://', 'https://')) else f'https://{seed}'
                 crawl_relations[seed] = [normalized_seed]
@@ -208,7 +202,7 @@ async def main_async():
             log_lines.append(f"    ├── {u_idx:02d}. {marker} {sub_url}")
             
             if scan_info["uuid"]:
-                log_lines.append(f"    └── Ссылка: https://urlscan.io/result{scan_info['uuid']}/")
+                log_lines.append(f"    └── Ссылка: https://urlscan.io/result/{scan_info['uuid']}/")
             else:
                 log_lines.append(f"    └── Ссылка: Не отправлялся / Ошибка")
             
