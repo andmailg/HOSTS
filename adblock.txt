@@ -18,6 +18,7 @@
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
 ||t.dsp.abdm.ru^
 ||acint.net^
+||openx-ums.acuityplatform.com^
 ||ums.acuityplatform.com^
 ||ad-delivery.net^
 ||data.ad-score.com^
@@ -25,6 +26,7 @@
 ||profile.ad-tech.ru^
 ||ad4m.at^
 ||adentifi.com^
+||a2.adform.net^
 ||adx.adform.net^
 ||c1.adform.net^
 ||cm.adform.net^
@@ -40,6 +42,9 @@
 ||adlook.online^
 ||a.adlook.tech^
 ||cs.admanmedia.com^
+||gtracenep.admaster.cc^
+||imagesnep.admaster.cc^
+||static.admaster.cc^
 ||admatic.com.tr^
 ||admatic.de^
 ||eu-rtbstack-cm.admixer.net^
@@ -64,6 +69,7 @@
 ||ep1.adtrafficquality.google^
 ||ep2.adtrafficquality.google^
 ||static.advcake.ru^
+||pixel.advertising.com^
 ||cdn.advertronic.io^
 ||aa.agkn.com^
 ||x01.aidata.io^
@@ -84,7 +90,12 @@
 ||cookiesync.axis-marketplace.com^
 ||pbs-yahoo-us.ay.delivery^
 ||wnsrvbjmeprtfrnfx.ay.delivery^
+||adsdkprod.azureedge.net^
+||api.b2c.com^
+||apix.b2c.com^
+||f003.backblazeb2.com^
 ||tracker.ssp.balance-x.com^
+||c.bannerflow.net^
 ||mybbc-analytics.files.bbci.co.uk^
 ||autocontext.begun.ru^
 ||bestdahlia.com^
@@ -100,6 +111,7 @@
 ||c.bing.com^
 ||tr.blismedia.com^
 ||phx.bmtrcs.com^
+||backend.bobid.io^
 ||manifest.prod.boltdns.net^
 ||gym.bonsaidahlia.com^
 ||collector.brandmetrics.com^
@@ -108,8 +120,12 @@
 ||browser-intake-datadoghq.com^
 ||bumlam.com^
 ||buzzoola.com^
+||cs.ssp.cadent.com^
+||dcs.ssp.cadent.com^
+||e1.ssp.cadent.com^
 ||casalemedia.com^
 ||catsnetwork.ru^
+||bucket.cdnwebcloud.com^
 ||api.ceros.com^
 ||assets.ceros.com^
 ||media-s3-us-east-1.ceros.com^
@@ -122,7 +138,9 @@
 ||us.ck-ie.com^
 ||e.clarity.ms^
 ||f.clarity.ms^
+||g.clarity.ms^
 ||h.clarity.ms^
+||k.clarity.ms^
 ||n.clarity.ms^
 ||o.clarity.ms^
 ||scripts.clarity.ms^
@@ -136,6 +154,7 @@
 ||cdn.confiant-integrations.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
+||prebid.cootlogix.com^
 ||prebidsrvr.cootlogix.com^
 ||sync.cootlogix.com^
 ||csync.copper6.com^
@@ -236,6 +255,7 @@
 ||imasdk.googleapis.com^
 ||googlesyndication.com^
 ||www.googletagmanager.com^
+||www.googletagservices.com^
 ||ads.gpm-ssp.ru^
 ||g2.gumgum.com^
 ||rtb.gumgum.com^
@@ -250,7 +270,8 @@
 ||kraken.ignimgs.com^
 ||pg.ignimgs.com^
 ||media-advcycle.imgsmail.ru^
-||js-sec.indexww.com^
+||secure-us.imrworldwide.com^
+||indexww.com^
 ||rb.infox.ru^
 ||rb.infox.sg^
 ||cs.ingage.tech^
@@ -282,7 +303,11 @@
 ||idx.liadm.com^
 ||rp.liadm.com^
 ||ap.lijit.com^
+||bb.lijit.com^
+||cdn.lijit.com^
 ||ce.lijit.com^
+||pxdrop.lijit.com^
+||ruby-n.stg-adv.lijit.com^
 ||linkedin.com^
 ||linkssp.ru^
 ||cs.lkqd.net^
@@ -302,7 +327,10 @@
 ||sync.mathtag.com^
 ||measureadv.com^
 ||media.net^
+||idpix.media6degrees.com^
 ||mediadash.ru^
+||cdn.mediago.io^
+||gtrace.mediago.io^
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
 ||mediatoday.ru^
@@ -310,6 +338,7 @@
 ||mindbox.ru^
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
+||pbs-cs.minutemedia-prebid.com^
 ||ml314.com^
 ||mn-tz.com^
 ||moe.video^
@@ -326,10 +355,12 @@
 ||dmp.mpsuadv.ru^
 ||statika.mpsuadv.ru^
 ||v1.mpsuadv.ru^
+||v2.mpsuadv.ru^
 ||v3.mpsuadv.ru^
 ||v7.mpsuadv.ru^
 ||r.mradx.net^
 ||experiences.mrf.io^
+||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
 ||dsp.mts.ru^
 ||api.a.mts.ru^
@@ -360,8 +391,10 @@
 ||sync.opendsp.ru^
 ||openfpcdn.io^
 ||openssp.ru^
+||cs.openwebmedia.org^
 ||cs.openwebmp.com^
 ||eu-west-1-cs-rtb.openwebmp.com^
+||pbs-cs.openwebmp.com^
 ||us-east-1-cs-rtb.openwebmp.com^
 ||openx.net^
 ||t.adx.opera.com^
@@ -404,6 +437,7 @@
 ||sys.punchmedia.ru^
 ||req.pm2.punchmedia.ru^
 ||push4site.com^
+||cdn.pushwoosh.com^
 ||cm.pxltag.com^
 ||q-bid.ru^
 ||match.qtarget.tech^
@@ -449,6 +483,7 @@
 ||id.rtb.mx^
 ||pic.rtbcdn.ru^
 ||river-3-311.rtbcdn.ru^
+||river-3-374.rtbcdn.ru^
 ||river-4-428.rtbcdn.ru^
 ||t.rtbwave.com^
 ||rubiconproject.com^
@@ -462,7 +497,9 @@
 ||ced-ns.sascdn.com^
 ||sbermarketing.ru^
 ||ext.clickstream.sbrf.ru^
+||srv.scalibur.io^
 ||scorecardresearch.com^
+||cadmus.script.ac^
 ||secretivesponge.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
@@ -474,6 +511,7 @@
 ||public.servenobid.com^
 ||sync.serverbid.com^
 ||bs.serving-sys.ru^
+||setka.news^
 ||match.sharethrough.com^
 ||us4.shb-sync.com^
 ||shopnetic.com^
@@ -531,12 +569,14 @@
 ||elb.the-ozone-project.com^
 ||prebid.the-ozone-project.com^
 ||sync.theagenticx.ai^
+||geo.ads.audio.thisisdax.com^
 ||thrtle.com^
 ||analytics.tiktok.com^
 ||analytics-ipv6.tiktokw.us^
 ||tns-counter.ru^
 ||st.top100.ru^
 ||tracookiepixel.xyz^
+||ads.travelaudience.com^
 ||www.travelpayouts.com^
 ||partners.tremorhub.com^
 ||tru.am^
@@ -574,13 +614,16 @@
 ||cpm.vistarsagency.com^
 ||stats.vk-portal.net^
 ||ok6-2.vkuser.net^
+||vk6-10.vkuser.net^
 ||vk6-13.vkuser.net^
 ||vk6-2.vkuser.net^
 ||vk6-29.vkuser.net^
+||vk6-30.vkuser.net^
 ||vk6-7.vkuser.net^
 ||vk6-9.vkuser.net^
 ||rtb2-useast.voisetech.com^
 ||voxexchange.io^
+||watchfeed.tv^
 ||scripts.webcontentassessor.com^
 ||weborama-tech.ru^
 ||weborama.fr^
@@ -593,7 +636,9 @@
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
 ||geo.yahoo.com^
+||noa.yahoo.com^
 ||pbs.yahoo.com^
+||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
 ||mc.yandex.com^
