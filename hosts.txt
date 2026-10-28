@@ -13,6 +13,8 @@
 0.0.0.0 ssp.24smi.net
 0.0.0.0 2mdn.net
 0.0.0.0 s0.2mdn.net
+0.0.0.0 rr1---sn-oj1gi5-54.c.2mdn.net
+0.0.0.0 rr1---sn-qjp5q5-5q.c.2mdn.net
 0.0.0.0 rr2---sn-p5qlsndk.c.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 33across.com
@@ -110,6 +112,7 @@
 0.0.0.0 tracker.ads-tinyorbit.com
 0.0.0.0 dt.adsafeprotected.com
 0.0.0.0 jsconfig.adsafeprotected.com
+0.0.0.0 pixel.adsafeprotected.com
 0.0.0.0 static.adsafeprotected.com
 0.0.0.0 staticjs.adsafeprotected.com
 0.0.0.0 statistics.adsource.pro
@@ -154,6 +157,7 @@
 0.0.0.0 aax.amazon-adsystem.com
 0.0.0.0 c.amazon-adsystem.com
 0.0.0.0 s.amazon-adsystem.com
+0.0.0.0 tk.amazon-adsystem.com
 0.0.0.0 vfw.amazon-adsystem.com
 0.0.0.0 c.aps.amazon-adsystem.com
 0.0.0.0 client.aps.amazon-adsystem.com
@@ -166,6 +170,7 @@
 0.0.0.0 a.amxrtb.com
 0.0.0.0 player.aniview.com
 0.0.0.0 sync.aniview.com
+0.0.0.0 a.c.appier.net
 0.0.0.0 captive.apple.com
 0.0.0.0 apptracer.ru
 0.0.0.0 sdk-api.apptracer.ru
@@ -200,6 +205,7 @@
 0.0.0.0 match.prod.bidr.io
 0.0.0.0 ssp.bidster.net
 0.0.0.0 bidswitch.net
+0.0.0.0 r.bidswitch.net
 0.0.0.0 x.bidswitch.net
 0.0.0.0 bidvol.com
 0.0.0.0 ssp.bidvol.com
@@ -241,7 +247,6 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
-0.0.0.0 factors.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -302,6 +307,7 @@
 0.0.0.0 graphql.api.dailymotion.com
 0.0.0.0 check.ddos-guard.net
 0.0.0.0 d5p.de17a.com
+0.0.0.0 cdn.debugbear.com
 0.0.0.0 match.deepintent.com
 0.0.0.0 demdex.net
 0.0.0.0 dpm.demdex.net
@@ -316,6 +322,7 @@
 0.0.0.0 casale-match.dotomi.com
 0.0.0.0 dclk-match.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
+0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 bid.g.doubleclick.net
 0.0.0.0 cm.g.doubleclick.net
@@ -329,6 +336,7 @@
 0.0.0.0 rtb0.doubleverify.com
 0.0.0.0 tps-dn-ue1.doubleverify.com
 0.0.0.0 tps.doubleverify.com
+0.0.0.0 tpsc-video-ue.doubleverify.com
 0.0.0.0 vast.doubleverify.com
 0.0.0.0 sync.drift-pixel.ai
 0.0.0.0 sync.driftpixel.live
@@ -472,6 +480,7 @@
 0.0.0.0 krk2.kargo.com
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
+0.0.0.0 assets.kontext.so
 0.0.0.0 bid.kontext.so
 0.0.0.0 cdn.kraeuterhaus.de
 0.0.0.0 cs.krushmedia.com
@@ -512,6 +521,7 @@
 0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
 0.0.0.0 rt.marphezis.com
+0.0.0.0 pixel.mathtag.com
 0.0.0.0 sync.mathtag.com
 0.0.0.0 measureadv.com
 0.0.0.0 media.net
@@ -549,6 +559,7 @@
 0.0.0.0 ib.mookie1.com
 0.0.0.0 stats.mos.ru
 0.0.0.0 px.mountain.com
+0.0.0.0 code.moviead55.ru
 0.0.0.0 identity.mparticle.com
 0.0.0.0 jssdkcdns.mparticle.com
 0.0.0.0 jssdks.mparticle.com
@@ -777,6 +788,7 @@
 0.0.0.0 prebid-server.rubiconproject.com
 0.0.0.0 token.rubiconproject.com
 0.0.0.0 w.rulive.ru
+0.0.0.0 match.rundsp.com
 0.0.0.0 rutarget.ru
 0.0.0.0 adfox-hb-bidder.rutarget.ru
 0.0.0.0 solta-sync.rutarget.ru
@@ -930,6 +942,7 @@
 0.0.0.0 ttwstatic.com
 0.0.0.0 neutral.ttwstatic.com
 0.0.0.0 ad.turn.com
+0.0.0.0 p.tvpixel.com
 0.0.0.0 de.tynt.com
 0.0.0.0 hde.tynt.com
 0.0.0.0 u-login.com
@@ -995,9 +1008,11 @@
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
+0.0.0.0 guce.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
+0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
@@ -1023,8 +1038,6 @@
 0.0.0.0 sync.zentotem.net
 0.0.0.0 www.zeropartyforms.com
 0.0.0.0 asin.ziff.tech
+0.0.0.0 dsar.ziffdavis.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
-0.0.0.0 a.c.appier.net
-0.0.0.0 assets.kontext.so
-0.0.0.0 code.moviead55.ru

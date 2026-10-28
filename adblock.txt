@@ -63,6 +63,7 @@
 ||tracker.ads-tinyorbit.com^
 ||dt.adsafeprotected.com^
 ||jsconfig.adsafeprotected.com^
+||pixel.adsafeprotected.com^
 ||static.adsafeprotected.com^
 ||staticjs.adsafeprotected.com^
 ||statistics.adsource.pro^
@@ -96,6 +97,7 @@
 ||a.amxrtb.com^
 ||player.aniview.com^
 ||sync.aniview.com^
+||a.c.appier.net^
 ||captive.apple.com^
 ||apptracer.ru^
 ||arcspire.io^
@@ -146,7 +148,6 @@
 ||media-s3-us-east-1.ceros.com^
 ||media.ceros.com^
 ||view.ceros.com^
-||factors.championat.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -196,6 +197,7 @@
 ||graphql.api.dailymotion.com^
 ||check.ddos-guard.net^
 ||d5p.de17a.com^
+||cdn.debugbear.com^
 ||match.deepintent.com^
 ||demdex.net^
 ||dmg.digitaltarget.ru^
@@ -208,19 +210,13 @@
 ||casale-match.dotomi.com^
 ||dclk-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
-||ad.doubleclick.net^
-||bid.g.doubleclick.net^
-||cm.g.doubleclick.net^
-||googleads.g.doubleclick.net^
-||googleads4.g.doubleclick.net^
-||pubads.g.doubleclick.net^
-||securepubads.g.doubleclick.net^
-||stats.g.doubleclick.net^
+||doubleclick.net^
 ||cdn.doubleverify.com^
 ||pub.doubleverify.com^
 ||rtb0.doubleverify.com^
 ||tps-dn-ue1.doubleverify.com^
 ||tps.doubleverify.com^
+||tpsc-video-ue.doubleverify.com^
 ||vast.doubleverify.com^
 ||sync.drift-pixel.ai^
 ||sync.driftpixel.live^
@@ -323,6 +319,7 @@
 ||crb.kargo.com^
 ||krk2.kargo.com^
 ||kimberlite.io^
+||assets.kontext.so^
 ||bid.kontext.so^
 ||cdn.kraeuterhaus.de^
 ||cs.krushmedia.com^
@@ -359,6 +356,7 @@
 ||rs.mail.ru^
 ||top-fwz1.mail.ru^
 ||rt.marphezis.com^
+||pixel.mathtag.com^
 ||sync.mathtag.com^
 ||measureadv.com^
 ||media.net^
@@ -384,6 +382,7 @@
 ||ib.mookie1.com^
 ||stats.mos.ru^
 ||px.mountain.com^
+||code.moviead55.ru^
 ||identity.mparticle.com^
 ||jssdkcdns.mparticle.com^
 ||jssdks.mparticle.com^
@@ -545,6 +544,7 @@
 ||t.rtbwave.com^
 ||rubiconproject.com^
 ||w.rulive.ru^
+||match.rundsp.com^
 ||rutarget.ru^
 ||goya.rutube.ru^
 ||log.rutube.ru^
@@ -655,6 +655,7 @@
 ||tt.ttarget.ru^
 ||ttwstatic.com^
 ||ad.turn.com^
+||p.tvpixel.com^
 ||de.tynt.com^
 ||hde.tynt.com^
 ||u-login.com^
@@ -703,6 +704,7 @@
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
 ||geo.yahoo.com^
+||guce.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
@@ -727,5 +729,6 @@
 ||sync.zentotem.net^
 ||www.zeropartyforms.com^
 ||asin.ziff.tech^
+||dsar.ziffdavis.com^
 ||cdn.ziffstatic.com^
 ||pg.ziffstatic.com^
