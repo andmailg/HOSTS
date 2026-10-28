@@ -304,7 +304,7 @@ AD_APEX_BLACKLIST = [
     "adseedtech.com", "adsafeprotected.com", "adspector.io",
     "adsource.pro", "adsp.io", "adsrvr.org", "adtarget.biz",
     "advcake.ru", "adverticum.com", "adfox.ru", "adx.com.ru",
-    "agkn.com", "alcmpn.com", "alfasense.com", "amazon-adsystem.com",
+    "agkn.com", "aidata.io", "alcmpn.com", "alfasense.com", "amazon-adsystem.com",
     "amx1.net", "aniview.com", "appier.net", "appsflyersdk.com", "apptracer.ru",
     "arcspire.io", "axis-marketplace.com",
 
