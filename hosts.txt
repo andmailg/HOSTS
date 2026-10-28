@@ -940,3 +940,7 @@
 0.0.0.0 asin.ziff.tech
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
+0.0.0.0 events.insiad.com
+0.0.0.0 dd.insiad.com
+0.0.0.0 widgets.teads-xo.com
+0.0.0.0 s.srvsynd.com

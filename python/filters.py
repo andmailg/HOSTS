@@ -317,7 +317,7 @@ AD_APEX_BLACKLIST = {
 
     # === I ===
     "imrworldwide.com", "indexww.com", "infolinks.com", "inmobi.com",
-    "iqzone.com",
+    "iqzone.com", "insiad.com",
 
     # === K ===
     "kargo.com", "krushmedia.com", "krxd.net", "kueezrtb.com",
@@ -352,10 +352,10 @@ AD_APEX_BLACKLIST = {
     "sharethrough.com", "silvermob.com", "simpli.fi", "skimresources.com",
     "smartadserver.com", "smilewanted.com", "sonobi.com", "spotxchange.com",
     "springserve.com", "stickyadstv.com", "svk-native.ru", "syncingbridge.com",
-    "sportradarserving.com",
+    "sportradarserving.com", "srvsynd.com",
 
     # === T ===
-    "taboola.com", "targetrtb.com", "teads.tv", "thrtle.com",
+    "taboola.com", "targetrtb.com", "teads.tv", "teads-xo.com","thrtle.com",
     "tracookiepixel.xyz", "travelpayouts.com", "trustedstack.com",
     "trafmag.com", "trustarc.com", "tynt.com", "telecid.ru",
 
