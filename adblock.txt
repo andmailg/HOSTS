@@ -16,6 +16,7 @@
 ||a-mo.net^
 ||id.a-mx.com^
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
+||aaakmnr.com^
 ||t.dsp.abdm.ru^
 ||acint.net^
 ||openx-ums.acuityplatform.com^
@@ -78,6 +79,7 @@
 ||pixel.advertising.com^
 ||cdn.advertronic.io^
 ||cm-mx.advolve.io^
+||afrdtech.com^
 ||aa.agkn.com^
 ||x01.aidata.io^
 ||vod-dash-ww-live.akamaized.net^
@@ -98,6 +100,7 @@
 ||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
+||www.awin1.com^
 ||cookiesync.axis-marketplace.com^
 ||pbs-yahoo-us.ay.delivery^
 ||wnsrvbjmeprtfrnfx.ay.delivery^
@@ -203,6 +206,7 @@
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
 ||casale-match.dotomi.com^
+||dclk-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
 ||ad.doubleclick.net^
 ||bid.g.doubleclick.net^
@@ -249,12 +253,14 @@
 ||px-us-e.floxis.tech^
 ||agen-assets.ftstatic.com^
 ||ajs-assets.ftstatic.com^
+||futalis.de^
 ||futurecdn.net^
 ||sommelier.futurehybrid.tech^
 ||bordeaux-gateway.futureplc.com^
 ||cache.pythia.futureplc.com^
 ||eventsproxy.gargantuan.futureplc.com^
 ||fwmrm.net^
+||trck.fyrst.de^
 ||gamoshi.io^
 ||www.gazeta.press^
 ||adserver.gear-hub.ru^
@@ -283,9 +289,11 @@
 ||meta.hostingradio.ru^
 ||html-load.com^
 ||hybrid.ai^
+||ia.box^
 ||id5-sync.com^
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
+||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
 ||media-advcycle.imgsmail.ru^
 ||secure-us.imrworldwide.com^
@@ -309,13 +317,14 @@
 ||core.iprom.net^
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
-||jitsu.ixbt.site^
 ||ssl.p.jwpcdn.com^
 ||content.jwplatform.com^
 ||jwpsrv.com^
 ||crb.kargo.com^
 ||krk2.kargo.com^
 ||kimberlite.io^
+||bid.kontext.so^
+||cdn.kraeuterhaus.de^
 ||cs.krushmedia.com^
 ||usermatch.krxd.net^
 ||sync.kueez.com^
@@ -353,6 +362,7 @@
 ||sync.mathtag.com^
 ||measureadv.com^
 ||media.net^
+||www.media01.eu^
 ||idpix.media6degrees.com^
 ||mediadash.ru^
 ||cdn.mediago.io^
@@ -396,8 +406,6 @@
 ||static.a.mts.ru^
 ||pmp.mxptint.net^
 ||events.myweb3id.io^
-||zn4.cdn.net.ru^
-||zn5.cdn.net.ru^
 ||new-programmatic.com^
 ||events.newsroom.bi^
 ||icu.newsroom.bi^
@@ -405,7 +413,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -451,6 +458,7 @@
 ||dsp-service.pixad.com.tr^
 ||prebid.pixad.com.tr^
 ||plusoneads.com^
+||trck.postbank.de^
 ||jadserve.postrelease.com^
 ||presage.io^
 ||api.privacy-center.org^
@@ -493,19 +501,27 @@
 ||metrics.rapidedge.io^
 ||sentry.rarus.ru^
 ||sync.rbstsystems.live^
+||embed.reddit.com^
+||pi.reddit.com^
+||w3-reporting.reddit.com^
+||www.redditstatic.com^
 ||hal9000.redintelligence.net^
 ||hal90001.redintelligence.net^
 ||hal900010.redintelligence.net^
+||hal900015.redintelligence.net^
 ||hal900019.redintelligence.net^
+||hal900021.redintelligence.net^
 ||hal900022.redintelligence.net^
 ||hal900025.redintelligence.net^
 ||hal900026.redintelligence.net^
 ||hal900027.redintelligence.net^
 ||hal90003.redintelligence.net^
+||hal900030.redintelligence.net^
 ||hal90005.redintelligence.net^
 ||hal90006.redintelligence.net^
 ||relap.io^
 ||tag.researchnow.com^
+||cdn.retailads.net^
 ||sync.richaudience.com^
 ||mid.rkdms.com^
 ||api.rlcdn.com^
@@ -552,6 +568,7 @@
 ||public.servenobid.com^
 ||sync.serverbid.com^
 ||bs.serving-sys.ru^
+||ds.serving-sys.ru^
 ||setka.news^
 ||match.sharethrough.com^
 ||us4.shb-sync.com^
@@ -580,7 +597,6 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||api-ssp.spot.im^
-||publisher-assets.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
@@ -595,6 +611,7 @@
 ||s.suprion.ru^
 ||widget.svk-native.ru^
 ||syncingbridge.com^
+||sso-forms-prod.t-static.ru^
 ||api.taboola.com^
 ||cdn.taboola.com^
 ||pm-widget.taboola.com^
@@ -604,6 +621,10 @@
 ||tapad.com^
 ||ssp.api.tappx.com^
 ||match.targetrtb.com^
+||as.tbank-online.com^
+||id.tbank-online.com^
+||preidentity.tbank-online.com^
+||id.tbank.ru^
 ||ads.tds.bid^
 ||widgets.teads-xo.com^
 ||at.teads.tv^
@@ -620,6 +641,7 @@
 ||thrtle.com^
 ||analytics.tiktok.com^
 ||analytics-ipv6.tiktokw.us^
+||api-common.tinkoff.ru^
 ||tns-counter.ru^
 ||st.top100.ru^
 ||tracookiepixel.xyz^
@@ -648,6 +670,7 @@
 ||euronewsfr.api.useinsider.com^
 ||a.ussp.io^
 ||r.ussp.io^
+||sdk.ussp.io^
 ||a.utraff.com^
 ||s.uuidksinc.net^
 ||vdo.ai^
@@ -697,7 +720,6 @@
 ||pbs-cs.yellowblue.io^
 ||ad.yieldlab.net^
 ||ads.yieldmo.com^
-||s.yimg.com^
 ||gw-iad-bid.ymmobi.com^
 ||sync-tb.yrxtam.com^
 ||zdbb.net^

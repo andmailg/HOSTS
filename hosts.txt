@@ -13,6 +13,7 @@
 0.0.0.0 ssp.24smi.net
 0.0.0.0 2mdn.net
 0.0.0.0 s0.2mdn.net
+0.0.0.0 rr2---sn-p5qlsndk.c.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 33across.com
 0.0.0.0 cdn-ima.33across.com
@@ -42,6 +43,7 @@
 0.0.0.0 use3-sync.a-mo.net
 0.0.0.0 id.a-mx.com
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
+0.0.0.0 aaakmnr.com
 0.0.0.0 t.dsp.abdm.ru
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
@@ -133,6 +135,7 @@
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
 0.0.0.0 cm-mx.advolve.io
+0.0.0.0 afrdtech.com
 0.0.0.0 aa.agkn.com
 0.0.0.0 x01.aidata.io
 0.0.0.0 vod-dash-ww-live.akamaized.net
@@ -169,6 +172,7 @@
 0.0.0.0 arcspire.io
 0.0.0.0 px.arcspire.io
 0.0.0.0 us1.atlas5.co
+0.0.0.0 www.awin1.com
 0.0.0.0 cookiesync.axis-marketplace.com
 0.0.0.0 pbs-yahoo-us.ay.delivery
 0.0.0.0 wnsrvbjmeprtfrnfx.ay.delivery
@@ -310,6 +314,7 @@
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 casale-match.dotomi.com
+0.0.0.0 dclk-match.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 bid.g.doubleclick.net
@@ -357,6 +362,7 @@
 0.0.0.0 px-us-e.floxis.tech
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
+0.0.0.0 futalis.de
 0.0.0.0 futurecdn.net
 0.0.0.0 airedale.futurecdn.net
 0.0.0.0 bordeaux.futurecdn.net
@@ -373,6 +379,7 @@
 0.0.0.0 eventsproxy.gargantuan.futureplc.com
 0.0.0.0 fwmrm.net
 0.0.0.0 user-sync.fwmrm.net
+0.0.0.0 trck.fyrst.de
 0.0.0.0 gamoshi.io
 0.0.0.0 rtb.gamoshi.io
 0.0.0.0 www.gazeta.press
@@ -423,11 +430,14 @@
 0.0.0.0 fp.hybrid.ai
 0.0.0.0 fpf.hybrid.ai
 0.0.0.0 ssp.hybrid.ai
+0.0.0.0 st.hybrid.ai
+0.0.0.0 ia.box
 0.0.0.0 id5-sync.com
 0.0.0.0 api.id5-sync.com
 0.0.0.0 cdn.id5-sync.com
 0.0.0.0 gurgle.ign.com
 0.0.0.0 kraken.ignimgs.com
+0.0.0.0 assets.ikhnaie.link
 0.0.0.0 assets.ikhnaie.me
 0.0.0.0 media-advcycle.imgsmail.ru
 0.0.0.0 secure-us.imrworldwide.com
@@ -454,14 +464,16 @@
 0.0.0.0 core.iprom.net
 0.0.0.0 cs.iqzone.com
 0.0.0.0 sync.iqzonertb.live
-0.0.0.0 jitsu.ixbt.site
 0.0.0.0 ssl.p.jwpcdn.com
 0.0.0.0 content.jwplatform.com
 0.0.0.0 jwpsrv.com
+0.0.0.0 assets-jpcust.jwpsrv.com
 0.0.0.0 crb.kargo.com
 0.0.0.0 krk2.kargo.com
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
+0.0.0.0 bid.kontext.so
+0.0.0.0 cdn.kraeuterhaus.de
 0.0.0.0 cs.krushmedia.com
 0.0.0.0 usermatch.krxd.net
 0.0.0.0 sync.kueez.com
@@ -508,6 +520,7 @@
 0.0.0.0 cs.media.net
 0.0.0.0 hbx.media.net
 0.0.0.0 prebid.media.net
+0.0.0.0 www.media01.eu
 0.0.0.0 idpix.media6degrees.com
 0.0.0.0 mediadash.ru
 0.0.0.0 analytics.mediadash.ru
@@ -559,8 +572,6 @@
 0.0.0.0 static.a.mts.ru
 0.0.0.0 pmp.mxptint.net
 0.0.0.0 events.myweb3id.io
-0.0.0.0 zn4.cdn.net.ru
-0.0.0.0 zn5.cdn.net.ru
 0.0.0.0 new-programmatic.com
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 events.newsroom.bi
@@ -569,7 +580,6 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -660,6 +670,7 @@
 0.0.0.0 prebid.pixad.com.tr
 0.0.0.0 plusoneads.com
 0.0.0.0 sync.plusoneads.com
+0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 presage.io
 0.0.0.0 ms-cookie-sync.presage.io
@@ -716,19 +727,27 @@
 0.0.0.0 metrics.rapidedge.io
 0.0.0.0 sentry.rarus.ru
 0.0.0.0 sync.rbstsystems.live
+0.0.0.0 embed.reddit.com
+0.0.0.0 pi.reddit.com
+0.0.0.0 w3-reporting.reddit.com
+0.0.0.0 www.redditstatic.com
 0.0.0.0 hal9000.redintelligence.net
 0.0.0.0 hal90001.redintelligence.net
 0.0.0.0 hal900010.redintelligence.net
+0.0.0.0 hal900015.redintelligence.net
 0.0.0.0 hal900019.redintelligence.net
+0.0.0.0 hal900021.redintelligence.net
 0.0.0.0 hal900022.redintelligence.net
 0.0.0.0 hal900025.redintelligence.net
 0.0.0.0 hal900026.redintelligence.net
 0.0.0.0 hal900027.redintelligence.net
 0.0.0.0 hal90003.redintelligence.net
+0.0.0.0 hal900030.redintelligence.net
 0.0.0.0 hal90005.redintelligence.net
 0.0.0.0 hal90006.redintelligence.net
 0.0.0.0 relap.io
 0.0.0.0 tag.researchnow.com
+0.0.0.0 cdn.retailads.net
 0.0.0.0 sync.richaudience.com
 0.0.0.0 mid.rkdms.com
 0.0.0.0 api.rlcdn.com
@@ -792,6 +811,7 @@
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
 0.0.0.0 bs.serving-sys.ru
+0.0.0.0 ds.serving-sys.ru
 0.0.0.0 setka.news
 0.0.0.0 match.sharethrough.com
 0.0.0.0 us4.shb-sync.com
@@ -835,6 +855,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 smi2cdn.ru
+0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
@@ -844,7 +865,6 @@
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 api-ssp.spot.im
-0.0.0.0 publisher-assets.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
@@ -860,6 +880,7 @@
 0.0.0.0 s.suprion.ru
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
+0.0.0.0 sso-forms-prod.t-static.ru
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
 0.0.0.0 pm-widget.taboola.com
@@ -870,6 +891,10 @@
 0.0.0.0 pixel.tapad.com
 0.0.0.0 ssp.api.tappx.com
 0.0.0.0 match.targetrtb.com
+0.0.0.0 as.tbank-online.com
+0.0.0.0 id.tbank-online.com
+0.0.0.0 preidentity.tbank-online.com
+0.0.0.0 id.tbank.ru
 0.0.0.0 ads.tds.bid
 0.0.0.0 widgets.teads-xo.com
 0.0.0.0 at.teads.tv
@@ -887,6 +912,7 @@
 0.0.0.0 thrtle.com
 0.0.0.0 analytics.tiktok.com
 0.0.0.0 analytics-ipv6.tiktokw.us
+0.0.0.0 api-common.tinkoff.ru
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
 0.0.0.0 www.tns-counter.ru
@@ -921,6 +947,7 @@
 0.0.0.0 euronewsfr.api.useinsider.com
 0.0.0.0 a.ussp.io
 0.0.0.0 r.ussp.io
+0.0.0.0 sdk.ussp.io
 0.0.0.0 a.utraff.com
 0.0.0.0 s.uuidksinc.net
 0.0.0.0 vdo.ai
@@ -943,6 +970,7 @@
 0.0.0.0 stats.vk-portal.net
 0.0.0.0 rtb2-useast.voisetech.com
 0.0.0.0 voxexchange.io
+0.0.0.0 cm-ssp.voxexchange.io
 0.0.0.0 watchfeed.tv
 0.0.0.0 scripts.webcontentassessor.com
 0.0.0.0 track.webgains.com
@@ -953,6 +981,7 @@
 0.0.0.0 cstatic-ru-cv.weborama-tech.ru
 0.0.0.0 ctx.weborama-tech.ru
 0.0.0.0 ds-frontend.weborama-tech.ru
+0.0.0.0 wcm.weborama-tech.ru
 0.0.0.0 wf-ru-frontend.weborama-tech.ru
 0.0.0.0 weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
@@ -984,7 +1013,6 @@
 0.0.0.0 ad.yieldlab.net
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
-0.0.0.0 s.yimg.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 sync-tb.yrxtam.com
 0.0.0.0 zdbb.net
