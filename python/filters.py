@@ -75,17 +75,69 @@ def url_is_system_asset(url):
 #    Чёрный список проверяется РАНЬШЕ этого списка.
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
-    "ampproject.org", "apester.com", "avatars.mds.yandex.net", "coolbonsai.com", "brightcove.com",
-    "brightcovecdn.com", "bunny.net", "connatix.com", "cloudflare.com", "createjs.com", "directupload.eu",
-    "disqus.com", "disquscdn.com", "dmcdn.net", "fastpic.org", "favicon.yandex.net", "gstatic.com",
-    "googleapis.com", "googleusercontent.com", "gvt1.com", "hostingkartinok.com", "imageban.ru",
-    "imgchest.com", "infogram.com", "injectoften.com", "jquery.com", "jsdelivr.net", "jwplayer.com", "kinescope.io",
-    "kinescopecdn.net", "nflximg.net", "nnmstatic.win", "openstreetmap.org", "pic4net.com",
-    "plyr.io", "rackcdn.com", "rutubelist.ru", "sentry.io", "sentry-saas.rambler-co.ru",
-    "sketchfab.com", "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com", "unpkg.com",
-    "viafoura.co", "viafoura.net", "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru",
-    "vk-cdn.net", "vkcloud-storage.ru", "vkvd.net", "wistia.com", "yapfiles.ru", "ytimg.com",
-    "yastatic-net.ru", "nnmstatic.win", "rutracker.cc",
+    # === A ===
+    "ampproject.org", "apester.com",
+    
+    # === B ===
+    "brightcove.com", "brightcovecdn.com", "bunny.net",
+    
+    # === C ===
+    "cloudflare.com", "connatix.com", "coolbonsai.com", "createjs.com",
+    
+    # === D ===
+    "directupload.eu", "disqus.com", "disquscdn.com", "dmcdn.net",
+
+    # === E ===
+    "example.com",
+    
+    # === F ===
+    "fastpic.org", "favicon.yandex.net",
+    
+    # === G ===
+    "googleapis.com", "googleusercontent.com", "gstatic.com", "gvt1.com",
+    
+    # === H ===
+    "hostingkartinok.com",
+    
+    # === I ===
+    "imageban.ru", "imgchest.com", "infogram.com", "injectoften.com",
+    
+    # === J ===
+    "jquery.com", "jsdelivr.net", "jwplayer.com",
+    
+    # === K ===
+    "kinescope.io", "kinescopecdn.net",
+    
+    # === N ===
+    "nflximg.net", "nnmstatic.win",
+    
+    # === O ===
+    "openstreetmap.org",
+    
+    # === P ===
+    "pic4net.com", "plyr.io",
+    
+    # === R ===
+    "rackcdn.com", "rutracker.cc", "rutubelist.ru",
+    
+    # === S ===
+    "sentry-saas.rambler-co.ru", "sentry.io", "sketchfab.com",
+    
+    # === T ===
+    "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com",
+    
+    # === U ===
+    "unpkg.com",
+    
+    # === V ===
+    "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
+    "vkuseraudio.net", "vkusernet.ru", "vkuserphoto.ru", "vkvd.net",
+    
+    # === W ===
+    "wistia.com",
+    
+    # === Y ===
+    "yapfiles.ru", "yastatic-net.ru", "ytimg.com", "avatars.mds.yandex.net",
 ]
 
 # =============================================================================
@@ -98,26 +150,130 @@ NEVER_BLOCK_DOMAINS = [
 #    Семейства yandex.* и google.* определяются по apex (см. is_protected).
 # =============================================================================
 PROTECTED_FAMILIES = [
-    # Яндекс / Google помимо yandex.* и google.*
-    "ya.ru", "yastatic.net", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", "youtube.com",
-    # VK / Mail.ru / OK
-    "mail.ru", "imgsmail.ru", "vk.com", "vk.ru", "vk.me", "vk.team", "vk-portal.net", "vkvideo.ru",
-    "userapi.com", "ok.ru", "odnoklassniki.ru", "okcdn.ru", "mycdn.me",
-    # Операторы, банки, госсервисы
-    "mts.ru", "t2.ru", "beeline.ru", "sber.ru", "sberbank.ru", "sbrf.ru", "mos.ru",
-    # Рамблер и холдинги
-    "rambler.ru", "iportal.ru", "hsmedia.ru", "1mi-media.ru", "1mi.media", "kp.ru", "kpcdn.net",
-    "rbk.ru", "rbc.ru", "rutube.ru", "openwebmp.com", "spot.im", "piano.io", "tinypass.com",
-    # Yahoo
-    "yahoo.com", "yahoo.net", "yimg.com", "oath.com", "yahoofinance.com",
-    # Соцсети и крупные пользовательские сайты (корень нужен людям)
-    "twitter.com", "x.com", "facebook.com", "instagram.com", "temu.com", "bing.com",
+    # === B ===
+    "bbc.co.uk",
+    "bbc.com",
+    "bbci.co.uk",
+    "beeline.ru",
+    "bing.com",
+
+    # === C ===
+    "cnews.ru",
+
+    # === D ===
+    "dzen.ru",
+    "dzeninfra.ru",
+
+    # === E ===
+    "e1.ru",
+    "euronews.com",
+
+    # === F ===
+    "facebook.com",
+    "fishki.net",
+    "fontanka.ru",
+
+    # === G ===
+    "gazeta.ru",
+
+    # === H ===
+    "hsmedia.ru",
+
+    # === I ===
+    "ign.com",
+    "imgsmail.ru",
+    "instagram.com",
+    "interfax.ru",
+    "iportal.ru",
+    "ixbt.com",
+    "iz.ru",
+
+    # === K ===
+    "kp.ru",
+    "kpcdn.net",
+
+    # === L ===
+    "lenta.ru",
+
+    # === M ===
+    "mail.ru",
+    "mk.ru",
+    "mos.ru",
+    "mts.ru",
+    "mycdn.me",
+
+    # === N ===
+    "ngs.ru",
+
+    # === O ===
+    "oath.com",
+    "odnoklassniki.ru",
+    "ok.ru",
+    "okcdn.ru",
+    "openwebmp.com",
+
+    # === P ===
+    "piano.io",
+    "pikabu.ru",
+
+    # === R ===
+    "rambler.ru",
+    "rbc.ru",
+    "rbk.ru",
+    "retail.ru",
+    "rferl.org",
+    "rosbalt.ru",
+    "rutube.ru",
+
+    # === S ===
+    "sber.ru",
+    "sberbank.ru",
+    "sbrf.ru",
+    "spot.im",
+
+    # === T ===
+    "t2.ru",
+    "techradar.com",
+    "temu.com",
+    "thetruestory.news",
+    "tinypass.com",
+    "tourdom.ru",
+    "twitter.com",
+
+    # === U ===
+    "userapi.com",
+
+    # === V ===
+    "vdmsti.ru",
+    "vedomosti.ru",
+    "vk.com",
+    "vk.me",
+    "vk.ru",
+    "vk.team",
+    "vk-portal.net",
+    "vkvideo.ru",
+
+    # === W ===
     "wildberries.ru",
-    # Сайты-источники из urls.txt и их инфраструктура
-    "bbc.com", "bbc.co.uk", "bbci.co.uk", "cnews.ru", "e1.ru", "euronews.com", "fishki.net", "fontanka.ru",
-    "gazeta.ru", "ign.com", "interfax.ru", "ixbt.com", "iz.ru", "lenta.ru", "mk.ru",
-    "ngs.ru", "pikabu.ru", "retail.ru", "rosbalt.ru", "techradar.com", "tourdom.ru", "vedomosti.ru",
-    "vdmsti.ru", "yaplakal.com", "yuga.ru", "rferl.org", "thetruestory.news",
+
+    # === X ===
+    "x.com",
+
+    # === Y ===
+    "ya.ru",
+    "yahoo.com",
+    "yahoo.net",
+    "yahoofinance.com",
+    "yandexcloud.net",
+    "yaplakal.com",
+    "yastatic.net",
+    "yimg.com",
+    "youtube.com",
+    "yuga.ru",
+
+    # === Цифры / Прочее ===
+    "1mi.media",
+    "1mi-media.ru",
 ]
 
 # =============================================================================
@@ -125,61 +281,150 @@ PROTECTED_FAMILIES = [
 #    Нужен для сервисов, которые в логе висели как OK из-за малой выборки (1-2 запроса).
 # =============================================================================
 AD_APEX_BLACKLIST = {
-    # Google ad stack (раньше googlesyndication/googletagmanager/google-analytics были в белом списке)
-    "googlesyndication.com", "doubleclick.net", "googleadservices.com", "googletagservices.com",
-    "googletagmanager.com", "google-analytics.com", "adservice.google.com", "googleoptimize.com",
-    # Amazon / Microsoft / Adobe / Meta ad hosts
-    "amazon-adsystem.com", "adsymptotic.com", "bat.bing.com", "c.bing.com", "everesttech.net",
-    "omtrdc.net", "adobedtm.com",
-    # Cloudflare / Datadog / fingerprint-аналитика, раньше в белом списке
-    "cloudflareinsights.com", "browser-intake-datadoghq.com", "openfpcdn.io", "fpjscdn.net",
+    # === A ===
+    "acuityplatform.com", "addthis.com", "adform.net", "adhaven.com",
+    "adition.com", "adkernel.com", "adlook.tech", "admanmedia.com",
+    "admixer.net", "adobedtm.com", "adsafeprotected.com", "adspector.io",
+    "adsource.pro", "advcake.ru", "agkn.com", "amazon-adsystem.com",
+    "amx1.net", "aniview.com", "axis-marketplace.com",
+
+    # === B ===
+    "bat.bing.com", "c.bing.com", "blismedia.com", "brandmetrics.com",
+    "bricks-co.com", "browser-intake-datadoghq.com",
+
+    # === C ===
+    "ck-ie.com", "clickagy.com", "cloudflareinsights.com", "contextweb.com",
+    "cootlogix.com", "criteo.net", "crwdcntrl.net",
+
+    # === D ===
+    "digitaltarget.ru", "dmxleo.com", "dotmetrics.net", "dotomi.com",
+    "doubleclick.net", "doubleverify.com", "dv.tech",
+
+    # === E ===
+    "eskimi.com", "everesttech.net", "exelator.com", "eyeota.net",
+
+    # === F ===
+    "fpjscdn.net", "flashtalking.com",
+
+    # === G ===
+    "giraff.io", "giraff.media", "adservice.google.com",
+    "google-analytics.com", "googleadservices.com", "googleoptimize.com",
+    "googlesyndication.com", "googletagmanager.com", "googletagservices.com",
+    "gumgum.com",
+
+    # === H ===
     "html-load.com",
-    # Видео-реклама и ad-плееры
-    "aniview.com", "smartadserver.com",
-    "stickyadstv.com", "spotxchange.com", "springserve.com", "teads.tv", "undertone.com",
-    # SSP / DSP / DMP / cookie-sync / identity
-    "33across.com", "3lift.com", "tynt.com", "adkernel.com", "admixer.net", "adhaven.com",
-    "adspector.io", "adlook.tech", "adsource.pro", "admanmedia.com", "advcake.ru",
-    "agkn.com", "amx1.net", "axis-marketplace.com", "blismedia.com", "bricks-co.com",
-    "brandmetrics.com", "ck-ie.com", "clickagy.com", "contextweb.com", "cootlogix.com",
-    "crwdcntrl.net", "digitaltarget.ru", "dmxleo.com", "dotomi.com", "doubleverify.com", "dv.tech",
-    "eskimi.com", "exelator.com", "eyeota.net", "giraff.io", "giraff.media", "gumgum.com", "imrworldwide.com",
-    "indexww.com", "infolinks.com", "inmobi.com", "iqzone.com", "kargo.com", "krushmedia.com",
-    "krxd.net", "kueezrtb.com", "liadm.com", "lijit.com", "loopme.me", "marphezis.com",
-    "measureadv.com", "mediagotechnology.com", "mobilefuse.com", "mookie1.com", "myweb3id.io",
-    "nextmillmedia.com", "nodals.io", "omnitagjs.com", "onetag-sys.com", "acuityplatform.com",
-    "perfluence.net", "permutive.app", "permutive.com", "prmutv.co", "postrelease.com",
-    "programmaticx.ai", "punchmedia.ru", "qtarget.tech", "rlcdn.com", "rqtrk.eu", "rtbcdn.ru",
-    "rtbwave.com", "rtactivate.com", "rutarget.ru", "semasio.net", "seedtag.com", "servenobid.com",
-    "sharethrough.com", "silvermob.com", "simpli.fi", "skimresources.com", "smilewanted.com",
-    "sonobi.com", "svk-native.ru", "syncingbridge.com", "targetrtb.com", "thrtle.com",
-    "tracookiepixel.xyz", "travelpayouts.com", "trustedstack.com", "ussp.io", "utraff.com",
-    "uuidksinc.net", "videohead.tech", "vistarsagency.com", "whiteboxdigital.ru", "xoalt.com",
-    "yellowblue.io", "yieldmo.com", "ymmobi.com", "zemanta.com", "zdbb.net", "mradx.net",
-    "rmp.rakuten.com", "addthis.com", "quantserve.com", "taboola.com", "criteo.net",
-    "sascdn.com", "dotmetrics.net", "moatads.com", "adsafeprotected.com", "adform.net", "adition.com", "yandexadexchange.net",
+
+    # === I ===
+    "imrworldwide.com", "indexww.com", "infolinks.com", "inmobi.com",
+    "iqzone.com",
+
+    # === K ===
+    "kargo.com", "krushmedia.com", "krxd.net", "kueezrtb.com",
+
+    # === L ===
+    "liadm.com", "lijit.com", "loopme.me",
+
+    # === M ===
+    "marphezis.com", "measureadv.com", "mediagotechnology.com",
+    "moatads.com", "mobilefuse.com", "mookie1.com", "mradx.net",
+    "myweb3id.io",
+
+    # === N ===
+    "nextmillmedia.com", "nodals.io",
+
+    # === O ===
+    "omnitagjs.com", "omtrdc.net", "onetag-sys.com", "openfpcdn.io",
+
+    # === P ===
+    "perfluence.net", "permutive.app", "permutive.com", "postrelease.com",
+    "prmutv.co", "programmaticx.ai", "punchmedia.ru", "pippio.com",
+
+    # === Q ===
+    "quantserve.com", "qtarget.tech",
+
+    # === R ===
+    "rakuten.com", "rmp.rakuten.com", "rlcdn.com", "rqtrk.eu",
+    "rtactivate.com", "rtbcdn.ru", "rtbwave.com", "rutarget.ru", "rtbwise.com",
+
+    # === S ===
+    "sascdn.com", "seedtag.com", "semasio.net", "servenobid.com",
+    "sharethrough.com", "silvermob.com", "simpli.fi", "skimresources.com",
+    "smartadserver.com", "smilewanted.com", "sonobi.com", "spotxchange.com",
+    "springserve.com", "stickyadstv.com", "svk-native.ru", "syncingbridge.com",
+
+    # === T ===
+    "taboola.com", "targetrtb.com", "teads.tv", "thrtle.com",
+    "tracookiepixel.xyz", "travelpayouts.com", "trustedstack.com",
+
+    # === U ===
+    "undertone.com", "ussp.io", "utraff.com", "uuidksinc.net",
+
+    # === V ===
+    "videohead.tech", "vistarsagency.com",
+
+    # === W ===
+    "whiteboxdigital.ru",
+
+    # === X ===
+    "xoalt.com",
+
+    # === Y ===
+    "yandexadexchange.net", "yellowblue.io", "yieldmo.com", "ymmobi.com",
+
+    # === Z ===
+    "zdbb.net", "zemanta.com",
+
+    # === Цифры / Прочее ===
+    "33across.com", "3lift.com",
 }
 
 # Дополнительные точечные правила для хостов внутри «защищённых» семейств
 # (подмножество рекламной/телеметрической инфраструктуры Яндекса, VK/Mail.ru, МТС, Рамблера, Yahoo и др.)
 EXTRA_BLACKLIST_PATTERNS = [
-    r"(^|\.)a\.mts\.ru$",                              # МТС Реклама: cm.a.mts.ru, api.a.mts.ru, static.a.mts.ru
-    r"^abt\.s3\.yandex\.net$",                         # A/B-тесты Яндекса
-    r"^uaas\.yandex\.ru$",                             # Эксперименты Яндекса
-    r"^privacy-cs\.mail\.ru$",                         # Cookie-sync Mail.ru Group
-    r"^media-(sensor|stat|trend)\.mail\.ru$",          # Счётчики медиа-рекламы Mail.ru
-    r"(^|\.)media-advcycle\.imgsmail\.ru$",
-    r"^(kraken(-[a-z0-9]+)?)\.[a-z0-9.\-]+$",          # kraken.* — рекламная/аналитическая платформа (Рамблер, IGN/Ziff Davis)
-    r"^rcm(-tr|js)?\.rambler\.ru$",                    # Рекомендательные рекламные узлы Рамблера
-    r"^pbs\.yahoo\.com$",                              # Prebid Server Yahoo
+    # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
     r"^imasdk\.googleapis\.com$",                      # Google IMA SDK (видеореклама)
-    r"^pagead\d*\.",                                   # pagead2.* и аналоги
+
+    # === I ===
+    r"(^|\.)media-advcycle\.imgsmail\.ru$",
+
+    # === M ===
+    r"^privacy-cs\.mail\.ru$",                         # Cookie-sync Mail.ru Group
+    r"^media-(sensor|stat|trend)\.mail\.ru$",          # Счётчики медиа-рекламы Mail.ru
+    r"^ad\.mail\.ru$",                                 # Рекламная экосистема VK / Mail.ru
+    r"^reklama\.mail\.ru$",                            # Рекламная экосистема VK / Mail.ru
+    r"^rs\.mail\.ru$",
+    r"^top(-[a-z0-9]+)?\.mail\.ru$",                   # Трекер Top.Mail.ru
+    r"(^|\.)a\.mts\.ru$",                              # МТС Реклама: cm.a.mts.ru, api.a.mts.ru, static.a.mts.ru
+
+    # === O ===
     r"^cs\.openwebmp\.com$",                           # Cookie-sync OpenWeb
-    r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN
-    r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
+
+    # === R ===
+    r"^rcm(-tr|js)?\.rambler\.ru$",                    # Рекомендательные рекламные узлы Рамблера
+    r"^mpx\d*\.rambler\.ru$",
+    r"^sync\.rambler\.ru$",
+
+    # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
+
+    # === T ===
+    r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
+
+    # === V ===
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
+
+    # === Y ===
+    r"^pbs\.yahoo\.com$",                              # Prebid Server Yahoo
+    r"\.ssp\.yahoo\.com$",                             # SSP-платформа Yahoo (Supply-Side Platform)
+    r"^abt\.s3\.yandex\.net$",                         # A/B-тесты Яндекса
+    r"^uaas\.yandex\.ru$",                             # Эксперименты Яндекса
+
+    # === Префиксы ===
+    r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN
+    r"^(kraken(-[a-z0-9]+)?)\.[a-z0-9.\-]+$",          # kraken.* — рекламная/аналитическая платформа (Рамблер, IGN/Ziff Davis)
+    r"^pagead\d*\.",                                   # pagead2.* и аналоги (google.com / pagead)
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
@@ -263,13 +508,10 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)lotus-dsp\.ru$",                         # Рекламная платформа Lotus DSP
 
     # === M ===
-    r"^ad\.mail\.ru$",                               # Рекламная экосистема VK / Mail.ru
-    r"^reklama\.mail\.ru$",                          # Рекламная экосистема VK / Mail.ru
-    r"^rs\.mail\.ru$",
-    r"^top(-[a-z0-9]+)?\.mail\.ru$",                 # Трекер Top.Mail.ru
     r"(^|\.)marketgid\.com$",                        # Старая тизерная сеть / MGID
     r"(^|\.)media\.net$",                            # Рекламная сеть Yahoo/Bing Contextual / cs.media.net (Из NEED_REVIEW)
     r"(^|\.)mediadash\.ru$",                         # Аналитика и трекинг Mediadash
+    r"(^|\.)media6degrees\.com$",                    # трекер компании Media6Degrees (сейчас Dstillery)
     r"(^|\.)mediascope\.net$",                       # Аналитика Mediascope
     r"(^|\.)mediatoday\.ru$",                        # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)mgid\.com$",                             # Глобальный медиа-агрегатор рекламы
