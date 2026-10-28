@@ -352,7 +352,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)sbermarketing\.ru$",                     # Рекламный трекер СберМаркетинг (dmp.sbermarketing.ru)
     r"(^|\.)scorecardresearch\.com$",                # Глобальный трекер Comscore
     r"(^|\.)sitescout\.com$",                        # Мобильная DSP-платформа Centro / pixel-sync (Из NEED_REVIEW)
-        r"(^|\.)skcrtxr\.com$",                          # Зарубежная рекламная RTB-биржа / SSP
+    r"(^|\.)skcrtxr\.com$",                          # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)smartcallback\.ru$",                     # Маркетинговый трекер SmartCallback
     r"(^|\.)smi2\.(ru|net)$",                        # Обменник и зеркала СМИ2 (объединено .ru и .net)
     r"(^|\.)smi2cdn\.ru$",                           # Рекламный CDN сети СМИ2
