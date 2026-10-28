@@ -1025,3 +1025,6 @@
 0.0.0.0 asin.ziff.tech
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
+0.0.0.0 a.c.appier.net
+0.0.0.0 assets.kontext.so
+0.0.0.0 code.moviead55.ru
