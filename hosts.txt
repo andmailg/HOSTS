@@ -50,6 +50,7 @@
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 www.acint.net
+0.0.0.0 track.activemetering.com
 0.0.0.0 openx-ums.acuityplatform.com
 0.0.0.0 ums.acuityplatform.com
 0.0.0.0 ad-delivery.net
@@ -115,6 +116,7 @@
 0.0.0.0 pixel.adsafeprotected.com
 0.0.0.0 static.adsafeprotected.com
 0.0.0.0 staticjs.adsafeprotected.com
+0.0.0.0 bid.adsensei.ai
 0.0.0.0 statistics.adsource.pro
 0.0.0.0 adsp.io
 0.0.0.0 sync.adsp.io
@@ -324,6 +326,7 @@
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
+0.0.0.0 static.doubleclick.net
 0.0.0.0 bid.g.doubleclick.net
 0.0.0.0 cm.g.doubleclick.net
 0.0.0.0 googleads.g.doubleclick.net
@@ -334,6 +337,7 @@
 0.0.0.0 cdn.doubleverify.com
 0.0.0.0 pub.doubleverify.com
 0.0.0.0 rtb0.doubleverify.com
+0.0.0.0 tps-dn-ew1.doubleverify.com
 0.0.0.0 tps-dn-ue1.doubleverify.com
 0.0.0.0 tps.doubleverify.com
 0.0.0.0 tpsc-video-ue.doubleverify.com
@@ -344,6 +348,7 @@
 0.0.0.0 cdn.dv.tech
 0.0.0.0 pub.dv.tech
 0.0.0.0 vtrk.dv.tech
+0.0.0.0 maestro-ew1.tps.dv.tech
 0.0.0.0 maestro-ue1.tps.dv.tech
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 dynotech.io
@@ -443,6 +448,7 @@
 0.0.0.0 id5-sync.com
 0.0.0.0 api.id5-sync.com
 0.0.0.0 cdn.id5-sync.com
+0.0.0.0 cs.ifedata.ru
 0.0.0.0 gurgle.ign.com
 0.0.0.0 kraken.ignimgs.com
 0.0.0.0 assets.ikhnaie.link
@@ -1007,12 +1013,11 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 guce.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
-0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
@@ -1039,5 +1044,6 @@
 0.0.0.0 www.zeropartyforms.com
 0.0.0.0 asin.ziff.tech
 0.0.0.0 dsar.ziffdavis.com
+0.0.0.0 im.ziffdavisinternational.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com

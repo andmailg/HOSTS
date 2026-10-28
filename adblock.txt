@@ -19,6 +19,7 @@
 ||aaakmnr.com^
 ||t.dsp.abdm.ru^
 ||acint.net^
+||track.activemetering.com^
 ||openx-ums.acuityplatform.com^
 ||ums.acuityplatform.com^
 ||ad-delivery.net^
@@ -66,6 +67,7 @@
 ||pixel.adsafeprotected.com^
 ||static.adsafeprotected.com^
 ||staticjs.adsafeprotected.com^
+||bid.adsensei.ai^
 ||statistics.adsource.pro^
 ||adsp.io^
 ||a.adspector.io^
@@ -214,6 +216,7 @@
 ||cdn.doubleverify.com^
 ||pub.doubleverify.com^
 ||rtb0.doubleverify.com^
+||tps-dn-ew1.doubleverify.com^
 ||tps-dn-ue1.doubleverify.com^
 ||tps.doubleverify.com^
 ||tpsc-video-ue.doubleverify.com^
@@ -224,6 +227,7 @@
 ||cdn.dv.tech^
 ||pub.dv.tech^
 ||vtrk.dv.tech^
+||maestro-ew1.tps.dv.tech^
 ||maestro-ue1.tps.dv.tech^
 ||sync.dvgroup.com^
 ||dynotech.io^
@@ -287,6 +291,7 @@
 ||hybrid.ai^
 ||ia.box^
 ||id5-sync.com^
+||cs.ifedata.ru^
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
 ||assets.ikhnaie.link^
@@ -703,8 +708,8 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
-||guce.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
@@ -730,5 +735,6 @@
 ||www.zeropartyforms.com^
 ||asin.ziff.tech^
 ||dsar.ziffdavis.com^
+||im.ziffdavisinternational.com^
 ||cdn.ziffstatic.com^
 ||pg.ziffstatic.com^
