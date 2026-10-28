@@ -76,6 +76,7 @@
 ||adtarget.biz^
 ||s.console.adtarget.com.tr^
 ||ads.adtec.ru^
+||cdn.adtec.ru^
 ||ep1.adtrafficquality.google^
 ||ep2.adtrafficquality.google^
 ||static.advcake.ru^
@@ -85,6 +86,7 @@
 ||afrdtech.com^
 ||aa.agkn.com^
 ||x01.aidata.io^
+||ac.ajur.info^
 ||vod-dash-ww-live.akamaized.net^
 ||vod-thumb-ww-live.akamaized.net^
 ||cdn.al-adtech.com^
@@ -251,6 +253,7 @@
 ||d9.flashtalking.com^
 ||servedby.flashtalking.com^
 ||px-us-e.floxis.tech^
+||analytics.fontanka.ru^
 ||agen-assets.ftstatic.com^
 ||ajs-assets.ftstatic.com^
 ||futalis.de^
@@ -356,7 +359,6 @@
 ||ad.mail.ru^
 ||media-sensor.mail.ru^
 ||media-stat.mail.ru^
-||media-trend.mail.ru^
 ||privacy-cs.mail.ru^
 ||rs.mail.ru^
 ||top-fwz1.mail.ru^
@@ -410,6 +412,8 @@
 ||static.a.mts.ru^
 ||pmp.mxptint.net^
 ||events.myweb3id.io^
+||cdn.nemedia.codes^
+||ep.nemedia.codes^
 ||new-programmatic.com^
 ||events.newsroom.bi^
 ||icu.newsroom.bi^
@@ -417,6 +421,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -473,7 +478,9 @@
 ||prmutv.co^
 ||fei.pro-market.net^
 ||buyer.programmatica.com^
+||minio.programmatica.com^
 ||sync.programmatica.com^
+||vast.programmatica.com^
 ||sync.programmaticx.ai^
 ||pubmatic.com^
 ||cdn.punchmedia.ru^
@@ -551,12 +558,15 @@
 ||w.rulive.ru^
 ||match.rundsp.com^
 ||rutarget.ru^
+||a.rutube.ru^
 ||goya.rutube.ru^
 ||log.rutube.ru^
 ||ssp.rutube.ru^
 ||pixel.mtrcs.samba.tv^
 ||sape.ru^
 ||ced-ns.sascdn.com^
+||cdn-app.sberdevices.ru^
+||outstream.sberdevices.ru^
 ||sbermarketing.ru^
 ||ext.clickstream.sbrf.ru^
 ||srv.scalibur.io^
@@ -614,6 +624,7 @@
 ||worker.sttsmntz.ru^
 ||sr.studiostack.com^
 ||s.suprion.ru^
+||ssp.surfy.space^
 ||widget.svk-native.ru^
 ||syncingbridge.com^
 ||sso-forms-prod.t-static.ru^
@@ -621,6 +632,7 @@
 ||cdn.taboola.com^
 ||pm-widget.taboola.com^
 ||sync.taboola.com^
+||trc-events.taboola.com^
 ||trc.taboola.com^
 ||display.bidder.taboola.com^
 ||tapad.com^
@@ -650,6 +662,7 @@
 ||tns-counter.ru^
 ||st.top100.ru^
 ||tracookiepixel.xyz^
+||traffaret.com^
 ||ads.travelaudience.com^
 ||www.travelpayouts.com^
 ||partners.tremorhub.com^
@@ -692,6 +705,7 @@
 ||stats.vk-portal.net^
 ||rtb2-useast.voisetech.com^
 ||voxexchange.io^
+||ads.vqserve.com^
 ||watchfeed.tv^
 ||scripts.webcontentassessor.com^
 ||track.webgains.com^
@@ -703,6 +717,7 @@
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
+||adv.widdimo.com^
 ||ads-media.wildberries.ru^
 ||ssp.wp.pl^
 ||dc.xoalt.com^

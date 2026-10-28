@@ -134,6 +134,7 @@
 0.0.0.0 prebid.adtarget.biz
 0.0.0.0 s.console.adtarget.com.tr
 0.0.0.0 ads.adtec.ru
+0.0.0.0 cdn.adtec.ru
 0.0.0.0 ep1.adtrafficquality.google
 0.0.0.0 ep2.adtrafficquality.google
 0.0.0.0 static.advcake.ru
@@ -143,6 +144,7 @@
 0.0.0.0 afrdtech.com
 0.0.0.0 aa.agkn.com
 0.0.0.0 x01.aidata.io
+0.0.0.0 ac.ajur.info
 0.0.0.0 vod-dash-ww-live.akamaized.net
 0.0.0.0 vod-thumb-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
@@ -196,6 +198,7 @@
 0.0.0.0 ads.betweendigital.com
 0.0.0.0 cache.betweendigital.com
 0.0.0.0 lbs-eu1.ads.betweendigital.com
+0.0.0.0 lbs-ru1.ads.betweendigital.com
 0.0.0.0 sync.bfmio.com
 0.0.0.0 bidderstack.com
 0.0.0.0 cmr.bidderstack.com
@@ -373,6 +376,7 @@
 0.0.0.0 d9.flashtalking.com
 0.0.0.0 servedby.flashtalking.com
 0.0.0.0 px-us-e.floxis.tech
+0.0.0.0 analytics.fontanka.ru
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
 0.0.0.0 futalis.de
@@ -522,7 +526,6 @@
 0.0.0.0 ad.mail.ru
 0.0.0.0 media-sensor.mail.ru
 0.0.0.0 media-stat.mail.ru
-0.0.0.0 media-trend.mail.ru
 0.0.0.0 privacy-cs.mail.ru
 0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
@@ -589,6 +592,8 @@
 0.0.0.0 static.a.mts.ru
 0.0.0.0 pmp.mxptint.net
 0.0.0.0 events.myweb3id.io
+0.0.0.0 cdn.nemedia.codes
+0.0.0.0 ep.nemedia.codes
 0.0.0.0 new-programmatic.com
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 events.newsroom.bi
@@ -597,6 +602,7 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -700,7 +706,9 @@
 0.0.0.0 prmutv.co
 0.0.0.0 fei.pro-market.net
 0.0.0.0 buyer.programmatica.com
+0.0.0.0 minio.programmatica.com
 0.0.0.0 sync.programmatica.com
+0.0.0.0 vast.programmatica.com
 0.0.0.0 sync.programmaticx.ai
 0.0.0.0 pubmatic.com
 0.0.0.0 ads.pubmatic.com
@@ -800,6 +808,7 @@
 0.0.0.0 solta-sync.rutarget.ru
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
+0.0.0.0 a.rutube.ru
 0.0.0.0 goya.rutube.ru
 0.0.0.0 log.rutube.ru
 0.0.0.0 ssp.rutube.ru
@@ -808,6 +817,8 @@
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
 0.0.0.0 ced-ns.sascdn.com
+0.0.0.0 cdn-app.sberdevices.ru
+0.0.0.0 outstream.sberdevices.ru
 0.0.0.0 sbermarketing.ru
 0.0.0.0 dmp.sbermarketing.ru
 0.0.0.0 ext.clickstream.sbrf.ru
@@ -896,6 +907,7 @@
 0.0.0.0 worker.sttsmntz.ru
 0.0.0.0 sr.studiostack.com
 0.0.0.0 s.suprion.ru
+0.0.0.0 ssp.surfy.space
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
 0.0.0.0 sso-forms-prod.t-static.ru
@@ -903,6 +915,7 @@
 0.0.0.0 cdn.taboola.com
 0.0.0.0 pm-widget.taboola.com
 0.0.0.0 sync.taboola.com
+0.0.0.0 trc-events.taboola.com
 0.0.0.0 trc.taboola.com
 0.0.0.0 display.bidder.taboola.com
 0.0.0.0 tapad.com
@@ -936,6 +949,8 @@
 0.0.0.0 www.tns-counter.ru
 0.0.0.0 st.top100.ru
 0.0.0.0 tracookiepixel.xyz
+0.0.0.0 traffaret.com
+0.0.0.0 cdn.traffaret.com
 0.0.0.0 ads.travelaudience.com
 0.0.0.0 www.travelpayouts.com
 0.0.0.0 partners.tremorhub.com
@@ -972,9 +987,14 @@
 0.0.0.0 vdo.ai
 0.0.0.0 ortb.vdo.ai
 0.0.0.0 viadata.store
+0.0.0.0 bn.viadata.store
 0.0.0.0 hb.viadata.store
+0.0.0.0 l.viadata.store
+0.0.0.0 logs.viadata.store
 0.0.0.0 ru.viadata.store
 0.0.0.0 rucdn.viadata.store
+0.0.0.0 rurtb.viadata.store
+0.0.0.0 tg.viadata.store
 0.0.0.0 beacon.viafoura.io
 0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru
@@ -990,6 +1010,7 @@
 0.0.0.0 rtb2-useast.voisetech.com
 0.0.0.0 voxexchange.io
 0.0.0.0 cm-ssp.voxexchange.io
+0.0.0.0 ads.vqserve.com
 0.0.0.0 watchfeed.tv
 0.0.0.0 scripts.webcontentassessor.com
 0.0.0.0 track.webgains.com
@@ -1008,6 +1029,7 @@
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
 0.0.0.0 tms.dmp.wi-fi.ru
+0.0.0.0 adv.widdimo.com
 0.0.0.0 ads-media.wildberries.ru
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
