@@ -76,7 +76,7 @@ def url_is_system_asset(url):
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
     # === A ===
-    "ampproject.org", "apester.com",
+    "ampproject.org", "apester.com", "media-amazon.com",
     
     # === B ===
     "brightcove.com", "brightcovecdn.com", "bunny.net",
@@ -88,10 +88,10 @@ NEVER_BLOCK_DOMAINS = [
     "directupload.eu", "disqus.com", "disquscdn.com", "dmcdn.net",
 
     # === E ===
-    "example.com",
+    "example.com", "eaglecdn.com",
     
     # === F ===
-    "fastpic.org", "favicon.yandex.net",
+    "fastpic.org",
     
     # === G ===
     "googleapis.com", "googleusercontent.com", "gstatic.com", "gvt1.com",
@@ -101,6 +101,7 @@ NEVER_BLOCK_DOMAINS = [
     
     # === I ===
     "imageban.ru", "imgchest.com", "infogram.com", "injectoften.com",
+    "ixbt.video", "ignimgs.com",
     
     # === J ===
     "jquery.com", "jsdelivr.net", "jwplayer.com",
@@ -112,10 +113,10 @@ NEVER_BLOCK_DOMAINS = [
     "nflximg.net", "nnmstatic.win",
     
     # === O ===
-    "openstreetmap.org",
+    "openstreetmap.org", "api.okcdn.ru",
     
     # === P ===
-    "pic4net.com", "plyr.io",
+    "pic4net.com", "plyr.io", "prodmp.ru",
     
     # === R ===
     "rackcdn.com", "rutracker.cc", "rutubelist.ru",
@@ -132,12 +133,15 @@ NEVER_BLOCK_DOMAINS = [
     # === V ===
     "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
     "vkuseraudio.net", "vkusernet.ru", "vkuserphoto.ru", "vkvd.net",
+    "vkuser.net",
     
     # === W ===
     "wistia.com",
     
     # === Y ===
     "yapfiles.ru", "yastatic-net.ru", "ytimg.com", "avatars.mds.yandex.net",
+    "site.yandex.net", "favicon.yandex.net", "smartcaptcha.yandexcloud.net",
+    "yap.ru",
 ]
 
 # =============================================================================
@@ -175,6 +179,8 @@ PROTECTED_FAMILIES = [
 
     # === G ===
     "gazeta.ru",
+    "google.com",
+    "gear-hub.ru",
 
     # === H ===
     "hsmedia.ru",
@@ -284,18 +290,18 @@ PROTECTED_FAMILIES = [
 # =============================================================================
 AD_APEX_BLACKLIST = [
     # === Цифры / Прочее ===
-    "1dmp.io", "2mdn.net", "24smi.(net|info)", "33across.com",
-    "3lift.com", "4dex.io",
+    "1dmp.io", "2mdn.net", "24smi.net", "24smi.info", "33across.com",
+    "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
     "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
     "ad-delivery.net", "adentifi.com", "adform.net", "adhaven.com",
     "adhigh.net", "adition.com", "adkernel.com", "adlook.online",
-    "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.(com.tr|de)",
-    "admixer.net", "adnxs.com", "adobedtm.com", "adseedtech.com",
-    "adsafeprotected.com", "adspector.io", "adsource.pro", "adsp.io",
-    "adsrvr.org", "adtarget.biz", "advcake.ru", "adverticum.com",
-    "adfox.ru", "adserver.gear-hub.ru", "adservice.google.com", "adx.com.ru",
+    "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.com.tr",
+    "admatic.de", "admixer.net", "adnxs.com", "adobedtm.com",
+    "adseedtech.com", "adsafeprotected.com", "adspector.io",
+    "adsource.pro", "adsp.io", "adsrvr.org", "adtarget.biz",
+    "advcake.ru", "adverticum.com", "adfox.ru", "adx.com.ru",
     "agkn.com", "alcmpn.com", "alfasense.com", "amazon-adsystem.com",
     "amx1.net", "aniview.com", "appsflyersdk.com", "apptracer.ru",
     "arcspire.io", "axis-marketplace.com",
@@ -306,7 +312,7 @@ AD_APEX_BLACKLIST = [
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
 
     # === C ===
-    "c.bing.com", "casalemedia.com", "chartbeat.(net|org)", "ck-ie.com",
+    "c.bing.com", "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
     "clickagy.com", "cloudflareinsights.com", "contextweb.com", "cootlogix.com",
     "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
     "crwdcntrl.net", "cxense.com",
@@ -351,8 +357,8 @@ AD_APEX_BLACKLIST = [
     "myweb3id.io",
 
     # === N ===
-    "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com", "ninthdecimal.com",
-    "nodals.io",
+    "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
+    "ninthdecimal.com", "nodals.io",
 
     # === O ===
     "ohmy.bid", "omnitagjs.com", "omtrdc.net", "onetag-sys.com",
@@ -372,13 +378,13 @@ AD_APEX_BLACKLIST = [
     # === R ===
     "rakuten.com", "relap.io", "rlcdn.com", "rmp.rakuten.com",
     "rqtrk.eu", "rtactivate.com", "rtbcdn.ru", "rtbwave.com",
-    "rtbwise.com", "rubiconproject.com", "rutarget.ru",
+    "rtbwise.com", "rubiconproject.com", "rutarget.ru", "rfihub.com",
 
     # === S ===
     "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
     "semasio.net", "servenobid.com", "sharethrough.com", "silvermob.com",
     "simpli.fi", "sitescout.com", "skimresources.com", "skcrtxr.com",
-    "smartadserver.com", "smartcallback.ru", "smilewanted.com", "smi2.(ru|net)",
+    "smartadserver.com", "smartcallback.ru", "smilewanted.com", "smi2.ru", "smi2.net",
     "smi2cdn.ru", "sonobi.com", "sparrow.ru", "sportradarserving.com",
     "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
     "stickyadstv.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
@@ -420,6 +426,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
     r"^imasdk\.googleapis\.com$",                      # Google IMA SDK (видеореклама)
+    r"^adservice\.google\.com$",
+    r"^adserver.gear-hub.ru$",
 
     # === H ===
     r"^px\.hsmedia\.ru$",                              # Медиа-трекер Hearst Shkulev Media
