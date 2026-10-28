@@ -95,14 +95,13 @@ NEVER_BLOCK_DOMAINS = [
     
     # === G ===
     "googleapis.com", "googleusercontent.com", "gstatic.com", "gvt1.com",
-    "news.google.com", "play.google.com",
     
     # === H ===
     "hostingkartinok.com",
     
     # === I ===
     "imageban.ru", "imgchest.com", "infogram.com", "injectoften.com",
-    "ixbt.video", "ixbt.site", "ignimgs.com", "s3-cdn.iportal.ru",
+    "ignimgs.com",
     
     # === J ===
     "jquery.com", "jsdelivr.net", "jwplayer.com", "justwatch.com",
@@ -111,24 +110,22 @@ NEVER_BLOCK_DOMAINS = [
     "kinescope.io", "kinescopecdn.net",
     
     # === N ===
-    "nflximg.net", "nnmstatic.win", "cdn.net.ru",
+    "nflximg.net", "nnmstatic.win", "net.ru",
     
     # === O ===
-    "openstreetmap.org", "api.okcdn.ru",
+    "openstreetmap.org", "okcdn.ru",
     
     # === P ===
     "pic4net.com", "plyr.io", "prodmp.ru",
     
     # === R ===
-    "rackcdn.com", "rutracker.cc", "rutubelist.ru",
+    "rackcdn.com", "redditmedia.com", "rutracker.cc", "rutubelist.ru",
     
     # === S ===
     "sentry-saas.rambler-co.ru", "sentry.io", "sketchfab.com",
-    "sber.ru",
 
     # === T ===
     "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com",
-    "platform.twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -142,9 +139,7 @@ NEVER_BLOCK_DOMAINS = [
     "wistia.com",
     
     # === Y ===
-    "yapfiles.ru", "yastatic-net.ru", "ytimg.com", "avatars.mds.yandex.net",
-    "site.yandex.net", "favicon.yandex.net", "smartcaptcha.yandexcloud.net",
-    "yap.ru", "yimg.com", "autofill.yandex.ru", "guce.yahoo.com",
+    "yapfiles.ru", "yastatic-net.ru", "ytimg.com", "yap.ru", "yimg.com",
 ]
 
 # =============================================================================
@@ -165,6 +160,7 @@ PROTECTED_FAMILIES = [
     "bing.com",
 
     # === C ===
+    "championat.com",
     "cnews.ru",
 
     # === D ===
@@ -195,6 +191,8 @@ PROTECTED_FAMILIES = [
     "interfax.ru",
     "iportal.ru",
     "ixbt.com",
+    "ixbt.video",
+    "ixbt.site",
     "iz.ru",
 
     # === K ===
@@ -265,6 +263,7 @@ PROTECTED_FAMILIES = [
     "vkvideo.ru",
 
     # === W ===
+    "wi-fi.ru",
     "wildberries.ru",
 
     # === X ===
@@ -277,6 +276,7 @@ PROTECTED_FAMILIES = [
     "yahoofinance.com",
     "yandexcloud.net",
     "yandex.ru",
+    "yandex.net",
     "yaplakal.com",
     "yastatic.net",
     "youtube.com",
@@ -306,7 +306,7 @@ AD_APEX_BLACKLIST = [
     "adsource.pro", "adsp.io", "adsrvr.org", "adtarget.biz",
     "advcake.ru", "adverticum.com", "adfox.ru", "adx.com.ru",
     "agkn.com", "alcmpn.com", "alfasense.com", "amazon-adsystem.com",
-    "amx1.net", "aniview.com", "appsflyersdk.com", "apptracer.ru",
+    "amx1.net", "aniview.com", "appier.net", "appsflyersdk.com", "apptracer.ru",
     "arcspire.io", "axis-marketplace.com",
 
     # === B ===
@@ -345,7 +345,7 @@ AD_APEX_BLACKLIST = [
     "inmobi.com", "insiad.com", "intent.ai", "iqzone.com",
 
     # === K ===
-    "kargo.com", "krushmedia.com", "krxd.net", "kueezrtb.com",
+    "kargo.com", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
 
     # === L ===
     "lentainform.ru", "liadm.com", "lijit.com", "linkssp.ru",
@@ -356,7 +356,7 @@ AD_APEX_BLACKLIST = [
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
     "mediascope.net", "mediatoday.ru", "mgid.com", "mindbox.ru",
     "mirtesen.ru", "ml314.com", "mobilefuse.com", "moatads.com",
-    "moe.video", "mookie1.com", "mpartner.digital", "mrgcdn.ru",
+    "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital", "mrgcdn.ru",
     "myweb3id.io",
 
     # === N ===
