@@ -438,11 +438,10 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)media-advcycle\.imgsmail\.ru$",
 
     # === M ===
-    #r"^(?:ad|reklama|rs|privacy-cs|media-(?:sensor|stat|trend)|top(?:-[a-z0-9]+)?)\.mail\.ru$",
     (   # mail.ru
         r"^(?:"
         r"ad|reklama|rs|privacy-cs|"
-        r"media-(?:sensor|stat|trend)|"
+        r"media-(?:sensor|stat)|"
         r"top(?:-[a-z0-9]+)?"
         r")\.mail\.ru$"
     ),
@@ -453,7 +452,6 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^cs\.openwebmp\.com$",                           # Cookie-sync OpenWeb
 
     # === R ===
-    #r"^(?:embeds|pixel|ssp\d*|api\.vp|cs|vp|imgserve|rcm(?:-tr|-js)?|mpx\d*|sync)\.rambler\.ru$",
     (   # rambler.ru
         r"^(?:"
         r"embeds|pixel|ssp\d*|api\.vp|cs|vp|"
