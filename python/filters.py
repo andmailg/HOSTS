@@ -197,6 +197,8 @@ PROTECTED_FAMILIES = [
 
     # === M ===
     "mail.ru",
+    "media-trend.mail.ru",
+    "mradx.net",
     "mk.ru",
     "mos.ru",
     "mts.ru",
@@ -327,7 +329,7 @@ AD_APEX_BLACKLIST = {
 
     # === M ===
     "marphezis.com", "measureadv.com", "mediagotechnology.com",
-    "moatads.com", "mobilefuse.com", "mookie1.com", "mradx.net",
+    "moatads.com", "mobilefuse.com", "mookie1.com",
     "myweb3id.io", "mediago.io",
 
     # === N ===
