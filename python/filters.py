@@ -218,7 +218,6 @@ PROTECTED_FAMILIES = [
     "oath.com",
     "odnoklassniki.ru",
     "ok.ru",
-    "okcdn.ru",
     "openwebmp.com",
 
     # === P ===
