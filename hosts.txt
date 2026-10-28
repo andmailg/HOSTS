@@ -124,7 +124,6 @@
 0.0.0.0 uid.ssp.bidvol.com
 0.0.0.0 phx.bmtrcs.com
 0.0.0.0 manifest.prod.boltdns.net
-0.0.0.0 gym.bonsaidahlia.com
 0.0.0.0 players.brightcove.net
 0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 bumlam.com

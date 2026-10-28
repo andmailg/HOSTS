@@ -75,7 +75,7 @@ def url_is_system_asset(url):
 #    Чёрный список проверяется РАНЬШЕ этого списка.
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
-    "ampproject.org", "apester.com", "avatars.mds.yandex.net", "brightcove.com",
+    "ampproject.org", "apester.com", "avatars.mds.yandex.net", "coolbonsai.com", "brightcove.com",
     "brightcovecdn.com", "bunny.net", "connatix.com", "cloudflare.com", "createjs.com", "directupload.eu",
     "disqus.com", "disquscdn.com", "dmcdn.net", "fastpic.org", "favicon.yandex.net", "gstatic.com",
     "googleapis.com", "googleusercontent.com", "gvt1.com", "hostingkartinok.com", "imageban.ru",
@@ -135,7 +135,7 @@ AD_APEX_BLACKLIST = {
     "cloudflareinsights.com", "browser-intake-datadoghq.com", "openfpcdn.io", "fpjscdn.net",
     "html-load.com",
     # Видео-реклама и ad-плееры
-    "coolbonsai.com", "aniview.com", "smartadserver.com",
+    "aniview.com", "smartadserver.com",
     "stickyadstv.com", "spotxchange.com", "springserve.com", "teads.tv", "undertone.com",
     # SSP / DSP / DMP / cookie-sync / identity
     "33across.com", "3lift.com", "tynt.com", "adkernel.com", "admixer.net", "adhaven.com",
