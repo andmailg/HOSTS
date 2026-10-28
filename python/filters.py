@@ -143,7 +143,7 @@ AD_APEX_BLACKLIST = {
     "agkn.com", "amx1.net", "axis-marketplace.com", "blismedia.com", "bricks-co.com",
     "brandmetrics.com", "ck-ie.com", "clickagy.com", "contextweb.com", "cootlogix.com",
     "crwdcntrl.net", "digitaltarget.ru", "dmxleo.com", "dotomi.com", "doubleverify.com", "dv.tech",
-    "eskimi.com", "exelator.com", "eyeota.net", "giraff.io", "giraff.media", "gumgum.com",
+    "eskimi.com", "exelator.com", "eyeota.net", "giraff.io", "giraff.media", "gumgum.com", "imrworldwide.com",
     "indexww.com", "infolinks.com", "inmobi.com", "iqzone.com", "kargo.com", "krushmedia.com",
     "krxd.net", "kueezrtb.com", "liadm.com", "lijit.com", "loopme.me", "marphezis.com",
     "measureadv.com", "mediagotechnology.com", "mobilefuse.com", "mookie1.com", "myweb3id.io",
@@ -170,7 +170,7 @@ EXTRA_BLACKLIST_PATTERNS = [
     r"^media-(sensor|stat|trend)\.mail\.ru$",          # Счётчики медиа-рекламы Mail.ru
     r"(^|\.)media-advcycle\.imgsmail\.ru$",
     r"^(kraken(-[a-z0-9]+)?)\.[a-z0-9.\-]+$",          # kraken.* — рекламная/аналитическая платформа (Рамблер, IGN/Ziff Davis)
-    r"^rcm(-tr|js)?\.rambler\.ru$",                  # Рекомендательные рекламные узлы Рамблера
+    r"^rcm(-tr|js)?\.rambler\.ru$",                    # Рекомендательные рекламные узлы Рамблера
     r"^pbs\.yahoo\.com$",                              # Prebid Server Yahoo
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
     r"^imasdk\.googleapis\.com$",                      # Google IMA SDK (видеореклама)
@@ -233,6 +233,9 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)demdex\.net$",                           # Платформа управления данными Adobe AudienceManager (dpm.demdex.net)
     r"(^|\.)dynotech\.io$",                          # Рекламный шлюз Dynotech RTB (Из NEED_REVIEW)
 
+    # === E ===
+    r"^stat\.tech\.euronews\.com$",
+
     # === F ===
     r"(^|\.)facecast\.net$",                         # Зарубежная рекламная RTB-биржа / SSP
     r"(^|\.)futurecdn\.net$",                        # Коммерческие контент-трекеры издателя Future / freyr (Из NEED_REVIEW)
@@ -251,6 +254,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === I ===
     r"(^|\.)id5-sync\.com$",                         # Платформа идентификации пользователей ID5 (Из NEED_REVIEW)
     r"(^|\.)intent\.ai$",                            # Платформа таргетинга Intent.AI (Из NEED_REVIEW)
+    r"(^|\.)secure\-us\.imrworldwide\.com$",
 
     # === L ===
     r"(^|\.)linkedin\.com$",                         # Рекламный пиксель отслеживания LinkedIn / px.ads (Из NEED_REVIEW)
@@ -261,6 +265,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === M ===
     r"^ad\.mail\.ru$",                               # Рекламная экосистема VK / Mail.ru
     r"^reklama\.mail\.ru$",                          # Рекламная экосистема VK / Mail.ru
+    r"^rs\.mail\.ru$",
     r"^top(-[a-z0-9]+)?\.mail\.ru$",                 # Трекер Top.Mail.ru
     r"(^|\.)marketgid\.com$",                        # Старая тизерная сеть / MGID
     r"(^|\.)media\.net$",                            # Рекламная сеть Yahoo/Bing Contextual / cs.media.net (Из NEED_REVIEW)
@@ -300,6 +305,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)q-bid\.ru$",                             # Рекламная биржа Q-Bid (Из NEED_REVIEW)
 
     # === R ===
+    r"^(embeds|pixel|ssp01?|api\.vp|cs|vp|imgserve)\.rambler\.ru$",
     r"^embeds\.rambler\.ru$",                        # Рекламные сети Рамблера
     r"^pixel\.rambler\.ru$",                         # Пиксель Рамблера
     r"^ssp01?\.rambler\.ru$",                        # Объединенное правило для ssp.rambler.ru и ssp01.rambler.ru
