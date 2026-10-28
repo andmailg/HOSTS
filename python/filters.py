@@ -460,7 +460,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
         r"imgserve|rcm(?:-tr|-js)?|mpx\d*|sync"
         r")\.rambler\.ru$"
     ),
-    r"^(?:goya|ssp)\.rutube\.ru$",
+    r"^(?:goya|ssp|a)\.rutube\.ru$",
     r"(?:^|\.)log\.rutube\.ru$",
 
     # === S ===
