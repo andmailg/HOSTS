@@ -286,7 +286,7 @@ AD_APEX_BLACKLIST = {
     "adition.com", "adkernel.com", "adlook.tech", "admanmedia.com",
     "admixer.net", "adobedtm.com", "adsafeprotected.com", "adspector.io",
     "adsource.pro", "advcake.ru", "agkn.com", "amazon-adsystem.com",
-    "amx1.net", "aniview.com", "axis-marketplace.com",
+    "amx1.net", "aniview.com", "axis-marketplace.com", "admaster.cc",
 
     # === B ===
     "bat.bing.com", "c.bing.com", "blismedia.com", "brandmetrics.com",
@@ -323,12 +323,12 @@ AD_APEX_BLACKLIST = {
     "kargo.com", "krushmedia.com", "krxd.net", "kueezrtb.com",
 
     # === L ===
-    "liadm.com", "lijit.com", "loopme.me",
+    "liadm.com", "lijit.com", "loopme.me", "lkqd.net",
 
     # === M ===
     "marphezis.com", "measureadv.com", "mediagotechnology.com",
     "moatads.com", "mobilefuse.com", "mookie1.com", "mradx.net",
-    "myweb3id.io",
+    "myweb3id.io", "mediago.io",
 
     # === N ===
     "nextmillmedia.com", "nodals.io", "ml314.com",
@@ -338,7 +338,7 @@ AD_APEX_BLACKLIST = {
 
     # === P ===
     "perfluence.net", "permutive.app", "permutive.com", "postrelease.com",
-    "prmutv.co", "programmaticx.ai", "punchmedia.ru", "pippio.com", "pro-market.net",
+    "prmutv.co", "programmaticx.ai", "punchmedia.ru", "pippio.com", "pro-market.net", "profilemkt.com",
 
     # === Q ===
     "quantserve.com", "qtarget.tech", "quotiq.ru",
@@ -352,6 +352,7 @@ AD_APEX_BLACKLIST = {
     "sharethrough.com", "silvermob.com", "simpli.fi", "skimresources.com",
     "smartadserver.com", "smilewanted.com", "sonobi.com", "spotxchange.com",
     "springserve.com", "stickyadstv.com", "svk-native.ru", "syncingbridge.com",
+    "sportradarserving.com",
 
     # === T ===
     "taboola.com", "targetrtb.com", "teads.tv", "thrtle.com",
