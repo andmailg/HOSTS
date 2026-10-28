@@ -187,6 +187,7 @@ PROTECTED_FAMILIES = [
     # === I ===
     "ign.com",
     "imgsmail.ru",
+    "infox.ru",
     "instagram.com",
     "interfax.ru",
     "iportal.ru",
@@ -369,7 +370,7 @@ AD_APEX_BLACKLIST = [
     "outbrain.com", "outbrainimg.com",
 
     # === P ===
-    "perfluence.net", "permutive.app", "permutive.com", "pippio.com",
+    "pathtosuccess.global", "perfluence.net", "permutive.app", "permutive.com", "pippio.com",
     "plusoneads.com", "postrelease.com", "presage.io", "prmutv.co",
     "pro-market.net", "profilemkt.com", "programmaticx.ai", "pubmatic.com",
     "punchmedia.ru", "push4site.com",
@@ -403,8 +404,8 @@ AD_APEX_BLACKLIST = [
 
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
-    "viisfxlg.com", "vigo.tech", "vistarsagency.com", "viqeo.tv",
-    "vk-analytics.ru", "voxexchange.io",
+    "viisfxlg.com", "vigo.tech", "vindicosuite.com", "vistarsagency.com",
+    "viqeo.tv", "vk-analytics.ru", "voxexchange.io",
 
     # === W ===
     "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru",
@@ -435,6 +436,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^px\.hsmedia\.ru$",                              # Медиа-трекер Hearst Shkulev Media
 
     # === I ===
+    r"^rb\.infox\.ru$",
     r"(^|\.)media-advcycle\.imgsmail\.ru$",
 
     # === M ===
