@@ -81,6 +81,7 @@
 ||aa.agkn.com^
 ||x01.aidata.io^
 ||vod-dash-ww-live.akamaized.net^
+||vod-thumb-ww-live.akamaized.net^
 ||cdn.al-adtech.com^
 ||ssp.al-adtech.com^
 ||p.alcmpn.com^
@@ -226,8 +227,6 @@
 ||maestro-ue1.tps.dv.tech^
 ||sync.dvgroup.com^
 ||dynotech.io^
-||static.eaglecdn.com^
-||hlsvod.rambler.eaglecdn.com^
 ||edigitalsurvey.com^
 ||emrld.cc^
 ||cs.emxdgt.com^
@@ -243,6 +242,7 @@
 ||loadm.exelator.com^
 ||ps.eyeota.net^
 ||connect.facebook.net^
+||tool.festivehorse.com^
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
 ||servedby.flashtalking.com^
@@ -286,7 +286,6 @@
 ||id5-sync.com^
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
-||pg.ignimgs.com^
 ||assets.ikhnaie.me^
 ||media-advcycle.imgsmail.ru^
 ||secure-us.imrworldwide.com^
@@ -406,6 +405,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -580,6 +580,7 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||api-ssp.spot.im^
+||publisher-assets.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
@@ -660,14 +661,6 @@
 ||viqeo.tv^
 ||cpm.vistarsagency.com^
 ||stats.vk-portal.net^
-||ok6-2.vkuser.net^
-||vk6-10.vkuser.net^
-||vk6-13.vkuser.net^
-||vk6-2.vkuser.net^
-||vk6-29.vkuser.net^
-||vk6-30.vkuser.net^
-||vk6-7.vkuser.net^
-||vk6-9.vkuser.net^
 ||rtb2-useast.voisetech.com^
 ||voxexchange.io^
 ||watchfeed.tv^
@@ -681,6 +674,7 @@
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
+||ads-media.wildberries.ru^
 ||ssp.wp.pl^
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
@@ -695,7 +689,6 @@
 ||an.yandex.ru^
 ||mc.yandex.ru^
 ||uaas.yandex.ru^
-||verify.yandex.ru^
 ||log.strm.yandex.ru^
 ||cs-server-s2s.yellowblue.io^
 ||cs-tam.yellowblue.io^
@@ -704,6 +697,7 @@
 ||pbs-cs.yellowblue.io^
 ||ad.yieldlab.net^
 ||ads.yieldmo.com^
+||s.yimg.com^
 ||gw-iad-bid.ymmobi.com^
 ||sync-tb.yrxtam.com^
 ||zdbb.net^

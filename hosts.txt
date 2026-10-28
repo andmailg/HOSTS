@@ -136,6 +136,7 @@
 0.0.0.0 aa.agkn.com
 0.0.0.0 x01.aidata.io
 0.0.0.0 vod-dash-ww-live.akamaized.net
+0.0.0.0 vod-thumb-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 ssp.al-adtech.com
 0.0.0.0 p.alcmpn.com
@@ -334,8 +335,6 @@
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 dynotech.io
 0.0.0.0 rtb.dynotech.io
-0.0.0.0 static.eaglecdn.com
-0.0.0.0 hlsvod.rambler.eaglecdn.com
 0.0.0.0 edigitalsurvey.com
 0.0.0.0 emrld.cc
 0.0.0.0 cs.emxdgt.com
@@ -351,6 +350,7 @@
 0.0.0.0 loadm.exelator.com
 0.0.0.0 ps.eyeota.net
 0.0.0.0 connect.facebook.net
+0.0.0.0 tool.festivehorse.com
 0.0.0.0 cdn.flashtalking.com
 0.0.0.0 d9.flashtalking.com
 0.0.0.0 servedby.flashtalking.com
@@ -428,7 +428,6 @@
 0.0.0.0 cdn.id5-sync.com
 0.0.0.0 gurgle.ign.com
 0.0.0.0 kraken.ignimgs.com
-0.0.0.0 pg.ignimgs.com
 0.0.0.0 assets.ikhnaie.me
 0.0.0.0 media-advcycle.imgsmail.ru
 0.0.0.0 secure-us.imrworldwide.com
@@ -570,6 +569,7 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -835,6 +835,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 smi2cdn.ru
+0.0.0.0 static7.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
@@ -843,6 +844,7 @@
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 api-ssp.spot.im
+0.0.0.0 publisher-assets.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
@@ -925,6 +927,8 @@
 0.0.0.0 ortb.vdo.ai
 0.0.0.0 viadata.store
 0.0.0.0 hb.viadata.store
+0.0.0.0 ru.viadata.store
+0.0.0.0 rucdn.viadata.store
 0.0.0.0 beacon.viafoura.io
 0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru
@@ -937,14 +941,6 @@
 0.0.0.0 cdn.viqeo.tv
 0.0.0.0 cpm.vistarsagency.com
 0.0.0.0 stats.vk-portal.net
-0.0.0.0 ok6-2.vkuser.net
-0.0.0.0 vk6-10.vkuser.net
-0.0.0.0 vk6-13.vkuser.net
-0.0.0.0 vk6-2.vkuser.net
-0.0.0.0 vk6-29.vkuser.net
-0.0.0.0 vk6-30.vkuser.net
-0.0.0.0 vk6-7.vkuser.net
-0.0.0.0 vk6-9.vkuser.net
 0.0.0.0 rtb2-useast.voisetech.com
 0.0.0.0 voxexchange.io
 0.0.0.0 watchfeed.tv
@@ -964,6 +960,7 @@
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
 0.0.0.0 tms.dmp.wi-fi.ru
+0.0.0.0 ads-media.wildberries.ru
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
@@ -978,7 +975,6 @@
 0.0.0.0 an.yandex.ru
 0.0.0.0 mc.yandex.ru
 0.0.0.0 uaas.yandex.ru
-0.0.0.0 verify.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 cs-server-s2s.yellowblue.io
 0.0.0.0 cs-tam.yellowblue.io
@@ -988,6 +984,7 @@
 0.0.0.0 ad.yieldlab.net
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
+0.0.0.0 s.yimg.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 sync-tb.yrxtam.com
 0.0.0.0 zdbb.net
