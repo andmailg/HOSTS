@@ -95,22 +95,23 @@ NEVER_BLOCK_DOMAINS = [
     
     # === G ===
     "googleapis.com", "googleusercontent.com", "gstatic.com", "gvt1.com",
+    "news.google.com", "play.google.com",
     
     # === H ===
     "hostingkartinok.com",
     
     # === I ===
     "imageban.ru", "imgchest.com", "infogram.com", "injectoften.com",
-    "ixbt.video", "ignimgs.com",
+    "ixbt.video", "ixbt.site", "ignimgs.com", "s3-cdn.iportal.ru",
     
     # === J ===
-    "jquery.com", "jsdelivr.net", "jwplayer.com",
+    "jquery.com", "jsdelivr.net", "jwplayer.com", "justwatch.com",
     
     # === K ===
     "kinescope.io", "kinescopecdn.net",
     
     # === N ===
-    "nflximg.net", "nnmstatic.win",
+    "nflximg.net", "nnmstatic.win", "cdn.net.ru",
     
     # === O ===
     "openstreetmap.org", "api.okcdn.ru",
@@ -123,9 +124,11 @@ NEVER_BLOCK_DOMAINS = [
     
     # === S ===
     "sentry-saas.rambler-co.ru", "sentry.io", "sketchfab.com",
-    
+    "sber.ru",
+
     # === T ===
     "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com",
+    "platform.twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -141,7 +144,7 @@ NEVER_BLOCK_DOMAINS = [
     # === Y ===
     "yapfiles.ru", "yastatic-net.ru", "ytimg.com", "avatars.mds.yandex.net",
     "site.yandex.net", "favicon.yandex.net", "smartcaptcha.yandexcloud.net",
-    "yap.ru",
+    "yap.ru", "yimg.com", "autofill.yandex.ru", "guce.yahoo.com",
 ]
 
 # =============================================================================
@@ -273,9 +276,9 @@ PROTECTED_FAMILIES = [
     "yahoo.net",
     "yahoofinance.com",
     "yandexcloud.net",
+    "yandex.ru",
     "yaplakal.com",
     "yastatic.net",
-    "yimg.com",
     "youtube.com",
     "yuga.ru",
 
@@ -338,7 +341,7 @@ AD_APEX_BLACKLIST = [
     "hbrd.io", "html-load.com", "hybrid.ai",
 
     # === I ===
-    "id5-sync.com", "imrworldwide.com", "indexww.com", "infolinks.com",
+    "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com", "indexww.com", "infolinks.com",
     "inmobi.com", "insiad.com", "intent.ai", "iqzone.com",
 
     # === K ===
@@ -390,7 +393,7 @@ AD_APEX_BLACKLIST = [
     "stickyadstv.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
-    "taboola.com", "tapad.com", "targetrtb.com", "teads.tv",
+    "taboola.com", "tapad.com", "targetads.io", "targetrtb.com", "teads.tv",
     "teads-xo.com", "telecid.ru", "terratraf.com", "thrtle.com",
     "tns-counter.ru", "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com",
     "trustarc.com", "trustedstack.com", "tynt.com",
