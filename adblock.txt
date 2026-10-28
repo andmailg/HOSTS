@@ -58,6 +58,7 @@
 ||adnxs.com^
 ||assets.adobedtm.com^
 ||adriver.ru^
+||d.adroll.com^
 ||tracker.ads-tinyorbit.com^
 ||dt.adsafeprotected.com^
 ||jsconfig.adsafeprotected.com^
@@ -82,9 +83,11 @@
 ||vod-dash-ww-live.akamaized.net^
 ||cdn.al-adtech.com^
 ||ssp.al-adtech.com^
+||p.alcmpn.com^
 ||alfasense.com^
 ||ads.altitude-arena.com^
 ||amazon-adsystem.com^
+||prod.us-east-1.cxm-bcn.publisher-services.amazon.dev^
 ||tracker.exchange.amitydigital.io^
 ||np1-cs.amx1.net^
 ||a.amxrtb.com^
@@ -112,6 +115,7 @@
 ||track.bidgx.com^
 ||adapter.bidmatic.io^
 ||sync.bidmatic.io^
+||match.prod.bidr.io^
 ||ssp.bidster.net^
 ||bidswitch.net^
 ||bidvol.com^
@@ -142,6 +146,7 @@
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
+||cpm.chocolateplatform.com^
 ||us.ck-ie.com^
 ||a.clarity.ms^
 ||b.clarity.ms^
@@ -149,6 +154,7 @@
 ||f.clarity.ms^
 ||g.clarity.ms^
 ||h.clarity.ms^
+||i.clarity.ms^
 ||k.clarity.ms^
 ||n.clarity.ms^
 ||o.clarity.ms^
@@ -171,6 +177,7 @@
 ||pbs2.cpmstar.com^
 ||server.cpmstar.com^
 ||p.cpx.to^
+||s.cpx.to^
 ||creativecdn.com^
 ||criteo.com^
 ||static.criteo.net^
@@ -194,6 +201,7 @@
 ||dmxleo.com^
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
+||casale-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
 ||ad.doubleclick.net^
 ||bid.g.doubleclick.net^
@@ -283,6 +291,7 @@
 ||media-advcycle.imgsmail.ru^
 ||secure-us.imrworldwide.com^
 ||indexww.com^
+||resources.infolinks.com^
 ||router.infolinks.com^
 ||rb.infox.ru^
 ||rb.infox.sg^
@@ -313,6 +322,7 @@
 ||sync.kueez.com^
 ||exchange.kueezrtb.com^
 ||sync.kueezrtb.com^
+||kwizly.com^
 ||i.liadm.com^
 ||i6.liadm.com^
 ||idx.liadm.com^
@@ -348,6 +358,7 @@
 ||mediadash.ru^
 ||cdn.mediago.io^
 ||gtrace.mediago.io^
+||trace.mediago.io^
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
 ||mediatoday.ru^
@@ -376,7 +387,6 @@
 ||v2.mpsuadv.ru^
 ||v3.mpsuadv.ru^
 ||v7.mpsuadv.ru^
-||r.mradx.net^
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
@@ -393,8 +403,10 @@
 ||events.newsroom.bi^
 ||icu.newsroom.bi^
 ||cookies.nextmillmedia.com^
+||atp.nexus-network-systems.com^
+||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
+||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
 ||dsp.nrich.ai^
@@ -474,13 +486,13 @@
 ||pixel.rambler.ru^
 ||rcm-tr.rambler.ru^
 ||rcm.rambler.ru^
-||rcmjs.rambler.ru^
 ||ssp.rambler.ru^
 ||ssp01.rambler.ru^
 ||sync.rambler.ru^
 ||vp.rambler.ru^
 ||metrics.rapidedge.io^
 ||sentry.rarus.ru^
+||sync.rbstsystems.live^
 ||hal9000.redintelligence.net^
 ||hal90001.redintelligence.net^
 ||hal900010.redintelligence.net^
@@ -512,6 +524,7 @@
 ||pic.rtbcdn.ru^
 ||river-3-311.rtbcdn.ru^
 ||river-3-374.rtbcdn.ru^
+||river-4-411.rtbcdn.ru^
 ||river-4-428.rtbcdn.ru^
 ||t.rtbwave.com^
 ||rubiconproject.com^
@@ -553,6 +566,7 @@
 ||csync.smartadserver.com^
 ||rtb-csync.smartadserver.com^
 ||ssbsync-global.smartadserver.com^
+||ssbsync-us.smartadserver.com^
 ||ssbsync.smartadserver.com^
 ||sync.smartadserver.com^
 ||smartcallback.ru^
@@ -595,6 +609,8 @@
 ||sync.teads.tv^
 ||sync.techdsp.ru^
 ||hawk.techradar.com^
+||px316402f875248df0c.telecid.ru^
+||px3169a068a6c273fa5.telecid.ru^
 ||terratraf.com^
 ||elb.the-ozone-project.com^
 ||prebid.the-ozone-project.com^
@@ -640,6 +656,7 @@
 ||adx.videonow.ru^
 ||sync.videonow.ru^
 ||vigo.tech^
+||s.viisfxlg.com^
 ||viqeo.tv^
 ||cpm.vistarsagency.com^
 ||stats.vk-portal.net^
@@ -668,7 +685,6 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
@@ -679,6 +695,7 @@
 ||an.yandex.ru^
 ||mc.yandex.ru^
 ||uaas.yandex.ru^
+||verify.yandex.ru^
 ||log.strm.yandex.ru^
 ||cs-server-s2s.yellowblue.io^
 ||cs-tam.yellowblue.io^
@@ -687,7 +704,6 @@
 ||pbs-cs.yellowblue.io^
 ||ad.yieldlab.net^
 ||ads.yieldmo.com^
-||s.yimg.com^
 ||gw-iad-bid.ymmobi.com^
 ||sync-tb.yrxtam.com^
 ||zdbb.net^

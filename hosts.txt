@@ -21,6 +21,7 @@
 0.0.0.0 dp2.33across.com
 0.0.0.0 et-c-ash.33across.com
 0.0.0.0 lexicon.33across.com
+0.0.0.0 pixel.33across.com
 0.0.0.0 ssc-cms.33across.com
 0.0.0.0 360yield.com
 0.0.0.0 ad.360yield.com
@@ -103,6 +104,7 @@
 0.0.0.0 ev.adriver.ru
 0.0.0.0 pb.adriver.ru
 0.0.0.0 ssp.adriver.ru
+0.0.0.0 d.adroll.com
 0.0.0.0 tracker.ads-tinyorbit.com
 0.0.0.0 dt.adsafeprotected.com
 0.0.0.0 jsconfig.adsafeprotected.com
@@ -136,6 +138,7 @@
 0.0.0.0 vod-dash-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 ssp.al-adtech.com
+0.0.0.0 p.alcmpn.com
 0.0.0.0 alfasense.com
 0.0.0.0 adx.alfasense.com
 0.0.0.0 cs.alfasense.com
@@ -153,6 +156,7 @@
 0.0.0.0 config.aps.amazon-adsystem.com
 0.0.0.0 web-banner.ads.aps.amazon-adsystem.com
 0.0.0.0 web-video.ads.aps.amazon-adsystem.com
+0.0.0.0 prod.us-east-1.cxm-bcn.publisher-services.amazon.dev
 0.0.0.0 tracker.exchange.amitydigital.io
 0.0.0.0 np1-cs.amx1.net
 0.0.0.0 a.amxrtb.com
@@ -188,6 +192,7 @@
 0.0.0.0 track.bidgx.com
 0.0.0.0 adapter.bidmatic.io
 0.0.0.0 sync.bidmatic.io
+0.0.0.0 match.prod.bidr.io
 0.0.0.0 ssp.bidster.net
 0.0.0.0 bidswitch.net
 0.0.0.0 x.bidswitch.net
@@ -236,6 +241,7 @@
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
 0.0.0.0 ping.chartbeat.net
+0.0.0.0 cpm.chocolateplatform.com
 0.0.0.0 us.ck-ie.com
 0.0.0.0 a.clarity.ms
 0.0.0.0 b.clarity.ms
@@ -243,6 +249,7 @@
 0.0.0.0 f.clarity.ms
 0.0.0.0 g.clarity.ms
 0.0.0.0 h.clarity.ms
+0.0.0.0 i.clarity.ms
 0.0.0.0 k.clarity.ms
 0.0.0.0 n.clarity.ms
 0.0.0.0 o.clarity.ms
@@ -266,6 +273,7 @@
 0.0.0.0 pbs2.cpmstar.com
 0.0.0.0 server.cpmstar.com
 0.0.0.0 p.cpx.to
+0.0.0.0 s.cpx.to
 0.0.0.0 creativecdn.com
 0.0.0.0 criteo.com
 0.0.0.0 dis.criteo.com
@@ -300,6 +308,7 @@
 0.0.0.0 dmxleo.com
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
+0.0.0.0 casale-match.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 bid.g.doubleclick.net
@@ -425,6 +434,7 @@
 0.0.0.0 secure-us.imrworldwide.com
 0.0.0.0 indexww.com
 0.0.0.0 js-sec.indexww.com
+0.0.0.0 resources.infolinks.com
 0.0.0.0 router.infolinks.com
 0.0.0.0 rb.infox.ru
 0.0.0.0 rb.infox.sg
@@ -458,6 +468,7 @@
 0.0.0.0 sync.kueez.com
 0.0.0.0 exchange.kueezrtb.com
 0.0.0.0 sync.kueezrtb.com
+0.0.0.0 kwizly.com
 0.0.0.0 i.liadm.com
 0.0.0.0 i6.liadm.com
 0.0.0.0 idx.liadm.com
@@ -485,6 +496,7 @@
 0.0.0.0 ad.mail.ru
 0.0.0.0 media-sensor.mail.ru
 0.0.0.0 media-stat.mail.ru
+0.0.0.0 media-trend.mail.ru
 0.0.0.0 privacy-cs.mail.ru
 0.0.0.0 rs.mail.ru
 0.0.0.0 top-fwz1.mail.ru
@@ -502,6 +514,7 @@
 0.0.0.0 analytics.mediadash.ru
 0.0.0.0 cdn.mediago.io
 0.0.0.0 gtrace.mediago.io
+0.0.0.0 trace.mediago.io
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 mediametrics.ru
 0.0.0.0 mediatoday.ru
@@ -554,8 +567,10 @@
 0.0.0.0 events.newsroom.bi
 0.0.0.0 icu.newsroom.bi
 0.0.0.0 cookies.nextmillmedia.com
+0.0.0.0 atp.nexus-network-systems.com
+0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
+0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
 0.0.0.0 t.nodals.io
@@ -693,7 +708,6 @@
 0.0.0.0 pixel.rambler.ru
 0.0.0.0 rcm-tr.rambler.ru
 0.0.0.0 rcm.rambler.ru
-0.0.0.0 rcmjs.rambler.ru
 0.0.0.0 ssp.rambler.ru
 0.0.0.0 ssp01.rambler.ru
 0.0.0.0 sync.rambler.ru
@@ -701,6 +715,7 @@
 0.0.0.0 api.vp.rambler.ru
 0.0.0.0 metrics.rapidedge.io
 0.0.0.0 sentry.rarus.ru
+0.0.0.0 sync.rbstsystems.live
 0.0.0.0 hal9000.redintelligence.net
 0.0.0.0 hal90001.redintelligence.net
 0.0.0.0 hal900010.redintelligence.net
@@ -732,6 +747,7 @@
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 river-3-311.rtbcdn.ru
 0.0.0.0 river-3-374.rtbcdn.ru
+0.0.0.0 river-4-411.rtbcdn.ru
 0.0.0.0 river-4-428.rtbcdn.ru
 0.0.0.0 t.rtbwave.com
 0.0.0.0 rubiconproject.com
@@ -799,6 +815,7 @@
 0.0.0.0 csync.smartadserver.com
 0.0.0.0 rtb-csync.smartadserver.com
 0.0.0.0 ssbsync-global.smartadserver.com
+0.0.0.0 ssbsync-us.smartadserver.com
 0.0.0.0 ssbsync.smartadserver.com
 0.0.0.0 sync.smartadserver.com
 0.0.0.0 smartcallback.ru
@@ -857,6 +874,8 @@
 0.0.0.0 sync.teads.tv
 0.0.0.0 sync.techdsp.ru
 0.0.0.0 hawk.techradar.com
+0.0.0.0 px316402f875248df0c.telecid.ru
+0.0.0.0 px3169a068a6c273fa5.telecid.ru
 0.0.0.0 terratraf.com
 0.0.0.0 static.terratraf.com
 0.0.0.0 elb.the-ozone-project.com
@@ -913,6 +932,7 @@
 0.0.0.0 vigo.tech
 0.0.0.0 api.vigo.tech
 0.0.0.0 cdn.vigo.tech
+0.0.0.0 s.viisfxlg.com
 0.0.0.0 viqeo.tv
 0.0.0.0 cdn.viqeo.tv
 0.0.0.0 cpm.vistarsagency.com
@@ -948,18 +968,17 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
-0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
-0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
 0.0.0.0 mc.yandex.ru
 0.0.0.0 uaas.yandex.ru
+0.0.0.0 verify.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 cs-server-s2s.yellowblue.io
 0.0.0.0 cs-tam.yellowblue.io
@@ -969,7 +988,6 @@
 0.0.0.0 ad.yieldlab.net
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
-0.0.0.0 s.yimg.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 sync-tb.yrxtam.com
 0.0.0.0 zdbb.net
@@ -982,9 +1000,3 @@
 0.0.0.0 asin.ziff.tech
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
-0.0.0.0 atp.nexus-network-systems.com
-0.0.0.0 cdn.nexus-network-systems.com
-0.0.0.0 lciapi.ninthdecimal.com
-0.0.0.0 p.alcmpn.com
-0.0.0.0 s.cpx.to
-0.0.0.0 s.viisfxlg.com
