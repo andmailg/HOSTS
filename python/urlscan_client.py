@@ -4,7 +4,7 @@ import re
 from urllib.parse import urlparse
 import aiohttp
 from config import URLSCAN_SCAN, URLSCAN_RESULT, SCAN_TIMEOUT, POLL_INTERVAL, USER_AGENT
-from filters import get_apex_domain, should_block_domain, AD_TRACKER_PATTERNS, SYSTEM_ASSETS_PATTERNS
+from filters import get_apex_domain, should_block_domain, url_is_strong_ad, url_is_tracker, url_is_system_asset
 
 def collect_scan_verdicts(raw_data):
     """
@@ -36,17 +36,26 @@ def collect_scan_verdicts(raw_data):
         mime_type = (item.get("response", {}).get("response", {}).get("mimeType") or "").lower()
 
         if req_domain not in domain_verdicts:
-            domain_verdicts[req_domain] = {"clean_score": 0, "ad_score": 0, "pages": 1, "own_site": False}
+            domain_verdicts[req_domain] = {"clean_score": 0, "ad_score": 0, "strong": 0, "pages": 1, "own_site": False}
         v = domain_verdicts[req_domain]
 
-        if any(re.search(p, req_url, re.IGNORECASE) for p in AD_TRACKER_PATTERNS): v["ad_score"] += 30
-        elif any(re.search(p, req_url, re.IGNORECASE) for p in SYSTEM_ASSETS_PATTERNS): v["clean_score"] += 20
+        # Признаки в самом URL. «strong» — специфичные рекламные пути/параметры (pagead, openrtb, usersync, gdpr=...),
+        # именно они отличают рекламу от обычного стороннего скрипта (CDN, виджет, API).
+        if url_is_strong_ad(req_url):
+            v["ad_score"] += 40
+            v["strong"] += 1
+        elif url_is_tracker(req_url): v["ad_score"] += 30
+        elif url_is_system_asset(req_url): v["clean_score"] += 20
 
         if page_apex and req_apex == page_apex:
             v["clean_score"] += 12
             v["own_site"] = True
         else: v["ad_score"] += 6
-        if initiator_type == "parser": v["clean_score"] += 5
+        # Подключённый парсером СКРИПТ стороннего домена — это обычно рекламный тег, а не «чистый» ресурс:
+        # бонус +5 к clean даём только за не-JS ресурсы (картинки, css, шрифты, документы).
+        is_js = mime_type in ("application/javascript", "text/javascript", "application/x-javascript")
+        if initiator_type == "parser":
+            if not is_js or (page_apex and req_apex == page_apex): v["clean_score"] += 5
         elif initiator_type == "script": v["ad_score"] += 6
 
         if page_apex and req_apex != page_apex:
@@ -59,9 +68,10 @@ def collect_scan_verdicts(raw_data):
 def merge_scan_verdicts(session_stats, page_verdicts):
     """Суммирует очки страницы в общую статистику сессии (раньше результат последней страницы затирал предыдущие)."""
     for d, v in page_verdicts.items():
-        s = session_stats.setdefault(d, {"clean_score": 0, "ad_score": 0, "pages": 0, "own_site": False})
+        s = session_stats.setdefault(d, {"clean_score": 0, "ad_score": 0, "strong": 0, "pages": 0, "own_site": False})
         s["clean_score"] += v["clean_score"]
         s["ad_score"] += v["ad_score"]
+        s["strong"] += v.get("strong", 0)
         s["pages"] += 1
         s["own_site"] = s["own_site"] or v["own_site"]
 

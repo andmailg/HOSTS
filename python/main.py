@@ -7,8 +7,8 @@ from urllib.parse import urlparse
 
 import aiohttp
 
-from config import HOSTS_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_URLS_PER_SITE, MAX_DEPTH, TARGET_SCAN, get_api_key
-from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site, is_confident_ad, classify_session
+from config import HOSTS_FILE, ADBLOCK_FILE, LOG_FILE, DEFAULT_URL_FILE, MAX_CONCURRENT, MAX_URLS_PER_SITE, MAX_DEPTH, TARGET_SCAN, get_api_key
+from filters import should_block_domain, sort_domains_by_level, get_apex_domain, normalize_and_detect_dynamic_domain, is_same_site, classify_session
 from crawler import run_external_crawler_for_urls
 from urlscan_client import process_single_url, collect_scan_verdicts, merge_scan_verdicts
 
@@ -28,6 +28,58 @@ def read_existing_hosts(file_path):
                     if domain: 
                         existing_domains.add(domain)
     return existing_domains
+
+def finalize_domains(domain_stats, existing_domains):
+    """
+    Сборка итогового списка. Возвращает (final_domains, ad_log, review_log, clean_log).
+      ad_log     — домены, заблокированные по итогам текущей сессии (идут в hosts);
+      review_log — спорные: НЕ блокируются, показываются в логе для ручного решения;
+      clean_log  — не заблокированы.
+    final_domains = (прежние записи hosts, прошедшие перепроверку) + (BLOCK текущей сессии), схлопнутые
+    через normalize_and_detect_dynamic_domain и перепроверенные.
+    """
+    # 0. Единое решение по каждому домену на основе очков со ВСЕХ страниц (+ группировка реплик сервиса)
+    ad_log, review_log, clean_log = classify_session(domain_stats)
+
+    # 1. Старые записи hosts перепроверяем по ОБНОВЛЁННЫМ правилам (score=None — статистики нет)
+    valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
+
+    # 2. Объединяем со ВСЕМИ BLOCK-решениями текущей сессии (раньше часть из них отсекалась
+    #    «строгим баном» и оседала в NEED_REVIEW, то есть реклама оставалась незаблокированной)
+    raw_combined = valid_existing_ad | set(ad_log)
+
+    # 3. Схлопываем одноразовые хэш-поддомены (hosts не умеет wildcard)
+    normalized = set()
+    for d in raw_combined:
+        _, norm_d = normalize_and_detect_dynamic_domain(d)
+        normalized.add(norm_d)
+
+    # 4. Контрольная перепроверка только для схлопнутых/старых имён: у них нет статистики,
+    #    а у BLOCK-решений сессии она уже учтена в classify_session
+    final = {d for d in normalized if d in ad_log or should_block_domain(d, score=None)}
+    return sort_domains_by_level(final), ad_log, review_log, clean_log
+
+def minimize_for_adblock(domains):
+    """Для adblock.txt правило ||domain^ уже покрывает все поддомены — вложенные записи не нужны."""
+    domain_set = set(domains)
+    result = []
+    for d in domains:
+        labels = d.split(".")
+        if any(".".join(labels[i:]) in domain_set for i in range(1, len(labels) - 1)):
+            continue
+        result.append(d)
+    return result
+
+def write_hosts_and_adblock(domains):
+    """hosts.txt (0.0.0.0 домен, каждый хост явно: wildcard в hosts нет) и adblock.txt
+    (||домен^ — в синтаксисе AdGuard/uBlock блокирует домен и все его поддомены, в том числе хэш-хосты)."""
+    with open(HOSTS_FILE, "w", encoding="utf-8") as h_file:
+        for domain in domains:
+            h_file.write(f"0.0.0.0 {domain}\n")
+    with open(ADBLOCK_FILE, "w", encoding="utf-8") as a_file:
+        a_file.write("! Title: HOSTS adblock (auto-generated)\n! Каждое правило блокирует домен и ВСЕ его поддомены\n")
+        for domain in minimize_for_adblock(domains):
+            a_file.write(f"||{domain}^\n")
 
 async def main_async():
     api_key = get_api_key()
@@ -146,46 +198,12 @@ async def main_async():
         fail_count = len(urls_to_scan) - success_count
 
     # =========================================================================
-    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS И ЛОГОВ (ОБНОВЛЕННАЯ ЛОГИКА С NEED_REVIEW)
+    # СБОРКА И ФИНАЛЬНАЯ ЗАПИСЬ HOSTS / ADBLOCK И ЛОГОВ
     # =========================================================================
-    # 0. Единое решение по каждому домену на основе очков со ВСЕХ страниц (+ группировка реплик сервиса)
-    all_new_domains, all_clean_domains = classify_session(domain_stats)
-
-    # 1. Считываем старые заблокированные домены
     existing_domains = read_existing_hosts(str(HOSTS_FILE))
-    
-    # 2. Фильтруем СТАРЫЕ домены по ОБНОВЛЕННЫМ правилам (без учета старого скоринга)
-    valid_existing_ad = {d for d in existing_domains if should_block_domain(d, score=None)}
-    
-    # 3. Фильтруем НОВЫЕ домены, полученные в текущей сессии 
-    # ВАЖНО: В hosts идёт «строгий бан» (см. filters.is_confident_ad): clean_score == 0, ЛИБО
-    # ad_score > clean_score*STRICT_BAN_RATIO + STRICT_BAN_MARGIN, ЛИБО явный чёрный список
-    # (у ad.mail.ru на странице mail.ru clean_score > 0 из-за бонуса «свой apex», но это реклама)
-    current_session_ad = {d for d, s in all_new_domains.items() if is_confident_ad(d, s)}
-    
-    # 4. Объединяем валидные старые и новые жесткие рекламные домены
-    raw_combined = valid_existing_ad.union(current_session_ad)
-    
-    # 5. Нормализуем список (схлопываем динамические хэши)
-    normalized_combined = set()
-    for d in raw_combined:
-        is_dyn, norm_d = normalize_and_detect_dynamic_domain(d)
-        normalized_combined.add(norm_d)
-        
-    # 6. Финальная контрольная фильтрация для hosts (только явный бан)
-    filtered_ad_domains = {
-        d for d in normalized_combined 
-        if should_block_domain(d, score=all_new_domains.get(d)) 
-        and is_confident_ad(d, all_new_domains.get(d))
-    }
-    
-    # 7. Сортировка и запись в файл hosts
-    sorted_ad_domains = sort_domains_by_level(filtered_ad_domains)
-    
-    with open(HOSTS_FILE, "w", encoding="utf-8") as h_file:
-        for domain in sorted_ad_domains: 
-            h_file.write(f"0.0.0.0 {domain}\n")
-    
+    sorted_ad_domains, all_new_domains, all_review_domains, all_clean_domains = finalize_domains(domain_stats, existing_domains)
+    write_hosts_and_adblock(sorted_ad_domains)
+
     total_total = len(urls_to_scan) if not TARGET_SCAN else 1
     log_lines = [
         "="*60, "ЛОГ АНАЛИЗА URLSCAN (CRAWLER MAP)", "="*60, 
@@ -209,38 +227,28 @@ async def main_async():
             
     log_lines.append("\n" + "="*60)
     
-    # Решение уже принято в classify_session: домен либо в ad, либо в clean (не в обоих сразу)
-    final_ad_log, final_clean_log = all_new_domains, all_clean_domains
-
+    # Решение уже принято в classify_session: домен ровно в одной из трёх категорий
     def fmt_scores(s):
         extra = f", pages: {s.get('pages', 1)}"
+        if s.get("strong"): extra += f", strong: {s['strong']}"
         if s.get("group", 1) > 1: extra += f", группа x{s['group']}"
         if s.get("hint"): extra += ", name-hint"
         return f"(clean: {s['clean_score']}, ad: {s['ad_score']}{extra})"
 
-    # ВЫВОД ЗАБЛОКИРОВАННЫХ ДОМЕНОВ С СЕПАРАЦИЕЙ НА ЖЕСТКИЙ BAN И NEED_REVIEW
-    if final_ad_log:
-        log_lines.append("--- ДОБАВЛЕННЫЕ РЕКЛАМНЫЕ ДОМЕНЫ ---")
-        ad_counter = 1
-        review_counter = 1
-        
-        # Сначала выводим чистый рекламный мусор (clean_score == 0)
-        log_lines.append("\n[ КАТЕГОРИЯ: СТРОГИЙ БАН (100% РЕКЛАМА / ТРЕКЕРЫ) ]")
-        for d, s in sorted(final_ad_log.items()):
-            if is_confident_ad(d, s):
-                log_lines.append(f"{ad_counter:02d}. [AD] {d:<40} {fmt_scores(s)}")
-                ad_counter += 1
-                
-        # Затем выводим кандидатов на ручной разбор (заблокированы по скорингу, но есть заметные признаки полезности)
-        log_lines.append("\n[ КАТЕГОРИЯ: КАНДИДАТЫ НА БЕЛЫЙ СПИСОК (ПЛЕЕРЫ/ВИДЖЕТЫ?) ]")
-        for d, s in sorted(final_ad_log.items()):
-            if not is_confident_ad(d, s):
-                log_lines.append(f"{review_counter:02d}. [NEED_REVIEW] {d:<40} {fmt_scores(s)} -> Обрати внимание!")
-                review_counter += 1
-            
-    if final_clean_log:
+    log_lines.append("--- ЗАБЛОКИРОВАНО В ЭТОМ ЗАПУСКЕ (hosts.txt / adblock.txt) ---")
+    for i, (d, s) in enumerate(sorted(all_new_domains.items()), 1):
+        log_lines.append(f"{i:02d}. [AD] {d:<40} {fmt_scores(s)}")
+    log_lines.append(f"\nИтого в hosts.txt: {len(sorted_ad_domains)} доменов (с учётом прежних записей и схлопнутых хэш-поддоменов)")
+
+    if all_review_domains:
+        log_lines.append("\n--- НА РУЧНОЙ РАЗБОР (НЕ заблокированы: похоже на рекламу, но блок может сломать сайт/плеер) ---")
+        log_lines.append("Решение: реклама -> добавить в AD_APEX_BLACKLIST / EXTRA_BLACKLIST_PATTERNS (filters.py); легитимный -> оставить.")
+        for i, (d, s) in enumerate(sorted(all_review_domains.items()), 1):
+            log_lines.append(f"{i:02d}. [REVIEW] {d:<40} {fmt_scores(s)}")
+
+    if all_clean_domains:
         log_lines.append("\n--- НЕ ЗАБЛОКИРОВАНО В ЭТОМ ЗАПУСКЕ (недостаточно признаков рекламы; это не гарантия легитимности) ---")
-        for i, (d, s) in enumerate(sorted(final_clean_log.items()), 1): 
+        for i, (d, s) in enumerate(sorted(all_clean_domains.items()), 1):
             log_lines.append(f"{i:02d}. [OK] {d:<40} {fmt_scores(s)}")
 
     with open(LOG_FILE, "w", encoding="utf-8") as f: 

@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 
 # --- Настройки путей проекта ---
 HOSTS_FILE = Path(__file__).parent.parent / "hosts.txt"
+ADBLOCK_FILE = Path(__file__).parent.parent / "adblock.txt"
 LOG_FILE = Path(__file__).parent.parent / "log.txt"
 DEFAULT_URL_FILE = Path(__file__).parent.parent / "urls.txt"
 TLDEXTRACT_CACHE_DIR = Path(__file__).parent / ".tldextract_cache"
@@ -74,15 +75,27 @@ RELATED_APEXES = {
     "mail.ru": ("sportmail.ru",),
 }
 
-# Порог «строгого бана»: домен попадает в hosts, если ad_score > clean_score * RATIO + MARGIN
-# (или clean_score == 0, или он явно в чёрном списке). Остальные заблокированные по скорингу — NEED_REVIEW.
-STRICT_BAN_RATIO = 4
-STRICT_BAN_MARGIN = 15
-
+# --- Пороги классификации (см. filters.decide) ---
 # Бонус к ad_score (один раз на домен/группу, а не за каждый запрос), если в имени хоста есть рекламный
-# признак (ads, ssp, dsp, rtb, px, sync, pixel ...). Нужен, чтобы очевидная рекламная инфраструктура
-# не проскакивала только из-за того, что в выборке она встретилась 1-2 раза.
+# признак (ads, ssp, dsp, rtb, px, sync, cm, analytics, stats ...). Нужен, чтобы очевидная рекламная
+# инфраструктура не проскакивала только из-за того, что в выборке она встретилась 1-2 раза.
 HOST_HINT_BONUS = 30
+
+# Неизвестный сторонний домен БЕЗ единого «чистого» признака (clean == 0): блокируется уже от одного
+# сторонне инициированного запроса (ad_score >= 12). Раньше порог был 20, из-за чего одиночные
+# cookie-sync/пиксельные запросы (ad = 12) оставались в OK.
+UNPROTECTED_CLEAN0_MIN_AD = 12
+
+# Неизвестный домен с некоторым clean_score: блок при ad > clean * RATIO_BLOCK + MARGIN_BLOCK.
+# Ниже этого порога, но при ad > clean — домен попадает в REVIEW (в hosts не идёт, виден в логе).
+RATIO_BLOCK = 2
+MARGIN_BLOCK = 15
+
+# Домен из «защищённого семейства» (mail.ru, mts.ru, yandex.* ...) без рекламных признаков в имени,
+# но с clean == 0 и большим ad_score — не блокируется автоматически (можно сломать сам сервис),
+# а выносится в раздел REVIEW на ручное решение.
+PROTECTED_REVIEW_MIN_AD = 60
+PROTECTED_REVIEW_RATIO = 8      # ...или ad > clean * 8
 
 # Если предпоследний сегмент пути — один из этих, последний сегмент считается ID статьи, а не рубрикой
 # (Дзен: /a/<id>, /news/show/<id>)

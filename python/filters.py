@@ -2,7 +2,11 @@ import re
 import os
 import tldextract
 import requests
-from config import TLDEXTRACT_CACHE_DIR, RELATED_APEXES, STRICT_BAN_RATIO, STRICT_BAN_MARGIN, HOST_HINT_BONUS
+from config import (
+    TLDEXTRACT_CACHE_DIR, RELATED_APEXES, HOST_HINT_BONUS,
+    UNPROTECTED_CLEAN0_MIN_AD, RATIO_BLOCK, MARGIN_BLOCK,
+    PROTECTED_REVIEW_MIN_AD, PROTECTED_REVIEW_RATIO,
+)
 
 # Отключаем SSL-верификацию для tldextract (корпоративный SSL-сертификат)
 # Включается только явно: TLDEXTRACT_INSECURE=1 (на GitHub Actions не нужно).
@@ -15,17 +19,33 @@ if os.environ.get("TLDEXTRACT_INSECURE") == "1":
 
 _extract = tldextract.TLDExtract(cache_dir=str(TLDEXTRACT_CACHE_DIR))
 
-# --- Паттерны для скоринговой системы ---
+# =============================================================================
+# 1. ПРИЗНАКИ В URL ЗАПРОСОВ (идут в скоринг, см. urlscan_client.collect_scan_verdicts)
+# =============================================================================
+# Сильные признаки рекламы: специфичные пути/параметры рекламных запросов (+40 к ad_score и +1 к strong).
+# Именно «strong» отличает реальную рекламу от обычного стороннего скрипта (CDN, виджет, API).
+AD_STRONG_PATTERNS = [
+    r"/pagead/", r"adsbygoogle", r"/gampad/", r"/ima3(\.js|/)", r"/(show|get)_?ads?\b",
+    r"/adview\b", r"/adserver", r"/ads?/", r"/adv(ert)?/", r"/banners?/",
+    r"/(openrtb2?|ortb)\b", r"prebid", r"/rtb/", r"/vast\b", r"/vmap\b", r"/vpaid\b",
+    r"/(usersync|user_sync|user-sync|idsync|id_sync|cookiesync|cookie_sync|cookie-sync|setuid)\b",
+    r"/(imp|impression)s?[/?]", r"/pixel(\.gif|\.png|\?|/)", r"/beacon\b",
+    r"[?&]gdpr(_consent)?=", r"[?&]us_privacy=",              # типичные хвосты cookie-sync запросов
+    r"/(ads|adv|adsbygoogle|gpt)\.js",
+]
+
+# Признаки трекеров/аналитики (+30 к ad_score, как и раньше).
 AD_TRACKER_PATTERNS = [
-    r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding", r"\/ads\/system\/", 
-    r"sync-loader", r"counter", r"analytics", r"gnezdo\.ru", r"fundingchoices", 
+    r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding", r"\/ads\/system\/",
+    r"sync-loader", r"counter", r"analytics", r"gnezdo\.ru", r"fundingchoices",
     r"\/cm\.", r"context\.js", r"telemetry", r"adriver", r"bs\.serving-sys", r"advert", r"adfox",
     r"viqeo", r"vigo\.tech", r"embeds\.rambler",
+    r"mc\.yandex\.[a-z]+/watch", r"/collect\b", r"clickstream",
 
     # --- Специфичные рекламные пути Росбалта/СМИ2 ---
-    r"smi2\.ru\/newdata\/",       # Конкретный подпуть редиректов СМИ2
-    r"\/advert\/",                # Общие рекламные каталоги
-    r"\/banners\/"                # Пути к статическим баннерам медиахолдингов
+    r"smi2\.ru\/newdata\/",
+    r"\/advert\/",
+    r"\/banners\/",
 ]
 
 SYSTEM_ASSETS_PATTERNS = [
@@ -33,190 +53,133 @@ SYSTEM_ASSETS_PATTERNS = [
     r"\.hsmedia\.ru", r"\.viqeo\.tv", r"\.bbci\.co\.uk", r"\.bbc\.co\.uk", r"\.thetruestory\.news", r"cdn.*iportal\.ru"
 ]
 
-# --- ЕДИНЫЙ БЕЛЫЙ СПИСОК: infrastructure медиа-холдингов, веб-платформы, CDN и глобальные сервисы ---
-# Совпадение: точный домен или любой его поддомен (см. _in_list).
-STRICT_DOMAINS_WHITELIST = [
-    # === 0-9 ===
-    "1mi-media.ru",                     # Экосистема Росбалт
+_COMPILED_STRONG = [re.compile(p, re.IGNORECASE) for p in AD_STRONG_PATTERNS]
+_COMPILED_TRACKER = [re.compile(p, re.IGNORECASE) for p in AD_TRACKER_PATTERNS]
+_COMPILED_SYSTEM = [re.compile(p, re.IGNORECASE) for p in SYSTEM_ASSETS_PATTERNS]
 
-    # === A ===
-    "ampproject.org",                   # Служебная инфраструктура Google AMP
-    "apester.com",                      # Интерактивный контент
-    "avatars.mds.yandex.net",           # Экосистема Яндекс / Дзен (Служебные CDN)
+def url_is_strong_ad(url):
+    return any(p.search(url) for p in _COMPILED_STRONG)
 
-    # === B ===
-    "bbc.co.uk",                        # Государственные, банковские и новостные ресурсы
-    "bbc.com",                          # Государственные, банковские и новостные ресурсы
-    "brightcove.com",                   # Плееры Brightcove (BBC, Аль-Джазира и др.)
-    "brightcovecdn.com",                # Статика и медиа-потоки Brightcove
-    "browser-intake-datadoghq.com",     # Системные CDN и библиотеки
-    "bunny.net",                        # Bunny Stream инфраструктура
+def url_is_tracker(url):
+    return any(p.search(url) for p in _COMPILED_TRACKER)
 
-    # === C ===
-    "cloudflare.com",                   # Глобальные CDN и служебная инфраструктура Google/Cloud
-    "cloudflareinsights.com",           # Мониторинг производительности и JS-аналитика Cloudflare
-    "cnews.ru",                         # Издание CNews
-    "coolbonsai.com",                   # Служебное контентное зеркало Connatix
-    "createjs.com",                     # Системные CDN, библиотеки и медиа-инфраструктура
+def url_is_system_asset(url):
+    return any(p.search(url) for p in _COMPILED_SYSTEM)
 
-    # === D ===
-    "directupload.eu",                  # Фотохостинги и файловые хранилища
-    "disqus.com",                       # Платформа комментариев Disqus
-    "disquscdn.com",                    # CDN статики для комментариев Disqus
-    "dmcdn.net",                        # Медиа-контент и видеохостинги (DailyMotion)
-    "dzen.ru",                          # Экосистема Яндекс / Дзен
-    "dzeninfra.ru",                     # Экосистема Яндекс / Дзен
+# =============================================================================
+# 2. НИКОГДА НЕ БЛОКИРОВАТЬ (уровень A): чистая инфраструктура — CDN, библиотеки, шрифты,
+#    видеоплееры, фото/файлохостинги. Совпадение: точный домен или любой поддомен.
+#    Сюда НЕ входят рекламные сервисы (googlesyndication, googletagmanager, smartadserver, lijit,
+#    liadm, cloudflareinsights, html-load, connatix, openfpcdn ...): раньше они были в белом списке
+#    и поэтому проходили как «OK» при любом ad-рейтинге. Теперь они в чёрном списке.
+#    Чёрный список проверяется РАНЬШЕ этого списка.
+# =============================================================================
+NEVER_BLOCK_DOMAINS = [
+    "ampproject.org", "apester.com", "avatars.mds.yandex.net", "brightcove.com",
+    "brightcovecdn.com", "bunny.net", "cloudflare.com", "createjs.com", "directupload.eu",
+    "disqus.com", "disquscdn.com", "dmcdn.net", "fastpic.org", "favicon.yandex.net", "gstatic.com",
+    "googleapis.com", "googleusercontent.com", "gvt1.com", "hostingkartinok.com", "imageban.ru",
+    "imgchest.com", "infogram.com", "jquery.com", "jsdelivr.net", "jwplayer.com", "kinescope.io",
+    "kinescopecdn.net", "nflximg.net", "nnmstatic.win", "openstreetmap.org", "pic4net.com",
+    "plyr.io", "rackcdn.com", "rutubelist.ru", "sentry.io", "sentry-saas.rambler-co.ru",
+    "sketchfab.com", "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com", "unpkg.com",
+    "viafoura.co", "viafoura.net", "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru",
+    "vk-cdn.net", "vkcloud-storage.ru", "vkvd.net", "wistia.com", "yapfiles.ru", "ytimg.com",
+    "yastatic-net.ru", "nnmstatic.win", "rutracker.cc",
+]
 
-    # === E ===
-    "e1.ru",                            # Городские порталы Шкулёв Медиа
-    "emp.bbci.co.uk",                   # Элементы плеера BBC
+# =============================================================================
+# 3. ЗАЩИЩЁННЫЕ СЕМЕЙСТВА (уровень B): крупные портальные экосистемы и сайты-источники.
+#    Корень (apex и www.apex) блокировать нельзя — сломается сам сервис, но ПОДДОМЕНЫ блокируются, если
+#    они в чёрном списке, имеют рекламный признак в имени (analytics.*, cm.*, ssp.*, stats.* ...)
+#    или у них заметный перевес рекламных очков (см. decide()).
+#    Раньше эти домены целиком лежали в белом списке — поэтому analytics.iportal.ru с ad=6510, clean=0
+#    и cm.a.mts.ru с ad=252, clean=0 попадали в OK.
+#    Семейства yandex.* и google.* определяются по apex (см. is_protected).
+# =============================================================================
+PROTECTED_FAMILIES = [
+    # Яндекс / Google помимо yandex.* и google.*
+    "ya.ru", "yastatic.net", "yandexcloud.net", "dzen.ru", "dzeninfra.ru", "youtube.com",
+    # VK / Mail.ru / OK
+    "mail.ru", "imgsmail.ru", "vk.com", "vk.ru", "vk.me", "vk.team", "vk-portal.net", "vkvideo.ru",
+    "userapi.com", "ok.ru", "odnoklassniki.ru", "okcdn.ru", "mycdn.me",
+    # Операторы, банки, госсервисы
+    "mts.ru", "t2.ru", "beeline.ru", "sber.ru", "sberbank.ru", "sbrf.ru", "mos.ru",
+    # Рамблер и холдинги
+    "rambler.ru", "iportal.ru", "hsmedia.ru", "1mi-media.ru", "1mi.media", "kp.ru", "kpcdn.net",
+    "rbk.ru", "rbc.ru", "rutube.ru", "openwebmp.com", "spot.im", "piano.io", "tinypass.com",
+    # Yahoo
+    "yahoo.com", "yahoo.net", "yimg.com", "oath.com", "yahoofinance.com",
+    # Соцсети и крупные пользовательские сайты (корень нужен людям)
+    "twitter.com", "x.com", "facebook.com", "instagram.com", "temu.com", "bing.com",
+    "wildberries.ru",
+    # Сайты-источники из urls.txt и их инфраструктура
+    "bbc.com", "bbc.co.uk", "bbci.co.uk", "cnews.ru", "e1.ru", "euronews.com", "fishki.net", "fontanka.ru",
+    "gazeta.ru", "ign.com", "interfax.ru", "ixbt.com", "iz.ru", "lenta.ru", "mk.ru",
+    "ngs.ru", "pikabu.ru", "retail.ru", "rosbalt.ru", "techradar.com", "tourdom.ru", "vedomosti.ru",
+    "vdmsti.ru", "yaplakal.com", "yuga.ru", "rferl.org", "thetruestory.news",
+]
 
-    # === F ===
-    "fastpic.org",                      # Фотохостинги и файловые хранилища
-    "favicon.yandex.net",               # Экосистема Яндекс / Дзен (Иконки)
-    "files.1mi.media",                  # Медиа-ресурсы холдинга 1МИ
-    "fontanka.ru",                      # Городские порталы Шкулёв Медиа
+# =============================================================================
+# 4. ЧЁРНЫЙ СПИСОК ПО APEX: рекламные/трекерные компании целиком (домен и все поддомены).
+#    Нужен для сервисов, которые в логе висели как OK из-за малой выборки (1-2 запроса).
+# =============================================================================
+AD_APEX_BLACKLIST = {
+    # Google ad stack (раньше googlesyndication/googletagmanager/google-analytics были в белом списке)
+    "googlesyndication.com", "doubleclick.net", "googleadservices.com", "googletagservices.com",
+    "googletagmanager.com", "google-analytics.com", "adservice.google.com", "googleoptimize.com",
+    # Amazon / Microsoft / Adobe / Meta ad hosts
+    "amazon-adsystem.com", "adsymptotic.com", "bat.bing.com", "c.bing.com", "everesttech.net",
+    "omtrdc.net", "adobedtm.com",
+    # Cloudflare / Datadog / fingerprint-аналитика, раньше в белом списке
+    "cloudflareinsights.com", "browser-intake-datadoghq.com", "openfpcdn.io", "fpjscdn.net",
+    "html-load.com",
+    # Видео-реклама и ad-плееры
+    "connatix.com", "coolbonsai.com", "injectoften.com", "aniview.com", "smartadserver.com",
+    "stickyadstv.com", "spotxchange.com", "springserve.com", "teads.tv", "undertone.com",
+    # SSP / DSP / DMP / cookie-sync / identity
+    "33across.com", "3lift.com", "tynt.com", "adkernel.com", "admixer.net", "adhaven.com",
+    "adspector.io", "adlook.tech", "adsource.pro", "admanmedia.com", "advcake.ru",
+    "agkn.com", "amx1.net", "axis-marketplace.com", "blismedia.com", "bricks-co.com",
+    "brandmetrics.com", "ck-ie.com", "clickagy.com", "contextweb.com", "cootlogix.com",
+    "crwdcntrl.net", "digitaltarget.ru", "dmxleo.com", "dotomi.com", "doubleverify.com", "dv.tech",
+    "eskimi.com", "exelator.com", "eyeota.net", "giraff.io", "giraff.media", "gumgum.com",
+    "indexww.com", "infolinks.com", "inmobi.com", "iqzone.com", "kargo.com", "krushmedia.com",
+    "krxd.net", "kueezrtb.com", "liadm.com", "lijit.com", "loopme.me", "marphezis.com",
+    "measureadv.com", "mediagotechnology.com", "mobilefuse.com", "mookie1.com", "myweb3id.io",
+    "nextmillmedia.com", "nodals.io", "omnitagjs.com", "onetag-sys.com", "acuityplatform.com",
+    "perfluence.net", "permutive.app", "permutive.com", "prmutv.co", "postrelease.com",
+    "programmaticx.ai", "punchmedia.ru", "qtarget.tech", "rlcdn.com", "rqtrk.eu", "rtbcdn.ru",
+    "rtbwave.com", "rtactivate.com", "rutarget.ru", "semasio.net", "seedtag.com", "servenobid.com",
+    "sharethrough.com", "silvermob.com", "simpli.fi", "skimresources.com", "smilewanted.com",
+    "sonobi.com", "svk-native.ru", "syncingbridge.com", "targetrtb.com", "thrtle.com",
+    "tracookiepixel.xyz", "travelpayouts.com", "trustedstack.com", "ussp.io", "utraff.com",
+    "uuidksinc.net", "videohead.tech", "vistarsagency.com", "whiteboxdigital.ru", "xoalt.com",
+    "yellowblue.io", "yieldmo.com", "ymmobi.com", "zemanta.com", "zdbb.net", "mradx.net",
+    "rmp.rakuten.com", "addthis.com", "quantserve.com", "taboola.com", "criteo.net",
+    "sascdn.com", "dotmetrics.net", "moatads.com", "adsafeprotected.com", "adform.net", "adition.com", "yandexadexchange.net",
+}
 
-    # === G ===
-    "gazeta.ru",                        # Экосистема Газета.ru (Служебные домены)
-    "google-analytics.com",             # Глобальные CDN и служебная инфраструктура Google
-    "google.com",                       # Глобальные CDN и служебная инфраструктура Google
-    "google.dk",                        # Глобальные CDN и служебная инфраструктура Google
-    "googleapis.com",                   # Глобальные CDN и служебная инфраструктура Google
-    "googlesyndication.com",            # Глобальные CDN и служебная инфраструктура Google
-    "googletagmanager.com",             # Глобальные CDN и служебная инфраструктура Google
-    "googletagservices.com",            # Глобальные CDN и служебная инфраструктура Google
-    "googleusercontent.com",            # Глобальные CDN и служебная инфраструктура Google
-    "gstatic.com",                      # Глобальные CDN и служебная инфраструктура Google
-    "gvt1.com",                         # Глобальные CDN и служебная инфраструктура Google
-
-    # === H ===
-    "hostingkartinok.com",              # Фотохостинги и файловые хранилища
-    "html-load.com",                    # Инфраструктура доставки и оптимизации контента
-    "hsmedia.ru",                       # Инфраструктура Hearst Shkulev Media
-
-    # === I ===
-    "ichef.bbci.co.uk",                 # Изображения BBC
-    "imageban.ru",                      # Фотохостинги и файловые хранилища
-    "imgchest.com",                     # Фотохостинги и файловые хранилища
-    "imgsmail.ru",                      # Экосистема VK / Mail.ru
-    "infogram.com",                     # Инфографика и интерактивные чарты
-    "injectoften.com",                  # Служебный домен доставки плеера Connatix
-    "iportal.ru",                       # Городские порталы холдинга Shkulev Media
-
-    # === J ===
-    "jquery.com",                       # Системные CDN, библиотеки и медиа-инфраструктура
-    "jsdelivr.net",                     # Глобальные CDN и служебная инфраструктура
-    "jwplayer.com",                     # Независимые плееры JW Player в СМИ
-
-    # === K ===
-    "kinescope.io",                     # Видеохостинг и стриминг Kinescope
-    "kinescopecdn.net",                 # Распределенная сеть доставки видео Kinescope
-    "kp.ru",                            # Экосистема КП (Комсомольская Правда)
-    "kpcdn.net",                        # Инфраструктура Комсомольской Правды
-
-    # === L ===
-    "liadm.com",                        # Инфраструктура контентной оптимизации LiveIntent
-    "lijit.com",                        # Медиа-инфраструктура и контентные виджеты
-
-    # === M ===
-    "mail.ru",                          # Экосистема VK / Mail.ru
-    "mos.ru",                           # Государственные, банковские и новостные ресурсы
-    "mts.ru",                           # Экосистема МТС
-    "mybbc-analytics.files.bbci.co.uk", # Аналитические файлы BBC
-    "mycdn.me",                         # Экосистема VK / Одноклассники
-
-    # === N ===
-    "nflximg.net",                      # Медиа-контент (Netflix CDN)
-    "ngs.ru",                           # Городские порталы Шкулёв Медиа
-    "nnmstatic.win",                    # Торрент-трекеры и их статика
-
-    # === O ===
-    "oath.com",                         # Окно согласия с условиями использования (Privacy GDPR) для Yahoo
-    "odnoklassniki.ru",                 # Одноклассники
-    "ok.ru",                            # Одноклассники
-    "okcdn.ru",                         # Одноклассники CDN
-    "openfpcdn.io",                     # Системные CDN, библиотеки и медиа-инфраструктура
-    "openstreetmap.org",                # Картографический сервис
-    "openwebmp.com",                    # Платформа комментариев OpenWeb
-
-    # === P ===
-    "piano.io",                         # Инфраструктура подписок Ведомостей/СМИ
-    "pic4net.com",                      # Фотохостинги и файловые хранилища
-    "plyr.io",                          # Системные CDN, библиотеки и медиа-инфраструктура
-
-    # === R ===
-    "r.mradx.net",                      # Экосистема VK / Mail.ru
-    "rackcdn.com",                      # Медиа-контент и видеохостинги
-    "rambler.ru",                       # Portal и медиа-сервисы Рамблера
-    "rbk.ru",                           # Инфраструктура холдинга РБК
-    "rferl.org",                        # Государственные, банковские и новостные ресурсы
-    "rosbalt.ru",                       # Экосистема Росбалт
-    "rutracker.cc",                     # Торрент-трекеры и их статика
-    "rutube.ru",                        # Видео и стриминг (РФ)
-    "rutubelist.ru",                    # Видео и стриминг (РФ)
-
-    # === S ===
-    "sber.ru",                          # Государственные, банковские и новостные ресурсы
-    "sberbank.ru",                      # Государственные, банковские и новостные ресурсы
-    "sbrf.ru",                          # Государственные, банковские и новостные ресурсы
-    "sentry-saas.rambler-co.ru",        # Сборщик ошибок Рамблер
-    "sentry.io",                        # Сборщик ошибок UI
-    "sketchfab.com",                    # Системные CDN, библиотеки и медиа-инфраструктура
-    "smartadserver.com",                # Инфраструктура стриминга и медиа-доставки Equativ
-    "spot.im",                          # Платформа комментариев OpenWeb (бывший Spot.IM)
-    "static.bbci.co.uk",                # Статика BBC
-    "static.files.bbci.co.uk",          # Статика BBC
-
-    # === T ===
-    "t2.ru",                            # Экосистема Tele2
-    "thetruestory.news",                # Новостные ресурсы
-    "tildaapi.com",                     # Конструктор сайтов Tilda
-    "tildacdn.com",                     # Конструктор сайтов Tilda
-    "tinypass.com",                     # Инфраструктура подписок / Piano
-    "twimg.com",                        # Экосистема X (Twitter)
-    "twitter.com",                      # Экосистема X (Twitter)
-
-    # === U ===
-    "unpkg.com",                        # Глобальные CDN и служебная инфраструктура
-    "userapi.com",                      # Системные CDN и библиотеки (VK)
-
-    # === V ===
-    "vdmsti.ru",                        # Служебное зеркало Ведомостей
-    "vedomosti.ru",                     # Инфраструктура издания Ведомости
-    "viafoura.co",                      # Платформа вовлечения аудитории Viafoura
-    "viafoura.net",                     # CDN и служебные запросы Viafoura
-    "vk-cdn.net",                       # Экосистема VK
-    "vk-portal.net",                    # Экосистема VK
-    "vk.com",                           # Экосистема VK
-    "vk.me",                            # Экосистема VK
-    "vk.ru",                            # Экосистема VK
-    "vk.team",                          # Экосистема VK
-    "vkcloud-storage.ru",               # Экосистема VK
-    "vkuseraudio.net",                  # Экосистема VK
-    "vkusernet.ru",                     # Инфраструктура авторизации VK / userapi
-    "vkuserphoto.ru",                   # Экосистема VK
-    "vkvd.net",                         # Экосистема VK
-    "vkvideo.ru",                       # Экосистема VK
-
-    # === W ===
-    "wildberries.ru",                   # Ритейл
-    "wistia.com",                       # Видеоплатформа Wistia для бизнеса
-
-    # === X ===
-    "x.com",                            # Экосистема X (Twitter)
-
-    # === Y ===
-    "yahoo.com",                        # Экосистема Yahoo (Авторизация и сервисы)
-    "yahoo.net",                        # Служебная сеть Yahoo
-    "yahoofinance.com",                 # Финансовый медиа-сервис Yahoo
-    "yandexcloud.net",                  # Экосистема Яндекс
-    "yapfiles.ru",                      # Легитимный пользовательский медиахостинг сайтов
-    "yastatic-net.ru",                  # Экосистема Яндекс
-    "yastatic.net",                     # Экосистема Яндекс
-    "yimg.com",                         # CDN статики, картинок и почты Yahoo
-    "youtube.com",                      # Видеохостинг
-    "ytimg.com",                        # Изображения YouTube
+# Дополнительные точечные правила для хостов внутри «защищённых» семейств
+# (подмножество рекламной/телеметрической инфраструктуры Яндекса, VK/Mail.ru, МТС, Рамблера, Yahoo и др.)
+EXTRA_BLACKLIST_PATTERNS = [
+    r"(^|\.)a\.mts\.ru$",                              # МТС Реклама: cm.a.mts.ru, api.a.mts.ru, static.a.mts.ru
+    r"^abt\.s3\.yandex\.net$",                         # A/B-тесты Яндекса
+    r"^uaas\.yandex\.ru$",                             # Эксперименты Яндекса
+    r"^privacy-cs\.mail\.ru$",                         # Cookie-sync Mail.ru Group
+    r"^media-(sensor|stat|trend)\.mail\.ru$",          # Счётчики медиа-рекламы Mail.ru
+    r"(^|\.)media-advcycle\.imgsmail\.ru$",
+    r"^(kraken(-[a-z0-9]+)?)\.[a-z0-9.\-]+$",          # kraken.* — рекламная/аналитическая платформа (Рамблер, IGN/Ziff Davis)
+    r"^rcm(-tr|js)?\.rambler\.ru$",                  # Рекомендательные рекламные узлы Рамблера
+    r"^pbs\.yahoo\.com$",                              # Prebid Server Yahoo
+    r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
+    r"^imasdk\.googleapis\.com$",                      # Google IMA SDK (видеореклама)
+    r"^pagead\d*\.",                                   # pagead2.* и аналоги
+    r"^cs\.openwebmp\.com$",                           # Cookie-sync OpenWeb
+    r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN
+    r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
+    r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
+    r"^stats?\.vk-portal\.net$",                       # Статистика VK
 ]
 
 # --- ЧЕРНЫЙ СПИСОК (Паттерны блокировки рекламы и трекеров) ---
@@ -390,6 +353,9 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(^|\.)log\.strm\.yandex\.ru$",                 # Метрики Яндекс Стриминга
 ]
 
+# Объединяем все точечные правила в один список (старые + дополнительные)
+STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = STRICT_SUBDOMAINS_BLACKLIST_PATTERNS + EXTRA_BLACKLIST_PATTERNS
+
 # --- Паттерны для детекции динамических хэш-поддоменов ---
 _IS_HASH_PATTERNS = [
     re.compile(r"^[a-f0-9]{32}$", re.IGNORECASE),             # MD5 (Google safeframe и др.)
@@ -397,8 +363,11 @@ _IS_HASH_PATTERNS = [
     re.compile(r"^\d{6,}$"),                                   # Чисто числовые ID от 6 знаков
 ]
 
-# Кэшируем скомпилированные регулярные выражения
 _COMPILED_BLACKLIST_PATTERNS = [re.compile(pat, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS]
+
+# Уровни решения
+BLOCK, REVIEW, ALLOW = "block", "review", "allow"
+
 
 def _extract_domain_regex(url):
     match = re.search(r"https?://([^/:]+)", url)
@@ -421,12 +390,23 @@ def _in_list(domain, entries):
     return any(domain == e or domain.endswith("." + e) for e in entries)
 
 def is_hard_blacklisted(domain):
-    """True, если домен (или его apex) явно попадает под STRICT_SUBDOMAINS_BLACKLIST_PATTERNS.
-    Такие домены блокируются независимо от скоринга: у ad.mail.ru на странице mail.ru
-    clean_score раздувается бонусом «тот же apex-домен», но это всё равно реклама."""
-    domain = domain.lower().strip()
+    """True, если домен (или его apex) явно в чёрном списке: AD_APEX_BLACKLIST или STRICT_SUBDOMAINS_BLACKLIST_PATTERNS.
+    Такие домены блокируются независимо от скоринга и белых списков."""
+    domain = domain.lower().strip().rstrip(".")
+    if _in_list(domain, AD_APEX_BLACKLIST):
+        return True
     apex = get_apex_domain(domain)
     return any(pat.search(domain) or (apex and pat.search(apex)) for pat in _COMPILED_BLACKLIST_PATTERNS)
+
+def is_protected(domain, apex=None):
+    """Домен принадлежит «защищённому семейству»: корень блокировать нельзя, поддомены — по признакам."""
+    apex = apex or get_apex_domain(domain) or domain
+    if apex.startswith("google.") or apex.startswith("yandex."):
+        return True
+    return _in_list(domain, PROTECTED_FAMILIES)
+
+def is_never_block(domain):
+    return _in_list(domain, NEVER_BLOCK_DOMAINS)
 
 def is_same_site(url, seed_apex):
     """True, если URL принадлежит сайту сида: тот же apex-домен (любой поддомен) или явно связанный из RELATED_APEXES."""
@@ -435,63 +415,25 @@ def is_same_site(url, seed_apex):
         return False
     return apex == seed_apex or apex in RELATED_APEXES.get(seed_apex, ())
 
-def should_block_domain(domain, page_apex=None, score=None):
-    domain = domain.lower().strip()
-    domain_apex = get_apex_domain(domain)
-    
-    # Если сам домен или его APEX (например, stbid.ru, casalemedia.com, ad.mail.ru) явно совпадает
-    # с правилом из черного списка, блокируем БЕЗУСЛОВНО, не дожидаясь динамического скоринга.
-    if is_hard_blacklisted(domain):
-        return True
-        
-    # 1. ЖЕСТКИЙ ЧЕРНЫЙ СПИСОК (Регулярные выражения для текущего поддомена).
-    # Проверяется ДО белого списка, иначе точечные правила (analytics.yahoo.com,
-    # ssp.rambler.ru, px.hsmedia.ru ...) перекрываются белым списком корня.
-    if any(pat.search(domain) for pat in _COMPILED_BLACKLIST_PATTERNS):
-        return True
-
-    # 2. ИСКЛЮЧЕНИЯ ДЛЯ ИНФРАСТРУКТУРЫ ПОИСКОВИКОВ
-    if domain_apex and (domain_apex.startswith("google.") or domain_apex.startswith("yandex.")):
-        if "tagmanager" in domain or "analytics" in domain: 
-            return True
-        return False
-
-    # 3. ЕДИНЫЙ БЕЛЫЙ СПИСОК (инфраструктура + глобальный; домен или его поддомен).
-    # Стоит ПОСЛЕ шага 2, чтобы google.com в списке не отключал блок tagmanager/analytics.
-    if _in_list(domain, STRICT_DOMAINS_WHITELIST):
-        return False
-
-    # 4. ЗАЩИТА ОТ САМОБЛОКИРОВКИ
-    if page_apex and (domain == page_apex or f"www.{domain}" == page_apex or domain_apex == page_apex): 
-        return False
-        
-    # 5. ДИНАМИЧЕСКИЙ СКОРИНГ (С защитой от случайных срабатываний)
-    if score is not None:
-        ad_score = score.get("ad_score", 0)
-        clean_score = score.get("clean_score", 0)
-        
-        # Если домен явно полезен (много системных ассетов), 
-        # рекламный скор должен быть значительно выше для блокировки
-        if clean_score > 0:
-            return ad_score > (clean_score * 2) + 15  # Требуем уверенного перевеса
-            
-        # Если clean_score == 0, блокируем только при явном триггере,
-        # а не из-за случайного "+6 за сторонний запрос"
-        return ad_score >= 20 
-        
-    return True
-
-# --- Сессионная классификация: агрегирование по страницам и группам «реплик» ---
-_AD_HOST_LABEL_RE = re.compile(
-    r"^(?:ads?|adx|adserver|adserv|adsrv|adtech|adnetwork|ssp|dsp|rtb|bid|bidder|prebid|pixel|px|sync|track|tracker|tracking|beacon)\d*$"
-)
+# --- Рекламные признаки в имени хоста ---
+_AD_HOST_LABELS = {
+    "ad", "ads", "adx", "adv", "adserver", "adserv", "adsrv", "adtech", "adnetwork",
+    "ssp", "dsp", "dmp", "rtb", "bid", "bidder", "prebid", "pixel", "px",
+    "sync", "usersync", "idsync", "cookiesync", "cm", "match",
+    "track", "tracker", "tracking", "beacon", "collect", "counter",
+    "analytics", "metrika", "metrics", "telemetry", "stat", "stats", "clickstream",
+}
+_AD_LABEL_SUFFIX_RE = re.compile(r"[a-z]{2,}(ssp|dsp|rtb)$")   # ussp, amxrtb, colossusssp, kueezrtb
 
 def host_ad_hint(domain):
-    """True, если среди меток хоста (без TLD, с разбиением по дефису) есть рекламный термин: ads, ssp, dsp, rtb, px, sync ..."""
-    labels = []
+    """True, если среди меток хоста (без TLD, с разбиением по дефису, без хвостовых цифр) есть рекламный термин:
+    ads, ssp, dsp, rtb, px, sync, cm, analytics, stats ..."""
     for part in domain.lower().split(".")[:-1]:
-        labels.extend(part.split("-"))
-    return any(_AD_HOST_LABEL_RE.match(label) for label in labels)
+        for label in part.split("-"):
+            label = re.sub(r"\d+$", "", label)
+            if label in _AD_HOST_LABELS or _AD_LABEL_SUFFIX_RE.match(label):
+                return True
+    return False
 
 def service_group_key(domain):
     """Ключ «одного сервиса»: реплики вида hal9000.x.net / hal90005.x.net, px2.x.pro / px4.x.pro, cs13.x.ru / cs2.x.ru
@@ -503,50 +445,109 @@ def service_group_key(domain):
     stripped = re.sub(r"\d+$", "", parts[0]) or "#"
     return ".".join([stripped] + parts[1:])
 
-def is_confident_ad(domain, score=None):
-    """Строгий бан (идёт в hosts): явный чёрный список, нет данных скоринга (старые записи hosts),
-    clean_score == 0 или ad_score > clean_score * STRICT_BAN_RATIO + STRICT_BAN_MARGIN."""
+
+def decide(domain, score=None, own_site=False):
+    """
+    Единое решение по домену. Возвращает BLOCK (идёт в hosts), REVIEW (не блокируется, показывается в логе
+    для ручного решения) или ALLOW.
+
+    Порядок проверок:
+      1. Чёрный список (apex-список и регулярки)  -> BLOCK. Проверяется ПЕРВЫМ, белые списки его не перекрывают.
+      2. Чистая инфраструктура (NEVER_BLOCK)       -> ALLOW.
+      3. Защищённые семейства и «свой» сайт сида: корень -> ALLOW; поддомен с рекламным признаком
+         в имени / сильными рекламными URL и перевесом ad над clean -> BLOCK.
+      4. Остальные (неизвестные сторонние домены): clean == 0 и хоть какой-то рекламный след -> BLOCK;
+         иначе перевес ad над clean по порогам.
+    score: {"clean_score", "ad_score", "strong", "hint"}; None — данных нет (старые записи hosts, схлопнутые хэши).
+    """
+    domain = domain.lower().strip().rstrip(".")
     if is_hard_blacklisted(domain):
-        return True
-    if not score:
-        return True
+        return BLOCK
+    if is_never_block(domain):
+        return ALLOW
+
+    apex = get_apex_domain(domain) or domain
+    protected = own_site or is_protected(domain, apex)
+    is_root = domain == apex or domain == f"www.{apex}"
+    hint = host_ad_hint(domain) or bool(score and score.get("hint"))
+
+    if score is None:
+        if protected:
+            return BLOCK if (hint and not is_root) else ALLOW
+        return BLOCK
+
     clean = score.get("clean_score", 0)
     ad = score.get("ad_score", 0)
-    return clean == 0 or ad > clean * STRICT_BAN_RATIO + STRICT_BAN_MARGIN
+    strong = score.get("strong", 0)
+
+    if protected:
+        if is_root:
+            return ALLOW
+        if hint:
+            return BLOCK if ad >= clean else REVIEW
+        if strong:
+            if ad > clean * RATIO_BLOCK + MARGIN_BLOCK:
+                return BLOCK
+            return REVIEW if ad > clean else ALLOW
+        # Без признаков в имени и без сильных URL: автоматически не блокируем (скоринг считает «рекламой»
+        # любой сторонний скрипт/API — news.google.com, api.vkvideo.ru, cs.rambler.ru), но сильный перекос
+        # выносим в REVIEW, чтобы решение принял человек (добавить в чёрный список или оставить).
+        if ad >= PROTECTED_REVIEW_MIN_AD and (clean == 0 or ad > clean * PROTECTED_REVIEW_RATIO):
+            return REVIEW
+        return ALLOW
+
+    # Неизвестный сторонний домен
+    if hint or strong:
+        return BLOCK if ad >= clean else REVIEW
+    if clean == 0:
+        return BLOCK if ad >= UNPROTECTED_CLEAN0_MIN_AD else ALLOW
+    if ad > clean * RATIO_BLOCK + MARGIN_BLOCK:
+        return BLOCK
+    return REVIEW if ad > clean else ALLOW
+
+def should_block_domain(domain, page_apex=None, score=None, own_site=False):
+    """Совместимая обёртка: True, если decide() даёт BLOCK."""
+    if page_apex and not own_site:
+        d = domain.lower().strip()
+        own_site = get_apex_domain(d) == page_apex or f"www.{d}" == page_apex
+    return decide(domain, score=score, own_site=own_site) == BLOCK
+
 
 def classify_session(domain_stats):
     """
     Единое решение по домену на основе очков со ВСЕХ страниц сессии (а не последней страницы).
-    domain_stats: {domain: {"clean_score", "ad_score", "pages", "own_site"}}.
+    domain_stats: {domain: {"clean_score", "ad_score", "strong", "pages", "own_site"}}.
     Реплики одного сервиса (service_group_key) оцениваются по суммарным очкам группы;
     рекламный признак в имени хоста добавляет HOST_HINT_BONUS один раз на группу.
-    Домен, который хотя бы раз был «своим» для сканируемой страницы (own_site), защищён от самоблокировки.
-    Возвращает (ad_domains, clean_domains); в записях clean_score/ad_score — итоговые очки решения.
+    Возвращает (ad_domains, review_domains, clean_domains); в записях clean_score/ad_score — итоговые очки решения.
     """
     groups = {}
     for d in domain_stats:
         groups.setdefault(service_group_key(d), []).append(d)
 
-    ad_domains, clean_domains = {}, {}
+    ad_domains, review_domains, clean_domains = {}, {}, {}
     for members in groups.values():
         clean = sum(domain_stats[m].get("clean_score", 0) for m in members)
         ad = sum(domain_stats[m].get("ad_score", 0) for m in members)
+        strong = sum(domain_stats[m].get("strong", 0) for m in members)
         own_site = any(domain_stats[m].get("own_site") for m in members)
         hint = any(host_ad_hint(m) for m in members)
         if hint:
             ad += HOST_HINT_BONUS
         for d in members:
             entry = {
-                "clean_score": clean, "ad_score": ad,
+                "clean_score": clean, "ad_score": ad, "strong": strong,
                 "pages": domain_stats[d].get("pages", 1),
                 "group": len(members), "hint": hint,
             }
-            page_apex = get_apex_domain(d) if own_site else None
-            if should_block_domain(d, page_apex=page_apex, score=entry):
+            level = decide(d, score=entry, own_site=own_site)
+            if level == BLOCK:
                 ad_domains[d] = entry
+            elif level == REVIEW:
+                review_domains[d] = entry
             else:
                 clean_domains[d] = entry
-    return ad_domains, clean_domains
+    return ad_domains, review_domains, clean_domains
 
 def _is_hash(left_segment):
     """Проверяет, является ли сегмент домена хэшем или идентификатором."""
@@ -559,43 +560,43 @@ def _is_hash(left_segment):
 
 def normalize_and_detect_dynamic_domain(domain):
     """
-    Детектирует динамические хэш-поддомены и нормализует их до базового узла.
+    Схлопывает ТОЛЬКО одноразовые поддомены с хэш/ID-метками (hosts не умеет wildcard, а хэшей бесконечно много).
+    Обычные (не хэшированные) хосты остаются как есть: в hosts.txt каждый поддомен должен быть перечислен явно,
+    иначе pubads.g.doubleclick.net перестанет блокироваться, если в списке остался только doubleclick.net.
+      * Хэш-хост под рекламным apex из чёрного списка -> сам apex (stbid.ru, googlesyndication.com).
+      * Иначе ведущие хэш-метки отбрасываются, остаётся родительский хост:
+        1766...cm.a.mts.ru -> cm.a.mts.ru (раньше схлопывалось до mts.ru, который защищён, и реклама терялась).
     Возвращает (is_dynamic, normalized_domain).
     """
     domain = domain.lower().strip()
     parts = domain.split('.')
-    if len(parts) <= 2:
-        # Если домен второго уровня (apex), ничего не схлопываем, чтобы не заблокировать корень
-        return False, domain
-        
-    left_segment = parts[0]
     apex = get_apex_domain(domain)
-    
-    # --- СТРАТЕГИЯ 1: Защита крупных легитимных экосистем ---
-    # (где корень блокировать НЕЛЬЗЯ, но нужно изолировать рекламные фреймы)
-    if apex == "googlesyndication.com":
-        return True, "safeframe.googlesyndication.com"
-        
+    if not apex:
+        return False, domain
+    apex_len = len(apex.split('.'))
+    if len(parts) <= apex_len:
+        return False, domain   # корень: ничего не схлопываем
+
+    # Особый случай Дзена: изолируем только рекламные узлы, остальной dzen.ru защищён
     if apex == "dzen.ru":
         for sub in ["cu.dzen.ru", "ms.dzen.ru"]:
             if sub in domain:
                 return True, sub
-        return False, domain  # Защищаем dzen.ru от полной блокировки
+        return False, domain
 
-    # --- СТРАТЕГИЯ 2: Безусловное схлопывание для известных рекламных сетей ---
-    # Если базовый домен (например, stbid.ru или adfox.ru) уже находится в черном списке,
-    # любой его глубокий поддомен автоматически признается динамическим мусором и схлопывается до корня.
-    if apex:
-        if any(pat.search(apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
-            return True, apex
+    prefix = parts[:len(parts) - apex_len]
+    if not any(_is_hash(label) for label in prefix):
+        return False, domain   # обычный хост — оставляем явной записью
 
-    # --- СТРАТЕГИЯ 3: Строгие паттерны для динамического мусора (универсальные ловушки) ---
-    is_hash = _is_hash(left_segment)
-
-    if is_hash and apex:
+    # Хэш-хост под рекламным apex: блокируем корень (в adblock.txt это покрывает все поддомены)
+    if _in_list(apex, AD_APEX_BLACKLIST) or any(pat.search(apex) for pat in _COMPILED_BLACKLIST_PATTERNS):
         return True, apex
 
-    return False, domain
+    # Иначе отбрасываем ведущие хэш-метки и оставляем родительский хост
+    stripped = list(parts)
+    while len(stripped) > apex_len and _is_hash(stripped[0]):
+        stripped.pop(0)
+    return True, ".".join(stripped)
 
 def sort_domains_by_level(domains):
     """Сортирует по apex-домену, внутри — по уровню вложенности, затем алфавитно."""
