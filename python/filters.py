@@ -294,7 +294,7 @@ AD_APEX_BLACKLIST = {
 
     # === C ===
     "ck-ie.com", "clickagy.com", "cloudflareinsights.com", "contextweb.com",
-    "cootlogix.com", "criteo.net", "crwdcntrl.net",
+    "cootlogix.com", "criteo.net", "crwdcntrl.net", "creativecdn.com",
 
     # === D ===
     "digitaltarget.ru", "dmxleo.com", "dotmetrics.net", "dotomi.com",
@@ -331,17 +331,17 @@ AD_APEX_BLACKLIST = {
     "myweb3id.io",
 
     # === N ===
-    "nextmillmedia.com", "nodals.io",
+    "nextmillmedia.com", "nodals.io", "ml314.com",
 
     # === O ===
     "omnitagjs.com", "omtrdc.net", "onetag-sys.com", "openfpcdn.io",
 
     # === P ===
     "perfluence.net", "permutive.app", "permutive.com", "postrelease.com",
-    "prmutv.co", "programmaticx.ai", "punchmedia.ru", "pippio.com",
+    "prmutv.co", "programmaticx.ai", "punchmedia.ru", "pippio.com", "pro-market.net",
 
     # === Q ===
-    "quantserve.com", "qtarget.tech",
+    "quantserve.com", "qtarget.tech", "quotiq.ru",
 
     # === R ===
     "rakuten.com", "rmp.rakuten.com", "rlcdn.com", "rqtrk.eu",
@@ -356,6 +356,7 @@ AD_APEX_BLACKLIST = {
     # === T ===
     "taboola.com", "targetrtb.com", "teads.tv", "thrtle.com",
     "tracookiepixel.xyz", "travelpayouts.com", "trustedstack.com",
+    "trafmag.com", "trustarc.com", "tynt.com", "telecid.ru",
 
     # === U ===
     "undertone.com", "ussp.io", "utraff.com", "uuidksinc.net",
