@@ -519,6 +519,7 @@
 0.0.0.0 pl2.skwstat.ru
 0.0.0.0 ssbsync-global.smartadserver.com
 0.0.0.0 ssbsync.smartadserver.com
+0.0.0.0 rtb-csync.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 smi2.net
@@ -669,7 +670,6 @@
 0.0.0.0 mv.outbrain.com
 0.0.0.0 odb.outbrain.com
 0.0.0.0 paid.outbrain.com
-0.0.0.0 rtb-csync.smartadserver.com
 0.0.0.0 sync.outbrain.com
 0.0.0.0 tcheck.outbrainimg.com
 0.0.0.0 widget-pixels.outbrain.com
