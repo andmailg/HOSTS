@@ -287,7 +287,7 @@ AD_APEX_BLACKLIST = {
     "acuityplatform.com", "addthis.com", "adform.net", "adhaven.com",
     "adition.com", "adkernel.com", "adlook.tech", "admanmedia.com",
     "admixer.net", "adobedtm.com", "adsafeprotected.com", "adspector.io",
-    "adsource.pro", "advcake.ru", "agkn.com", "amazon-adsystem.com",
+    "adsource.pro", "advcake.ru", "agkn.com", "alcmpn.com", "amazon-adsystem.com",
     "amx1.net", "aniview.com", "axis-marketplace.com", "admaster.cc",
 
     # === B ===
@@ -296,7 +296,7 @@ AD_APEX_BLACKLIST = {
 
     # === C ===
     "ck-ie.com", "clickagy.com", "cloudflareinsights.com", "contextweb.com",
-    "cootlogix.com", "criteo.net", "crwdcntrl.net", "creativecdn.com",
+    "cootlogix.com", "cpx.to", "criteo.net", "crwdcntrl.net", "creativecdn.com",
 
     # === D ===
     "digitaltarget.ru", "dmxleo.com", "dotmetrics.net", "dotomi.com",
@@ -333,7 +333,7 @@ AD_APEX_BLACKLIST = {
     "myweb3id.io", "mediago.io",
 
     # === N ===
-    "nextmillmedia.com", "nodals.io", "ml314.com",
+    "nextmillmedia.com", "ninthdecimal.com", "nodals.io", "ml314.com", "nexus-network-systems.com",
 
     # === O ===
     "omnitagjs.com", "omtrdc.net", "onetag-sys.com", "openfpcdn.io",
@@ -365,7 +365,7 @@ AD_APEX_BLACKLIST = {
     "undertone.com", "ussp.io", "utraff.com", "uuidksinc.net",
 
     # === V ===
-    "videohead.tech", "vistarsagency.com",
+    "videohead.tech", "viisfxlg.com", "vistarsagency.com",
 
     # === W ===
     "whiteboxdigital.ru",
@@ -409,6 +409,9 @@ EXTRA_BLACKLIST_PATTERNS = [
     r"^rcm(-tr|js)?\.rambler\.ru$",                    # Рекомендательные рекламные узлы Рамблера
     r"^mpx\d*\.rambler\.ru$",
     r"^sync\.rambler\.ru$",
+    r"^goya\.rutube\.ru$",                             # Видео-реклама Rutube
+    r"^ssp\.rutube\.ru$",                              # Рекламный движок Rutube
+    r"(^|\.)log\.rutube\.ru$",                         # Трекер Rutube
 
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
@@ -557,9 +560,6 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^ssp01?\.rambler\.ru$",                        # Объединенное правило для ssp.rambler.ru и ssp01.rambler.ru
     r"(^|\.)rambler\.ru/banner",                     # Баннерная статика Рамблера
     r"(^|\.)relap\.io$",                             # Нативная реклама Relap
-    r"^goya\.rutube\.ru$",                           # Видео-реклама Rutube
-    r"^ssp\.rutube\.ru$",                            # Рекламный движок Rutube
-    r"(^|\.)log\.rutube\.ru$",                       # Трекер Rutube
     r"(^|\.)rubiconproject\.com$",                   # Реклатформа Rubicon Project / Magnite (Из NEED_REVIEW)
 
     # === S ===

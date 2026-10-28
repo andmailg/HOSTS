@@ -982,3 +982,9 @@
 0.0.0.0 asin.ziff.tech
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
+0.0.0.0 atp.nexus-network-systems.com
+0.0.0.0 cdn.nexus-network-systems.com
+0.0.0.0 lciapi.ninthdecimal.com
+0.0.0.0 p.alcmpn.com
+0.0.0.0 s.cpx.to
+0.0.0.0 s.viisfxlg.com
