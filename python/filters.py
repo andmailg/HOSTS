@@ -76,10 +76,10 @@ def url_is_system_asset(url):
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
     "ampproject.org", "apester.com", "avatars.mds.yandex.net", "brightcove.com",
-    "brightcovecdn.com", "bunny.net", "cloudflare.com", "createjs.com", "directupload.eu",
+    "brightcovecdn.com", "bunny.net", "connatix.com", "cloudflare.com", "createjs.com", "directupload.eu",
     "disqus.com", "disquscdn.com", "dmcdn.net", "fastpic.org", "favicon.yandex.net", "gstatic.com",
     "googleapis.com", "googleusercontent.com", "gvt1.com", "hostingkartinok.com", "imageban.ru",
-    "imgchest.com", "infogram.com", "jquery.com", "jsdelivr.net", "jwplayer.com", "kinescope.io",
+    "imgchest.com", "infogram.com", "injectoften.com", "jquery.com", "jsdelivr.net", "jwplayer.com", "kinescope.io",
     "kinescopecdn.net", "nflximg.net", "nnmstatic.win", "openstreetmap.org", "pic4net.com",
     "plyr.io", "rackcdn.com", "rutubelist.ru", "sentry.io", "sentry-saas.rambler-co.ru",
     "sketchfab.com", "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com", "unpkg.com",
@@ -135,7 +135,7 @@ AD_APEX_BLACKLIST = {
     "cloudflareinsights.com", "browser-intake-datadoghq.com", "openfpcdn.io", "fpjscdn.net",
     "html-load.com",
     # Видео-реклама и ad-плееры
-    "connatix.com", "coolbonsai.com", "injectoften.com", "aniview.com", "smartadserver.com",
+    "coolbonsai.com", "aniview.com", "smartadserver.com",
     "stickyadstv.com", "spotxchange.com", "springserve.com", "teads.tv", "undertone.com",
     # SSP / DSP / DMP / cookie-sync / identity
     "33across.com", "3lift.com", "tynt.com", "adkernel.com", "admixer.net", "adhaven.com",
