@@ -30,6 +30,7 @@
 ||adx.adform.net^
 ||c1.adform.net^
 ||cm.adform.net^
+||track.adform.net^
 ||ads.adfox.ru^
 ||banners.adfox.ru^
 ||cm.adgrx.com^
@@ -45,6 +46,7 @@
 ||gtracenep.admaster.cc^
 ||imagesnep.admaster.cc^
 ||static.admaster.cc^
+||tracenep-eu.admaster.cc^
 ||admatic.com.tr^
 ||admatic.de^
 ||eu-rtbstack-cm.admixer.net^
@@ -57,7 +59,10 @@
 ||assets.adobedtm.com^
 ||adriver.ru^
 ||tracker.ads-tinyorbit.com^
+||dt.adsafeprotected.com^
+||jsconfig.adsafeprotected.com^
 ||static.adsafeprotected.com^
+||staticjs.adsafeprotected.com^
 ||statistics.adsource.pro^
 ||adsp.io^
 ||a.adspector.io^
@@ -71,6 +76,7 @@
 ||static.advcake.ru^
 ||pixel.advertising.com^
 ||cdn.advertronic.io^
+||cm-mx.advolve.io^
 ||aa.agkn.com^
 ||x01.aidata.io^
 ||vod-dash-ww-live.akamaized.net^
@@ -84,6 +90,7 @@
 ||a.amxrtb.com^
 ||player.aniview.com^
 ||sync.aniview.com^
+||captive.apple.com^
 ||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
@@ -136,6 +143,8 @@
 ||static.chartbeat.com^
 ||chartbeat.net^
 ||us.ck-ie.com^
+||a.clarity.ms^
+||b.clarity.ms^
 ||e.clarity.ms^
 ||f.clarity.ms^
 ||g.clarity.ms^
@@ -234,6 +243,7 @@
 ||ajs-assets.ftstatic.com^
 ||futurecdn.net^
 ||sommelier.futurehybrid.tech^
+||bordeaux-gateway.futureplc.com^
 ||cache.pythia.futureplc.com^
 ||eventsproxy.gargantuan.futureplc.com^
 ||fwmrm.net^
@@ -269,9 +279,11 @@
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
 ||pg.ignimgs.com^
+||assets.ikhnaie.me^
 ||media-advcycle.imgsmail.ru^
 ||secure-us.imrworldwide.com^
 ||indexww.com^
+||router.infolinks.com^
 ||rb.infox.ru^
 ||rb.infox.sg^
 ||cs.ingage.tech^
@@ -280,6 +292,9 @@
 ||cmp.inmobi.com^
 ||sync.inmobi.com^
 ||dvrtr.innovid.com^
+||dd.insiad.com^
+||events.insiad.com^
+||secure.insightexpressai.com^
 ||intent.ai^
 ||sync.intentiq.com^
 ||analytics.iportal.ru^
@@ -302,6 +317,8 @@
 ||i6.liadm.com^
 ||idx.liadm.com^
 ||rp.liadm.com^
+||rp4.liadm.com^
+||pool.liftdsp.com^
 ||ap.lijit.com^
 ||bb.lijit.com^
 ||cdn.lijit.com^
@@ -341,6 +358,7 @@
 ||pbs-cs.minutemedia-prebid.com^
 ||ml314.com^
 ||mn-tz.com^
+||mfx.mobilefuse.com^
 ||moe.video^
 ||pixelfnt-us.dsp-api.moloco.com^
 ||ib.mookie1.com^
@@ -376,10 +394,12 @@
 ||icu.newsroom.bi^
 ||cookies.nextmillmedia.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||nodals.io^
 ||nowaymail.com^
 ||dsp.nrich.ai^
 ||ssp-statistics.dsp.nt.technology^
+||adv.office-partner.de^
 ||ohmy.bid^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
@@ -394,7 +414,6 @@
 ||cs.openwebmedia.org^
 ||cs.openwebmp.com^
 ||eu-west-1-cs-rtb.openwebmp.com^
-||pbs-cs.openwebmp.com^
 ||us-east-1-cs-rtb.openwebmp.com^
 ||openx.net^
 ||t.adx.opera.com^
@@ -428,6 +447,7 @@
 ||ats-wrapper.privacymanager.io^
 ||geo.privacymanager.io^
 ||prmutv.co^
+||fei.pro-market.net^
 ||buyer.programmatica.com^
 ||sync.programmatica.com^
 ||sync.programmaticx.ai^
@@ -465,18 +485,26 @@
 ||hal90001.redintelligence.net^
 ||hal900010.redintelligence.net^
 ||hal900019.redintelligence.net^
+||hal900022.redintelligence.net^
 ||hal900025.redintelligence.net^
 ||hal900026.redintelligence.net^
 ||hal900027.redintelligence.net^
+||hal90003.redintelligence.net^
+||hal90005.redintelligence.net^
 ||hal90006.redintelligence.net^
 ||relap.io^
 ||tag.researchnow.com^
 ||sync.richaudience.com^
+||mid.rkdms.com^
 ||api.rlcdn.com^
+||ats.rlcdn.com^
 ||id.rlcdn.com^
 ||idsync.rlcdn.com^
 ||check.analytics.rlcdn.com^
+||exctg.roller.de^
 ||wt.rqtrk.eu^
+||zd.rqtrk.eu^
+||zm.rqtrk.eu^
 ||bpi.rtactivate.com^
 ||tracker.rtb-oveeo.com^
 ||tracker.rtb-stellormedia.com^
@@ -540,6 +568,7 @@
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
+||s.srvsynd.com^
 ||bid.sspnet.tech^
 ||sync.srv.stackadapt.com^
 ||stat.media^
@@ -561,6 +590,7 @@
 ||ssp.api.tappx.com^
 ||match.targetrtb.com^
 ||ads.tds.bid^
+||widgets.teads-xo.com^
 ||at.teads.tv^
 ||sync.teads.tv^
 ||sync.techdsp.ru^
@@ -625,6 +655,9 @@
 ||voxexchange.io^
 ||watchfeed.tv^
 ||scripts.webcontentassessor.com^
+||track.webgains.com^
+||analytics.webgains.io^
+||api.webgains.io^
 ||weborama-tech.ru^
 ||weborama.fr^
 ||mc.webvisor.org^
@@ -635,8 +668,8 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
-||noa.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
