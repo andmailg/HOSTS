@@ -434,12 +434,10 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
 # --- Паттерны для детекции динамических хэш-поддоменов ---
 _IS_HASH_PATTERNS = [
-    re.compile(r"^[a-fA-F0-9]{32}$"),                   # MD5 (Google safeframe и др.)
-    re.compile(r"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-$"),    # Часть UUID
-    re.compile(r"^\d{6,63}$"),                          # Чисто числовые ID от 6 знаков
-    re.compile(r"^[a-fA-F0-9]{40}$"),                   # Распространенный хэш SHA-1 (40 символов)
-    re.compile(r"^rr\d+-+sn-[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*$"),
-    re.compile(r"^[a-zA-Z]{1,5}[a-fA-F0-9]{16,32}$"),
+    re.compile(r"^[a-fA-F0-9]{32,40}"),                         # MD5 (Google safeframe и др.)
+    re.compile(r"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-"),             # Часть UUID
+    re.compile(r"^\d{6,63}"),                                   # Чисто числовые ID от 6 знаков
+    re.compile(r"^rr\d+-+sn-[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)?"),
 ]
 
 _COMPILED_BLACKLIST_PATTERNS = [re.compile(pat, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS]
