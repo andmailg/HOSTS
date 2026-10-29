@@ -93,7 +93,7 @@ NEVER_BLOCK_DOMAINS = [
     "cloudflare.com", "connatix.com", "coolbonsai.com", "createjs.com",
     
     # === D ===
-    "directupload.eu", "disqus.com", "disquscdn.com", "dmcdn.net",
+    "directupload.eu", "dmcdn.net",
 
     # === E ===
     "example.com", "eaglecdn.com",
@@ -171,7 +171,7 @@ PROTECTED_FAMILIES = [
     "championat.com", "cnews.ru",
 
     # === D ===
-    "dzen.ru", "dzeninfra.ru",
+    "dzen.ru", "dzeninfra.ru", "disqus.com", "disquscdn.com",
 
     # === E ===
     "e1.ru", "euronews.com",
@@ -211,7 +211,7 @@ PROTECTED_FAMILIES = [
 
     # === R ===
     "rambler.ru", "rbc.ru", "rbk.ru", "retail.ru",
-    "rferl.org", "rosbalt.ru", "rutube.ru",
+    "rferl.org", "rosbalt.ru", "rutube.ru", "ria.ru",
 
     # === S ===
     "sber.ru", "sberbank.ru", "sbrf.ru", "spot.im",
@@ -265,15 +265,15 @@ AD_APEX_BLACKLIST = [
     "arcspire.io", "axis-marketplace.com",
 
     # === B ===
-    "bat.bing.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
+    "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "blismedia.com", "brandmetrics.com",
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
 
     # === C ===
-    "c.bing.com", "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
+    "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
     "clickagy.com", "cloudflareinsights.com", "contextweb.com", "cootlogix.com",
     "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
-    "crwdcntrl.net", "cxense.com",
+    "crwdcntrl.net", "ctnsnet.com", "cxense.com",
 
     # === D ===
     "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
@@ -285,7 +285,7 @@ AD_APEX_BLACKLIST = [
 
     # === F ===
     "facecast.net", "flashtalking.com", "fpjscdn.net", "futurecdn.net",
-    "fwmrm.net",
+    "fwmrm.net", "ftd.agency",
 
     # === G ===
     "gamoshi.io", "giraff.io", "giraff.media", "gnezdo.ru",
@@ -372,7 +372,7 @@ AD_APEX_BLACKLIST = [
     "yandexadexchange.net", "yellowblue.io", "yieldmo.com", "ymmobi.com",
 
     # === Z ===
-    "zdbb.net", "zemanta.com",
+    "zdbb.net", "zemanta.com", "zucks.net",
 ]
 
 # Дополнительные точечные правила для хостов внутри «защищённых» семейств
@@ -380,6 +380,12 @@ AD_APEX_BLACKLIST = [
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === A ===
     r"^cs\.agency2\.ru$",
+
+    # === B ===
+    r"^(?:bat|c)\.bing.com$",
+
+    # === D ===
+    r"^ssp.disqus.com$",
     
     # === E ===
     r"^stat\.tech\.euronews\.com$",
@@ -395,7 +401,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === I ===
     r"^rb\.infox\.ru$",
-    r"(^|\.)media-advcycle\.imgsmail\.ru$",
+    r"(?:^|\.)media-advcycle\.imgsmail\.ru$",
 
     # === M ===
     (   # mail.ru
@@ -422,6 +428,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^(?:goya|ssp|a)\.rutube\.ru$",
     r"(?:^|\.)log\.rutube\.ru$",
     r"^yandex-(?:dmp-)?sync\.rutarget\.ru$",           # Синхронизация Яндекса на Rutarget
+    r"^a\.ria\.ru$",
 
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
@@ -435,13 +442,16 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === Y ===
     r"(?:^geo|^pbs|\.ssp)\.yahoo\.com$",
     r"^analytics.*\.yahoo\.[a-z]+$",                   # Метрики Yahoo
+
     ( # Yandex
-        r"^(?:"
+        r"(?:^|\.)(?:"
         r"an|mc|ads|awaps|bs|context|direct|pagead|uaas"
         r"|abt\.s3|aflt\.market"
         r")\.yandex\.[a-z]+$"
     ),
-    r"(?:^|\.)log\.strm\.yandex\.ru$",                 # Метрики Яндекс Стриминга
+    r"(?:^|\.)log\.strm\.yandex\.[a-z]+$",
+
+    r"^bats\.video\.yahoo.com$",
 
     # === Префиксы ===
     r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN

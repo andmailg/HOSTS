@@ -1173,3 +1173,9 @@
 0.0.0.0 im.ziffdavisinternational.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
+0.0.0.0 i.ctnsnet.com
+0.0.0.0 ksk.t.zucks.net
+0.0.0.0 a.ria.ru
+0.0.0.0 bats.video.yahoo.com
+0.0.0.0 ssp.disqus.com
+0.0.0.0 z.cdn.ftd.agency
