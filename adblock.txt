@@ -35,6 +35,8 @@
 ||adx.adform.net^
 ||c1.adform.net^
 ||cm.adform.net^
+||dmp.adform.net^
+||s1.adform.net^
 ||track.adform.net^
 ||ads.adfox.ru^
 ||banners.adfox.ru^
@@ -43,6 +45,7 @@
 ||adhigh.net^
 ||adiam.tech^
 ||dsp-cookie.adfarm1.adition.com^
+||view.adjust.com^
 ||dsp.adkernel.com^
 ||sync.adkernel.com^
 ||adlook.online^
@@ -125,6 +128,8 @@
 ||f003.backblazeb2.com^
 ||tracker.ssp.balance-x.com^
 ||c.bannerflow.net^
+||stats.bannernow.com^
+||storage.bannernow.com^
 ||mybbc-analytics.files.bbci.co.uk^
 ||autocontext.begun.ru^
 ||bestdahlia.com^
@@ -179,6 +184,7 @@
 ||q.clarity.ms^
 ||r.clarity.ms^
 ||scripts.clarity.ms^
+||t.clarity.ms^
 ||www.clarity.ms^
 ||protected-by.clarium.io^
 ||i.clean.gg^
@@ -210,6 +216,7 @@
 ||bcp.crwdcntrl.net^
 ||sync.crwdcntrl.net^
 ||tags.crwdcntrl.net^
+||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
 ||cxense.com^
 ||cdndirector.dailymotion.com^
@@ -225,6 +232,7 @@
 ||dmg.digitaltarget.ru^
 ||tag.digitaltarget.ru^
 ||code.directadvert.ru^
+||ssp.disqus.com^
 ||pebed.dm-event.net^
 ||dmxleo.com^
 ||rm-script.dotmetrics.net^
@@ -233,6 +241,7 @@
 ||dclk-match.dotomi.com^
 ||equativ-match.dotomi.com^
 ||gumgum-match.dotomi.com^
+||krush-match.dotomi.com^
 ||prebid-match.dotomi.com^
 ||stx-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
@@ -269,6 +278,7 @@
 ||public.flourish.studio^
 ||floxis.tech^
 ||analytics.fontanka.ru^
+||z.cdn.ftd.agency^
 ||agen-assets.ftstatic.com^
 ||ajs-assets.ftstatic.com^
 ||futalis.de^
@@ -319,6 +329,7 @@
 ||kraken.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
+||cdndc.imgria.ru^
 ||cdnn21.imgria.ru^
 ||media-advcycle.imgsmail.ru^
 ||secure-us.imrworldwide.com^
@@ -376,6 +387,7 @@
 ||pxdrop.lijit.com^
 ||ruby-n.stg-adv.lijit.com^
 ||linkedin.com^
+||api.linkitbe.ru^
 ||linkssp.ru^
 ||cs.lkqd.net^
 ||csync.loopme.me^
@@ -415,6 +427,7 @@
 ||moe.video^
 ||pixelfnt-us.dsp-api.moloco.com^
 ||ads.monetix.group^
+||dsp-service.monetixads.com^
 ||ib.mookie1.com^
 ||stats.mos.ru^
 ||px.mountain.com^
@@ -424,6 +437,7 @@
 ||jssdks.mparticle.com^
 ||mpartner.digital^
 ||mpsuadv.ru^
+||r.mradx.net^
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
@@ -464,7 +478,8 @@
 ||realtime.openweb.com^
 ||cs.openwebmedia.org^
 ||cs.openwebmp.com^
-||pbs-cs.openwebmp.com^
+||eu-west-1-cs-rtb.openwebmp.com^
+||us-east-1-cs-rtb.openwebmp.com^
 ||openx.net^
 ||t.adx.opera.com^
 ||t.oa.opera.com^
@@ -545,6 +560,7 @@
 ||hal9000.redintelligence.net^
 ||hal90001.redintelligence.net^
 ||hal900010.redintelligence.net^
+||hal900014.redintelligence.net^
 ||hal900015.redintelligence.net^
 ||hal900019.redintelligence.net^
 ||hal900021.redintelligence.net^
@@ -560,6 +576,7 @@
 ||tag.researchnow.com^
 ||cdn.retailads.net^
 ||a.rfihub.com^
+||a.ria.ru^
 ||cm.ria.ru^
 ||sync.richaudience.com^
 ||mid.rkdms.com^
@@ -642,6 +659,8 @@
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
+||assets.squarespace.com^
+||static1.squarespace.com^
 ||s.srvsynd.com^
 ||bid.sspnet.tech^
 ||sync.srv.stackadapt.com^
@@ -770,13 +789,14 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
-||noa.yahoo.com^
+||guce.yahoo.com^
 ||pbs.yahoo.com^
+||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
-||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^
@@ -798,3 +818,4 @@
 ||im.ziffdavisinternational.com^
 ||cdn.ziffstatic.com^
 ||pg.ziffstatic.com^
+||ksk.t.zucks.net^

@@ -17,6 +17,7 @@
 0.0.0.0 news.2xclock.com
 0.0.0.0 33across.com
 0.0.0.0 cdn-ima.33across.com
+0.0.0.0 cms-xch-chicago.33across.com
 0.0.0.0 cms-xch.33across.com
 0.0.0.0 dp2.33across.com
 0.0.0.0 et-c-ash.33across.com
@@ -63,6 +64,8 @@
 0.0.0.0 adx.adform.net
 0.0.0.0 c1.adform.net
 0.0.0.0 cm.adform.net
+0.0.0.0 dmp.adform.net
+0.0.0.0 s1.adform.net
 0.0.0.0 track.adform.net
 0.0.0.0 ads.adfox.ru
 0.0.0.0 banners.adfox.ru
@@ -74,6 +77,7 @@
 0.0.0.0 adiam.tech
 0.0.0.0 a.adiam.tech
 0.0.0.0 dsp-cookie.adfarm1.adition.com
+0.0.0.0 view.adjust.com
 0.0.0.0 dsp.adkernel.com
 0.0.0.0 sync.adkernel.com
 0.0.0.0 adlook.online
@@ -94,6 +98,7 @@
 0.0.0.0 prebid.admatic.de
 0.0.0.0 static.cdn.admatic.de
 0.0.0.0 admixer.net
+0.0.0.0 eu-rtbstack-cm.admixer.net
 0.0.0.0 px2.admon.pro
 0.0.0.0 px4.admon.pro
 0.0.0.0 functions.adnami.io
@@ -152,6 +157,8 @@
 0.0.0.0 cdn77.aj3105.top
 0.0.0.0 ac.ajur.info
 0.0.0.0 akamaized.net
+0.0.0.0 vod-dash-ww-live.akamaized.net
+0.0.0.0 vod-thumb-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 ssp.al-adtech.com
 0.0.0.0 p.alcmpn.com
@@ -200,6 +207,8 @@
 0.0.0.0 f003.backblazeb2.com
 0.0.0.0 tracker.ssp.balance-x.com
 0.0.0.0 c.bannerflow.net
+0.0.0.0 stats.bannernow.com
+0.0.0.0 storage.bannernow.com
 0.0.0.0 mybbc-analytics.files.bbci.co.uk
 0.0.0.0 autocontext.begun.ru
 0.0.0.0 bestdahlia.com
@@ -286,6 +295,7 @@
 0.0.0.0 q.clarity.ms
 0.0.0.0 r.clarity.ms
 0.0.0.0 scripts.clarity.ms
+0.0.0.0 t.clarity.ms
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
@@ -328,6 +338,7 @@
 0.0.0.0 bcp.crwdcntrl.net
 0.0.0.0 sync.crwdcntrl.net
 0.0.0.0 tags.crwdcntrl.net
+0.0.0.0 i.ctnsnet.com
 0.0.0.0 ipac.ctnsnet.com
 0.0.0.0 cxense.com
 0.0.0.0 cdn.cxense.com
@@ -349,6 +360,7 @@
 0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 tag.digitaltarget.ru
 0.0.0.0 code.directadvert.ru
+0.0.0.0 ssp.disqus.com
 0.0.0.0 pebed.dm-event.net
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
@@ -358,6 +370,7 @@
 0.0.0.0 dclk-match.dotomi.com
 0.0.0.0 equativ-match.dotomi.com
 0.0.0.0 gumgum-match.dotomi.com
+0.0.0.0 krush-match.dotomi.com
 0.0.0.0 prebid-match.dotomi.com
 0.0.0.0 stx-match.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
@@ -394,6 +407,7 @@
 0.0.0.0 cs.emxdgt.com
 0.0.0.0 escalax.io
 0.0.0.0 eskimi.com
+0.0.0.0 ittpx-us-e.eskimi.com
 0.0.0.0 ittpx.eskimi.com
 0.0.0.0 lb.eu-1-id5-sync.com
 0.0.0.0 lbs.eu-1-id5-sync.com
@@ -412,6 +426,7 @@
 0.0.0.0 public.flourish.studio
 0.0.0.0 floxis.tech
 0.0.0.0 analytics.fontanka.ru
+0.0.0.0 z.cdn.ftd.agency
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
 0.0.0.0 futalis.de
@@ -498,6 +513,7 @@
 0.0.0.0 kraken.ignimgs.com
 0.0.0.0 assets.ikhnaie.link
 0.0.0.0 assets.ikhnaie.me
+0.0.0.0 cdndc.imgria.ru
 0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 media-advcycle.imgsmail.ru
 0.0.0.0 secure-us.imrworldwide.com
@@ -562,6 +578,7 @@
 0.0.0.0 ruby-n.stg-adv.lijit.com
 0.0.0.0 linkedin.com
 0.0.0.0 px.ads.linkedin.com
+0.0.0.0 api.linkitbe.ru
 0.0.0.0 linkssp.ru
 0.0.0.0 sp.linkssp.ru
 0.0.0.0 cs.lkqd.net
@@ -617,6 +634,7 @@
 0.0.0.0 rtb.moe.video
 0.0.0.0 pixelfnt-us.dsp-api.moloco.com
 0.0.0.0 ads.monetix.group
+0.0.0.0 dsp-service.monetixads.com
 0.0.0.0 ib.mookie1.com
 0.0.0.0 stats.mos.ru
 0.0.0.0 px.mountain.com
@@ -635,6 +653,7 @@
 0.0.0.0 v2.mpsuadv.ru
 0.0.0.0 v3.mpsuadv.ru
 0.0.0.0 v7.mpsuadv.ru
+0.0.0.0 r.mradx.net
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
@@ -689,7 +708,8 @@
 0.0.0.0 realtime.openweb.com
 0.0.0.0 cs.openwebmedia.org
 0.0.0.0 cs.openwebmp.com
-0.0.0.0 pbs-cs.openwebmp.com
+0.0.0.0 eu-west-1-cs-rtb.openwebmp.com
+0.0.0.0 us-east-1-cs-rtb.openwebmp.com
 0.0.0.0 openx.net
 0.0.0.0 eu-u.openx.net
 0.0.0.0 rtb.openx.net
@@ -819,6 +839,7 @@
 0.0.0.0 hal9000.redintelligence.net
 0.0.0.0 hal90001.redintelligence.net
 0.0.0.0 hal900010.redintelligence.net
+0.0.0.0 hal900014.redintelligence.net
 0.0.0.0 hal900015.redintelligence.net
 0.0.0.0 hal900019.redintelligence.net
 0.0.0.0 hal900021.redintelligence.net
@@ -834,6 +855,7 @@
 0.0.0.0 tag.researchnow.com
 0.0.0.0 cdn.retailads.net
 0.0.0.0 a.rfihub.com
+0.0.0.0 a.ria.ru
 0.0.0.0 cm.ria.ru
 0.0.0.0 sync.richaudience.com
 0.0.0.0 mid.rkdms.com
@@ -853,11 +875,13 @@
 0.0.0.0 rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
+0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
 0.0.0.0 t.rtbwave.com
 0.0.0.0 rubiconproject.com
 0.0.0.0 eus.rubiconproject.com
 0.0.0.0 fastlane.rubiconproject.com
+0.0.0.0 pixel-us-east.rubiconproject.com
 0.0.0.0 pixel.rubiconproject.com
 0.0.0.0 prebid-server.rubiconproject.com
 0.0.0.0 secure-assets.rubiconproject.com
@@ -951,6 +975,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 smi2cdn.ru
+0.0.0.0 static.smi2cdn.ru
 0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 static3.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
@@ -968,6 +993,8 @@
 0.0.0.0 api-ssp.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
+0.0.0.0 assets.squarespace.com
+0.0.0.0 static1.squarespace.com
 0.0.0.0 s.srvsynd.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
@@ -1012,6 +1039,8 @@
 0.0.0.0 sync.technoratimedia.com
 0.0.0.0 hawk.techradar.com
 0.0.0.0 telecid.ru
+0.0.0.0 px3160aeb621e5cfccf.telecid.ru
+0.0.0.0 px316c0440380c0d67d.telecid.ru
 0.0.0.0 terratraf.com
 0.0.0.0 static.terratraf.com
 0.0.0.0 oauth.tg.dev
@@ -1134,14 +1163,14 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 noa.yahoo.com
+0.0.0.0 guce.yahoo.com
 0.0.0.0 pbs.yahoo.com
+0.0.0.0 bats.video.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
-0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
-0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
@@ -1160,6 +1189,7 @@
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
 0.0.0.0 ymmobi.com
+0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 sync-tb.yrxtam.com
 0.0.0.0 zdbb.net
 0.0.0.0 gurgle.zdbb.net
@@ -1173,9 +1203,4 @@
 0.0.0.0 im.ziffdavisinternational.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
-0.0.0.0 i.ctnsnet.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 a.ria.ru
-0.0.0.0 bats.video.yahoo.com
-0.0.0.0 ssp.disqus.com
-0.0.0.0 z.cdn.ftd.agency
