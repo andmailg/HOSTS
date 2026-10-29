@@ -256,7 +256,7 @@ AD_APEX_BLACKLIST = [
     "ad-delivery.net", "adentifi.com", "adform.net", "adhaven.com",
     "adhigh.net", "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
     "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.com.tr",
-    "admatic.de", "admixer.net", "adnxs.com", "adobedtm.com",
+    "admatic.de", "admixer.net", "adnxs.com",
     "adseedtech.com", "adsafeprotected.com", "adspector.io",
     "adsource.pro", "adsp.io", "adsrvr.org", "adtarget.biz",
     "advcake.ru", "adverticum.com", "adfox.ru", "adx.com.ru",
