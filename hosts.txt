@@ -294,6 +294,7 @@
 0.0.0.0 o.clarity.ms
 0.0.0.0 q.clarity.ms
 0.0.0.0 r.clarity.ms
+0.0.0.0 s.clarity.ms
 0.0.0.0 scripts.clarity.ms
 0.0.0.0 t.clarity.ms
 0.0.0.0 www.clarity.ms
@@ -510,6 +511,7 @@
 0.0.0.0 kraken.ignimgs.com
 0.0.0.0 assets.ikhnaie.link
 0.0.0.0 assets.ikhnaie.me
+0.0.0.0 d.illuma-tech.com
 0.0.0.0 cdndc.imgria.ru
 0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 media-advcycle.imgsmail.ru
@@ -992,7 +994,6 @@
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 api-ssp.spot.im
-0.0.0.0 publisher-assets.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 assets.squarespace.com
@@ -1026,6 +1027,7 @@
 0.0.0.0 tapad.com
 0.0.0.0 pixel.tapad.com
 0.0.0.0 ssp.api.tappx.com
+0.0.0.0 cdn.targetads.io
 0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
 0.0.0.0 as.tbank-online.com
@@ -1176,7 +1178,6 @@
 0.0.0.0 bats.video.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
-0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net

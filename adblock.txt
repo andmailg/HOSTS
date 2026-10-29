@@ -68,7 +68,6 @@
 ||rb.adnxs-simple.com^
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
-||assets.adobedtm.com^
 ||adriver.ru^
 ||d.adroll.com^
 ||tracker.ads-tinyorbit.com^
@@ -184,6 +183,7 @@
 ||o.clarity.ms^
 ||q.clarity.ms^
 ||r.clarity.ms^
+||s.clarity.ms^
 ||scripts.clarity.ms^
 ||t.clarity.ms^
 ||www.clarity.ms^
@@ -326,6 +326,7 @@
 ||kraken.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
+||d.illuma-tech.com^
 ||cdndc.imgria.ru^
 ||cdnn21.imgria.ru^
 ||media-advcycle.imgsmail.ru^
@@ -656,7 +657,6 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||api-ssp.spot.im^
-||publisher-assets.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||assets.squarespace.com^
@@ -688,6 +688,7 @@
 ||display.bidder.taboola.com^
 ||tapad.com^
 ||ssp.api.tappx.com^
+||cdn.targetads.io^
 ||eye.targetads.io^
 ||match.targetrtb.com^
 ||as.tbank-online.com^
