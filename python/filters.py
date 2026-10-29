@@ -359,7 +359,7 @@ AD_APEX_BLACKLIST = [
     "utraff.com", "utraff.info", "uuidksinc.net",
 
     # === V ===
-    "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
+    "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store", "vidoomy.com",
     "viisfxlg.com", "vigo.tech", "vindicosuite.com", "vistarsagency.com",
     "viqeo.tv", "vk-analytics.ru", "voxexchange.io",
 
