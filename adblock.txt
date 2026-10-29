@@ -128,6 +128,7 @@
 ||f003.backblazeb2.com^
 ||tracker.ssp.balance-x.com^
 ||c.bannerflow.net^
+||icv.bannernow.com^
 ||stats.bannernow.com^
 ||storage.bannernow.com^
 ||mybbc-analytics.files.bbci.co.uk^
@@ -219,10 +220,6 @@
 ||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
 ||cxense.com^
-||cdndirector.dailymotion.com^
-||dmxleo.dailymotion.com^
-||geo.dailymotion.com^
-||graphql.api.dailymotion.com^
 ||check.ddos-guard.net^
 ||d5p.de17a.com^
 ||cdn.debugbear.com^
@@ -437,7 +434,6 @@
 ||jssdks.mparticle.com^
 ||mpartner.digital^
 ||mpsuadv.ru^
-||r.mradx.net^
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
@@ -457,6 +453,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -572,6 +569,7 @@
 ||hal900030.redintelligence.net^
 ||hal90005.redintelligence.net^
 ||hal90006.redintelligence.net^
+||hal90008.redintelligence.net^
 ||relap.io^
 ||tag.researchnow.com^
 ||cdn.retailads.net^
@@ -646,6 +644,7 @@
 ||ssbsync-us.smartadserver.com^
 ||ssbsync.smartadserver.com^
 ||sync.smartadserver.com^
+||www.smartadserver.com^
 ||smartcallback.ru^
 ||smi2.net^
 ||smi2.ru^
@@ -657,6 +656,7 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||api-ssp.spot.im^
+||publisher-assets.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||assets.squarespace.com^
@@ -766,6 +766,7 @@
 ||vigo.tech^
 ||s.viisfxlg.com^
 ||viqeo.tv^
+||ads.viralize.tv^
 ||cpm.vistarsagency.com^
 ||stats.vk-portal.net^
 ||rtb2-useast.voisetech.com^
@@ -789,9 +790,8 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
-||guce.yahoo.com^
+||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
@@ -812,6 +812,7 @@
 ||zdbb.net^
 ||b1sync.zemanta.com^
 ||sync.zentotem.net^
+||mwzeom.zeotap.com^
 ||www.zeropartyforms.com^
 ||asin.ziff.tech^
 ||dsar.ziffdavis.com^

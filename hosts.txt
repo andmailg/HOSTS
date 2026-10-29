@@ -111,6 +111,7 @@
 0.0.0.0 ib.adnxs.com
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
+0.0.0.0 assets.adobedtm.com
 0.0.0.0 adriver.ru
 0.0.0.0 ad.adriver.ru
 0.0.0.0 content.adriver.ru
@@ -206,6 +207,7 @@
 0.0.0.0 f003.backblazeb2.com
 0.0.0.0 tracker.ssp.balance-x.com
 0.0.0.0 c.bannerflow.net
+0.0.0.0 icv.bannernow.com
 0.0.0.0 stats.bannernow.com
 0.0.0.0 storage.bannernow.com
 0.0.0.0 mybbc-analytics.files.bbci.co.uk
@@ -344,8 +346,6 @@
 0.0.0.0 comcluster.cxense.com
 0.0.0.0 id.cxense.com
 0.0.0.0 stats-collector.cxense.com
-0.0.0.0 dmxleo.dailymotion.com
-0.0.0.0 graphql.api.dailymotion.com
 0.0.0.0 check.ddos-guard.net
 0.0.0.0 d5p.de17a.com
 0.0.0.0 cdn.debugbear.com
@@ -460,6 +460,7 @@
 0.0.0.0 fcgi5.gnezdo.ru
 0.0.0.0 fcgi7.gnezdo.ru
 0.0.0.0 news.gnezdo.ru
+0.0.0.0 rtb-dsp.gnezdo.ru
 0.0.0.0 gonet-ads.com
 0.0.0.0 sync.gonet-ads.com
 0.0.0.0 region1.google-analytics.com
@@ -670,6 +671,7 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -847,6 +849,7 @@
 0.0.0.0 hal900030.redintelligence.net
 0.0.0.0 hal90005.redintelligence.net
 0.0.0.0 hal90006.redintelligence.net
+0.0.0.0 hal90008.redintelligence.net
 0.0.0.0 relap.io
 0.0.0.0 tag.researchnow.com
 0.0.0.0 cdn.retailads.net
@@ -870,7 +873,9 @@
 0.0.0.0 id.rtb.mx
 0.0.0.0 rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
+0.0.0.0 river-3-3103.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
+0.0.0.0 river-3-316.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
 0.0.0.0 t.rtbwave.com
@@ -954,6 +959,7 @@
 0.0.0.0 ssbsync-us.smartadserver.com
 0.0.0.0 ssbsync.smartadserver.com
 0.0.0.0 sync.smartadserver.com
+0.0.0.0 www.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 smi2.net
@@ -987,6 +993,7 @@
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 api-ssp.spot.im
+0.0.0.0 publisher-assets.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 assets.squarespace.com
@@ -1035,7 +1042,11 @@
 0.0.0.0 sync.technoratimedia.com
 0.0.0.0 hawk.techradar.com
 0.0.0.0 telecid.ru
+0.0.0.0 px3160207b8d44acf6c.telecid.ru
 0.0.0.0 px3160aeb621e5cfccf.telecid.ru
+0.0.0.0 px31640a201cd45bc15.telecid.ru
+0.0.0.0 px31659729c63a6c823.telecid.ru
+0.0.0.0 px3168863ac305042a6.telecid.ru
 0.0.0.0 px316c0440380c0d67d.telecid.ru
 0.0.0.0 terratraf.com
 0.0.0.0 static.terratraf.com
@@ -1126,6 +1137,7 @@
 0.0.0.0 sentry.viqeo.tv
 0.0.0.0 stats.viqeo.tv
 0.0.0.0 studio.viqeo.tv
+0.0.0.0 ads.viralize.tv
 0.0.0.0 cpm.vistarsagency.com
 0.0.0.0 stats.vk-portal.net
 0.0.0.0 rtb2-useast.voisetech.com
@@ -1159,13 +1171,13 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
-0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 guce.yahoo.com
+0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
+0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
@@ -1193,6 +1205,7 @@
 0.0.0.0 cdn.static.zdbb.net
 0.0.0.0 b1sync.zemanta.com
 0.0.0.0 sync.zentotem.net
+0.0.0.0 mwzeom.zeotap.com
 0.0.0.0 www.zeropartyforms.com
 0.0.0.0 asin.ziff.tech
 0.0.0.0 dsar.ziffdavis.com
@@ -1200,9 +1213,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 pbd.yahoo.com
-0.0.0.0 moca.pbs.yahoo.com
-0.0.0.0 cdn.contentspread.net
-0.0.0.0 icv.bannernow.com
-0.0.0.0 mwzeom.zeotap.com
-0.0.0.0 capi.connatix.com
