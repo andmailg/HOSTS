@@ -345,7 +345,7 @@ AD_APEX_BLACKLIST = [
     "inmobi.com", "insiad.com", "intent.ai", "iqzone.com",
 
     # === K ===
-    "kargo.com", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
+    "kargo.com", "kombinat.digital", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
 
     # === L ===
     "lentainform.ru", "liadm.com", "lijit.com", "linkssp.ru",
@@ -396,11 +396,11 @@ AD_APEX_BLACKLIST = [
     "taboola.com", "tapad.com", "targetads.io", "targetrtb.com", "teads.tv",
     "teads-xo.com", "telecid.ru", "terratraf.com", "thrtle.com",
     "tns-counter.ru", "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com",
-    "trustarc.com", "trustedstack.com", "tynt.com",
+    "tremorhub.com", "trustarc.com", "trustedstack.com", "tynt.com",
 
     # === U ===
-    "undertone.com", "upravel.com", "ussp.io", "utraff.com",
-    "uuidksinc.net",
+    "undertone.com", "upravel.com", "ussp.io",
+    "utraff.com", "utraff.info", "uuidksinc.net",
 
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
