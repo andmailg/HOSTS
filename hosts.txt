@@ -111,7 +111,6 @@
 0.0.0.0 ib.adnxs.com
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
-0.0.0.0 assets.adobedtm.com
 0.0.0.0 adriver.ru
 0.0.0.0 ad.adriver.ru
 0.0.0.0 content.adriver.ru
