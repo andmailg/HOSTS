@@ -87,6 +87,7 @@
 0.0.0.0 imagesnep.admaster.cc
 0.0.0.0 static.admaster.cc
 0.0.0.0 tracenep-eu.admaster.cc
+0.0.0.0 tracenep.admaster.cc
 0.0.0.0 admatic.com.tr
 0.0.0.0 prebid.admatic.com.tr
 0.0.0.0 admatic.de
@@ -273,11 +274,13 @@
 0.0.0.0 k.clarity.ms
 0.0.0.0 n.clarity.ms
 0.0.0.0 o.clarity.ms
+0.0.0.0 q.clarity.ms
 0.0.0.0 scripts.clarity.ms
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
 0.0.0.0 static.cloudflareinsights.com
+0.0.0.0 d3e54v103j8qbb.cloudfront.net
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 sync.colossusssp.com
 0.0.0.0 adx.com.ru
@@ -473,6 +476,7 @@
 0.0.0.0 rb.infox.ru
 0.0.0.0 rb.infox.sg
 0.0.0.0 cs.ingage.tech
+0.0.0.0 sync.ingage.tech
 0.0.0.0 usync.ingage.tech
 0.0.0.0 visit-server.inmobi-choice.io
 0.0.0.0 cmp.inmobi.com
@@ -703,6 +707,7 @@
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 presage.io
+0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
 0.0.0.0 mweb-hb.presage.io
 0.0.0.0 api.privacy-center.org
@@ -810,6 +815,7 @@
 0.0.0.0 pixel-us-east.rubiconproject.com
 0.0.0.0 pixel.rubiconproject.com
 0.0.0.0 prebid-server.rubiconproject.com
+0.0.0.0 secure-assets.rubiconproject.com
 0.0.0.0 token.rubiconproject.com
 0.0.0.0 w.rulive.ru
 0.0.0.0 match.rundsp.com
@@ -894,6 +900,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 smi2cdn.ru
+0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
@@ -975,6 +982,8 @@
 0.0.0.0 tru.am
 0.0.0.0 beacon.tru.am
 0.0.0.0 b.trueanthem.com
+0.0.0.0 cdn.trust-id.ru
+0.0.0.0 id.trust-id.ru
 0.0.0.0 hb.trustedstack.com
 0.0.0.0 tsdtocl.com
 0.0.0.0 tt.ttarget.ru
@@ -1046,6 +1055,7 @@
 0.0.0.0 wf-ru-frontend.weborama-tech.ru
 0.0.0.0 weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
+0.0.0.0 cdn.prod.website-files.com
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
@@ -1056,10 +1066,12 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
+0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net

@@ -50,6 +50,7 @@
 ||imagesnep.admaster.cc^
 ||static.admaster.cc^
 ||tracenep-eu.admaster.cc^
+||tracenep.admaster.cc^
 ||admatic.com.tr^
 ||admatic.de^
 ||eu-rtbstack-cm.admixer.net^
@@ -170,11 +171,13 @@
 ||k.clarity.ms^
 ||n.clarity.ms^
 ||o.clarity.ms^
+||q.clarity.ms^
 ||scripts.clarity.ms^
 ||www.clarity.ms^
 ||protected-by.clarium.io^
 ||i.clean.gg^
 ||static.cloudflareinsights.com^
+||d3e54v103j8qbb.cloudfront.net^
 ||beacon.lynx.cognitivlabs.com^
 ||sync.colossusssp.com^
 ||adx.com.ru^
@@ -312,6 +315,7 @@
 ||rb.infox.ru^
 ||rb.infox.sg^
 ||cs.ingage.tech^
+||sync.ingage.tech^
 ||usync.ingage.tech^
 ||visit-server.inmobi-choice.io^
 ||cmp.inmobi.com^
@@ -684,6 +688,8 @@
 ||partners.tremorhub.com^
 ||tru.am^
 ||b.trueanthem.com^
+||cdn.trust-id.ru^
+||id.trust-id.ru^
 ||hb.trustedstack.com^
 ||tsdtocl.com^
 ||tt.ttarget.ru^
@@ -730,6 +736,7 @@
 ||api.webgains.io^
 ||weborama-tech.ru^
 ||weborama.fr^
+||cdn.prod.website-files.com^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
@@ -740,6 +747,7 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
