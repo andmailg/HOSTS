@@ -66,6 +66,14 @@ def url_is_tracker(url):
 def url_is_system_asset(url):
     return any(p.search(url) for p in _COMPILED_SYSTEM)
 
+# --- Паттерны для детекции динамических хэш-поддоменов ---
+_IS_HASH_PATTERNS = [
+    re.compile(r"^[a-fA-F0-9]{32,40}"),                         # MD5 (Google safeframe и др.)
+    re.compile(r"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-"),             # Часть UUID
+    re.compile(r"^\d{6,63}"),                                   # Чисто числовые ID от 6 знаков
+    re.compile(r"^rr\d+-+sn-[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)?"),
+]
+
 # =============================================================================
 # 2. НИКОГДА НЕ БЛОКИРОВАТЬ (уровень A): чистая инфраструктура — CDN, библиотеки, шрифты,
 #    видеоплееры, фото/файлохостинги. Совпадение: точный домен или любой поддомен.
@@ -193,7 +201,7 @@ PROTECTED_FAMILIES = [
     "ngs.ru",
 
     # === O ===
-    "oath.com", "odnoklassniki.ru", "ok.ru", "openwebmp.com",
+    "oath.com", "odnoklassniki.ru", "ok.ru", "onelink.me", "openwebmp.com",
 
     # === P ===
     "piano.io", "pikabu.ru",
@@ -243,7 +251,7 @@ AD_APEX_BLACKLIST = [
     # === A ===
     "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
     "ad-delivery.net", "adentifi.com", "adform.net", "adhaven.com",
-    "adhigh.net", "adition.com", "adkernel.com", "adlook.online",
+    "adhigh.net", "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
     "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.com.tr",
     "admatic.de", "admixer.net", "adnxs.com", "adobedtm.com",
     "adseedtech.com", "adsafeprotected.com", "adspector.io",
@@ -289,7 +297,7 @@ AD_APEX_BLACKLIST = [
     "inmobi.com", "insiad.com", "intent.ai", "iqzone.com",
 
     # === K ===
-    "kargo.com", "kombinat.digital", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
+    "kargo.com", "klkmdsync.site", "kombinat.digital", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
 
     # === L ===
     "lentainform.ru", "liadm.com", "lijit.com", "linkssp.ru",
@@ -367,6 +375,9 @@ AD_APEX_BLACKLIST = [
 # Дополнительные точечные правила для хостов внутри «защищённых» семейств
 # (подмножество рекламной/телеметрической инфраструктуры Яндекса, VK/Mail.ru, МТС, Рамблера, Yahoo и др.)
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
+    # === A ===
+    r"^cs\.agency2\.ru$",
+    
     # === E ===
     r"^stat\.tech\.euronews\.com$",
 
@@ -391,9 +402,10 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
         r"top(?:-[a-z0-9]+)?"
         r")\.mail\.ru$"
     ),
-    r"(^|\.)a\.mts\.ru$",                              # МТС Реклама: cm.a.mts.ru, api.a.mts.ru, static.a.mts.ru
+    r"(?:^|\.)a\.mts\.ru$",                              # МТС Реклама: cm.a.mts.ru, api.a.mts.ru, static.a.mts.ru
 
     # === O ===
+    r"^impressions\.onelink\.me$",
     r"^t\.adx\.opera\.com$",                           # Рекламный движок встроенной рекламы браузера Opera
     r"^cs\.openwebmp\.com$",                           # Cookie-sync OpenWeb
 
@@ -430,14 +442,6 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN
     r"^(kraken(-[a-z0-9]+)?)\.[a-z0-9.\-]+$",          # kraken.* — рекламная/аналитическая платформа (Рамблер, IGN/Ziff Davis)
     r"^pagead\d*\.",                                   # pagead2.* и аналоги (google.com / pagead)
-]
-
-# --- Паттерны для детекции динамических хэш-поддоменов ---
-_IS_HASH_PATTERNS = [
-    re.compile(r"^[a-fA-F0-9]{32,40}"),                         # MD5 (Google safeframe и др.)
-    re.compile(r"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-"),             # Часть UUID
-    re.compile(r"^\d{6,63}"),                                   # Чисто числовые ID от 6 знаков
-    re.compile(r"^rr\d+-+sn-[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)?"),
 ]
 
 _COMPILED_BLACKLIST_PATTERNS = [re.compile(pat, re.IGNORECASE) for pat in STRICT_SUBDOMAINS_BLACKLIST_PATTERNS]
