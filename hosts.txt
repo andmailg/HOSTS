@@ -1138,3 +1138,6 @@
 0.0.0.0 im.ziffdavisinternational.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
+0.0.0.0 aflt.market.yandex.ru
+0.0.0.0 statika.mpsuadv.ru
+0.0.0.0 mpsuadv.ru

@@ -127,7 +127,7 @@ NEVER_BLOCK_DOMAINS = [
     "pic4net.com", "plyr.io", "prodmp.ru",
     
     # === R ===
-    "rackcdn.com", "redditmedia.com", "rutracker.cc", "rutubelist.ru",
+    "rackcdn.com", "redditmedia.com", "rutracker.cc", "rutubelist.ru", "r-99.com",
     
     # === S ===
     "sentry-saas.rambler-co.ru", "sentry.io", "sketchfab.com",
@@ -160,6 +160,9 @@ NEVER_BLOCK_DOMAINS = [
 #    Семейства yandex.* и google.* определяются по apex (см. is_protected).
 # =============================================================================
 PROTECTED_FAMILIES = [
+    # === A ===
+    "acast.com",
+
     # === B ===
     "bbc.co.uk", "bbc.com", "bbci.co.uk", "beeline.ru",
     "bing.com",
@@ -308,8 +311,8 @@ AD_APEX_BLACKLIST = [
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
     "mediascope.net", "mediatoday.ru", "mgid.com", "mindbox.ru",
     "mirtesen.ru", "ml314.com", "mobilefuse.com", "moatads.com",
-    "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital", "mrgcdn.ru",
-    "myweb3id.io",
+    "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital",
+    "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
     "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
@@ -418,6 +421,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     ),
     r"^(?:goya|ssp|a)\.rutube\.ru$",
     r"(?:^|\.)log\.rutube\.ru$",
+    r"^yandex-(?:dmp-)?sync\.rutarget\.ru$",           # Синхронизация Яндекса на Rutarget
 
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
@@ -432,7 +436,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(?:^geo|^pbs|\.ssp)\.yahoo\.com$",
     r"^analytics.*\.yahoo\.[a-z]+$",                 # Метрики Yahoo
     r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$",  # Таргетированная реклама и метрики Яндекса
-    r"^yandex-(?:dmp-)?sync\.rutarget\.ru$",           # Синхронизация Яндекса на Rutarget (Из NEED_REVIEW)
+    r"^aflt\.market\.yandex\.ru$",
     r"(^|\.)log\.strm\.yandex\.ru$",                 # Метрики Яндекс Стриминга
 
     r"^abt\.s3\.yandex\.net$",                         # A/B-тесты Яндекса
