@@ -653,7 +653,6 @@
 0.0.0.0 v2.mpsuadv.ru
 0.0.0.0 v3.mpsuadv.ru
 0.0.0.0 v7.mpsuadv.ru
-0.0.0.0 r.mradx.net
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
