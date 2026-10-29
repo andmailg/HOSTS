@@ -153,138 +153,82 @@ NEVER_BLOCK_DOMAINS = [
 # =============================================================================
 PROTECTED_FAMILIES = [
     # === B ===
-    "bbc.co.uk",
-    "bbc.com",
-    "bbci.co.uk",
-    "beeline.ru",
+    "bbc.co.uk", "bbc.com", "bbci.co.uk", "beeline.ru",
     "bing.com",
 
     # === C ===
-    "championat.com",
-    "cnews.ru",
+    "championat.com", "cnews.ru",
 
     # === D ===
-    "dzen.ru",
-    "dzeninfra.ru",
+    "dzen.ru", "dzeninfra.ru",
 
     # === E ===
-    "e1.ru",
-    "euronews.com",
+    "e1.ru", "euronews.com",
 
     # === F ===
-    "facebook.com",
-    "fishki.net",
-    "fontanka.ru",
+    "facebook.com", "fishki.net", "fontanka.ru",
 
     # === G ===
-    "gazeta.ru",
-    "google.com",
-    "gear-hub.ru",
+    "gazeta.ru", "google.com", "gear-hub.ru",
 
     # === H ===
     "hsmedia.ru",
 
     # === I ===
-    "ign.com",
-    "imgsmail.ru",
-    "infox.ru",
-    "instagram.com",
-    "interfax.ru",
-    "iportal.ru",
-    "ixbt.com",
-    "ixbt.video",
-    "ixbt.site",
-    "iz.ru",
+    "ign.com", "imgsmail.ru", "infox.ru", "instagram.com",
+    "interfax.ru", "iportal.ru", "ixbt.com", "ixbt.video",
+    "ixbt.site", "iz.ru",
 
     # === K ===
-    "kp.ru",
-    "kpcdn.net",
+    "kp.ru", "kpcdn.net",
 
     # === L ===
     "lenta.ru",
 
     # === M ===
-    "mail.ru",
-    "media-trend.mail.ru",
-    "mradx.net",
-    "mk.ru",
-    "mos.ru",
-    "mts.ru",
-    "mycdn.me",
+    "mail.ru", "media-trend.mail.ru", "mradx.net", "mk.ru",
+    "mos.ru", "mts.ru", "mycdn.me",
 
     # === N ===
     "ngs.ru",
 
     # === O ===
-    "oath.com",
-    "odnoklassniki.ru",
-    "ok.ru",
-    "openwebmp.com",
+    "oath.com", "odnoklassniki.ru", "ok.ru", "openwebmp.com",
 
     # === P ===
-    "piano.io",
-    "pikabu.ru",
+    "piano.io", "pikabu.ru",
 
     # === R ===
-    "rambler.ru",
-    "rbc.ru",
-    "rbk.ru",
-    "retail.ru",
-    "rferl.org",
-    "rosbalt.ru",
-    "rutube.ru",
+    "rambler.ru", "rbc.ru", "rbk.ru", "retail.ru",
+    "rferl.org", "rosbalt.ru", "rutube.ru",
 
     # === S ===
-    "sber.ru",
-    "sberbank.ru",
-    "sbrf.ru",
-    "spot.im",
+    "sber.ru", "sberbank.ru", "sbrf.ru", "spot.im",
 
     # === T ===
-    "t2.ru",
-    "techradar.com",
-    "temu.com",
-    "thetruestory.news",
-    "tinypass.com",
-    "tourdom.ru",
-    "twitter.com",
+    "t2.ru", "techradar.com", "temu.com", "thetruestory.news",
+    "tinypass.com", "tourdom.ru", "twitter.com",
 
     # === U ===
     "userapi.com",
 
     # === V ===
-    "vdmsti.ru",
-    "vedomosti.ru",
-    "vk.com",
-    "vk.me",
-    "vk.ru",
-    "vk.team",
-    "vk-portal.net",
-    "vkvideo.ru",
+    "vdmsti.ru", "vedomosti.ru", "vk.com", "vk.me",
+    "vk.ru", "vk.team", "vk-portal.net", "vkvideo.ru",
 
     # === W ===
-    "wi-fi.ru",
-    "wildberries.ru",
+    "wi-fi.ru", "wildberries.ru",
 
     # === X ===
     "x.com",
 
     # === Y ===
-    "ya.ru",
-    "yahoo.com",
-    "yahoo.net",
-    "yahoofinance.com",
-    "yandexcloud.net",
-    "yandex.ru",
-    "yandex.net",
-    "yaplakal.com",
-    "yastatic.net",
-    "youtube.com",
-    "yuga.ru",
+    "ya.ru", "yahoo.com", "yahoo.net", "yahoofinance.com",
+    "yandexcloud.net", "yandex.ru", "yandex.net", "yaplakal.com",
+    "yastatic.net", "youtube.com", "yuga.ru",
 
     # === Цифры / Прочее ===
-    "1mi.media",
-    "1mi-media.ru",
+    "1mi.media", "1mi-media.ru",
 ]
 
 # =============================================================================
