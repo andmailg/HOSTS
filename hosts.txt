@@ -15,6 +15,7 @@
 0.0.0.0 s0.2mdn.net
 0.0.0.0 rr1---sn-oj1gi5-54.c.2mdn.net
 0.0.0.0 rr1---sn-qjp5q5-5q.c.2mdn.net
+0.0.0.0 rr2---sn-4g5ednkd.c.2mdn.net
 0.0.0.0 rr2---sn-p5qlsndk.c.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 news.2xclock.com
@@ -240,6 +241,7 @@
 0.0.0.0 buzzoola.com
 0.0.0.0 exchange.buzzoola.com
 0.0.0.0 tube.buzzoola.com
+0.0.0.0 cackle.me
 0.0.0.0 cs.ssp.cadent.com
 0.0.0.0 dcs.ssp.cadent.com
 0.0.0.0 e1.ssp.cadent.com
@@ -286,6 +288,7 @@
 0.0.0.0 adx.com.ru
 0.0.0.0 bid.adx.com.ru
 0.0.0.0 cdn.confiant-integrations.net
+0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
 0.0.0.0 cdn.cookielaw.org
 0.0.0.0 prebid.cootlogix.com
@@ -381,6 +384,7 @@
 0.0.0.0 ps.eyeota.net
 0.0.0.0 connect.facebook.net
 0.0.0.0 tool.festivehorse.com
+0.0.0.0 0.tool.festivehorse.com
 0.0.0.0 cdn.flashtalking.com
 0.0.0.0 d9.flashtalking.com
 0.0.0.0 servedby.flashtalking.com
@@ -614,6 +618,7 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -785,6 +790,7 @@
 0.0.0.0 relap.io
 0.0.0.0 tag.researchnow.com
 0.0.0.0 cdn.retailads.net
+0.0.0.0 a.rfihub.com
 0.0.0.0 sync.richaudience.com
 0.0.0.0 mid.rkdms.com
 0.0.0.0 api.rlcdn.com
@@ -1033,7 +1039,11 @@
 0.0.0.0 cdn.vigo.tech
 0.0.0.0 s.viisfxlg.com
 0.0.0.0 viqeo.tv
+0.0.0.0 api.viqeo.tv
 0.0.0.0 cdn.viqeo.tv
+0.0.0.0 metrics.viqeo.tv
+0.0.0.0 sentry.viqeo.tv
+0.0.0.0 stats.viqeo.tv
 0.0.0.0 studio.viqeo.tv
 0.0.0.0 cpm.vistarsagency.com
 0.0.0.0 stats.vk-portal.net
@@ -1066,12 +1076,10 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
-0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
-0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net

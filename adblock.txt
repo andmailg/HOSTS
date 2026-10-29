@@ -145,6 +145,7 @@
 ||browser-intake-datadoghq.com^
 ||bumlam.com^
 ||buzzoola.com^
+||cackle.me^
 ||cs.ssp.cadent.com^
 ||dcs.ssp.cadent.com^
 ||e1.ssp.cadent.com^
@@ -182,6 +183,7 @@
 ||sync.colossusssp.com^
 ||adx.com.ru^
 ||cdn.confiant-integrations.net^
+||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
 ||prebid.cootlogix.com^
@@ -431,6 +433,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -542,6 +545,7 @@
 ||relap.io^
 ||tag.researchnow.com^
 ||cdn.retailads.net^
+||a.rfihub.com^
 ||sync.richaudience.com^
 ||mid.rkdms.com^
 ||api.rlcdn.com^
@@ -747,7 +751,6 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
