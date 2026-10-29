@@ -161,7 +161,7 @@ NEVER_BLOCK_DOMAINS = [
 # =============================================================================
 PROTECTED_FAMILIES = [
     # === A ===
-    "acast.com",
+    "acast.com", "adobedtm.com",
 
     # === B ===
     "bbc.co.uk", "bbc.com", "bbci.co.uk", "beeline.ru",
@@ -171,7 +171,7 @@ PROTECTED_FAMILIES = [
     "championat.com", "cnews.ru", "connatix.com",
 
     # === D ===
-    "dzen.ru", "dzeninfra.ru", "disqus.com", "disquscdn.com",
+    "dzen.ru", "dzeninfra.ru", "disqus.com", "disquscdn.com","dailymotion.com",
 
     # === E ===
     "e1.ru", "euronews.com",
