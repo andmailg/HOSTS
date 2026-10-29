@@ -434,13 +434,13 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === Y ===
     r"(?:^geo|^pbs|\.ssp)\.yahoo\.com$",
-    r"^analytics.*\.yahoo\.[a-z]+$",                 # Метрики Yahoo
-    r"^(an|mc|ads|awaps|bs|context|direct|pagead)\.yandex\.[a-z]+$",  # Таргетированная реклама и метрики Яндекса
-    r"^aflt\.market\.yandex\.ru$",
-    r"(^|\.)log\.strm\.yandex\.ru$",                 # Метрики Яндекс Стриминга
-
-    r"^abt\.s3\.yandex\.net$",                         # A/B-тесты Яндекса
-    r"^uaas\.yandex\.ru$",                             # Эксперименты Яндекса
+    r"^analytics.*\.yahoo\.[a-z]+$",                   # Метрики Yahoo
+    ( # Yandex
+        r"^(?:"
+        r"an|mc|ads|awaps|bs|context|direct|pagead|uaas|abt\.s3|aflt\.market"
+        r")\.yandex\.[a-z]+$",
+    ),
+    r"(?:^|\.)log\.strm\.yandex\.ru$",                 # Метрики Яндекс Стриминга
 
     # === Префиксы ===
     r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN
