@@ -197,7 +197,7 @@ PROTECTED_FAMILIES = [
     "lenta.ru",
 
     # === M ===
-    "mail.ru", "media-trend.mail.ru", "mradx.net", "mk.ru",
+    "mail.ru", "media-trend.mail.ru", "r.mradx.net", "mk.ru",
     "mos.ru", "mts.ru", "mycdn.me",
 
     # === N ===
