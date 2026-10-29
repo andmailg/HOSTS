@@ -238,6 +238,7 @@
 0.0.0.0 exchange.buzzoola.com
 0.0.0.0 tube.buzzoola.com
 0.0.0.0 cackle.me
+0.0.0.0 k.cackle.me
 0.0.0.0 cs.ssp.cadent.com
 0.0.0.0 dcs.ssp.cadent.com
 0.0.0.0 e1.ssp.cadent.com
@@ -330,6 +331,7 @@
 0.0.0.0 demdex.net
 0.0.0.0 dpm.demdex.net
 0.0.0.0 euronewsgroup.demdex.net
+0.0.0.0 sync.digitalcaramel.com
 0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 tag.digitaltarget.ru
 0.0.0.0 code.directadvert.ru
@@ -354,6 +356,7 @@
 0.0.0.0 cdn.doubleverify.com
 0.0.0.0 pub.doubleverify.com
 0.0.0.0 rtb0.doubleverify.com
+0.0.0.0 tps-dn-ue1.doubleverify.com
 0.0.0.0 tps.doubleverify.com
 0.0.0.0 vast.doubleverify.com
 0.0.0.0 sync.drift-pixel.ai
@@ -387,6 +390,7 @@
 0.0.0.0 cdn.flashtalking.com
 0.0.0.0 d9.flashtalking.com
 0.0.0.0 servedby.flashtalking.com
+0.0.0.0 public.flourish.studio
 0.0.0.0 floxis.tech
 0.0.0.0 analytics.fontanka.ru
 0.0.0.0 agen-assets.ftstatic.com
@@ -414,6 +418,7 @@
 0.0.0.0 www.gazeta.press
 0.0.0.0 adserver.gear-hub.ru
 0.0.0.0 rumcdn.geoedge.be
+0.0.0.0 metrics.getrockerbox.com
 0.0.0.0 a.giraff.io
 0.0.0.0 code.giraff.io
 0.0.0.0 data.giraff.io
@@ -506,6 +511,7 @@
 0.0.0.0 krk2.kargo.com
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
+0.0.0.0 m.kombinat.digital
 0.0.0.0 assets.kontext.so
 0.0.0.0 bid.kontext.so
 0.0.0.0 cdn.kraeuterhaus.de
@@ -598,6 +604,7 @@
 0.0.0.0 v2.mpsuadv.ru
 0.0.0.0 v3.mpsuadv.ru
 0.0.0.0 v7.mpsuadv.ru
+0.0.0.0 r.mradx.net
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
@@ -618,7 +625,6 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -660,6 +666,7 @@
 0.0.0.0 us-u.openx.net
 0.0.0.0 ziffdavis-d.openx.net
 0.0.0.0 t.adx.opera.com
+0.0.0.0 t.oa.opera.com
 0.0.0.0 opti-digital.com
 0.0.0.0 optiyield-data.opti-digital.com
 0.0.0.0 scripts.opti-digital.com
@@ -673,6 +680,7 @@
 0.0.0.0 a4621041136.cdn.optimizely.com
 0.0.0.0 otclick-adv.ru
 0.0.0.0 otm-r.com
+0.0.0.0 spx.otm-r.com
 0.0.0.0 ssp.otm-r.com
 0.0.0.0 sync.dmp.otm-r.com
 0.0.0.0 yhb.p.otm-r.com
@@ -738,6 +746,7 @@
 0.0.0.0 cdn.punchmedia.ru
 0.0.0.0 data.punchmedia.ru
 0.0.0.0 sys.punchmedia.ru
+0.0.0.0 tech.punchmedia.ru
 0.0.0.0 req.pm2.punchmedia.ru
 0.0.0.0 push4site.com
 0.0.0.0 iz.push4site.com
@@ -820,6 +829,7 @@
 0.0.0.0 match.rundsp.com
 0.0.0.0 rutarget.ru
 0.0.0.0 adfox-hb-bidder.rutarget.ru
+0.0.0.0 buzzoola-sync.rutarget.ru
 0.0.0.0 solta-sync.rutarget.ru
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
@@ -931,6 +941,7 @@
 0.0.0.0 s.suprion.ru
 0.0.0.0 rtb.surfy.space
 0.0.0.0 ssp.surfy.space
+0.0.0.0 x.surfy.space
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
 0.0.0.0 t-static.ru
@@ -951,6 +962,7 @@
 0.0.0.0 preidentity.tbank-online.com
 0.0.0.0 id.tbank.ru
 0.0.0.0 ads.tds.bid
+0.0.0.0 openrtb.tds.bid
 0.0.0.0 widgets.teads-xo.com
 0.0.0.0 at.teads.tv
 0.0.0.0 sync.teads.tv
@@ -1029,6 +1041,8 @@
 0.0.0.0 ad.video-mech.ru
 0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru
+0.0.0.0 data.videonow.ru
+0.0.0.0 static.videonow.ru
 0.0.0.0 sync.videonow.ru
 0.0.0.0 vigo.tech
 0.0.0.0 api.vigo.tech
@@ -1060,6 +1074,8 @@
 0.0.0.0 wcm.weborama-tech.ru
 0.0.0.0 wf-ru-frontend.weborama-tech.ru
 0.0.0.0 weborama.fr
+0.0.0.0 cr.frontend.weborama.fr
+0.0.0.0 redirect.frontend.weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
 0.0.0.0 cdn.prod.website-files.com
 0.0.0.0 mc.webvisor.org

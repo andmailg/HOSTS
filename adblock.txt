@@ -211,6 +211,7 @@
 ||cdn.debugbear.com^
 ||match.deepintent.com^
 ||demdex.net^
+||sync.digitalcaramel.com^
 ||dmg.digitaltarget.ru^
 ||tag.digitaltarget.ru^
 ||code.directadvert.ru^
@@ -251,6 +252,7 @@
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
 ||servedby.flashtalking.com^
+||public.flourish.studio^
 ||floxis.tech^
 ||analytics.fontanka.ru^
 ||agen-assets.ftstatic.com^
@@ -267,6 +269,7 @@
 ||www.gazeta.press^
 ||adserver.gear-hub.ru^
 ||rumcdn.geoedge.be^
+||metrics.getrockerbox.com^
 ||a.giraff.io^
 ||code.giraff.io^
 ||data.giraff.io^
@@ -330,6 +333,7 @@
 ||crb.kargo.com^
 ||krk2.kargo.com^
 ||kimberlite.io^
+||m.kombinat.digital^
 ||assets.kontext.so^
 ||bid.kontext.so^
 ||cdn.kraeuterhaus.de^
@@ -405,6 +409,7 @@
 ||v2.mpsuadv.ru^
 ||v3.mpsuadv.ru^
 ||v7.mpsuadv.ru^
+||r.mradx.net^
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
@@ -424,7 +429,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -447,6 +451,7 @@
 ||cs.openwebmp.com^
 ||openx.net^
 ||t.adx.opera.com^
+||t.oa.opera.com^
 ||opti-digital.com^
 ||optidigital.com^
 ||optimizely.com^
@@ -488,6 +493,7 @@
 ||cdn.punchmedia.ru^
 ||data.punchmedia.ru^
 ||sys.punchmedia.ru^
+||tech.punchmedia.ru^
 ||req.pm2.punchmedia.ru^
 ||push4site.com^
 ||cdn.pushwoosh.com^
@@ -627,6 +633,7 @@
 ||s.suprion.ru^
 ||rtb.surfy.space^
 ||ssp.surfy.space^
+||x.surfy.space^
 ||widget.svk-native.ru^
 ||syncingbridge.com^
 ||t-static.ru^
@@ -646,6 +653,7 @@
 ||preidentity.tbank-online.com^
 ||id.tbank.ru^
 ||ads.tds.bid^
+||openrtb.tds.bid^
 ||widgets.teads-xo.com^
 ||at.teads.tv^
 ||sync.teads.tv^
@@ -706,6 +714,8 @@
 ||ad.video-mech.ru^
 ||a.videohead.tech^
 ||adx.videonow.ru^
+||data.videonow.ru^
+||static.videonow.ru^
 ||sync.videonow.ru^
 ||vigo.tech^
 ||s.viisfxlg.com^
