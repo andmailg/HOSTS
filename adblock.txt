@@ -20,7 +20,6 @@
 ||aaakmnr.com^
 ||t.dsp.abdm.ru^
 ||phoenix.prod.ateam.acast.cloud^
-||embed.acast.com^
 ||acint.net^
 ||track.activemetering.com^
 ||openx-ums.acuityplatform.com^
@@ -94,6 +93,7 @@
 ||afrdtech.com^
 ||aa.agkn.com^
 ||x01.aidata.io^
+||aj3105.top^
 ||ac.ajur.info^
 ||akamaized.net^
 ||cdn.al-adtech.com^
@@ -113,6 +113,7 @@
 ||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
+||ads.avads.net^
 ||www.awin1.com^
 ||cookiesync.axis-marketplace.com^
 ||ay.delivery^
@@ -147,12 +148,14 @@
 ||pbsj.bricks-co.com^
 ||players.brightcove.net^
 ||browser-intake-datadoghq.com^
+||bttrack.com^
 ||bumlam.com^
 ||buzzoola.com^
 ||cackle.me^
 ||cs.ssp.cadent.com^
 ||dcs.ssp.cadent.com^
 ||e1.ssp.cadent.com^
+||pcs.ssp.cadent.com^
 ||casalemedia.com^
 ||catsnetwork.ru^
 ||bucket.cdnwebcloud.com^
@@ -185,6 +188,7 @@
 ||beacon.lynx.cognitivlabs.com^
 ||sync.colossusssp.com^
 ||adx.com.ru^
+||s.company-target.com^
 ||cdn.confiant-integrations.net^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
@@ -199,6 +203,7 @@
 ||server.cpmstar.com^
 ||p.cpx.to^
 ||s.cpx.to^
+||ads.creative-serving.com^
 ||creativecdn.com^
 ||criteo.com^
 ||criteo.net^
@@ -226,6 +231,10 @@
 ||uk-script.dotmetrics.net^
 ||casale-match.dotomi.com^
 ||dclk-match.dotomi.com^
+||equativ-match.dotomi.com^
+||gumgum-match.dotomi.com^
+||prebid-match.dotomi.com^
+||stx-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
 ||doubleclick.net^
 ||doubleverify.com^
@@ -274,6 +283,7 @@
 ||www.gazeta.press^
 ||adserver.gear-hub.ru^
 ||rumcdn.geoedge.be^
+||wrappers.geoedge.be^
 ||metrics.getrockerbox.com^
 ||a.giraff.io^
 ||code.giraff.io^
@@ -292,6 +302,7 @@
 ||www.googletagmanager.com^
 ||www.googletagservices.com^
 ||ads.gpm-ssp.ru^
+||jscdn.greeter.me^
 ||g2.gumgum.com^
 ||rtb.gumgum.com^
 ||usersync.gumgum.com^
@@ -331,6 +342,7 @@
 ||analytics.iportal.ru^
 ||sync.ipredictive.com^
 ||core.iprom.net^
+||pxl.iqm.com^
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
 ||journeyswitch.work^
@@ -399,6 +411,7 @@
 ||ml314.com^
 ||mn-tz.com^
 ||mfx.mobilefuse.com^
+||pbjs.mobkoi.com^
 ||moe.video^
 ||pixelfnt-us.dsp-api.moloco.com^
 ||ads.monetix.group^
@@ -410,14 +423,7 @@
 ||jssdkcdns.mparticle.com^
 ||jssdks.mparticle.com^
 ||mpartner.digital^
-||ad1.mpsuadv.ru^
-||ad2.mpsuadv.ru^
-||dmp.mpsuadv.ru^
-||statika.mpsuadv.ru^
-||v1.mpsuadv.ru^
-||v2.mpsuadv.ru^
-||v3.mpsuadv.ru^
-||v7.mpsuadv.ru^
+||mpsuadv.ru^
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
@@ -437,7 +443,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -459,6 +464,7 @@
 ||realtime.openweb.com^
 ||cs.openwebmedia.org^
 ||cs.openwebmp.com^
+||pbs-cs.openwebmp.com^
 ||openx.net^
 ||t.adx.opera.com^
 ||t.oa.opera.com^
@@ -484,6 +490,7 @@
 ||dsp-service.pixad.com.tr^
 ||prebid.pixad.com.tr^
 ||plusoneads.com^
+||sync.pmbmonetize.live^
 ||trck.postbank.de^
 ||jadserve.postrelease.com^
 ||presage.io^
@@ -512,7 +519,6 @@
 ||match.qtarget.tech^
 ||cms.quantserve.com^
 ||quotiq.ru^
-||sst-irec.r-99.com^
 ||s-cs.rmp.rakuten.com^
 ||cs.rambler.ru^
 ||embeds.rambler.ru^
@@ -531,6 +537,7 @@
 ||metrics.rapidedge.io^
 ||sentry.rarus.ru^
 ||sync.rbstsystems.live^
+||recaptcha.net^
 ||embed.reddit.com^
 ||pi.reddit.com^
 ||w3-reporting.reddit.com^
@@ -613,8 +620,11 @@
 ||r.skimresources.com^
 ||pl2.skwstat.ru^
 ||s.ad.smaato.net^
+||apps.smartadserver.com^
+||csync-apac.smartadserver.com^
 ||csync.smartadserver.com^
 ||rtb-csync.smartadserver.com^
+||ssb-global.smartadserver.com^
 ||ssbsync-global.smartadserver.com^
 ||ssbsync-us.smartadserver.com^
 ||ssbsync.smartadserver.com^
@@ -671,6 +681,7 @@
 ||at.teads.tv^
 ||sync.teads.tv^
 ||sync.techdsp.ru^
+||sync.technoratimedia.com^
 ||hawk.techradar.com^
 ||telecid.ru^
 ||terratraf.com^
@@ -760,15 +771,18 @@
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
 ||geo.yahoo.com^
+||noa.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
+||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^
 ||mc.yandex.ru^
 ||uaas.yandex.ru^
+||aflt.market.yandex.ru^
 ||log.strm.yandex.ru^
 ||yellowblue.io^
 ||ad.yieldlab.net^
