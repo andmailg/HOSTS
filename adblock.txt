@@ -424,6 +424,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -611,7 +612,6 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||api-ssp.spot.im^
-||publisher-assets.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
