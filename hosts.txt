@@ -111,7 +111,6 @@
 0.0.0.0 ib.adnxs.com
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
-0.0.0.0 assets.adobedtm.com
 0.0.0.0 adriver.ru
 0.0.0.0 ad.adriver.ru
 0.0.0.0 content.adriver.ru
@@ -345,9 +344,7 @@
 0.0.0.0 comcluster.cxense.com
 0.0.0.0 id.cxense.com
 0.0.0.0 stats-collector.cxense.com
-0.0.0.0 cdndirector.dailymotion.com
 0.0.0.0 dmxleo.dailymotion.com
-0.0.0.0 geo.dailymotion.com
 0.0.0.0 graphql.api.dailymotion.com
 0.0.0.0 check.ddos-guard.net
 0.0.0.0 d5p.de17a.com
