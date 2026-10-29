@@ -439,7 +439,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
         r"^(?:"
         r"an|mc|ads|awaps|bs|context|direct|pagead|uaas"
         r"|abt\.s3|aflt\.market"
-        r")\.yandex\.[a-z]+$",
+        r")\.yandex\.[a-z]+$"
     ),
     r"(?:^|\.)log\.strm\.yandex\.ru$",                 # Метрики Яндекс Стриминга
 
