@@ -7,8 +7,8 @@ from urllib.parse import urlparse
 # --- Настройки путей проекта ---
 HOSTS_FILE = Path(__file__).parent.parent / "hosts.txt"
 ADBLOCK_FILE = Path(__file__).parent.parent / "adblock.txt"
-LOG_FILE = Path(__file__).parent.parent / "log.txt"
-DEFAULT_URL_FILE = Path(__file__).parent.parent / "urls.txt"
+LOG_FILE = Path(__file__).parent / "log.txt"
+DEFAULT_URL_FILE = Path(__file__).parent / "urls.txt"
 TLDEXTRACT_CACHE_DIR = Path(__file__).parent / ".tldextract_cache"
 TLDEXTRACT_CACHE_DIR.mkdir(exist_ok=True)
 
