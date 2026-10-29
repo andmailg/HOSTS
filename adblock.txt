@@ -19,6 +19,8 @@
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
 ||aaakmnr.com^
 ||t.dsp.abdm.ru^
+||phoenix.prod.ateam.acast.cloud^
+||embed.acast.com^
 ||acint.net^
 ||track.activemetering.com^
 ||openx-ums.acuityplatform.com^
@@ -167,15 +169,18 @@
 ||g.clarity.ms^
 ||h.clarity.ms^
 ||i.clarity.ms^
+||j.clarity.ms^
 ||k.clarity.ms^
 ||n.clarity.ms^
 ||o.clarity.ms^
 ||q.clarity.ms^
+||r.clarity.ms^
 ||scripts.clarity.ms^
 ||www.clarity.ms^
 ||protected-by.clarium.io^
 ||i.clean.gg^
 ||static.cloudflareinsights.com^
+||d17ebhrlbr4s4.cloudfront.net^
 ||d3e54v103j8qbb.cloudfront.net^
 ||beacon.lynx.cognitivlabs.com^
 ||sync.colossusssp.com^
@@ -291,6 +296,7 @@
 ||rtb.gumgum.com^
 ||usersync.gumgum.com^
 ||hbrd.io^
+||luck.helpfulavenue.com^
 ||js.hostingradio.ru^
 ||meta.hostingradio.ru^
 ||html-load.com^
@@ -302,6 +308,7 @@
 ||kraken.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
+||cdnn21.imgria.ru^
 ||media-advcycle.imgsmail.ru^
 ||secure-us.imrworldwide.com^
 ||indexww.com^
@@ -333,6 +340,7 @@
 ||crb.kargo.com^
 ||krk2.kargo.com^
 ||kimberlite.io^
+||klkmdsync.site^
 ||m.kombinat.digital^
 ||assets.kontext.so^
 ||bid.kontext.so^
@@ -393,6 +401,7 @@
 ||mfx.mobilefuse.com^
 ||moe.video^
 ||pixelfnt-us.dsp-api.moloco.com^
+||ads.monetix.group^
 ||ib.mookie1.com^
 ||stats.mos.ru^
 ||px.mountain.com^
@@ -409,7 +418,6 @@
 ||v2.mpsuadv.ru^
 ||v3.mpsuadv.ru^
 ||v7.mpsuadv.ru^
-||r.mradx.net^
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
@@ -429,6 +437,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -439,6 +448,7 @@
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||on.aws^
+||impressions.onelink.me^
 ||onesignal.com^
 ||onetag-sys.com^
 ||pixel.dsp.onetarget.ru^
@@ -502,6 +512,7 @@
 ||match.qtarget.tech^
 ||cms.quantserve.com^
 ||quotiq.ru^
+||sst-irec.r-99.com^
 ||s-cs.rmp.rakuten.com^
 ||cs.rambler.ru^
 ||embeds.rambler.ru^
@@ -542,6 +553,7 @@
 ||tag.researchnow.com^
 ||cdn.retailads.net^
 ||a.rfihub.com^
+||cm.ria.ru^
 ||sync.richaudience.com^
 ||mid.rkdms.com^
 ||api.rlcdn.com^
@@ -647,6 +659,7 @@
 ||display.bidder.taboola.com^
 ||tapad.com^
 ||ssp.api.tappx.com^
+||eye.targetads.io^
 ||match.targetrtb.com^
 ||as.tbank-online.com^
 ||id.tbank-online.com^
@@ -668,6 +681,7 @@
 ||geo.ads.audio.thisisdax.com^
 ||thrtle.com^
 ||analytics.tiktok.com^
+||lf16-tiktok-web.tiktokcdn-us.com^
 ||analytics-ipv6.tiktokw.us^
 ||api-common.tinkoff.ru^
 ||tns-counter.ru^
@@ -708,6 +722,8 @@
 ||a.utraff.com^
 ||a.utraff.info^
 ||s.uuidksinc.net^
+||cdn.uxfeedback.ru^
+||widget-api.uxfeedback.ru^
 ||vdo.ai^
 ||viadata.store^
 ||beacon.viafoura.io^

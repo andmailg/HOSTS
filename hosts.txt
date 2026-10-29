@@ -43,6 +43,8 @@
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
 0.0.0.0 aaakmnr.com
 0.0.0.0 t.dsp.abdm.ru
+0.0.0.0 phoenix.prod.ateam.acast.cloud
+0.0.0.0 embed.acast.com
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 www.acint.net
@@ -270,15 +272,18 @@
 0.0.0.0 g.clarity.ms
 0.0.0.0 h.clarity.ms
 0.0.0.0 i.clarity.ms
+0.0.0.0 j.clarity.ms
 0.0.0.0 k.clarity.ms
 0.0.0.0 n.clarity.ms
 0.0.0.0 o.clarity.ms
 0.0.0.0 q.clarity.ms
+0.0.0.0 r.clarity.ms
 0.0.0.0 scripts.clarity.ms
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
 0.0.0.0 static.cloudflareinsights.com
+0.0.0.0 d17ebhrlbr4s4.cloudfront.net
 0.0.0.0 d3e54v103j8qbb.cloudfront.net
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 sync.colossusssp.com
@@ -451,6 +456,7 @@
 0.0.0.0 hbrd.io
 0.0.0.0 ssp.hbrd.io
 0.0.0.0 st.hbrd.io
+0.0.0.0 luck.helpfulavenue.com
 0.0.0.0 js.hostingradio.ru
 0.0.0.0 meta.hostingradio.ru
 0.0.0.0 html-load.com
@@ -475,6 +481,7 @@
 0.0.0.0 kraken.ignimgs.com
 0.0.0.0 assets.ikhnaie.link
 0.0.0.0 assets.ikhnaie.me
+0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 media-advcycle.imgsmail.ru
 0.0.0.0 secure-us.imrworldwide.com
 0.0.0.0 indexww.com
@@ -511,6 +518,7 @@
 0.0.0.0 krk2.kargo.com
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
+0.0.0.0 klkmdsync.site
 0.0.0.0 m.kombinat.digital
 0.0.0.0 assets.kontext.so
 0.0.0.0 bid.kontext.so
@@ -587,6 +595,7 @@
 0.0.0.0 cdn1.moe.video
 0.0.0.0 rtb.moe.video
 0.0.0.0 pixelfnt-us.dsp-api.moloco.com
+0.0.0.0 ads.monetix.group
 0.0.0.0 ib.mookie1.com
 0.0.0.0 stats.mos.ru
 0.0.0.0 px.mountain.com
@@ -604,7 +613,6 @@
 0.0.0.0 v2.mpsuadv.ru
 0.0.0.0 v3.mpsuadv.ru
 0.0.0.0 v7.mpsuadv.ru
-0.0.0.0 r.mradx.net
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
@@ -625,6 +633,7 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -645,6 +654,7 @@
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 on.aws
 0.0.0.0 ecs.us-west-2.on.aws
+0.0.0.0 impressions.onelink.me
 0.0.0.0 onesignal.com
 0.0.0.0 api.onesignal.com
 0.0.0.0 cdn.onesignal.com
@@ -757,6 +767,7 @@
 0.0.0.0 match.qtarget.tech
 0.0.0.0 cms.quantserve.com
 0.0.0.0 quotiq.ru
+0.0.0.0 sst-irec.r-99.com
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 cs.rambler.ru
 0.0.0.0 embeds.rambler.ru
@@ -798,6 +809,7 @@
 0.0.0.0 tag.researchnow.com
 0.0.0.0 cdn.retailads.net
 0.0.0.0 a.rfihub.com
+0.0.0.0 cm.ria.ru
 0.0.0.0 sync.richaudience.com
 0.0.0.0 mid.rkdms.com
 0.0.0.0 api.rlcdn.com
@@ -916,6 +928,7 @@
 0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
+0.0.0.0 static8.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
@@ -956,6 +969,7 @@
 0.0.0.0 tapad.com
 0.0.0.0 pixel.tapad.com
 0.0.0.0 ssp.api.tappx.com
+0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
 0.0.0.0 as.tbank-online.com
 0.0.0.0 id.tbank-online.com
@@ -978,6 +992,7 @@
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
 0.0.0.0 analytics.tiktok.com
+0.0.0.0 lf16-tiktok-web.tiktokcdn-us.com
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 api-common.tinkoff.ru
 0.0.0.0 tns-counter.ru
@@ -1025,6 +1040,8 @@
 0.0.0.0 a.utraff.com
 0.0.0.0 a.utraff.info
 0.0.0.0 s.uuidksinc.net
+0.0.0.0 cdn.uxfeedback.ru
+0.0.0.0 widget-api.uxfeedback.ru
 0.0.0.0 vdo.ai
 0.0.0.0 ortb.vdo.ai
 0.0.0.0 viadata.store
@@ -1121,6 +1138,3 @@
 0.0.0.0 im.ziffdavisinternational.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
-0.0.0.0 a.adiam.tech
-0.0.0.0 klkmdsync.site
-0.0.0.0 impressions.onelink.me
