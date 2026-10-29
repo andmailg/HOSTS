@@ -8,6 +8,7 @@
 ||24smi.net^
 ||2mdn.net^
 ||news.2xclick.ru^
+||news.2xclock.com^
 ||33across.com^
 ||360yield.com^
 ||eb2.3lift.com^
@@ -111,6 +112,8 @@
 ||pbs-yahoo-us.ay.delivery^
 ||wnsrvbjmeprtfrnfx.ay.delivery^
 ||adsdkprod.azureedge.net^
+||z01.azurefd.net^
+||gogotracker.b-cdn.net^
 ||api.b2c.com^
 ||apix.b2c.com^
 ||f003.backblazeb2.com^
@@ -183,6 +186,7 @@
 ||sync.cootlogix.com^
 ||csync.copper6.com^
 ||sync.copper6.live^
+||fcgi5.count-new.ru^
 ||pbs2.cpmstar.com^
 ||server.cpmstar.com^
 ||p.cpx.to^
@@ -278,6 +282,7 @@
 ||www.google-analytics.com^
 ||analytics.google.com^
 ||fundingchoicesmessages.google.com^
+||partner.googleadservices.com^
 ||www.googleadservices.com^
 ||imasdk.googleapis.com^
 ||googlesyndication.com^
@@ -321,6 +326,7 @@
 ||core.iprom.net^
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
+||journeyswitch.work^
 ||ssl.p.jwpcdn.com^
 ||content.jwplatform.com^
 ||jwpsrv.com^
@@ -421,7 +427,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -550,9 +555,12 @@
 ||id.rtb.mx^
 ||pic.rtbcdn.ru^
 ||river-3-311.rtbcdn.ru^
+||river-3-364.rtbcdn.ru^
+||river-3-372.rtbcdn.ru^
 ||river-3-374.rtbcdn.ru^
 ||river-4-411.rtbcdn.ru^
 ||river-4-428.rtbcdn.ru^
+||tracker-b.rtbpixelpluses.com^
 ||t.rtbwave.com^
 ||rubiconproject.com^
 ||w.rulive.ru^
@@ -623,7 +631,9 @@
 ||ads.stickyadstv.com^
 ||worker.sttsmntz.ru^
 ||sr.studiostack.com^
+||a.suprion.ru^
 ||s.suprion.ru^
+||rtb.surfy.space^
 ||ssp.surfy.space^
 ||widget.svk-native.ru^
 ||syncingbridge.com^
@@ -648,8 +658,13 @@
 ||sync.teads.tv^
 ||sync.techdsp.ru^
 ||hawk.techradar.com^
+||px3161b82a5cda3d26f.telecid.ru^
 ||px316402f875248df0c.telecid.ru^
+||px31664665fcb5d412e.telecid.ru^
+||px3168552887d2f9f32.telecid.ru^
 ||px3169a068a6c273fa5.telecid.ru^
+||px316c692a8750ecf63.telecid.ru^
+||px316c713dba19c44dd.telecid.ru^
 ||terratraf.com^
 ||elb.the-ozone-project.com^
 ||prebid.the-ozone-project.com^
@@ -663,6 +678,7 @@
 ||st.top100.ru^
 ||tracookiepixel.xyz^
 ||traffaret.com^
+||yahoo2.global.transmit.live^
 ||ads.travelaudience.com^
 ||www.travelpayouts.com^
 ||partners.tremorhub.com^
@@ -695,6 +711,7 @@
 ||vdo.ai^
 ||viadata.store^
 ||beacon.viafoura.io^
+||ad.video-mech.ru^
 ||a.videohead.tech^
 ||adx.videonow.ru^
 ||sync.videonow.ru^
@@ -723,7 +740,6 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||pbs.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
