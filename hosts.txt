@@ -1121,3 +1121,6 @@
 0.0.0.0 im.ziffdavisinternational.com
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
+0.0.0.0 a.adiam.tech
+0.0.0.0 klkmdsync.site
+0.0.0.0 impressions.onelink.me
