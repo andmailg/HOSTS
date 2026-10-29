@@ -78,7 +78,7 @@ _IS_HASH_PATTERNS = [
 # 2. НИКОГДА НЕ БЛОКИРОВАТЬ (уровень A): чистая инфраструктура — CDN, библиотеки, шрифты,
 #    видеоплееры, фото/файлохостинги. Совпадение: точный домен или любой поддомен.
 #    Сюда НЕ входят рекламные сервисы (googlesyndication, googletagmanager, smartadserver, lijit,
-#    liadm, cloudflareinsights, html-load, connatix, openfpcdn ...): раньше они были в белом списке
+#    liadm, cloudflareinsights, html-load, openfpcdn ...): раньше они были в белом списке
 #    и поэтому проходили как «OK» при любом ad-рейтинге. Теперь они в чёрном списке.
 #    Чёрный список проверяется РАНЬШЕ этого списка.
 # =============================================================================
@@ -90,7 +90,7 @@ NEVER_BLOCK_DOMAINS = [
     "brightcove.com", "brightcovecdn.com", "bunny.net",
     
     # === C ===
-    "cloudflare.com", "connatix.com", "coolbonsai.com", "createjs.com",
+    "cloudflare.com", "coolbonsai.com", "createjs.com",
     
     # === D ===
     "directupload.eu", "dmcdn.net",
@@ -130,7 +130,7 @@ NEVER_BLOCK_DOMAINS = [
     "rackcdn.com", "redditmedia.com", "rutracker.cc", "rutubelist.ru", "r-99.com",
     
     # === S ===
-    "sentry-saas.rambler-co.ru", "sentry.io", "sketchfab.com",
+    "squarespace-cdn.com", "sentry-saas.rambler-co.ru", "sentry.io", "sketchfab.com",
 
     # === T ===
     "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com",
@@ -168,7 +168,7 @@ PROTECTED_FAMILIES = [
     "bing.com",
 
     # === C ===
-    "championat.com", "cnews.ru",
+    "championat.com", "cnews.ru", "connatix.com",
 
     # === D ===
     "dzen.ru", "dzeninfra.ru", "disqus.com", "disquscdn.com",
@@ -265,15 +265,16 @@ AD_APEX_BLACKLIST = [
     "arcspire.io", "axis-marketplace.com",
 
     # === B ===
-    "bestdahlia.com", "betweendigital.com", "bidderstack.com",
+    "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "blismedia.com", "brandmetrics.com",
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
-    "clickagy.com", "cloudflareinsights.com", "contextweb.com", "cootlogix.com",
-    "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
-    "crwdcntrl.net", "ctnsnet.com", "cxense.com",
+    "clickagy.com", "cloudflareinsights.com", "contentspread.net",
+    "contextweb.com", "cootlogix.com", "cpx.to", "creativecdn.com",
+    "criteo.com", "criteo.net", "crwdcntrl.net", "ctnsnet.com",
+    "cxense.com",
 
     # === D ===
     "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
@@ -309,7 +310,7 @@ AD_APEX_BLACKLIST = [
     # === M ===
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
-    "mediascope.net", "mediatoday.ru", "mgid.com", "mindbox.ru",
+    "mediascope.net", "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
     "mirtesen.ru", "ml314.com", "mobilefuse.com", "moatads.com",
     "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital",
     "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
@@ -372,7 +373,7 @@ AD_APEX_BLACKLIST = [
     "yandexadexchange.net", "yellowblue.io", "yieldmo.com", "ymmobi.com",
 
     # === Z ===
-    "zdbb.net", "zemanta.com", "zucks.net",
+    "zdbb.net", "zemanta.com", "zeotap.com", "zucks.net",
 ]
 
 # Дополнительные точечные правила для хостов внутри «защищённых» семейств
@@ -451,7 +452,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     ),
     r"(?:^|\.)log\.strm\.yandex\.[a-z]+$",
 
-    r"^bats\.video\.yahoo.com$",
+    r"(?:^|\.)(?:pbd|bats\.video)\.yahoo.com$",
 
     # === Префиксы ===
     r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN

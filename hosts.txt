@@ -1204,3 +1204,9 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 pbd.yahoo.com
+0.0.0.0 moca.pbs.yahoo.com
+0.0.0.0 cdn.contentspread.net
+0.0.0.0 icv.bannernow.com
+0.0.0.0 mwzeom.zeotap.com
+0.0.0.0 capi.connatix.com
