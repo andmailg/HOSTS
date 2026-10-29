@@ -13,10 +13,6 @@
 0.0.0.0 ssp.24smi.net
 0.0.0.0 2mdn.net
 0.0.0.0 s0.2mdn.net
-0.0.0.0 rr1---sn-oj1gi5-54.c.2mdn.net
-0.0.0.0 rr1---sn-qjp5q5-5q.c.2mdn.net
-0.0.0.0 rr2---sn-4g5ednkd.c.2mdn.net
-0.0.0.0 rr2---sn-p5qlsndk.c.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 news.2xclock.com
 0.0.0.0 33across.com
@@ -494,6 +490,7 @@
 0.0.0.0 events.insiad.com
 0.0.0.0 secure.insightexpressai.com
 0.0.0.0 intent.ai
+0.0.0.0 rtb-eu-warsaw.intent.ai
 0.0.0.0 sync.intentiq.com
 0.0.0.0 analytics.iportal.ru
 0.0.0.0 sync.ipredictive.com
@@ -609,9 +606,6 @@
 0.0.0.0 cm.a.mts.ru
 0.0.0.0 sm.rtb.mts.ru
 0.0.0.0 static.a.mts.ru
-0.0.0.0 3210428791793269690356.cm.a.mts.ru
-0.0.0.0 5072004651793269646055.cm.a.mts.ru
-0.0.0.0 8328556131793269649022.cm.a.mts.ru
 0.0.0.0 pmp.mxptint.net
 0.0.0.0 events.myweb3id.io
 0.0.0.0 cdn.nemedia.codes
@@ -624,6 +618,7 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -811,6 +806,7 @@
 0.0.0.0 id.rtb.mx
 0.0.0.0 rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
+0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
 0.0.0.0 t.rtbwave.com
 0.0.0.0 rubiconproject.com
@@ -823,13 +819,14 @@
 0.0.0.0 w.rulive.ru
 0.0.0.0 match.rundsp.com
 0.0.0.0 rutarget.ru
+0.0.0.0 adfox-hb-bidder.rutarget.ru
 0.0.0.0 solta-sync.rutarget.ru
+0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
 0.0.0.0 a.rutube.ru
 0.0.0.0 goya.rutube.ru
 0.0.0.0 log.rutube.ru
 0.0.0.0 ssp.rutube.ru
-0.0.0.0 932211.log.rutube.ru
 0.0.0.0 pixel.mtrcs.samba.tv
 0.0.0.0 sape.ru
 0.0.0.0 cdn-rtb.sape.ru
@@ -869,6 +866,7 @@
 0.0.0.0 pixel-sync.sitescout.com
 0.0.0.0 skcrtxr.com
 0.0.0.0 cdn-c.skcrtxr.com
+0.0.0.0 cdn-roxot-seller.skcrtxr.com
 0.0.0.0 cdn-v.skcrtxr.com
 0.0.0.0 cdn.skcrtxr.com
 0.0.0.0 csync.skcrtxr.com
@@ -903,6 +901,8 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 smi2cdn.ru
+0.0.0.0 static1.smi2cdn.ru
+0.0.0.0 static3.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
@@ -910,11 +910,11 @@
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
 0.0.0.0 sparrow.ru
+0.0.0.0 images.sparrow.ru
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 api-ssp.spot.im
-0.0.0.0 publisher-assets.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
@@ -1054,9 +1054,11 @@
 0.0.0.0 api.webgains.io
 0.0.0.0 weborama-tech.ru
 0.0.0.0 cr-frontend.weborama-tech.ru
+0.0.0.0 cstatic-ru-cv.weborama-tech.ru
 0.0.0.0 ctx.weborama-tech.ru
 0.0.0.0 ds-frontend.weborama-tech.ru
 0.0.0.0 wcm.weborama-tech.ru
+0.0.0.0 wf-ru-frontend.weborama-tech.ru
 0.0.0.0 weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
 0.0.0.0 cdn.prod.website-files.com
