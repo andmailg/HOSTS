@@ -976,17 +976,6 @@
 0.0.0.0 static7.smi2.net
 0.0.0.0 static8.smi2.net
 0.0.0.0 target.smi2.net
-0.0.0.0 smi2.ru
-0.0.0.0 cdnjs.smi2.ru
-0.0.0.0 exad.smi2.ru
-0.0.0.0 smi2cdn.ru
-0.0.0.0 static.smi2cdn.ru
-0.0.0.0 static1.smi2cdn.ru
-0.0.0.0 static3.smi2cdn.ru
-0.0.0.0 static4.smi2cdn.ru
-0.0.0.0 static6.smi2cdn.ru
-0.0.0.0 static7.smi2cdn.ru
-0.0.0.0 static8.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
