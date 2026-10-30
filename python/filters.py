@@ -85,7 +85,7 @@ _IS_HASH_PATTERNS = [
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
     # === A ===
-    "ampproject.org", "apester.com", "media-amazon.com",
+    "adobedtm.com", "ampproject.org", "apester.com", "media-amazon.com",
     
     # === B ===
     "brightcove.com", "brightcovecdn.com", "bunny.net",
@@ -162,7 +162,7 @@ NEVER_BLOCK_DOMAINS = [
 # =============================================================================
 PROTECTED_FAMILIES = [
     # === A ===
-    "acast.com", "adobedtm.com",
+    "acast.com",
 
     # === B ===
     "bbc.co.uk", "bbc.com", "bbci.co.uk", "beeline.ru",
