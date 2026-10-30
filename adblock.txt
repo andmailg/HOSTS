@@ -72,6 +72,7 @@
 ||d.adroll.com^
 ||tracker.ads-tinyorbit.com^
 ||dt.adsafeprotected.com^
+||fw.adsafeprotected.com^
 ||jsconfig.adsafeprotected.com^
 ||pixel.adsafeprotected.com^
 ||static.adsafeprotected.com^
@@ -92,6 +93,7 @@
 ||pixel.advertising.com^
 ||cdn.advertronic.io^
 ||cm-mx.advolve.io^
+||id.adx.bid^
 ||afrdtech.com^
 ||aa.agkn.com^
 ||x01.aidata.io^
@@ -163,6 +165,7 @@
 ||pcs.ssp.cadent.com^
 ||casalemedia.com^
 ||catsnetwork.ru^
+||cdnrtbsape.ru^
 ||bucket.cdnwebcloud.com^
 ||ceros.com^
 ||mab.chartbeat.com^
@@ -416,6 +419,7 @@
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
 ||mediatoday.ru^
+||darcs.meinungsplatz.ch^
 ||rtb.mfadsrvr.com^
 ||mindbox.ru^
 ||cs-rtb.minutemedia-prebid.com^
@@ -459,6 +463,7 @@
 ||fast.nexx360.io^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
+||ssp-statistics.dev.dsp1.nominaltechno.com^
 ||nowaymail.com^
 ||dsp.nrich.ai^
 ||ssp-statistics.dsp.nt.technology^
@@ -586,6 +591,7 @@
 ||id.rlcdn.com^
 ||idsync.rlcdn.com^
 ||check.analytics.rlcdn.com^
+||sync.rmdsp.ru^
 ||exctg.roller.de^
 ||wt.rqtrk.eu^
 ||zd.rqtrk.eu^
@@ -618,6 +624,7 @@
 ||secretivesponge.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
+||sync.selfclick.pro^
 ||uipglob.semasio.net^
 ||sendsay.ru^
 ||ads.servebom.com^
@@ -777,6 +784,7 @@
 ||rtb2-useast.voisetech.com^
 ||voxexchange.io^
 ||ads.vqserve.com^
+||cdn.vqserve.com^
 ||watchfeed.tv^
 ||scripts.webcontentassessor.com^
 ||track.webgains.com^
@@ -795,7 +803,6 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^

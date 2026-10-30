@@ -48,6 +48,8 @@
 0.0.0.0 phoenix.prod.ateam.acast.cloud
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
+0.0.0.0 pxl.acint.net
+0.0.0.0 rtbw.acint.net
 0.0.0.0 www.acint.net
 0.0.0.0 track.activemetering.com
 0.0.0.0 openx-ums.acuityplatform.com
@@ -120,6 +122,7 @@
 0.0.0.0 d.adroll.com
 0.0.0.0 tracker.ads-tinyorbit.com
 0.0.0.0 dt.adsafeprotected.com
+0.0.0.0 fw.adsafeprotected.com
 0.0.0.0 jsconfig.adsafeprotected.com
 0.0.0.0 pixel.adsafeprotected.com
 0.0.0.0 static.adsafeprotected.com
@@ -149,6 +152,7 @@
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
 0.0.0.0 cm-mx.advolve.io
+0.0.0.0 id.adx.bid
 0.0.0.0 afrdtech.com
 0.0.0.0 aa.agkn.com
 0.0.0.0 x01.aidata.io
@@ -269,6 +273,7 @@
 0.0.0.0 ssum-sec.casalemedia.com
 0.0.0.0 ssum.casalemedia.com
 0.0.0.0 catsnetwork.ru
+0.0.0.0 cdnrtbsape.ru
 0.0.0.0 bucket.cdnwebcloud.com
 0.0.0.0 ceros.com
 0.0.0.0 api.ceros.com
@@ -618,6 +623,7 @@
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 mediametrics.ru
 0.0.0.0 mediatoday.ru
+0.0.0.0 darcs.meinungsplatz.ch
 0.0.0.0 rtb.mfadsrvr.com
 0.0.0.0 mindbox.ru
 0.0.0.0 api.mindbox.ru
@@ -679,6 +685,7 @@
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
 0.0.0.0 t.nodals.io
+0.0.0.0 ssp-statistics.dev.dsp1.nominaltechno.com
 0.0.0.0 nowaymail.com
 0.0.0.0 dsp.nrich.ai
 0.0.0.0 ssp-statistics.dsp.nt.technology
@@ -866,6 +873,7 @@
 0.0.0.0 id.rlcdn.com
 0.0.0.0 idsync.rlcdn.com
 0.0.0.0 check.analytics.rlcdn.com
+0.0.0.0 sync.rmdsp.ru
 0.0.0.0 exctg.roller.de
 0.0.0.0 wt.rqtrk.eu
 0.0.0.0 zd.rqtrk.eu
@@ -921,6 +929,7 @@
 0.0.0.0 secretivesponge.com
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
+0.0.0.0 sync.selfclick.pro
 0.0.0.0 uipglob.semasio.net
 0.0.0.0 sendsay.ru
 0.0.0.0 image.sendsay.ru
@@ -1138,6 +1147,7 @@
 0.0.0.0 voxexchange.io
 0.0.0.0 cm-ssp.voxexchange.io
 0.0.0.0 ads.vqserve.com
+0.0.0.0 cdn.vqserve.com
 0.0.0.0 watchfeed.tv
 0.0.0.0 scripts.webcontentassessor.com
 0.0.0.0 track.webgains.com
@@ -1165,7 +1175,6 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
-0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
