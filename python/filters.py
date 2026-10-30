@@ -180,7 +180,7 @@ PROTECTED_FAMILIES = [
     "facebook.com", "fishki.net", "fontanka.ru",
 
     # === G ===
-    "gazeta.ru", "google.com", "gear-hub.ru",
+    "gazeta.ru", "google.com", "gear-hub.ru", "gpmdata.ru",
 
     # === H ===
     "hsmedia.ru",
@@ -268,6 +268,7 @@ AD_APEX_BLACKLIST = [
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "blismedia.com", "brandmetrics.com",
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
+    "bringads.ru",
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
@@ -320,7 +321,7 @@ AD_APEX_BLACKLIST = [
     "ninthdecimal.com", "nodals.io",
 
     # === O ===
-    "ohmy.bid", "omnitagjs.com", "omtrdc.net", "onetag-sys.com",
+    "odsp.net", "ohmy.bid", "omnitagjs.com", "omtrdc.net", "onetag-sys.com",
     "onesignal.com", "openfpcdn.io", "openx.net", "openssp.ru",
     "opti-digital.com", "optidigital.com", "optimizely.com", "otm-r.com",
     "outbrain.com", "outbrainimg.com",
