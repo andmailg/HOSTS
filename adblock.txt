@@ -144,6 +144,7 @@
 ||match.prod.bidr.io^
 ||ssp.bidster.net^
 ||bidswitch.net^
+||match.adsby.bidtheatre.com^
 ||bidvol.com^
 ||c.bing.com^
 ||tr.blismedia.com^
@@ -154,6 +155,7 @@
 ||collector.brandmetrics.com^
 ||pbsj.bricks-co.com^
 ||players.brightcove.net^
+||a.bringads.ru^
 ||browser-intake-datadoghq.com^
 ||bttrack.com^
 ||bumlam.com^
@@ -190,6 +192,7 @@
 ||s.clarity.ms^
 ||scripts.clarity.ms^
 ||t.clarity.ms^
+||u.clarity.ms^
 ||www.clarity.ms^
 ||protected-by.clarium.io^
 ||i.clean.gg^
@@ -201,6 +204,7 @@
 ||adx.com.ru^
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
+||capi.connatix.com^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -221,6 +225,7 @@
 ||bcp.crwdcntrl.net^
 ||sync.crwdcntrl.net^
 ||tags.crwdcntrl.net^
+||gcm.ctnsnet.com^
 ||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
 ||cxense.com^
@@ -290,6 +295,7 @@
 ||eventsproxy.gargantuan.futureplc.com^
 ||fwmrm.net^
 ||trck.fyrst.de^
+||cm-supply-web.gammaplatform.com^
 ||gamoshi.io^
 ||www.gazeta.press^
 ||adserver.gear-hub.ru^
@@ -425,6 +431,7 @@
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
 ||pbs-cs.minutemedia-prebid.com^
+||chat.mirtesen.ru^
 ||ml314.com^
 ||mn-tz.com^
 ||mfx.mobilefuse.com^
@@ -445,6 +452,8 @@
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
+||cp.mt.ru^
+||player.mt.ru^
 ||dsp.mts.ru^
 ||api.a.mts.ru^
 ||cm.a.mts.ru^
@@ -461,14 +470,18 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
 ||nowaymail.com^
+||pym.nprapps.org^
 ||dsp.nrich.ai^
 ||ssp-statistics.dsp.nt.technology^
+||odsp.net^
 ||adv.office-partner.de^
 ||ohmy.bid^
+||trk.olnl.net^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||on.aws^
@@ -514,6 +527,7 @@
 ||trck.postbank.de^
 ||jadserve.postrelease.com^
 ||presage.io^
+||live.primis.tech^
 ||api.privacy-center.org^
 ||sdk.privacy-center.org^
 ||cdn.privacy-mgmt.com^
@@ -567,12 +581,15 @@
 ||hal900010.redintelligence.net^
 ||hal900014.redintelligence.net^
 ||hal900015.redintelligence.net^
+||hal900018.redintelligence.net^
 ||hal900019.redintelligence.net^
+||hal900020.redintelligence.net^
 ||hal900021.redintelligence.net^
 ||hal900022.redintelligence.net^
 ||hal900025.redintelligence.net^
 ||hal900026.redintelligence.net^
 ||hal900027.redintelligence.net^
+||hal900029.redintelligence.net^
 ||hal90003.redintelligence.net^
 ||hal900030.redintelligence.net^
 ||hal90005.redintelligence.net^
@@ -657,14 +674,13 @@
 ||www.smartadserver.com^
 ||smartcallback.ru^
 ||smi2.net^
-||smi2.ru^
-||smi2cdn.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||sync.go.sonobi.com^
 ||sparrow.ru^
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
+||t.sports.ru^
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^

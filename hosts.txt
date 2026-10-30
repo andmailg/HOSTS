@@ -38,6 +38,7 @@
 0.0.0.0 usync.4dex.io
 0.0.0.0 a-mo.net
 0.0.0.0 1x1.a-mo.net
+0.0.0.0 euw2-sync.a-mo.net
 0.0.0.0 prebid.a-mo.net
 0.0.0.0 sync.a-mo.net
 0.0.0.0 use3-sync.a-mo.net
@@ -234,6 +235,7 @@
 0.0.0.0 bidswitch.net
 0.0.0.0 r.bidswitch.net
 0.0.0.0 x.bidswitch.net
+0.0.0.0 match.adsby.bidtheatre.com
 0.0.0.0 bidvol.com
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 uid.ssp.bidvol.com
@@ -246,6 +248,7 @@
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 players.brightcove.net
+0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 bttrack.com
 0.0.0.0 bumlam.com
@@ -303,6 +306,7 @@
 0.0.0.0 s.clarity.ms
 0.0.0.0 scripts.clarity.ms
 0.0.0.0 t.clarity.ms
+0.0.0.0 u.clarity.ms
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
@@ -315,6 +319,7 @@
 0.0.0.0 bid.adx.com.ru
 0.0.0.0 s.company-target.com
 0.0.0.0 cdn.confiant-integrations.net
+0.0.0.0 capi.connatix.com
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
 0.0.0.0 cdn.cookielaw.org
@@ -338,6 +343,7 @@
 0.0.0.0 ssp-sync.criteo.com
 0.0.0.0 ads.eu.criteo.com
 0.0.0.0 cat.fr3.eu.criteo.com
+0.0.0.0 cat.nl3.eu.criteo.com
 0.0.0.0 rtb.fr3.eu.criteo.com
 0.0.0.0 criteo.net
 0.0.0.0 static.criteo.net
@@ -345,6 +351,7 @@
 0.0.0.0 bcp.crwdcntrl.net
 0.0.0.0 sync.crwdcntrl.net
 0.0.0.0 tags.crwdcntrl.net
+0.0.0.0 gcm.ctnsnet.com
 0.0.0.0 i.ctnsnet.com
 0.0.0.0 ipac.ctnsnet.com
 0.0.0.0 cxense.com
@@ -450,6 +457,7 @@
 0.0.0.0 fwmrm.net
 0.0.0.0 user-sync.fwmrm.net
 0.0.0.0 trck.fyrst.de
+0.0.0.0 cm-supply-web.gammaplatform.com
 0.0.0.0 gamoshi.io
 0.0.0.0 rtb.gamoshi.io
 0.0.0.0 www.gazeta.press
@@ -631,6 +639,7 @@
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
 0.0.0.0 pbs-cs.minutemedia-prebid.com
+0.0.0.0 chat.mirtesen.ru
 0.0.0.0 ml314.com
 0.0.0.0 in.ml314.com
 0.0.0.0 vi.ml314.com
@@ -664,6 +673,8 @@
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
+0.0.0.0 cp.mt.ru
+0.0.0.0 player.mt.ru
 0.0.0.0 dsp.mts.ru
 0.0.0.0 api.a.mts.ru
 0.0.0.0 cm.a.mts.ru
@@ -681,18 +692,22 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
 0.0.0.0 t.nodals.io
 0.0.0.0 ssp-statistics.dev.dsp1.nominaltechno.com
 0.0.0.0 nowaymail.com
+0.0.0.0 pym.nprapps.org
 0.0.0.0 dsp.nrich.ai
 0.0.0.0 ssp-statistics.dsp.nt.technology
+0.0.0.0 odsp.net
 0.0.0.0 adv.office-partner.de
 0.0.0.0 ohmy.bid
 0.0.0.0 match.ohmy.bid
 0.0.0.0 sp.ohmy.bid
+0.0.0.0 trk.olnl.net
 0.0.0.0 omnitagjs.com
 0.0.0.0 visitor-iqzone.omnitagjs.com
 0.0.0.0 visitor-px.omnitagjs.com
@@ -783,6 +798,7 @@
 0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
 0.0.0.0 mweb-hb.presage.io
+0.0.0.0 live.primis.tech
 0.0.0.0 api.privacy-center.org
 0.0.0.0 sdk.privacy-center.org
 0.0.0.0 cdn.privacy-mgmt.com
@@ -849,12 +865,15 @@
 0.0.0.0 hal900010.redintelligence.net
 0.0.0.0 hal900014.redintelligence.net
 0.0.0.0 hal900015.redintelligence.net
+0.0.0.0 hal900018.redintelligence.net
 0.0.0.0 hal900019.redintelligence.net
+0.0.0.0 hal900020.redintelligence.net
 0.0.0.0 hal900021.redintelligence.net
 0.0.0.0 hal900022.redintelligence.net
 0.0.0.0 hal900025.redintelligence.net
 0.0.0.0 hal900026.redintelligence.net
 0.0.0.0 hal900027.redintelligence.net
+0.0.0.0 hal900029.redintelligence.net
 0.0.0.0 hal90003.redintelligence.net
 0.0.0.0 hal900030.redintelligence.net
 0.0.0.0 hal90005.redintelligence.net
@@ -975,6 +994,7 @@
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 smi2.net
+0.0.0.0 img.smi2.net
 0.0.0.0 static.smi2.net
 0.0.0.0 static1.smi2.net
 0.0.0.0 static2.smi2.net
@@ -993,6 +1013,7 @@
 0.0.0.0 widget.sparrow.ru
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
+0.0.0.0 t.sports.ru
 0.0.0.0 api-ssp.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
@@ -1217,6 +1238,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 a.bringads.ru
-0.0.0.0 tms.gpmdata.ru
-0.0.0.0 odsp.net
