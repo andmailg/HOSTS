@@ -111,7 +111,7 @@ NEVER_BLOCK_DOMAINS = [
     "iportal.ru", "ixbt.site", "ixbt.video",
 
     # === J ===
-    "jquery.com", "jsdelivr.net", "jwplayer.com",
+    "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpsrv.com",
     
     # === K ===
     "kinescope.io", "kinescopecdn.net", "kpcdn.net",
@@ -134,7 +134,7 @@ NEVER_BLOCK_DOMAINS = [
     
     # === S ===
     "sbrf.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
-    "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
+    "shazoo.ru", "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
     "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com",
@@ -143,9 +143,9 @@ NEVER_BLOCK_DOMAINS = [
     "unpkg.com",
     
     # === V ===
-    "vk-cdn.net", "vkcloud-storage.ru", "vk-portal.net", "vk.me",
-    "vk.team", "vkuser.net", "vkuseraudio.net", "vkuserphoto.ru",
-    "vkusernet.ru", "vkvd.net",
+    "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
+    "vk-portal.net", "vk.me", "vk.team", "vkuser.net",
+    "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvd.net",
     
     # === Y ===
     "api-maps.yandex.ru", "autofill.yandex.ru", "hdrc.yandex.net", "mdd.yandex.net",
@@ -226,8 +226,8 @@ PROTECTED_FAMILIES = [
     "userapi.com",
 
     # === V ===
-    "vdmsti.ru", "vedomosti.ru", "viafoura.co", "viafoura.net",
-    "vk.com", "vk.ru", "vkvideo.ru", "st.vkvideo.ru",
+    "vdmsti.ru", "vedomosti.ru", "vk.com", "vk.ru",
+    "vkvideo.ru", "st.vkvideo.ru",
 
     # === W ===
     "wi-fi.ru", "wildberries.ru", "wistia.com",
