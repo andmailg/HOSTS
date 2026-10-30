@@ -85,70 +85,73 @@ _IS_HASH_PATTERNS = [
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
     # === A ===
-    "adobedtm.com", "media-amazon.com",
+    "adobedtm.com", "ampproject.org",
     
     # === B ===
-    "bunny.net",
-    
+    "bbci.co.uk", "bunny.net", "brightcove.com", "brightcovecdn.com",
+
     # === C ===
     "cloudflare.com", "createjs.com",
     
     # === D ===
-    "directupload.eu", "dmcdn.net", "dropcatch.com",
+    "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
 
     # === E ===
-    "example.com", "eaglecdn.com",
-    
-    # === F ===
-    "fastpic.org",
+    "eaglecdn.com", "example.com",
     
     # === G ===
-    "googleapis.com", "googleusercontent.com", "gstatic.com", "gvt1.com",
-    "gear-hub.ru",
-    
+    "googleapis.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
+    "gvt1.com",
+
     # === H ===
-    "hostingkartinok.com",
+    "hsmedia.ru",
     
     # === I ===
-    "imageban.ru", "imgchest.com", "infogram.com", "ignimgs.com",
-    "imgsmail.ru", 
-    
+    "ignimgs.com", "imgchest.com", "imgsmail.ru", "infogram.com",
+    "iportal.ru", "ixbt.site", "ixbt.video",
+
     # === J ===
-    "jquery.com", "jsdelivr.net",
+    "jquery.com", "jsdelivr.net", "jwplayer.com",
     
     # === K ===
     "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "mycdn.me",
+    "media-amazon.com", "mos.ru", "mycdn.me",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
     
     # === O ===
-    "openstreetmap.org", "okcdn.ru",
+    "okcdn.ru", "openstreetmap.org",
     
     # === P ===
     "pic4net.com", "plyr.io",
     
     # === R ===
-    "rackcdn.com", "redditmedia.com",
+    "rackcdn.com", "rferl.org", "rbk.ru", "redditmedia.com",
+    "rutubelist.ru",
     
     # === S ===
-    "squarespace-cdn.com", "sqspcdn.com", "sentry-saas.rambler-co.ru", "sentry.io",
+    "sbrf.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
+    "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "thetruestory.news", "tildaapi.com", "tildacdn.com", "twimg.com",
+    "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com",
     
     # === U ===
     "unpkg.com",
     
     # === V ===
-    "vk-cdn.net", "vkcloud-storage.ru",
+    "vk-cdn.net", "vkcloud-storage.ru", "vk-portal.net", "vk.me",
+    "vk.team", "vkuser.net", "vkuseraudio.net", "vkuserphoto.ru",
+    "vkusernet.ru", "vkvd.net",
     
     # === Y ===
-    "yandexcloud.net", "yastatic.net",
-    "yastatic-net.ru", "yimg.com", "ytimg.com",
+    "api-maps.yandex.ru", "autofill.yandex.ru", "hdrc.yandex.net", "mdd.yandex.net",
+    "site.yandex.net", "yandexcloud.net", "yapfiles.ru", "yastatic-net.ru",
+    "yastatic.net", "yimg.com", "ytimg.com", "yuga.ru",
+    "youtube.com",
 ]
 
 # =============================================================================
@@ -161,39 +164,33 @@ NEVER_BLOCK_DOMAINS = [
 #    Семейства yandex.* и google.* определяются по apex (см. is_protected).
 # =============================================================================
 PROTECTED_FAMILIES = [
-    # === A ===
-    "ampproject.org",
-
     # === B ===
-    "bbc.co.uk", "bbc.com", "bbci.co.uk", "beeline.ru",
-    "bing.com", "brightcove.com", "brightcovecdn.com", 
+    "beeline.ru",
 
     # === C ===
-    "championat.com", "cnews.ru", "connatix.com",
+    "championat.com", "cnews.ru",
 
     # === D ===
-    "dailymotion.com", "dzen.ru", "dzeninfra.ru", "disqus.com",
-    "disquscdn.com", 
+    "dailymotion.com", "directupload.eu", "disqus.com", "dzen.ru",
 
     # === E ===
     "e1.ru", "euronews.com",
 
     # === F ===
-    "facebook.com", "fishki.net", "fontanka.ru",
+    "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
 
     # === G ===
-    "gazeta.ru", "google.com", "news.google.com", "gpmdata.ru",
-
-    # === H ===
-    "hsmedia.ru",
-
-    # === I ===
-    "ign.com", "infox.ru", "instagram.com",
-    "interfax.ru", "iportal.ru", "ixbt.com", "ixbt.video",
-    "ixbt.site", "iz.ru",
+    "gazeta.ru", "gear-hub.ru", "google.com", 
 
     # === J ===
-    "justwatch.com", "jwplayer.com",
+    "justwatch.com",
+
+    # === H ===
+    "hostingkartinok.com", 
+
+    # === I ===
+    "imageban.ru", "ign.com", "infox.ru", "instagram.com",
+    "interfax.ru", "ixbt.com", "iz.ru",
 
     # === K ===
     "kp.ru",
@@ -203,7 +200,7 @@ PROTECTED_FAMILIES = [
 
     # === M ===
     "mail.ru", "media-trend.mail.ru", "mk.ru", "r.mradx.net",
-    "mos.ru", "mts.ru",
+    "mts.ru",
 
     # === N ===
     "ngs.ru",
@@ -215,27 +212,22 @@ PROTECTED_FAMILIES = [
     "pikabu.ru",
 
     # === R ===
-    "rambler.ru", "rbc.ru", "rbk.ru", "retail.ru",
-    "rferl.org", "ria.ru", "rosbalt.ru", "rutube.ru",
-    "rutubelist.ru", "rutracker.cc",
+    "rambler.ru", "rbc.ru", "retail.ru", "ria.ru",
+    "rosbalt.ru", "rutube.ru", 
 
     # === S ===
-    "sber.ru", "id.sber.ru", "sberbank.ru", "sbrf.ru", "setka.news",
-    "sketchfab.com", "smi2.ru", "cdnjs.smi2.ru",
+    "sber.ru", "sberbank.ru", "smi2.ru", "sports.ru",
 
     # === T ===
-    "t2.ru", "techradar.com", "temu.com", "thetruestory.news",
-    "tourdom.ru", "twitter.com",
+    "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
+    "twitter.com",
 
     # === U ===
     "userapi.com",
 
     # === V ===
-    "viafoura.co", "viafoura.net",
-    "vdmsti.ru", "vedomosti.ru",
-    "vk.com", "vk.me", "vk.ru", "vk.team", "vk-portal.net",
-    "vkvideo.ru", "st.vkvideo.ru", "vkvd.net", 
-    "vkuseraudio.net", "vkusernet.ru", "vkuserphoto.ru", "vkuser.net",
+    "vdmsti.ru", "vedomosti.ru", "viafoura.co", "viafoura.net",
+    "vk.com", "vk.ru", "vkvideo.ru", "st.vkvideo.ru",
 
     # === W ===
     "wi-fi.ru", "wildberries.ru", "wistia.com",
@@ -245,11 +237,8 @@ PROTECTED_FAMILIES = [
 
     # === Y ===
     "yahoo.com", "yahoo.net", "yahoofinance.com",
-
-    "ya.ru", "yandex.ru", "api-maps.yandex.ru", "autofill.yandex.ru",
-    "yandex.net", "hdrc.yandex.net", "mdd.yandex.net", "site.yandex.net",
-
-    "yaplakal.com", "yap.ru", "yapfiles.ru", "youtube.com", "yuga.ru",
+    "ya.ru", "yandex.net", "yandex.ru", 
+    "yap.ru", "yaplakal.com",
 
     # === Цифры / Прочее ===
     "1mi.media", "1mi-media.ru",
@@ -285,7 +274,7 @@ AD_APEX_BLACKLIST = [
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
-    "clickagy.com", "cloudflareinsights.com", "contentspread.net",
+    "clickagy.com", "cloudflareinsights.com", "connatix.com", "contentspread.net",
     "contextweb.com", "coolbonsai.com", "cootlogix.com", "cpx.to", "creativecdn.com",
     "criteo.com", "criteo.net", "crwdcntrl.net", "ctnsnet.com",
     "cxense.com",
@@ -352,18 +341,18 @@ AD_APEX_BLACKLIST = [
     "q-bid.ru", "qtarget.tech", "quantserve.com", "quotiq.ru",
 
     # === R ===
-    "rakuten.com", "relap.io", "rlcdn.com", "rmp.rakuten.com",
-    "rqtrk.eu", "rtactivate.com", "rtbcdn.ru", "rtbwave.com",
-    "rtbwise.com", "rubiconproject.com", "rutarget.ru", "rfihub.com",
-    "r-99.com",
+    "rakuten.com", "relap.io", "rfihub.com", "rlcdn.com",
+    "rmp.rakuten.com", "rqtrk.eu", "rtactivate.com", "rtbcdn.ru",
+    "rtbwave.com", "rtbwise.com", "rubiconproject.com", "rutarget.ru",
+    "rutracker.cc", "r-99.com",
 
     # === S ===
     "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
-    "semasio.net", "servenobid.com", "sharethrough.com", "silvermob.com",
-    "simpli.fi", "sitescout.com", "skimresources.com", "skcrtxr.com",
-    "smartadserver.com", "smartcallback.ru", "smilewanted.com", "smi2.net",
-    "sonobi.com", "sparrow.ru", "sportradarserving.com", "spot.im",
-    "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
+    "semasio.net", "servenobid.com", "setka.news", "sharethrough.com",
+    "silvermob.com", "simpli.fi", "sitescout.com", "skimresources.com",
+    "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smilewanted.com",
+    "smi2.net", "sonobi.com", "sparrow.ru", "sportradarserving.com",
+    "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
     "stickyadstv.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
@@ -460,18 +449,19 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
 
     # === Y ===
-    r"(?:^geo|^pbs|\.ssp)\.yahoo\.com$",
-    r"^analytics.*\.yahoo\.[a-z]+$",                   # Метрики Yahoo
 
-    ( # Yandex
+    # === Yahoo ===
+    r"(?:^|\.)(?:geo|guce|pbd|pbs|ssp|bats\.video)\.yahoo.com$",
+    r"^analytics.*\.yahoo\.[a-z]+$",
+
+    # === Yandex ===
+    (
         r"(?:^|\.)(?:"
         r"an|mc|ads|awaps|bs|context|direct|pagead|uaas"
         r"|abt\.s3|aflt\.market"
         r")\.yandex\.[a-z]+$"
     ),
     r"(?:^|\.)log\.strm\.yandex\.[a-z]+$",
-
-    r"(?:^|\.)(?:pbd|bats\.video)\.yahoo.com$",
 
     # === Префиксы ===
     r"^gurgle\.[a-z0-9.\-]+$",                         # Телеметрия Ziff Davis / IGN
