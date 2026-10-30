@@ -20,6 +20,9 @@
 ||aaakmnr.com^
 ||t.dsp.abdm.ru^
 ||phoenix.prod.ateam.acast.cloud^
+||cdn.acast.com^
+||embed.acast.com^
+||thumborcdn.acast.com^
 ||acint.net^
 ||track.activemetering.com^
 ||openx-ums.acuityplatform.com^
@@ -37,6 +40,7 @@
 ||cm.adform.net^
 ||dmp.adform.net^
 ||s1.adform.net^
+||s2.adform.net^
 ||track.adform.net^
 ||ads.adfox.ru^
 ||banners.adfox.ru^
@@ -118,6 +122,7 @@
 ||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
+||attentionxyz.com^
 ||ads.avads.net^
 ||www.awin1.com^
 ||cookiesync.axis-marketplace.com^
@@ -135,7 +140,6 @@
 ||icv.bannernow.com^
 ||stats.bannernow.com^
 ||storage.bannernow.com^
-||mybbc-analytics.files.bbci.co.uk^
 ||autocontext.begun.ru^
 ||bestdahlia.com^
 ||betweendigital.com^
@@ -208,6 +212,7 @@
 ||adx.com.ru^
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
+||capi.connatix.com^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -281,6 +286,7 @@
 ||ps.eyeota.net^
 ||connect.facebook.net^
 ||tool.festivehorse.com^
+||ad-events.flashtalking.com^
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
 ||servedby.flashtalking.com^
@@ -326,9 +332,7 @@
 ||www.googletagservices.com^
 ||ads.gpm-ssp.ru^
 ||jscdn.greeter.me^
-||g2.gumgum.com^
-||rtb.gumgum.com^
-||usersync.gumgum.com^
+||gumgum.com^
 ||hbrd.io^
 ||luck.helpfulavenue.com^
 ||js.hostingradio.ru^
@@ -360,17 +364,23 @@
 ||cmp.inmobi.com^
 ||sync.inmobi.com^
 ||dvrtr.innovid.com^
+||cdn.insales-shop.ru^
+||counter.insales.com^
+||kladr.insales.ru^
 ||dd.insiad.com^
 ||events.insiad.com^
 ||secure.insightexpressai.com^
 ||intent.ai^
 ||sync.intentiq.com^
-||analytics.iportal.ru^
+||invalid^
 ||sync.ipredictive.com^
 ||core.iprom.net^
 ||iqm.com^
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
+||code.jivo.ru^
+||code.jivosite.com^
+||node-sber1-az1-23.jivosite.com^
 ||journeyswitch.work^
 ||ssl.p.jwpcdn.com^
 ||content.jwplatform.com^
@@ -441,7 +451,6 @@
 ||ads.monetix.group^
 ||dsp-service.monetixads.com^
 ||ib.mookie1.com^
-||stats.mos.ru^
 ||px.mountain.com^
 ||code.moviead55.ru^
 ||identity.mparticle.com^
@@ -498,6 +507,7 @@
 ||cs.openwebmedia.org^
 ||cs.openwebmp.com^
 ||eu-west-1-cs-rtb.openwebmp.com^
+||pbs-cs.openwebmp.com^
 ||us-east-1-cs-rtb.openwebmp.com^
 ||openx.net^
 ||t.adx.opera.com^
@@ -588,6 +598,7 @@
 ||hal900010.redintelligence.net^
 ||hal900014.redintelligence.net^
 ||hal900015.redintelligence.net^
+||hal900016.redintelligence.net^
 ||hal900018.redintelligence.net^
 ||hal900019.redintelligence.net^
 ||hal900020.redintelligence.net^
@@ -617,6 +628,7 @@
 ||idsync.rlcdn.com^
 ||check.analytics.rlcdn.com^
 ||sync.rmdsp.ru^
+||cloud.roistat.com^
 ||exctg.roller.de^
 ||wt.rqtrk.eu^
 ||zd.rqtrk.eu^
@@ -647,6 +659,10 @@
 ||srv.scalibur.io^
 ||scorecardresearch.com^
 ||cadmus.script.ac^
+||api4.searchbooster.io^
+||cdn.searchbooster.io^
+||api.searchbooster.net^
+||cdn2.searchbooster.net^
 ||secretivesponge.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
@@ -658,6 +674,7 @@
 ||ads.servenobid.com^
 ||public.servenobid.com^
 ||sync.serverbid.com^
+||servicepipe.tech^
 ||bs.serving-sys.ru^
 ||ds.serving-sys.ru^
 ||match.sharethrough.com^
@@ -688,7 +705,6 @@
 ||sparrow.ru^
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
-||t.sports.ru^
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
@@ -751,6 +767,7 @@
 ||cdn.tinypass.com^
 ||tns-counter.ru^
 ||st.top100.ru^
+||www.btd-cmh.tq-tungsten.com^
 ||tracookiepixel.xyz^
 ||traffaret.com^
 ||yahoo2.global.transmit.live^
@@ -820,6 +837,7 @@
 ||cdn.prod.website-files.com^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
+||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
@@ -827,8 +845,8 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
+||guce.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
@@ -859,3 +877,4 @@
 ||cdn.ziffstatic.com^
 ||pg.ziffstatic.com^
 ||ksk.t.zucks.net^
+||zvuk.com^
