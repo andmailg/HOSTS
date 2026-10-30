@@ -290,6 +290,7 @@
 0.0.0.0 i.clarity.ms
 0.0.0.0 j.clarity.ms
 0.0.0.0 k.clarity.ms
+0.0.0.0 l.clarity.ms
 0.0.0.0 n.clarity.ms
 0.0.0.0 o.clarity.ms
 0.0.0.0 q.clarity.ms
@@ -448,6 +449,8 @@
 0.0.0.0 rtb.gamoshi.io
 0.0.0.0 www.gazeta.press
 0.0.0.0 adserver.gear-hub.ru
+0.0.0.0 gamd.hit.gemius.pl
+0.0.0.0 ls.hit.gemius.pl
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 wrappers.geoedge.be
 0.0.0.0 metrics.getrockerbox.com
@@ -672,7 +675,6 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1104,6 +1106,7 @@
 0.0.0.0 r.ussp.io
 0.0.0.0 sdk.ussp.io
 0.0.0.0 a.utraff.com
+0.0.0.0 r.utraff.com
 0.0.0.0 a.utraff.info
 0.0.0.0 s.uuidksinc.net
 0.0.0.0 cdn.uxfeedback.ru
@@ -1127,6 +1130,7 @@
 0.0.0.0 data.videonow.ru
 0.0.0.0 static.videonow.ru
 0.0.0.0 sync.videonow.ru
+0.0.0.0 a.vidoomy.com
 0.0.0.0 vigo.tech
 0.0.0.0 api.vigo.tech
 0.0.0.0 cdn.vigo.tech
@@ -1172,6 +1176,7 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
@@ -1196,6 +1201,7 @@
 0.0.0.0 ad.yieldlab.net
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
+0.0.0.0 tag.yieldoptimizer.com
 0.0.0.0 ymmobi.com
 0.0.0.0 gw-iad-bid.ymmobi.com
 0.0.0.0 sync-tb.yrxtam.com
@@ -1213,4 +1219,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 a.vidoomy.com

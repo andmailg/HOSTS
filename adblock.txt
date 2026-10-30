@@ -179,6 +179,7 @@
 ||i.clarity.ms^
 ||j.clarity.ms^
 ||k.clarity.ms^
+||l.clarity.ms^
 ||n.clarity.ms^
 ||o.clarity.ms^
 ||q.clarity.ms^
@@ -289,6 +290,8 @@
 ||gamoshi.io^
 ||www.gazeta.press^
 ||adserver.gear-hub.ru^
+||gamd.hit.gemius.pl^
+||ls.hit.gemius.pl^
 ||rumcdn.geoedge.be^
 ||wrappers.geoedge.be^
 ||metrics.getrockerbox.com^
@@ -454,7 +457,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||nowaymail.com^
@@ -751,6 +753,7 @@
 ||r.ussp.io^
 ||sdk.ussp.io^
 ||a.utraff.com^
+||r.utraff.com^
 ||a.utraff.info^
 ||s.uuidksinc.net^
 ||cdn.uxfeedback.ru^
@@ -764,6 +767,7 @@
 ||data.videonow.ru^
 ||static.videonow.ru^
 ||sync.videonow.ru^
+||a.vidoomy.com^
 ||vigo.tech^
 ||s.viisfxlg.com^
 ||viqeo.tv^
@@ -791,6 +795,7 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
@@ -808,6 +813,7 @@
 ||yellowblue.io^
 ||ad.yieldlab.net^
 ||ads.yieldmo.com^
+||tag.yieldoptimizer.com^
 ||ymmobi.com^
 ||sync-tb.yrxtam.com^
 ||zdbb.net^
