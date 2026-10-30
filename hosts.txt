@@ -322,7 +322,6 @@
 0.0.0.0 bid.adx.com.ru
 0.0.0.0 s.company-target.com
 0.0.0.0 cdn.confiant-integrations.net
-0.0.0.0 capi.connatix.com
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
 0.0.0.0 cdn.cookielaw.org
@@ -682,6 +681,7 @@
 0.0.0.0 sdk.mrf.io
 0.0.0.0 cp.mt.ru
 0.0.0.0 player.mt.ru
+0.0.0.0 r.mtdata.ru
 0.0.0.0 dsp.mts.ru
 0.0.0.0 api.a.mts.ru
 0.0.0.0 cm.a.mts.ru
@@ -699,7 +699,6 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -709,6 +708,7 @@
 0.0.0.0 pym.nprapps.org
 0.0.0.0 dsp.nrich.ai
 0.0.0.0 ssp-statistics.dsp.nt.technology
+0.0.0.0 consent.cmp.oath.com
 0.0.0.0 odsp.net
 0.0.0.0 adv.office-partner.de
 0.0.0.0 ohmy.bid
@@ -794,6 +794,8 @@
 0.0.0.0 permutive.app
 0.0.0.0 api.permutive.app
 0.0.0.0 cdn.permutive.app
+0.0.0.0 buy-eu.piano.io
+0.0.0.0 c2-eu.piano.io
 0.0.0.0 pippio.com
 0.0.0.0 dsp-service.pixad.com.tr
 0.0.0.0 prebid.pixad.com.tr
@@ -845,6 +847,8 @@
 0.0.0.0 match.qtarget.tech
 0.0.0.0 cms.quantserve.com
 0.0.0.0 quotiq.ru
+0.0.0.0 cdn-irec.r-99.com
+0.0.0.0 sst-irec.r-99.com
 0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 cs.rambler.ru
 0.0.0.0 embeds.rambler.ru
@@ -1089,6 +1093,7 @@
 0.0.0.0 lf16-tiktok-web.tiktokcdn-us.com
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 api-common.tinkoff.ru
+0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
 0.0.0.0 www.tns-counter.ru
@@ -1196,7 +1201,6 @@
 0.0.0.0 cdn.prod.website-files.com
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
-0.0.0.0 s3.wi-fi.ru
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
 0.0.0.0 ads-media.wildberries.ru
@@ -1204,8 +1208,8 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1247,4 +1251,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 r.mtdata.ru

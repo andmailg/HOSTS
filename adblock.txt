@@ -208,7 +208,6 @@
 ||adx.com.ru^
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
-||capi.connatix.com^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -455,6 +454,7 @@
 ||sdk.mrf.io^
 ||cp.mt.ru^
 ||player.mt.ru^
+||r.mtdata.ru^
 ||dsp.mts.ru^
 ||api.a.mts.ru^
 ||cm.a.mts.ru^
@@ -471,7 +471,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -479,6 +478,7 @@
 ||pym.nprapps.org^
 ||dsp.nrich.ai^
 ||ssp-statistics.dsp.nt.technology^
+||consent.cmp.oath.com^
 ||odsp.net^
 ||adv.office-partner.de^
 ||ohmy.bid^
@@ -521,6 +521,8 @@
 ||floor.pbxai.com^
 ||s3sc.perfluence.net^
 ||permutive.app^
+||buy-eu.piano.io^
+||c2-eu.piano.io^
 ||pippio.com^
 ||dsp-service.pixad.com.tr^
 ||prebid.pixad.com.tr^
@@ -556,6 +558,8 @@
 ||match.qtarget.tech^
 ||cms.quantserve.com^
 ||quotiq.ru^
+||cdn-irec.r-99.com^
+||sst-irec.r-99.com^
 ||s-cs.rmp.rakuten.com^
 ||cs.rambler.ru^
 ||embeds.rambler.ru^
@@ -744,6 +748,7 @@
 ||lf16-tiktok-web.tiktokcdn-us.com^
 ||analytics-ipv6.tiktokw.us^
 ||api-common.tinkoff.ru^
+||cdn.tinypass.com^
 ||tns-counter.ru^
 ||st.top100.ru^
 ||tracookiepixel.xyz^
@@ -815,7 +820,6 @@
 ||cdn.prod.website-files.com^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
-||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
@@ -823,8 +827,8 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
-||guce.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
