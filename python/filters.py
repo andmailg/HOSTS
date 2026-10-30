@@ -214,7 +214,7 @@ PROTECTED_FAMILIES = [
     "rferl.org", "rosbalt.ru", "rutube.ru", "ria.ru",
 
     # === S ===
-    "sber.ru", "sberbank.ru", "sbrf.ru", "smi2.ru", "spot.im",
+    "sber.ru", "sberbank.ru", "sbrf.ru", "setka.news", "smi2.ru", "spot.im",
 
     # === T ===
     "t2.ru", "techradar.com", "temu.com", "thetruestory.news",
@@ -252,7 +252,7 @@ AD_APEX_BLACKLIST = [
     "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
-    "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
+    "advideo.ru", "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
     "ad-delivery.net", "adentifi.com", "adform.net", "adhaven.com",
     "adhigh.net", "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
     "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.com.tr",
