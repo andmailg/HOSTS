@@ -72,6 +72,7 @@ _IS_HASH_PATTERNS = [
     re.compile(r"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-"),             # Часть UUID
     re.compile(r"^\d{6,63}"),                                   # Чисто числовые ID от 6 знаков
     re.compile(r"^rr\d+-+sn-[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)?"),
+    re.compile(r"^px[a-zA-Z0-9]+"),                             # telecid.ru
 ]
 
 # =============================================================================
@@ -171,7 +172,8 @@ PROTECTED_FAMILIES = [
     "championat.com", "cnews.ru", "connatix.com",
 
     # === D ===
-    "dzen.ru", "dzeninfra.ru", "disqus.com", "disquscdn.com","dailymotion.com",
+    "dzen.ru", "dzeninfra.ru", "disqus.com", "disquscdn.com",
+    "dailymotion.com", "dropcatch.com",
 
     # === E ===
     "e1.ru", "euronews.com",
@@ -323,14 +325,14 @@ AD_APEX_BLACKLIST = [
     # === O ===
     "odsp.net", "ohmy.bid", "omnitagjs.com", "omtrdc.net", "onetag-sys.com",
     "onesignal.com", "openfpcdn.io", "openx.net", "openssp.ru",
-    "opti-digital.com", "optidigital.com", "optimizely.com", "otm-r.com",
-    "outbrain.com", "outbrainimg.com",
+    "opti-digital.com", "optidigital.com", "optimizely.com", "orbitatech.io",
+    "otm-r.com", "outbrain.com", "outbrainimg.com",
 
     # === P ===
     "pathtosuccess.global", "perfluence.net", "permutive.app", "permutive.com", "pippio.com",
     "plusoneads.com", "postrelease.com", "presage.io", "prmutv.co",
-    "pro-market.net", "profilemkt.com", "programmaticx.ai", "pubmatic.com",
-    "punchmedia.ru", "push4site.com",
+    "pro-market.net", "profilemkt.com", "programmatica.com", "programmaticx.ai",
+    "pubmatic.com", "punchmedia.ru", "push4site.com",
 
     # === Q ===
     "q-bid.ru", "qtarget.tech", "quantserve.com", "quotiq.ru",
@@ -352,8 +354,9 @@ AD_APEX_BLACKLIST = [
     # === T ===
     "taboola.com", "tapad.com", "targetads.io", "targetrtb.com", "teads.tv",
     "teads-xo.com", "telecid.ru", "terratraf.com", "thrtle.com",
-    "tns-counter.ru", "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com",
-    "tremorhub.com", "trustarc.com", "trustedstack.com", "tynt.com",
+    "tns-counter.ru", "traffaret.com", "trafmag.com", "tracookiepixel.xyz",
+    "travelpayouts.com", "tremorhub.com", "trustarc.com", "trustedstack.com",
+    "tynt.com",
 
     # === U ===
     "undertone.com", "upravel.com", "ussp.io",
