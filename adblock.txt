@@ -92,9 +92,11 @@
 ||static.advcake.ru^
 ||pixel.advertising.com^
 ||cdn.advertronic.io^
+||cdn.advideo.ru^
 ||cm-mx.advolve.io^
 ||id.adx.bid^
 ||afrdtech.com^
+||cs.agency2.ru^
 ||aa.agkn.com^
 ||x01.aidata.io^
 ||aj3105.top^
@@ -148,6 +150,7 @@
 ||bidvol.com^
 ||c.bing.com^
 ||tr.blismedia.com^
+||cm.bluevoox.com^
 ||phx.bmtrcs.com^
 ||backend.bobid.io^
 ||manifest.prod.boltdns.net^
@@ -204,7 +207,6 @@
 ||adx.com.ru^
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
-||capi.connatix.com^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -592,6 +594,7 @@
 ||hal900029.redintelligence.net^
 ||hal90003.redintelligence.net^
 ||hal900030.redintelligence.net^
+||hal90004.redintelligence.net^
 ||hal90005.redintelligence.net^
 ||hal90006.redintelligence.net^
 ||hal90008.redintelligence.net^
@@ -628,6 +631,7 @@
 ||goya.rutube.ru^
 ||log.rutube.ru^
 ||ssp.rutube.ru^
+||recs.s5o.ru^
 ||pixel.mtrcs.samba.tv^
 ||sape.ru^
 ||ced-ns.sascdn.com^
@@ -651,7 +655,6 @@
 ||sync.serverbid.com^
 ||bs.serving-sys.ru^
 ||ds.serving-sys.ru^
-||setka.news^
 ||match.sharethrough.com^
 ||us4.shb-sync.com^
 ||shopnetic.com^
