@@ -49,7 +49,6 @@
 0.0.0.0 phoenix.prod.ateam.acast.cloud
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
-0.0.0.0 pxl.acint.net
 0.0.0.0 rtbw.acint.net
 0.0.0.0 www.acint.net
 0.0.0.0 track.activemetering.com
@@ -102,8 +101,7 @@
 0.0.0.0 static.cdn.admatic.de
 0.0.0.0 admixer.net
 0.0.0.0 eu-rtbstack-cm.admixer.net
-0.0.0.0 px2.admon.pro
-0.0.0.0 px4.admon.pro
+0.0.0.0 admon.pro
 0.0.0.0 functions.adnami.io
 0.0.0.0 macro.adnami.io
 0.0.0.0 z.cdn.adnetwork.bet
@@ -209,6 +207,8 @@
 0.0.0.0 z01.azurefd.net
 0.0.0.0 gogotracker.b-cdn.net
 0.0.0.0 api.b2c.com
+0.0.0.0 api2.b2c.com
+0.0.0.0 api3.b2c.com
 0.0.0.0 apix.b2c.com
 0.0.0.0 f003.backblazeb2.com
 0.0.0.0 tracker.ssp.balance-x.com
@@ -322,6 +322,7 @@
 0.0.0.0 bid.adx.com.ru
 0.0.0.0 s.company-target.com
 0.0.0.0 cdn.confiant-integrations.net
+0.0.0.0 capi.connatix.com
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
 0.0.0.0 cdn.cookielaw.org
@@ -402,6 +403,7 @@
 0.0.0.0 rtb0.doubleverify.com
 0.0.0.0 tps-dn-ue1.doubleverify.com
 0.0.0.0 tps.doubleverify.com
+0.0.0.0 tpsc-ue1.doubleverify.com
 0.0.0.0 vast.doubleverify.com
 0.0.0.0 sync.drift-pixel.ai
 0.0.0.0 sync.driftpixel.live
@@ -437,6 +439,7 @@
 0.0.0.0 servedby.flashtalking.com
 0.0.0.0 public.flourish.studio
 0.0.0.0 floxis.tech
+0.0.0.0 px-us-e.floxis.tech
 0.0.0.0 analytics.fontanka.ru
 0.0.0.0 z.cdn.ftd.agency
 0.0.0.0 agen-assets.ftstatic.com
@@ -468,6 +471,7 @@
 0.0.0.0 ls.hit.gemius.pl
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 wrappers.geoedge.be
+0.0.0.0 usersync.getpublica.com
 0.0.0.0 metrics.getrockerbox.com
 0.0.0.0 a.giraff.io
 0.0.0.0 code.giraff.io
@@ -533,6 +537,7 @@
 0.0.0.0 cdndc.imgria.ru
 0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 media-advcycle.imgsmail.ru
+0.0.0.0 secure-gl.imrworldwide.com
 0.0.0.0 secure-us.imrworldwide.com
 0.0.0.0 indexww.com
 0.0.0.0 cdn.indexww.com
@@ -558,7 +563,7 @@
 0.0.0.0 analytics.iportal.ru
 0.0.0.0 sync.ipredictive.com
 0.0.0.0 core.iprom.net
-0.0.0.0 pxl.iqm.com
+0.0.0.0 iqm.com
 0.0.0.0 cs.iqzone.com
 0.0.0.0 sync.iqzonertb.live
 0.0.0.0 journeyswitch.work
@@ -587,11 +592,11 @@
 0.0.0.0 rp.liadm.com
 0.0.0.0 rp4.liadm.com
 0.0.0.0 pool.liftdsp.com
+0.0.0.0 lijit.com
 0.0.0.0 ap.lijit.com
 0.0.0.0 bb.lijit.com
 0.0.0.0 cdn.lijit.com
 0.0.0.0 ce.lijit.com
-0.0.0.0 pxdrop.lijit.com
 0.0.0.0 ruby-n.stg-adv.lijit.com
 0.0.0.0 linkedin.com
 0.0.0.0 px.ads.linkedin.com
@@ -756,6 +761,7 @@
 0.0.0.0 logx.optimizely.com
 0.0.0.0 rum.optimizely.com
 0.0.0.0 a4621041136.cdn.optimizely.com
+0.0.0.0 statistics.orbitatech.io
 0.0.0.0 otclick-adv.ru
 0.0.0.0 otm-r.com
 0.0.0.0 spx.otm-r.com
@@ -809,6 +815,7 @@
 0.0.0.0 prmutv.co
 0.0.0.0 fei.pro-market.net
 0.0.0.0 buyer.programmatica.com
+0.0.0.0 events-api.programmatica.com
 0.0.0.0 minio.programmatica.com
 0.0.0.0 sync.programmatica.com
 0.0.0.0 vast.programmatica.com
@@ -907,6 +914,7 @@
 0.0.0.0 rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 river-3-3103.rtbcdn.ru
+0.0.0.0 river-3-3119.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
 0.0.0.0 river-3-349.rtbcdn.ru
@@ -1069,18 +1077,6 @@
 0.0.0.0 sync.technoratimedia.com
 0.0.0.0 hawk.techradar.com
 0.0.0.0 telecid.ru
-0.0.0.0 px3160207b8d44acf6c.telecid.ru
-0.0.0.0 px3160aeb621e5cfccf.telecid.ru
-0.0.0.0 px31624725335d9afb7.telecid.ru
-0.0.0.0 px3163f4352bedd4490.telecid.ru
-0.0.0.0 px31640a201cd45bc15.telecid.ru
-0.0.0.0 px31659729c63a6c823.telecid.ru
-0.0.0.0 px3166f1a69d697bccf.telecid.ru
-0.0.0.0 px316770148c171d618.telecid.ru
-0.0.0.0 px3167aa81af62a84eb.telecid.ru
-0.0.0.0 px3168863ac305042a6.telecid.ru
-0.0.0.0 px316c0440380c0d67d.telecid.ru
-0.0.0.0 px316f3374167ecd047.telecid.ru
 0.0.0.0 terratraf.com
 0.0.0.0 static.terratraf.com
 0.0.0.0 oauth.tg.dev
@@ -1149,6 +1145,7 @@
 0.0.0.0 l.viadata.store
 0.0.0.0 ll.viadata.store
 0.0.0.0 logs.viadata.store
+0.0.0.0 rtb-msk.viadata.store
 0.0.0.0 ru.viadata.store
 0.0.0.0 rucdn.viadata.store
 0.0.0.0 rurtb.viadata.store
@@ -1208,12 +1205,12 @@
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
+0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
-0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
@@ -1250,6 +1247,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 events-api.programmatica.com
-0.0.0.0 statistics.orbitatech.io
-0.0.0.0 traffaret.com

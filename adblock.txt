@@ -60,8 +60,7 @@
 ||admatic.com.tr^
 ||admatic.de^
 ||admixer.net^
-||px2.admon.pro^
-||px4.admon.pro^
+||admon.pro^
 ||functions.adnami.io^
 ||macro.adnami.io^
 ||z.cdn.adnetwork.bet^
@@ -127,6 +126,8 @@
 ||z01.azurefd.net^
 ||gogotracker.b-cdn.net^
 ||api.b2c.com^
+||api2.b2c.com^
+||api3.b2c.com^
 ||apix.b2c.com^
 ||f003.backblazeb2.com^
 ||tracker.ssp.balance-x.com^
@@ -207,6 +208,7 @@
 ||adx.com.ru^
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
+||capi.connatix.com^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -305,6 +307,7 @@
 ||ls.hit.gemius.pl^
 ||rumcdn.geoedge.be^
 ||wrappers.geoedge.be^
+||usersync.getpublica.com^
 ||metrics.getrockerbox.com^
 ||a.giraff.io^
 ||code.giraff.io^
@@ -344,6 +347,7 @@
 ||cdndc.imgria.ru^
 ||cdnn21.imgria.ru^
 ||media-advcycle.imgsmail.ru^
+||secure-gl.imrworldwide.com^
 ||secure-us.imrworldwide.com^
 ||indexww.com^
 ||resources.infolinks.com^
@@ -365,7 +369,7 @@
 ||analytics.iportal.ru^
 ||sync.ipredictive.com^
 ||core.iprom.net^
-||pxl.iqm.com^
+||iqm.com^
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
 ||journeyswitch.work^
@@ -392,12 +396,7 @@
 ||rp.liadm.com^
 ||rp4.liadm.com^
 ||pool.liftdsp.com^
-||ap.lijit.com^
-||bb.lijit.com^
-||cdn.lijit.com^
-||ce.lijit.com^
-||pxdrop.lijit.com^
-||ruby-n.stg-adv.lijit.com^
+||lijit.com^
 ||linkedin.com^
 ||api.linkitbe.ru^
 ||linkssp.ru^
@@ -506,6 +505,7 @@
 ||opti-digital.com^
 ||optidigital.com^
 ||optimizely.com^
+||statistics.orbitatech.io^
 ||otclick-adv.ru^
 ||otm-r.com^
 ||outbrain.com^
@@ -538,6 +538,7 @@
 ||prmutv.co^
 ||fei.pro-market.net^
 ||buyer.programmatica.com^
+||events-api.programmatica.com^
 ||minio.programmatica.com^
 ||sync.programmatica.com^
 ||vast.programmatica.com^
@@ -823,6 +824,7 @@
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
 ||geo.yahoo.com^
+||guce.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
