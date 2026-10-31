@@ -1296,3 +1296,4 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
+0.0.0.0 cnb.cnews.ru
