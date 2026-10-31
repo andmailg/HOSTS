@@ -34,6 +34,7 @@
 ||profile.ad-tech.ru^
 ||ad4m.at^
 ||adentifi.com^
+||cdn.adfinity.pro^
 ||a2.adform.net^
 ||adx.adform.net^
 ||c1.adform.net^
@@ -81,6 +82,7 @@
 ||static.adsafeprotected.com^
 ||staticjs.adsafeprotected.com^
 ||bid.adsensei.ai^
+||us.adserv-us.com^
 ||statistics.adsource.pro^
 ||adsp.io^
 ||a.adspector.io^
@@ -273,6 +275,7 @@
 ||dynotech.io^
 ||edigitalsurvey.com^
 ||emrld.cc^
+||emrldco.com^
 ||cs.emxdgt.com^
 ||escalax.io^
 ||eskimi.com^
@@ -280,6 +283,7 @@
 ||lbs.eu-1-id5-sync.com^
 ||cdn.prod.euid.eu^
 ||stat.tech.euronews.com^
+||cm.everesttech.net^
 ||rtd-tm.everesttech.net^
 ||sync-tm.everesttech.net^
 ||loadm.exelator.com^
@@ -384,7 +388,6 @@
 ||journeyswitch.work^
 ||ssl.p.jwpcdn.com^
 ||content.jwplatform.com^
-||jwpsrv.com^
 ||crb.kargo.com^
 ||krk2.kargo.com^
 ||kimberlite.io^
@@ -480,6 +483,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -540,6 +544,7 @@
 ||sync.pmbmonetize.live^
 ||trck.postbank.de^
 ||jadserve.postrelease.com^
+||service.pravo.ru^
 ||presage.io^
 ||live.primis.tech^
 ||api.privacy-center.org^
@@ -562,6 +567,7 @@
 ||tech.punchmedia.ru^
 ||req.pm2.punchmedia.ru^
 ||push4site.com^
+||api.pushwoosh.com^
 ||cdn.pushwoosh.com^
 ||cm.pxltag.com^
 ||q-bid.ru^
@@ -828,6 +834,7 @@
 ||ads.vqserve.com^
 ||cdn.vqserve.com^
 ||watchfeed.tv^
+||api.wavesend.ru^
 ||scripts.webcontentassessor.com^
 ||track.webgains.com^
 ||analytics.webgains.io^
@@ -845,6 +852,7 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
 ||pbd.yahoo.com^
