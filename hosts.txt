@@ -117,6 +117,9 @@
 0.0.0.0 ib.adnxs.com
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
+0.0.0.0 ads.adretriever.com
+0.0.0.0 events.adretriever.com
+0.0.0.0 media.adretriever.com
 0.0.0.0 adriver.ru
 0.0.0.0 ad.adriver.ru
 0.0.0.0 content.adriver.ru
@@ -145,12 +148,14 @@
 0.0.0.0 js.adsrvr.org
 0.0.0.0 match.adsrvr.org
 0.0.0.0 v.adsrvr.org
+0.0.0.0 ad.adsrvx-targeting.com
 0.0.0.0 adtarget.biz
 0.0.0.0 dsp-service.adtarget.biz
 0.0.0.0 prebid.adtarget.biz
 0.0.0.0 s.console.adtarget.com.tr
 0.0.0.0 ads.adtec.ru
 0.0.0.0 cdn.adtec.ru
+0.0.0.0 sync.adtech.ink
 0.0.0.0 ep1.adtrafficquality.google
 0.0.0.0 ep2.adtrafficquality.google
 0.0.0.0 static.advcake.ru
@@ -378,6 +383,7 @@
 0.0.0.0 demdex.net
 0.0.0.0 dpm.demdex.net
 0.0.0.0 euronewsgroup.demdex.net
+0.0.0.0 target.digitalaudience.io
 0.0.0.0 sync.digitalcaramel.com
 0.0.0.0 dmg.digitaltarget.ru
 0.0.0.0 tag.digitaltarget.ru
@@ -388,13 +394,17 @@
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
+0.0.0.0 33across-match.dotomi.com
 0.0.0.0 casale-match.dotomi.com
 0.0.0.0 dclk-match.dotomi.com
 0.0.0.0 equativ-match.dotomi.com
 0.0.0.0 gumgum-match.dotomi.com
 0.0.0.0 krush-match.dotomi.com
+0.0.0.0 medianet-match.dotomi.com
 0.0.0.0 prebid-match.dotomi.com
+0.0.0.0 pubmatic-match.dotomi.com
 0.0.0.0 stx-match.dotomi.com
+0.0.0.0 yahoo-match.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
@@ -443,6 +453,7 @@
 0.0.0.0 sync-tm.everesttech.net
 0.0.0.0 loadm.exelator.com
 0.0.0.0 ps.eyeota.net
+0.0.0.0 chap.fabulousbridge.com
 0.0.0.0 connect.facebook.net
 0.0.0.0 tool.festivehorse.com
 0.0.0.0 0.tool.festivehorse.com
@@ -570,6 +581,7 @@
 0.0.0.0 cmp.inmobi.com
 0.0.0.0 sync.inmobi.com
 0.0.0.0 api.cmp.inmobi.com
+0.0.0.0 mweb.ck.inmobi.com
 0.0.0.0 dvrtr.innovid.com
 0.0.0.0 cdn.insales-shop.ru
 0.0.0.0 counter.insales.com
@@ -723,7 +735,6 @@
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -742,6 +753,7 @@
 0.0.0.0 trk.olnl.net
 0.0.0.0 omnitagjs.com
 0.0.0.0 visitor-iqzone.omnitagjs.com
+0.0.0.0 visitor-ow.omnitagjs.com
 0.0.0.0 visitor-px.omnitagjs.com
 0.0.0.0 visitor.omnitagjs.com
 0.0.0.0 visitor.europe-west9.gcp.omnitagjs.com
@@ -813,6 +825,7 @@
 0.0.0.0 cdn.p-n.io
 0.0.0.0 k.p-n.io
 0.0.0.0 sync.p7cloud.net
+0.0.0.0 prism-tracking.pacvue.com
 0.0.0.0 analytics.pangle-ads.com
 0.0.0.0 cdn.pbxai.com
 0.0.0.0 floor.pbxai.com
@@ -951,11 +964,13 @@
 0.0.0.0 river-3-3119.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
+0.0.0.0 river-3-345.rtbcdn.ru
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
 0.0.0.0 t.rtbwave.com
+0.0.0.0 trace.us.rtbwise.com
 0.0.0.0 rubiconproject.com
 0.0.0.0 beacon-iad6.rubiconproject.com
 0.0.0.0 beacon-nf-iad6.rubiconproject.com
@@ -1003,6 +1018,7 @@
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
 0.0.0.0 sync.selfclick.pro
+0.0.0.0 su.semasio.net
 0.0.0.0 uipglob.semasio.net
 0.0.0.0 sendsay.ru
 0.0.0.0 image.sendsay.ru
@@ -1239,6 +1255,7 @@
 0.0.0.0 weborama.fr
 0.0.0.0 cr.frontend.weborama.fr
 0.0.0.0 redirect.frontend.weborama.fr
+0.0.0.0 wam.solution.weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
 0.0.0.0 cdn.prod.website-files.com
 0.0.0.0 mc.webvisor.org
@@ -1251,15 +1268,19 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
-0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
 0.0.0.0 c2shb-oao.ssp.yahoo.com
+0.0.0.0 moca.pbs.yahoo.com
 0.0.0.0 opus.analytics.yahoo.com
+0.0.0.0 signal-service.pbs.yahoo.com
+0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
+0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
@@ -1277,6 +1298,7 @@
 0.0.0.0 ad.yieldlab.net
 0.0.0.0 ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
+0.0.0.0 sync-pm.ads.yieldmo.com
 0.0.0.0 tag.yieldoptimizer.com
 0.0.0.0 ymmobi.com
 0.0.0.0 gw-iad-bid.ymmobi.com
@@ -1296,4 +1318,3 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
-0.0.0.0 cnb.cnews.ru

@@ -1,940 +1,1118 @@
 ============================================================
 ЛОГ АНАЛИЗА URLSCAN (CRAWLER MAP)
 ============================================================
-Всего обработано подстраниц: 77/77 • Сбои: 0/77
+Всего обработано подстраниц: 78/78 • Сбои: 0/78
 
 --- ИДЕНТИФИКАТОРЫ СЕССИЙ URLSCAN (ГРУППИРОВКА) ---
 
 01. [SEED] banki.ru
     ├── 01. [OK] https://banki.ru
-    └── Ссылка: https://urlscan.io/result/01a19036-aa5d-7772-9426-c41c7f0e5569/
+    └── Ссылка: https://urlscan.io/result/01a1956d-5fb9-740c-865e-a96d9988ef71/
 
 02. [SEED] bbc.com
-    ├── 01. [OK] https://bbc.com/audio/play/m0033gy8
-    └── Ссылка: https://urlscan.io/result/01a19035-684d-7562-8c26-0de3f7685f80/
-    ├── 02. [OK] https://bbc.com/travel/cultural-experiences
-    └── Ссылка: https://urlscan.io/result/01a19035-672b-765a-8f63-1fdd2e833200/
+    ├── 01. [OK] https://bbc.com/video/docs/series/10241283
+    └── Ссылка: https://urlscan.io/result/01a1956d-0fed-7277-8c07-12a9b8f6766c/
+    ├── 02. [OK] https://bbc.com/reel/video/p0pcwrvd/watch
+    └── Ссылка: https://urlscan.io/result/01a1956d-61d5-76eb-8670-ae393f43b2c6/
 
 03. [SEED] cnews.ru
-    ├── 01. [OK] https://zoom.cnews.ru/category/main_item/206
-    └── Ссылка: https://urlscan.io/result/01a19035-65f4-766a-97b8-3abd47779831/
-    ├── 02. [OK] https://www.cnews.ru/book/%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B7%D0%B0%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_-_%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C_-_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9_%D1%81%D1%83%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D1%82%D0%B5%D1%82_-_%D1%80%D0%B5%D0%B6%D0%B8%D0%BC_%D0%BF%D1%80%D0%B8%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D1%82%D0%BD%D1%8B%D1%85_%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_%D0%BE%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B9_%D0%B8_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9
-    └── Ссылка: https://urlscan.io/result/01a19035-6728-74e9-964f-50abb77dfc90/
+    ├── 01. [OK] https://www.cnews.ru/book/%D0%A22_-_%D0%A22_%D0%9C%D0%BE%D0%B1%D0%B0%D0%B9%D0%BB_-_%D0%A22_%D0%A0%D0%A2%D0%9A_%D0%A5%D0%BE%D0%BB%D0%B4%D0%B8%D0%BD%D0%B3_-_%D0%A0%D0%A2-%D0%9C%D0%BE%D0%B1%D0%B0%D0%B9%D0%BB_-_%D0%A2%D0%B5%D0%BB%D0%B52_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F_%D0%90%D0%91_-_Tele2_Russia_AB
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc55-7786-9a51-3fcbc20175c8/
+    ├── 02. [OK] https://events.cnews.ru/events/conversations_26.shtml
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc80-772d-ba37-53a1ed7a376a/
 
 04. [SEED] dp.ru
-    ├── 01. [OK] https://dp.ru/a/2026/10/30/mincifri-predlozhilo-pustit
-    └── Ссылка: https://urlscan.io/result/01a19036-a73d-7598-8583-a2cd28ffe4ff/
-    ├── 02. [OK] https://dp.ru/a/2026/10/22/dom-sdan--kvartiri-ostalis
-    └── Ссылка: https://urlscan.io/result/01a19035-b8f8-72f7-bc02-b0d1bd03cef1/
+    ├── 01. [OK] https://dp.ru/a/2026/10/31/avtobusi-ot-ladozhskoj-do
+    └── Ссылка: https://urlscan.io/result/01a1956c-bcd2-77be-b92b-664c8e420000/
+    ├── 02. [OK] https://dp.ru/a/2026/07/31/terruarnij-manjovr-kakie-instrumenti
+    └── Ссылка: https://urlscan.io/result/01a1956d-b021-750c-99d8-52b14d1177c4/
 
 05. [SEED] e1.ru
-    ├── 01. [OK] https://www.e1.ru/opisanie-funkcionalnyh-harakteristik-po/
-    └── Ссылка: https://urlscan.io/result/01a19035-690e-76ac-8768-f5d41f8697d6/
-    ├── 02. [OK] https://www.e1.ru/text/entertainment/2026/10/30/76736502/
-    └── Ссылка: https://urlscan.io/result/01a19035-684c-7795-bccc-5f59eb27a1d9/
+    ├── 01. [OK] https://www.e1.ru/text/world/2026/10/31/76735356/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc11-726a-ae66-7d4788dc4a9f/
+    ├── 02. [OK] https://www.e1.ru/text/autumn/2026/11/01/76737458/
+    └── Ссылка: https://urlscan.io/result/01a1956d-123c-724e-94a4-fe4eddcb4f6b/
 
 06. [SEED] euronews.com
-    ├── 01. [OK] https://euronews.com/2026/07/31/podcast-from-orbans-fall-to-the-state-of-eu-us-relations-brussels-my-love-wraps-up
-    └── Ссылка: https://urlscan.io/result/01a19036-5692-74e9-85b8-98e4eca0afd5/
-    ├── 02. [OK] https://euronews.com/programs/smart-health
-    └── Ссылка: https://urlscan.io/result/01a19036-56df-72dc-b36e-a139fa67f217/
+    ├── 01. [OK] https://euronews.com/2026/10/01/can-europe-afford-its-defence-boost-meps-debate-in-the-ring
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc81-74fb-bbdb-1e8e7147274f/
+    ├── 02. [OK] https://euronews.com/video/2026/10/31/latest-news-bulletin-october-31st-2026-midday
+    └── Ссылка: https://urlscan.io/result/01a1956d-6082-7305-ba81-89bcd3832059/
 
 07. [SEED] fishki.net
-    ├── 01. [OK] https://fishki.net/video/5129914-neozhidannyj-otvet-iz-nory.html
-    └── Ссылка: https://urlscan.io/result/01a19035-654f-746d-96ff-539ebea9bc28/
-    ├── 02. [OK] https://fishki.net/5127785-gonka-za-skidkami-gotovim-avtomobily-k-zime-na-avito.html
-    └── Ссылка: https://urlscan.io/result/01a19035-b9a1-74fb-824e-1e2a79fd1071/
+    ├── 01. [OK] https://fishki.net/5130250-post-o-chyom-vskore-nelyzja-budet-govority.html
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbcf-746a-8216-dda41f9e7953/
+    ├── 02. [OK] https://fishki.net/profile/404467/
+    └── Ссылка: https://urlscan.io/result/01a1956d-5de6-764a-959e-a667fb8b8220/
 
 08. [SEED] fontanka.ru
-    ├── 01. [OK] https://www.fontanka.ru/politika-ao-azhur-media-v-otnoshenii-obrabotki-personalnykh-dannykh/
-    └── Ссылка: https://urlscan.io/result/01a19035-674e-7448-b037-fbd9c19edee1/
-    ├── 02. [OK] https://www.fontanka.ru/polzovatelskoe-soglashenie-servisa-podpiska-bez-bannernoi-reklamy/
-    └── Ссылка: https://urlscan.io/result/01a19036-5820-708d-9e6c-f30bc1bfbc44/
+    ├── 01. [OK] https://www.fontanka.ru/2026/10/31/76733463/comments/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc88-744c-941d-2c8949508327/
+    ├── 02. [OK] https://www.fontanka.ru/2026/10/30/76731232/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc81-76a1-b5df-3706bd8e6691/
 
 09. [SEED] forbes.ru
     ├── 01. [OK] https://forbes.ru
-    └── Ссылка: https://urlscan.io/result/01a19036-5f09-71d4-aa48-a5c45a873667/
+    └── Ссылка: https://urlscan.io/result/01a1956e-00b5-7286-9b54-549c9e89fd64/
 
 10. [SEED] gazeta.ru
-    ├── 01. [OK] https://gazeta.ru/sport/news/2026/10/30/29642341.shtml
-    └── Ссылка: https://urlscan.io/result/01a19035-65de-77bc-b224-3a73253efeda/
-    ├── 02. [OK] https://www.gazeta.ru/social/news/2026/10/23/29587969.shtml
-    └── Ссылка: https://urlscan.io/result/01a19035-66c9-73fb-a064-b483a66c800f/
+    ├── 01. [OK] https://gazeta.ru/social/news/2026/11/01/29648257.shtml
+    └── Ссылка: https://urlscan.io/result/01a1956d-6299-7080-aa9c-dce356011ecc/
+    ├── 02. [OK] https://gazeta.ru/social/news/2026/11/01/29647873.shtml
+    └── Ссылка: https://urlscan.io/result/01a1956d-6630-74ad-828e-a54f36658008/
 
 11. [SEED] ign.com
-    ├── 01. [OK] https://ign.com/daily-games/game-scope
-    └── Ссылка: https://urlscan.io/result/01a19035-66fa-740b-993f-6c6b9cdcddda/
-    ├── 02. [OK] https://ign.com/wikis/gta-5/All_GTA_5_Cheat_Codes_and_Secrets_For_PC_and_Console
-    └── Ссылка: https://urlscan.io/result/01a19036-ac41-750d-b678-e31afc0229de/
+    ├── 01. [OK] https://ign.com/articles/star-wars-actor-hayden-christensen-says-a-man-who-burgled-his-house-recognized-him-then-gave-his-stuff-back-mid-robbery
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc72-778a-b942-2e25575ae886/
+    ├── 02. [OK] https://ign.com/articles/street-fighter-movie-2026-review
+    └── Ссылка: https://urlscan.io/result/01a1956d-b067-705d-acaf-fd87a9634fba/
 
 12. [SEED] infox.ru
-    ├── 01. [OK] https://infox.ru/news/299/391362-nazvano-otlicie-pervogo-serijnogo-sovetskogo-limuzina-ot-predstavitelskogo-cadillac
-    └── Ссылка: https://urlscan.io/result/01a19036-5ae2-728d-b8f3-de35ffdcc4b8/
-    ├── 02. [OK] https://infox.ru/news/251/391323-v-kremle-otreagirovali-na-slova-kallas-ob-ustalosti-ot-ukrainskogo-konflikta
-    └── Ссылка: https://urlscan.io/result/01a19036-5e51-71ae-abd5-1fbb5421fb77/
+    ├── 01. [OK] https://infox.ru/news/251/391320-krejser-petr-velikij-planiruut-vyvesti-iz-ekspluatacii
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc81-75ba-9e7a-78292e6fbfe2/
+    ├── 02. [OK] https://infox.ru/news/299/391364-reper-drejk-pozdravil-seba-s-40-letiem-unikalnym-brilliantovym-brasletom
+    └── Ссылка: https://urlscan.io/result/01a1956c-bafb-759f-aa8f-fa092d437f02/
 
 13. [SEED] interfax.ru
-    ├── 01. [OK] https://interfax.ru/world/1126234
-    └── Ссылка: https://urlscan.io/result/01a19035-66fa-740b-993f-72a92e4c126f/
-    ├── 02. [OK] https://interfax.ru/russia/1126223
-    └── Ссылка: https://urlscan.io/result/01a19036-59d5-743c-b858-423dad0a5e8d/
+    ├── 01. [OK] https://interfax.ru/world/1126309
+    └── Ссылка: https://urlscan.io/result/01a1956d-b152-77e7-b964-6382602db718/
+    ├── 02. [OK] https://interfax.ru/interview/1125051
+    └── Ссылка: https://urlscan.io/result/01a1956d-b3a8-754d-82d0-e7f643b76988/
 
 14. [SEED] irecommend.ru
-    ├── 01. [OK] https://irecommend.ru/content/stoit-li-brat-mavellin-elastic-smoothing-chestnyi-otzyv-bez-reklamy
-    └── Ссылка: https://urlscan.io/result/01a19035-654a-754d-95df-14f43b5b3844/
-    ├── 02. [OK] https://irecommend.ru/content/kogda-kto-govorit-chto-vlyubilsya-v-kislovodsk-ya-srazu-ponimayu-chto-tam-prosto-ne-zhil
-    └── Ссылка: https://urlscan.io/result/01a19035-672b-765a-8f63-1b11cf40d3d7/
+    ├── 01. [OK] https://irecommend.ru/content/ovoshchi-tykva-butternut-squash
+    └── Ссылка: https://urlscan.io/result/01a1956d-6792-7642-9ca2-4fd314b57229/
+    ├── 02. [OK] https://irecommend.ru/content/gel-dlya-stirki-grass-laun-dlya-vsekh-vidov-tkanei
+    └── Ссылка: https://urlscan.io/result/01a1956d-b50f-75d6-86ce-eb55cb317cf9/
 
 15. [SEED] ixbt.com
-    ├── 01. [OK] https://www.ixbt.com/home/vacuum-cleaner-for-everyday-and-overall-cleaning-2026.html
-    └── Ссылка: https://urlscan.io/result/01a19036-09a8-75ed-8404-5e7d0f35927c/
-    ├── 02. [OK] https://www.ixbt.com/mobilepc/asus-expertbook-p5-g2-pm5606cga-review.html
-    └── Ссылка: https://urlscan.io/result/01a19036-0c71-71b8-bca0-89e5f64815d0/
+    ├── 01. [OK] https://forum.ixbt.com/topic.cgi
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc34-7335-b13c-610f1efee346/
+    ├── 02. [OK] https://www.ixbt.com/news/2026/10/31/amazon-otcitalas-ob-ottoke-424-mlrd-i-gotovitsia-vlozit-220-mlrd-v-ii.html
+    └── Ссылка: https://urlscan.io/result/01a1956c-bab9-7496-970b-f5d9f7266230/
 
 16. [SEED] iz.ru
-    ├── 01. [OK] https://iz.ru/2194099/zelenskii-pozhalovalsia-na-sroki-postavki-obeshchannykh-ukraine-raket-patriot
-    └── Ссылка: https://urlscan.io/result/01a19035-6748-735a-905a-d9ee1fe87911/
-    ├── 02. [OK] https://iz.ru/2176611/video/malaiziia-rasschityvaet-na-rekordnyi-turpotok-iz-rossii-v-2026-godu
-    └── Ссылка: https://urlscan.io/result/01a19036-07ea-7258-8669-67b7172d6225/
+    ├── 01. [OK] https://iz.ru/2194381/2026-11-01/milan-pobedil-inter-so-schetom-31-na-chempionate-italii-po-futbolu
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc10-7312-89f5-df6b00b3a599/
+    ├── 02. [OK] https://iz.ru/1968881/2025-10-08/iz-za-chego-mogut-annulirovat-zagranpasport-infografika
+    └── Ссылка: https://urlscan.io/result/01a1956d-5fce-7713-930d-195d095fc7f8/
 
 17. [SEED] kommersant.ru
-    ├── 01. [OK] https://kommersant.ru/doc/9060473
-    └── Ссылка: https://urlscan.io/result/01a19035-bb2d-74c7-b34a-4e3370fbcdd1/
-    ├── 02. [OK] https://kommersant.ru/doc/9077650
-    └── Ссылка: https://urlscan.io/result/01a19036-0cb8-776d-8cfa-1ffb7fe26007/
+    ├── 01. [OK] https://kommersant.ru/doc/9078365
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbed-770b-8cc6-59dd1ab186cb/
+    ├── 02. [OK] https://kommersant.ru/doc/9078334
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc8e-700a-9a67-bc2cf8493ad2/
 
 18. [SEED] kp.ru
-    ├── 01. [OK] https://kp.ru/daily/277829.5/5322667/
-    └── Ссылка: https://urlscan.io/result/01a19035-6760-721d-8b9d-d47ca3a5ae45/
-    ├── 02. [OK] https://kp.ru/online/news/7250263/
-    └── Ссылка: https://urlscan.io/result/01a19036-0757-7577-b109-7685f2db1132/
+    ├── 01. [OK] https://kp.ru/online/news/7251111/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbed-770b-8cc6-5c067c4ceb4b/
+    ├── 02. [OK] https://www.kp.ru/daily/27565/4834647/
+    └── Ссылка: https://urlscan.io/result/01a1956d-62a9-77a2-b238-47293624e732/
 
 19. [SEED] lenta.ru
-    ├── 01. [OK] https://lenta.ru/extlink/2026/10/26/jovovic-1/
-    └── Ссылка: https://urlscan.io/result/01a19036-0811-73cf-8159-49a8835a190e/
-    ├── 02. [OK] https://lenta.ru/news/2026/10/31/soloh/
-    └── Ссылка: https://urlscan.io/result/01a19036-0900-7049-9918-7b1d79a2a44b/
+    ├── 01. [OK] https://lenta.ru/news/2026/10/31/iran-nazval-uslovie-dlya-peregovorov-s-ssha/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bad1-744b-a470-3bbc34e30113/
+    ├── 02. [OK] https://lenta.ru/news/2026/11/01/nazvan-edinstvennyy-sposob-prekratit-cheredu-voennyh-prestupleniy-vsu/
+    └── Ссылка: https://urlscan.io/result/01a1956d-0d95-7598-9213-419fbf181a97/
 
 20. [SEED] finance.mail.ru
-    ├── 01. [OK] https://vfokuse.mail.ru/articles/68534561-test-prodolzhite-frazu-iz-filmov-s-anatoliem-papanovym/
-    └── Ссылка: https://urlscan.io/result/01a19035-66c9-73fb-a064-b34819d96481/
-    ├── 02. [OK] https://finance.mail.ru/article/kazhdyj-chetvertyj-amerikanec-gotov-vlezt-v-dolgi-radi-hellouina-69234814/
-    └── Ссылка: https://urlscan.io/result/01a19035-675f-72af-8fb8-467ffececb9f/
+    ├── 01. [OK] https://finance.mail.ru/financial-services/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc80-772d-ba37-5563eba9d3df/
+    ├── 02. [OK] https://news.mail.ru/society/72933652/
+    └── Ссылка: https://urlscan.io/result/01a1956d-1278-73ce-9687-6437cf2b3031/
 
 21. [SEED] news.mail.ru
-    ├── 01. [OK] https://vfokuse.mail.ru/articles/68534561-test-prodolzhite-frazu-iz-filmov-s-anatoliem-papanovym/
-    └── Ссылка: https://urlscan.io/result/01a19035-66c9-73fb-a064-b34819d96481/
-    ├── 02. [OK] https://finance.mail.ru/article/kazhdyj-chetvertyj-amerikanec-gotov-vlezt-v-dolgi-radi-hellouina-69234814/
-    └── Ссылка: https://urlscan.io/result/01a19035-675f-72af-8fb8-467ffececb9f/
+    ├── 01. [OK] https://finance.mail.ru/financial-services/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc80-772d-ba37-5563eba9d3df/
+    ├── 02. [OK] https://news.mail.ru/society/72933652/
+    └── Ссылка: https://urlscan.io/result/01a1956d-1278-73ce-9687-6437cf2b3031/
 
 22. [SEED] mk.ru
-    ├── 01. [OK] https://www.mk.ru/projects/100-let-mk/
-    └── Ссылка: https://urlscan.io/result/01a19035-b993-76df-8733-7c17c178878c/
-    ├── 02. [OK] https://www.mk.ru/stories/zolotoy-vozrast/
-    └── Ссылка: https://urlscan.io/result/01a19035-b965-72d6-ba64-13aa57e9c579/
+    ├── 01. [OK] https://www.mk.ru/social/2026/10/31/kak-legenda-o-proklyatii-tamerlana-splelas-s-nachalom-velikoy-otechestvennoy-voyny.html
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc55-7786-9a51-41f8ec23c701/
+    ├── 02. [OK] https://www.mk.ru/merinov/gallery/11.html
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc15-7733-ac5f-6c4fe06fe725/
 
 23. [SEED] ngs.ru
-    ├── 01. [OK] https://ngs.ru/text/style/2026/10/30/76726279/
-    └── Ссылка: https://urlscan.io/result/01a19035-6727-716c-819c-1a307bfc8574/
-    ├── 02. [OK] https://ngs.ru/text/longread/2026/10/28/76726395/
-    └── Ссылка: https://urlscan.io/result/01a19035-6687-708d-abf1-561eb143f2b8/
+    ├── 01. [OK] https://ngs.ru/text/entertainment/2026/10/21/76713695/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bac2-7327-8e18-bc61f4c30932/
+    ├── 02. [OK] https://ngs.ru/text/entertainment/2026/10/31/76737219/
+    └── Ссылка: https://urlscan.io/result/01a1956d-0c1f-768e-a09d-625586e07c4e/
 
 24. [SEED] otzovik.com
-    ├── 01. [OK] https://otzovik.com/review_18779497.html
-    └── Ссылка: https://urlscan.io/result/01a19035-684d-7562-8c26-107861c99c58/
-    ├── 02. [OK] https://otzovik.com/review_18779572.html
-    └── Ссылка: https://urlscan.io/result/01a19035-b7f9-7698-b0c3-be8b49507603/
+    ├── 01. [OK] https://otzovik.com/review_18775933.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-0d96-7748-9a32-4eb365ce1267/
+    ├── 02. [OK] https://otzovik.com/reviews/smartphone_apple_iphone_18_pro/
+    └── Ссылка: https://urlscan.io/result/01a1956d-b0c8-7321-840f-c345892f8921/
 
 25. [SEED] pikabu.ru
-    ├── 01. [OK] https://pikabu.ru/video/story/trekhtsvetnaya_koshechka_v_dobryie_ruki_14476460/1803128
-    └── Ссылка: https://urlscan.io/result/01a19036-aad7-712a-b1e6-ced3aa081fc0/
-    ├── 02. [OK] https://promokod.pikabu.ru/shops/travel-yandex
-    └── Ссылка: https://urlscan.io/result/01a19036-55a7-72ff-8a37-8d1c2d74a54b/
+    ├── 01. [OK] https://pikabu.ru/story/byit_drugom_loshadke_opasno_dlya_zdorovya_ch1_14480620
+    └── Ссылка: https://urlscan.io/result/01a1956d-0faf-76b6-9a53-0787b5930463/
+    ├── 02. [OK] https://promokod.pikabu.ru/shops/5ka
+    └── Ссылка: https://urlscan.io/result/01a1956d-ad5c-720d-93b0-a23557918a4f/
 
 26. [SEED] pravo.ru
-    ├── 01. [OK] https://pravo.ru/story/266395/
-    └── Ссылка: https://urlscan.io/result/01a19035-66ab-751c-bc3c-8b39d67db48e/
-    ├── 02. [OK] https://pravo.ru/opinion/266301/
-    └── Ссылка: https://urlscan.io/result/01a19035-b794-7781-844e-c82607c234d8/
+    ├── 01. [OK] https://pravo.ru/news/266515/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc82-756e-a67e-ff63de06010c/
+    ├── 02. [OK] https://pravo.ru/news/266525/
+    └── Ссылка: https://urlscan.io/result/01a1956d-0f4b-76ae-a47d-ed526885471d/
 
 27. [SEED] rambler.ru
-    ├── 01. [OK] https://weather.rambler.ru/v-vashingtone/
-    └── Ссылка: https://urlscan.io/result/01a19035-ba83-741d-8554-b36da9d953ee/
-    ├── 02. [OK] https://news.rambler.ru/svo/57329850-sutochnye-poteri-vsu-sostavili-poryadka-1-230-voennyh/
-    └── Ссылка: https://urlscan.io/result/01a19036-5618-730d-9c71-a8d526b5c52f/
+    ├── 01. [OK] https://doctor.rambler.ru/healthylife/57337957-rossiyanam-rasskazali-o-poluchenii-stomatologicheskoy-pomoschi-po-oms-v-chastnoy-klinike/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbe0-7119-8be0-5ec6d0a4909f/
+    ├── 02. [OK] https://news.rambler.ru/world/57337390-shvetsiya-provela-reyd-na-korabl-s-rossiyskim-ekipazhem/
+    └── Ссылка: https://urlscan.io/result/01a1956d-b51c-7274-beef-3a777d28e5dd/
 
 28. [SEED] rbc.ru
-    ├── 01. [OK] https://rbc.ru/rbcfreenews/6ae5456be22d143d5793dad3
-    └── Ссылка: https://urlscan.io/result/01a19035-66c9-73fb-a064-ad4f5b744a1b/
-    ├── 02. [OK] https://www.rbc.ru/quote/ticker/101040
-    └── Ссылка: https://urlscan.io/result/01a19036-5b4f-777a-9cdf-233f5cc3543a/
+    ├── 01. [OK] https://www.rbc.ru/quote/ticker/101040
+    └── Ссылка: https://urlscan.io/result/01a1956d-b076-75fe-b830-addca24d49f9/
+    ├── 02. [OK] https://rbc.ru/rbcfreenews/6ae6aba7b6f380484a2310d9
+    └── Ссылка: https://urlscan.io/result/01a1956d-b493-74db-95d4-b04fea73c6eb/
 
 29. [SEED] retail.ru
-    ├── 01. [OK] https://retail.ru/video/anna-tishchenko-arpm-na-worldfood-moscow-2026/
-    └── Ссылка: https://urlscan.io/result/01a19035-65de-77bc-b224-3c9391962186/
-    ├── 02. [OK] https://www.retail.ru/books/shubin-aleksandr-biznes-modeli-roznichnykh-kompaniy-kak-konkurirovat-s-gigantami/
-    └── Ссылка: https://urlscan.io/result/01a19035-67c0-7178-a083-a1eb13abb01f/
+    ├── 01. [OK] https://www.retail.ru/books/shubin-aleksandr-biznes-modeli-roznichnykh-kompaniy-kak-konkurirovat-s-gigantami/
+    └── Ссылка: https://urlscan.io/result/01a1956d-ae61-71fa-b3cd-26786d676068/
+    ├── 02. [OK] https://retail.ru/rbc/tradingnetworks/mnogo-lososya/
+    └── Ссылка: https://urlscan.io/result/01a1956d-b13a-717e-8be4-18236539f84f/
 
 30. [SEED] ria.ru
-    ├── 01. [OK] https://ria.ru/20261031/vaterpolo-2128243575.html
-    └── Ссылка: https://urlscan.io/result/01a19036-08ed-712f-b1ea-1845665edb27/
-    ├── 02. [OK] https://ria.ru/20261030/rossiya-2128214061.html
-    └── Ссылка: https://urlscan.io/result/01a19036-0b1b-7746-9e6e-b95435468241/
+    ├── 01. [OK] https://ria.ru/20261031/tusk-2128379255.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-0e2f-7708-9314-3962bd7178af/
+    ├── 02. [OK] https://ria.ru/20261101/tsjurih-2128399660.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-b90f-71a1-bb02-01e38d5c06da/
 
 31. [SEED] rosbalt.ru
-    ├── 01. [OK] https://rosbalt.ru
-    └── Ссылка: https://urlscan.io/result/01a19036-aa30-7072-a7ba-6232d877d8ad/
+    ├── 01. [OK] https://www.rosbalt.ru/news/2026-11-01/rossiyanam-raskryli-gde-zarplaty-prevysili-200-tysyach-rubley-5721597
+    └── Ссылка: https://urlscan.io/result/01a1956d-6086-72a6-a1fe-e524f7da594c/
+    ├── 02. [OK] https://www.rosbalt.ru/news/2026-10-30/kuda-poshlyut-tuda-i-poedet-migrantov-hotyat-nanimat-po-novomu-5720117
+    └── Ссылка: https://urlscan.io/result/01a1956d-b0c8-7321-840f-be986546acf0/
 
 32. [SEED] rozetked.me
-    ├── 01. [OK] https://rozetked.me/user/34
-    └── Ссылка: https://urlscan.io/result/01a19036-08aa-750c-a785-950396241f2e/
-    ├── 02. [OK] https://rozetked.me/news/49199-sluh-v-noyabre-2026-goda-amd-povysit-ceny-na-graficheskie-chipy-i-videopamyat-dlya-storonnih-proizvoditeley
-    └── Ссылка: https://urlscan.io/result/01a19036-a978-769a-8a98-08264d3366c4/
+    ├── 01. [OK] https://rozetked.me/articles/48962-smotrim-na-novye-lazernye-proektory-hisense-v-atrium-hi-fi-domashniy-kinoteatr-v-shourume
+    └── Ссылка: https://urlscan.io/result/01a1956d-10b7-7628-bf20-45e628d5e1e8/
+    ├── 02. [OK] https://rozetked.me/posts/49208-na-hbo-max-vyshel-specvypusk-seriala-ono-v-chest-hellouina
+    └── Ссылка: https://urlscan.io/result/01a1956d-b49f-706e-a99b-dc7a9076166b/
 
 33. [SEED] smi2.ru
-    ├── 01. [OK] https://smi2.ru/article/191397018/full
-    └── Ссылка: https://urlscan.io/result/01a19036-0be5-712e-a721-f0a584d9a144/
-    ├── 02. [OK] https://smi2.ru/article/191526728/story
-    └── Ссылка: https://urlscan.io/result/01a19036-0afb-70d8-a322-507db6432fac/
+    ├── 01. [OK] https://smi2.ru/article/191582245/story
+    └── Ссылка: https://urlscan.io/result/01a1956d-6460-75c9-abd8-80cad75d38bf/
+    ├── 02. [OK] https://smi2.ru/context/716
+    └── Ссылка: https://urlscan.io/result/01a1956d-60a6-7128-ad4b-1e62e585e9eb/
 
 34. [SEED] sports.ru
-    ├── 01. [OK] https://sports.ru/fernando-alonso/
-    └── Ссылка: https://urlscan.io/result/01a19035-674d-7334-b1af-cb40ec072cde/
-    ├── 02. [OK] https://www.sports.ru/football/tournament/fifa-world-cup/
-    └── Ссылка: https://urlscan.io/result/01a19035-b98c-70ea-a26b-08c72c594cc6/
+    ├── 01. [OK] https://sports.ru/hockey/match/calgary-flames-vs-colorado-avalanche/
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbfd-743a-9485-9cdeaa349f52/
+    ├── 02. [OK] https://sports.ru/football/match/aston-villa-vs-fulham/
+    └── Ссылка: https://urlscan.io/result/01a1956d-1447-766d-a923-8b451d1bf3dc/
 
 35. [SEED] techradar.com
-    ├── 01. [OK] https://www.techradar.com/author/graham-barlow
-    └── Ссылка: https://urlscan.io/result/01a19035-6731-73cc-bbe1-1961a3ae76e5/
-    ├── 02. [OK] https://www.techradar.com/tech/techradar-product-of-the-year-awards-2026-winners
-    └── Ссылка: https://urlscan.io/result/01a19036-0aaf-73fa-930a-03ccce6c9bb5/
+    ├── 01. [OK] https://www.techradar.com/author/rhys-wood
+    └── Ссылка: https://urlscan.io/result/01a1956c-baba-74b5-b16c-0f0edcd45085/
+    ├── 02. [OK] https://www.techradar.com/vpn/best-vpn
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbe9-7089-bfbf-b2a2d43b14f9/
 
 36. [SEED] tourdom.ru
-    ├── 01. [OK] https://tourdom.ru/news/neftyanoe-pyatno-u-beregov-oae-mozhet-priblizitsya-k-dubayu.html
-    └── Ссылка: https://urlscan.io/result/01a19036-5ab0-775e-83ba-589530278b32/
-    ├── 02. [OK] https://tourdom.ru/news/smi-troe-rossiyskikh-turistov-postradali-v-rezultate-dtp-s-avtobusom-v-egipte.html
-    └── Ссылка: https://urlscan.io/result/01a19036-a919-7462-9acb-e3eeba456882/
+    ├── 01. [OK] https://tourdom.ru/news/atlantis-the-royal-dubay-predstavlyaet-novinki-sezona.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-b2d4-769b-912c-97574696be80/
+    ├── 02. [OK] https://tourdom.ru/news/posolstvo-s-sh-a-soobschilo-ob-ugroze-terakta-v-tsaritsyne.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-b4bd-73e8-8632-846bfd4c6251/
 
 37. [SEED] tourprom.ru
-    ├── 01. [OK] https://tourprom.ru/news/90073/
-    └── Ссылка: https://urlscan.io/result/01a19036-5aea-766f-9808-88992b6ee464/
-    ├── 02. [OK] https://tourprom.ru/tours-online/
-    └── Ссылка: https://urlscan.io/result/01a19036-09c8-7134-9185-98f7947313ef/
+    ├── 01. [OK] https://tourprom.ru/news/90037/
+    └── Ссылка: https://urlscan.io/result/01a1956d-b795-7347-8363-d68d387d1b61/
+    ├── 02. [OK] https://tourprom.ru/news/89979/
+    └── Ссылка: https://urlscan.io/result/01a1956d-6013-7648-b41d-e96bf77bf3cd/
 
 38. [SEED] vedomosti.ru
-    ├── 01. [OK] https://vedomosti.ru/media/articles/2026/10/23/1239027-ozhidaniyah-2027-god
-    └── Ссылка: https://urlscan.io/result/01a19035-674e-770b-bb81-0b76c2768c1d/
-    ├── 02. [OK] https://vedomosti.ru/investments/articles/2026/10/30/1241385-hakerskoi-atake-binance
-    └── Ссылка: https://urlscan.io/result/01a19035-672b-765a-8f63-2352fe84e8f8/
+    ├── 01. [OK] https://vedomosti.ru/politics/articles/2026/10/30/1241367-sammit-rossiya-afrika
+    └── Ссылка: https://urlscan.io/result/01a1956c-bc8e-700a-9a67-c0a9a1428d8c/
+    ├── 02. [OK] https://vedomosti.ru/politics/news/2026/10/31/1241763-stubb-obyasnil
+    └── Ссылка: https://urlscan.io/result/01a1956c-bbea-74b7-b147-d408555a511f/
 
 39. [SEED] yahoo.com
-    ├── 01. [OK] https://sports.yahoo.com/ncaaf/kent-state-golden-flashes-sacramento-state-hornets-202610300110/
-    └── Ссылка: https://urlscan.io/result/01a19036-5f7f-71ad-92e8-cb93346730a8/
-    ├── 02. [OK] https://yahoo.com/entertainment/celebrity/articles/jessica-simpson-looks-different-ditching-133100170.html
-    └── Ссылка: https://urlscan.io/result/01a19036-a97d-76a1-a7ab-8c24261b9566/
+    ├── 01. [OK] https://yahoo.com/entertainment/movies/articles/two-actors-reportedly-exit-james-191012830.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-b407-74ad-ac3e-9fb5fc47b5c0/
+    ├── 02. [OK] https://yahoo.com/sports/articles/brewers-controversially-decided-smoke-cigarettes-172242468.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-ba4a-71da-bd52-b22d06c71067/
 
 40. [SEED] yaplakal.com
-    ├── 01. [OK] https://www.yaplakal.com/members/member883404.html
-    └── Ссылка: https://urlscan.io/result/01a19035-6721-7391-bf76-f1eae34c6bbd/
-    ├── 02. [OK] https://www.yaplakal.com/forum2/topic3136488.html
-    └── Ссылка: https://urlscan.io/result/01a19036-5a14-77a4-a5f5-d989efc911a6/
+    ├── 01. [OK] https://www.yaplakal.com/forum16/topic106064.html
+    └── Ссылка: https://urlscan.io/result/01a1956c-bab8-70de-a232-3c84660dabb8/
+    ├── 02. [OK] https://www.yaplakal.com/forum43/topic3137023.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-5e4d-716c-a075-7693a78b1932/
 
 41. [SEED] yuga.ru
-    ├── 01. [OK] https://www.yuga.ru/news/484555-v-ejske-shkolnikam-zapretili-provodit-khellouin-i-gulyat-v-grime-po-ulicam/
-    └── Ссылка: https://urlscan.io/result/01a19036-5a17-7536-a456-a33e33f18e9b/
-    ├── 02. [OK] https://www.yuga.ru/news/484557-oblachno-i-mestami-dozhdi-uznali-pogodu-v-krasnodare-i-krae-na-vykhodnye/
-    └── Ссылка: https://urlscan.io/result/01a19036-abaa-73db-a032-c7566d150234/
+    ├── 01. [OK] https://www.yuga.ru/news/484529-v-krasnodare-i-rostove-vystupit-yuzhnokorejskaya-gruppa-w24/
+    └── Ссылка: https://urlscan.io/result/01a1956d-b09b-71b8-915d-ef9b454b8ff2/
+    ├── 02. [OK] https://www.yuga.ru/tags/2991.html
+    └── Ссылка: https://urlscan.io/result/01a1956d-b305-71f6-a2cd-c066ac19e544/
 
 ============================================================
 --- ЗАБЛОКИРОВАНО В ЭТОМ ЗАПУСКЕ (hosts.txt / adblock.txt) ---
-01. [AD] 0.stg.html-load.com                      (clean: 0, ad: 12, pages: 1)
-02. [AD] 1070--a05598d8-3234-41f8-a513-a7600fdd04e1.stbid.ru (clean: 0, ad: 12, pages: 1)
-03. [AD] 1070--b5fae253-5692-405f-8f67-8797d4357835.stbid.ru (clean: 0, ad: 12, pages: 1)
-04. [AD] 1bb8492962d24ed922a25a7e75b6bc35.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-05. [AD] 2521162571793420845577.cm.a.mts.ru       (clean: 10, ad: 42, pages: 1, группа x2, name-hint)
-06. [AD] 352c4d50-af0f-4747-a34f-2e15ffd28f5d.dsp.mts.ru (clean: 0, ad: 36, pages: 1, name-hint)
-07. [AD] 3a40403614d4bd07c0088633e795f935.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-08. [AD] 3c402508-d4e3-11f1-b98d-002590c82436.n5.sync.bumlam.com (clean: 5, ad: 36, pages: 1, name-hint)
-09. [AD] 6143071111793420784521.cm.a.mts.ru       (clean: 10, ad: 42, pages: 1, группа x2, name-hint)
-10. [AD] 627931dc9efb8a305252ebd829b67cdb.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-11. [AD] 67cab6e90db32e717242f4e7597a6bec.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-12. [AD] 6af34af4dfda403dbd00110b227c8fc0.safeframe.googlesyndication.com (clean: 0, ad: 48, pages: 1)
-13. [AD] 9f3b9e214d2a18e40b369fd3d63fd367.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-14. [AD] a.adiam.tech                             (clean: 10, ad: 36, pages: 2)
-15. [AD] a.adspector.io                           (clean: 10, ad: 12, pages: 2)
-16. [AD] a.giraff.io                              (clean: 10, ad: 171, pages: 3, strong: 3)
-17. [AD] a.lotus-dsp.ru                           (clean: 10, ad: 42, pages: 2, name-hint)
-18. [AD] a.rfihub.com                             (clean: 5, ad: 6, pages: 1)
-19. [AD] a.ria.ru                                 (clean: 58, ad: 102, pages: 2)
-20. [AD] a.ussp.io                                (clean: 20, ad: 72, pages: 8)
-21. [AD] a.utraff.com                             (clean: 15, ad: 18, pages: 3)
-22. [AD] a.videohead.tech                         (clean: 10, ad: 18, pages: 3)
-23. [AD] a4621041136.cdn.optimizely.com           (clean: 0, ad: 24, pages: 2)
-24. [AD] abt.s3.yandex.net                        (clean: 0, ad: 93, pages: 4)
-25. [AD] acint.net                                (clean: 15, ad: 116, pages: 6)
-26. [AD] ad-delivery.net                          (clean: 10, ad: 54, pages: 2, name-hint)
-27. [AD] ad.adriver.ru                            (clean: 55, ad: 3318, pages: 7, name-hint)
-28. [AD] ad.mail.ru                               (clean: 298, ad: 22151, pages: 25, strong: 191, name-hint)
-29. [AD] ad.yieldlab.net                          (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
-30. [AD] ade.googlesyndication.com                (clean: 10, ad: 12, pages: 1)
-31. [AD] adobe.adhaven.com                        (clean: 5, ad: 12, pages: 2)
-32. [AD] ads.betweendigital.com                   (clean: 5, ad: 1464, pages: 7, name-hint)
-33. [AD] ads.gpm-ssp.ru                           (clean: 0, ad: 42, pages: 2, name-hint)
-34. [AD] ads.scorecardresearch.com                (clean: 5, ad: 36, pages: 1, name-hint)
-35. [AD] ads.servebom.com                         (clean: 0, ad: 54, pages: 2, name-hint)
-36. [AD] ads.tds.bid                              (clean: 0, ad: 36, pages: 1, name-hint)
-37. [AD] ads.travelaudience.com                   (clean: 5, ad: 82, pages: 2, name-hint)
-38. [AD] adserver.gear-hub.ru                     (clean: 10, ad: 122, pages: 2, strong: 2, name-hint)
-39. [AD] adx.videonow.ru                          (clean: 0, ad: 42, pages: 1, name-hint)
-40. [AD] aflt.market.yandex.ru                    (clean: 0, ad: 78, pages: 2)
-41. [AD] an.yandex.ru                             (clean: 20, ad: 931, pages: 15)
-42. [AD] analytics-455007615.collector.yahoo.net  (clean: 0, ad: 114, pages: 1, name-hint)
-43. [AD] analytics.google.com                     (clean: 0, ad: 324, pages: 5, name-hint)
-44. [AD] analytics.mediadash.ru                   (clean: 0, ad: 654, pages: 4, name-hint)
-45. [AD] analytics.optidigital.com                (clean: 0, ad: 114, pages: 1, name-hint)
-46. [AD] api.a.mts.ru                             (clean: 0, ad: 36, pages: 2)
-47. [AD] api.onesignal.com                        (clean: 0, ad: 180, pages: 4)
-48. [AD] api.pushwoosh.com                        (clean: 0, ad: 12, pages: 1)
-49. [AD] api.vigo.tech                            (clean: 0, ad: 99, pages: 2)
-50. [AD] api.wavesend.ru                          (clean: 0, ad: 24, pages: 1)
-51. [AD] asr.openssp.ru                           (clean: 0, ad: 42, pages: 1, name-hint)
-52. [AD] b.trueanthem.com                         (clean: 0, ad: 52, pages: 1, strong: 1)
-53. [AD] banners.adfox.ru                         (clean: 25, ad: 1047, pages: 7)
-54. [AD] beacon.viafoura.io                       (clean: 0, ad: 134, pages: 2, strong: 2, name-hint)
-55. [AD] bid.adx.com.ru                           (clean: 0, ad: 402, pages: 2, name-hint)
-56. [AD] bid.sspnet.tech                          (clean: 10, ad: 66, pages: 4, name-hint)
-57. [AD] bordeaux.futurecdn.net                   (clean: 0, ad: 54, pages: 2)
-58. [AD] bs.serving-sys.ru                        (clean: 0, ad: 212, pages: 4, strong: 4)
-59. [AD] buy-eu.piano.io                          (clean: 0, ad: 24, pages: 2)
-60. [AD] c.amazon-adsystem.com                    (clean: 0, ad: 54, pages: 2)
-61. [AD] c2-eu.piano.io                           (clean: 0, ad: 24, pages: 2)
-62. [AD] cache.pythia.futureplc.com               (clean: 0, ad: 36, pages: 2)
-63. [AD] catsnetwork.ru                           (clean: 0, ad: 360, pages: 2)
-64. [AD] cdn-c.skcrtxr.com                        (clean: 0, ad: 2212, pages: 6, strong: 31)
-65. [AD] cdn-irec.r-99.com                        (clean: 20, ad: 24, pages: 1)
-66. [AD] cdn-rtb.sape.ru                          (clean: 0, ad: 120, pages: 4, name-hint)
-67. [AD] cdn-v.skcrtxr.com                        (clean: 0, ad: 1612, pages: 2, strong: 31)
-68. [AD] cdn.acast.com                            (clean: 30, ad: 24, pages: 1)
-69. [AD] cdn.adfinity.pro                         (clean: 0, ad: 27, pages: 1)
-70. [AD] cdn.al-adtech.com                        (clean: 5, ad: 78, pages: 3, name-hint)
-71. [AD] cdn.confiant-integrations.net            (clean: 0, ad: 376, pages: 2, strong: 4)
-72. [AD] cdn.cookielaw.org                        (clean: 0, ad: 144, pages: 2)
-73. [AD] cdn.cxense.com                           (clean: 0, ad: 108, pages: 2)
-74. [AD] cdn.dsp-rambler.ru                       (clean: 15, ad: 491, pages: 2, strong: 5, name-hint)
-75. [AD] cdn.giraff.media                         (clean: 0, ad: 12, pages: 1)
-76. [AD] cdn.mos.cms.futurecdn.net                (clean: 145, ad: 258, pages: 2)
-77. [AD] cdn.nemedia.codes                        (clean: 0, ad: 27, pages: 1)
-78. [AD] cdn.ngs.ru                               (clean: 12, ad: 46, pages: 1, strong: 1)
-79. [AD] cdn.onesignal.com                        (clean: 0, ad: 216, pages: 4)
-80. [AD] cdn.optimizely.com                       (clean: 0, ad: 78, pages: 2)
-81. [AD] cdn.privacy-mgmt.com                     (clean: 30, ad: 432, pages: 2)
-82. [AD] cdn.punchmedia.ru                        (clean: 0, ad: 67, pages: 1, strong: 1)
-83. [AD] cdn.pushwoosh.com                        (clean: 0, ad: 21, pages: 1)
-84. [AD] cdn.skcrtxr.com                          (clean: 115, ad: 1491, pages: 7, strong: 27)
-85. [AD] cdn.static.zdbb.net                      (clean: 10, ad: 12, pages: 2)
-86. [AD] cdn.tinypass.com                         (clean: 0, ad: 42, pages: 2)
-87. [AD] cdn.traffaret.com                        (clean: 0, ad: 12, pages: 1)
-88. [AD] cdn.trust-id.ru                          (clean: 0, ad: 63, pages: 3)
-89. [AD] cdn.uxfeedback.ru                        (clean: 0, ad: 93, pages: 1)
-90. [AD] cdn.viqeo.tv                             (clean: 5, ad: 222, pages: 3)
-91. [AD] cdn.ziffstatic.com                       (clean: 45, ad: 494, pages: 2, strong: 2)
-92. [AD] cdn1.moe.video                           (clean: 0, ad: 4239, pages: 2)
-93. [AD] cdnn21.imgria.ru                         (clean: 360, ad: 3151, pages: 2, strong: 4)
-94. [AD] champagne.futurecdn.net                  (clean: 0, ad: 54, pages: 2)
-95. [AD] client.aps.amazon-adsystem.com           (clean: 0, ad: 54, pages: 2)
-96. [AD] cm-mx.advolve.io                         (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
-97. [AD] cm.a.mts.ru                              (clean: 0, ad: 114, pages: 2, name-hint)
-98. [AD] cm.everesttech.net                       (clean: 5, ad: 66, pages: 1, name-hint)
-99. [AD] cm.g.doubleclick.net                     (clean: 135, ad: 1786, pages: 7, strong: 37, name-hint)
-100. [AD] cm.pxltag.com                            (clean: 10, ad: 102, pages: 2, name-hint)
-101. [AD] cm.ria.ru                                (clean: 36, ad: 138, pages: 2, name-hint)
-102. [AD] cmr.bidderstack.com                      (clean: 20, ad: 36, pages: 6)
-103. [AD] code.giraff.io                           (clean: 0, ad: 69, pages: 1)
-104. [AD] comcluster.cxense.com                    (clean: 0, ad: 12, pages: 2)
-105. [AD] config.aps.amazon-adsystem.com           (clean: 0, ad: 54, pages: 2)
-106. [AD] consent.cmp.oath.com                     (clean: 0, ad: 42, pages: 2)
-107. [AD] content.adriver.ru                       (clean: 5, ad: 450, pages: 6)
-108. [AD] content.jwplatform.com                   (clean: 0, ad: 27, pages: 1)
-109. [AD] counter.yadro.ru                         (clean: 175, ad: 1434, pages: 31, name-hint)
-110. [AD] cr-frontend.weborama-tech.ru             (clean: 0, ad: 104, pages: 2, strong: 2)
-111. [AD] cs.media.net                             (clean: 5, ad: 6, pages: 1)
-112. [AD] cs.rambler.ru                            (clean: 1704, ad: 3232, pages: 4)
-113. [AD] csp.yahoo.com                            (clean: 802, ad: 2722, pages: 1, strong: 61)
-114. [AD] csync.skcrtxr.com                        (clean: 0, ad: 832, pages: 6, strong: 16)
-115. [AD] d17ebhrlbr4s4.cloudfront.net             (clean: 0, ad: 63, pages: 1)
-116. [AD] d9645a35ec3db87e3471de021b53931e.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-117. [AD] data.24smi.net                           (clean: 10, ad: 624, pages: 8)
-118. [AD] data.giraff.io                           (clean: 0, ad: 54, pages: 1)
-119. [AD] data.punchmedia.ru                       (clean: 0, ad: 27, pages: 1)
-120. [AD] db28fb747d9b67bda43edbe0661fa269.safeframe.googlesyndication.com (clean: 0, ad: 120, pages: 1)
-121. [AD] dc.xoalt.com                             (clean: 30, ad: 36, pages: 5)
-122. [AD] devpl.viadata.store                      (clean: 0, ad: 6, pages: 1)
-123. [AD] dm-eu.hybrid.ai                          (clean: 5, ad: 6, pages: 1)
-124. [AD] dm.hybrid.ai                             (clean: 20, ad: 72, pages: 6)
-125. [AD] dmg.digitaltarget.ru                     (clean: 40, ad: 84, pages: 10)
-126. [AD] dmp.mpsuadv.ru                           (clean: 0, ad: 48, pages: 1, name-hint)
-127. [AD] dmp.sbermarketing.ru                     (clean: 0, ad: 70, pages: 2, name-hint)
-128. [AD] dp2.33across.com                         (clean: 5, ad: 12, pages: 2)
-129. [AD] dpm.demdex.net                           (clean: 0, ad: 158, pages: 4, strong: 2)
-130. [AD] dsp.mpartner.digital                     (clean: 0, ad: 42, pages: 2, name-hint)
-131. [AD] dsum-sec.casalemedia.com                 (clean: 80, ad: 656, pages: 3, strong: 14)
-132. [AD] dt.adsafeprotected.com                   (clean: 40, ad: 48, pages: 1)
-133. [AD] embed.acast.com                          (clean: 5, ad: 48, pages: 1)
-134. [AD] embeds.rambler.ru                        (clean: 164, ad: 402, pages: 2)
-135. [AD] emrldco.com                              (clean: 0, ad: 756, pages: 1)
-136. [AD] ep.nemedia.codes                         (clean: 0, ad: 12, pages: 1)
-137. [AD] ep1.adtrafficquality.google              (clean: 55, ad: 1642, pages: 4, strong: 13, группа x2)
-138. [AD] ep2.adtrafficquality.google              (clean: 55, ad: 1642, pages: 4, strong: 13, группа x2)
-139. [AD] euronewsfr.api.useinsider.com            (clean: 0, ad: 54, pages: 2)
-140. [AD] euronewsgroup.demdex.net                 (clean: 0, ad: 24, pages: 2)
-141. [AD] euw-ice.360yield.com                     (clean: 0, ad: 12, pages: 2)
-142. [AD] ev.adriver.ru                            (clean: 40, ad: 288, pages: 4)
-143. [AD] events.myweb3id.io                       (clean: 0, ad: 92, pages: 2, strong: 2)
-144. [AD] events.newsroom.bi                       (clean: 0, ad: 24, pages: 2)
-145. [AD] exchange.24smi.info                      (clean: 5, ad: 6, pages: 1)
-146. [AD] exchange.buzzoola.com                    (clean: 145, ad: 4966, pages: 21, strong: 64)
-147. [AD] ext.clickstream.sbrf.ru                  (clean: 0, ad: 438, pages: 4, name-hint)
-148. [AD] f579786814a262c290ad27e09729e5a7.safeframe.googlesyndication.com (clean: 0, ad: 24, pages: 1)
-149. [AD] falcon.useinsider.com                    (clean: 0, ad: 36, pages: 2)
-150. [AD] fc3601d8363c3fe9a1f61aae04f70d8a.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
-151. [AD] fcgi4.gnezdo.ru                          (clean: 10, ad: 324, pages: 3, группа x2)
-152. [AD] fcgi5.gnezdo.ru                          (clean: 10, ad: 324, pages: 2, группа x2)
-153. [AD] fonts.24smi.net                          (clean: 630, ad: 252, pages: 7)
-154. [AD] fp.hybrid.ai                             (clean: 0, ad: 12, pages: 1)
-155. [AD] freyr.futurecdn.net                      (clean: 0, ad: 42, pages: 2)
-156. [AD] fundingchoicesmessages.google.com        (clean: 0, ad: 3439, pages: 8, strong: 1)
-157. [AD] fw.adsafeprotected.com                   (clean: 0, ad: 54, pages: 1)
-158. [AD] geo.yahoo.com                            (clean: 120, ad: 360, pages: 2)
-159. [AD] geoip.xoalt.com                          (clean: 0, ad: 60, pages: 5)
-160. [AD] geolocation.onetrust.com                 (clean: 0, ad: 24, pages: 2)
-161. [AD] googleads.g.doubleclick.net              (clean: 25, ad: 1266, pages: 4, strong: 18, группа x2)
-162. [AD] googleads4.g.doubleclick.net             (clean: 25, ad: 1266, pages: 3, strong: 18, группа x2)
-163. [AD] goya.rutube.ru                           (clean: 0, ad: 192, pages: 2)
-164. [AD] grid.skcrtxr.com                         (clean: 0, ad: 48, pages: 2)
-165. [AD] guce.yahoo.com                           (clean: 48, ad: 104, pages: 2, strong: 2)
-166. [AD] gum.criteo.com                           (clean: 0, ad: 12, pages: 1)
-167. [AD] gurgle.ign.com                           (clean: 96, ad: 48, pages: 2)
-168. [AD] gurgle.zdbb.net                          (clean: 10, ad: 12, pages: 2)
-169. [AD] hawk.techradar.com                       (clean: 162, ad: 30, pages: 2)
-170. [AD] hb-bidder.skcrtxr.com                    (clean: 0, ad: 426, pages: 6, name-hint)
-171. [AD] hb.bumlam.com                            (clean: 0, ad: 456, pages: 9)
-172. [AD] hb.viadata.store                         (clean: 0, ad: 42, pages: 1)
-173. [AD] i.clarity.ms                             (clean: 0, ad: 42, pages: 1)
-174. [AD] i.clean.gg                               (clean: 0, ad: 36, pages: 2)
-175. [AD] ia.box                                   (clean: 10, ad: 12, pages: 2)
-176. [AD] ib.adnxs.com                             (clean: 35, ad: 208, pages: 5, strong: 4)
-177. [AD] ib.mookie1.com                           (clean: 0, ad: 6, pages: 1)
-178. [AD] icu.newsroom.bi                          (clean: 0, ad: 72, pages: 1)
-179. [AD] id.cxense.com                            (clean: 0, ad: 54, pages: 2)
-180. [AD] id.trust-id.ru                           (clean: 0, ad: 36, pages: 2)
-181. [AD] idsync.rlcdn.com                         (clean: 5, ad: 122, pages: 2, strong: 2, name-hint)
-182. [AD] image.sendsay.ru                         (clean: 0, ad: 47, pages: 1)
-183. [AD] imasdk.googleapis.com                    (clean: 5, ad: 167, pages: 3, strong: 2)
-184. [AD] img.smi2.net                             (clean: 35, ad: 42, pages: 1)
-185. [AD] imgserve.rambler.ru                      (clean: 72, ad: 132, pages: 4)
-186. [AD] iz.push4site.com                         (clean: 5, ad: 51, pages: 1)
-187. [AD] jogger.zdbb.net                          (clean: 0, ad: 24, pages: 2)
-188. [AD] jsconfig.adsafeprotected.com             (clean: 0, ad: 54, pages: 1)
-189. [AD] jsn.24smi.net                            (clean: 5, ad: 471, pages: 10)
-190. [AD] kimberlite.io                            (clean: 5, ad: 1728, pages: 3, strong: 33)
-191. [AD] kraken-mdt.rambler.ru                    (clean: 84, ad: 130, pages: 6)
-192. [AD] kraken.ignimgs.com                       (clean: 160, ad: 2916, pages: 2)
-193. [AD] kraken.rambler.ru                        (clean: 603, ad: 1502, pages: 7)
-194. [AD] l.clarity.ms                             (clean: 0, ad: 84, pages: 1)
-195. [AD] la.viadata.store                         (clean: 0, ad: 12, pages: 1)
-196. [AD] log.rutube.ru                            (clean: 30, ad: 36, pages: 2)
-197. [AD] log.strm.yandex.ru                       (clean: 0, ad: 48, pages: 4)
-198. [AD] logx.optimizely.com                      (clean: 0, ad: 24, pages: 2)
-199. [AD] mab.chartbeat.com                        (clean: 0, ad: 48, pages: 4)
-200. [AD] match.adsrvr.org                         (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
-201. [AD] match.new-programmatic.com               (clean: 15, ad: 78, pages: 5, name-hint)
-202. [AD] match.ohmy.bid                           (clean: 0, ad: 36, pages: 1, name-hint)
-203. [AD] match.qtarget.tech                       (clean: 10, ad: 42, pages: 2, name-hint)
-204. [AD] mc.acint.net                             (clean: 5, ad: 6, pages: 1)
-205. [AD] mc.webvisor.org                          (clean: 10, ad: 480, pages: 4)
-206. [AD] mc.yandex.com                            (clean: 795, ad: 39665, pages: 46)
-207. [AD] mc.yandex.ru                             (clean: 110, ad: 4803, pages: 44)
-208. [AD] media-advcycle.imgsmail.ru               (clean: 0, ad: 36, pages: 2)
-209. [AD] media-sensor.mail.ru                     (clean: 60, ad: 30, pages: 2)
-210. [AD] media-stat.mail.ru                       (clean: 120, ad: 78, pages: 2, name-hint)
-211. [AD] mitdmp.whiteboxdigital.ru                (clean: 0, ad: 92, pages: 2, strong: 2)
-212. [AD] ml314.com                                (clean: 5, ad: 46, pages: 1, strong: 1)
-213. [AD] mn-tz.com                                (clean: 0, ad: 489, pages: 1)
-214. [AD] mpx.rambler.ru                           (clean: 274, ad: 480, pages: 2, strong: 12, группа x2)
-215. [AD] mpx2.rambler.ru                          (clean: 274, ad: 480, pages: 2, strong: 12, группа x2)
-216. [AD] ms-cookie-sync.presage.io                (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
-217. [AD] mug.criteo.com                           (clean: 5, ad: 6, pages: 1)
-218. [AD] news.2xclick.ru                          (clean: 0, ad: 27, pages: 1)
-219. [AD] news.2xclock.com                         (clean: 0, ad: 27, pages: 1)
-220. [AD] news.gnezdo.ru                           (clean: 5, ad: 264, pages: 4)
-221. [AD] nr.bidderstack.com                       (clean: 0, ad: 12, pages: 2)
-222. [AD] openfpcdn.io                             (clean: 0, ad: 108, pages: 4)
-223. [AD] openrtb.skcrtxr.com                      (clean: 0, ad: 550, pages: 2, strong: 10, name-hint)
-224. [AD] optiyield-data.opti-digital.com          (clean: 0, ad: 24, pages: 2)
-225. [AD] otclick-adv.ru                           (clean: 0, ad: 662, pages: 4, strong: 5, name-hint)
-226. [AD] pagead2.googlesyndication.com            (clean: 60, ad: 11138, pages: 15, strong: 172)
-227. [AD] partners.tremorhub.com                   (clean: 5, ad: 46, pages: 1, strong: 1)
-228. [AD] pb.adriver.ru                            (clean: 0, ad: 1722, pages: 11)
-229. [AD] pbs.alfasense.com                        (clean: 0, ad: 348, pages: 3)
-230. [AD] pbs.optidigital.com                      (clean: 0, ad: 24, pages: 2)
-231. [AD] phoenix.prod.ateam.acast.cloud           (clean: 0, ad: 18, pages: 1)
-232. [AD] pic.rtbcdn.ru                            (clean: 5, ad: 12, pages: 2)
-233. [AD] ping.chartbeat.net                       (clean: 15, ad: 48, pages: 7)
-234. [AD] pixel.rambler.ru                         (clean: 97, ad: 30, pages: 2, name-hint)
-235. [AD] pixel.rubiconproject.com                 (clean: 5, ad: 122, pages: 2, strong: 2, name-hint)
-236. [AD] pixelfnt-us.dsp-api.moloco.com           (clean: 5, ad: 36, pages: 1, name-hint)
-237. [AD] pl.viadata.store                         (clean: 0, ad: 12, pages: 1)
-238. [AD] pl2.skwstat.ru                           (clean: 0, ad: 12, pages: 1)
-239. [AD] player.mt.ru                             (clean: 0, ad: 12, pages: 1)
-240. [AD] pr.smi2.net                              (clean: 10, ad: 12, pages: 1)
-241. [AD] prebid.admatic.com.tr                    (clean: 0, ad: 122, pages: 2, strong: 2, name-hint)
-242. [AD] privacy-cs.mail.ru                       (clean: 132, ad: 2397, pages: 27)
-243. [AD] profile.ad-tech.ru                       (clean: 0, ad: 78, pages: 4, name-hint)
-244. [AD] ps.eyeota.net                            (clean: 5, ad: 6, pages: 1)
-245. [AD] px.adhigh.net                            (clean: 155, ad: 1528, pages: 9, strong: 31, name-hint)
-246. [AD] px.arcspire.io                           (clean: 0, ad: 42, pages: 2, name-hint)
-247. [AD] px2.admon.pro                            (clean: 0, ad: 54, pages: 2, name-hint)
-248. [AD] quotiq.ru                                (clean: 135, ad: 264, pages: 3)
-249. [AD] r.mtdata.ru                              (clean: 10, ad: 12, pages: 1)
-250. [AD] r.skimresources.com                      (clean: 0, ad: 12, pages: 1)
-251. [AD] r.ussp.io                                (clean: 0, ad: 348, pages: 3)
-252. [AD] r.utraff.com                             (clean: 5, ad: 6, pages: 1)
-253. [AD] rap.skcrtxr.com                          (clean: 0, ad: 60, pages: 2)
-254. [AD] rb.infox.ru                              (clean: 817, ad: 450, pages: 5, strong: 3)
-255. [AD] rb.infox.sg                              (clean: 0, ad: 27, pages: 1)
-256. [AD] rcm-tr.rambler.ru                        (clean: 60, ad: 90, pages: 3)
-257. [AD] rcm.rambler.ru                           (clean: 24, ad: 6, pages: 1)
-258. [AD] recaptcha.net                            (clean: 0, ad: 12, pages: 1)
-259. [AD] redirect-frontend.weborama-tech.ru       (clean: 0, ad: 12, pages: 2)
-260. [AD] region1.analytics.google.com             (clean: 0, ad: 72, pages: 1, name-hint)
-261. [AD] region1.google-analytics.com             (clean: 0, ad: 1078, pages: 8, strong: 4, name-hint)
-262. [AD] relap.io                                 (clean: 0, ad: 42, pages: 1)
-263. [AD] req.pm2.punchmedia.ru                    (clean: 0, ad: 6, pages: 1)
-264. [AD] rm-script.dotmetrics.net                 (clean: 10, ad: 24, pages: 4)
-265. [AD] rr2---sn-1giz7n7l.c.2mdn.net             (clean: 10, ad: 72, pages: 1)
-266. [AD] rs.mail.ru                               (clean: 317, ad: 846, pages: 3, strong: 21)
-267. [AD] rtb-eu-warsaw.intent.ai                  (clean: 0, ad: 42, pages: 2, name-hint)
-268. [AD] rtb-msk.viadata.store                    (clean: 0, ad: 134, pages: 1, strong: 2, name-hint)
-269. [AD] rtb.dynotech.io                          (clean: 0, ad: 42, pages: 2, name-hint)
-270. [AD] rtb.moe.video                            (clean: 260, ad: 342, pages: 2, name-hint)
-271. [AD] ru.viadata.store                         (clean: 0, ad: 54, pages: 1)
-272. [AD] rucdn.viadata.store                      (clean: 0, ad: 27, pages: 1)
-273. [AD] rumcdn.geoedge.be                        (clean: 0, ad: 108, pages: 2)
-274. [AD] rutarget.ru                              (clean: 5, ad: 6, pages: 1)
-275. [AD] s-cs.rmp.rakuten.com                     (clean: 0, ad: 12, pages: 2)
-276. [AD] s.uuidksinc.net                          (clean: 0, ad: 6, pages: 1)
-277. [AD] s0.2mdn.net                              (clean: 305, ad: 1470, pages: 4, strong: 6)
-278. [AD] s3.wi-fi.ru                              (clean: 0, ad: 264, pages: 2, strong: 3)
-279. [AD] s3sc.perfluence.net                      (clean: 10, ad: 12, pages: 1)
-280. [AD] sb.scorecardresearch.com                 (clean: 5, ad: 262, pages: 4, strong: 4)
-281. [AD] scripts.clarity.ms                       (clean: 0, ad: 54, pages: 2)
-282. [AD] scripts.opti-digital.com                 (clean: 0, ad: 108, pages: 2)
-283. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 174, pages: 5)
-284. [AD] sdk.mrf.io                               (clean: 0, ad: 81, pages: 2)
-285. [AD] search-api.fie.futurecdn.net             (clean: 15, ad: 6, pages: 1)
-286. [AD] securepubads.g.doubleclick.net           (clean: 140, ad: 5260, pages: 13, strong: 86)
-287. [AD] sendsay.ru                               (clean: 0, ad: 12, pages: 1)
-288. [AD] sentry.rarus.ru                          (clean: 0, ad: 12, pages: 1)
-289. [AD] service.pravo.ru                         (clean: 12, ad: 46, pages: 1, strong: 1)
-290. [AD] sf16-website-login.neutral.ttwstatic.com (clean: 0, ad: 120, pages: 2)
-291. [AD] shopnetic.com                            (clean: 0, ad: 92, pages: 2, strong: 2)
-292. [AD] slice.vanilla.futurecdn.net              (clean: 0, ad: 54, pages: 2)
-293. [AD] smi2.net                                 (clean: 40, ad: 60, pages: 10)
-294. [AD] sommelier.futurehybrid.tech              (clean: 0, ad: 24, pages: 2)
-295. [AD] sp.linkssp.ru                            (clean: 80, ad: 516, pages: 3, name-hint)
-296. [AD] sp.ohmy.bid                              (clean: 0, ad: 348, pages: 5)
-297. [AD] sp.q-bid.ru                              (clean: 20, ad: 54, pages: 2, name-hint)
-298. [AD] sr.studiostack.com                       (clean: 0, ad: 27, pages: 1)
-299. [AD] ssl.p.jwpcdn.com                         (clean: 0, ad: 48, pages: 1)
-300. [AD] ssp-rtb.sape.ru                          (clean: 0, ad: 1626, pages: 10, name-hint)
-301. [AD] ssp.24smi.net                            (clean: 0, ad: 42, pages: 1, name-hint)
-302. [AD] ssp.adriver.ru                           (clean: 10, ad: 318, pages: 6, name-hint)
-303. [AD] ssp.al-adtech.com                        (clean: 60, ad: 3628, pages: 9, strong: 43, name-hint)
-304. [AD] ssp.bidvol.com                           (clean: 0, ad: 1434, pages: 4, strong: 27, name-hint)
-305. [AD] ssp.hbrd.io                              (clean: 40, ad: 90, pages: 1, name-hint)
-306. [AD] ssp.hybrid.ai                            (clean: 0, ad: 1458, pages: 6, name-hint)
-307. [AD] ssp.rambler.ru                           (clean: 190, ad: 1536, pages: 4, группа x2, name-hint)
-308. [AD] ssp.rutube.ru                            (clean: 5, ad: 36, pages: 1, name-hint)
-309. [AD] ssp01.rambler.ru                         (clean: 190, ad: 1536, pages: 4, группа x2, name-hint)
-310. [AD] sst-irec.r-99.com                        (clean: 0, ad: 168, pages: 1)
-311. [AD] st.hbrd.io                               (clean: 0, ad: 94, pages: 1, strong: 1)
-312. [AD] st.top100.ru                             (clean: 0, ad: 1038, pages: 8)
-313. [AD] stat.media                               (clean: 0, ad: 84, pages: 2, name-hint)
-314. [AD] stat.tech.euronews.com                   (clean: 48, ad: 48, pages: 2, name-hint)
-315. [AD] static.a.mts.ru                          (clean: 0, ad: 54, pages: 2)
-316. [AD] static.adsafeprotected.com               (clean: 0, ad: 150, pages: 3)
-317. [AD] static.advcake.ru                        (clean: 5, ad: 6, pages: 1)
-318. [AD] static.bumlam.com                        (clean: 0, ad: 162, pages: 5)
-319. [AD] static.chartbeat.com                     (clean: 0, ad: 270, pages: 6)
-320. [AD] static.criteo.net                        (clean: 0, ad: 289, pages: 5, strong: 4)
-321. [AD] static.kimberlite.io                     (clean: 0, ad: 108, pages: 2)
-322. [AD] static.smi2.net                          (clean: 595, ad: 1002, pages: 8, группа x9)
-323. [AD] static.terratraf.com                     (clean: 0, ad: 144, pages: 5)
-324. [AD] static1.smi2.net                         (clean: 595, ad: 1002, pages: 2, группа x9)
-325. [AD] static2.smi2.net                         (clean: 595, ad: 1002, pages: 6, группа x9)
-326. [AD] static3.smi2.net                         (clean: 595, ad: 1002, pages: 5, группа x9)
-327. [AD] static4.smi2.net                         (clean: 595, ad: 1002, pages: 7, группа x9)
-328. [AD] static5.smi2.net                         (clean: 595, ad: 1002, pages: 5, группа x9)
-329. [AD] static6.smi2.net                         (clean: 595, ad: 1002, pages: 4, группа x9)
-330. [AD] static7.smi2.net                         (clean: 595, ad: 1002, pages: 6, группа x9)
-331. [AD] static8.smi2.net                         (clean: 595, ad: 1002, pages: 3, группа x9)
-332. [AD] statika.mpsuadv.ru                       (clean: 0, ad: 93, pages: 1)
-333. [AD] statistics.adsource.pro                  (clean: 10, ad: 12, pages: 2)
-334. [AD] statistics.orbitatech.io                 (clean: 0, ad: 6, pages: 1)
-335. [AD] statmedia.ru                             (clean: 30, ad: 288, pages: 4)
-336. [AD] stats.g.doubleclick.net                  (clean: 0, ad: 282, pages: 6, name-hint)
-337. [AD] stats.vk-portal.net                      (clean: 0, ad: 150, pages: 4, name-hint)
-338. [AD] stg.html-load.com                        (clean: 0, ad: 42, pages: 2)
-339. [AD] sync.1dmp.io                             (clean: 10, ad: 214, pages: 4, strong: 4, name-hint)
-340. [AD] sync.bumlam.com                          (clean: 0, ad: 135, pages: 5, name-hint)
-341. [AD] sync.crwdcntrl.net                       (clean: 5, ad: 36, pages: 1, name-hint)
-342. [AD] sync.dmp.otm-r.com                       (clean: 5, ad: 48, pages: 3, name-hint)
-343. [AD] sync.gonet-ads.com                       (clean: 0, ad: 42, pages: 2, name-hint)
-344. [AD] sync.inmobi.com                          (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
-345. [AD] sync.programmatica.com                   (clean: 0, ad: 66, pages: 1, name-hint)
-346. [AD] sync.rambler.ru                          (clean: 297, ad: 174, pages: 11, name-hint)
-347. [AD] sync.teads.tv                            (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
-348. [AD] sync1.adlook.online                      (clean: 0, ad: 42, pages: 2, name-hint)
-349. [AD] sys.punchmedia.ru                        (clean: 0, ad: 88, pages: 2, strong: 1)
-350. [AD] t.adx.opera.com                          (clean: 0, ad: 42, pages: 2, name-hint)
-351. [AD] t.rtbwave.com                            (clean: 0, ad: 12, pages: 2)
-352. [AD] tag.digitaltarget.ru                     (clean: 0, ad: 54, pages: 2)
-353. [AD] tag.yieldoptimizer.com                   (clean: 5, ad: 46, pages: 1, strong: 1)
-354. [AD] target.smi2.net                          (clean: 0, ad: 33, pages: 1)
-355. [AD] tg.viadata.store                         (clean: 0, ad: 24, pages: 1)
-356. [AD] thumborcdn.acast.com                     (clean: 10, ad: 12, pages: 1)
-357. [AD] tms.dmp.wi-fi.ru                         (clean: 10, ad: 54, pages: 4, name-hint)
-358. [AD] tns-counter.ru                           (clean: 20, ad: 816, pages: 8, name-hint)
-359. [AD] tool.festivehorse.com                    (clean: 0, ad: 42, pages: 2)
-360. [AD] top-fwz1.mail.ru                         (clean: 566, ad: 3381, pages: 30)
-361. [AD] tpc.googlesyndication.com                (clean: 100, ad: 4334, pages: 4, strong: 64)
-362. [AD] traffaret.com                            (clean: 0, ad: 24, pages: 1)
-363. [AD] trk.olnl.net                             (clean: 0, ad: 72, pages: 1)
-364. [AD] tru.am                                   (clean: 0, ad: 108, pages: 2)
-365. [AD] tube.buzzoola.com                        (clean: 0, ad: 66, pages: 3)
-366. [AD] uaas.yandex.ru                           (clean: 0, ad: 72, pages: 4)
-367. [AD] uid.bumlam.com                           (clean: 0, ad: 60, pages: 5)
-368. [AD] uid.ssp.bidvol.com                       (clean: 5, ad: 36, pages: 1, name-hint)
-369. [AD] uk-script.dotmetrics.net                 (clean: 10, ad: 294, pages: 4)
-370. [AD] ups.analytics.yahoo.com                  (clean: 5, ad: 66, pages: 1, name-hint)
-371. [AD] us-u.openx.net                           (clean: 10, ad: 138, pages: 3, strong: 3)
-372. [AD] us.adserv-us.com                         (clean: 5, ad: 36, pages: 1, name-hint)
-373. [AD] vanilla.futurecdn.net                    (clean: 335, ad: 429, pages: 2)
-374. [AD] viadata.store                            (clean: 0, ad: 27, pages: 1)
-375. [AD] vp.rambler.ru                            (clean: 0, ad: 108, pages: 2)
-376. [AD] widget-api.uxfeedback.ru                 (clean: 0, ad: 18, pages: 1)
-377. [AD] widget.sparrow.ru                        (clean: 40, ad: 783, pages: 5)
-378. [AD] widget.svk-native.ru                     (clean: 55, ad: 66, pages: 4)
-379. [AD] worker.sttsmntz.ru                       (clean: 0, ad: 120, pages: 2)
-380. [AD] www.acint.net                            (clean: 30, ad: 54, pages: 3)
-381. [AD] www.clarity.ms                           (clean: 0, ad: 54, pages: 2)
-382. [AD] www.google-analytics.com                 (clean: 0, ad: 720, pages: 6, name-hint)
-383. [AD] www.googletagmanager.com                 (clean: 5, ad: 1053, pages: 22)
-384. [AD] www.googletagservices.com                (clean: 0, ad: 21, pages: 1)
-385. [AD] www.tns-counter.ru                       (clean: 210, ad: 2349, pages: 15, name-hint)
-386. [AD] www.travelpayouts.com                    (clean: 0, ad: 24, pages: 2)
-387. [AD] www.zeropartyforms.com                   (clean: 0, ad: 54, pages: 2)
-388. [AD] x01.aidata.io                            (clean: 20, ad: 144, pages: 6)
-389. [AD] yandex-dmp-sync.rutarget.ru              (clean: 0, ad: 42, pages: 2, name-hint)
-390. [AD] yandex-sync.rutarget.ru                  (clean: 0, ad: 42, pages: 2, name-hint)
-391. [AD] yhb.p.otm-r.com                          (clean: 0, ad: 312, pages: 4)
-392. [AD] zdbb.net                                 (clean: 0, ad: 72, pages: 2)
+01. [AD] 1010--e42853f5-4a48-41cd-bdba-8be8aa12d1dd.stbid.ru (clean: 5, ad: 36, pages: 1)
+02. [AD] 1033--mmjjotayymy1ztvmodeyoa.stbid.ru    (clean: 5, ad: 6, pages: 1)
+03. [AD] 1033--mmjjotq1ztq0mtq2nju5yg.stbid.ru    (clean: 0, ad: 6, pages: 1)
+04. [AD] 1070--54b88e8f-2516-47b9-a2e9-2fcaf6cdde18.stbid.ru (clean: 0, ad: 12, pages: 1)
+05. [AD] 1070--58857b07-756e-424d-8f30-dcec624c2f4f.stbid.ru (clean: 0, ad: 12, pages: 1)
+06. [AD] 1070--90339eda-1bd5-44c8-9d0d-a4eb2f4c6362.stbid.ru (clean: 0, ad: 12, pages: 1)
+07. [AD] 10d61524c8e23dd758b7486436235ef8.safeframe.googlesyndication.com (clean: 0, ad: 24, pages: 1)
+08. [AD] 16014d82e70069b0f7d18818a453cdcd.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
+09. [AD] 1772762971793508319583.cm.a.mts.ru       (clean: 10, ad: 42, pages: 1, группа x2, name-hint)
+10. [AD] 239680f95f2ad6523583cc15f3984f8a.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
+11. [AD] 33across-match.dotomi.com                (clean: 5, ad: 128, pages: 1, strong: 2, name-hint)
+12. [AD] 356fcec2595b93b1a1b6ad9198bda3db.safeframe.googlesyndication.com (clean: 0, ad: 60, pages: 1)
+13. [AD] 4253270499fba09542917423b1b2475f.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
+14. [AD] 4c199384a7e160df0f971a0bf5edfd5f.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
+15. [AD] 6eb030f7ea888918e559cbc3a9aeab27.safeframe.googlesyndication.com (clean: 0, ad: 60, pages: 1)
+16. [AD] 808dc16364bca1248c237a3b8d871766.safeframe.googlesyndication.com (clean: 0, ad: 12, pages: 1)
+17. [AD] 879712fa454106886a4568f689bc621a.safeframe.googlesyndication.com (clean: 0, ad: 108, pages: 1)
+18. [AD] 8944797301793508300063.cm.a.mts.ru       (clean: 10, ad: 42, pages: 1, группа x2, name-hint)
+19. [AD] 932211.log.rutube.ru                     (clean: 0, ad: 12, pages: 1, группа x2)
+20. [AD] 942211.log.rutube.ru                     (clean: 0, ad: 12, pages: 1, группа x2)
+21. [AD] a.adiam.tech                             (clean: 10, ad: 48, pages: 3)
+22. [AD] a.adspector.io                           (clean: 10, ad: 12, pages: 2)
+23. [AD] a.giraff.io                              (clean: 5, ad: 381, pages: 3, strong: 6)
+24. [AD] a.lotus-dsp.ru                           (clean: 10, ad: 42, pages: 2, name-hint)
+25. [AD] a.ria.ru                                 (clean: 87, ad: 132, pages: 2)
+26. [AD] a.ussp.io                                (clean: 15, ad: 54, pages: 7)
+27. [AD] a.utraff.com                             (clean: 10, ad: 12, pages: 2)
+28. [AD] a.videohead.tech                         (clean: 5, ad: 6, pages: 1)
+29. [AD] a4621041136.cdn.optimizely.com           (clean: 0, ad: 24, pages: 2)
+30. [AD] aa.agkn.com                              (clean: 0, ad: 12, pages: 1)
+31. [AD] aax-eu.amazon-adsystem.com               (clean: 10, ad: 92, pages: 1, strong: 2)
+32. [AD] abt.s3.yandex.net                        (clean: 0, ad: 120, pages: 5)
+33. [AD] acdn.adnxs.com                           (clean: 0, ad: 12, pages: 1)
+34. [AD] acint.net                                (clean: 30, ad: 142, pages: 7)
+35. [AD] ad-delivery.net                          (clean: 0, ad: 42, pages: 1, name-hint)
+36. [AD] ad.360yield.com                          (clean: 0, ad: 134, pages: 1, strong: 2, name-hint)
+37. [AD] ad.adriver.ru                            (clean: 55, ad: 2928, pages: 11, name-hint)
+38. [AD] ad.adsrvx-targeting.com                  (clean: 5, ad: 36, pages: 1, name-hint)
+39. [AD] ad.mail.ru                               (clean: 281, ad: 10574, pages: 23, strong: 155, name-hint)
+40. [AD] ad.turn.com                              (clean: 30, ad: 376, pages: 1, strong: 4, name-hint)
+41. [AD] ad1.mpsuadv.ru                           (clean: 0, ad: 318, pages: 1, name-hint)
+42. [AD] adfox-hb-bidder.rutarget.ru              (clean: 0, ad: 156, pages: 1, name-hint)
+43. [AD] adobe.adhaven.com                        (clean: 5, ad: 12, pages: 2)
+44. [AD] ads-media.wildberries.ru                 (clean: 5, ad: 36, pages: 1, name-hint)
+45. [AD] ads.adretriever.com                      (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+46. [AD] ads.betweendigital.com                   (clean: 0, ad: 2160, pages: 11, strong: 24, name-hint)
+47. [AD] ads.gpm-ssp.ru                           (clean: 5, ad: 126, pages: 3, name-hint)
+48. [AD] ads.pubmatic.com                         (clean: 35, ad: 887, pages: 1, strong: 17, name-hint)
+49. [AD] ads.servebom.com                         (clean: 0, ad: 42, pages: 1, name-hint)
+50. [AD] ads.tds.bid                              (clean: 0, ad: 36, pages: 1, name-hint)
+51. [AD] ads.yieldmo.com                          (clean: 20, ad: 590, pages: 1, strong: 11, name-hint)
+52. [AD] adserver.gear-hub.ru                     (clean: 10, ad: 122, pages: 2, strong: 2, name-hint)
+53. [AD] adx.adform.net                           (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+54. [AD] aflt.market.yandex.ru                    (clean: 0, ad: 78, pages: 2)
+55. [AD] an.yandex.ru                             (clean: 30, ad: 277, pages: 11)
+56. [AD] analytics-455007615.collector.yahoo.net  (clean: 0, ad: 114, pages: 1, name-hint)
+57. [AD] analytics.google.com                     (clean: 0, ad: 282, pages: 5, name-hint)
+58. [AD] analytics.mediadash.ru                   (clean: 0, ad: 420, pages: 2, name-hint)
+59. [AD] analytics.optidigital.com                (clean: 0, ad: 114, pages: 2, name-hint)
+60. [AD] ap.lijit.com                             (clean: 0, ad: 52, pages: 1, strong: 1)
+61. [AD] api-ssp.spot.im                          (clean: 10, ad: 122, pages: 1, strong: 2, name-hint)
+62. [AD] api.a.mts.ru                             (clean: 0, ad: 36, pages: 2)
+63. [AD] api.cmp.inmobi.com                       (clean: 0, ad: 12, pages: 1)
+64. [AD] api.mindbox.ru                           (clean: 0, ad: 69, pages: 1)
+65. [AD] api.onesignal.com                        (clean: 0, ad: 90, pages: 2)
+66. [AD] api.taboola.com                          (clean: 0, ad: 12, pages: 1)
+67. [AD] api.vigo.tech                            (clean: 0, ad: 618, pages: 1)
+68. [AD] api.vp.rambler.ru                        (clean: 0, ad: 96, pages: 1)
+69. [AD] asr.openssp.ru                           (clean: 0, ad: 66, pages: 1, name-hint)
+70. [AD] b.trueanthem.com                         (clean: 0, ad: 52, pages: 1, strong: 1)
+71. [AD] b1sync.outbrain.com                      (clean: 30, ad: 426, pages: 1, strong: 9)
+72. [AD] banners.adfox.ru                         (clean: 130, ad: 1746, pages: 4)
+73. [AD] bats.video.yahoo.com                     (clean: 324, ad: 162, pages: 1)
+74. [AD] beacon.lynx.cognitivlabs.com             (clean: 0, ad: 90, pages: 1, strong: 1, name-hint)
+75. [AD] beacon.tru.am                            (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+76. [AD] beacon.viafoura.io                       (clean: 0, ad: 134, pages: 2, strong: 2, name-hint)
+77. [AD] bid.adx.com.ru                           (clean: 0, ad: 318, pages: 3, name-hint)
+78. [AD] bid.sspnet.tech                          (clean: 5, ad: 48, pages: 2, name-hint)
+79. [AD] bobid-ip.hybrid.ai                       (clean: 0, ad: 12, pages: 1)
+80. [AD] bordeaux.futurecdn.net                   (clean: 0, ad: 27, pages: 1)
+81. [AD] bs.serving-sys.ru                        (clean: 5, ad: 226, pages: 4, strong: 4)
+82. [AD] buy-eu.piano.io                          (clean: 0, ad: 24, pages: 2)
+83. [AD] c.amazon-adsystem.com                    (clean: 0, ad: 66, pages: 2)
+84. [AD] c.aps.amazon-adsystem.com                (clean: 0, ad: 21, pages: 1)
+85. [AD] c.bing.com                               (clean: 5, ad: 6, pages: 1)
+86. [AD] c1.adform.net                            (clean: 20, ad: 216, pages: 1, strong: 4)
+87. [AD] c2-eu.piano.io                           (clean: 0, ad: 24, pages: 2)
+88. [AD] c21lg-d.media.net                        (clean: 0, ad: 6, pages: 1)
+89. [AD] c2shb-oao.ssp.yahoo.com                  (clean: 168, ad: 90, pages: 1, name-hint)
+90. [AD] cache.pythia.futureplc.com               (clean: 0, ad: 36, pages: 2)
+91. [AD] capi.connatix.com                        (clean: 5, ad: 46, pages: 1, strong: 1)
+92. [AD] catsnetwork.ru                           (clean: 0, ad: 228, pages: 3)
+93. [AD] cdn-c.skcrtxr.com                        (clean: 0, ad: 859, pages: 3, strong: 10)
+94. [AD] cdn-irec.r-99.com                        (clean: 410, ad: 492, pages: 2)
+95. [AD] cdn-rtb.sape.ru                          (clean: 0, ad: 105, pages: 4, name-hint)
+96. [AD] cdn-v.skcrtxr.com                        (clean: 0, ad: 1092, pages: 3, strong: 21)
+97. [AD] cdn.acast.com                            (clean: 30, ad: 24, pages: 1)
+98. [AD] cdn.adfinity.pro                         (clean: 0, ad: 27, pages: 1)
+99. [AD] cdn.advertronic.io                       (clean: 0, ad: 198, pages: 2)
+100. [AD] cdn.al-adtech.com                        (clean: 5, ad: 105, pages: 4, name-hint)
+101. [AD] cdn.confiant-integrations.net            (clean: 0, ad: 376, pages: 2, strong: 4)
+102. [AD] cdn.cookielaw.org                        (clean: 0, ad: 84, pages: 2)
+103. [AD] cdn.cxense.com                           (clean: 0, ad: 108, pages: 2)
+104. [AD] cdn.giraff.media                         (clean: 0, ad: 48, pages: 1)
+105. [AD] cdn.id5-sync.com                         (clean: 0, ad: 57, pages: 1, name-hint)
+106. [AD] cdn.mos.cms.futurecdn.net                (clean: 155, ad: 186, pages: 2)
+107. [AD] cdn.onesignal.com                        (clean: 0, ad: 108, pages: 2)
+108. [AD] cdn.optimizely.com                       (clean: 0, ad: 78, pages: 2)
+109. [AD] cdn.p-n.io                               (clean: 0, ad: 39, pages: 1)
+110. [AD] cdn.privacy-mgmt.com                     (clean: 30, ad: 432, pages: 2)
+111. [AD] cdn.punchmedia.ru                        (clean: 0, ad: 67, pages: 1, strong: 1)
+112. [AD] cdn.skcrtxr.com                          (clean: 45, ad: 621, pages: 4, strong: 9)
+113. [AD] cdn.static.zdbb.net                      (clean: 10, ad: 12, pages: 2)
+114. [AD] cdn.taboola.com                          (clean: 0, ad: 85, pages: 1, strong: 1)
+115. [AD] cdn.tinypass.com                         (clean: 0, ad: 42, pages: 2)
+116. [AD] cdn.trust-id.ru                          (clean: 5, ad: 48, pages: 3)
+117. [AD] cdn.vigo.tech                            (clean: 0, ad: 42, pages: 1)
+118. [AD] cdn.viqeo.tv                             (clean: 5, ad: 222, pages: 3)
+119. [AD] cdn.ziffstatic.com                       (clean: 50, ad: 425, pages: 2, strong: 2)
+120. [AD] cdn1.moe.video                           (clean: 0, ad: 2511, pages: 3)
+121. [AD] cdnn21.imgria.ru                         (clean: 340, ad: 3208, pages: 2, strong: 4)
+122. [AD] ce.lijit.com                             (clean: 40, ad: 268, pages: 1, strong: 5)
+123. [AD] ced-ns.sascdn.com                        (clean: 10, ad: 12, pages: 1)
+124. [AD] census-web.scorecardresearch.com         (clean: 0, ad: 12, pages: 1)
+125. [AD] champagne.futurecdn.net                  (clean: 0, ad: 27, pages: 1)
+126. [AD] chap.fabulousbridge.com                  (clean: 0, ad: 21, pages: 1)
+127. [AD] chat.mirtesen.ru                         (clean: 0, ad: 66, pages: 1)
+128. [AD] client.aps.amazon-adsystem.com           (clean: 0, ad: 39, pages: 2)
+129. [AD] cm.a.mts.ru                              (clean: 0, ad: 114, pages: 2, name-hint)
+130. [AD] cm.adform.net                            (clean: 10, ad: 162, pages: 1, strong: 1, name-hint)
+131. [AD] cm.g.doubleclick.net                     (clean: 205, ad: 3030, pages: 6, strong: 60, name-hint)
+132. [AD] cm.pxltag.com                            (clean: 15, ad: 138, pages: 2, name-hint)
+133. [AD] cm.ria.ru                                (clean: 24, ad: 102, pages: 2, name-hint)
+134. [AD] cm.tns-counter.ru                        (clean: 5, ad: 66, pages: 1, name-hint)
+135. [AD] cmp.inmobi.com                           (clean: 0, ad: 189, pages: 1)
+136. [AD] cmr.bidderstack.com                      (clean: 25, ad: 30, pages: 5)
+137. [AD] code.giraff.io                           (clean: 0, ad: 132, pages: 2)
+138. [AD] comcluster.cxense.com                    (clean: 0, ad: 12, pages: 2)
+139. [AD] config.aps.amazon-adsystem.com           (clean: 0, ad: 81, pages: 3)
+140. [AD] consent.cmp.oath.com                     (clean: 0, ad: 21, pages: 1)
+141. [AD] content.adriver.ru                       (clean: 0, ad: 438, pages: 6)
+142. [AD] contextual.media.net                     (clean: 0, ad: 58, pages: 1, strong: 1)
+143. [AD] core.iprom.net                           (clean: 0, ad: 372, pages: 1, strong: 7)
+144. [AD] counter.yadro.ru                         (clean: 210, ad: 1614, pages: 36, name-hint)
+145. [AD] cp.mt.ru                                 (clean: 0, ad: 42, pages: 2)
+146. [AD] cpm.vistarsagency.com                    (clean: 0, ad: 156, pages: 1, strong: 3)
+147. [AD] cr-frontend.weborama-tech.ru             (clean: 0, ad: 156, pages: 3, strong: 3)
+148. [AD] creativecdn.com                          (clean: 45, ad: 210, pages: 1, strong: 3)
+149. [AD] cs-rtb.minutemedia-prebid.com            (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+150. [AD] cs-server-s2s.yellowblue.io              (clean: 0, ad: 52, pages: 1, strong: 1)
+151. [AD] cs.alfasense.com                         (clean: 20, ad: 91, pages: 1, strong: 1)
+152. [AD] cs.ifedata.ru                            (clean: 5, ad: 6, pages: 1)
+153. [AD] cs.ingage.tech                           (clean: 5, ad: 226, pages: 1, strong: 4)
+154. [AD] cs.iqzone.com                            (clean: 5, ad: 46, pages: 1, strong: 1)
+155. [AD] cs.krushmedia.com                        (clean: 10, ad: 208, pages: 1, strong: 4)
+156. [AD] cs.loudecho.ai                           (clean: 0, ad: 84, pages: 1)
+157. [AD] cs.media.net                             (clean: 0, ad: 312, pages: 1, strong: 6)
+158. [AD] cs.minutemedia-prebid.com                (clean: 0, ad: 823, pages: 1, strong: 13, name-hint)
+159. [AD] cs.openwebmp.com                         (clean: 110, ad: 372, pages: 1, strong: 6)
+160. [AD] cs.rambler.ru                            (clean: 588, ad: 1922, pages: 3)
+161. [AD] cs.seedtag.com                           (clean: 10, ad: 92, pages: 1, strong: 2)
+162. [AD] cs.ssp.cadent.com                        (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+163. [AD] cs.yellowblue.io                         (clean: 0, ad: 1071, pages: 1, strong: 9)
+164. [AD] cstatic-ru-cv.weborama-tech.ru           (clean: 10, ad: 12, pages: 2)
+165. [AD] csync.copper6.com                        (clean: 20, ad: 184, pages: 1, strong: 4)
+166. [AD] csync.loopme.me                          (clean: 10, ad: 64, pages: 2, strong: 1)
+167. [AD] csync.skcrtxr.com                        (clean: 0, ad: 468, pages: 3, strong: 9)
+168. [AD] csync.smartadserver.com                  (clean: 0, ad: 348, pages: 1, strong: 6)
+169. [AD] csync.smilewanted.com                    (clean: 0, ad: 46, pages: 1, strong: 1)
+170. [AD] ctx.weborama-tech.ru                     (clean: 0, ad: 24, pages: 2)
+171. [AD] d5p.de17a.com                            (clean: 0, ad: 420, pages: 1, strong: 7)
+172. [AD] data.24smi.net                           (clean: 0, ad: 552, pages: 9)
+173. [AD] data.giraff.io                           (clean: 0, ad: 81, pages: 2)
+174. [AD] data.punchmedia.ru                       (clean: 0, ad: 27, pages: 1)
+175. [AD] dc.xoalt.com                             (clean: 15, ad: 18, pages: 3)
+176. [AD] de.tynt.com                              (clean: 10, ad: 12, pages: 1)
+177. [AD] dis.criteo.com                           (clean: 15, ad: 138, pages: 2, strong: 3)
+178. [AD] display.bidder.taboola.com               (clean: 0, ad: 238, pages: 1, strong: 4, name-hint)
+179. [AD] dm-eu.hybrid.ai                          (clean: 10, ad: 12, pages: 2)
+180. [AD] dm.hybrid.ai                             (clean: 25, ad: 30, pages: 3)
+181. [AD] dmg.digitaltarget.ru                     (clean: 35, ad: 48, pages: 7)
+182. [AD] dmp.mpsuadv.ru                           (clean: 10, ad: 108, pages: 2, name-hint)
+183. [AD] dmp.sbermarketing.ru                     (clean: 0, ad: 90, pages: 3, name-hint)
+184. [AD] dp2.33across.com                         (clean: 5, ad: 12, pages: 2)
+185. [AD] dpm.demdex.net                           (clean: 40, ad: 286, pages: 3, strong: 4)
+186. [AD] dsp-cookie.adfarm1.adition.com           (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+187. [AD] dsp.360yield.com                         (clean: 15, ad: 168, pages: 1, strong: 3, name-hint)
+188. [AD] dsp.adkernel.com                         (clean: 5, ad: 88, pages: 1, strong: 1, name-hint)
+189. [AD] dsp.mpartner.digital                     (clean: 5, ad: 36, pages: 1, name-hint)
+190. [AD] dsum-sec.casalemedia.com                 (clean: 40, ad: 208, pages: 2, strong: 4)
+191. [AD] eb2.3lift.com                            (clean: 85, ad: 818, pages: 1, strong: 17)
+192. [AD] embed.acast.com                          (clean: 5, ad: 48, pages: 1)
+193. [AD] embeds.rambler.ru                        (clean: 89, ad: 240, pages: 2)
+194. [AD] emrldco.com                              (clean: 0, ad: 744, pages: 1)
+195. [AD] ep1.adtrafficquality.google              (clean: 45, ad: 702, pages: 4, strong: 6, группа x2)
+196. [AD] ep2.adtrafficquality.google              (clean: 45, ad: 702, pages: 4, strong: 6, группа x2)
+197. [AD] et-c-ash.33across.com                    (clean: 15, ad: 198, pages: 1, strong: 4)
+198. [AD] euronewsfr.api.useinsider.com            (clean: 0, ad: 54, pages: 2)
+199. [AD] euronewsgroup.demdex.net                 (clean: 0, ad: 24, pages: 2)
+200. [AD] eus.rubiconproject.com                   (clean: 130, ad: 348, pages: 1, strong: 3)
+201. [AD] euw-ice.360yield.com                     (clean: 5, ad: 6, pages: 1)
+202. [AD] ev.adriver.ru                            (clean: 30, ad: 216, pages: 3)
+203. [AD] events.adretriever.com                   (clean: 0, ad: 12, pages: 1)
+204. [AD] events.myweb3id.io                       (clean: 5, ad: 46, pages: 1, strong: 1)
+205. [AD] events.newsroom.bi                       (clean: 0, ad: 36, pages: 2)
+206. [AD] exchange.24smi.info                      (clean: 5, ad: 6, pages: 1)
+207. [AD] exchange.buzzoola.com                    (clean: 145, ad: 4066, pages: 18, strong: 64)
+208. [AD] exchange.kueezrtb.com                    (clean: 0, ad: 446, pages: 1, strong: 8, name-hint)
+209. [AD] ext.clickstream.sbrf.ru                  (clean: 0, ad: 312, pages: 3, name-hint)
+210. [AD] f81a667ff67333f712b923ae58bdd870.safeframe.googlesyndication.com (clean: 0, ad: 24, pages: 1)
+211. [AD] falcon.useinsider.com                    (clean: 0, ad: 36, pages: 2)
+212. [AD] fastlane.rubiconproject.com              (clean: 0, ad: 416, pages: 1, strong: 8)
+213. [AD] fcgi4.gnezdo.ru                          (clean: 10, ad: 282, pages: 3, группа x2)
+214. [AD] fcgi5.gnezdo.ru                          (clean: 10, ad: 282, pages: 2, группа x2)
+215. [AD] fonts.24smi.net                          (clean: 535, ad: 234, pages: 7)
+216. [AD] fp.hybrid.ai                             (clean: 0, ad: 27, pages: 1)
+217. [AD] fpf.hybrid.ai                            (clean: 0, ad: 12, pages: 1)
+218. [AD] freyr.futurecdn.net                      (clean: 0, ad: 42, pages: 2)
+219. [AD] fundingchoicesmessages.google.com        (clean: 0, ad: 3006, pages: 6)
+220. [AD] geo.yahoo.com                            (clean: 108, ad: 384, pages: 1, strong: 6)
+221. [AD] geoip.xoalt.com                          (clean: 0, ad: 36, pages: 3)
+222. [AD] geolocation.onetrust.com                 (clean: 0, ad: 24, pages: 2)
+223. [AD] go.mediagotechnology.com                 (clean: 5, ad: 46, pages: 1, strong: 1)
+224. [AD] googleads.g.doubleclick.net              (clean: 40, ad: 811, pages: 5, strong: 15, группа x2)
+225. [AD] googleads4.g.doubleclick.net             (clean: 40, ad: 811, pages: 1, strong: 15, группа x2)
+226. [AD] goya.rutube.ru                           (clean: 0, ad: 1314, pages: 1)
+227. [AD] grid-bidder.criteo.com                   (clean: 0, ad: 90, pages: 1, name-hint)
+228. [AD] grid.skcrtxr.com                         (clean: 0, ad: 24, pages: 1)
+229. [AD] guce.yahoo.com                           (clean: 12, ad: 6, pages: 1)
+230. [AD] gum.criteo.com                           (clean: 0, ad: 140, pages: 3, strong: 2)
+231. [AD] gurgle.ign.com                           (clean: 48, ad: 24, pages: 1)
+232. [AD] gurgle.zdbb.net                          (clean: 0, ad: 6, pages: 1)
+233. [AD] hawk.techradar.com                       (clean: 782, ad: 204, pages: 2)
+234. [AD] hb-bidder.skcrtxr.com                    (clean: 0, ad: 210, pages: 6, name-hint)
+235. [AD] hb.bumlam.com                            (clean: 0, ad: 252, pages: 10)
+236. [AD] hb.trustedstack.com                      (clean: 0, ad: 216, pages: 1, strong: 4)
+237. [AD] hbopenbid.pubmatic.com                   (clean: 0, ad: 312, pages: 2, strong: 6)
+238. [AD] hbx.media.net                            (clean: 0, ad: 180, pages: 1, strong: 3)
+239. [AD] hde.tynt.com                             (clean: 0, ad: 52, pages: 1, strong: 1)
+240. [AD] htlb.casalemedia.com                     (clean: 0, ad: 260, pages: 1, strong: 5)
+241. [AD] i.clean.gg                               (clean: 0, ad: 18, pages: 1)
+242. [AD] i.liadm.com                              (clean: 10, ad: 184, pages: 1, strong: 4, группа x2)
+243. [AD] i6.liadm.com                             (clean: 10, ad: 184, pages: 1, strong: 4, группа x2)
+244. [AD] ia.box                                   (clean: 5, ad: 6, pages: 1)
+245. [AD] ib.adnxs.com                             (clean: 10, ad: 330, pages: 3, strong: 6)
+246. [AD] ib.mookie1.com                           (clean: 0, ad: 12, pages: 2)
+247. [AD] icu.newsroom.bi                          (clean: 0, ad: 48, pages: 1)
+248. [AD] id.cxense.com                            (clean: 0, ad: 54, pages: 2)
+249. [AD] id.trust-id.ru                           (clean: 0, ad: 36, pages: 2)
+250. [AD] id5-sync.com                             (clean: 5, ad: 128, pages: 1, strong: 2, name-hint)
+251. [AD] idpix.media6degrees.com                  (clean: 0, ad: 6, pages: 1)
+252. [AD] idsync.rlcdn.com                         (clean: 15, ad: 366, pages: 2, strong: 7, name-hint)
+253. [AD] idx.liadm.com                            (clean: 0, ad: 52, pages: 1, strong: 1)
+254. [AD] image.sendsay.ru                         (clean: 0, ad: 74, pages: 2)
+255. [AD] image2.pubmatic.com                      (clean: 20, ad: 3408, pages: 1, strong: 63, группа x4)
+256. [AD] image4.pubmatic.com                      (clean: 20, ad: 3408, pages: 1, strong: 63, группа x4)
+257. [AD] image6.pubmatic.com                      (clean: 20, ad: 3408, pages: 1, strong: 63, группа x4)
+258. [AD] image8.pubmatic.com                      (clean: 20, ad: 3408, pages: 2, strong: 63, группа x4)
+259. [AD] imasdk.googleapis.com                    (clean: 0, ad: 420, pages: 5, strong: 6)
+260. [AD] img.smi2.net                             (clean: 40, ad: 48, pages: 2)
+261. [AD] img2.24smi.net                           (clean: 60, ad: 72, pages: 2)
+262. [AD] imgserve.rambler.ru                      (clean: 36, ad: 102, pages: 3)
+263. [AD] ipac.ctnsnet.com                         (clean: 0, ad: 60, pages: 1, strong: 1)
+264. [AD] iz.push4site.com                         (clean: 5, ad: 51, pages: 2)
+265. [AD] jadserve.postrelease.com                 (clean: 20, ad: 184, pages: 1, strong: 4)
+266. [AD] jogger.zdbb.net                          (clean: 0, ad: 12, pages: 1)
+267. [AD] js-sec.indexww.com                       (clean: 0, ad: 12, pages: 1)
+268. [AD] js.hostingradio.ru                       (clean: 0, ad: 12, pages: 1)
+269. [AD] jscdn.greeter.me                         (clean: 0, ad: 12, pages: 1)
+270. [AD] jsn.24smi.net                            (clean: 20, ad: 444, pages: 10)
+271. [AD] k.p-n.io                                 (clean: 0, ad: 12, pages: 1)
+272. [AD] kimberlite.io                            (clean: 20, ad: 1658, pages: 6, strong: 32)
+273. [AD] klkmdsync.site                           (clean: 5, ad: 6, pages: 1)
+274. [AD] kraken-mdt.rambler.ru                    (clean: 108, ad: 154, pages: 4)
+275. [AD] kraken.ignimgs.com                       (clean: 160, ad: 4224, pages: 2)
+276. [AD] kraken.rambler.ru                        (clean: 766, ad: 1334, pages: 5)
+277. [AD] la.viadata.store                         (clean: 0, ad: 6, pages: 1)
+278. [AD] log.rutube.ru                            (clean: 45, ad: 600, pages: 1)
+279. [AD] log.strm.yandex.ru                       (clean: 0, ad: 444, pages: 5)
+280. [AD] logx.optimizely.com                      (clean: 0, ad: 24, pages: 2)
+281. [AD] mab.chartbeat.com                        (clean: 0, ad: 36, pages: 3)
+282. [AD] macro.adnami.io                          (clean: 0, ad: 48, pages: 1)
+283. [AD] manifest.prod.boltdns.net                (clean: 0, ad: 24, pages: 1)
+284. [AD] match.adsby.bidtheatre.com               (clean: 0, ad: 290, pages: 1, strong: 5, name-hint)
+285. [AD] match.adsrvr.org                         (clean: 0, ad: 142, pages: 2, strong: 2, name-hint)
+286. [AD] match.deepintent.com                     (clean: 20, ad: 318, pages: 1, strong: 6, name-hint)
+287. [AD] match.new-programmatic.com               (clean: 20, ad: 96, pages: 7, name-hint)
+288. [AD] match.ohmy.bid                           (clean: 10, ad: 54, pages: 3, name-hint)
+289. [AD] match.qtarget.tech                       (clean: 10, ad: 42, pages: 2, name-hint)
+290. [AD] match.sharethrough.com                   (clean: 15, ad: 318, pages: 1, strong: 6, name-hint)
+291. [AD] match.targetrtb.com                      (clean: 5, ad: 36, pages: 1, name-hint)
+292. [AD] mc.acint.net                             (clean: 0, ad: 6, pages: 1)
+293. [AD] mc.webvisor.org                          (clean: 25, ad: 372, pages: 4)
+294. [AD] mc.yandex.com                            (clean: 765, ad: 34462, pages: 44)
+295. [AD] mc.yandex.ru                             (clean: 180, ad: 9083, pages: 48, strong: 1)
+296. [AD] media-advcycle.imgsmail.ru               (clean: 0, ad: 24, pages: 2)
+297. [AD] media-sensor.mail.ru                     (clean: 24, ad: 12, pages: 1)
+298. [AD] media-stat.mail.ru                       (clean: 60, ad: 54, pages: 1, name-hint)
+299. [AD] media.adretriever.com                    (clean: 5, ad: 48, pages: 1)
+300. [AD] medianet-match.dotomi.com                (clean: 0, ad: 76, pages: 1, strong: 1, name-hint)
+301. [AD] meta.hostingradio.ru                     (clean: 0, ad: 24, pages: 1)
+302. [AD] mitdmp.whiteboxdigital.ru                (clean: 5, ad: 46, pages: 1, strong: 1)
+303. [AD] mn-tz.com                                (clean: 0, ad: 936, pages: 2)
+304. [AD] moca.pbs.yahoo.com                       (clean: 12, ad: 6, pages: 1)
+305. [AD] mug.criteo.com                           (clean: 5, ad: 6, pages: 1)
+306. [AD] mweb.ck.inmobi.com                       (clean: 5, ad: 6, pages: 1)
+307. [AD] n.clarity.ms                             (clean: 0, ad: 84, pages: 1)
+308. [AD] news.2xclick.ru                          (clean: 0, ad: 12, pages: 1)
+309. [AD] news.2xclock.com                         (clean: 0, ad: 27, pages: 1)
+310. [AD] news.gnezdo.ru                           (clean: 5, ad: 264, pages: 4)
+311. [AD] noa.yahoo.com                            (clean: 144, ad: 552, pages: 1, strong: 12)
+312. [AD] nr.bidderstack.com                       (clean: 5, ad: 6, pages: 1)
+313. [AD] nrr.bidderstack.com                      (clean: 0, ad: 126, pages: 1)
+314. [AD] onetag-sys.com                           (clean: 40, ad: 404, pages: 1, strong: 8)
+315. [AD] openfpcdn.io                             (clean: 0, ad: 54, pages: 2)
+316. [AD] openrtb.skcrtxr.com                      (clean: 0, ad: 186, pages: 1, strong: 3, name-hint)
+317. [AD] optiyield-data.opti-digital.com          (clean: 0, ad: 24, pages: 2)
+318. [AD] opus.analytics.yahoo.com                 (clean: 24, ad: 112, pages: 1, strong: 1, name-hint)
+319. [AD] otclick-adv.ru                           (clean: 5, ad: 428, pages: 3, strong: 2, name-hint)
+320. [AD] pagead2.googlesyndication.com            (clean: 55, ad: 9457, pages: 15, strong: 143)
+321. [AD] pb.adriver.ru                            (clean: 0, ad: 2100, pages: 13)
+322. [AD] pbs-cs.minutemedia-prebid.com            (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+323. [AD] pbs-cs.openwebmp.com                     (clean: 0, ad: 104, pages: 1, strong: 2)
+324. [AD] pbs-cs.yellowblue.io                     (clean: 0, ad: 104, pages: 1, strong: 2)
+325. [AD] pbs-yahoo-us.ay.delivery                 (clean: 40, ad: 1106, pages: 1, strong: 23)
+326. [AD] pbs.alfasense.com                        (clean: 0, ad: 360, pages: 3)
+327. [AD] pbs.optidigital.com                      (clean: 5, ad: 134, pages: 2, strong: 2)
+328. [AD] pbs.yahoo.com                            (clean: 386, ad: 1174, pages: 1, strong: 28)
+329. [AD] phoenix.prod.ateam.acast.cloud           (clean: 0, ad: 18, pages: 1)
+330. [AD] pic.rtbcdn.ru                            (clean: 10, ad: 48, pages: 1)
+331. [AD] ping.chartbeat.net                       (clean: 10, ad: 78, pages: 6)
+332. [AD] pippio.com                               (clean: 0, ad: 6, pages: 1)
+333. [AD] pixel-sync.sitescout.com                 (clean: 0, ad: 134, pages: 1, strong: 2, name-hint)
+334. [AD] pixel.dsp.onetarget.ru                   (clean: 5, ad: 36, pages: 1, name-hint)
+335. [AD] pixel.rubiconproject.com                 (clean: 25, ad: 260, pages: 1, strong: 5, name-hint)
+336. [AD] pixel.tapad.com                          (clean: 10, ad: 214, pages: 1, strong: 4, name-hint)
+337. [AD] pixelfnt-us.dsp-api.moloco.com           (clean: 5, ad: 36, pages: 1, name-hint)
+338. [AD] pl2.skwstat.ru                           (clean: 0, ad: 12, pages: 1)
+339. [AD] player.mt.ru                             (clean: 0, ad: 108, pages: 2)
+340. [AD] players.brightcove.net                   (clean: 0, ad: 105, pages: 1)
+341. [AD] pm-widget.taboola.com                    (clean: 0, ad: 54, pages: 1)
+342. [AD] pmp.mxptint.net                          (clean: 0, ad: 52, pages: 1, strong: 1)
+343. [AD] prebid-match.dotomi.com                  (clean: 10, ad: 122, pages: 1, strong: 2, name-hint)
+344. [AD] prebid-server.rubiconproject.com         (clean: 0, ad: 134, pages: 1, strong: 2, name-hint)
+345. [AD] prebid.a-mo.net                          (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+346. [AD] prebid.cootlogix.com                     (clean: 0, ad: 550, pages: 1, strong: 10, name-hint)
+347. [AD] prebid.media.net                         (clean: 0, ad: 290, pages: 1, strong: 5, name-hint)
+348. [AD] prism-tracking.pacvue.com                (clean: 0, ad: 186, pages: 1, strong: 3, name-hint)
+349. [AD] privacy-cs.mail.ru                       (clean: 156, ad: 2307, pages: 26)
+350. [AD] profile.ad-tech.ru                       (clean: 0, ad: 66, pages: 3, name-hint)
+351. [AD] pubads.g.doubleclick.net                 (clean: 5, ad: 92, pages: 2, strong: 2)
+352. [AD] pubmatic-match.dotomi.com                (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+353. [AD] px.adhigh.net                            (clean: 55, ad: 342, pages: 8, strong: 6, name-hint)
+354. [AD] px.ads.linkedin.com                      (clean: 15, ad: 168, pages: 1, strong: 3, name-hint)
+355. [AD] px.arcspire.io                           (clean: 5, ad: 36, pages: 1, name-hint)
+356. [AD] px2.admon.pro                            (clean: 5, ad: 72, pages: 3, группа x2, name-hint)
+357. [AD] px31641f79bec03b06f.telecid.ru           (clean: 0, ad: 6, pages: 1)
+358. [AD] px316dc5e93809c2d50.telecid.ru           (clean: 0, ad: 6, pages: 1)
+359. [AD] px4.admon.pro                            (clean: 5, ad: 72, pages: 1, группа x2, name-hint)
+360. [AD] quotiq.ru                                (clean: 105, ad: 171, pages: 1)
+361. [AD] r.mtdata.ru                              (clean: 20, ad: 24, pages: 2)
+362. [AD] r.skimresources.com                      (clean: 0, ad: 12, pages: 1)
+363. [AD] r.ussp.io                                (clean: 0, ad: 72, pages: 2)
+364. [AD] rap.skcrtxr.com                          (clean: 0, ad: 20, pages: 1)
+365. [AD] rb.infox.ru                              (clean: 198, ad: 100, pages: 3, strong: 1)
+366. [AD] rcm-tr.rambler.ru                        (clean: 156, ad: 162, pages: 3)
+367. [AD] rcm.rambler.ru                           (clean: 84, ad: 42, pages: 3)
+368. [AD] redirect-frontend.weborama-tech.ru       (clean: 5, ad: 6, pages: 1)
+369. [AD] region1.analytics.google.com             (clean: 0, ad: 72, pages: 1, name-hint)
+370. [AD] region1.google-analytics.com             (clean: 0, ad: 796, pages: 9, strong: 1, name-hint)
+371. [AD] req.pm2.punchmedia.ru                    (clean: 0, ad: 6, pages: 1)
+372. [AD] river-3-345.rtbcdn.ru                    (clean: 0, ad: 684, pages: 1)
+373. [AD] rm-script.dotmetrics.net                 (clean: 10, ad: 24, pages: 4)
+374. [AD] rp.liadm.com                             (clean: 0, ad: 104, pages: 1, strong: 2)
+375. [AD] rs.mail.ru                               (clean: 270, ad: 600, pages: 2, strong: 15)
+376. [AD] rt.marphezis.com                         (clean: 5, ad: 58, pages: 1, strong: 1)
+377. [AD] rtb-dsp.gnezdo.ru                        (clean: 5, ad: 102, pages: 2, name-hint)
+378. [AD] rtb-eu-warsaw.intent.ai                  (clean: 5, ad: 36, pages: 1, name-hint)
+379. [AD] rtb.adentifi.com                         (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+380. [AD] rtb.dynotech.io                          (clean: 5, ad: 36, pages: 1, name-hint)
+381. [AD] rtb.gumgum.com                           (clean: 25, ad: 312, pages: 1, strong: 6, name-hint)
+382. [AD] rtb.moe.video                            (clean: 175, ad: 240, pages: 2, name-hint)
+383. [AD] rtb.openx.net                            (clean: 5, ad: 440, pages: 1, strong: 8, name-hint)
+384. [AD] ru.viadata.store                         (clean: 0, ad: 27, pages: 1)
+385. [AD] rucdn.viadata.store                      (clean: 0, ad: 12, pages: 1)
+386. [AD] rumcdn.geoedge.be                        (clean: 0, ad: 108, pages: 2)
+387. [AD] s.ad.smaato.net                          (clean: 10, ad: 122, pages: 1, strong: 2, name-hint)
+388. [AD] s.amazon-adsystem.com                    (clean: 10, ad: 204, pages: 1, strong: 4)
+389. [AD] s.company-target.com                     (clean: 5, ad: 202, pages: 1, strong: 4)
+390. [AD] s.seedtag.com                            (clean: 100, ad: 1784, pages: 1, strong: 35)
+391. [AD] s.uuidksinc.net                          (clean: 5, ad: 18, pages: 3)
+392. [AD] s0.2mdn.net                              (clean: 0, ad: 377, pages: 3, strong: 5)
+393. [AD] s3.wi-fi.ru                              (clean: 5, ad: 94, pages: 2, strong: 1)
+394. [AD] sb.scorecardresearch.com                 (clean: 5, ad: 302, pages: 5, strong: 5)
+395. [AD] scripts.clarity.ms                       (clean: 0, ad: 27, pages: 1)
+396. [AD] scripts.opti-digital.com                 (clean: 0, ad: 108, pages: 2)
+397. [AD] sdk-api.apptracer.ru                     (clean: 0, ad: 72, pages: 2)
+398. [AD] sdk.mrf.io                               (clean: 0, ad: 108, pages: 2)
+399. [AD] search-api.fie.futurecdn.net             (clean: 15, ad: 6, pages: 1)
+400. [AD] securepubads.g.doubleclick.net           (clean: 295, ad: 7142, pages: 11, strong: 127)
+401. [AD] sendsay.ru                               (clean: 0, ad: 12, pages: 1)
+402. [AD] service.pravo.ru                         (clean: 12, ad: 46, pages: 1, strong: 1)
+403. [AD] sf16-website-login.neutral.ttwstatic.com (clean: 0, ad: 180, pages: 3)
+404. [AD] shopnetic.com                            (clean: 5, ad: 46, pages: 1, strong: 1)
+405. [AD] signal-service.pbs.yahoo.com             (clean: 48, ad: 12, pages: 1)
+406. [AD] simage2.pubmatic.com                     (clean: 0, ad: 1282, pages: 1, strong: 24, группа x2)
+407. [AD] simage4.pubmatic.com                     (clean: 0, ad: 1282, pages: 1, strong: 24, группа x2)
+408. [AD] slice.vanilla.futurecdn.net              (clean: 0, ad: 54, pages: 2)
+409. [AD] sm.rtb.mts.ru                            (clean: 10, ad: 78, pages: 3, name-hint)
+410. [AD] smi2.net                                 (clean: 50, ad: 66, pages: 11)
+411. [AD] sommelier.futurehybrid.tech              (clean: 0, ad: 12, pages: 1)
+412. [AD] sp.linkssp.ru                            (clean: 90, ad: 276, pages: 5, name-hint)
+413. [AD] sp.ohmy.bid                              (clean: 0, ad: 72, pages: 2)
+414. [AD] sp.q-bid.ru                              (clean: 20, ad: 54, pages: 2, name-hint)
+415. [AD] srv.scalibur.io                          (clean: 0, ad: 52, pages: 1, strong: 1)
+416. [AD] ssbsync-global.smartadserver.com         (clean: 5, ad: 46, pages: 1, strong: 1)
+417. [AD] ssbsync.smartadserver.com                (clean: 45, ad: 254, pages: 2, strong: 5)
+418. [AD] ssc-cms.33across.com                     (clean: 40, ad: 392, pages: 1, strong: 8)
+419. [AD] ssp-rtb.sape.ru                          (clean: 0, ad: 2118, pages: 10, strong: 24, name-hint)
+420. [AD] ssp-statistics.dsp.nt.technology         (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
+421. [AD] ssp-sync.criteo.com                      (clean: 25, ad: 542, pages: 1, strong: 11, name-hint)
+422. [AD] ssp.24smi.net                            (clean: 0, ad: 54, pages: 2, name-hint)
+423. [AD] ssp.adriver.ru                           (clean: 25, ad: 210, pages: 4, name-hint)
+424. [AD] ssp.al-adtech.com                        (clean: 115, ad: 2832, pages: 9, strong: 45, name-hint)
+425. [AD] ssp.bidster.net                          (clean: 15, ad: 54, pages: 3, name-hint)
+426. [AD] ssp.bidvol.com                           (clean: 0, ad: 498, pages: 4, strong: 9, name-hint)
+427. [AD] ssp.disqus.com                           (clean: 10, ad: 122, pages: 1, strong: 2, name-hint)
+428. [AD] ssp.hbrd.io                              (clean: 0, ad: 42, pages: 1, name-hint)
+429. [AD] ssp.hybrid.ai                            (clean: 0, ad: 2104, pages: 4, strong: 31, name-hint)
+430. [AD] ssp.otm-r.com                            (clean: 0, ad: 6510, pages: 1, name-hint)
+431. [AD] ssp.rambler.ru                           (clean: 118, ad: 1050, pages: 4, группа x2, name-hint)
+432. [AD] ssp.rutube.ru                            (clean: 0, ad: 36, pages: 1, name-hint)
+433. [AD] ssp01.rambler.ru                         (clean: 118, ad: 1050, pages: 3, группа x2, name-hint)
+434. [AD] sst-irec.r-99.com                        (clean: 0, ad: 378, pages: 2)
+435. [AD] ssum-sec.casalemedia.com                 (clean: 20, ad: 184, pages: 1, strong: 4)
+436. [AD] ssum.casalemedia.com                     (clean: 0, ad: 52, pages: 1, strong: 1)
+437. [AD] st.hbrd.io                               (clean: 0, ad: 148, pages: 1, strong: 1)
+438. [AD] st.top100.ru                             (clean: 0, ad: 699, pages: 7)
+439. [AD] stat.media                               (clean: 0, ad: 204, pages: 6, name-hint)
+440. [AD] stat.tech.euronews.com                   (clean: 48, ad: 54, pages: 2, name-hint)
+441. [AD] static.a.mts.ru                          (clean: 0, ad: 54, pages: 2)
+442. [AD] static.adsafeprotected.com               (clean: 0, ad: 54, pages: 2)
+443. [AD] static.advcake.ru                        (clean: 5, ad: 12, pages: 2)
+444. [AD] static.bumlam.com                        (clean: 0, ad: 81, pages: 3)
+445. [AD] static.chartbeat.com                     (clean: 0, ad: 228, pages: 6)
+446. [AD] static.cloudflareinsights.com            (clean: 0, ad: 61, pages: 1, strong: 1)
+447. [AD] static.criteo.net                        (clean: 0, ad: 243, pages: 5, strong: 3)
+448. [AD] static.kimberlite.io                     (clean: 0, ad: 108, pages: 2)
+449. [AD] static.smi2.net                          (clean: 790, ad: 1365, pages: 10, группа x9)
+450. [AD] static.terratraf.com                     (clean: 0, ad: 90, pages: 4)
+451. [AD] static1.smi2.net                         (clean: 790, ad: 1365, pages: 2, группа x9)
+452. [AD] static2.smi2.net                         (clean: 790, ad: 1365, pages: 8, группа x9)
+453. [AD] static3.smi2.net                         (clean: 790, ad: 1365, pages: 7, группа x9)
+454. [AD] static4.smi2.net                         (clean: 790, ad: 1365, pages: 5, группа x9)
+455. [AD] static5.smi2.net                         (clean: 790, ad: 1365, pages: 4, группа x9)
+456. [AD] static6.smi2.net                         (clean: 790, ad: 1365, pages: 7, группа x9)
+457. [AD] static7.smi2.net                         (clean: 790, ad: 1365, pages: 5, группа x9)
+458. [AD] static8.smi2.net                         (clean: 790, ad: 1365, pages: 1, группа x9)
+459. [AD] statika.mpsuadv.ru                       (clean: 0, ad: 225, pages: 2)
+460. [AD] statistics.adsource.pro                  (clean: 10, ad: 12, pages: 2)
+461. [AD] statistics.orbitatech.io                 (clean: 0, ad: 12, pages: 2)
+462. [AD] statmedia.ru                             (clean: 20, ad: 216, pages: 3)
+463. [AD] stats.g.doubleclick.net                  (clean: 0, ad: 282, pages: 6, name-hint)
+464. [AD] stats.vk-portal.net                      (clean: 0, ad: 54, pages: 1, name-hint)
+465. [AD] stg.html-load.com                        (clean: 0, ad: 21, pages: 1)
+466. [AD] su.semasio.net                           (clean: 0, ad: 46, pages: 1, strong: 1)
+467. [AD] sync-pm.ads.yieldmo.com                  (clean: 0, ad: 136, pages: 1, strong: 2, name-hint)
+468. [AD] sync-tm.everesttech.net                  (clean: 20, ad: 226, pages: 1, strong: 4, name-hint)
+469. [AD] sync.1dmp.io                             (clean: 10, ad: 168, pages: 3, strong: 3, name-hint)
+470. [AD] sync.1rx.io                              (clean: 0, ad: 76, pages: 1, strong: 1, name-hint)
+471. [AD] sync.a-mo.net                            (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
+472. [AD] sync.adkernel.com                        (clean: 0, ad: 186, pages: 1, strong: 3, name-hint)
+473. [AD] sync.adsp.io                             (clean: 20, ad: 54, pages: 2, name-hint)
+474. [AD] sync.adspend.space                       (clean: 5, ad: 36, pages: 1, name-hint)
+475. [AD] sync.adtech.ink                          (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+476. [AD] sync.bumlam.com                          (clean: 5, ad: 99, pages: 4, name-hint)
+477. [AD] sync.cootlogix.com                       (clean: 50, ad: 554, pages: 1, strong: 11, name-hint)
+478. [AD] sync.crwdcntrl.net                       (clean: 5, ad: 168, pages: 1, strong: 3, name-hint)
+479. [AD] sync.dmp.otm-r.com                       (clean: 20, ad: 54, pages: 3, name-hint)
+480. [AD] sync.driftpixel.live                     (clean: 5, ad: 36, pages: 1, name-hint)
+481. [AD] sync.dvgroup.com                         (clean: 5, ad: 36, pages: 1, name-hint)
+482. [AD] sync.gonet-ads.com                       (clean: 5, ad: 36, pages: 1, name-hint)
+483. [AD] sync.inmobi.com                          (clean: 10, ad: 122, pages: 1, strong: 2, name-hint)
+484. [AD] sync.kueezrtb.com                        (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+485. [AD] sync.mathtag.com                         (clean: 0, ad: 82, pages: 1, strong: 1, name-hint)
+486. [AD] sync.p7cloud.net                         (clean: 5, ad: 76, pages: 1, name-hint)
+487. [AD] sync.programmatica.com                   (clean: 10, ad: 78, pages: 3, name-hint)
+488. [AD] sync.rambler.ru                          (clean: 201, ad: 150, pages: 6, name-hint)
+489. [AD] sync.richaudience.com                    (clean: 15, ad: 232, pages: 1, strong: 4, name-hint)
+490. [AD] sync.smartadserver.com                   (clean: 5, ad: 128, pages: 1, strong: 2, name-hint)
+491. [AD] sync.springserve.com                     (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
+492. [AD] sync.srv.stackadapt.com                  (clean: 10, ad: 122, pages: 1, strong: 2, name-hint)
+493. [AD] sync.teads.tv                            (clean: 5, ad: 36, pages: 1, name-hint)
+494. [AD] sync.techdsp.ru                          (clean: 5, ad: 36, pages: 1, name-hint)
+495. [AD] sync.upravel.com                         (clean: 40, ad: 84, pages: 5, name-hint)
+496. [AD] sync1.adlook.online                      (clean: 0, ad: 36, pages: 1, name-hint)
+497. [AD] sys.punchmedia.ru                        (clean: 0, ad: 100, pages: 3, strong: 1)
+498. [AD] t.adx.opera.com                          (clean: 5, ad: 82, pages: 2, strong: 1, name-hint)
+499. [AD] tag.digitaltarget.ru                     (clean: 0, ad: 39, pages: 2)
+500. [AD] tags.crwdcntrl.net                       (clean: 0, ad: 27, pages: 1)
+501. [AD] target.digitalaudience.io                (clean: 0, ad: 46, pages: 1, strong: 1)
+502. [AD] target.smi2.net                          (clean: 5, ad: 66, pages: 2)
+503. [AD] tb.pbs.yahoo.com                         (clean: 12, ad: 46, pages: 1, strong: 1)
+504. [AD] thumborcdn.acast.com                     (clean: 0, ad: 12, pages: 1)
+505. [AD] tlx.3lift.com                            (clean: 0, ad: 260, pages: 1, strong: 5)
+506. [AD] tms.dmp.wi-fi.ru                         (clean: 15, ad: 48, pages: 3, name-hint)
+507. [AD] tns-counter.ru                           (clean: 40, ad: 1533, pages: 12, name-hint)
+508. [AD] token.rubiconproject.com                 (clean: 5, ad: 786, pages: 1, strong: 15)
+509. [AD] tool.festivehorse.com                    (clean: 0, ad: 21, pages: 1)
+510. [AD] top-fwz1.mail.ru                         (clean: 570, ad: 3132, pages: 28)
+511. [AD] tpc.googlesyndication.com                (clean: 250, ad: 7085, pages: 6, strong: 109)
+512. [AD] tr.blismedia.com                         (clean: 10, ad: 70, pages: 2, strong: 1)
+513. [AD] trace.us.rtbwise.com                     (clean: 5, ad: 6, pages: 1)
+514. [AD] track.adform.net                         (clean: 0, ad: 57, pages: 1, name-hint)
+515. [AD] tracker.smartcallback.ru                 (clean: 5, ad: 66, pages: 1, name-hint)
+516. [AD] tracookiepixel.xyz                       (clean: 0, ad: 52, pages: 1, strong: 1)
+517. [AD] trc.taboola.com                          (clean: 5, ad: 52, pages: 2, strong: 1)
+518. [AD] trk.olnl.net                             (clean: 0, ad: 192, pages: 2)
+519. [AD] tru.am                                   (clean: 0, ad: 54, pages: 1)
+520. [AD] tsdtocl.com                              (clean: 0, ad: 12, pages: 1)
+521. [AD] tt.ttarget.ru                            (clean: 5, ad: 46, pages: 1, strong: 1)
+522. [AD] tube.buzzoola.com                        (clean: 0, ad: 54, pages: 2)
+523. [AD] u.openx.net                              (clean: 15, ad: 346, pages: 1, strong: 7)
+524. [AD] uaas.yandex.ru                           (clean: 0, ad: 72, pages: 4)
+525. [AD] uid.bumlam.com                           (clean: 0, ad: 36, pages: 3)
+526. [AD] uipglob.semasio.net                      (clean: 0, ad: 6, pages: 1)
+527. [AD] uk-script.dotmetrics.net                 (clean: 10, ad: 294, pages: 4)
+528. [AD] ums.acuityplatform.com                   (clean: 0, ad: 52, pages: 1, strong: 1)
+529. [AD] ups.analytics.yahoo.com                  (clean: 48, ad: 214, pages: 1, strong: 4, name-hint)
+530. [AD] us-u.openx.net                           (clean: 35, ad: 328, pages: 1, strong: 7)
+531. [AD] user-sync.fwmrm.net                      (clean: 5, ad: 76, pages: 1, strong: 1, name-hint)
+532. [AD] usersync.gumgum.com                      (clean: 185, ad: 1852, pages: 1, strong: 39, name-hint)
+533. [AD] usync.ingage.tech                        (clean: 0, ad: 118, pages: 1, strong: 1)
+534. [AD] ut.pubmatic.com                          (clean: 0, ad: 180, pages: 1)
+535. [AD] v7.mpsuadv.ru                            (clean: 10, ad: 88, pages: 1)
+536. [AD] vanilla.futurecdn.net                    (clean: 325, ad: 429, pages: 2)
+537. [AD] viadata.store                            (clean: 0, ad: 12, pages: 1)
+538. [AD] video-api.yql.yahoo.com                  (clean: 132, ad: 506, pages: 1, strong: 11)
+539. [AD] visit-server.inmobi-choice.io            (clean: 0, ad: 12, pages: 1)
+540. [AD] visitor-ow.omnitagjs.com                 (clean: 10, ad: 12, pages: 1)
+541. [AD] visitor.omnitagjs.com                    (clean: 0, ad: 104, pages: 1, strong: 2)
+542. [AD] vod-dash-ww-live.akamaized.net           (clean: 0, ad: 300, pages: 1)
+543. [AD] vod-thumb-ww-live.akamaized.net          (clean: 0, ad: 12, pages: 1)
+544. [AD] vp.rambler.ru                            (clean: 5, ad: 759, pages: 2)
+545. [AD] wam.solution.weborama.fr                 (clean: 5, ad: 46, pages: 1, strong: 1)
+546. [AD] web-static.mindbox.ru                    (clean: 0, ad: 24, pages: 1)
+547. [AD] widget.sparrow.ru                        (clean: 40, ad: 492, pages: 6)
+548. [AD] widget.svk-native.ru                     (clean: 60, ad: 72, pages: 3)
+549. [AD] wnsrvbjmeprtfrnfx.ay.delivery            (clean: 0, ad: 81, pages: 1)
+550. [AD] worker.sttsmntz.ru                       (clean: 0, ad: 36, pages: 1)
+551. [AD] www.acint.net                            (clean: 30, ad: 42, pages: 3)
+552. [AD] www.clarity.ms                           (clean: 0, ad: 27, pages: 1)
+553. [AD] www.gazeta.press                         (clean: 0, ad: 12, pages: 1)
+554. [AD] www.google-analytics.com                 (clean: 0, ad: 666, pages: 8, name-hint)
+555. [AD] www.googletagmanager.com                 (clean: 15, ad: 1134, pages: 23)
+556. [AD] www.tns-counter.ru                       (clean: 170, ad: 1824, pages: 14, name-hint)
+557. [AD] www.travelpayouts.com                    (clean: 0, ad: 36, pages: 3)
+558. [AD] www.zeropartyforms.com                   (clean: 0, ad: 27, pages: 1)
+559. [AD] x.bidswitch.net                          (clean: 0, ad: 46, pages: 1, strong: 1)
+560. [AD] x01.aidata.io                            (clean: 30, ad: 150, pages: 7)
+561. [AD] yahoo-bidout-d.openx.net                 (clean: 0, ad: 52, pages: 1, strong: 1)
+562. [AD] yahoo-match.dotomi.com                   (clean: 0, ad: 76, pages: 1, strong: 1, name-hint)
+563. [AD] yandex-dmp-sync.rutarget.ru              (clean: 5, ad: 36, pages: 1, name-hint)
+564. [AD] yandex-sync.rutarget.ru                  (clean: 5, ad: 36, pages: 1, name-hint)
+565. [AD] yhb.p.otm-r.com                          (clean: 0, ad: 108, pages: 3)
+566. [AD] z.cdn.adnetwork.bet                      (clean: 0, ad: 36, pages: 1, name-hint)
+567. [AD] zdbb.net                                 (clean: 0, ad: 36, pages: 1)
 
-Итого в hosts.txt: 1298 доменов (с учётом прежних записей и схлопнутых хэш-поддоменов)
+Итого в hosts.txt: 1320 доменов (с учётом прежних записей и схлопнутых хэш-поддоменов)
 
 --- НА РУЧНОЙ РАЗБОР (НЕ заблокированы: похоже на рекламу, но блок может сломать сайт/плеер) ---
 Решение: реклама -> добавить в AD_APEX_BLACKLIST / EXTRA_BLACKLIST_PATTERNS (filters.py); легитимный -> оставить.
-01. [REVIEW] api.vkvideo.ru                           (clean: 0, ad: 72, pages: 4)
-02. [REVIEW] developers.rambler.ru                    (clean: 12, ad: 114, pages: 3)
-03. [REVIEW] emp.bbc.co.uk                            (clean: 20, ad: 27, pages: 1)
-04. [REVIEW] global.ib-ibi.com                        (clean: 5, ad: 6, pages: 1)
-05. [REVIEW] id.sber.ru                               (clean: 0, ad: 438, pages: 5)
-06. [REVIEW] inplayer.ru                              (clean: 5, ad: 6, pages: 1)
-07. [REVIEW] login.vk.ru                              (clean: 0, ad: 60, pages: 4)
-08. [REVIEW] news.google.com                          (clean: 0, ad: 78, pages: 2)
-09. [REVIEW] platform.twitter.com                     (clean: 0, ad: 144, pages: 3)
-10. [REVIEW] st.vkvideo.ru                            (clean: 60, ad: 582, pages: 1)
-11. [REVIEW] visor.sberbank.ru                        (clean: 5, ad: 78, pages: 4)
+01. [REVIEW] emp.bbc.co.uk                            (clean: 20, ad: 27, pages: 1)
+02. [REVIEW] gpm.servicesadmedia.com                  (clean: 5, ad: 6, pages: 1)
+03. [REVIEW] id.sber.ru                               (clean: 10, ad: 261, pages: 4)
+04. [REVIEW] news.google.com                          (clean: 0, ad: 111, pages: 3)
+05. [REVIEW] platform.twitter.com                     (clean: 0, ad: 111, pages: 2)
+06. [REVIEW] play.google.com                          (clean: 0, ad: 66, pages: 3)
+07. [REVIEW] static1.smi2cdn.ru                       (clean: 5, ad: 6, pages: 1)
 
 --- НЕ ЗАБЛОКИРОВАНО В ЭТОМ ЗАПУСКЕ (недостаточно признаков рекламы; это не гарантия легитимности) ---
-01. [OK] 33412.ms.vk.ru                           (clean: 0, ad: 36, pages: 2, группа x2)
-02. [OK] 33432.ms.vk.ru                           (clean: 0, ad: 36, pages: 1, группа x2)
-03. [OK] a-68534561-53-586-1d000d-000.pms.mail.ru (clean: 17, ad: 0, pages: 1)
-04. [OK] a-69234814-51-585-1d000d-000.pms.mail.ru (clean: 17, ad: 0, pages: 1)
-05. [OK] a1.api.bbc.com                           (clean: 36, ad: 18, pages: 2)
-06. [OK] acapi.yahoo.com                          (clean: 108, ad: 30, pages: 2)
-07. [OK] ajax.googleapis.com                      (clean: 0, ad: 105, pages: 4)
-08. [OK] analytics.iportal.ru                     (clean: 0, ad: 5070, pages: 4, name-hint)
-09. [OK] api.okcdn.ru                             (clean: 0, ad: 192, pages: 4)
-10. [OK] api.retail.ru                            (clean: 96, ad: 24, pages: 1)
-11. [OK] api.vedomosti.ru                         (clean: 156, ad: 42, pages: 1)
-12. [OK] api.vk.ru                                (clean: 0, ad: 12, pages: 1)
-13. [OK] apps.ign.com                             (clean: 34, ad: 0, pages: 2)
-14. [OK] assets.adobedtm.com                      (clean: 0, ad: 162, pages: 2)
-15. [OK] assets1.ignimgs.com                      (clean: 30, ad: 36, pages: 2)
-16. [OK] atlas.rambler.ru                         (clean: 72, ad: 24, pages: 2)
+01. [OK] 33432.ms.vk.ru                           (clean: 0, ad: 12, pages: 1)
+02. [OK] a-72933652-6-186-1d000d-000.pms.mail.ru  (clean: 17, ad: 0, pages: 1)
+03. [OK] a1.api.bbc.co.uk                         (clean: 80, ad: 48, pages: 1)
+04. [OK] a1.api.bbc.com                           (clean: 264, ad: 132, pages: 2)
+05. [OK] ajax.googleapis.com                      (clean: 0, ad: 63, pages: 3)
+06. [OK] analytics.iportal.ru                     (clean: 0, ad: 2634, pages: 3, name-hint)
+07. [OK] api.okcdn.ru                             (clean: 0, ad: 60, pages: 1)
+08. [OK] api.retail.ru                            (clean: 24, ad: 6, pages: 1)
+09. [OK] api.vedomosti.ru                         (clean: 288, ad: 72, pages: 2)
+10. [OK] api.vkvideo.ru                           (clean: 0, ad: 12, pages: 1)
+11. [OK] apps.ign.com                             (clean: 34, ad: 0, pages: 2)
+12. [OK] assets-prd.ignimgs.com                   (clean: 145, ad: 174, pages: 2)
+13. [OK] assets.adobedtm.com                      (clean: 0, ad: 162, pages: 2)
+14. [OK] assets.ign.com                           (clean: 65, ad: 24, pages: 1)
+15. [OK] assets1.ignimgs.com                      (clean: 25, ad: 30, pages: 2)
+16. [OK] atlas.rambler.ru                         (clean: 60, ad: 18, pages: 2)
 17. [OK] auth.rambler.ru                          (clean: 130, ad: 36, pages: 2)
-18. [OK] autofill.yandex.ru                       (clean: 0, ad: 24, pages: 1)
-19. [OK] avatars.mds.yandex.net                   (clean: 375, ad: 2484, pages: 24)
-20. [OK] back.tourdom.ru                          (clean: 17, ad: 0, pages: 1)
+18. [OK] autofill.yandex.ru                       (clean: 0, ad: 48, pages: 2)
+19. [OK] avatars.mds.yandex.net                   (clean: 490, ad: 2448, pages: 26)
+20. [OK] back.tourdom.ru                          (clean: 34, ad: 0, pages: 1)
 21. [OK] banki.ru                                 (clean: 24, ad: 0, pages: 1)
-22. [OK] c.pravo.ru                               (clean: 53, ad: 18, pages: 1)
-23. [OK] c4.swaap.ru                              (clean: 0, ad: 6, pages: 1)
-24. [OK] cdn-s01.rambler.ru                       (clean: 24, ad: 66, pages: 4)
-25. [OK] cdn.ampproject.org                       (clean: 0, ad: 852, pages: 2)
-26. [OK] cdn.banki.ru                             (clean: 1192, ad: 312, pages: 1)
-27. [OK] cdn.dp.ru                                (clean: 102, ad: 0, pages: 2)
-28. [OK] cdn.forbes.ru                            (clean: 1596, ad: 678, pages: 1)
-29. [OK] cdn.hsmedia.ru                           (clean: 20365, ad: 20340, pages: 4)
-30. [OK] cdn.iportal.ru                           (clean: 50, ad: 12, pages: 1)
-31. [OK] cdn.iz.ru                                (clean: 1554, ad: 72, pages: 1)
-32. [OK] cdn.jsdelivr.net                         (clean: 0, ad: 81, pages: 3)
-33. [OK] cdn.jwplayer.com                         (clean: 0, ad: 30, pages: 1)
-34. [OK] cdn.tourprom.ru                          (clean: 17, ad: 0, pages: 1)
-35. [OK] cdn.viafoura.net                         (clean: 0, ad: 42, pages: 2)
-36. [OK] cdn10.vedomosti.ru                       (clean: 3285, ad: 654, pages: 2, группа x2)
-37. [OK] cdn5.vedomosti.ru                        (clean: 3285, ad: 654, pages: 2, группа x2)
-38. [OK] cdnjs.cloudflare.com                     (clean: 0, ad: 42, pages: 2)
-39. [OK] cdnjs.smi2.ru                            (clean: 12, ad: 207, pages: 8)
-40. [OK] challenges.cloudflare.com                (clean: 0, ad: 66, pages: 1)
-41. [OK] cnb.cnews.ru                             (clean: 568, ad: 12, pages: 2)
-42. [OK] code.createjs.com                        (clean: 0, ad: 21, pages: 1)
-43. [OK] code.jquery.com                          (clean: 0, ad: 42, pages: 2)
-44. [OK] comm.cnews.ru                            (clean: 58, ad: 12, pages: 1)
-45. [OK] comments.rambler.ru                      (clean: 0, ad: 24, pages: 1)
-46. [OK] connect.ok.ru                            (clean: 0, ad: 24, pages: 2)
-47. [OK] cs.pikabu.ru                             (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-48. [OK] cs14.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-49. [OK] cs15.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-50. [OK] cs16.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-51. [OK] cs17.pikabu.ru                           (clean: 1342, ad: 178, pages: 2, strong: 1, группа x11)
-52. [OK] cs18.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-53. [OK] cs19.pikabu.ru                           (clean: 1342, ad: 178, pages: 2, strong: 1, группа x11)
-54. [OK] cs2.pikabu.ru                            (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-55. [OK] cs20.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-56. [OK] cs44.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-57. [OK] cs45.pikabu.ru                           (clean: 1342, ad: 178, pages: 1, strong: 1, группа x11)
-58. [OK] css.yuga.ru                              (clean: 201, ad: 0, pages: 2)
-59. [OK] did.tech.euronews.com                    (clean: 120, ad: 60, pages: 2)
-60. [OK] dumpster.cdn.sports.ru                   (clean: 94, ad: 18, pages: 1)
-61. [OK] ec.yimg.com                              (clean: 0, ad: 270, pages: 2)
-62. [OK] emp.bbci.co.uk                           (clean: 60, ad: 69, pages: 2)
-63. [OK] entitlements.jwplayer.com                (clean: 0, ad: 12, pages: 1)
-64. [OK] err.lenta.ru                             (clean: 456, ad: 204, pages: 2)
-65. [OK] exad.smi2.ru                             (clean: 177, ad: 252, pages: 7)
-66. [OK] favicon.yandex.net                       (clean: 40, ad: 84, pages: 7)
-67. [OK] fcpe.beeline.ru                          (clean: 10, ad: 24, pages: 4)
-68. [OK] feeds.kommersant.ru                      (clean: 29, ad: 60, pages: 2)
-69. [OK] filearchive.cnews.ru                     (clean: 641, ad: 0, pages: 2)
-70. [OK] finance.mail.ru                          (clean: 273, ad: 72, pages: 1)
-71. [OK] firebaseinstallations.googleapis.com     (clean: 0, ad: 36, pages: 2)
-72. [OK] fishki.net                               (clean: 24, ad: 0, pages: 2)
-73. [OK] fonts.googleapis.com                     (clean: 315, ad: 198, pages: 13)
-74. [OK] fonts.gstatic.com                        (clean: 570, ad: 228, pages: 13)
-75. [OK] forms.ign.com                            (clean: 144, ad: 60, pages: 2)
-76. [OK] g.ign.com                                (clean: 24, ad: 12, pages: 2)
-77. [OK] gazeta.ru                                (clean: 12, ad: 0, pages: 1)
-78. [OK] gn-web-assets.api.bbc.com                (clean: 34, ad: 0, pages: 2)
-79. [OK] graphite.sports.yahoo.com                (clean: 276, ad: 138, pages: 1)
-80. [OK] horoscopes.rambler.ru                    (clean: 12, ad: 6, pages: 1)
-81. [OK] i.otzovik.com                            (clean: 189, ad: 0, pages: 2, группа x3)
-82. [OK] i2019.otzovik.com                        (clean: 189, ad: 0, pages: 1, группа x3)
-83. [OK] i2026.otzovik.com                        (clean: 189, ad: 0, pages: 2, группа x3)
-84. [OK] icdn.lenta.ru                            (clean: 2503, ad: 0, pages: 2)
-85. [OK] ichef.bbci.co.uk                         (clean: 575, ad: 138, pages: 2)
-86. [OK] im2.kommersant.ru                        (clean: 1752, ad: 612, pages: 2)
-87. [OK] images.euronews.com                      (clean: 391, ad: 0, pages: 2)
-88. [OK] img.imgsmail.ru                          (clean: 0, ad: 54, pages: 2)
-89. [OK] img.yuga.ru                              (clean: 12, ad: 0, pages: 1)
-90. [OK] imgredirect.rambler.ru                   (clean: 72, ad: 36, pages: 2)
-91. [OK] imgs2.imgsmail.ru                        (clean: 80, ad: 96, pages: 2)
-92. [OK] imgstats.rambler.ru                      (clean: 104, ad: 6, pages: 3)
-93. [OK] informer.yandex.ru                       (clean: 20, ad: 24, pages: 4)
-94. [OK] irecommend.ru                            (clean: 1415, ad: 144, pages: 2)
-95. [OK] iv.kommersant.ru                         (clean: 1795, ad: 294, pages: 1)
-96. [OK] iv.okcdn.ru                              (clean: 5, ad: 108, pages: 4)
-97. [OK] iz.ru                                    (clean: 201, ad: 12, pages: 2)
-98. [OK] jay.vedomosti.ru                         (clean: 48, ad: 12, pages: 1)
-99. [OK] jitsu.ixbt.site                          (clean: 0, ad: 144, pages: 2)
-100. [OK] js.yuga.ru                               (clean: 432, ad: 60, pages: 2)
-101. [OK] jsapi.login.yahoo.com                    (clean: 48, ad: 12, pages: 2)
-102. [OK] kp.ru                                    (clean: 12, ad: 0, pages: 1)
-103. [OK] l.euronews.com                           (clean: 48, ad: 24, pages: 2)
-104. [OK] lenta.ru                                 (clean: 246, ad: 60, pages: 2)
-105. [OK] likemore-go.imgsmail.ru                  (clean: 5, ad: 6, pages: 1)
-106. [OK] loc.yahoo.com                            (clean: 48, ad: 12, pages: 2)
-107. [OK] mail.rambler.ru                          (clean: 48, ad: 12, pages: 2)
-108. [OK] marketingplatform.google.com             (clean: 10, ad: 12, pages: 2)
-109. [OK] mcdn.imgsmail.ru                         (clean: 30, ad: 54, pages: 2)
-110. [OK] mdd.yandex.net                           (clean: 0, ad: 12, pages: 1)
-111. [OK] media-poll.mail.ru                       (clean: 36, ad: 18, pages: 1)
-112. [OK] media-trend.mail.ru                      (clean: 180, ad: 78, pages: 2)
-113. [OK] media.ixbt.com                           (clean: 255, ad: 80, pages: 2, strong: 2)
-114. [OK] media.ixbt.site                          (clean: 15, ad: 18, pages: 1)
-115. [OK] media.ixbt.video                         (clean: 30, ad: 36, pages: 2)
-116. [OK] mollusk.apis.ign.com                     (clean: 48, ad: 12, pages: 2)
-117. [OK] ms.vkvideo.ru                            (clean: 0, ad: 36, pages: 3)
-118. [OK] mybbc-analytics.files.bbci.co.uk         (clean: 0, ad: 396, pages: 2, name-hint)
-119. [OK] n1s1.hsmedia.ru                          (clean: 1325, ad: 318, pages: 4)
-120. [OK] news.rambler.ru                          (clean: 1612, ad: 78, pages: 1)
-121. [OK] news.store.rambler.ru                    (clean: 102, ad: 0, pages: 1)
-122. [OK] nexus-gateway-prod.media.yahoo.com       (clean: 48, ad: 12, pages: 1)
-123. [OK] ngs.ru                                   (clean: 178, ad: 60, pages: 2)
-124. [OK] notifications.viafoura.co                (clean: 0, ad: 24, pages: 2)
-125. [OK] ok6-2.vkuser.net                         (clean: 10, ad: 12, pages: 1)
-126. [OK] ostrich.vedomosti.ru                     (clean: 60, ad: 18, pages: 1)
-127. [OK] otzovik.com                              (clean: 863, ad: 48, pages: 2)
-128. [OK] oyster.ignimgs.com                       (clean: 5, ad: 6, pages: 1)
-129. [OK] peroxide.rambler.ru                      (clean: 12, ad: 6, pages: 1)
-130. [OK] photobooth.cdn.sports.ru                 (clean: 187, ad: 0, pages: 1)
-131. [OK] pictures.cdn.sports.ru                   (clean: 1044, ad: 0, pages: 1)
-132. [OK] pikabu.ru                                (clean: 89, ad: 30, pages: 1)
-133. [OK] play.google.com                          (clean: 0, ad: 36, pages: 2)
-134. [OK] portal.mail.ru                           (clean: 48, ad: 24, pages: 2)
-135. [OK] pp.userapi.com                           (clean: 5, ad: 6, pages: 1)
-136. [OK] pravo.ru                                 (clean: 745, ad: 80, pages: 2, strong: 2)
-137. [OK] presizer.imgsmail.ru                     (clean: 40, ad: 48, pages: 1)
-138. [OK] promokod.pikabu.ru                       (clean: 959, ad: 6, pages: 1)
-139. [OK] r.mradx.net                              (clean: 160, ad: 402, pages: 2)
-140. [OK] rbc.ru                                   (clean: 12, ad: 0, pages: 1)
-141. [OK] rcmjs.rambler.ru                         (clean: 17, ad: 108, pages: 3)
-142. [OK] recostream.go.mail.ru                    (clean: 24, ad: 12, pages: 1)
-143. [OK] resizer.mail.ru                          (clean: 68, ad: 0, pages: 2)
-144. [OK] ria.ru                                   (clean: 154, ad: 128, pages: 2, strong: 2)
-145. [OK] rosbalt.ru                               (clean: 12, ad: 0, pages: 1)
-146. [OK] rozetked.me                              (clean: 643, ad: 0, pages: 2)
-147. [OK] rutube.ru                                (clean: 0, ad: 144, pages: 3)
-148. [OK] s.suprion.ru                             (clean: 0, ad: 6, pages: 1)
-149. [OK] s.yimg.com                               (clean: 585, ad: 2411, pages: 2, strong: 2)
-150. [OK] s00.yaplakal.com                         (clean: 442, ad: 0, pages: 1)
-151. [OK] s01.stc.yc.kpcdn.net                     (clean: 60, ad: 545, pages: 1, группа x4)
-152. [OK] s01.yapfiles.ru                          (clean: 55, ad: 66, pages: 2, группа x2)
-153. [OK] s02.api.yc.kpcdn.net                     (clean: 0, ad: 12, pages: 1)
-154. [OK] s02.yapfiles.ru                          (clean: 55, ad: 66, pages: 1, группа x2)
-155. [OK] s09.stc.yc.kpcdn.net                     (clean: 60, ad: 545, pages: 1, группа x4)
-156. [OK] s12.stc.yc.kpcdn.net                     (clean: 60, ad: 545, pages: 1, группа x4)
-157. [OK] s13.stc.yc.kpcdn.net                     (clean: 60, ad: 545, pages: 1, группа x4)
-158. [OK] s17.pikabu.ru                            (clean: 153, ad: 0, pages: 1, группа x7)
-159. [OK] s19.pikabu.ru                            (clean: 153, ad: 0, pages: 1, группа x7)
-160. [OK] s2.pikabu.ru                             (clean: 153, ad: 0, pages: 1, группа x7)
-161. [OK] s3-cdn.iportal.ru                        (clean: 620, ad: 561, pages: 4)
-162. [OK] s3.pikabu.ru                             (clean: 153, ad: 0, pages: 1, группа x7)
-163. [OK] s4.pikabu.ru                             (clean: 153, ad: 0, pages: 1, группа x7)
-164. [OK] s5.pikabu.ru                             (clean: 153, ad: 0, pages: 1, группа x7)
-165. [OK] s6.pikabu.ru                             (clean: 153, ad: 0, pages: 1, группа x7)
-166. [OK] senoval-master.cdn.sports.ru             (clean: 245, ad: 114, pages: 1)
-167. [OK] senoval.cdn.sports.ru                    (clean: 2728, ad: 786, pages: 1)
-168. [OK] sentry-saas.rambler-co.ru                (clean: 0, ad: 156, pages: 4)
-169. [OK] sentry.io                                (clean: 0, ad: 24, pages: 2)
-170. [OK] service.banki.ru                         (clean: 12, ad: 6, pages: 1)
-171. [OK] site.yandex.net                          (clean: 0, ad: 162, pages: 2)
-172. [OK] smartcaptcha.yandexcloud.net             (clean: 0, ad: 894, pages: 3)
-173. [OK] smartmedia.mail.ru                       (clean: 12, ad: 6, pages: 1)
-174. [OK] smi2.ru                                  (clean: 2667, ad: 4590, pages: 17)
-175. [OK] sports.ru                                (clean: 12, ad: 0, pages: 1)
-176. [OK] sports.yahoo.com                         (clean: 142, ad: 0, pages: 1)
-177. [OK] st.vk.ru                                 (clean: 30, ad: 108, pages: 1)
-178. [OK] st1-14.vkvideo.ru                        (clean: 60, ad: 216, pages: 1, группа x2)
-179. [OK] st1-28.vkvideo.ru                        (clean: 60, ad: 216, pages: 1, группа x2)
-180. [OK] st1-55.vk.ru                             (clean: 135, ad: 537, pages: 1)
-181. [OK] stat.tildaapi.com                        (clean: 0, ad: 42, pages: 1, name-hint)
-182. [OK] static.bbci.co.uk                        (clean: 40, ad: 42, pages: 2)
-183. [OK] static.cnews.ru                          (clean: 228, ad: 6, pages: 2)
-184. [OK] static.euronews.com                      (clean: 80, ad: 0, pages: 2)
-185. [OK] static.files.bbci.co.uk                  (clean: 2330, ad: 2067, pages: 2)
-186. [OK] static.gazeta.ru                         (clean: 12, ad: 0, pages: 1)
-187. [OK] static.rambler.ru                        (clean: 1995, ad: 156, pages: 2)
-188. [OK] static.rozetked.me                       (clean: 153, ad: 0, pages: 2)
-189. [OK] static.rutube.ru                         (clean: 45, ad: 145, pages: 3)
-190. [OK] static.tildacdn.com                      (clean: 0, ad: 27, pages: 1)
-191. [OK] stats.mos.ru                             (clean: 10, ad: 54, pages: 4, name-hint)
-192. [OK] storage.pravo.ru                         (clean: 510, ad: 0, pages: 2)
-193. [OK] strm-fra-02.strm.yandex.net              (clean: 0, ad: 6, pages: 1)
-194. [OK] sun1-14.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-195. [OK] sun1-15.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-196. [OK] sun1-17.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-197. [OK] sun1-18.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-198. [OK] sun1-19.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-199. [OK] sun1-20.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-200. [OK] sun1-25.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-201. [OK] sun1-26.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-202. [OK] sun1-27.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-203. [OK] sun1-28.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-204. [OK] sun1-30.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-205. [OK] sun1-54.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-206. [OK] sun1-86.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-207. [OK] sun1-87.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-208. [OK] sun1-89.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-209. [OK] sun1-95.userapi.com                      (clean: 95, ad: 114, pages: 1, группа x16)
-210. [OK] sun9-52.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-211. [OK] sun9-54.userapi.com                      (clean: 20, ad: 24, pages: 1, группа x4)
-212. [OK] sun9-64.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-213. [OK] sun9-66.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-214. [OK] sun9-67.userapi.com                      (clean: 20, ad: 24, pages: 1, группа x4)
-215. [OK] sun9-70.userapi.com                      (clean: 20, ad: 24, pages: 1, группа x4)
-216. [OK] sun9-70.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-217. [OK] sun9-71.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-218. [OK] sun9-8.userapi.com                       (clean: 20, ad: 24, pages: 1, группа x4)
-219. [OK] sun9-81.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-220. [OK] sun9-83.vkuserphoto.ru                   (clean: 5, ad: 48, pages: 1, группа x8)
-221. [OK] sun9-9.vkuserphoto.ru                    (clean: 5, ad: 48, pages: 1, группа x8)
-222. [OK] surge.lenta.ru                           (clean: 48, ad: 12, pages: 2)
-223. [OK] swft.vedomosti.ru                        (clean: 144, ad: 36, pages: 1)
-224. [OK] syndication.twitter.com                  (clean: 5, ad: 42, pages: 3)
-225. [OK] t.sports.ru                              (clean: 252, ad: 192, pages: 2)
+22. [OK] bl.rutube.ru                             (clean: 0, ad: 12, pages: 1)
+23. [OK] c.pravo.ru                               (clean: 53, ad: 18, pages: 1)
+24. [OK] cdn-s01.rambler.ru                       (clean: 24, ad: 93, pages: 4)
+25. [OK] cdn-store.rambler.ru                     (clean: 357, ad: 0, pages: 1)
+26. [OK] cdn.ampproject.org                       (clean: 0, ad: 2805, pages: 4)
+27. [OK] cdn.banki.ru                             (clean: 994, ad: 258, pages: 1)
+28. [OK] cdn.dp.ru                                (clean: 170, ad: 0, pages: 2)
+29. [OK] cdn.fishki.net                           (clean: 199, ad: 0, pages: 2)
+30. [OK] cdn.forbes.ru                            (clean: 1432, ad: 648, pages: 1)
+31. [OK] cdn.hsmedia.ru                           (clean: 13020, ad: 11766, pages: 3)
+32. [OK] cdn.iportal.ru                           (clean: 165, ad: 42, pages: 2)
+33. [OK] cdn.iz.ru                                (clean: 3052, ad: 144, pages: 2)
+34. [OK] cdn.jsdelivr.net                         (clean: 0, ad: 108, pages: 4)
+35. [OK] cdn.tourprom.ru                          (clean: 34, ad: 0, pages: 1)
+36. [OK] cdn.viafoura.net                         (clean: 0, ad: 42, pages: 2)
+37. [OK] cdn10.vedomosti.ru                       (clean: 4482, ad: 1164, pages: 2, группа x2)
+38. [OK] cdn5.vedomosti.ru                        (clean: 4482, ad: 1164, pages: 2, группа x2)
+39. [OK] cdnjs.smi2.ru                            (clean: 12, ad: 222, pages: 9)
+40. [OK] cnb.cnews.ru                             (clean: 258, ad: 114, pages: 2)
+41. [OK] cnt.rambler.ru                           (clean: 24, ad: 12, pages: 2)
+42. [OK] code.jquery.com                          (clean: 0, ad: 42, pages: 2)
+43. [OK] comments.rambler.ru                      (clean: 0, ad: 24, pages: 1)
+44. [OK] connect.ok.ru                            (clean: 0, ad: 39, pages: 2)
+45. [OK] cs16.pikabu.ru                           (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+46. [OK] cs17.pikabu.ru                           (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+47. [OK] cs18.pikabu.ru                           (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+48. [OK] cs19.pikabu.ru                           (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+49. [OK] cs2.pikabu.ru                            (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+50. [OK] cs20.pikabu.ru                           (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+51. [OK] cs3.pikabu.ru                            (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+52. [OK] cs44.pikabu.ru                           (clean: 800, ad: 100, pages: 1, strong: 1, группа x8)
+53. [OK] developers.rambler.ru                    (clean: 24, ad: 66, pages: 3)
+54. [OK] did.tech.euronews.com                    (clean: 120, ad: 60, pages: 2)
+55. [OK] doctor.rambler.ru                        (clean: 1636, ad: 78, pages: 1)
+56. [OK] dumpster.cdn.sports.ru                   (clean: 174, ad: 12, pages: 2)
+57. [OK] dzen.ru                                  (clean: 5, ad: 6, pages: 1)
+58. [OK] edge-upvideo.rbc.ru                      (clean: 17, ad: 0, pages: 1)
+59. [OK] edge.api.brightcove.com                  (clean: 0, ad: 24, pages: 1)
+60. [OK] emp.bbci.co.uk                           (clean: 80, ad: 96, pages: 2)
+61. [OK] encrypted-tbn0.gstatic.com               (clean: 170, ad: 204, pages: 2, группа x4)
+62. [OK] encrypted-tbn1.gstatic.com               (clean: 170, ad: 204, pages: 2, группа x4)
+63. [OK] encrypted-tbn2.gstatic.com               (clean: 170, ad: 204, pages: 1, группа x4)
+64. [OK] encrypted-tbn3.gstatic.com               (clean: 170, ad: 204, pages: 2, группа x4)
+65. [OK] err.lenta.ru                             (clean: 204, ad: 90, pages: 1)
+66. [OK] exad.smi2.ru                             (clean: 168, ad: 96, pages: 6)
+67. [OK] fastly-signed-us-east-1-prod.brightcovecdn.com (clean: 0, ad: 24, pages: 1)
+68. [OK] favicon.yandex.net                       (clean: 195, ad: 266, pages: 10)
+69. [OK] fcpe.beeline.ru                          (clean: 15, ad: 18, pages: 3)
+70. [OK] feeds.kommersant.ru                      (clean: 17, ad: 30, pages: 1)
+71. [OK] filearchive.cnews.ru                     (clean: 119, ad: 0, pages: 1)
+72. [OK] files.1mi.media                          (clean: 180, ad: 690, pages: 1)
+73. [OK] finance.mail.ru                          (clean: 244, ad: 108, pages: 1)
+74. [OK] firebaseinstallations.googleapis.com     (clean: 0, ad: 36, pages: 2)
+75. [OK] fishki.net                               (clean: 907, ad: 36, pages: 2)
+76. [OK] fonts.googleapis.com                     (clean: 380, ad: 372, pages: 14)
+77. [OK] fonts.gstatic.com                        (clean: 1080, ad: 432, pages: 15)
+78. [OK] forms.ign.com                            (clean: 72, ad: 30, pages: 1)
+79. [OK] forum.ixbt.com                           (clean: 12, ad: 0, pages: 1)
+80. [OK] g.ign.com                                (clean: 24, ad: 12, pages: 2)
+81. [OK] gazeta.ru                                (clean: 12, ad: 0, pages: 1)
+82. [OK] gn-web-assets.api.bbc.com                (clean: 34, ad: 0, pages: 2)
+83. [OK] hlsvod.rambler.eaglecdn.com              (clean: 0, ad: 204, pages: 1)
+84. [OK] i.otzovik.com                            (clean: 306, ad: 0, pages: 2, группа x5)
+85. [OK] i2019.otzovik.com                        (clean: 306, ad: 0, pages: 1, группа x5)
+86. [OK] i2023.otzovik.com                        (clean: 306, ad: 0, pages: 1, группа x5)
+87. [OK] i2025.otzovik.com                        (clean: 306, ad: 0, pages: 1, группа x5)
+88. [OK] i2026.otzovik.com                        (clean: 306, ad: 0, pages: 1, группа x5)
+89. [OK] icdn.lenta.ru                            (clean: 1359, ad: 0, pages: 1)
+90. [OK] ichef.bbci.co.uk                         (clean: 800, ad: 222, pages: 2)
+91. [OK] im2.kommersant.ru                        (clean: 1774, ad: 666, pages: 1)
+92. [OK] images.euronews.com                      (clean: 901, ad: 0, pages: 2)
+93. [OK] img.gazeta.ru                            (clean: 85, ad: 0, pages: 1)
+94. [OK] img.imgsmail.ru                          (clean: 0, ad: 54, pages: 2)
+95. [OK] imgs2.imgsmail.ru                        (clean: 80, ad: 96, pages: 2)
+96. [OK] imgstats.rambler.ru                      (clean: 0, ad: 6, pages: 1)
+97. [OK] informer.yandex.ru                       (clean: 10, ad: 12, pages: 2)
+98. [OK] interfax.ru                              (clean: 24, ad: 0, pages: 1)
+99. [OK] irecommend.ru                            (clean: 2336, ad: 192, pages: 2)
+100. [OK] iv.okcdn.ru                              (clean: 0, ad: 66, pages: 1)
+101. [OK] iz.ru                                    (clean: 492, ad: 30, pages: 2)
+102. [OK] jay.vedomosti.ru                         (clean: 48, ad: 12, pages: 1)
+103. [OK] jitsu.ixbt.site                          (clean: 0, ad: 126, pages: 1)
+104. [OK] jsapi.login.yahoo.com                    (clean: 24, ad: 6, pages: 1)
+105. [OK] kommersant.ru                            (clean: 24, ad: 0, pages: 1)
+106. [OK] l.euronews.com                           (clean: 48, ad: 24, pages: 2)
+107. [OK] lenta.ru                                 (clean: 135, ad: 30, pages: 2)
+108. [OK] loc.yahoo.com                            (clean: 24, ad: 6, pages: 1)
+109. [OK] login.vk.ru                              (clean: 0, ad: 12, pages: 1)
+110. [OK] mail.rambler.ru                          (clean: 48, ad: 12, pages: 2)
+111. [OK] marketingplatform.google.com             (clean: 5, ad: 6, pages: 1)
+112. [OK] mcdn.imgsmail.ru                         (clean: 30, ad: 54, pages: 2)
+113. [OK] mdd.yandex.net                           (clean: 0, ad: 24, pages: 2)
+114. [OK] media-trend.mail.ru                      (clean: 144, ad: 60, pages: 2)
+115. [OK] media.ixbt.com                           (clean: 238, ad: 0, pages: 1)
+116. [OK] media.ixbt.site                          (clean: 5, ad: 6, pages: 1)
+117. [OK] media.ixbt.video                         (clean: 15, ad: 18, pages: 1)
+118. [OK] metrics.brightcove.com                   (clean: 0, ad: 48, pages: 1, name-hint)
+119. [OK] mollusk.apis.ign.com                     (clean: 96, ad: 24, pages: 2)
+120. [OK] ms.vkvideo.ru                            (clean: 0, ad: 12, pages: 1)
+121. [OK] mybbc-analytics.files.bbci.co.uk         (clean: 0, ad: 396, pages: 2, name-hint)
+122. [OK] n1s1.hsmedia.ru                          (clean: 1220, ad: 294, pages: 3)
+123. [OK] news.mail.ru                             (clean: 258, ad: 90, pages: 1)
+124. [OK] news.rambler.ru                          (clean: 1612, ad: 78, pages: 1)
+125. [OK] news.store.rambler.ru                    (clean: 170, ad: 0, pages: 2)
+126. [OK] nexus-gateway-prod.media.yahoo.com       (clean: 48, ad: 18, pages: 1)
+127. [OK] ngs.ru                                   (clean: 48, ad: 0, pages: 2)
+128. [OK] nordic.ign.com                           (clean: 298, ad: 104, pages: 1, strong: 2)
+129. [OK] notifications.viafoura.co                (clean: 0, ad: 24, pages: 2)
+130. [OK] open.live.bbc.co.uk                      (clean: 20, ad: 12, pages: 1)
+131. [OK] ostrich.vedomosti.ru                     (clean: 72, ad: 24, pages: 2)
+132. [OK] otzovik.com                              (clean: 844, ad: 30, pages: 2)
+133. [OK] peroxide.rambler.ru                      (clean: 120, ad: 60, pages: 1)
+134. [OK] pg.ignimgs.com                           (clean: 0, ad: 21, pages: 1)
+135. [OK] photobooth.cdn.sports.ru                 (clean: 265, ad: 0, pages: 1)
+136. [OK] pictures.cdn.sports.ru                   (clean: 2360, ad: 0, pages: 2)
+137. [OK] pikabu.ru                                (clean: 12, ad: 0, pages: 1)
+138. [OK] pogoda.imgsmail.ru                       (clean: 0, ad: 6, pages: 1)
+139. [OK] portal.mail.ru                           (clean: 48, ad: 24, pages: 2)
+140. [OK] pp.userapi.com                           (clean: 5, ad: 6, pages: 1)
+141. [OK] pravo.ru                                 (clean: 376, ad: 46, pages: 2, strong: 1)
+142. [OK] promokod.pikabu.ru                       (clean: 959, ad: 6, pages: 1)
+143. [OK] r.bbci.co.uk                             (clean: 40, ad: 12, pages: 1)
+144. [OK] r.mradx.net                              (clean: 60, ad: 318, pages: 3)
+145. [OK] rcmjs.rambler.ru                         (clean: 118, ad: 117, pages: 4)
+146. [OK] resizer.mail.ru                          (clean: 85, ad: 0, pages: 2)
+147. [OK] ria.ru                                   (clean: 154, ad: 128, pages: 2, strong: 2)
+148. [OK] rozetked.me                              (clean: 677, ad: 0, pages: 2)
+149. [OK] rutube.ru                                (clean: 0, ad: 168, pages: 2)
+150. [OK] s.rbk.ru                                 (clean: 390, ad: 2508, pages: 2, группа x2)
+151. [OK] s.suprion.ru                             (clean: 0, ad: 6, pages: 1)
+152. [OK] s.yimg.com                               (clean: 20, ad: 669, pages: 1, strong: 3)
+153. [OK] s0.rbk.ru                                (clean: 390, ad: 2508, pages: 2, группа x2)
+154. [OK] s00.yaplakal.com                         (clean: 459, ad: 0, pages: 1)
+155. [OK] s01.stc.yc.kpcdn.net                     (clean: 160, ad: 1069, pages: 2, группа x3)
+156. [OK] s01.yapfiles.ru                          (clean: 35, ad: 42, pages: 1, группа x2)
+157. [OK] s02.api.yc.kpcdn.net                     (clean: 0, ad: 24, pages: 2)
+158. [OK] s02.yapfiles.ru                          (clean: 35, ad: 42, pages: 1, группа x2)
+159. [OK] s09.stc.yc.kpcdn.net                     (clean: 160, ad: 1069, pages: 2, группа x3)
+160. [OK] s11.stc.yc.kpcdn.net                     (clean: 160, ad: 1069, pages: 1, группа x3)
+161. [OK] s3-cdn.iportal.ru                        (clean: 5, ad: 138, pages: 3)
+162. [OK] senoval-master.cdn.sports.ru             (clean: 490, ad: 228, pages: 2)
+163. [OK] senoval.cdn.sports.ru                    (clean: 3332, ad: 816, pages: 2)
+164. [OK] sentry-saas.rambler-co.ru                (clean: 0, ad: 120, pages: 3)
+165. [OK] sentry.io                                (clean: 0, ad: 24, pages: 2)
+166. [OK] sm.ign.com                               (clean: 204, ad: 0, pages: 1)
+167. [OK] smartcaptcha.yandexcloud.net             (clean: 0, ad: 894, pages: 3)
+168. [OK] smi2.ru                                  (clean: 3398, ad: 5010, pages: 19)
+169. [OK] snippets.1mi.media                       (clean: 25, ad: 30, pages: 1)
+170. [OK] st1-27.vk.ru                             (clean: 160, ad: 192, pages: 1)
+171. [OK] st1-28.vkvideo.ru                        (clean: 30, ad: 108, pages: 1)
+172. [OK] static.bbci.co.uk                        (clean: 40, ad: 42, pages: 2)
+173. [OK] static.cnews.ru                          (clean: 177, ad: 90, pages: 2)
+174. [OK] static.eaglecdn.com                      (clean: 60, ad: 72, pages: 1)
+175. [OK] static.euronews.com                      (clean: 80, ad: 0, pages: 2)
+176. [OK] static.files.bbci.co.uk                  (clean: 2210, ad: 1914, pages: 2)
+177. [OK] static.gazeta.ru                         (clean: 618, ad: 76, pages: 1, strong: 1)
+178. [OK] static.rambler.ru                        (clean: 1942, ad: 192, pages: 3)
+179. [OK] static.rozetked.me                       (clean: 391, ad: 0, pages: 2)
+180. [OK] static.rutube.ru                         (clean: 75, ad: 163, pages: 1)
+181. [OK] static2.banki.ru                         (clean: 85, ad: 0, pages: 1, группа x3)
+182. [OK] static3.banki.ru                         (clean: 85, ad: 0, pages: 1, группа x3)
+183. [OK] static4.banki.ru                         (clean: 85, ad: 0, pages: 1, группа x3)
+184. [OK] stats.mos.ru                             (clean: 15, ad: 48, pages: 3, name-hint)
+185. [OK] storage.pravo.ru                         (clean: 255, ad: 0, pages: 1)
+186. [OK] sun1-14.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+187. [OK] sun1-15.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+188. [OK] sun1-17.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+189. [OK] sun1-18.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+190. [OK] sun1-19.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+191. [OK] sun1-20.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+192. [OK] sun1-25.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+193. [OK] sun1-26.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+194. [OK] sun1-27.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+195. [OK] sun1-28.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+196. [OK] sun1-30.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+197. [OK] sun1-54.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+198. [OK] sun1-86.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+199. [OK] sun1-87.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+200. [OK] sun1-89.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+201. [OK] sun1-95.userapi.com                      (clean: 90, ad: 108, pages: 1, группа x16)
+202. [OK] sun9-16.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+203. [OK] sun9-2.vkuserphoto.ru                    (clean: 5, ad: 120, pages: 1, группа x16)
+204. [OK] sun9-37.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+205. [OK] sun9-4.vkuserphoto.ru                    (clean: 5, ad: 120, pages: 1, группа x16)
+206. [OK] sun9-48.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+207. [OK] sun9-54.userapi.com                      (clean: 20, ad: 24, pages: 1, группа x4)
+208. [OK] sun9-55.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+209. [OK] sun9-61.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+210. [OK] sun9-63.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+211. [OK] sun9-67.userapi.com                      (clean: 20, ad: 24, pages: 1, группа x4)
+212. [OK] sun9-68.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+213. [OK] sun9-69.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+214. [OK] sun9-70.userapi.com                      (clean: 20, ad: 24, pages: 1, группа x4)
+215. [OK] sun9-70.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+216. [OK] sun9-71.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+217. [OK] sun9-8.userapi.com                       (clean: 20, ad: 24, pages: 1, группа x4)
+218. [OK] sun9-80.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+219. [OK] sun9-81.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+220. [OK] sun9-82.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+221. [OK] sun9-85.vkuserphoto.ru                   (clean: 5, ad: 120, pages: 1, группа x16)
+222. [OK] surge.lenta.ru                           (clean: 24, ad: 6, pages: 1)
+223. [OK] swft.vedomosti.ru                        (clean: 240, ad: 60, pages: 2)
+224. [OK] syndication.twitter.com                  (clean: 5, ad: 30, pages: 2)
+225. [OK] t.sports.ru                              (clean: 372, ad: 318, pages: 4)
 226. [OK] templates.cds.yahoo.com                  (clean: 24, ad: 6, pages: 1)
-227. [OK] tourdom.ru                               (clean: 12, ad: 0, pages: 1)
+227. [OK] tn.fishki.net                            (clean: 1122, ad: 0, pages: 2)
 228. [OK] tourprom.ru                              (clean: 12, ad: 0, pages: 1)
-229. [OK] tyrion.viafoura.co                       (clean: 0, ad: 72, pages: 2)
-230. [OK] udc.yahoo.com                            (clean: 168, ad: 84, pages: 2)
-231. [OK] usapi.banki.ru                           (clean: 24, ad: 6, pages: 1)
-232. [OK] vfokuse.mail.ru                          (clean: 203, ad: 96, pages: 1)
-233. [OK] vk.com                                   (clean: 30, ad: 2775, pages: 9)
-234. [OK] vk.ru                                    (clean: 10, ad: 945, pages: 5)
-235. [OK] vk6-8.vkuser.net                         (clean: 0, ad: 192, pages: 1)
-236. [OK] vkvd474.okcdn.ru                         (clean: 0, ad: 372, pages: 1, группа x2)
-237. [OK] vkvd746.okcdn.ru                         (clean: 0, ad: 372, pages: 1, группа x2)
-238. [OK] vkvideo.ru                               (clean: 15, ad: 1977, pages: 3)
-239. [OK] weather.rambler.ru                       (clean: 465, ad: 144, pages: 2)
-240. [OK] web-cdn.api.bbci.co.uk                   (clean: 20, ad: 12, pages: 1)
-241. [OK] web.api.vk.ru                            (clean: 0, ad: 12, pages: 1)
-242. [OK] webasr.yandex.net                        (clean: 10, ad: 12, pages: 1)
-243. [OK] www.banki.ru                             (clean: 240, ad: 120, pages: 1)
-244. [OK] www.bbc.co.uk                            (clean: 40, ad: 24, pages: 2)
-245. [OK] www.bbc.com                              (clean: 24, ad: 0, pages: 2)
-246. [OK] www.cnews.ru                             (clean: 1381, ad: 18, pages: 2)
-247. [OK] www.dp.ru                                (clean: 1563, ad: 228, pages: 2)
-248. [OK] www.e1.ru                                (clean: 24, ad: 0, pages: 2)
-249. [OK] www.euronews.com                         (clean: 3016, ad: 1344, pages: 2)
-250. [OK] www.fontanka.ru                          (clean: 236, ad: 72, pages: 2)
-251. [OK] www.forbes.ru                            (clean: 178, ad: 54, pages: 1)
-252. [OK] www.gazeta.ru                            (clean: 36, ad: 12, pages: 1)
-253. [OK] www.google.com                           (clean: 10, ad: 417, pages: 8, strong: 3)
-254. [OK] www.google.de                            (clean: 0, ad: 46, pages: 1, strong: 1)
-255. [OK] www.google.ru                            (clean: 15, ad: 138, pages: 3, strong: 3)
-256. [OK] www.gstatic.com                          (clean: 120, ad: 913, pages: 8)
-257. [OK] www.ign.com                              (clean: 24, ad: 0, pages: 2)
-258. [OK] www.infox.ru                             (clean: 1350, ad: 0, pages: 2)
-259. [OK] www.interfax.ru                          (clean: 1500, ad: 12, pages: 2)
-260. [OK] www.ixbt.com                             (clean: 854, ad: 120, pages: 2)
-261. [OK] www.kommersant.ru                        (clean: 159, ad: 12, pages: 2)
-262. [OK] www.kp.ru                                (clean: 41, ad: 6, pages: 1)
-263. [OK] www.mk.ru                                (clean: 75, ad: 0, pages: 2)
-264. [OK] www.rambler.ru                           (clean: 48, ad: 24, pages: 2)
-265. [OK] www.rbc.ru                               (clean: 65, ad: 18, pages: 1)
-266. [OK] www.retail.ru                            (clean: 2481, ad: 612, pages: 2)
-267. [OK] www.sports.ru                            (clean: 350, ad: 195, pages: 2)
-268. [OK] www.techradar.com                        (clean: 1913, ad: 930, pages: 2, strong: 6)
-269. [OK] www.tourdom.ru                           (clean: 1511, ad: 102, pages: 1)
-270. [OK] www.tourprom.ru                          (clean: 476, ad: 54, pages: 1)
-271. [OK] www.vedomosti.ru                         (clean: 36, ad: 0, pages: 2)
-272. [OK] www.yahoo.com                            (clean: 1019, ad: 42, pages: 1)
-273. [OK] www.yandex.ru                            (clean: 15, ad: 108, pages: 2)
-274. [OK] www.yapfiles.ru                          (clean: 30, ad: 36, pages: 2)
-275. [OK] www.yaplakal.com                         (clean: 2134, ad: 12, pages: 2)
-276. [OK] www.yuga.ru                              (clean: 194, ad: 0, pages: 2)
-277. [OK] xray.mail.ru                             (clean: 120, ad: 60, pages: 2)
-278. [OK] yandex.ru                                (clean: 455, ad: 35687, pages: 42, strong: 290)
-279. [OK] yastatic.net                             (clean: 60, ad: 27162, pages: 40)
-280. [OK] z.cdn.adtarget.me                        (clean: 0, ad: 6, pages: 1)
-281. [OK] zoom.cnews.ru                            (clean: 602, ad: 0, pages: 1)
+229. [OK] trafffgen.rambler.ru                     (clean: 12, ad: 0, pages: 1)
+230. [OK] tyrion.viafoura.co                       (clean: 0, ad: 72, pages: 2)
+231. [OK] udc.yahoo.com                            (clean: 84, ad: 42, pages: 1)
+232. [OK] vd345.okcdn.ru                           (clean: 0, ad: 12, pages: 1)
+233. [OK] visor.sberbank.ru                        (clean: 0, ad: 48, pages: 4)
+234. [OK] vk.com                                   (clean: 10, ad: 228, pages: 7)
+235. [OK] vk.ru                                    (clean: 0, ad: 33, pages: 1)
+236. [OK] vkvd501.okcdn.ru                         (clean: 0, ad: 180, pages: 1)
+237. [OK] vkvideo.ru                               (clean: 0, ad: 864, pages: 1)
+238. [OK] weather.rambler.ru                       (clean: 24, ad: 12, pages: 2)
+239. [OK] web-cdn.api.bbci.co.uk                   (clean: 20, ad: 12, pages: 1)
+240. [OK] webasr.yandex.net                        (clean: 20, ad: 24, pages: 2)
+241. [OK] www.banki.ru                             (clean: 108, ad: 54, pages: 1)
+242. [OK] www.bbc.co.uk                            (clean: 40, ad: 24, pages: 2)
+243. [OK] www.bbc.com                              (clean: 24, ad: 0, pages: 2)
+244. [OK] www.cnconf.ru                            (clean: 398, ad: 0, pages: 1)
+245. [OK] www.cnews.ru                             (clean: 1306, ad: 45, pages: 2)
+246. [OK] www.dp.ru                                (clean: 1592, ad: 228, pages: 2)
+247. [OK] www.e1.ru                                (clean: 142, ad: 36, pages: 2)
+248. [OK] www.euronews.com                         (clean: 3086, ad: 1314, pages: 2)
+249. [OK] www.fontanka.ru                          (clean: 171, ad: 48, pages: 2)
+250. [OK] www.forbes.ru                            (clean: 87, ad: 6, pages: 1)
+251. [OK] www.gazeta.ru                            (clean: 303, ad: 120, pages: 1)
+252. [OK] www.google.ca                            (clean: 5, ad: 46, pages: 1, strong: 1)
+253. [OK] www.google.co.il                         (clean: 5, ad: 46, pages: 1, strong: 1)
+254. [OK] www.google.com                           (clean: 25, ad: 963, pages: 10, strong: 12)
+255. [OK] www.google.pt                            (clean: 5, ad: 46, pages: 1, strong: 1)
+256. [OK] www.google.ru                            (clean: 10, ad: 92, pages: 2, strong: 2)
+257. [OK] www.gstatic.com                          (clean: 205, ad: 1840, pages: 12)
+258. [OK] www.ign.com                              (clean: 24, ad: 0, pages: 2)
+259. [OK] www.infox.ru                             (clean: 1350, ad: 0, pages: 2)
+260. [OK] www.instagram.com                        (clean: 0, ad: 21, pages: 1)
+261. [OK] www.interfax.ru                          (clean: 699, ad: 6, pages: 1)
+262. [OK] www.ixbt.com                             (clean: 620, ad: 60, pages: 1)
+263. [OK] www.kommersant.ru                        (clean: 41, ad: 6, pages: 1)
+264. [OK] www.kp.ru                                (clean: 82, ad: 12, pages: 2)
+265. [OK] www.mk.ru                                (clean: 75, ad: 0, pages: 2)
+266. [OK] www.rambler.ru                           (clean: 72, ad: 36, pages: 2)
+267. [OK] www.rbc.ru                               (clean: 430, ad: 186, pages: 2)
+268. [OK] www.retail.ru                            (clean: 2806, ad: 720, pages: 2)
+269. [OK] www.rosbalt.ru                           (clean: 84, ad: 24, pages: 2)
+270. [OK] www.sports.ru                            (clean: 640, ad: 360, pages: 4)
+271. [OK] www.techradar.com                        (clean: 1343, ad: 546, pages: 2, strong: 3)
+272. [OK] www.temu.com                             (clean: 0, ad: 104, pages: 1, strong: 2)
+273. [OK] www.tourdom.ru                           (clean: 2636, ad: 198, pages: 2)
+274. [OK] www.tourprom.ru                          (clean: 464, ad: 54, pages: 1)
+275. [OK] www.vedomosti.ru                         (clean: 24, ad: 0, pages: 2)
+276. [OK] www.yahoo.com                            (clean: 1031, ad: 48, pages: 1)
+277. [OK] www.yandex.ru                            (clean: 15, ad: 108, pages: 3)
+278. [OK] www.yapfiles.ru                          (clean: 10, ad: 12, pages: 1)
+279. [OK] www.yaplakal.com                         (clean: 813, ad: 6, pages: 2)
+280. [OK] www.yuga.ru                              (clean: 24, ad: 0, pages: 2)
+281. [OK] xray.mail.ru                             (clean: 72, ad: 36, pages: 2)
+282. [OK] yahoo.com                                (clean: 24, ad: 0, pages: 1)
+283. [OK] yandex.ru                                (clean: 655, ad: 31426, pages: 43, strong: 239)
+284. [OK] yast.rutube.ru                           (clean: 0, ad: 36, pages: 1)
+285. [OK] yastatic.net                             (clean: 120, ad: 17454, pages: 41)
+286. [OK] z.cdn.adtarget.me                        (clean: 0, ad: 6, pages: 1)

@@ -72,6 +72,9 @@
 ||rb.adnxs-simple.com^
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
+||ads.adretriever.com^
+||events.adretriever.com^
+||media.adretriever.com^
 ||adriver.ru^
 ||d.adroll.com^
 ||tracker.ads-tinyorbit.com^
@@ -88,10 +91,12 @@
 ||a.adspector.io^
 ||sync.adspend.space^
 ||adsrvr.org^
+||ad.adsrvx-targeting.com^
 ||adtarget.biz^
 ||s.console.adtarget.com.tr^
 ||ads.adtec.ru^
 ||cdn.adtec.ru^
+||sync.adtech.ink^
 ||ep1.adtrafficquality.google^
 ||ep2.adtrafficquality.google^
 ||static.advcake.ru^
@@ -244,6 +249,7 @@
 ||cdn.debugbear.com^
 ||match.deepintent.com^
 ||demdex.net^
+||target.digitalaudience.io^
 ||sync.digitalcaramel.com^
 ||dmg.digitaltarget.ru^
 ||tag.digitaltarget.ru^
@@ -253,13 +259,17 @@
 ||dmxleo.com^
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
+||33across-match.dotomi.com^
 ||casale-match.dotomi.com^
 ||dclk-match.dotomi.com^
 ||equativ-match.dotomi.com^
 ||gumgum-match.dotomi.com^
 ||krush-match.dotomi.com^
+||medianet-match.dotomi.com^
 ||prebid-match.dotomi.com^
+||pubmatic-match.dotomi.com^
 ||stx-match.dotomi.com^
+||yahoo-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
 ||doubleclick.net^
 ||doubleverify.com^
@@ -288,6 +298,7 @@
 ||sync-tm.everesttech.net^
 ||loadm.exelator.com^
 ||ps.eyeota.net^
+||chap.fabulousbridge.com^
 ||connect.facebook.net^
 ||tool.festivehorse.com^
 ||ad-events.flashtalking.com^
@@ -367,6 +378,7 @@
 ||visit-server.inmobi-choice.io^
 ||cmp.inmobi.com^
 ||sync.inmobi.com^
+||mweb.ck.inmobi.com^
 ||dvrtr.innovid.com^
 ||cdn.insales-shop.ru^
 ||counter.insales.com^
@@ -483,7 +495,6 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -530,6 +541,7 @@
 ||cdn.p-n.io^
 ||k.p-n.io^
 ||sync.p7cloud.net^
+||prism-tracking.pacvue.com^
 ||analytics.pangle-ads.com^
 ||cdn.pbxai.com^
 ||floor.pbxai.com^
@@ -646,6 +658,7 @@
 ||rtbcdn.ru^
 ||tracker-b.rtbpixelpluses.com^
 ||t.rtbwave.com^
+||trace.us.rtbwise.com^
 ||rubiconproject.com^
 ||w.rulive.ru^
 ||match.rundsp.com^
@@ -673,6 +686,7 @@
 ||cs.seedtag.com^
 ||s.seedtag.com^
 ||sync.selfclick.pro^
+||su.semasio.net^
 ||uipglob.semasio.net^
 ||sendsay.ru^
 ||ads.servebom.com^
@@ -852,15 +866,16 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
+||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
+||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^
