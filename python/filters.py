@@ -238,7 +238,7 @@ PROTECTED_FAMILIES = [
     # === Y ===
     "yahoo.com", "yahoo.net", "yahoofinance.com",
     "ya.ru", "yandex.net", "yandex.ru", 
-    "yap.ru", "yaplakal.com",
+    "yap.ru", "yaplakal.com", "counter.yadro.ru",
 
     # === Цифры / Прочее ===
     "1mi.media", "1mi-media.ru",
