@@ -137,7 +137,7 @@ NEVER_BLOCK_DOMAINS = [
     "shazoo.ru", "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com",
+    "t.me", "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com",
     
     # === U ===
     "unpkg.com",
