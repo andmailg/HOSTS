@@ -88,7 +88,7 @@ NEVER_BLOCK_DOMAINS = [
     "adobedtm.com", "amazonaws.com", "ampproject.org",
     
     # === B ===
-    "bbc.co.uk", "bbci.co.uk", "bunny.net", "brightcove.com", "brightcovecdn.com",
+    "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net", "brightcove.com", "brightcovecdn.com",
 
     # === C ===
     "cloudflare.com", "createjs.com",
