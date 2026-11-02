@@ -52,19 +52,19 @@ jobs:
           echo "Изменений в списках нет."
         fi
 
-        - name: Send Log to Telegram
-        if: always() # Отправляет лог даже в случае падения предыдущих шагов
-        env:
-          TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          if [ -f "python/log.txt" ]; then
-            curl -F chat_id="${TELEGRAM_CHAT_ID}" \
-                -F document=@"python/log.txt" \
-                -F caption="📄 Лог обновления хостов" \
-                https://telegram.org/{TELEGRAM_API_TOKEN}/sendDocument
-          else
-            echo "Файл python/log.txt не найден."
-          fi
+    - name: Send Log to Telegram
+      if: always() # Отправляет лог даже в случае падения предыдущих шагов
+      env:
+        TELEGRAM_API_TOKEN: ${{ secrets.TELEGRAM_API_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: |
+        if [ -f "python/log.txt" ]; then
+          curl -F chat_id="${TELEGRAM_CHAT_ID}" \
+              -F document=@"python/log.txt" \
+              -F caption="📄 Лог обновления хостов" \
+              https://api.telegram.org/bot{TELEGRAM_API_TOKEN}/sendDocument
+        else
+          echo "Файл python/log.txt не найден."
+        fi
 
 
