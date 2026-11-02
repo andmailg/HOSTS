@@ -97,7 +97,7 @@ NEVER_BLOCK_DOMAINS = [
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
 
     # === E ===
-    "eaglecdn.com", "example.com",
+    "eaglecdn.com", "euronews.com", "example.com",
 
     # === F ===
     "flourish.studio",
@@ -180,7 +180,7 @@ PROTECTED_FAMILIES = [
     "directupload.eu", "disqus.com", "dzen.ru",
 
     # === E ===
-    "e1.ru", "eda.ru", "euronews.com",
+    "e1.ru", "eda.ru",
 
     # === F ===
     "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
@@ -400,9 +400,6 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === D ===
     r"^ssp.disqus.com$",
-    
-    # === E ===
-    r"^stat\.tech\.euronews\.com$",
 
     # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)

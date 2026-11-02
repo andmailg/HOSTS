@@ -517,7 +517,6 @@
 0.0.0.0 lb.eu-1-id5-sync.com
 0.0.0.0 lbs.eu-1-id5-sync.com
 0.0.0.0 cdn.prod.euid.eu
-0.0.0.0 stat.tech.euronews.com
 0.0.0.0 cm.everesttech.net
 0.0.0.0 rtd-tm.everesttech.net
 0.0.0.0 sync-tm.everesttech.net
