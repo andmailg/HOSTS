@@ -145,6 +145,7 @@
 0.0.0.0 static.adsafeprotected.com
 0.0.0.0 staticjs.adsafeprotected.com
 0.0.0.0 unified.adsafeprotected.com
+0.0.0.0 uads.adsboosters.xyz
 0.0.0.0 bid.adsensei.ai
 0.0.0.0 us.adserv-us.com
 0.0.0.0 cstb.adsinteractive.com
@@ -174,6 +175,7 @@
 0.0.0.0 ads.adtec.ru
 0.0.0.0 cdn.adtec.ru
 0.0.0.0 sync.adtech.ink
+0.0.0.0 sync.adtelligent.com
 0.0.0.0 ep1.adtrafficquality.google
 0.0.0.0 ep2.adtrafficquality.google
 0.0.0.0 static.advcake.ru
@@ -203,6 +205,7 @@
 0.0.0.0 cs.alfasense.com
 0.0.0.0 pbs.alfasense.com
 0.0.0.0 rtb.alfasense.com
+0.0.0.0 plugin-cdn.alphaintent.com
 0.0.0.0 ads.altitude-arena.com
 0.0.0.0 amazon-adsystem.com
 0.0.0.0 aax-eu.amazon-adsystem.com
@@ -332,6 +335,7 @@
 0.0.0.0 ceros.com
 0.0.0.0 api.ceros.com
 0.0.0.0 assets.ceros.com
+0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
 0.0.0.0 mab.chartbeat.com
@@ -367,6 +371,7 @@
 0.0.0.0 cloudflarestream.com
 0.0.0.0 d17ebhrlbr4s4.cloudfront.net
 0.0.0.0 d3e54v103j8qbb.cloudfront.net
+0.0.0.0 c.clvrads.com
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 sync.colossusssp.com
 0.0.0.0 adx.com.ru
@@ -374,6 +379,8 @@
 0.0.0.0 s.company-target.com
 0.0.0.0 cdn.confiant-integrations.net
 0.0.0.0 capi.connatix.com
+0.0.0.0 cds.connatix.com
+0.0.0.0 cks.connatix.com
 0.0.0.0 pl.connatix.com
 0.0.0.0 cdn.connectad.io
 0.0.0.0 sync-eu.connectad.io
@@ -452,6 +459,7 @@
 0.0.0.0 gumgum-match.dotomi.com
 0.0.0.0 krush-match.dotomi.com
 0.0.0.0 medianet-match.dotomi.com
+0.0.0.0 ogury-match.dotomi.com
 0.0.0.0 openweb-match.dotomi.com
 0.0.0.0 prebid-match.dotomi.com
 0.0.0.0 pubmatic-match.dotomi.com
@@ -474,6 +482,7 @@
 0.0.0.0 rtb0.doubleverify.com
 0.0.0.0 tps-dn-ue1.doubleverify.com
 0.0.0.0 tps.doubleverify.com
+0.0.0.0 tpsc-ew1.doubleverify.com
 0.0.0.0 tpsc-ue1.doubleverify.com
 0.0.0.0 tpsc-video-ue.doubleverify.com
 0.0.0.0 vast.doubleverify.com
@@ -498,7 +507,9 @@
 0.0.0.0 cs.emxdgt.com
 0.0.0.0 cdn.enkod.ru
 0.0.0.0 ext.enkod.ru
+0.0.0.0 green.erne.co
 0.0.0.0 escalax.io
+0.0.0.0 sync-us-east.escalax.io
 0.0.0.0 eskimi.com
 0.0.0.0 ittpx-us-e.eskimi.com
 0.0.0.0 ittpx.eskimi.com
@@ -556,6 +567,7 @@
 0.0.0.0 ls.hit.gemius.pl
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 wrappers.geoedge.be
+0.0.0.0 geoip-js.com
 0.0.0.0 usersync.getpublica.com
 0.0.0.0 metrics.getrockerbox.com
 0.0.0.0 a.giraff.io
@@ -694,6 +706,7 @@
 0.0.0.0 bb.lijit.com
 0.0.0.0 cdn.lijit.com
 0.0.0.0 ce.lijit.com
+0.0.0.0 red-n.stg-adv.lijit.com
 0.0.0.0 ruby-n.stg-adv.lijit.com
 0.0.0.0 linkedin.com
 0.0.0.0 px.ads.linkedin.com
@@ -777,6 +790,7 @@
 0.0.0.0 ads.monetix.group
 0.0.0.0 dsp-service.monetixads.com
 0.0.0.0 ib.mookie1.com
+0.0.0.0 odr.mookie1.com
 0.0.0.0 px.mountain.com
 0.0.0.0 code.moviead55.ru
 0.0.0.0 identity.mparticle.com
@@ -816,12 +830,12 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
 0.0.0.0 t.nodals.io
 0.0.0.0 ssp-statistics.dev.dsp1.nominaltechno.com
+0.0.0.0 nowads.com
 0.0.0.0 nowaymail.com
 0.0.0.0 pym.nprapps.org
 0.0.0.0 dsp.nrich.ai
@@ -922,6 +936,7 @@
 0.0.0.0 sync.p7cloud.net
 0.0.0.0 prism-tracking.pacvue.com
 0.0.0.0 analytics.pangle-ads.com
+0.0.0.0 plugin.ai.partner-alphaintent.com
 0.0.0.0 cdn.pbxai.com
 0.0.0.0 floor.pbxai.com
 0.0.0.0 s3sc.perfluence.net
@@ -940,6 +955,7 @@
 0.0.0.0 polarcdn-pentos.com
 0.0.0.0 polarcdn-terrax.com
 0.0.0.0 static.polarcdn.com
+0.0.0.0 rainbet.post-view.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 service.pravo.ru
@@ -956,11 +972,15 @@
 0.0.0.0 prmutv.co
 0.0.0.0 fei.pro-market.net
 0.0.0.0 prodmp.ru
+0.0.0.0 asr.programmatica.com
 0.0.0.0 buyer.programmatica.com
 0.0.0.0 events-api.programmatica.com
 0.0.0.0 minio.programmatica.com
+0.0.0.0 s3.programmatica.com
 0.0.0.0 sync.programmatica.com
+0.0.0.0 track.programmatica.com
 0.0.0.0 vast.programmatica.com
+0.0.0.0 vpaid.programmatica.com
 0.0.0.0 sync.programmaticx.ai
 0.0.0.0 pubmatic.com
 0.0.0.0 ads.pubmatic.com
@@ -1084,6 +1104,7 @@
 0.0.0.0 tracker-b.rtbpixelpluses.com
 0.0.0.0 sync.rtbplatform.ru
 0.0.0.0 s3.rtbplatforma.ru
+0.0.0.0 s3s.rtbplatforma.ru
 0.0.0.0 t.rtbwave.com
 0.0.0.0 trace.us.rtbwise.com
 0.0.0.0 rubiconproject.com
@@ -1091,6 +1112,7 @@
 0.0.0.0 beacon-nf-iad6.rubiconproject.com
 0.0.0.0 eus.rubiconproject.com
 0.0.0.0 fastlane.rubiconproject.com
+0.0.0.0 pixel-eu.rubiconproject.com
 0.0.0.0 pixel-us-east.rubiconproject.com
 0.0.0.0 pixel.rubiconproject.com
 0.0.0.0 prebid-server.rubiconproject.com
@@ -1137,6 +1159,7 @@
 0.0.0.0 s.seedtag.com
 0.0.0.0 px.segmel.com
 0.0.0.0 sync.selfclick.pro
+0.0.0.0 se.semasio.net
 0.0.0.0 su.semasio.net
 0.0.0.0 uipglob.semasio.net
 0.0.0.0 sendsay.ru
@@ -1185,7 +1208,9 @@
 0.0.0.0 www.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
+0.0.0.0 bidder.smartytouch.co
 0.0.0.0 target.smi2.net
+0.0.0.0 exad.smi2.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
@@ -1254,6 +1279,7 @@
 0.0.0.0 elb.the-ozone-project.com
 0.0.0.0 prebid.the-ozone-project.com
 0.0.0.0 sync.theagenticx.ai
+0.0.0.0 sync.thecas.xyz
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
 0.0.0.0 analytics.tiktok.com
@@ -1284,6 +1310,7 @@
 0.0.0.0 b.trueanthem.com
 0.0.0.0 cdn.trust-id.ru
 0.0.0.0 id.trust-id.ru
+0.0.0.0 choices-or.trustarc.com
 0.0.0.0 choices.trustarc.com
 0.0.0.0 choices.truste.com
 0.0.0.0 hb.trustedstack.com
@@ -1294,6 +1321,7 @@
 0.0.0.0 ad.turn.com
 0.0.0.0 d.turn.com
 0.0.0.0 p.tvpixel.com
+0.0.0.0 collector-45958.tvsquared.com
 0.0.0.0 de.tynt.com
 0.0.0.0 hde.tynt.com
 0.0.0.0 u-login.com
@@ -1393,10 +1421,8 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
-0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
-0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1406,7 +1432,6 @@
 0.0.0.0 signal-service.pbs.yahoo.com
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
-0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
@@ -1446,5 +1471,3 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
-0.0.0.0 s3s.rtbplatforma.ru
-0.0.0.0 exad.smi2.ru

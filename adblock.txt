@@ -92,6 +92,7 @@
 ||static.adsafeprotected.com^
 ||staticjs.adsafeprotected.com^
 ||unified.adsafeprotected.com^
+||uads.adsboosters.xyz^
 ||bid.adsensei.ai^
 ||us.adserv-us.com^
 ||cstb.adsinteractive.com^
@@ -106,6 +107,7 @@
 ||ads.adtec.ru^
 ||cdn.adtec.ru^
 ||sync.adtech.ink^
+||sync.adtelligent.com^
 ||ep1.adtrafficquality.google^
 ||ep2.adtrafficquality.google^
 ||static.advcake.ru^
@@ -128,6 +130,7 @@
 ||ssp.al-adtech.com^
 ||p.alcmpn.com^
 ||alfasense.com^
+||plugin-cdn.alphaintent.com^
 ||ads.altitude-arena.com^
 ||amazon-adsystem.com^
 ||prod.us-east-1.cxm-bcn.publisher-services.amazon.dev^
@@ -241,12 +244,15 @@
 ||cloudflarestream.com^
 ||d17ebhrlbr4s4.cloudfront.net^
 ||d3e54v103j8qbb.cloudfront.net^
+||c.clvrads.com^
 ||beacon.lynx.cognitivlabs.com^
 ||sync.colossusssp.com^
 ||adx.com.ru^
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
 ||capi.connatix.com^
+||cds.connatix.com^
+||cks.connatix.com^
 ||pl.connatix.com^
 ||cdn.connectad.io^
 ||sync-eu.connectad.io^
@@ -301,6 +307,7 @@
 ||gumgum-match.dotomi.com^
 ||krush-match.dotomi.com^
 ||medianet-match.dotomi.com^
+||ogury-match.dotomi.com^
 ||openweb-match.dotomi.com^
 ||prebid-match.dotomi.com^
 ||pubmatic-match.dotomi.com^
@@ -328,6 +335,7 @@
 ||cs.emxdgt.com^
 ||cdn.enkod.ru^
 ||ext.enkod.ru^
+||green.erne.co^
 ||escalax.io^
 ||eskimi.com^
 ||lb.eu-1-id5-sync.com^
@@ -371,6 +379,7 @@
 ||ls.hit.gemius.pl^
 ||rumcdn.geoedge.be^
 ||wrappers.geoedge.be^
+||geoip-js.com^
 ||usersync.getpublica.com^
 ||metrics.getrockerbox.com^
 ||a.giraff.io^
@@ -516,6 +525,7 @@
 ||ads.monetix.group^
 ||dsp-service.monetixads.com^
 ||ib.mookie1.com^
+||odr.mookie1.com^
 ||px.mountain.com^
 ||code.moviead55.ru^
 ||identity.mparticle.com^
@@ -544,10 +554,10 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
+||nowads.com^
 ||nowaymail.com^
 ||pym.nprapps.org^
 ||dsp.nrich.ai^
@@ -606,6 +616,7 @@
 ||sync.p7cloud.net^
 ||prism-tracking.pacvue.com^
 ||analytics.pangle-ads.com^
+||plugin.ai.partner-alphaintent.com^
 ||cdn.pbxai.com^
 ||floor.pbxai.com^
 ||s3sc.perfluence.net^
@@ -621,6 +632,7 @@
 ||polarcdn-pentos.com^
 ||polarcdn-terrax.com^
 ||static.polarcdn.com^
+||rainbet.post-view.com^
 ||trck.postbank.de^
 ||jadserve.postrelease.com^
 ||service.pravo.ru^
@@ -634,11 +646,15 @@
 ||prmutv.co^
 ||fei.pro-market.net^
 ||prodmp.ru^
+||asr.programmatica.com^
 ||buyer.programmatica.com^
 ||events-api.programmatica.com^
 ||minio.programmatica.com^
+||s3.programmatica.com^
 ||sync.programmatica.com^
+||track.programmatica.com^
 ||vast.programmatica.com^
+||vpaid.programmatica.com^
 ||sync.programmaticx.ai^
 ||pubmatic.com^
 ||cdn.punchmedia.ru^
@@ -737,6 +753,7 @@
 ||tracker-b.rtbpixelpluses.com^
 ||sync.rtbplatform.ru^
 ||s3.rtbplatforma.ru^
+||s3s.rtbplatforma.ru^
 ||t.rtbwave.com^
 ||trace.us.rtbwise.com^
 ||rubiconproject.com^
@@ -770,6 +787,7 @@
 ||s.seedtag.com^
 ||px.segmel.com^
 ||sync.selfclick.pro^
+||se.semasio.net^
 ||su.semasio.net^
 ||uipglob.semasio.net^
 ||sendsay.ru^
@@ -804,7 +822,9 @@
 ||sync.smartadserver.com^
 ||www.smartadserver.com^
 ||smartcallback.ru^
+||bidder.smartytouch.co^
 ||target.smi2.net^
+||exad.smi2.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||sync.go.sonobi.com^
@@ -868,6 +888,7 @@
 ||elb.the-ozone-project.com^
 ||prebid.the-ozone-project.com^
 ||sync.theagenticx.ai^
+||sync.thecas.xyz^
 ||geo.ads.audio.thisisdax.com^
 ||thrtle.com^
 ||analytics.tiktok.com^
@@ -893,6 +914,7 @@
 ||b.trueanthem.com^
 ||cdn.trust-id.ru^
 ||id.trust-id.ru^
+||choices-or.trustarc.com^
 ||choices.trustarc.com^
 ||choices.truste.com^
 ||hb.trustedstack.com^
@@ -902,6 +924,7 @@
 ||ad.turn.com^
 ||d.turn.com^
 ||p.tvpixel.com^
+||collector-45958.tvsquared.com^
 ||de.tynt.com^
 ||hde.tynt.com^
 ||u-login.com^
@@ -964,17 +987,14 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
-||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^
