@@ -91,7 +91,7 @@ NEVER_BLOCK_DOMAINS = [
     "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net", "brightcove.com", "brightcovecdn.com",
 
     # === C ===
-    "cloudflare.com", "createjs.com",
+    "cdninstagram.com", "cloudflare.com", "createjs.com",
     
     # === D ===
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
@@ -140,14 +140,14 @@ NEVER_BLOCK_DOMAINS = [
     "shazoo.ru", "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t.me", "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com", "twitter.com",
+    "t.me", "t2.ru", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
     
     # === V ===
     "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
-    "vk-portal.net", "vk.com", "vk.me", "vk.team", "vkuser.net",
+    "vk-portal.net", "vk.ru", "vk.com", "vk.me", "vk.team", "vkuser.net",
     "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvideo.ru", "vkvd.net",
 
     # === W ===
@@ -180,7 +180,7 @@ PROTECTED_FAMILIES = [
     "directupload.eu", "disqus.com", "dzen.ru",
 
     # === E ===
-    "e1.ru", "euronews.com",
+    "e1.ru", "eda.ru", "euronews.com",
 
     # === F ===
     "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
@@ -232,7 +232,7 @@ PROTECTED_FAMILIES = [
     "userapi.com",
 
     # === V ===
-    "vdmsti.ru", "vedomosti.ru", "vk.ru",
+    "vdmsti.ru", "vedomosti.ru",
 
     # === W ===
     "wi-fi.ru", "wildberries.ru", "wistia.com",
@@ -337,7 +337,7 @@ AD_APEX_BLACKLIST = [
 
     # === P ===
     "pathtosuccess.global", "perfluence.net", "permutive.app", "permutive.com",
-    "piano.io", "pippio.com", "plusoneads.com", "postrelease.com",
+    "piano.io", "pippio.com", "plusoneads.com", "polarcdn-terrax.com ", "postrelease.com",
     "presage.io", "prmutv.co", "pro-market.net", "prodmp.ru",
     "profilemkt.com", "programmatica.com", "programmaticx.ai", "pubmatic.com",
     "punchmedia.ru", "push4site.com",
@@ -365,7 +365,7 @@ AD_APEX_BLACKLIST = [
     "teads.tv", "teads-xo.com", "telecid.ru", "terratraf.com",
     "thrtle.com", "tinypass.com", "tns-counter.ru", "traffaret.com",
     "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com", "tremorhub.com",
-    "trustarc.com", "trustedstack.com", "tynt.com",
+    "trustarc.com", "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
     "undertone.com", "upravel.com", "ussp.io",
