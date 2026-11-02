@@ -91,7 +91,7 @@ NEVER_BLOCK_DOMAINS = [
     "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net", "brightcove.com", "brightcovecdn.com",
 
     # === C ===
-    "cdninstagram.com", "cloudflare.com", "createjs.com",
+    "cdn-vk.com", "cdninstagram.com", "cloudflare.com", "createjs.com",
     
     # === D ===
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
@@ -114,7 +114,7 @@ NEVER_BLOCK_DOMAINS = [
     "iportal.ru", "ixbt.site", "ixbt.video", "ixbt.online",
 
     # === J ===
-    "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpsrv.com",
+    "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpltx.com", "jwpsrv.com",
     
     # === K ===
     "kinescope.io", "kinescopecdn.net", "kpcdn.net",
@@ -259,7 +259,7 @@ AD_APEX_BLACKLIST = [
     "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
-    "acast.com", "advideo.ru", "a-mo.net", "acuityplatform.com", "acint.net",
+    "adsboosters.xyz", "acast.com", "advideo.ru", "a-mo.net", "acuityplatform.com", "acint.net",
     "addthis.com", "ad-delivery.net", "adentifi.com", "adform.net",
     "adhaven.com", "adhigh.net", "adiam.tech", "adition.com", "adkernel.com",
     "adlook.online", "adlook.tech", "admanmedia.com", "admaster.cc",
