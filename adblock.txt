@@ -136,6 +136,8 @@
 ||sync.aniview.com^
 ||a.c.appier.net^
 ||captive.apple.com^
+||daf.xp.apple.com^
+||embed.podcasts.apple.com^
 ||b.applovin.com^
 ||apptracer.ru^
 ||arcspire.io^
@@ -173,6 +175,7 @@
 ||match.adsby.bidtheatre.com^
 ||bidvol.com^
 ||c.bing.com^
+||fastviewdata.bk6bba-resources.ru^
 ||tr.blismedia.com^
 ||cm.bluevoox.com^
 ||phx.bmtrcs.com^
@@ -194,7 +197,6 @@
 ||pcs.ssp.cadent.com^
 ||casalemedia.com^
 ||catsnetwork.ru^
-||static.cdninstagram.com^
 ||cdnrtbsape.ru^
 ||bucket.cdnwebcloud.com^
 ||ceros.com^
@@ -206,6 +208,7 @@
 ||claritas.com^
 ||a.clarity.ms^
 ||b.clarity.ms^
+||c.clarity.ms^
 ||e.clarity.ms^
 ||f.clarity.ms^
 ||g.clarity.ms^
@@ -235,6 +238,9 @@
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
 ||capi.connatix.com^
+||cdn.connectad.io^
+||sync-eu.connectad.io^
+||sync.connectad.io^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -326,6 +332,7 @@
 ||ad-events.flashtalking.com^
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
+||secure.flashtalking.com^
 ||servedby.flashtalking.com^
 ||floxis.tech^
 ||analytics.fontanka.ru^
@@ -520,7 +527,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -565,6 +571,7 @@
 ||optidigital.com^
 ||optimizely.com^
 ||statistics.orbitatech.io^
+||tracker-shr.ortb.net^
 ||otclick-adv.ru^
 ||otm-r.com^
 ||outbrain.com^
@@ -590,6 +597,7 @@
 ||sync.pmbmonetize.live^
 ||polarcdn-engine.com^
 ||polarcdn-pentos.com^
+||polarcdn-terrax.com^
 ||static.polarcdn.com^
 ||trck.postbank.de^
 ||jadserve.postrelease.com^
@@ -646,6 +654,9 @@
 ||sentry.rarus.ru^
 ||sync.rbstsystems.live^
 ||recaptcha.net^
+||pbs-bunny.receptivity.io^
+||pbs.receptivity.io^
+||sync.receptivity.io^
 ||embed.reddit.com^
 ||pi.reddit.com^
 ||w3-reporting.reddit.com^
@@ -833,9 +844,6 @@
 ||analytics.tiktok.com^
 ||www.tiktok.com^
 ||vmweb.us.tiktok.com^
-||lf16-cdn-tos.tiktokcdn-us.com^
-||lf16-tiktok-web.tiktokcdn-us.com^
-||p16-common-sign.tiktokcdn-us.com^
 ||tiktokv.us^
 ||analytics-ipv6.tiktokw.us^
 ||mcs.tiktokw.us^
@@ -927,7 +935,6 @@
 ||counter.yadro.ru^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
@@ -943,6 +950,7 @@
 ||log.strm.yandex.ru^
 ||yellowblue.io^
 ||ad.yieldlab.net^
+||s2s.yieldlove-ad-serving.net^
 ||ads.yieldmo.com^
 ||tag.yieldoptimizer.com^
 ||ymmobi.com^
