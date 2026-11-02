@@ -231,9 +231,7 @@
 0.0.0.0 sync.apester.com
 0.0.0.0 a.c.appier.net
 0.0.0.0 gocm.c.appier.net
-0.0.0.0 captive.apple.com
 0.0.0.0 daf.xp.apple.com
-0.0.0.0 embed.podcasts.apple.com
 0.0.0.0 b.applovin.com
 0.0.0.0 exchange.appnerve.net
 0.0.0.0 apptracer.ru
@@ -592,7 +590,6 @@
 0.0.0.0 ade.googlesyndication.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 tpc.googlesyndication.com
-0.0.0.0 www.googletagmanager.com
 0.0.0.0 www.googletagservices.com
 0.0.0.0 googlevideo.com
 0.0.0.0 ads.gpm-ssp.ru
@@ -1034,7 +1031,6 @@
 0.0.0.0 metrics.rapidedge.io
 0.0.0.0 sentry.rarus.ru
 0.0.0.0 sync.rbstsystems.live
-0.0.0.0 recaptcha.net
 0.0.0.0 pbs-bunny.receptivity.io
 0.0.0.0 pbs.receptivity.io
 0.0.0.0 sync.receptivity.io
@@ -1285,8 +1281,6 @@
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
 0.0.0.0 analytics.tiktok.com
-0.0.0.0 www.tiktok.com
-0.0.0.0 vmweb.us.tiktok.com
 0.0.0.0 tiktokv.us
 0.0.0.0 mcs.tiktokv.us
 0.0.0.0 analytics-ipv6.tiktokw.us
@@ -1472,4 +1466,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 zvuk.com

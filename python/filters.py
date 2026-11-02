@@ -104,7 +104,7 @@ NEVER_BLOCK_DOMAINS = [
     
     # === G ===
     "google.com", "googleapis.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
-    "gvt1.com",
+    "gvt1.com", "googletagmanager.com",
 
     # === H ===
     "hsmedia.ru",
@@ -132,7 +132,7 @@ NEVER_BLOCK_DOMAINS = [
     "pic4net.com", "plyr.io",
     
     # === R ===
-    "rackcdn.com", "rferl.org", "rbk.ru", "redditmedia.com",
+    "rackcdn.com", "recaptcha.net", "rferl.org", "rbk.ru", "redditmedia.com",
     "rutubelist.ru",
     
     # === S ===
@@ -158,6 +158,9 @@ NEVER_BLOCK_DOMAINS = [
     "site.yandex.net", "yandexcloud.net", "yapfiles.ru", "yastatic-net.ru",
     "yastatic.net", "yimg.com", "ytimg.com", "yuga.ru",
     "youtube.com",
+
+    # === Z ===
+    "zvuk.com",
 ]
 
 # =============================================================================
@@ -170,6 +173,9 @@ NEVER_BLOCK_DOMAINS = [
 #    Семейства yandex.* и google.* определяются по apex (см. is_protected).
 # =============================================================================
 PROTECTED_FAMILIES = [
+    # === A ===
+    "apple.com",
+
     # === B ===
     "beeline.ru",
 
@@ -226,7 +232,7 @@ PROTECTED_FAMILIES = [
 
     # === T ===
     "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
-    "twitter.com",
+    "twitter.com", "tiktok.com",
 
     # === U ===
     "userapi.com",
@@ -394,6 +400,7 @@ AD_APEX_BLACKLIST = [
 STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === A ===
     r"^cs\.agency2\.ru$",
+    r"^daf\.xp\.apple\.com$",
 
     # === B ===
     r"^(?:bat|c)\.bing.com$",
