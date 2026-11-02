@@ -111,7 +111,7 @@ NEVER_BLOCK_DOMAINS = [
     
     # === I ===
     "ignimgs.com", "imgchest.com", "imgsmail.ru", "infogram.com",
-    "iportal.ru", "ixbt.site", "ixbt.video",
+    "iportal.ru", "ixbt.site", "ixbt.video", "ixbt.online",
 
     # === J ===
     "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpsrv.com",
@@ -140,7 +140,7 @@ NEVER_BLOCK_DOMAINS = [
     "shazoo.ru", "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t.me", "t2.ru", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com", "twimg.com", "twitter.com",
+    "t.me", "t2.ru", "telegram.org", "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -349,7 +349,7 @@ AD_APEX_BLACKLIST = [
     "rakuten.com", "relap.io", "rfihub.com", "rlcdn.com",
     "rmp.rakuten.com", "rqtrk.eu", "rtactivate.com", "rtbcdn.ru",
     "rtbwave.com", "rtbwise.com", "rubiconproject.com", "rutarget.ru",
-    "rutracker.cc", "r-99.com",
+    "rutracker.cc", "r-99.com", "rtbplatforma.ru",
 
     # === S ===
     "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
@@ -446,7 +446,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
-    r"^target\.smi2\.net$",
+    r"^(target|exad)\.smi2\.[a-z]+$",
 
     # === T ===
     r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
