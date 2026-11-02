@@ -62,7 +62,7 @@ jobs:
           curl -F chat_id="${TELEGRAM_CHAT_ID}" \
               -F document=@"python/log.txt" \
               -F caption="📄 Лог обновления хостов" \
-              https://api.telegram.org/bot{TELEGRAM_API_TOKEN}/sendDocument
+              "https://api.telegram.org/bot${TELEGRAM_API_TOKEN}/sendDocument"
         else
           echo "Файл python/log.txt не найден."
         fi
