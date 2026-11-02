@@ -145,6 +145,7 @@
 0.0.0.0 static.adsafeprotected.com
 0.0.0.0 staticjs.adsafeprotected.com
 0.0.0.0 unified.adsafeprotected.com
+0.0.0.0 ccads.adsboosters.xyz
 0.0.0.0 uads.adsboosters.xyz
 0.0.0.0 bid.adsensei.ai
 0.0.0.0 us.adserv-us.com
@@ -769,6 +770,7 @@
 0.0.0.0 chat.mirtesen.ru
 0.0.0.0 dnpmag.mirtesen.ru
 0.0.0.0 galaktika.mirtesen.ru
+0.0.0.0 medvejiyugol.mirtesen.ru
 0.0.0.0 mt-smi.mirtesen.ru
 0.0.0.0 nesekretno-net.mirtesen.ru
 0.0.0.0 news.mirtesen.ru
@@ -1093,6 +1095,7 @@
 0.0.0.0 cdn-video-1.rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 river-3-3103.rtbcdn.ru
+0.0.0.0 river-3-311.rtbcdn.ru
 0.0.0.0 river-3-3119.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
@@ -1471,4 +1474,3 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
-0.0.0.0 ccads.adsboosters.xyz

@@ -92,6 +92,7 @@
 ||static.adsafeprotected.com^
 ||staticjs.adsafeprotected.com^
 ||unified.adsafeprotected.com^
+||ccads.adsboosters.xyz^
 ||uads.adsboosters.xyz^
 ||bid.adsensei.ai^
 ||us.adserv-us.com^
