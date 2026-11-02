@@ -85,7 +85,7 @@ _IS_HASH_PATTERNS = [
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
     # === A ===
-    "adobedtm.com", "ampproject.org",
+    "adobedtm.com", "amazonaws.com", "ampproject.org",
     
     # === B ===
     "bbc.co.uk", "bbci.co.uk", "bunny.net", "brightcove.com", "brightcovecdn.com",
@@ -94,7 +94,7 @@ NEVER_BLOCK_DOMAINS = [
     "cloudflare.com", "createjs.com",
     
     # === D ===
-    "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
+    "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
 
     # === E ===
     "eaglecdn.com", "example.com",
@@ -148,7 +148,7 @@ NEVER_BLOCK_DOMAINS = [
     # === V ===
     "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
     "vk-portal.net", "vk.com", "vk.me", "vk.team", "vkuser.net",
-    "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvd.net",
+    "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvideo.ru", "vkvd.net",
 
     # === W ===
     "withgoogle.com",
@@ -177,7 +177,7 @@ PROTECTED_FAMILIES = [
     "championat.com", "cnews.ru",
 
     # === D ===
-    "dailymotion.com", "directupload.eu", "disqus.com", "dzen.ru",
+    "directupload.eu", "disqus.com", "dzen.ru",
 
     # === E ===
     "e1.ru", "euronews.com",
@@ -233,7 +233,6 @@ PROTECTED_FAMILIES = [
 
     # === V ===
     "vdmsti.ru", "vedomosti.ru", "vk.ru",
-    "vkvideo.ru", "st.vkvideo.ru",
 
     # === W ===
     "wi-fi.ru", "wildberries.ru", "wistia.com",
@@ -308,7 +307,7 @@ AD_APEX_BLACKLIST = [
     # === I ===
     "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com",
     "indexww.com", "infolinks.com", "injectoften.com", "inmobi.com",
-    "insiad.com", "intent.ai", "iqzone.com",
+    "insiad.com", "intent.ai", "iqm.com", "iqzone.com",
 
     # === K ===
     "kargo.com", "klkmdsync.site", "kombinat.digital", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
@@ -359,7 +358,7 @@ AD_APEX_BLACKLIST = [
     "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smilewanted.com",
     "sonobi.com", "sparrow.ru", "sportradarserving.com",
     "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
-    "stickyadstv.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
+    "stickyadstv.com", "sundaysky.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
     "taboola.com", "tapad.com", "targetads.io", "targetrtb.com",
