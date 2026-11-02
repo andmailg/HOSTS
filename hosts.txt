@@ -1333,3 +1333,14 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
+0.0.0.0 target.smi2.net
+0.0.0.0 t.zeus.ad
+0.0.0.0 b.applovin.com
+0.0.0.0 static1.olanola.com
+0.0.0.0 static2.olanola.com
+0.0.0.0 static3.olanola.com
+0.0.0.0 static4.olanola.com
+0.0.0.0 static5.olanola.com
+0.0.0.0 static6.olanola.com
+0.0.0.0 static7.olanola.com
+0.0.0.0 static8.olanola.com

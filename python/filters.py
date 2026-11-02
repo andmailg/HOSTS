@@ -88,7 +88,7 @@ NEVER_BLOCK_DOMAINS = [
     "adobedtm.com", "ampproject.org",
     
     # === B ===
-    "bbci.co.uk", "bunny.net", "brightcove.com", "brightcovecdn.com",
+    "bbc.co.uk", "bbci.co.uk", "bunny.net", "brightcove.com", "brightcovecdn.com",
 
     # === C ===
     "cloudflare.com", "createjs.com",
@@ -98,9 +98,12 @@ NEVER_BLOCK_DOMAINS = [
 
     # === E ===
     "eaglecdn.com", "example.com",
+
+    # === F ===
+    "flourish.studio",
     
     # === G ===
-    "googleapis.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
+    "google.com", "googleapis.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
     "gvt1.com",
 
     # === H ===
@@ -117,13 +120,13 @@ NEVER_BLOCK_DOMAINS = [
     "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru", "mtdata.ru",
+    "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru", "mtdata.ru", "mtml.ru",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
     
     # === O ===
-    "okcdn.ru", "openstreetmap.org",
+    "okcdn.ru", "okko.tv", "openstreetmap.org",
     
     # === P ===
     "pic4net.com", "plyr.io",
@@ -133,19 +136,22 @@ NEVER_BLOCK_DOMAINS = [
     "rutubelist.ru",
     
     # === S ===
-    "sbrf.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
+    "sber.ru", "sberbank.ru", "sbrf.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
     "shazoo.ru", "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t.me", "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com",
+    "t.me", "t2.ru", "tildaapi.com", "tildacdn.com", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
     
     # === V ===
     "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
-    "vk-portal.net", "vk.me", "vk.team", "vkuser.net",
+    "vk-portal.net", "vk.com", "vk.me", "vk.team", "vkuser.net",
     "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvd.net",
+
+    # === W ===
+    "withgoogle.com",
     
     # === Y ===
     "api-maps.yandex.ru", "autofill.yandex.ru", "hdrc.yandex.net", "mdd.yandex.net",
@@ -180,7 +186,7 @@ PROTECTED_FAMILIES = [
     "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
 
     # === G ===
-    "gazeta.ru", "gear-hub.ru", "google.com", 
+    "gazeta.ru", "gear-hub.ru",
 
     # === J ===
     "justwatch.com",
@@ -216,7 +222,7 @@ PROTECTED_FAMILIES = [
     "rosbalt.ru", "rutube.ru", 
 
     # === S ===
-    "sber.ru", "sberbank.ru", "smi2.ru", "smi2.net", "sports.ru",
+    "smi2.ru", "smi2.net", "smi2cdn.ru", "sports.ru",
 
     # === T ===
     "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
@@ -226,7 +232,7 @@ PROTECTED_FAMILIES = [
     "userapi.com",
 
     # === V ===
-    "vdmsti.ru", "vedomosti.ru", "vk.com", "vk.ru",
+    "vdmsti.ru", "vedomosti.ru", "vk.ru",
     "vkvideo.ru", "st.vkvideo.ru",
 
     # === W ===
@@ -264,7 +270,7 @@ AD_APEX_BLACKLIST = [
     "adfox.ru", "adx.com.ru", "agkn.com", "aidata.io", "alcmpn.com",
     "alfasense.com", "amazon-adsystem.com", "amx1.net", "aniview.com",
     "apester.com", "appier.net", "appsflyersdk.com", "apptracer.ru",
-    "arcspire.io", "axis-marketplace.com",
+    "applovin.com", "arcspire.io", "axis-marketplace.com",
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
@@ -324,7 +330,7 @@ AD_APEX_BLACKLIST = [
     "ninthdecimal.com", "nodals.io",
 
     # === O ===
-    "oath.com", "odsp.net", "ohmy.bid", "omnitagjs.com",
+    "oath.com", "odsp.net", "ohmy.bid", "olanola.com", "omnitagjs.com",
     "omtrdc.net", "onelink.me", "onetag-sys.com", "onesignal.com",
     "openfpcdn.io", "openx.net", "openssp.ru", "openwebmp.com",
     "opti-digital.com", "optidigital.com", "optimizely.com",
@@ -381,7 +387,7 @@ AD_APEX_BLACKLIST = [
     "yandexadexchange.net", "yellowblue.io", "yieldmo.com", "ymmobi.com",
 
     # === Z ===
-    "zdbb.net", "zemanta.com", "zeotap.com", "zucks.net",
+    "zdbb.net", "zemanta.com", "zeotap.com", "zeus.ad", "zucks.net",
 ]
 
 # Дополнительные точечные правила для хостов внутри «защищённых» семейств
@@ -441,6 +447,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
+    r"^target\.smi2\.net$",
 
     # === T ===
     r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
