@@ -66,6 +66,8 @@
 0.0.0.0 js.ad-score.com
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 ad4m.at
+0.0.0.0 analytics.adcanvas.com
+0.0.0.0 media.adcanvas.com
 0.0.0.0 adentifi.com
 0.0.0.0 rtb.adentifi.com
 0.0.0.0 cdn.adfinity.pro
@@ -287,6 +289,8 @@
 0.0.0.0 backend.bobid.io
 0.0.0.0 manifest.prod.boltdns.net
 0.0.0.0 gym.bonsaidahlia.com
+0.0.0.0 eads.brame-gamification.com
+0.0.0.0 brame-tracking.com
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 players.brightcove.net
@@ -736,6 +740,7 @@
 0.0.0.0 dnpmag.mirtesen.ru
 0.0.0.0 galaktika.mirtesen.ru
 0.0.0.0 mt-smi.mirtesen.ru
+0.0.0.0 nesekretno-net.mirtesen.ru
 0.0.0.0 news.mirtesen.ru
 0.0.0.0 polls.mirtesen.ru
 0.0.0.0 s30011300553.mirtesen.ru
@@ -807,6 +812,8 @@
 0.0.0.0 ohmy.bid
 0.0.0.0 match.ohmy.bid
 0.0.0.0 sp.ohmy.bid
+0.0.0.0 ads.okgroups.ru
+0.0.0.0 v.okgroups.ru
 0.0.0.0 static1.olanola.com
 0.0.0.0 static2.olanola.com
 0.0.0.0 static3.olanola.com
@@ -1050,6 +1057,7 @@
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
+0.0.0.0 s3.rtbplatforma.ru
 0.0.0.0 t.rtbwave.com
 0.0.0.0 trace.us.rtbwise.com
 0.0.0.0 rubiconproject.com
@@ -1335,6 +1343,7 @@
 0.0.0.0 cstatic-ru-cv.weborama-tech.ru
 0.0.0.0 ctx.weborama-tech.ru
 0.0.0.0 ds-frontend.weborama-tech.ru
+0.0.0.0 dx-frontend.weborama-tech.ru
 0.0.0.0 wcm.weborama-tech.ru
 0.0.0.0 wf-ru-frontend.weborama-tech.ru
 0.0.0.0 weborama.fr
