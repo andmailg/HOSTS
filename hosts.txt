@@ -682,7 +682,6 @@
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
 0.0.0.0 pbs-cs.minutemedia-prebid.com
-0.0.0.0 chat.mirtesen.ru
 0.0.0.0 ml314.com
 0.0.0.0 in.ml314.com
 0.0.0.0 vi.ml314.com
@@ -715,9 +714,6 @@
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
-0.0.0.0 cp.mt.ru
-0.0.0.0 player.mt.ru
-0.0.0.0 r.mtdata.ru
 0.0.0.0 dsp.mts.ru
 0.0.0.0 api.a.mts.ru
 0.0.0.0 cm.a.mts.ru
@@ -1063,18 +1059,7 @@
 0.0.0.0 www.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
-0.0.0.0 smi2.net
-0.0.0.0 img.smi2.net
 0.0.0.0 pr.smi2.net
-0.0.0.0 static.smi2.net
-0.0.0.0 static1.smi2.net
-0.0.0.0 static2.smi2.net
-0.0.0.0 static3.smi2.net
-0.0.0.0 static4.smi2.net
-0.0.0.0 static5.smi2.net
-0.0.0.0 static6.smi2.net
-0.0.0.0 static7.smi2.net
-0.0.0.0 static8.smi2.net
 0.0.0.0 target.smi2.net
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
@@ -1107,7 +1092,6 @@
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
 0.0.0.0 t-static.ru
-0.0.0.0 t.me
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
 0.0.0.0 pm-widget.taboola.com
@@ -1267,7 +1251,6 @@
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
 0.0.0.0 noa.yahoo.com
