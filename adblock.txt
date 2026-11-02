@@ -72,6 +72,7 @@
 ||rb.adnxs-simple.com^
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
+||cntr.adrcntr.com^
 ||ads.adretriever.com^
 ||events.adretriever.com^
 ||media.adretriever.com^
@@ -84,6 +85,7 @@
 ||pixel.adsafeprotected.com^
 ||static.adsafeprotected.com^
 ||staticjs.adsafeprotected.com^
+||unified.adsafeprotected.com^
 ||bid.adsensei.ai^
 ||us.adserv-us.com^
 ||statistics.adsource.pro^
@@ -103,6 +105,8 @@
 ||pixel.advertising.com^
 ||cdn.advertronic.io^
 ||cdn.advideo.ru^
+||faststat.advideo.ru^
+||stat.advideo.ru^
 ||cm-mx.advolve.io^
 ||id.adx.bid^
 ||afrdtech.com^
@@ -147,6 +151,7 @@
 ||icv.bannernow.com^
 ||stats.bannernow.com^
 ||storage.bannernow.com^
+||bazr.ru^
 ||autocontext.begun.ru^
 ||bestdahlia.com^
 ||betweendigital.com^
@@ -244,6 +249,7 @@
 ||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
 ||cxense.com^
+||stream.datago.ru^
 ||check.ddos-guard.net^
 ||d5p.de17a.com^
 ||cdn.debugbear.com^
@@ -266,6 +272,7 @@
 ||gumgum-match.dotomi.com^
 ||krush-match.dotomi.com^
 ||medianet-match.dotomi.com^
+||openweb-match.dotomi.com^
 ||prebid-match.dotomi.com^
 ||pubmatic-match.dotomi.com^
 ||stx-match.dotomi.com^
@@ -405,6 +412,7 @@
 ||kimberlite.io^
 ||klkmdsync.site^
 ||m.kombinat.digital^
+||pixel.konnektu.ru^
 ||assets.kontext.so^
 ||bid.kontext.so^
 ||cdn.kraeuterhaus.de^
@@ -446,6 +454,8 @@
 ||mediadash.ru^
 ||cdn.mediago.io^
 ||gtrace.mediago.io^
+||images.mediago.io^
+||trace-eu.mediago.io^
 ||trace.mediago.io^
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
@@ -456,7 +466,7 @@
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
 ||pbs-cs.minutemedia-prebid.com^
-||chat.mirtesen.ru^
+||mirtesen.ru^
 ||ml314.com^
 ||mn-tz.com^
 ||mfx.mobilefuse.com^
@@ -476,9 +486,7 @@
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
-||cp.mt.ru^
-||player.mt.ru^
-||r.mtdata.ru^
+||mtdata.ru^
 ||dsp.mts.ru^
 ||api.a.mts.ru^
 ||cm.a.mts.ru^
@@ -506,6 +514,10 @@
 ||odsp.net^
 ||adv.office-partner.de^
 ||ohmy.bid^
+||api.okko.tv^
+||player-static.okko.tv^
+||stat.okko.tv^
+||stat2.okko.tv^
 ||trk.olnl.net^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
@@ -566,6 +578,7 @@
 ||geo.privacymanager.io^
 ||prmutv.co^
 ||fei.pro-market.net^
+||prodmp.ru^
 ||buyer.programmatica.com^
 ||events-api.programmatica.com^
 ||minio.programmatica.com^
@@ -592,6 +605,7 @@
 ||cs.rambler.ru^
 ||embeds.rambler.ru^
 ||imgserve.rambler.ru^
+||kraken-cls.rambler.ru^
 ||kraken-mdt.rambler.ru^
 ||kraken.rambler.ru^
 ||mpx.rambler.ru^
@@ -614,6 +628,7 @@
 ||hal9000.redintelligence.net^
 ||hal90001.redintelligence.net^
 ||hal900010.redintelligence.net^
+||hal900011.redintelligence.net^
 ||hal900014.redintelligence.net^
 ||hal900015.redintelligence.net^
 ||hal900016.redintelligence.net^
@@ -625,6 +640,7 @@
 ||hal900025.redintelligence.net^
 ||hal900026.redintelligence.net^
 ||hal900027.redintelligence.net^
+||hal900028.redintelligence.net^
 ||hal900029.redintelligence.net^
 ||hal90003.redintelligence.net^
 ||hal900030.redintelligence.net^
@@ -663,6 +679,7 @@
 ||w.rulive.ru^
 ||match.rundsp.com^
 ||rutarget.ru^
+||rutracker.cc^
 ||a.rutube.ru^
 ||goya.rutube.ru^
 ||log.rutube.ru^
@@ -685,6 +702,7 @@
 ||secretivesponge.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
+||px.segmel.com^
 ||sync.selfclick.pro^
 ||su.semasio.net^
 ||uipglob.semasio.net^
@@ -697,6 +715,7 @@
 ||servicepipe.tech^
 ||bs.serving-sys.ru^
 ||ds.serving-sys.ru^
+||setka.news^
 ||match.sharethrough.com^
 ||us4.shb-sync.com^
 ||shopnetic.com^
@@ -718,7 +737,6 @@
 ||sync.smartadserver.com^
 ||www.smartadserver.com^
 ||smartcallback.ru^
-||smi2.net^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||sync.go.sonobi.com^
@@ -747,7 +765,6 @@
 ||widget.svk-native.ru^
 ||syncingbridge.com^
 ||t-static.ru^
-||t.me^
 ||api.taboola.com^
 ||cdn.taboola.com^
 ||pm-widget.taboola.com^
@@ -868,14 +885,12 @@
 ||counter.yadro.ru^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
-||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^

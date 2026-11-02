@@ -12,6 +12,7 @@
 0.0.0.0 jsn.24smi.net
 0.0.0.0 ssp.24smi.net
 0.0.0.0 2mdn.net
+0.0.0.0 gcdn.2mdn.net
 0.0.0.0 s0.2mdn.net
 0.0.0.0 news.2xclick.ru
 0.0.0.0 news.2xclock.com
@@ -117,6 +118,7 @@
 0.0.0.0 ib.adnxs.com
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
+0.0.0.0 cntr.adrcntr.com
 0.0.0.0 ads.adretriever.com
 0.0.0.0 events.adretriever.com
 0.0.0.0 media.adretriever.com
@@ -134,6 +136,7 @@
 0.0.0.0 pixel.adsafeprotected.com
 0.0.0.0 static.adsafeprotected.com
 0.0.0.0 staticjs.adsafeprotected.com
+0.0.0.0 unified.adsafeprotected.com
 0.0.0.0 bid.adsensei.ai
 0.0.0.0 us.adserv-us.com
 0.0.0.0 statistics.adsource.pro
@@ -162,6 +165,8 @@
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
 0.0.0.0 cdn.advideo.ru
+0.0.0.0 faststat.advideo.ru
+0.0.0.0 stat.advideo.ru
 0.0.0.0 cm-mx.advolve.io
 0.0.0.0 id.adx.bid
 0.0.0.0 afrdtech.com
@@ -230,6 +235,8 @@
 0.0.0.0 icv.bannernow.com
 0.0.0.0 stats.bannernow.com
 0.0.0.0 storage.bannernow.com
+0.0.0.0 bazr.ru
+0.0.0.0 cdn.bazr.ru
 0.0.0.0 autocontext.begun.ru
 0.0.0.0 bestdahlia.com
 0.0.0.0 betweendigital.com
@@ -376,6 +383,7 @@
 0.0.0.0 comcluster.cxense.com
 0.0.0.0 id.cxense.com
 0.0.0.0 stats-collector.cxense.com
+0.0.0.0 stream.datago.ru
 0.0.0.0 check.ddos-guard.net
 0.0.0.0 d5p.de17a.com
 0.0.0.0 cdn.debugbear.com
@@ -401,6 +409,7 @@
 0.0.0.0 gumgum-match.dotomi.com
 0.0.0.0 krush-match.dotomi.com
 0.0.0.0 medianet-match.dotomi.com
+0.0.0.0 openweb-match.dotomi.com
 0.0.0.0 prebid-match.dotomi.com
 0.0.0.0 pubmatic-match.dotomi.com
 0.0.0.0 stx-match.dotomi.com
@@ -610,6 +619,7 @@
 0.0.0.0 static.kimberlite.io
 0.0.0.0 klkmdsync.site
 0.0.0.0 m.kombinat.digital
+0.0.0.0 pixel.konnektu.ru
 0.0.0.0 assets.kontext.so
 0.0.0.0 bid.kontext.so
 0.0.0.0 cdn.kraeuterhaus.de
@@ -669,6 +679,8 @@
 0.0.0.0 analytics.mediadash.ru
 0.0.0.0 cdn.mediago.io
 0.0.0.0 gtrace.mediago.io
+0.0.0.0 images.mediago.io
+0.0.0.0 trace-eu.mediago.io
 0.0.0.0 trace.mediago.io
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 mediametrics.ru
@@ -682,6 +694,13 @@
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
 0.0.0.0 pbs-cs.minutemedia-prebid.com
+0.0.0.0 mirtesen.ru
+0.0.0.0 actualno.mirtesen.ru
+0.0.0.0 alpha.mirtesen.ru
+0.0.0.0 chat.mirtesen.ru
+0.0.0.0 news.mirtesen.ru
+0.0.0.0 polls.mirtesen.ru
+0.0.0.0 temydnya.mirtesen.ru
 0.0.0.0 ml314.com
 0.0.0.0 in.ml314.com
 0.0.0.0 vi.ml314.com
@@ -714,6 +733,8 @@
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
+0.0.0.0 mtdata.ru
+0.0.0.0 r.mtdata.ru
 0.0.0.0 dsp.mts.ru
 0.0.0.0 api.a.mts.ru
 0.0.0.0 cm.a.mts.ru
@@ -746,6 +767,10 @@
 0.0.0.0 ohmy.bid
 0.0.0.0 match.ohmy.bid
 0.0.0.0 sp.ohmy.bid
+0.0.0.0 api.okko.tv
+0.0.0.0 player-static.okko.tv
+0.0.0.0 stat.okko.tv
+0.0.0.0 stat2.okko.tv
 0.0.0.0 trk.olnl.net
 0.0.0.0 omnitagjs.com
 0.0.0.0 visitor-iqzone.omnitagjs.com
@@ -852,6 +877,7 @@
 0.0.0.0 geo.privacymanager.io
 0.0.0.0 prmutv.co
 0.0.0.0 fei.pro-market.net
+0.0.0.0 prodmp.ru
 0.0.0.0 buyer.programmatica.com
 0.0.0.0 events-api.programmatica.com
 0.0.0.0 minio.programmatica.com
@@ -890,6 +916,7 @@
 0.0.0.0 cs.rambler.ru
 0.0.0.0 embeds.rambler.ru
 0.0.0.0 imgserve.rambler.ru
+0.0.0.0 kraken-cls.rambler.ru
 0.0.0.0 kraken-mdt.rambler.ru
 0.0.0.0 kraken.rambler.ru
 0.0.0.0 mpx.rambler.ru
@@ -913,6 +940,7 @@
 0.0.0.0 hal9000.redintelligence.net
 0.0.0.0 hal90001.redintelligence.net
 0.0.0.0 hal900010.redintelligence.net
+0.0.0.0 hal900011.redintelligence.net
 0.0.0.0 hal900014.redintelligence.net
 0.0.0.0 hal900015.redintelligence.net
 0.0.0.0 hal900016.redintelligence.net
@@ -924,6 +952,7 @@
 0.0.0.0 hal900025.redintelligence.net
 0.0.0.0 hal900026.redintelligence.net
 0.0.0.0 hal900027.redintelligence.net
+0.0.0.0 hal900028.redintelligence.net
 0.0.0.0 hal900029.redintelligence.net
 0.0.0.0 hal90003.redintelligence.net
 0.0.0.0 hal900030.redintelligence.net
@@ -955,6 +984,7 @@
 0.0.0.0 tracker.rtb-stellormedia.com
 0.0.0.0 id.rtb.mx
 0.0.0.0 rtbcdn.ru
+0.0.0.0 cdn-video-1.rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
 0.0.0.0 river-3-3103.rtbcdn.ru
 0.0.0.0 river-3-3119.rtbcdn.ru
@@ -985,6 +1015,7 @@
 0.0.0.0 solta-sync.rutarget.ru
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
+0.0.0.0 rutracker.cc
 0.0.0.0 a.rutube.ru
 0.0.0.0 goya.rutube.ru
 0.0.0.0 log.rutube.ru
@@ -1013,6 +1044,7 @@
 0.0.0.0 secretivesponge.com
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
+0.0.0.0 px.segmel.com
 0.0.0.0 sync.selfclick.pro
 0.0.0.0 su.semasio.net
 0.0.0.0 uipglob.semasio.net
@@ -1026,6 +1058,8 @@
 0.0.0.0 servicepipe.tech
 0.0.0.0 bs.serving-sys.ru
 0.0.0.0 ds.serving-sys.ru
+0.0.0.0 setka.news
+0.0.0.0 cdn.setka.news
 0.0.0.0 match.sharethrough.com
 0.0.0.0 us4.shb-sync.com
 0.0.0.0 shopnetic.com
@@ -1059,8 +1093,6 @@
 0.0.0.0 www.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
-0.0.0.0 pr.smi2.net
-0.0.0.0 target.smi2.net
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
@@ -1240,6 +1272,7 @@
 0.0.0.0 cr.frontend.weborama.fr
 0.0.0.0 redirect.frontend.weborama.fr
 0.0.0.0 wam.solution.weborama.fr
+0.0.0.0 wcm-ru.frontend.weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
 0.0.0.0 cdn.prod.website-files.com
 0.0.0.0 mc.webvisor.org
@@ -1251,9 +1284,9 @@
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
+0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
-0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1263,7 +1296,6 @@
 0.0.0.0 signal-service.pbs.yahoo.com
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
-0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
@@ -1301,4 +1333,3 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
-0.0.0.0 rutracker.cc
