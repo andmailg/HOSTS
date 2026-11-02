@@ -67,4 +67,3 @@ jobs:
           echo "Файл python/log.txt не найден."
         fi
 
-
