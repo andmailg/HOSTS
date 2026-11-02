@@ -34,6 +34,8 @@
 ||js.ad-score.com^
 ||profile.ad-tech.ru^
 ||ad4m.at^
+||analytics.adcanvas.com^
+||media.adcanvas.com^
 ||adentifi.com^
 ||cdn.adfinity.pro^
 ||a2.adform.net^
@@ -182,6 +184,8 @@
 ||backend.bobid.io^
 ||manifest.prod.boltdns.net^
 ||gym.bonsaidahlia.com^
+||eads.brame-gamification.com^
+||brame-tracking.com^
 ||collector.brandmetrics.com^
 ||pbsj.bricks-co.com^
 ||players.brightcove.net^
@@ -538,6 +542,8 @@
 ||odsp.net^
 ||adv.office-partner.de^
 ||ohmy.bid^
+||ads.okgroups.ru^
+||v.okgroups.ru^
 ||static1.olanola.com^
 ||static2.olanola.com^
 ||static3.olanola.com^
@@ -710,6 +716,7 @@
 ||id.rtb.mx^
 ||rtbcdn.ru^
 ||tracker-b.rtbpixelpluses.com^
+||s3.rtbplatforma.ru^
 ||t.rtbwave.com^
 ||trace.us.rtbwise.com^
 ||rubiconproject.com^
