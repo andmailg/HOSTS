@@ -136,11 +136,14 @@
 ||a.amxrtb.com^
 ||player.aniview.com^
 ||sync.aniview.com^
+||sync.apester.com^
 ||a.c.appier.net^
+||gocm.c.appier.net^
 ||captive.apple.com^
 ||daf.xp.apple.com^
 ||embed.podcasts.apple.com^
 ||b.applovin.com^
+||exchange.appnerve.net^
 ||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
@@ -203,6 +206,8 @@
 ||catsnetwork.ru^
 ||cdnrtbsape.ru^
 ||bucket.cdnwebcloud.com^
+||cdn.celtra.com^
+||celtraidentity.com^
 ||ceros.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
@@ -242,6 +247,7 @@
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
 ||capi.connatix.com^
+||pl.connatix.com^
 ||cdn.connectad.io^
 ||sync-eu.connectad.io^
 ||sync.connectad.io^
@@ -285,6 +291,7 @@
 ||ssp.disqus.com^
 ||pebed.dm-event.net^
 ||dmxleo.com^
+||app.docuchat.io^
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
 ||33across-match.dotomi.com^
@@ -312,11 +319,15 @@
 ||maestro-ue1.tps.dv.tech^
 ||sync.dvgroup.com^
 ||dynotech.io^
+||sync.e-planning.net^
+||ads.us.e-planning.net^
 ||rim.eagerbrass.com^
 ||edigitalsurvey.com^
 ||emrld.cc^
 ||emrldco.com^
 ||cs.emxdgt.com^
+||cdn.enkod.ru^
+||ext.enkod.ru^
 ||escalax.io^
 ||eskimi.com^
 ||lb.eu-1-id5-sync.com^
@@ -431,6 +442,8 @@
 ||code.jivosite.com^
 ||node-sber1-az1-23.jivosite.com^
 ||journeyswitch.work^
+||cdn.justpremium.com^
+||tracking.justpremium.com^
 ||ssl.p.jwpcdn.com^
 ||content.jwplatform.com^
 ||crb.kargo.com^
@@ -531,6 +544,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -544,6 +558,7 @@
 ||ohmy.bid^
 ||ads.okgroups.ru^
 ||v.okgroups.ru^
+||static.olanola.com^
 ||static1.olanola.com^
 ||static2.olanola.com^
 ||static3.olanola.com^
@@ -556,6 +571,7 @@
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||on.aws^
+||pixel.onaudience.com^
 ||impressions.onelink.me^
 ||onesignal.com^
 ||onetag-sys.com^
@@ -636,7 +652,9 @@
 ||cm.pxltag.com^
 ||q-bid.ru^
 ||match.qtarget.tech^
+||rules.quantcount.com^
 ||cms.quantserve.com^
+||secure.quantserve.com^
 ||quotiq.ru^
 ||cdn-irec.r-99.com^
 ||sst-irec.r-99.com^
@@ -698,6 +716,7 @@
 ||a.ria.ru^
 ||cm.ria.ru^
 ||sync.richaudience.com^
+||www.riddle.com^
 ||mid.rkdms.com^
 ||api.rlcdn.com^
 ||ats.rlcdn.com^
@@ -716,6 +735,7 @@
 ||id.rtb.mx^
 ||rtbcdn.ru^
 ||tracker-b.rtbpixelpluses.com^
+||sync.rtbplatform.ru^
 ||s3.rtbplatforma.ru^
 ||t.rtbwave.com^
 ||trace.us.rtbwise.com^
@@ -740,6 +760,7 @@
 ||scorecardresearch.com^
 ||cadmus.script.ac^
 ||cadmus2.script.ac^
+||sonar-xp.script.ac^
 ||api4.searchbooster.io^
 ||cdn.searchbooster.io^
 ||api.searchbooster.net^
@@ -823,6 +844,7 @@
 ||trc-events.taboola.com^
 ||trc.taboola.com^
 ||display.bidder.taboola.com^
+||tagsrvcs.com^
 ||tapad.com^
 ||ssp.api.tappx.com^
 ||cdn.targetads.io^
@@ -855,6 +877,7 @@
 ||analytics-ipv6.tiktokw.us^
 ||mcs.tiktokw.us^
 ||mssdk.tiktokw.us^
+||timepad.ru^
 ||api-common.tinkoff.ru^
 ||cdn.tinypass.com^
 ||tns-counter.ru^
@@ -921,6 +944,7 @@
 ||voxexchange.io^
 ||ads.vqserve.com^
 ||cdn.vqserve.com^
+||warp90.com^
 ||watchfeed.tv^
 ||api.wavesend.ru^
 ||scripts.webcontentassessor.com^
@@ -940,14 +964,17 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
+||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
+||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^

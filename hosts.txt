@@ -224,11 +224,14 @@
 0.0.0.0 a.amxrtb.com
 0.0.0.0 player.aniview.com
 0.0.0.0 sync.aniview.com
+0.0.0.0 sync.apester.com
 0.0.0.0 a.c.appier.net
+0.0.0.0 gocm.c.appier.net
 0.0.0.0 captive.apple.com
 0.0.0.0 daf.xp.apple.com
 0.0.0.0 embed.podcasts.apple.com
 0.0.0.0 b.applovin.com
+0.0.0.0 exchange.appnerve.net
 0.0.0.0 apptracer.ru
 0.0.0.0 sdk-api.apptracer.ru
 0.0.0.0 arcspire.io
@@ -324,6 +327,8 @@
 0.0.0.0 catsnetwork.ru
 0.0.0.0 cdnrtbsape.ru
 0.0.0.0 bucket.cdnwebcloud.com
+0.0.0.0 cdn.celtra.com
+0.0.0.0 celtraidentity.com
 0.0.0.0 ceros.com
 0.0.0.0 api.ceros.com
 0.0.0.0 assets.ceros.com
@@ -369,6 +374,7 @@
 0.0.0.0 s.company-target.com
 0.0.0.0 cdn.confiant-integrations.net
 0.0.0.0 capi.connatix.com
+0.0.0.0 pl.connatix.com
 0.0.0.0 cdn.connectad.io
 0.0.0.0 sync-eu.connectad.io
 0.0.0.0 sync.connectad.io
@@ -398,12 +404,15 @@
 0.0.0.0 mug.criteo.com
 0.0.0.0 ssp-sync.criteo.com
 0.0.0.0 ads.eu.criteo.com
+0.0.0.0 ads.us.criteo.com
 0.0.0.0 cat.fr3.eu.criteo.com
 0.0.0.0 cat.nl3.eu.criteo.com
+0.0.0.0 cat.us5.us.criteo.com
 0.0.0.0 rtb.fr3.eu.criteo.com
 0.0.0.0 criteo.net
 0.0.0.0 static.criteo.net
 0.0.0.0 imageproxy.eu.criteo.net
+0.0.0.0 imageproxy.us.criteo.net
 0.0.0.0 bcp.crwdcntrl.net
 0.0.0.0 sync.crwdcntrl.net
 0.0.0.0 tags.crwdcntrl.net
@@ -433,6 +442,7 @@
 0.0.0.0 pebed.dm-event.net
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
+0.0.0.0 app.docuchat.io
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 33across-match.dotomi.com
@@ -478,12 +488,16 @@
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 dynotech.io
 0.0.0.0 rtb.dynotech.io
+0.0.0.0 sync.e-planning.net
+0.0.0.0 ads.us.e-planning.net
 0.0.0.0 rim.eagerbrass.com
 0.0.0.0 0.rim.eagerbrass.com
 0.0.0.0 edigitalsurvey.com
 0.0.0.0 emrld.cc
 0.0.0.0 emrldco.com
 0.0.0.0 cs.emxdgt.com
+0.0.0.0 cdn.enkod.ru
+0.0.0.0 ext.enkod.ru
 0.0.0.0 escalax.io
 0.0.0.0 eskimi.com
 0.0.0.0 ittpx-us-e.eskimi.com
@@ -574,6 +588,7 @@
 0.0.0.0 gumgum.com
 0.0.0.0 c.gumgum.com
 0.0.0.0 g2.gumgum.com
+0.0.0.0 js.gumgum.com
 0.0.0.0 rtb.gumgum.com
 0.0.0.0 usersync.gumgum.com
 0.0.0.0 usync.gumgum.com
@@ -648,6 +663,8 @@
 0.0.0.0 code.jivosite.com
 0.0.0.0 node-sber1-az1-23.jivosite.com
 0.0.0.0 journeyswitch.work
+0.0.0.0 cdn.justpremium.com
+0.0.0.0 tracking.justpremium.com
 0.0.0.0 ssl.p.jwpcdn.com
 0.0.0.0 content.jwplatform.com
 0.0.0.0 crb.kargo.com
@@ -743,8 +760,10 @@
 0.0.0.0 nesekretno-net.mirtesen.ru
 0.0.0.0 news.mirtesen.ru
 0.0.0.0 polls.mirtesen.ru
+0.0.0.0 positivdliaoptimistov.mirtesen.ru
 0.0.0.0 s30011300553.mirtesen.ru
 0.0.0.0 temydnya.mirtesen.ru
+0.0.0.0 trendy-men.mirtesen.ru
 0.0.0.0 ml314.com
 0.0.0.0 in.ml314.com
 0.0.0.0 vi.ml314.com
@@ -797,6 +816,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -814,6 +834,7 @@
 0.0.0.0 sp.ohmy.bid
 0.0.0.0 ads.okgroups.ru
 0.0.0.0 v.okgroups.ru
+0.0.0.0 static.olanola.com
 0.0.0.0 static1.olanola.com
 0.0.0.0 static2.olanola.com
 0.0.0.0 static3.olanola.com
@@ -833,6 +854,7 @@
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 on.aws
 0.0.0.0 ecs.us-west-2.on.aws
+0.0.0.0 pixel.onaudience.com
 0.0.0.0 impressions.onelink.me
 0.0.0.0 onesignal.com
 0.0.0.0 api.onesignal.com
@@ -965,7 +987,9 @@
 0.0.0.0 q-bid.ru
 0.0.0.0 sp.q-bid.ru
 0.0.0.0 match.qtarget.tech
+0.0.0.0 rules.quantcount.com
 0.0.0.0 cms.quantserve.com
+0.0.0.0 secure.quantserve.com
 0.0.0.0 quotiq.ru
 0.0.0.0 cdn-irec.r-99.com
 0.0.0.0 sst-irec.r-99.com
@@ -1028,6 +1052,7 @@
 0.0.0.0 a.ria.ru
 0.0.0.0 cm.ria.ru
 0.0.0.0 sync.richaudience.com
+0.0.0.0 www.riddle.com
 0.0.0.0 mid.rkdms.com
 0.0.0.0 api.rlcdn.com
 0.0.0.0 ats.rlcdn.com
@@ -1057,6 +1082,7 @@
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
+0.0.0.0 sync.rtbplatform.ru
 0.0.0.0 s3.rtbplatforma.ru
 0.0.0.0 t.rtbwave.com
 0.0.0.0 trace.us.rtbwise.com
@@ -1101,6 +1127,7 @@
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 cadmus.script.ac
 0.0.0.0 cadmus2.script.ac
+0.0.0.0 sonar-xp.script.ac
 0.0.0.0 api4.searchbooster.io
 0.0.0.0 cdn.searchbooster.io
 0.0.0.0 api.searchbooster.net
@@ -1201,6 +1228,7 @@
 0.0.0.0 trc-events.taboola.com
 0.0.0.0 trc.taboola.com
 0.0.0.0 display.bidder.taboola.com
+0.0.0.0 tagsrvcs.com
 0.0.0.0 tapad.com
 0.0.0.0 pixel.tapad.com
 0.0.0.0 ssp.api.tappx.com
@@ -1236,6 +1264,7 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
+0.0.0.0 timepad.ru
 0.0.0.0 api-common.tinkoff.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
@@ -1332,6 +1361,7 @@
 0.0.0.0 cm-ssp.voxexchange.io
 0.0.0.0 ads.vqserve.com
 0.0.0.0 cdn.vqserve.com
+0.0.0.0 warp90.com
 0.0.0.0 watchfeed.tv
 0.0.0.0 api.wavesend.ru
 0.0.0.0 scripts.webcontentassessor.com
@@ -1363,8 +1393,10 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1374,6 +1406,7 @@
 0.0.0.0 signal-service.pbs.yahoo.com
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
+0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
