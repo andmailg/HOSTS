@@ -12,6 +12,7 @@
 ||33across.com^
 ||360yield.com^
 ||eb2.3lift.com^
+||ib.3lift.com^
 ||tlx.3lift.com^
 ||4dex.io^
 ||a-mo.net^
@@ -55,6 +56,8 @@
 ||sync.adkernel.com^
 ||adlook.online^
 ||a.adlook.tech^
+||am.adlooxtracking.com^
+||j.adlooxtracking.com^
 ||pixel.adlooxtracking.ru^
 ||cs.admanmedia.com^
 ||gtracenep.admaster.cc^
@@ -72,6 +75,7 @@
 ||rb.adnxs-simple.com^
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
+||sync.adotmob.com^
 ||cntr.adrcntr.com^
 ||ads.adretriever.com^
 ||events.adretriever.com^
@@ -130,6 +134,7 @@
 ||sync.aniview.com^
 ||a.c.appier.net^
 ||captive.apple.com^
+||b.applovin.com^
 ||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
@@ -232,6 +237,7 @@
 ||prebidsrvr.cootlogix.com^
 ||sync.cootlogix.com^
 ||csync.copper6.com^
+||sync.copper6.com^
 ||sync.copper6.live^
 ||fcgi5.count-new.ru^
 ||pbs2.cpmstar.com^
@@ -245,6 +251,7 @@
 ||bcp.crwdcntrl.net^
 ||sync.crwdcntrl.net^
 ||tags.crwdcntrl.net^
+||cm.ctnsnet.com^
 ||gcm.ctnsnet.com^
 ||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
@@ -290,6 +297,7 @@
 ||maestro-ue1.tps.dv.tech^
 ||sync.dvgroup.com^
 ||dynotech.io^
+||rim.eagerbrass.com^
 ||edigitalsurvey.com^
 ||emrld.cc^
 ||emrldco.com^
@@ -312,7 +320,6 @@
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
 ||servedby.flashtalking.com^
-||public.flourish.studio^
 ||floxis.tech^
 ||analytics.fontanka.ru^
 ||z.cdn.ftd.agency^
@@ -320,6 +327,7 @@
 ||ajs-assets.ftstatic.com^
 ||futalis.de^
 ||futurecdn.net^
+||prebid-cache.futurehybrid.tech^
 ||sommelier.futurehybrid.tech^
 ||bordeaux-gateway.futureplc.com^
 ||cache.pythia.futureplc.com^
@@ -344,7 +352,6 @@
 ||gonet-ads.com^
 ||region1.google-analytics.com^
 ||www.google-analytics.com^
-||analytics.google.com^
 ||fundingchoicesmessages.google.com^
 ||partner.googleadservices.com^
 ||www.googleadservices.com^
@@ -352,6 +359,7 @@
 ||googlesyndication.com^
 ||www.googletagmanager.com^
 ||www.googletagservices.com^
+||googlevideo.com^
 ||ads.gpm-ssp.ru^
 ||jscdn.greeter.me^
 ||gumgum.com^
@@ -503,6 +511,7 @@
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -514,10 +523,14 @@
 ||odsp.net^
 ||adv.office-partner.de^
 ||ohmy.bid^
-||api.okko.tv^
-||player-static.okko.tv^
-||stat.okko.tv^
-||stat2.okko.tv^
+||static1.olanola.com^
+||static2.olanola.com^
+||static3.olanola.com^
+||static4.olanola.com^
+||static5.olanola.com^
+||static6.olanola.com^
+||static7.olanola.com^
+||static8.olanola.com^
 ||trk.olnl.net^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
@@ -652,6 +665,7 @@
 ||tag.researchnow.com^
 ||cdn.retailads.net^
 ||a.rfihub.com^
+||p.rfihub.com^
 ||a.ria.ru^
 ||cm.ria.ru^
 ||sync.richaudience.com^
@@ -695,6 +709,7 @@
 ||srv.scalibur.io^
 ||scorecardresearch.com^
 ||cadmus.script.ac^
+||cadmus2.script.ac^
 ||api4.searchbooster.io^
 ||cdn.searchbooster.io^
 ||api.searchbooster.net^
@@ -728,6 +743,7 @@
 ||s.ad.smaato.net^
 ||apps.smartadserver.com^
 ||csync-apac.smartadserver.com^
+||csync-us.smartadserver.com^
 ||csync.smartadserver.com^
 ||rtb-csync.smartadserver.com^
 ||ssb-global.smartadserver.com^
@@ -737,12 +753,14 @@
 ||sync.smartadserver.com^
 ||www.smartadserver.com^
 ||smartcallback.ru^
+||target.smi2.net^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||sync.go.sonobi.com^
 ||sparrow.ru^
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
+||use.sportradarserving.com^
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
@@ -767,6 +785,8 @@
 ||t-static.ru^
 ||api.taboola.com^
 ||cdn.taboola.com^
+||cds.taboola.com^
+||pips.taboola.com^
 ||pm-widget.taboola.com^
 ||sync.taboola.com^
 ||trc-events.taboola.com^
@@ -815,6 +835,8 @@
 ||b.trueanthem.com^
 ||cdn.trust-id.ru^
 ||id.trust-id.ru^
+||choices.trustarc.com^
+||choices.truste.com^
 ||hb.trustedstack.com^
 ||tsdtocl.com^
 ||tt.ttarget.ru^
@@ -909,6 +931,7 @@
 ||sync.zentotem.net^
 ||mwzeom.zeotap.com^
 ||www.zeropartyforms.com^
+||t.zeus.ad^
 ||asin.ziff.tech^
 ||dsar.ziffdavis.com^
 ||im.ziffdavisinternational.com^
