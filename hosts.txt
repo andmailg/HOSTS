@@ -110,6 +110,7 @@
 0.0.0.0 static.cdn.admatic.de
 0.0.0.0 admixer.net
 0.0.0.0 eu-rtbstack-cm.admixer.net
+0.0.0.0 inv-nets.admixer.net
 0.0.0.0 admon.pro
 0.0.0.0 functions.adnami.io
 0.0.0.0 macro.adnami.io
@@ -143,6 +144,7 @@
 0.0.0.0 unified.adsafeprotected.com
 0.0.0.0 bid.adsensei.ai
 0.0.0.0 us.adserv-us.com
+0.0.0.0 cstb.adsinteractive.com
 0.0.0.0 statistics.adsource.pro
 0.0.0.0 adsp.io
 0.0.0.0 sync.adsp.io
@@ -182,6 +184,7 @@
 0.0.0.0 afrdtech.com
 0.0.0.0 cs.agency2.ru
 0.0.0.0 aa.agkn.com
+0.0.0.0 fid.agkn.com
 0.0.0.0 x01.aidata.io
 0.0.0.0 aj3105.top
 0.0.0.0 cdn77.aj3105.top
@@ -240,7 +243,6 @@
 0.0.0.0 api2.b2c.com
 0.0.0.0 api3.b2c.com
 0.0.0.0 apix.b2c.com
-0.0.0.0 f003.backblazeb2.com
 0.0.0.0 tracker.ssp.balance-x.com
 0.0.0.0 c.bannerflow.net
 0.0.0.0 icv.bannernow.com
@@ -250,6 +252,7 @@
 0.0.0.0 cdn.bazr.ru
 0.0.0.0 autocontext.begun.ru
 0.0.0.0 bestdahlia.com
+0.0.0.0 c.betrad.com
 0.0.0.0 betweendigital.com
 0.0.0.0 ads.betweendigital.com
 0.0.0.0 cache.betweendigital.com
@@ -311,6 +314,7 @@
 0.0.0.0 ssum-sec.casalemedia.com
 0.0.0.0 ssum.casalemedia.com
 0.0.0.0 catsnetwork.ru
+0.0.0.0 static.cdninstagram.com
 0.0.0.0 cdnrtbsape.ru
 0.0.0.0 bucket.cdnwebcloud.com
 0.0.0.0 ceros.com
@@ -324,6 +328,7 @@
 0.0.0.0 ping.chartbeat.net
 0.0.0.0 cpm.chocolateplatform.com
 0.0.0.0 us.ck-ie.com
+0.0.0.0 claritas.com
 0.0.0.0 a.clarity.ms
 0.0.0.0 b.clarity.ms
 0.0.0.0 e.clarity.ms
@@ -346,6 +351,7 @@
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
 0.0.0.0 static.cloudflareinsights.com
+0.0.0.0 cloudflarestream.com
 0.0.0.0 d17ebhrlbr4s4.cloudfront.net
 0.0.0.0 d3e54v103j8qbb.cloudfront.net
 0.0.0.0 beacon.lynx.cognitivlabs.com
@@ -371,6 +377,9 @@
 0.0.0.0 s.cpx.to
 0.0.0.0 ads.creative-serving.com
 0.0.0.0 creativecdn.com
+0.0.0.0 ash.creativecdn.com
+0.0.0.0 statics.creativecdn.com
+0.0.0.0 us.creativecdn.com
 0.0.0.0 criteo.com
 0.0.0.0 dis.criteo.com
 0.0.0.0 grid-bidder.criteo.com
@@ -475,6 +484,8 @@
 0.0.0.0 cm.everesttech.net
 0.0.0.0 rtd-tm.everesttech.net
 0.0.0.0 sync-tm.everesttech.net
+0.0.0.0 c.evidon.com
+0.0.0.0 load77.exelator.com
 0.0.0.0 loadm.exelator.com
 0.0.0.0 ps.eyeota.net
 0.0.0.0 chap.fabulousbridge.com
@@ -687,6 +698,7 @@
 0.0.0.0 hbx.media.net
 0.0.0.0 navvy.media.net
 0.0.0.0 prebid.media.net
+0.0.0.0 warp.media.net
 0.0.0.0 www.media01.eu
 0.0.0.0 idpix.media6degrees.com
 0.0.0.0 mediadash.ru
@@ -701,6 +713,7 @@
 0.0.0.0 mediatoday.ru
 0.0.0.0 darcs.meinungsplatz.ch
 0.0.0.0 rtb.mfadsrvr.com
+0.0.0.0 cm.mgid.com
 0.0.0.0 mindbox.ru
 0.0.0.0 api.mindbox.ru
 0.0.0.0 web-static.mindbox.ru
@@ -714,6 +727,7 @@
 0.0.0.0 chat.mirtesen.ru
 0.0.0.0 dnpmag.mirtesen.ru
 0.0.0.0 galaktika.mirtesen.ru
+0.0.0.0 mt-smi.mirtesen.ru
 0.0.0.0 news.mirtesen.ru
 0.0.0.0 polls.mirtesen.ru
 0.0.0.0 temydnya.mirtesen.ru
@@ -767,6 +781,7 @@
 0.0.0.0 cookies.nextmillmedia.com
 0.0.0.0 atp.nexus-network-systems.com
 0.0.0.0 cdn.nexus-network-systems.com
+0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
 0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
@@ -883,6 +898,9 @@
 0.0.0.0 plusoneads.com
 0.0.0.0 sync.plusoneads.com
 0.0.0.0 sync.pmbmonetize.live
+0.0.0.0 polarcdn-engine.com
+0.0.0.0 polarcdn-pentos.com
+0.0.0.0 static.polarcdn.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
 0.0.0.0 service.pravo.ru
@@ -914,6 +932,7 @@
 0.0.0.0 image8.pubmatic.com
 0.0.0.0 simage2.pubmatic.com
 0.0.0.0 simage4.pubmatic.com
+0.0.0.0 st.pubmatic.com
 0.0.0.0 ut.pubmatic.com
 0.0.0.0 vid.pubmatic.com
 0.0.0.0 cdn.punchmedia.ru
@@ -1143,6 +1162,7 @@
 0.0.0.0 ads.stickyadstv.com
 0.0.0.0 worker.sttsmntz.ru
 0.0.0.0 sr.studiostack.com
+0.0.0.0 vop.sundaysky.com
 0.0.0.0 a.suprion.ru
 0.0.0.0 s.suprion.ru
 0.0.0.0 rtb.surfy.space
@@ -1188,8 +1208,16 @@
 0.0.0.0 geo.ads.audio.thisisdax.com
 0.0.0.0 thrtle.com
 0.0.0.0 analytics.tiktok.com
+0.0.0.0 www.tiktok.com
+0.0.0.0 vmweb.us.tiktok.com
+0.0.0.0 lf16-cdn-tos.tiktokcdn-us.com
 0.0.0.0 lf16-tiktok-web.tiktokcdn-us.com
+0.0.0.0 p16-common-sign.tiktokcdn-us.com
+0.0.0.0 tiktokv.us
+0.0.0.0 mcs.tiktokv.us
 0.0.0.0 analytics-ipv6.tiktokw.us
+0.0.0.0 mcs.tiktokw.us
+0.0.0.0 mssdk.tiktokw.us
 0.0.0.0 api-common.tinkoff.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
@@ -1318,6 +1346,7 @@
 0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1365,5 +1394,3 @@
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
 0.0.0.0 zvuk.com
-0.0.0.0 vop.sundaysky.com
-0.0.0.0 pxl.iqm.com

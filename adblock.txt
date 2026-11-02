@@ -92,6 +92,7 @@
 ||unified.adsafeprotected.com^
 ||bid.adsensei.ai^
 ||us.adserv-us.com^
+||cstb.adsinteractive.com^
 ||statistics.adsource.pro^
 ||adsp.io^
 ||a.adspector.io^
@@ -116,6 +117,7 @@
 ||afrdtech.com^
 ||cs.agency2.ru^
 ||aa.agkn.com^
+||fid.agkn.com^
 ||x01.aidata.io^
 ||aj3105.top^
 ||ac.ajur.info^
@@ -150,7 +152,6 @@
 ||api2.b2c.com^
 ||api3.b2c.com^
 ||apix.b2c.com^
-||f003.backblazeb2.com^
 ||tracker.ssp.balance-x.com^
 ||c.bannerflow.net^
 ||icv.bannernow.com^
@@ -159,6 +160,7 @@
 ||bazr.ru^
 ||autocontext.begun.ru^
 ||bestdahlia.com^
+||c.betrad.com^
 ||betweendigital.com^
 ||sync.bfmio.com^
 ||bidderstack.com^
@@ -192,6 +194,7 @@
 ||pcs.ssp.cadent.com^
 ||casalemedia.com^
 ||catsnetwork.ru^
+||static.cdninstagram.com^
 ||cdnrtbsape.ru^
 ||bucket.cdnwebcloud.com^
 ||ceros.com^
@@ -200,6 +203,7 @@
 ||chartbeat.net^
 ||cpm.chocolateplatform.com^
 ||us.ck-ie.com^
+||claritas.com^
 ||a.clarity.ms^
 ||b.clarity.ms^
 ||e.clarity.ms^
@@ -222,6 +226,7 @@
 ||protected-by.clarium.io^
 ||i.clean.gg^
 ||static.cloudflareinsights.com^
+||cloudflarestream.com^
 ||d17ebhrlbr4s4.cloudfront.net^
 ||d3e54v103j8qbb.cloudfront.net^
 ||beacon.lynx.cognitivlabs.com^
@@ -311,6 +316,8 @@
 ||cm.everesttech.net^
 ||rtd-tm.everesttech.net^
 ||sync-tm.everesttech.net^
+||c.evidon.com^
+||load77.exelator.com^
 ||loadm.exelator.com^
 ||ps.eyeota.net^
 ||chap.fabulousbridge.com^
@@ -470,6 +477,7 @@
 ||mediatoday.ru^
 ||darcs.meinungsplatz.ch^
 ||rtb.mfadsrvr.com^
+||cm.mgid.com^
 ||mindbox.ru^
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
@@ -510,6 +518,7 @@
 ||cookies.nextmillmedia.com^
 ||atp.nexus-network-systems.com^
 ||cdn.nexus-network-systems.com^
+||rtb.nexverse.ai^
 ||fast.nexx360.io^
 ||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
@@ -579,6 +588,9 @@
 ||prebid.pixad.com.tr^
 ||plusoneads.com^
 ||sync.pmbmonetize.live^
+||polarcdn-engine.com^
+||polarcdn-pentos.com^
+||static.polarcdn.com^
 ||trck.postbank.de^
 ||jadserve.postrelease.com^
 ||service.pravo.ru^
@@ -775,6 +787,7 @@
 ||ads.stickyadstv.com^
 ||worker.sttsmntz.ru^
 ||sr.studiostack.com^
+||vop.sundaysky.com^
 ||a.suprion.ru^
 ||s.suprion.ru^
 ||rtb.surfy.space^
@@ -818,8 +831,15 @@
 ||geo.ads.audio.thisisdax.com^
 ||thrtle.com^
 ||analytics.tiktok.com^
+||www.tiktok.com^
+||vmweb.us.tiktok.com^
+||lf16-cdn-tos.tiktokcdn-us.com^
 ||lf16-tiktok-web.tiktokcdn-us.com^
+||p16-common-sign.tiktokcdn-us.com^
+||tiktokv.us^
 ||analytics-ipv6.tiktokw.us^
+||mcs.tiktokw.us^
+||mssdk.tiktokw.us^
 ||api-common.tinkoff.ru^
 ||cdn.tinypass.com^
 ||tns-counter.ru^
@@ -907,6 +927,7 @@
 ||counter.yadro.ru^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
+||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
