@@ -32,6 +32,8 @@
 0.0.0.0 match.360yield.com
 0.0.0.0 eb2.3lift.com
 0.0.0.0 ib.3lift.com
+0.0.0.0 images.3lift.com
+0.0.0.0 img.3lift.com
 0.0.0.0 tlx.3lift.com
 0.0.0.0 4dex.io
 0.0.0.0 u-ams.4dex.io
@@ -63,6 +65,7 @@
 0.0.0.0 at.ad-pixel.ru
 0.0.0.0 data.ad-score.com
 0.0.0.0 js.ad-score.com
+0.0.0.0 ad-server.eu
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 ad4m.at
 0.0.0.0 analytics.adcanvas.com
@@ -189,6 +192,7 @@
 0.0.0.0 afrdtech.com
 0.0.0.0 cs.agency2.ru
 0.0.0.0 aa.agkn.com
+0.0.0.0 d.agkn.com
 0.0.0.0 fid.agkn.com
 0.0.0.0 x01.aidata.io
 0.0.0.0 aj3105.top
@@ -432,6 +436,7 @@
 0.0.0.0 demdex.net
 0.0.0.0 dpm.demdex.net
 0.0.0.0 euronewsgroup.demdex.net
+0.0.0.0 trck.deutsche-bank.de
 0.0.0.0 target.digitalaudience.io
 0.0.0.0 sync.digitalcaramel.com
 0.0.0.0 dmg.digitaltarget.ru
@@ -456,6 +461,7 @@
 0.0.0.0 prebid-match.dotomi.com
 0.0.0.0 pubmatic-match.dotomi.com
 0.0.0.0 stx-match.dotomi.com
+0.0.0.0 tpt.dotomi.com
 0.0.0.0 yahoo-match.dotomi.com
 0.0.0.0 match.sync.ad.cpe.dotomi.com
 0.0.0.0 doubleclick.net
@@ -512,6 +518,7 @@
 0.0.0.0 rtd-tm.everesttech.net
 0.0.0.0 sync-tm.everesttech.net
 0.0.0.0 c.evidon.com
+0.0.0.0 l.evidon.com
 0.0.0.0 load77.exelator.com
 0.0.0.0 loadm.exelator.com
 0.0.0.0 ps.eyeota.net
@@ -628,6 +635,7 @@
 0.0.0.0 cdndc.imgria.ru
 0.0.0.0 cdnn21.imgria.ru
 0.0.0.0 media-advcycle.imgsmail.ru
+0.0.0.0 nmcsync.imrworldwide.com
 0.0.0.0 secure-gl.imrworldwide.com
 0.0.0.0 secure-us.imrworldwide.com
 0.0.0.0 indexww.com
@@ -711,6 +719,7 @@
 0.0.0.0 rt.marphezis.com
 0.0.0.0 pixel.mathtag.com
 0.0.0.0 sync.mathtag.com
+0.0.0.0 trck.maxblue.de
 0.0.0.0 measureadv.com
 0.0.0.0 media.net
 0.0.0.0 c21lg-d.media.net
@@ -795,7 +804,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -836,8 +844,10 @@
 0.0.0.0 ecs.us-west-2.on.aws
 0.0.0.0 pixel.onaudience.com
 0.0.0.0 impressions.onelink.me
+0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
+0.0.0.0 geolocation.onetrust.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
 0.0.0.0 openssp.ru
@@ -1058,6 +1068,7 @@
 0.0.0.0 river-3-3119.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
+0.0.0.0 river-3-342.rtbcdn.ru
 0.0.0.0 river-3-345.rtbcdn.ru
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-358.rtbcdn.ru
@@ -1163,6 +1174,7 @@
 0.0.0.0 csync-us.smartadserver.com
 0.0.0.0 csync.smartadserver.com
 0.0.0.0 rtb-csync.smartadserver.com
+0.0.0.0 rtbvast-use1.smartadserver.com
 0.0.0.0 ssb-global.smartadserver.com
 0.0.0.0 ssbsync-global.smartadserver.com
 0.0.0.0 ssbsync-us.smartadserver.com
@@ -1374,7 +1386,7 @@
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 csp.yahoo.com
+0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com

@@ -1,6 +1,5 @@
 ! Title: HOSTS adblock (auto-generated)
 ! Каждое правило блокирует домен и ВСЕ его поддомены
-||speech.1c.ai^
 ||1dmp.io^
 ||a-iad3.1rx.io^
 ||sync.1rx.io^
@@ -13,6 +12,8 @@
 ||360yield.com^
 ||eb2.3lift.com^
 ||ib.3lift.com^
+||images.3lift.com^
+||img.3lift.com^
 ||tlx.3lift.com^
 ||4dex.io^
 ||a-mo.net^
@@ -32,6 +33,7 @@
 ||at.ad-pixel.ru^
 ||data.ad-score.com^
 ||js.ad-score.com^
+||ad-server.eu^
 ||profile.ad-tech.ru^
 ||ad4m.at^
 ||analytics.adcanvas.com^
@@ -122,11 +124,11 @@
 ||afrdtech.com^
 ||cs.agency2.ru^
 ||aa.agkn.com^
+||d.agkn.com^
 ||fid.agkn.com^
 ||x01.aidata.io^
 ||aj3105.top^
 ||ac.ajur.info^
-||akamaized.net^
 ||cdn.al-adtech.com^
 ||ssp.al-adtech.com^
 ||p.alcmpn.com^
@@ -188,20 +190,17 @@
 ||cm.bluevoox.com^
 ||phx.bmtrcs.com^
 ||backend.bobid.io^
-||manifest.prod.boltdns.net^
 ||gym.bonsaidahlia.com^
 ||eads.brame-gamification.com^
 ||brame-tracking.com^
 ||collector.brandmetrics.com^
 ||pbsj.bricks-co.com^
-||players.brightcove.net^
 ||a.bringads.ru^
 ||browser-intake-datadoghq.com^
 ||btloader.com^
 ||bttrack.com^
 ||bumlam.com^
 ||buzzoola.com^
-||cackle.me^
 ||cs.ssp.cadent.com^
 ||dcs.ssp.cadent.com^
 ||e1.ssp.cadent.com^
@@ -241,10 +240,6 @@
 ||www.clarity.ms^
 ||protected-by.clarium.io^
 ||i.clean.gg^
-||static.cloudflareinsights.com^
-||cloudflarestream.com^
-||d17ebhrlbr4s4.cloudfront.net^
-||d3e54v103j8qbb.cloudfront.net^
 ||c.clvrads.com^
 ||beacon.lynx.cognitivlabs.com^
 ||sync.colossusssp.com^
@@ -290,6 +285,7 @@
 ||cdn.debugbear.com^
 ||match.deepintent.com^
 ||demdex.net^
+||trck.deutsche-bank.de^
 ||target.digitalaudience.io^
 ||sync.digitalcaramel.com^
 ||dmg.digitaltarget.ru^
@@ -299,7 +295,6 @@
 ||pebed.dm-event.net^
 ||dmxleo.com^
 ||ab.dns-finder.com^
-||app.docuchat.io^
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
 ||33across-match.dotomi.com^
@@ -314,6 +309,7 @@
 ||prebid-match.dotomi.com^
 ||pubmatic-match.dotomi.com^
 ||stx-match.dotomi.com^
+||tpt.dotomi.com^
 ||yahoo-match.dotomi.com^
 ||match.sync.ad.cpe.dotomi.com^
 ||doubleclick.net^
@@ -347,6 +343,7 @@
 ||rtd-tm.everesttech.net^
 ||sync-tm.everesttech.net^
 ||c.evidon.com^
+||l.evidon.com^
 ||load77.exelator.com^
 ||loadm.exelator.com^
 ||ps.eyeota.net^
@@ -398,7 +395,6 @@
 ||googlesyndication.com^
 ||www.googletagmanager.com^
 ||www.googletagservices.com^
-||googlevideo.com^
 ||ads.gpm-ssp.ru^
 ||jscdn.greeter.me^
 ||gumgum.com^
@@ -419,6 +415,7 @@
 ||cdndc.imgria.ru^
 ||cdnn21.imgria.ru^
 ||media-advcycle.imgsmail.ru^
+||nmcsync.imrworldwide.com^
 ||secure-gl.imrworldwide.com^
 ||secure-us.imrworldwide.com^
 ||indexww.com^
@@ -434,28 +431,20 @@
 ||sync.inmobi.com^
 ||mweb.ck.inmobi.com^
 ||dvrtr.innovid.com^
-||cdn.insales-shop.ru^
 ||counter.insales.com^
-||kladr.insales.ru^
 ||dd.insiad.com^
 ||events.insiad.com^
 ||secure.insightexpressai.com^
 ||intent.ai^
 ||sync.intentiq.com^
-||invalid^
 ||sync.ipredictive.com^
 ||core.iprom.net^
 ||iqm.com^
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
-||code.jivo.ru^
-||code.jivosite.com^
-||node-sber1-az1-23.jivosite.com^
 ||journeyswitch.work^
 ||cdn.justpremium.com^
 ||tracking.justpremium.com^
-||ssl.p.jwpcdn.com^
-||content.jwplatform.com^
 ||crb.kargo.com^
 ||krk2.kargo.com^
 ||kimberlite.io^
@@ -478,7 +467,7 @@
 ||rp4.liadm.com^
 ||pool.liftdsp.com^
 ||lijit.com^
-||linkedin.com^
+||px.ads.linkedin.com^
 ||api.linkitbe.ru^
 ||linkssp.ru^
 ||cs.lkqd.net^
@@ -496,6 +485,7 @@
 ||rt.marphezis.com^
 ||pixel.mathtag.com^
 ||sync.mathtag.com^
+||trck.maxblue.de^
 ||measureadv.com^
 ||media.net^
 ||www.media01.eu^
@@ -516,7 +506,6 @@
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
 ||pbs-cs.minutemedia-prebid.com^
-||mirtesen.ru^
 ||ml314.com^
 ||mn-tz.com^
 ||mfx.mobilefuse.com^
@@ -537,7 +526,6 @@
 ||experiences.mrf.io^
 ||marfeelexperimentsexperienceengine.mrf.io^
 ||sdk.mrf.io^
-||mtdata.ru^
 ||dsp.mts.ru^
 ||api.a.mts.ru^
 ||cm.a.mts.ru^
@@ -555,7 +543,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -585,7 +572,7 @@
 ||on.aws^
 ||pixel.onaudience.com^
 ||impressions.onelink.me^
-||onesignal.com^
+||cdn.onesignal.com^
 ||onetag-sys.com^
 ||pixel.dsp.onetarget.ru^
 ||geolocation.onetrust.com^
@@ -694,7 +681,6 @@
 ||sync.rambler.ru^
 ||vp.rambler.ru^
 ||metrics.rapidedge.io^
-||sentry.rarus.ru^
 ||sync.rbstsystems.live^
 ||pbs-bunny.receptivity.io^
 ||pbs.receptivity.io^
@@ -817,6 +803,7 @@
 ||csync-us.smartadserver.com^
 ||csync.smartadserver.com^
 ||rtb-csync.smartadserver.com^
+||rtbvast-use1.smartadserver.com^
 ||ssb-global.smartadserver.com^
 ||ssbsync-global.smartadserver.com^
 ||ssbsync-us.smartadserver.com^
@@ -837,8 +824,6 @@
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
-||assets.squarespace.com^
-||static1.squarespace.com^
 ||s.srvsynd.com^
 ||bid.sspnet.tech^
 ||sync.srv.stackadapt.com^
@@ -875,7 +860,6 @@
 ||as.tbank-online.com^
 ||id.tbank-online.com^
 ||preidentity.tbank-online.com^
-||id.tbank.ru^
 ||ads.tds.bid^
 ||openrtb.tds.bid^
 ||widgets.teads-xo.com^
@@ -886,7 +870,6 @@
 ||hawk.techradar.com^
 ||telecid.ru^
 ||terratraf.com^
-||oauth.tg.dev^
 ||elb.the-ozone-project.com^
 ||prebid.the-ozone-project.com^
 ||sync.theagenticx.ai^
@@ -898,8 +881,6 @@
 ||analytics-ipv6.tiktokw.us^
 ||mcs.tiktokw.us^
 ||mssdk.tiktokw.us^
-||timepad.ru^
-||api-common.tinkoff.ru^
 ||cdn.tinypass.com^
 ||tns-counter.ru^
 ||st.top100.ru^
@@ -976,7 +957,6 @@
 ||api.webgains.io^
 ||weborama-tech.ru^
 ||weborama.fr^
-||cdn.prod.website-files.com^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
@@ -987,7 +967,6 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
 ||pbd.yahoo.com^
