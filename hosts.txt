@@ -1386,7 +1386,6 @@
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com
