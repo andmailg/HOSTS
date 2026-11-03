@@ -339,10 +339,10 @@ AD_APEX_BLACKLIST = [
     # === M ===
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
-    "mediaplex.com", "mediascope.net", "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
-    "ml314.com", "mobilefuse.com", "moatads.com",
-    "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital",
-    "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
+    "mediaplex.com", "mediascope.net", "mediatoday.ru", "merequartz.com",
+    "mgid.com", "mindbox.ru", "ml314.com", "mobilefuse.com",
+    "moatads.com", "moe.video", "mookie1.com", "moviead55.ru",
+    "mpartner.digital", "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
     "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
