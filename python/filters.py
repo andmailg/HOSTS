@@ -377,7 +377,7 @@ AD_APEX_BLACKLIST = [
     "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smi2.ru", "smi2.net", "smilewanted.com",
     "sonobi.com", "sparrow.ru", "sportradarserving.com",
     "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
-    "stickyadstv.com", "sundaysky.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
+    "stickyadstv.com", "sundaysky.com", "supercdn.ru", "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
     "taboola.com", "tapad.com", "targetads.io", "targetrtb.com",
