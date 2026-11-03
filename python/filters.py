@@ -100,7 +100,8 @@ NEVER_BLOCK_DOMAINS = [
     "cloudflareinsights.com", "cloudfront.net", "createjs.com",
     
     # === D ===
-    "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
+    "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com",
+    "dzeninfra.ru",
 
     # === E ===
     "eaglecdn.com", "euronews.com", "example.com",
