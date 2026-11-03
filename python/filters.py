@@ -244,7 +244,7 @@ PROTECTED_FAMILIES = [
     "ria.ru", "rosbalt.ru", "rutube.ru",
 
     # === S ===
-    "sbrf.ru", "smi2.ru", "smi2.net", "smi2cdn.ru", "sports.ru",
+    "sbrf.ru", "smi2cdn.ru", "sports.ru",
 
     # === T ===
     "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
@@ -374,7 +374,7 @@ AD_APEX_BLACKLIST = [
     "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
     "semasio.net", "servenobid.com", "setka.news", "sharethrough.com",
     "silvermob.com", "simpli.fi", "sitescout.com", "skimresources.com",
-    "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smilewanted.com",
+    "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smi2.ru", "smi2.net", "smilewanted.com",
     "sonobi.com", "sparrow.ru", "sportradarserving.com",
     "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
     "stickyadstv.com", "sundaysky.com", "supercdn.ru", "svk-native.ru", "syncingbridge.com",
