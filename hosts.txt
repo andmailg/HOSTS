@@ -262,6 +262,7 @@
 0.0.0.0 cdn.bazr.ru
 0.0.0.0 autocontext.begun.ru
 0.0.0.0 bestdahlia.com
+0.0.0.0 ssp.bestssp.com
 0.0.0.0 c.betrad.com
 0.0.0.0 betweendigital.com
 0.0.0.0 ads.betweendigital.com
@@ -301,6 +302,10 @@
 0.0.0.0 players.brightcove.net
 0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
+0.0.0.0 btloader.com
+0.0.0.0 api.btloader.com
+0.0.0.0 cdn.btloader.com
+0.0.0.0 cdn.api.btloader.com
 0.0.0.0 bttrack.com
 0.0.0.0 bumlam.com
 0.0.0.0 hb.bumlam.com
@@ -448,6 +453,7 @@
 0.0.0.0 pebed.dm-event.net
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
+0.0.0.0 ab.dns-finder.com
 0.0.0.0 app.docuchat.io
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
@@ -590,6 +596,7 @@
 0.0.0.0 ade.googlesyndication.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 tpc.googlesyndication.com
+0.0.0.0 www.googletagmanager.com
 0.0.0.0 www.googletagservices.com
 0.0.0.0 googlevideo.com
 0.0.0.0 ads.gpm-ssp.ru
@@ -765,6 +772,7 @@
 0.0.0.0 alpha.mirtesen.ru
 0.0.0.0 chat.mirtesen.ru
 0.0.0.0 dnpmag.mirtesen.ru
+0.0.0.0 druzzya.mirtesen.ru
 0.0.0.0 galaktika.mirtesen.ru
 0.0.0.0 medvejiyugol.mirtesen.ru
 0.0.0.0 mt-smi.mirtesen.ru
@@ -828,6 +836,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -946,6 +955,7 @@
 0.0.0.0 pippio.com
 0.0.0.0 dsp-service.pixad.com.tr
 0.0.0.0 prebid.pixad.com.tr
+0.0.0.0 dish.pleasantalpaca.com
 0.0.0.0 plusoneads.com
 0.0.0.0 sync.plusoneads.com
 0.0.0.0 sync.pmbmonetize.live
@@ -1098,6 +1108,7 @@
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-358.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
+0.0.0.0 river-3-399.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
 0.0.0.0 sync.rtbplatform.ru
@@ -1417,6 +1428,7 @@
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 counter.yadro.ru
+0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com

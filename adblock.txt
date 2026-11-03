@@ -143,9 +143,7 @@
 ||sync.apester.com^
 ||a.c.appier.net^
 ||gocm.c.appier.net^
-||captive.apple.com^
 ||daf.xp.apple.com^
-||embed.podcasts.apple.com^
 ||b.applovin.com^
 ||exchange.appnerve.net^
 ||apptracer.ru^
@@ -171,6 +169,7 @@
 ||bazr.ru^
 ||autocontext.begun.ru^
 ||bestdahlia.com^
+||ssp.bestssp.com^
 ||c.betrad.com^
 ||betweendigital.com^
 ||sync.bfmio.com^
@@ -198,6 +197,7 @@
 ||players.brightcove.net^
 ||a.bringads.ru^
 ||browser-intake-datadoghq.com^
+||btloader.com^
 ||bttrack.com^
 ||bumlam.com^
 ||buzzoola.com^
@@ -298,6 +298,7 @@
 ||ssp.disqus.com^
 ||pebed.dm-event.net^
 ||dmxleo.com^
+||ab.dns-finder.com^
 ||app.docuchat.io^
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
@@ -342,7 +343,6 @@
 ||lb.eu-1-id5-sync.com^
 ||lbs.eu-1-id5-sync.com^
 ||cdn.prod.euid.eu^
-||stat.tech.euronews.com^
 ||cm.everesttech.net^
 ||rtd-tm.everesttech.net^
 ||sync-tm.everesttech.net^
@@ -555,6 +555,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -627,6 +628,7 @@
 ||pippio.com^
 ||dsp-service.pixad.com.tr^
 ||prebid.pixad.com.tr^
+||dish.pleasantalpaca.com^
 ||plusoneads.com^
 ||sync.pmbmonetize.live^
 ||polarcdn-engine.com^
@@ -694,7 +696,6 @@
 ||metrics.rapidedge.io^
 ||sentry.rarus.ru^
 ||sync.rbstsystems.live^
-||recaptcha.net^
 ||pbs-bunny.receptivity.io^
 ||pbs.receptivity.io^
 ||sync.receptivity.io^
@@ -893,8 +894,6 @@
 ||geo.ads.audio.thisisdax.com^
 ||thrtle.com^
 ||analytics.tiktok.com^
-||www.tiktok.com^
-||vmweb.us.tiktok.com^
 ||tiktokv.us^
 ||analytics-ipv6.tiktokw.us^
 ||mcs.tiktokw.us^
@@ -988,6 +987,7 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
 ||pbd.yahoo.com^
@@ -1022,4 +1022,3 @@
 ||cdn.ziffstatic.com^
 ||pg.ziffstatic.com^
 ||ksk.t.zucks.net^
-||zvuk.com^
