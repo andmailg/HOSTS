@@ -84,6 +84,10 @@ _IS_HASH_PATTERNS = [
 #    Чёрный список проверяется РАНЬШЕ этого списка.
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
+
+    # === Цифры / Прочее ===
+    "1c.ai",
+
     # === A ===
     "adobedtm.com", "amazonaws.com", "ampproject.org",
     
@@ -173,6 +177,10 @@ NEVER_BLOCK_DOMAINS = [
 #    Семейства yandex.* и google.* определяются по apex (см. is_protected).
 # =============================================================================
 PROTECTED_FAMILIES = [
+
+    # === Цифры / Прочее ===
+    "1mi.media", "1mi-media.ru",
+
     # === A ===
     "apple.com",
 
@@ -250,9 +258,6 @@ PROTECTED_FAMILIES = [
     "yahoo.com", "yahoo.net", "yahoofinance.com",
     "ya.ru", "yandex.net", "yandex.ru", 
     "yap.ru", "yaplakal.com", "counter.yadro.ru",
-
-    # === Цифры / Прочее ===
-    "1mi.media", "1mi-media.ru",
 ]
 
 # =============================================================================
