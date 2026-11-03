@@ -198,6 +198,7 @@
 ||a.bringads.ru^
 ||browser-intake-datadoghq.com^
 ||btloader.com^
+||segs.btrll.com^
 ||bttrack.com^
 ||bumlam.com^
 ||buzzoola.com^
@@ -344,6 +345,7 @@
 ||sync-tm.everesttech.net^
 ||c.evidon.com^
 ||l.evidon.com^
+||seal.excellentrobin.com^
 ||load77.exelator.com^
 ||loadm.exelator.com^
 ||ps.eyeota.net^
@@ -498,6 +500,7 @@
 ||trace.mediago.io^
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
+||tpt.mediaplex.com^
 ||mediatoday.ru^
 ||darcs.meinungsplatz.ch^
 ||rtb.mfadsrvr.com^
@@ -543,6 +546,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -812,8 +816,8 @@
 ||www.smartadserver.com^
 ||smartcallback.ru^
 ||bidder.smartytouch.co^
-||target.smi2.net^
-||exad.smi2.ru^
+||smi2.net^
+||smi2.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||sync.go.sonobi.com^
@@ -967,6 +971,7 @@
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
 ||counter.yadro.ru^
+||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
 ||pbd.yahoo.com^
