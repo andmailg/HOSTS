@@ -166,8 +166,7 @@ NEVER_BLOCK_DOMAINS = [
     "website-files.com", "withgoogle.com",
     
     # === Y ===
-    "api-maps.yandex.ru", "autofill.yandex.ru", "hdrc.yandex.net", "mdd.yandex.net",
-    "site.yandex.net", "yandexcloud.net", "yapfiles.ru", "yastatic-net.ru",
+    "yandexcloud.net", "yapfiles.ru",
     "yastatic.net", "yimg.com", "ytimg.com", "yuga.ru",
     "youtube.com",
 
@@ -265,7 +264,7 @@ PROTECTED_FAMILIES = [
 
     # === Y ===
     "yahoo.com", "yahoo.net", "yahoofinance.com",
-    "ya.ru", "yandex.net", "yandex.ru", 
+    "ya.ru", "yandex.net", "yandex.ru", "yastatic-net.ru",
     "yap.ru", "yaplakal.com", "yadro.ru",
 ]
 
