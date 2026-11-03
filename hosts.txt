@@ -194,8 +194,6 @@
 0.0.0.0 aj3105.top
 0.0.0.0 cdn77.aj3105.top
 0.0.0.0 ac.ajur.info
-0.0.0.0 vod-dash-ww-live.akamaized.net
-0.0.0.0 vod-thumb-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 ssp.al-adtech.com
 0.0.0.0 p.alcmpn.com
@@ -291,13 +289,11 @@
 0.0.0.0 cm.bluevoox.com
 0.0.0.0 phx.bmtrcs.com
 0.0.0.0 backend.bobid.io
-0.0.0.0 manifest.prod.boltdns.net
 0.0.0.0 gym.bonsaidahlia.com
 0.0.0.0 eads.brame-gamification.com
 0.0.0.0 brame-tracking.com
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
-0.0.0.0 players.brightcove.net
 0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 btloader.com
@@ -367,7 +363,6 @@
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
-0.0.0.0 static.cloudflareinsights.com
 0.0.0.0 c.clvrads.com
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 sync.colossusssp.com
@@ -447,7 +442,6 @@
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 ab.dns-finder.com
-0.0.0.0 app.docuchat.io
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 33across-match.dotomi.com
@@ -591,7 +585,6 @@
 0.0.0.0 tpc.googlesyndication.com
 0.0.0.0 www.googletagmanager.com
 0.0.0.0 www.googletagservices.com
-0.0.0.0 googlevideo.com
 0.0.0.0 ads.gpm-ssp.ru
 0.0.0.0 jscdn.greeter.me
 0.0.0.0 gumgum.com
@@ -660,18 +653,14 @@
 0.0.0.0 intent.ai
 0.0.0.0 rtb-eu-warsaw.intent.ai
 0.0.0.0 sync.intentiq.com
-0.0.0.0 invalid
 0.0.0.0 sync.ipredictive.com
 0.0.0.0 core.iprom.net
 0.0.0.0 iqm.com
 0.0.0.0 cs.iqzone.com
 0.0.0.0 sync.iqzonertb.live
-0.0.0.0 node-sber1-az1-23.jivosite.com
 0.0.0.0 journeyswitch.work
 0.0.0.0 cdn.justpremium.com
 0.0.0.0 tracking.justpremium.com
-0.0.0.0 ssl.p.jwpcdn.com
-0.0.0.0 content.jwplatform.com
 0.0.0.0 crb.kargo.com
 0.0.0.0 krk2.kargo.com
 0.0.0.0 kimberlite.io
@@ -847,12 +836,8 @@
 0.0.0.0 ecs.us-west-2.on.aws
 0.0.0.0 pixel.onaudience.com
 0.0.0.0 impressions.onelink.me
-0.0.0.0 onesignal.com
-0.0.0.0 api.onesignal.com
-0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
-0.0.0.0 geolocation.onetrust.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
 0.0.0.0 openssp.ru
@@ -1009,7 +994,6 @@
 0.0.0.0 vp.rambler.ru
 0.0.0.0 api.vp.rambler.ru
 0.0.0.0 metrics.rapidedge.io
-0.0.0.0 sentry.rarus.ru
 0.0.0.0 sync.rbstsystems.live
 0.0.0.0 pbs-bunny.receptivity.io
 0.0.0.0 pbs.receptivity.io
@@ -1251,7 +1235,6 @@
 0.0.0.0 telecid.ru
 0.0.0.0 terratraf.com
 0.0.0.0 static.terratraf.com
-0.0.0.0 oauth.tg.dev
 0.0.0.0 elb.the-ozone-project.com
 0.0.0.0 prebid.the-ozone-project.com
 0.0.0.0 sync.theagenticx.ai

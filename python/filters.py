@@ -92,11 +92,12 @@ NEVER_BLOCK_DOMAINS = [
     "adobedtm.com", "akamaized.net", "amazonaws.com", "ampproject.org",
     
     # === B ===
-    "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net", "brightcove.com", "brightcovecdn.com",
+    "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net",
+    "boltdns.net", "brightcove.com", "brightcove.net", "brightcovecdn.com",
 
     # === C ===
     "cdn-vk.com", "cdninstagram.com", "cloudflare.com", "cloudflarestream.com",
-    "cloudfront.net", "createjs.com",
+    "cloudflareinsights.com", "cloudfront.net", "createjs.com",
     
     # === D ===
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
@@ -108,8 +109,8 @@ NEVER_BLOCK_DOMAINS = [
     "flourish.studio",
     
     # === G ===
-    "google.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
-    "gvt1.com", "googletagmanager.com",
+    "google.com", "googlevideo.com", "googleusercontent.com", "gpmdata.ru",
+    "gstatic.com", "gvt1.com", "googletagmanager.com",
 
     # === H ===
     "hsmedia.ru",
@@ -119,7 +120,8 @@ NEVER_BLOCK_DOMAINS = [
     "iportal.ru", "ixbt.site", "ixbt.video", "ixbt.online",
 
     # === J ===
-    "jivo.ru", "jivosite.com", "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpltx.com", "jwpsrv.com",
+    "jivo.ru", "jivosite.com", "jquery.com", "jsdelivr.net",
+    "jwplayer.com", "jwplatform.com", "jwpcdn.com", "jwpltx.com", "jwpsrv.com",
     
     # === K ===
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
@@ -131,29 +133,33 @@ NEVER_BLOCK_DOMAINS = [
     "net.ru", "nflximg.net", "nnmstatic.win",
     
     # === O ===
-    "okcdn.ru", "okko.tv", "openstreetmap.org",
+    "oauth.tg.dev", "okcdn.ru", "okko.tv", "openstreetmap.org",
     
     # === P ===
     "pic4net.com", "plyr.io",
     
     # === R ===
-    "rackcdn.com", "recaptcha.net", "rferl.org", "rbk.ru", "redditmedia.com",
-    "rutubelist.ru",
+    "rackcdn.com", "recaptcha.net", "rferl.org", "rbk.ru",
+    "redditmedia.com", "rutubelist.ru",
     
     # === S ===
-    "sber.ru", "sberbank.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
-    "shazoo.ru", "sketchfab.com", "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
+    "sber.ru", "sberbank.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru",
+    "sentry.io", "shazoo.ru", "sketchfab.com", "squarespace.com",
+    "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t.me", "t2.ru", "tbank.ru", "telegram.org", "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com", "timepad.ru", "twimg.com", "twitter.com",
+    "t.me", "t2.ru", "tbank.ru", "telegram.org",
+    "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com",
+    "timepad.ru", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
     
     # === V ===
     "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
-    "vk-portal.net", "vk.ru", "vk.com", "vk.me", "vk.team", "vkuser.net",
-    "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvideo.ru", "vkvd.net",
+    "vk-portal.net", "vk.ru", "vk.com", "vk.me",
+    "vk.team", "vkuser.net", "vkuseraudio.net", "vkuserphoto.ru",
+    "vkusernet.ru", "vkvideo.ru", "vkvd.net",
 
     # === W ===
     "website-files.com", "withgoogle.com",
@@ -192,7 +198,7 @@ PROTECTED_FAMILIES = [
     "championat.com", "cnews.ru",
 
     # === D ===
-    "directupload.eu", "disqus.com", "dzen.ru",
+    "directupload.eu", "disqus.com", "docuchat.io", "dzen.ru",
 
     # === E ===
     "e1.ru", "eda.ru",
@@ -228,14 +234,14 @@ PROTECTED_FAMILIES = [
     "ngs.ru",
 
     # === O ===
-    "odnoklassniki.ru", "ok.ru",
+    "odnoklassniki.ru", "ok.ru", "onesignal.com", "onetrust.com",
 
     # === P ===
     "pikabu.ru",
 
     # === R ===
-    "rambler.ru", "rbc.ru", "retail.ru", "ria.ru",
-    "rosbalt.ru", "rutube.ru",
+    "rambler.ru", "rarus.ru", "rbc.ru", "retail.ru",
+    "ria.ru", "rosbalt.ru", "rutube.ru",
 
     # === S ===
     "sbrf.ru", "smi2.ru", "smi2.net", "smi2cdn.ru", "sports.ru",
@@ -292,10 +298,10 @@ AD_APEX_BLACKLIST = [
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
-    "clickagy.com", "cloudflareinsights.com", "connatix.com", "contentspread.net",
-    "contextweb.com", "coolbonsai.com", "cootlogix.com", "cpx.to", "creativecdn.com",
-    "criteo.com", "criteo.net", "crwdcntrl.net", "ctnsnet.com",
-    "cxense.com",
+    "clickagy.com", "connatix.com", "contentspread.net",
+    "contextweb.com", "cookielaw.org", "coolbonsai.com", "cootlogix.com",
+    "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
+    "crwdcntrl.net", "ctnsnet.com", "cxense.com",
 
     # === D ===
     "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
@@ -343,7 +349,7 @@ AD_APEX_BLACKLIST = [
 
     # === O ===
     "oath.com", "odsp.net", "ohmy.bid", "olanola.com", "omnitagjs.com",
-    "omtrdc.net", "onelink.me", "onetag-sys.com", "onesignal.com",
+    "omtrdc.net", "onelink.me", "onetag-sys.com",
     "openfpcdn.io", "openx.net", "openssp.ru", "openwebmp.com",
     "opti-digital.com", "optidigital.com", "optimizely.com",
     "orbitatech.io", "otm-r.com", "outbrain.com", "outbrainimg.com",
@@ -446,6 +452,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^impressions\.onelink\.me$",
     r"^t\.adx\.opera\.com$",                           # Рекламный движок встроенной рекламы браузера Opera
     r"^cs\.openwebmp\.com$",                           # Cookie-sync OpenWeb
+    r"^cdn\.onesignal\.com$",
+    r"^geolocation\.onetrust\.com$",
 
     # === R ===
     (   # rambler.ru
