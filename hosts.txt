@@ -1436,3 +1436,5 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 segs.btrll.com
+0.0.0.0 tpt.mediaplex.com

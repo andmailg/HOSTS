@@ -295,7 +295,7 @@ AD_APEX_BLACKLIST = [
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "blismedia.com", "brandmetrics.com",
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
-    "bringads.ru",
+    "bringads.ru", "btrll.com",
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
@@ -339,7 +339,7 @@ AD_APEX_BLACKLIST = [
     # === M ===
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
-    "mediascope.net", "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
+    "mediaplex.com", "mediascope.net", "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
     "ml314.com", "mobilefuse.com", "moatads.com",
     "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital",
     "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
