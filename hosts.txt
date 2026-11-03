@@ -1,4 +1,3 @@
-0.0.0.0 speech.1c.ai
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -195,7 +194,6 @@
 0.0.0.0 aj3105.top
 0.0.0.0 cdn77.aj3105.top
 0.0.0.0 ac.ajur.info
-0.0.0.0 akamaized.net
 0.0.0.0 vod-dash-ww-live.akamaized.net
 0.0.0.0 vod-thumb-ww-live.akamaized.net
 0.0.0.0 cdn.al-adtech.com
@@ -316,8 +314,6 @@
 0.0.0.0 buzzoola.com
 0.0.0.0 exchange.buzzoola.com
 0.0.0.0 tube.buzzoola.com
-0.0.0.0 cackle.me
-0.0.0.0 k.cackle.me
 0.0.0.0 cs.ssp.cadent.com
 0.0.0.0 dcs.ssp.cadent.com
 0.0.0.0 e1.ssp.cadent.com
@@ -372,9 +368,6 @@
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
 0.0.0.0 static.cloudflareinsights.com
-0.0.0.0 cloudflarestream.com
-0.0.0.0 d17ebhrlbr4s4.cloudfront.net
-0.0.0.0 d3e54v103j8qbb.cloudfront.net
 0.0.0.0 c.clvrads.com
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 sync.colossusssp.com
@@ -660,9 +653,7 @@
 0.0.0.0 api.cmp.inmobi.com
 0.0.0.0 mweb.ck.inmobi.com
 0.0.0.0 dvrtr.innovid.com
-0.0.0.0 cdn.insales-shop.ru
 0.0.0.0 counter.insales.com
-0.0.0.0 kladr.insales.ru
 0.0.0.0 dd.insiad.com
 0.0.0.0 events.insiad.com
 0.0.0.0 secure.insightexpressai.com
@@ -675,8 +666,6 @@
 0.0.0.0 iqm.com
 0.0.0.0 cs.iqzone.com
 0.0.0.0 sync.iqzonertb.live
-0.0.0.0 code.jivo.ru
-0.0.0.0 code.jivosite.com
 0.0.0.0 node-sber1-az1-23.jivosite.com
 0.0.0.0 journeyswitch.work
 0.0.0.0 cdn.justpremium.com
@@ -712,7 +701,6 @@
 0.0.0.0 ce.lijit.com
 0.0.0.0 red-n.stg-adv.lijit.com
 0.0.0.0 ruby-n.stg-adv.lijit.com
-0.0.0.0 linkedin.com
 0.0.0.0 px.ads.linkedin.com
 0.0.0.0 api.linkitbe.ru
 0.0.0.0 linkssp.ru
@@ -767,22 +755,6 @@
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
 0.0.0.0 pbs-cs.minutemedia-prebid.com
-0.0.0.0 mirtesen.ru
-0.0.0.0 actualno.mirtesen.ru
-0.0.0.0 alpha.mirtesen.ru
-0.0.0.0 chat.mirtesen.ru
-0.0.0.0 dnpmag.mirtesen.ru
-0.0.0.0 druzzya.mirtesen.ru
-0.0.0.0 galaktika.mirtesen.ru
-0.0.0.0 medvejiyugol.mirtesen.ru
-0.0.0.0 mt-smi.mirtesen.ru
-0.0.0.0 nesekretno-net.mirtesen.ru
-0.0.0.0 news.mirtesen.ru
-0.0.0.0 polls.mirtesen.ru
-0.0.0.0 positivdliaoptimistov.mirtesen.ru
-0.0.0.0 s30011300553.mirtesen.ru
-0.0.0.0 temydnya.mirtesen.ru
-0.0.0.0 trendy-men.mirtesen.ru
 0.0.0.0 ml314.com
 0.0.0.0 in.ml314.com
 0.0.0.0 vi.ml314.com
@@ -816,8 +788,6 @@
 0.0.0.0 experiences.mrf.io
 0.0.0.0 marfeelexperimentsexperienceengine.mrf.io
 0.0.0.0 sdk.mrf.io
-0.0.0.0 mtdata.ru
-0.0.0.0 r.mtdata.ru
 0.0.0.0 dsp.mts.ru
 0.0.0.0 api.a.mts.ru
 0.0.0.0 cm.a.mts.ru
@@ -1232,8 +1202,6 @@
 0.0.0.0 api-ssp.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
-0.0.0.0 assets.squarespace.com
-0.0.0.0 static1.squarespace.com
 0.0.0.0 s.srvsynd.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
@@ -1272,7 +1240,6 @@
 0.0.0.0 as.tbank-online.com
 0.0.0.0 id.tbank-online.com
 0.0.0.0 preidentity.tbank-online.com
-0.0.0.0 id.tbank.ru
 0.0.0.0 ads.tds.bid
 0.0.0.0 openrtb.tds.bid
 0.0.0.0 widgets.teads-xo.com
@@ -1297,8 +1264,6 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
-0.0.0.0 timepad.ru
-0.0.0.0 api-common.tinkoff.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
@@ -1417,7 +1382,6 @@
 0.0.0.0 wam.solution.weborama.fr
 0.0.0.0 wcm-ru.frontend.weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
-0.0.0.0 cdn.prod.website-files.com
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
@@ -1427,7 +1391,6 @@
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
-0.0.0.0 counter.yadro.ru
 0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com

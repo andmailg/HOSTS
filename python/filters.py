@@ -89,13 +89,14 @@ NEVER_BLOCK_DOMAINS = [
     "1c.ai",
 
     # === A ===
-    "adobedtm.com", "amazonaws.com", "ampproject.org",
+    "adobedtm.com", "akamaized.net", "amazonaws.com", "ampproject.org",
     
     # === B ===
     "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net", "brightcove.com", "brightcovecdn.com",
 
     # === C ===
-    "cdn-vk.com", "cdninstagram.com", "cloudflare.com", "createjs.com",
+    "cdn-vk.com", "cdninstagram.com", "cloudflare.com", "cloudflarestream.com",
+    "cloudfront.net", "createjs.com",
     
     # === D ===
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com", "dzeninfra.ru",
@@ -107,7 +108,7 @@ NEVER_BLOCK_DOMAINS = [
     "flourish.studio",
     
     # === G ===
-    "google.com", "googleapis.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
+    "google.com", "googleusercontent.com", "gpmdata.ru", "gstatic.com",
     "gvt1.com", "googletagmanager.com",
 
     # === H ===
@@ -118,10 +119,10 @@ NEVER_BLOCK_DOMAINS = [
     "iportal.ru", "ixbt.site", "ixbt.video", "ixbt.online",
 
     # === J ===
-    "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpltx.com", "jwpsrv.com",
+    "jivo.ru", "jivosite.com", "jquery.com", "jsdelivr.net", "jwplayer.com", "jwpltx.com", "jwpsrv.com",
     
     # === K ===
-    "kinescope.io", "kinescopecdn.net", "kpcdn.net",
+    "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
     "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru", "mtdata.ru", "mtml.ru",
@@ -140,11 +141,11 @@ NEVER_BLOCK_DOMAINS = [
     "rutubelist.ru",
     
     # === S ===
-    "sber.ru", "sberbank.ru", "sbrf.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
-    "shazoo.ru", "sketchfab.com", "squarespace-cdn.com", "sqspcdn.com",
+    "sber.ru", "sberbank.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru", "sentry.io",
+    "shazoo.ru", "sketchfab.com", "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t.me", "t2.ru", "telegram.org", "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com", "twimg.com", "twitter.com",
+    "t.me", "t2.ru", "tbank.ru", "telegram.org", "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com", "timepad.ru", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -155,7 +156,7 @@ NEVER_BLOCK_DOMAINS = [
     "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvideo.ru", "vkvd.net",
 
     # === W ===
-    "withgoogle.com",
+    "website-files.com", "withgoogle.com",
     
     # === Y ===
     "api-maps.yandex.ru", "autofill.yandex.ru", "hdrc.yandex.net", "mdd.yandex.net",
@@ -200,7 +201,7 @@ PROTECTED_FAMILIES = [
     "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
 
     # === G ===
-    "gazeta.ru", "gear-hub.ru",
+    "gazeta.ru", "gear-hub.ru", "googleapis.com",
 
     # === J ===
     "justwatch.com",
@@ -209,14 +210,15 @@ PROTECTED_FAMILIES = [
     "hostingkartinok.com", 
 
     # === I ===
-    "imageban.ru", "ign.com", "infox.ru", "instagram.com",
-    "interfax.ru", "ixbt.com", "iz.ru",
+    "imageban.ru", "ign.com", "infox.ru", "insales.com",
+    "insales-shop.ru", "instagram.com", "interfax.ru", "ixbt.com",
+    "iz.ru",
 
     # === K ===
     "kp.ru",
 
     # === L ===
-    "lenta.ru",
+    "lenta.ru", "linkedin.com",
 
     # === M ===
     "mail.ru", "media-trend.mail.ru", "mk.ru", "mradx.net",
@@ -233,14 +235,14 @@ PROTECTED_FAMILIES = [
 
     # === R ===
     "rambler.ru", "rbc.ru", "retail.ru", "ria.ru",
-    "rosbalt.ru", "rutube.ru", 
+    "rosbalt.ru", "rutube.ru",
 
     # === S ===
-    "smi2.ru", "smi2.net", "smi2cdn.ru", "sports.ru",
+    "sbrf.ru", "smi2.ru", "smi2.net", "smi2cdn.ru", "sports.ru",
 
     # === T ===
     "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
-    "twitter.com", "tiktok.com",
+    "twitter.com", "tiktok.com", "tinkoff.ru",
 
     # === U ===
     "userapi.com",
@@ -257,7 +259,7 @@ PROTECTED_FAMILIES = [
     # === Y ===
     "yahoo.com", "yahoo.net", "yahoofinance.com",
     "ya.ru", "yandex.net", "yandex.ru", 
-    "yap.ru", "yaplakal.com", "counter.yadro.ru",
+    "yap.ru", "yaplakal.com", "yadro.ru",
 ]
 
 # =============================================================================
@@ -317,7 +319,7 @@ AD_APEX_BLACKLIST = [
 
     # === I ===
     "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com",
-    "indexww.com", "infolinks.com", "injectoften.com", "inmobi.com",
+    "indexww.com", "infolinks.com", "infox.sg", "injectoften.com", "inmobi.com",
     "insiad.com", "intent.ai", "iqm.com", "iqzone.com",
 
     # === K ===
@@ -331,9 +333,9 @@ AD_APEX_BLACKLIST = [
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
     "mediascope.net", "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
-    "mirtesen.ru", "ml314.com", "mobilefuse.com", "moatads.com",
+    "ml314.com", "mobilefuse.com", "moatads.com",
     "moe.video", "mookie1.com", "moviead55.ru", "mpartner.digital",
-    "mpsuadv.ru", "mrgcdn.ru", "mtdata.ru", "myweb3id.io",
+    "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
     "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
@@ -418,6 +420,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^imasdk\.googleapis\.com$",                      # Google IMA SDK (видеореклама)
     r"^adservice\.google\.com$",
     r"^adserver.gear-hub.ru$",
+    r"^imasdk\.googleapis\.com$",
 
     # === H ===
     r"^px\.hsmedia\.ru$",                              # Медиа-трекер Hearst Shkulev Media
@@ -425,6 +428,9 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === I ===
     r"^rb\.infox\.ru$",
     r"(?:^|\.)media-advcycle\.imgsmail\.ru$",
+    r"^counter\.insales\.com$",
+
+    r"^px\.ads\.linkedin\.com$",
 
     # === M ===
     (   # mail.ru
