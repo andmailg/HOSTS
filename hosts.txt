@@ -1,5 +1,3 @@
-0.0.0.0 suprion.ru
-0.0.0.0 s.suprion.ru
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -240,6 +238,7 @@
 0.0.0.0 sdk-api.apptracer.ru
 0.0.0.0 arcspire.io
 0.0.0.0 px.arcspire.io
+0.0.0.0 ajax.aspnetcdn.com
 0.0.0.0 us1.atlas5.co
 0.0.0.0 attentionxyz.com
 0.0.0.0 ads.avads.net
@@ -539,6 +538,8 @@
 0.0.0.0 floxis.tech
 0.0.0.0 px-us-e.floxis.tech
 0.0.0.0 analytics.fontanka.ru
+0.0.0.0 cdn.ftd.agency
+0.0.0.0 f6.cdn.ftd.agency
 0.0.0.0 z.cdn.ftd.agency
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
@@ -756,6 +757,7 @@
 0.0.0.0 api.mindbox.ru
 0.0.0.0 web-static.mindbox.ru
 0.0.0.0 api.b.mindbox.ru
+0.0.0.0 t.mindtake.com
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
 0.0.0.0 pbs-cs.minutemedia-prebid.com
@@ -766,6 +768,7 @@
 0.0.0.0 mfx.mobilefuse.com
 0.0.0.0 pbjs.mobkoi.com
 0.0.0.0 moe.video
+0.0.0.0 3n2k57.moe.video
 0.0.0.0 cdn1.moe.video
 0.0.0.0 rtb.moe.video
 0.0.0.0 pixelfnt-us.dsp-api.moloco.com
@@ -810,7 +813,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1193,6 +1195,7 @@
 0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 bidder.smartytouch.co
 0.0.0.0 smi2.net
+0.0.0.0 img.smi2.net
 0.0.0.0 static.smi2.net
 0.0.0.0 static1.smi2.net
 0.0.0.0 static2.smi2.net
@@ -1229,6 +1232,7 @@
 0.0.0.0 worker.sttsmntz.ru
 0.0.0.0 sr.studiostack.com
 0.0.0.0 vop.sundaysky.com
+0.0.0.0 suprion.ru
 0.0.0.0 a.suprion.ru
 0.0.0.0 s.suprion.ru
 0.0.0.0 rtb.surfy.space
@@ -1406,6 +1410,8 @@
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
+0.0.0.0 h.xoalt.com
+0.0.0.0 static.xoalt.com
 0.0.0.0 counter.yadro.ru
 0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com

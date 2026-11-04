@@ -150,6 +150,7 @@
 ||exchange.appnerve.net^
 ||apptracer.ru^
 ||arcspire.io^
+||ajax.aspnetcdn.com^
 ||us1.atlas5.co^
 ||attentionxyz.com^
 ||ads.avads.net^
@@ -359,7 +360,7 @@
 ||servedby.flashtalking.com^
 ||floxis.tech^
 ||analytics.fontanka.ru^
-||z.cdn.ftd.agency^
+||cdn.ftd.agency^
 ||agen-assets.ftstatic.com^
 ||ajs-assets.ftstatic.com^
 ||futalis.de^
@@ -506,6 +507,7 @@
 ||rtb.mfadsrvr.com^
 ||cm.mgid.com^
 ||mindbox.ru^
+||t.mindtake.com^
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
 ||pbs-cs.minutemedia-prebid.com^
@@ -546,7 +548,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -838,8 +839,7 @@
 ||worker.sttsmntz.ru^
 ||sr.studiostack.com^
 ||vop.sundaysky.com^
-||a.suprion.ru^
-||s.suprion.ru^
+||suprion.ru^
 ||rtb.surfy.space^
 ||ssp.surfy.space^
 ||x.surfy.space^
@@ -970,6 +970,8 @@
 ||ssp.wp.pl^
 ||dc.xoalt.com^
 ||geoip.xoalt.com^
+||h.xoalt.com^
+||static.xoalt.com^
 ||counter.yadro.ru^
 ||csp.yahoo.com^
 ||geo.yahoo.com^
