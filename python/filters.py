@@ -134,7 +134,8 @@ NEVER_BLOCK_DOMAINS = [
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru", "mtdata.ru", "mtml.ru",
+    "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru",
+    "mtdata.ru", "mtml.ru", "mzstatic.com",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
@@ -346,7 +347,7 @@ AD_APEX_BLACKLIST = [
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
     "mediaplex.com", "mediascope.net", "mediatoday.ru", "merequartz.com",
     "mgid.com", "mindbox.ru", "ml314.com", "mobilefuse.com",
-    "moatads.com", "moe.video", "mookie1.com", "moviead55.ru",
+    "moatads.com", "mobkoi.com", "moe.video", "mookie1.com", "moviead55.ru",
     "mpartner.digital", "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
@@ -380,10 +381,12 @@ AD_APEX_BLACKLIST = [
     "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
     "semasio.net", "servenobid.com", "setka.news", "sharethrough.com",
     "silvermob.com", "simpli.fi", "sitescout.com", "skimresources.com",
-    "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smi2.ru", "smi2.net", "smilewanted.com",
-    "sonobi.com", "sparrow.ru", "sportradarserving.com",
-    "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com", "stbid.ru",
-    "stickyadstv.com", "sundaysky.com", "supercdn.ru", "suprion.ru", "svk-native.ru", "syncingbridge.com",
+    "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smartytech.io",
+    "smi2.ru", "smi2.net", "smilewanted.com", "sonobi.com",
+    "sparrow.ru", "sportradarserving.com", "spot.im", "spotxchange.com",
+    "springserve.com", "srvsynd.com", "stbid.ru", "stickyadstv.com",
+    "sundaysky.com", "supercdn.ru", "suprion.ru", "svk-native.ru",
+    "syncingbridge.com",
 
     # === T ===
     "taboola.com", "tapad.com", "targetads.io", "targetrtb.com",

@@ -1477,3 +1477,7 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 pbjs.mobkoi.com
+0.0.0.0 mobkoi.com
+0.0.0.0 smartytech.io
+0.0.0.0 server.smartytech.io
