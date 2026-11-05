@@ -71,6 +71,7 @@
 0.0.0.0 rtb.adbustr.com
 0.0.0.0 analytics.adcanvas.com
 0.0.0.0 media.adcanvas.com
+0.0.0.0 su.addthis.com
 0.0.0.0 adentifi.com
 0.0.0.0 rtb.adentifi.com
 0.0.0.0 cdn.adfinity.pro
@@ -140,6 +141,7 @@
 0.0.0.0 pb.adriver.ru
 0.0.0.0 ssp.adriver.ru
 0.0.0.0 d.adroll.com
+0.0.0.0 tracker.ads-pubsfusion.com
 0.0.0.0 tracker.ads-tinyorbit.com
 0.0.0.0 dt.adsafeprotected.com
 0.0.0.0 fw.adsafeprotected.com
@@ -327,6 +329,7 @@
 0.0.0.0 e1.ssp.cadent.com
 0.0.0.0 pcs.ssp.cadent.com
 0.0.0.0 casalemedia.com
+0.0.0.0 a1746.casalemedia.com
 0.0.0.0 a2044.casalemedia.com
 0.0.0.0 a2587.casalemedia.com
 0.0.0.0 a4123.casalemedia.com
@@ -346,6 +349,7 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
+0.0.0.0 factors.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -504,7 +508,9 @@
 0.0.0.0 sync.dvgroup.com
 0.0.0.0 dynotech.io
 0.0.0.0 rtb.dynotech.io
+0.0.0.0 s.e-planning.net
 0.0.0.0 sync.e-planning.net
+0.0.0.0 u-iad04.e-planning.net
 0.0.0.0 ads.us.e-planning.net
 0.0.0.0 rim.eagerbrass.com
 0.0.0.0 0.rim.eagerbrass.com
@@ -656,6 +662,7 @@
 0.0.0.0 resources.infolinks.com
 0.0.0.0 router.infolinks.com
 0.0.0.0 rb.infox.ru
+0.0.0.0 cis.infox.sg
 0.0.0.0 rb.infox.sg
 0.0.0.0 cs.ingage.tech
 0.0.0.0 sync.ingage.tech
@@ -772,6 +779,7 @@
 0.0.0.0 vi.ml314.com
 0.0.0.0 mn-tz.com
 0.0.0.0 mfx.mobilefuse.com
+0.0.0.0 mobkoi.com
 0.0.0.0 pbjs.mobkoi.com
 0.0.0.0 moe.video
 0.0.0.0 3n2k57.moe.video
@@ -819,6 +827,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -875,6 +884,7 @@
 0.0.0.0 us-east-1-cs-rtb.openwebmp.com
 0.0.0.0 openx.net
 0.0.0.0 eu-u.openx.net
+0.0.0.0 pbs-us-east.openx.net
 0.0.0.0 rtb.openx.net
 0.0.0.0 tmn-d.openx.net
 0.0.0.0 u.openx.net
@@ -1089,6 +1099,7 @@
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-358.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
+0.0.0.0 river-3-384.rtbcdn.ru
 0.0.0.0 river-3-385.rtbcdn.ru
 0.0.0.0 river-3-399.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
@@ -1201,9 +1212,12 @@
 0.0.0.0 www.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
+0.0.0.0 smartytech.io
+0.0.0.0 server.smartytech.io
 0.0.0.0 bidder.smartytouch.co
 0.0.0.0 smi2.net
 0.0.0.0 img.smi2.net
+0.0.0.0 pr.smi2.net
 0.0.0.0 static.smi2.net
 0.0.0.0 static1.smi2.net
 0.0.0.0 static2.smi2.net
@@ -1304,6 +1318,7 @@
 0.0.0.0 ads.travelaudience.com
 0.0.0.0 www.travelpayouts.com
 0.0.0.0 partners.tremorhub.com
+0.0.0.0 a.tribalfusion.com
 0.0.0.0 s.tribalfusion.com
 0.0.0.0 tru.am
 0.0.0.0 beacon.tru.am
@@ -1477,7 +1492,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 pbjs.mobkoi.com
-0.0.0.0 mobkoi.com
-0.0.0.0 smartytech.io
-0.0.0.0 server.smartytech.io

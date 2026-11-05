@@ -39,6 +39,7 @@
 ||rtb.adbustr.com^
 ||analytics.adcanvas.com^
 ||media.adcanvas.com^
+||su.addthis.com^
 ||adentifi.com^
 ||cdn.adfinity.pro^
 ||a2.adform.net^
@@ -87,6 +88,7 @@
 ||media.adretriever.com^
 ||adriver.ru^
 ||d.adroll.com^
+||tracker.ads-pubsfusion.com^
 ||tracker.ads-tinyorbit.com^
 ||dt.adsafeprotected.com^
 ||fw.adsafeprotected.com^
@@ -216,6 +218,7 @@
 ||cdn.celtra.com^
 ||celtraidentity.com^
 ||ceros.com^
+||factors.championat.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -328,7 +331,9 @@
 ||maestro-ue1.tps.dv.tech^
 ||sync.dvgroup.com^
 ||dynotech.io^
+||s.e-planning.net^
 ||sync.e-planning.net^
+||u-iad04.e-planning.net^
 ||ads.us.e-planning.net^
 ||rim.eagerbrass.com^
 ||edigitalsurvey.com^
@@ -427,6 +432,7 @@
 ||resources.infolinks.com^
 ||router.infolinks.com^
 ||rb.infox.ru^
+||cis.infox.sg^
 ||rb.infox.sg^
 ||cs.ingage.tech^
 ||sync.ingage.tech^
@@ -516,7 +522,7 @@
 ||ml314.com^
 ||mn-tz.com^
 ||mfx.mobilefuse.com^
-||pbjs.mobkoi.com^
+||mobkoi.com^
 ||moe.video^
 ||pixelfnt-us.dsp-api.moloco.com^
 ||ads.monetix.group^
@@ -550,6 +556,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -818,6 +825,7 @@
 ||sync.smartadserver.com^
 ||www.smartadserver.com^
 ||smartcallback.ru^
+||smartytech.io^
 ||bidder.smartytouch.co^
 ||smi2.net^
 ||smi2.ru^
@@ -897,6 +905,7 @@
 ||ads.travelaudience.com^
 ||www.travelpayouts.com^
 ||partners.tremorhub.com^
+||a.tribalfusion.com^
 ||s.tribalfusion.com^
 ||tru.am^
 ||b.trueanthem.com^
