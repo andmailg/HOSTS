@@ -36,6 +36,7 @@
 ||ad-server.eu^
 ||profile.ad-tech.ru^
 ||ad4m.at^
+||rtb.adbustr.com^
 ||analytics.adcanvas.com^
 ||media.adcanvas.com^
 ||adentifi.com^
@@ -120,7 +121,7 @@
 ||faststat.advideo.ru^
 ||stat.advideo.ru^
 ||cm-mx.advolve.io^
-||id.adx.bid^
+||adx.bid^
 ||afrdtech.com^
 ||cs.agency2.ru^
 ||aa.agkn.com^
@@ -967,6 +968,7 @@
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
+||dead.woodsunset.com^
 ||ssp.wp.pl^
 ||dc.xoalt.com^
 ||geoip.xoalt.com^

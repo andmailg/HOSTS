@@ -68,6 +68,7 @@
 0.0.0.0 ad-server.eu
 0.0.0.0 profile.ad-tech.ru
 0.0.0.0 ad4m.at
+0.0.0.0 rtb.adbustr.com
 0.0.0.0 analytics.adcanvas.com
 0.0.0.0 media.adcanvas.com
 0.0.0.0 adentifi.com
@@ -188,6 +189,7 @@
 0.0.0.0 faststat.advideo.ru
 0.0.0.0 stat.advideo.ru
 0.0.0.0 cm-mx.advolve.io
+0.0.0.0 adx.bid
 0.0.0.0 id.adx.bid
 0.0.0.0 afrdtech.com
 0.0.0.0 cs.agency2.ru
@@ -1407,6 +1409,7 @@
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
 0.0.0.0 ads-media.wildberries.ru
+0.0.0.0 dead.woodsunset.com
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
 0.0.0.0 geoip.xoalt.com
