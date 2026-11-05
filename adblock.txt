@@ -897,13 +897,13 @@
 ||ads.travelaudience.com^
 ||www.travelpayouts.com^
 ||partners.tremorhub.com^
+||s.tribalfusion.com^
 ||tru.am^
 ||b.trueanthem.com^
 ||cdn.trust-id.ru^
 ||id.trust-id.ru^
 ||choices-or.trustarc.com^
 ||choices.trustarc.com^
-||choices.truste.com^
 ||hb.trustedstack.com^
 ||tsdtocl.com^
 ||tt.ttarget.ru^
@@ -915,6 +915,7 @@
 ||de.tynt.com^
 ||hde.tynt.com^
 ||u-login.com^
+||uncn.jp^
 ||ads.undertone.com^
 ||cdn.undertone.com^
 ||creative-p.undertone.com^
@@ -935,6 +936,8 @@
 ||cdn.uxfeedback.ru^
 ||widget-api.uxfeedback.ru^
 ||vdo.ai^
+||st.ads.prod.vdsprts.ru^
+||st.sp.prod.vdsprts.ru^
 ||viadata.store^
 ||beacon.viafoura.io^
 ||ad.video-mech.ru^

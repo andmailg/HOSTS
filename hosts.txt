@@ -1089,6 +1089,7 @@
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-358.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
+0.0.0.0 river-3-385.rtbcdn.ru
 0.0.0.0 river-3-399.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
@@ -1303,6 +1304,7 @@
 0.0.0.0 ads.travelaudience.com
 0.0.0.0 www.travelpayouts.com
 0.0.0.0 partners.tremorhub.com
+0.0.0.0 s.tribalfusion.com
 0.0.0.0 tru.am
 0.0.0.0 beacon.tru.am
 0.0.0.0 b.trueanthem.com
@@ -1310,7 +1312,6 @@
 0.0.0.0 id.trust-id.ru
 0.0.0.0 choices-or.trustarc.com
 0.0.0.0 choices.trustarc.com
-0.0.0.0 choices.truste.com
 0.0.0.0 hb.trustedstack.com
 0.0.0.0 tsdtocl.com
 0.0.0.0 tt.ttarget.ru
@@ -1323,6 +1324,8 @@
 0.0.0.0 de.tynt.com
 0.0.0.0 hde.tynt.com
 0.0.0.0 u-login.com
+0.0.0.0 uncn.jp
+0.0.0.0 ds.uncn.jp
 0.0.0.0 ads.undertone.com
 0.0.0.0 cdn.undertone.com
 0.0.0.0 creative-p.undertone.com
@@ -1346,6 +1349,8 @@
 0.0.0.0 widget-api.uxfeedback.ru
 0.0.0.0 vdo.ai
 0.0.0.0 ortb.vdo.ai
+0.0.0.0 st.ads.prod.vdsprts.ru
+0.0.0.0 st.sp.prod.vdsprts.ru
 0.0.0.0 viadata.store
 0.0.0.0 bn.viadata.store
 0.0.0.0 devpl.viadata.store
@@ -1472,5 +1477,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 ds.uncn.jp
-0.0.0.0 uncn.jp
