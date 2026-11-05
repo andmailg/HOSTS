@@ -400,7 +400,6 @@
 143. [AD] content.adriver.ru                       (clean: 5, ad: 195, pages: 3)
 144. [AD] cookies.nextmillmedia.com                (clean: 310, ad: 3176, pages: 1, strong: 68)
 145. [AD] cookiesync.axis-marketplace.com          (clean: 35, ad: 352, pages: 1, strong: 7, name-hint)
-146. [AD] counter.yadro.ru                         (clean: 190, ad: 1542, pages: 32, name-hint)
 147. [AD] cpm.vistarsagency.com                    (clean: 5, ad: 46, pages: 1, strong: 1)
 148. [AD] cr-frontend.weborama-tech.ru             (clean: 20, ad: 24, pages: 2)
 149. [AD] creativecdn.com                          (clean: 10, ad: 12, pages: 2)

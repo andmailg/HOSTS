@@ -173,9 +173,8 @@ NEVER_BLOCK_DOMAINS = [
     "website-files.com", "withgoogle.com",
     
     # === Y ===
-    "yandexcloud.net", "yapfiles.ru",
-    "yastatic.net", "yimg.com", "ytimg.com", "yuga.ru",
-    "youtube.com",
+    "yadro.ru", "yandexcloud.net", "yapfiles.ru", "yastatic.net",
+    "yimg.com", "ytimg.com", "yuga.ru", "youtube.com",
 
     # === Z ===
     "zvuk.com",
@@ -272,7 +271,7 @@ PROTECTED_FAMILIES = [
     # === Y ===
     "yahoo.com", "yahoo.net", "yahoofinance.com",
     "ya.ru", "yandex.net", "yandex.ru", "yastatic-net.ru",
-    "yap.ru", "yaplakal.com", "yadro.ru",
+    "yap.ru", "yaplakal.com",
 ]
 
 # =============================================================================
