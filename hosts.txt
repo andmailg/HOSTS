@@ -1492,3 +1492,7 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 sync.colossusssp.com
+0.0.0.0 colossusssp.com
+0.0.0.0 tacoda.at.atwola.com
+0.0.0.0 atwola.com

@@ -295,7 +295,7 @@ AD_APEX_BLACKLIST = [
     "adfox.ru", "adx.com.ru", "agkn.com", "aidata.io", "alcmpn.com",
     "alfasense.com", "amazon-adsystem.com", "amx1.net", "aniview.com",
     "apester.com", "appier.net", "appsflyersdk.com", "apptracer.ru",
-    "applovin.com", "arcspire.io", "axis-marketplace.com",
+    "applovin.com", "arcspire.io", "atwola.com", "axis-marketplace.com",
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
@@ -305,7 +305,7 @@ AD_APEX_BLACKLIST = [
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
-    "clickagy.com", "connatix.com", "contentspread.net",
+    "clickagy.com", "colossusssp.com", "connatix.com", "contentspread.net",
     "contextweb.com", "cookielaw.org", "coolbonsai.com", "cootlogix.com",
     "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
     "crwdcntrl.net", "ctnsnet.com", "cxense.com",
