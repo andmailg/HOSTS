@@ -159,11 +159,14 @@
 0.0.0.0 a.adspector.io
 0.0.0.0 sync.adspend.space
 0.0.0.0 adsrvr.org
+0.0.0.0 ad.adsrvr.org
 0.0.0.0 azad.adsrvr.org
 0.0.0.0 azenduser.adsrvr.org
+0.0.0.0 de2-bid.adsrvr.org
 0.0.0.0 direct.adsrvr.org
 0.0.0.0 enduser.adsrvr.org
 0.0.0.0 html5.adsrvr.org
+0.0.0.0 ie1-bid.adsrvr.org
 0.0.0.0 insight.adsrvr.org
 0.0.0.0 js.adsrvr.org
 0.0.0.0 match.adsrvr.org
@@ -273,6 +276,7 @@
 0.0.0.0 lbs-eu1.ads.betweendigital.com
 0.0.0.0 lbs-ru1.ads.betweendigital.com
 0.0.0.0 sync.bfmio.com
+0.0.0.0 bidberry.net
 0.0.0.0 bidderstack.com
 0.0.0.0 cmr.bidderstack.com
 0.0.0.0 nr.bidderstack.com
@@ -1094,6 +1098,7 @@
 0.0.0.0 t.rtbwave.com
 0.0.0.0 trace.us.rtbwise.com
 0.0.0.0 rubiconproject.com
+0.0.0.0 beacon-fra2.rubiconproject.com
 0.0.0.0 beacon-iad6.rubiconproject.com
 0.0.0.0 beacon-nf-iad6.rubiconproject.com
 0.0.0.0 eus.rubiconproject.com
@@ -1386,6 +1391,7 @@
 0.0.0.0 watchfeed.tv
 0.0.0.0 api.wavesend.ru
 0.0.0.0 scripts.webcontentassessor.com
+0.0.0.0 api.ext.webcontentassessor.com
 0.0.0.0 track.webgains.com
 0.0.0.0 analytics.webgains.io
 0.0.0.0 api.webgains.io
@@ -1415,7 +1421,7 @@
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
-0.0.0.0 csp.yahoo.com
+0.0.0.0 counter.yadro.ru
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com
@@ -1428,6 +1434,7 @@
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
 0.0.0.0 mc.yandex.com
+0.0.0.0 mdd.yandex.net
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
 0.0.0.0 mc.yandex.ru
@@ -1465,4 +1472,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 mdd.yandex.net

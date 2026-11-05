@@ -177,6 +177,7 @@
 ||c.betrad.com^
 ||betweendigital.com^
 ||sync.bfmio.com^
+||bidberry.net^
 ||bidderstack.com^
 ||track.bidgx.com^
 ||adapter.bidmatic.io^
@@ -957,6 +958,7 @@
 ||watchfeed.tv^
 ||api.wavesend.ru^
 ||scripts.webcontentassessor.com^
+||api.ext.webcontentassessor.com^
 ||track.webgains.com^
 ||analytics.webgains.io^
 ||api.webgains.io^
@@ -975,7 +977,6 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||counter.yadro.ru^
-||csp.yahoo.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
 ||pbd.yahoo.com^
@@ -985,6 +986,7 @@
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
 ||mc.yandex.com^
+||mdd.yandex.net^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^
 ||mc.yandex.ru^
