@@ -51,10 +51,12 @@ AD_TRACKER_PATTERNS = [
 SYSTEM_ASSETS_PATTERNS = [
     r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
     r"\.hsmedia\.ru", r"\.viqeo\.tv", r"\.bbci\.co\.uk", r"\.bbc\.co\.uk", r"\.thetruestory\.news", r"cdn.*iportal\.ru",
+    r"chat\.mirtesen\.ru",
+    r"vtb\.ru",
     r"\.onesignal\.com", r"\.googleapis\.com", r"userapi\.com", r"x\.com",
     r"yahoo\.[a-z]+", r"yahoofinance\.com",
-    r"ya\.ru", r"yandex\.[a-z]+", r"yastatic-net\.ru",
-    r"yap\.ru", r"yaplakal\.com", r"yadro\.ru",
+    r"ya\.ru", r"yandex\.[a-z]+", r"yastatic-net\.ru", r"yadro\.ru",
+    r"chat\.mirtesen\.ru",
 ]
 
 _COMPILED_STRONG = [re.compile(p, re.IGNORECASE) for p in AD_STRONG_PATTERNS]
@@ -155,7 +157,7 @@ NEVER_BLOCK_DOMAINS = [
     # === T ===
     "t.me", "t2.ru", "tbank.ru", "telegram.org",
     "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com",
-    "timepad.ru", "twimg.com", "twitter.com",
+    "timepad.ru", "truste.com", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -164,7 +166,7 @@ NEVER_BLOCK_DOMAINS = [
     "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
     "vk-portal.net", "vk.ru", "vk.com", "vk.me",
     "vk.team", "vkuser.net", "vkuseraudio.net", "vkuserphoto.ru",
-    "vkusernet.ru", "vkvideo.ru", "vkvd.net",
+    "vkusernet.ru", "vkvideo.ru", "vkvd.net", "vtb.ru",
 
     # === W ===
     "website-files.com", "withgoogle.com",
@@ -251,8 +253,8 @@ PROTECTED_FAMILIES = [
     "sbrf.ru", "sports.ru",
 
     # === T ===
-    "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
-    "twitter.com", "tiktok.com", "tinkoff.ru",
+    "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
+    "tinkoff.ru", "tourdom.ru", "twitter.com",
 
     # === U ===
     "userapi.com",
@@ -391,7 +393,7 @@ AD_APEX_BLACKLIST = [
     "trustarc.com", "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
-    "undertone.com", "upravel.com", "ussp.io",
+    "uncn.jp", "undertone.com", "upravel.com", "ussp.io",
     "utraff.com", "utraff.info", "uuidksinc.net",
 
     # === V ===
