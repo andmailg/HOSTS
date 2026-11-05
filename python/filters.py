@@ -37,7 +37,7 @@ AD_STRONG_PATTERNS = [
 # Признаки трекеров/аналитики (+30 к ad_score, как и раньше).
 AD_TRACKER_PATTERNS = [
     r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding", r"\/ads\/system\/",
-    r"sync-loader", r"counter", r"analytics", r"gnezdo\.ru", r"fundingchoices",
+    r"sync-loader", r"analytics", r"counter", r"gnezdo\.ru", r"fundingchoices",
     r"\/cm\.", r"context\.js", r"telemetry", r"adriver", r"bs\.serving-sys", r"advert", r"adfox",
     r"viqeo", r"vigo\.tech", r"embeds\.rambler",
     r"mc\.yandex\.[a-z]+/watch", r"/collect\b", r"clickstream",
@@ -50,7 +50,11 @@ AD_TRACKER_PATTERNS = [
 
 SYSTEM_ASSETS_PATTERNS = [
     r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
-    r"\.hsmedia\.ru", r"\.viqeo\.tv", r"\.bbci\.co\.uk", r"\.bbc\.co\.uk", r"\.thetruestory\.news", r"cdn.*iportal\.ru"
+    r"\.hsmedia\.ru", r"\.viqeo\.tv", r"\.bbci\.co\.uk", r"\.bbc\.co\.uk", r"\.thetruestory\.news", r"cdn.*iportal\.ru",
+    r"\.onesignal\.com", r"\.googleapis\.com", r"userapi\.com", r"x\.com",
+    r"yahoo\.[a-z]+", r"yahoofinance\.com",
+    r"ya\.ru", r"yandex\.[a-z]+", r"yastatic-net\.ru",
+    r"yap\.ru", r"yaplakal\.com", r"yadro\.ru",
 ]
 
 _COMPILED_STRONG = [re.compile(p, re.IGNORECASE) for p in AD_STRONG_PATTERNS]
@@ -244,7 +248,7 @@ PROTECTED_FAMILIES = [
     "ria.ru", "rosbalt.ru", "rutube.ru",
 
     # === S ===
-    "sbrf.ru", "smi2cdn.ru", "sports.ru",
+    "sbrf.ru", "sports.ru",
 
     # === T ===
     "techradar.com", "temu.com", "thetruestory.news", "tourdom.ru",
@@ -486,7 +490,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === Yandex ===
     (
         r"(?:^|\.)(?:"
-        r"an|mc|ads|awaps|bs|context|direct|pagead|uaas"
+        r"an|mdd|mc|ads|awaps|bs|context|direct|pagead|uaas"
         r"|abt\.s3|aflt\.market"
         r")\.yandex\.[a-z]+$"
     ),

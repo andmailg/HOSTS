@@ -1415,7 +1415,6 @@
 0.0.0.0 geoip.xoalt.com
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
-0.0.0.0 counter.yadro.ru
 0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
@@ -1466,3 +1465,4 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 mdd.yandex.net
