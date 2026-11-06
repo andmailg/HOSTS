@@ -151,14 +151,14 @@ NEVER_BLOCK_DOMAINS = [
     "redditmedia.com", "rutubelist.ru",
     
     # === S ===
-    "sber.ru", "sberbank.ru", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru",
+    "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru",
     "sentry.io", "shazoo.ru", "sketchfab.com", "squarespace.com",
     "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
     "t.me", "t2.ru", "tbank.ru", "telegram.org",
     "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com",
-    "timepad.ru", "truste.com", "twimg.com", "twitter.com",
+    "timepad.ru", "travelatacdn.ru", "truste.com", "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -250,11 +250,11 @@ PROTECTED_FAMILIES = [
     "ria.ru", "rosbalt.ru", "rutube.ru",
 
     # === S ===
-    "sbrf.ru", "sports.ru",
+    "sbrf.ru", "sports.ru", "spotify.com",
 
     # === T ===
     "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
-    "tinkoff.ru", "tourdom.ru", "twitter.com",
+    "tinkoff.ru", "tourdom.ru", "tvc.ru", "twitter.com",
 
     # === U ===
     "userapi.com",
@@ -381,7 +381,7 @@ AD_APEX_BLACKLIST = [
     "semasio.net", "servenobid.com", "setka.news", "sharethrough.com",
     "silvermob.com", "simpli.fi", "sitescout.com", "skimresources.com",
     "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smartytech.io",
-    "smi2.ru", "smi2.net", "smilewanted.com", "sonobi.com",
+    "smi2.ru", "smi2cdn.ru", "smi2.net", "smilewanted.com", "sonobi.com",
     "sparrow.ru", "sportradarserving.com", "spot.im", "spotxchange.com",
     "springserve.com", "srvsynd.com", "stbid.ru", "stickyadstv.com",
     "sundaysky.com", "supercdn.ru", "suprion.ru", "svk-native.ru",
