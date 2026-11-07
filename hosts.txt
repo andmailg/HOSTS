@@ -1479,7 +1479,6 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 guce.yahoo.com
 0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
