@@ -2,7 +2,6 @@ import asyncio
 import sys
 import os
 import argparse
-import re
 from urllib.parse import urlparse
 
 import aiohttp
