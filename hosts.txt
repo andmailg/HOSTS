@@ -1253,7 +1253,6 @@
 0.0.0.0 counter.yadro.ru
 0.0.0.0 csp.yahoo.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 guce.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com

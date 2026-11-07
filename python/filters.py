@@ -451,7 +451,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === Y ===
 
     # === Yahoo ===
-    r"(?:^|\.)(?:geo|guce|pbd|pbs|ssp|bats\.video)\.yahoo.com$",
+    r"(?:^|\.)(?:geo|pbd|pbs|ssp|bats\.video)\.yahoo.com$",
     r"^analytics.*\.yahoo\.[a-z]+$",
 
     # === Yandex ===
