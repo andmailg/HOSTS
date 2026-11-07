@@ -74,6 +74,8 @@
 0.0.0.0 su.addthis.com
 0.0.0.0 adentifi.com
 0.0.0.0 rtb.adentifi.com
+0.0.0.0 analytics.aderserve.com
+0.0.0.0 serve.aderserve.com
 0.0.0.0 cdn.adfinity.pro
 0.0.0.0 a2.adform.net
 0.0.0.0 adx.adform.net
@@ -96,6 +98,7 @@
 0.0.0.0 view.adjust.com
 0.0.0.0 dsp.adkernel.com
 0.0.0.0 sync.adkernel.com
+0.0.0.0 adkit-advertising.amazon
 0.0.0.0 adlook.online
 0.0.0.0 sync.adlook.online
 0.0.0.0 sync1.adlook.online
@@ -220,6 +223,7 @@
 0.0.0.0 aax.amazon-adsystem.com
 0.0.0.0 c.amazon-adsystem.com
 0.0.0.0 s.amazon-adsystem.com
+0.0.0.0 sq-tungsten-ts.amazon-adsystem.com
 0.0.0.0 tk.amazon-adsystem.com
 0.0.0.0 ts.amazon-adsystem.com
 0.0.0.0 vfw.amazon-adsystem.com
@@ -265,6 +269,7 @@
 0.0.0.0 api3.b2c.com
 0.0.0.0 apix.b2c.com
 0.0.0.0 tracker.ssp.balance-x.com
+0.0.0.0 bankrate.com
 0.0.0.0 c.bannerflow.net
 0.0.0.0 icv.bannernow.com
 0.0.0.0 stats.bannernow.com
@@ -281,6 +286,7 @@
 0.0.0.0 cache.betweendigital.com
 0.0.0.0 lbs-eu1.ads.betweendigital.com
 0.0.0.0 lbs-ru1.ads.betweendigital.com
+0.0.0.0 lbs-us-east1.ads.betweendigital.com
 0.0.0.0 sync.bfmio.com
 0.0.0.0 bidberry.net
 0.0.0.0 bidderstack.com
@@ -331,6 +337,8 @@
 0.0.0.0 cs.ssp.cadent.com
 0.0.0.0 dcs.ssp.cadent.com
 0.0.0.0 e1.ssp.cadent.com
+0.0.0.0 imp.ssp.cadent.com
+0.0.0.0 js.ssp.cadent.com
 0.0.0.0 pcs.ssp.cadent.com
 0.0.0.0 code.cake019.ru
 0.0.0.0 casalemedia.com
@@ -354,6 +362,7 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
+0.0.0.0 factors.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -592,6 +601,7 @@
 0.0.0.0 geoip-js.com
 0.0.0.0 usersync.getpublica.com
 0.0.0.0 metrics.getrockerbox.com
+0.0.0.0 lieu.giftedbelt.com
 0.0.0.0 a.giraff.io
 0.0.0.0 code.giraff.io
 0.0.0.0 data.giraff.io
@@ -768,6 +778,7 @@
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 mediametrics.ru
 0.0.0.0 tpt.mediaplex.com
+0.0.0.0 sys.mediapunch.ru
 0.0.0.0 mediatoday.ru
 0.0.0.0 darcs.meinungsplatz.ch
 0.0.0.0 rtb.mfadsrvr.com
@@ -821,6 +832,8 @@
 0.0.0.0 sm.rtb.mts.ru
 0.0.0.0 static.a.mts.ru
 0.0.0.0 pmp.mxptint.net
+0.0.0.0 a.myfidevs.io
+0.0.0.0 static.myfinance.com
 0.0.0.0 events.myweb3id.io
 0.0.0.0 cdn.nemedia.codes
 0.0.0.0 ep.nemedia.codes
@@ -1236,6 +1249,7 @@
 0.0.0.0 smi2.ru
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
+0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 sync.go.sonobi.com
@@ -1246,9 +1260,6 @@
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 use.sportradarserving.com
 0.0.0.0 api-ssp.spot.im
-0.0.0.0 apresolve.spotify.com
-0.0.0.0 gew1-spclient.spotify.com
-0.0.0.0 spclient.wg.spotify.com
 0.0.0.0 embed-cdn.spotifycdn.com
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
@@ -1272,14 +1283,17 @@
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
 0.0.0.0 t-static.ru
+0.0.0.0 cdn.taboola-display.com
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
 0.0.0.0 cds.taboola.com
+0.0.0.0 images.taboola.com
 0.0.0.0 pips.taboola.com
 0.0.0.0 pm-widget.taboola.com
 0.0.0.0 sync.taboola.com
 0.0.0.0 trc-events.taboola.com
 0.0.0.0 trc.taboola.com
+0.0.0.0 us-trc-events.taboola.com
 0.0.0.0 display.bidder.taboola.com
 0.0.0.0 tagsrvcs.com
 0.0.0.0 tapad.com
@@ -1340,6 +1354,7 @@
 0.0.0.0 choices-or.trustarc.com
 0.0.0.0 choices.trustarc.com
 0.0.0.0 hb.trustedstack.com
+0.0.0.0 lg1.hb.trustedstack.com
 0.0.0.0 tsdtocl.com
 0.0.0.0 tt.ttarget.ru
 0.0.0.0 ttwstatic.com
@@ -1404,6 +1419,13 @@
 0.0.0.0 api.vigo.tech
 0.0.0.0 cdn.vigo.tech
 0.0.0.0 s.viisfxlg.com
+0.0.0.0 vimeo.com
+0.0.0.0 arclight.vimeo.com
+0.0.0.0 player.vimeo.com
+0.0.0.0 f.vimeocdn.com
+0.0.0.0 i.vimeocdn.com
+0.0.0.0 skyfire.vimeocdn.com
+0.0.0.0 vod-adaptive-ak.vimeocdn.com
 0.0.0.0 viqeo.tv
 0.0.0.0 api.viqeo.tv
 0.0.0.0 cdn.viqeo.tv
@@ -1455,6 +1477,7 @@
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
 0.0.0.0 guce.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1464,6 +1487,7 @@
 0.0.0.0 signal-service.pbs.yahoo.com
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
+0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 mdd.yandex.net
 0.0.0.0 abt.s3.yandex.net
@@ -1503,4 +1527,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 static1.smi2cdn.ru

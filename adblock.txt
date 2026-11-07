@@ -41,6 +41,8 @@
 ||media.adcanvas.com^
 ||su.addthis.com^
 ||adentifi.com^
+||analytics.aderserve.com^
+||serve.aderserve.com^
 ||cdn.adfinity.pro^
 ||a2.adform.net^
 ||adx.adform.net^
@@ -60,6 +62,7 @@
 ||view.adjust.com^
 ||dsp.adkernel.com^
 ||sync.adkernel.com^
+||adkit-advertising.amazon^
 ||adlook.online^
 ||a.adlook.tech^
 ||am.adlooxtracking.com^
@@ -170,6 +173,7 @@
 ||api3.b2c.com^
 ||apix.b2c.com^
 ||tracker.ssp.balance-x.com^
+||bankrate.com^
 ||c.bannerflow.net^
 ||icv.bannernow.com^
 ||stats.bannernow.com^
@@ -213,6 +217,8 @@
 ||cs.ssp.cadent.com^
 ||dcs.ssp.cadent.com^
 ||e1.ssp.cadent.com^
+||imp.ssp.cadent.com^
+||js.ssp.cadent.com^
 ||pcs.ssp.cadent.com^
 ||code.cake019.ru^
 ||casalemedia.com^
@@ -222,6 +228,7 @@
 ||cdn.celtra.com^
 ||celtraidentity.com^
 ||ceros.com^
+||factors.championat.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -394,6 +401,7 @@
 ||geoip-js.com^
 ||usersync.getpublica.com^
 ||metrics.getrockerbox.com^
+||lieu.giftedbelt.com^
 ||a.giraff.io^
 ||code.giraff.io^
 ||data.giraff.io^
@@ -514,6 +522,7 @@
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
 ||tpt.mediaplex.com^
+||sys.mediapunch.ru^
 ||mediatoday.ru^
 ||darcs.meinungsplatz.ch^
 ||rtb.mfadsrvr.com^
@@ -549,6 +558,8 @@
 ||sm.rtb.mts.ru^
 ||static.a.mts.ru^
 ||pmp.mxptint.net^
+||a.myfidevs.io^
+||static.myfinance.com^
 ||events.myweb3id.io^
 ||cdn.nemedia.codes^
 ||ep.nemedia.codes^
@@ -832,6 +843,7 @@
 ||bidder.smartytouch.co^
 ||smi2.net^
 ||smi2.ru^
+||static1.smi2cdn.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||sync.go.sonobi.com^
@@ -840,9 +852,6 @@
 ||cdn.speedcurve.com^
 ||use.sportradarserving.com^
 ||api-ssp.spot.im^
-||apresolve.spotify.com^
-||gew1-spclient.spotify.com^
-||spclient.wg.spotify.com^
 ||embed-cdn.spotifycdn.com^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
@@ -863,14 +872,17 @@
 ||widget.svk-native.ru^
 ||syncingbridge.com^
 ||t-static.ru^
+||cdn.taboola-display.com^
 ||api.taboola.com^
 ||cdn.taboola.com^
 ||cds.taboola.com^
+||images.taboola.com^
 ||pips.taboola.com^
 ||pm-widget.taboola.com^
 ||sync.taboola.com^
 ||trc-events.taboola.com^
 ||trc.taboola.com^
+||us-trc-events.taboola.com^
 ||display.bidder.taboola.com^
 ||tagsrvcs.com^
 ||tapad.com^
@@ -968,6 +980,11 @@
 ||a.vidoomy.com^
 ||vigo.tech^
 ||s.viisfxlg.com^
+||vimeo.com^
+||f.vimeocdn.com^
+||i.vimeocdn.com^
+||skyfire.vimeocdn.com^
+||vod-adaptive-ak.vimeocdn.com^
 ||viqeo.tv^
 ||ads.viralize.tv^
 ||cpm.vistarsagency.com^
@@ -1000,12 +1017,14 @@
 ||static.xoalt.com^
 ||geo.yahoo.com^
 ||guce.yahoo.com^
+||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
+||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||mdd.yandex.net^
 ||abt.s3.yandex.net^
