@@ -1,3 +1,4 @@
+0.0.0.0 api-taboola.com
 0.0.0.0 pxl.connexity.net
 0.0.0.0 req.mediapunch.ru
 0.0.0.0 1dmp.io
