@@ -404,7 +404,7 @@ AD_APEX_BLACKLIST = [
     "viqeo.tv", "vk-analytics.ru", "voxexchange.io",
 
     # === W ===
-    "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru",
+    "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru", "woodfrost.info",
 
     # === X ===
     "xoalt.com",
