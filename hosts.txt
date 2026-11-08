@@ -1,7 +1,3 @@
-0.0.0.0 cnb.cnews.ru
-0.0.0.0 api-taboola.com
-0.0.0.0 pxl.connexity.net
-0.0.0.0 req.mediapunch.ru
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -137,6 +133,10 @@
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
 0.0.0.0 sync.adotmob.com
+0.0.0.0 cdn2.adplay.ru
+0.0.0.0 logs.adplay.ru
+0.0.0.0 rtb.adplay.ru
+0.0.0.0 widget.adplay.ru
 0.0.0.0 cntr.adrcntr.com
 0.0.0.0 ads.adretriever.com
 0.0.0.0 events.adretriever.com
@@ -243,7 +243,9 @@
 0.0.0.0 a.amxrtb.com
 0.0.0.0 player.aniview.com
 0.0.0.0 sync.aniview.com
+0.0.0.0 cm.anyrtb.com
 0.0.0.0 sync.apester.com
+0.0.0.0 api-taboola.com
 0.0.0.0 a.c.appier.net
 0.0.0.0 gocm.c.appier.net
 0.0.0.0 daf.xp.apple.com
@@ -273,6 +275,8 @@
 0.0.0.0 api3.b2c.com
 0.0.0.0 apix.b2c.com
 0.0.0.0 tracker.ssp.balance-x.com
+0.0.0.0 static2.banki.ru
+0.0.0.0 static4.banki.ru
 0.0.0.0 bankrate.com
 0.0.0.0 c.bannerflow.net
 0.0.0.0 icv.bannernow.com
@@ -366,7 +370,6 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
-0.0.0.0 factors.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -397,6 +400,7 @@
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
 0.0.0.0 c.clvrads.com
+0.0.0.0 cnb.cnews.ru
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 colossusssp.com
 0.0.0.0 sync.colossusssp.com
@@ -411,6 +415,7 @@
 0.0.0.0 cdn.connectad.io
 0.0.0.0 sync-eu.connectad.io
 0.0.0.0 sync.connectad.io
+0.0.0.0 connexity.net
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
 0.0.0.0 cdn.cookielaw.org
@@ -455,6 +460,7 @@
 0.0.0.0 gcm.ctnsnet.com
 0.0.0.0 i.ctnsnet.com
 0.0.0.0 ipac.ctnsnet.com
+0.0.0.0 bid.ctv.house
 0.0.0.0 cxense.com
 0.0.0.0 cdn.cxense.com
 0.0.0.0 comcluster.cxense.com
@@ -717,6 +723,7 @@
 0.0.0.0 pixel.konnektu.ru
 0.0.0.0 assets.kontext.so
 0.0.0.0 bid.kontext.so
+0.0.0.0 identity.kp.house
 0.0.0.0 cdn.kraeuterhaus.de
 0.0.0.0 cs.krushmedia.com
 0.0.0.0 usermatch.krxd.net
@@ -782,6 +789,7 @@
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 mediametrics.ru
 0.0.0.0 tpt.mediaplex.com
+0.0.0.0 req.mediapunch.ru
 0.0.0.0 sys.mediapunch.ru
 0.0.0.0 mediatoday.ru
 0.0.0.0 darcs.meinungsplatz.ch
@@ -850,6 +858,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1083,6 +1092,7 @@
 0.0.0.0 hal90006.redintelligence.net
 0.0.0.0 hal90008.redintelligence.net
 0.0.0.0 relap.io
+0.0.0.0 rem-ads.tech
 0.0.0.0 tag.researchnow.com
 0.0.0.0 cdn.retailads.net
 0.0.0.0 a.rfihub.com
@@ -1116,11 +1126,13 @@
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-3121.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
+0.0.0.0 river-3-317.rtbcdn.ru
 0.0.0.0 river-3-342.rtbcdn.ru
 0.0.0.0 river-3-345.rtbcdn.ru
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-358.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
+0.0.0.0 river-3-370.rtbcdn.ru
 0.0.0.0 river-3-384.rtbcdn.ru
 0.0.0.0 river-3-385.rtbcdn.ru
 0.0.0.0 river-3-399.rtbcdn.ru
@@ -1256,6 +1268,7 @@
 0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
+0.0.0.0 solfrin.com
 0.0.0.0 sync.go.sonobi.com
 0.0.0.0 sparrow.ru
 0.0.0.0 images.sparrow.ru
@@ -1473,6 +1486,7 @@
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
 0.0.0.0 ads-media.wildberries.ru
+0.0.0.0 gown.woodfrost.info
 0.0.0.0 dead.woodsunset.com
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
@@ -1480,7 +1494,6 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1490,7 +1503,6 @@
 0.0.0.0 signal-service.pbs.yahoo.com
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
-0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mc.yandex.com
 0.0.0.0 mdd.yandex.net
 0.0.0.0 abt.s3.yandex.net

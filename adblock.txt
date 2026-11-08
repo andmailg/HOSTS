@@ -85,6 +85,10 @@
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
 ||sync.adotmob.com^
+||cdn2.adplay.ru^
+||logs.adplay.ru^
+||rtb.adplay.ru^
+||widget.adplay.ru^
 ||cntr.adrcntr.com^
 ||ads.adretriever.com^
 ||events.adretriever.com^
@@ -148,7 +152,9 @@
 ||a.amxrtb.com^
 ||player.aniview.com^
 ||sync.aniview.com^
+||cm.anyrtb.com^
 ||sync.apester.com^
+||api-taboola.com^
 ||a.c.appier.net^
 ||gocm.c.appier.net^
 ||daf.xp.apple.com^
@@ -173,6 +179,8 @@
 ||api3.b2c.com^
 ||apix.b2c.com^
 ||tracker.ssp.balance-x.com^
+||static2.banki.ru^
+||static4.banki.ru^
 ||bankrate.com^
 ||c.bannerflow.net^
 ||icv.bannernow.com^
@@ -228,7 +236,6 @@
 ||cdn.celtra.com^
 ||celtraidentity.com^
 ||ceros.com^
-||factors.championat.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -258,6 +265,7 @@
 ||protected-by.clarium.io^
 ||i.clean.gg^
 ||c.clvrads.com^
+||cnb.cnews.ru^
 ||beacon.lynx.cognitivlabs.com^
 ||colossusssp.com^
 ||adx.com.ru^
@@ -270,6 +278,7 @@
 ||cdn.connectad.io^
 ||sync-eu.connectad.io^
 ||sync.connectad.io^
+||connexity.net^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -296,6 +305,7 @@
 ||gcm.ctnsnet.com^
 ||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
+||bid.ctv.house^
 ||cxense.com^
 ||stream.datago.ru^
 ||check.ddos-guard.net^
@@ -476,6 +486,7 @@
 ||pixel.konnektu.ru^
 ||assets.kontext.so^
 ||bid.kontext.so^
+||identity.kp.house^
 ||cdn.kraeuterhaus.de^
 ||cs.krushmedia.com^
 ||usermatch.krxd.net^
@@ -522,6 +533,7 @@
 ||go.mediagotechnology.com^
 ||mediametrics.ru^
 ||tpt.mediaplex.com^
+||req.mediapunch.ru^
 ||sys.mediapunch.ru^
 ||mediatoday.ru^
 ||darcs.meinungsplatz.ch^
@@ -571,6 +583,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -741,6 +754,7 @@
 ||hal90006.redintelligence.net^
 ||hal90008.redintelligence.net^
 ||relap.io^
+||rem-ads.tech^
 ||tag.researchnow.com^
 ||cdn.retailads.net^
 ||a.rfihub.com^
@@ -846,6 +860,7 @@
 ||static1.smi2cdn.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
+||solfrin.com^
 ||sync.go.sonobi.com^
 ||sparrow.ru^
 ||sync.sparteo.com^
@@ -1009,6 +1024,7 @@
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
+||gown.woodfrost.info^
 ||dead.woodsunset.com^
 ||ssp.wp.pl^
 ||dc.xoalt.com^
@@ -1016,15 +1032,12 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||geo.yahoo.com^
-||guce.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
-||video-api.yql.yahoo.com^
 ||mc.yandex.com^
 ||mdd.yandex.net^
 ||abt.s3.yandex.net^
