@@ -356,7 +356,7 @@ AD_APEX_BLACKLIST = [
     # === O ===
     "oath.com", "odsp.net", "ohmy.bid", "olanola.com", "omnitagjs.com",
     "omtrdc.net", "onelink.me", "onetag-sys.com",
-    "openfpcdn.io", "openx.net", "openssp.ru", "openwebmp.com",
+    "openfpcdn.io", "openx.net", "openssp.ru", "openwebmedia.org",  "openwebmp.com",
     "opti-digital.com", "optidigital.com", "optimizely.com",
     "orbitatech.io", "otm-r.com", "outbrain.com", "outbrainimg.com",
 
