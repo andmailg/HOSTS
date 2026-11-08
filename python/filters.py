@@ -426,8 +426,11 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === B ===
     r"^(?:bat|c)\.bing.com$",
 
+    # === C ===
+    r"^cnb\.cnews\.ru$",
+
     # === D ===
-    r"^ssp.disqus.com$",
+    r"^ssp\.disqus\.com$",
 
     # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
