@@ -257,7 +257,7 @@ PROTECTED_FAMILIES = [
     "tinkoff.ru", "tourdom.ru", "tvc.ru", "twitter.com",
 
     # === U ===
-    "userapi.com", "useinsider.com",
+    "userapi.com",
 
     # === V ===
     "vdmsti.ru", "vedomosti.ru",
@@ -298,7 +298,7 @@ AD_APEX_BLACKLIST = [
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
-    "bidswitch.net", "bidvol.com", "blismedia.com", "brandmetrics.com",
+    "bidswitch.net", "bidvol.com", "blismedia.com", "branchorchid.mobi", "brandmetrics.com",
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
     "bringads.ru", "btrll.com",
 
@@ -395,7 +395,7 @@ AD_APEX_BLACKLIST = [
     "trustarc.com", "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
-    "uncn.jp", "undertone.com", "upravel.com", "ussp.io",
+    "uncn.jp", "undertone.com", "upravel.com", "useinsider.com", "ussp.io",
     "utraff.com", "utraff.info", "uuidksinc.net",
 
     # === V ===
