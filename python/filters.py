@@ -377,7 +377,7 @@ AD_APEX_BLACKLIST = [
     "rutracker.cc", "r-99.com", "rtbplatforma.ru",
 
     # === S ===
-    "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
+    "sape.ru", "sascdn.com", "scorecardresearch.com", "securedvisit.com", "seedtag.com",
     "semasio.net", "servenobid.com", "setka.news", "sharethrough.com",
     "silvermob.com", "simpli.fi", "sitescout.com", "skimresources.com",
     "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smartytech.io",
