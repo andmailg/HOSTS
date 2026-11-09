@@ -132,6 +132,7 @@
 ||cm-mx.advolve.io^
 ||adx.bid^
 ||afrdtech.com^
+||cs.afront.io^
 ||cs.agency2.ru^
 ||aa.agkn.com^
 ||d.agkn.com^
@@ -213,6 +214,7 @@
 ||gym.bonsaidahlia.com^
 ||eads.brame-gamification.com^
 ||brame-tracking.com^
+||seal.branchorchid.mobi^
 ||collector.brandmetrics.com^
 ||pbsj.bricks-co.com^
 ||a.bringads.ru^
@@ -546,6 +548,7 @@
 ||pbs-cs.minutemedia-prebid.com^
 ||ml314.com^
 ||mn-tz.com^
+||z.moatads.com^
 ||mfx.mobilefuse.com^
 ||mobkoi.com^
 ||moe.video^
@@ -583,7 +586,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -621,12 +623,13 @@
 ||openfpcdn.io^
 ||openssp.ru^
 ||realtime.openweb.com^
-||cs.openwebmedia.org^
+||openwebmedia.org^
 ||cs.openwebmp.com^
 ||eu-west-1-cs-rtb.openwebmp.com^
 ||pbs-cs.openwebmp.com^
 ||us-east-1-cs-rtb.openwebmp.com^
 ||openx.net^
+||oa.openxcdn.net^
 ||t.adx.opera.com^
 ||t.oa.opera.com^
 ||opti-digital.com^
@@ -701,6 +704,7 @@
 ||match.qtarget.tech^
 ||rules.quantcount.com^
 ||cms.quantserve.com^
+||exch.quantserve.com^
 ||secure.quantserve.com^
 ||quotiq.ru^
 ||cdn-irec.r-99.com^
@@ -831,6 +835,7 @@
 ||ds.serving-sys.ru^
 ||setka.news^
 ||match.sharethrough.com^
+||us.shb-sync.com^
 ||us4.shb-sync.com^
 ||shopnetic.com^
 ||ck.silvermob.com^
@@ -858,6 +863,7 @@
 ||smi2.net^
 ||smi2.ru^
 ||static1.smi2cdn.ru^
+||static5.smi2cdn.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||solfrin.com^
@@ -971,6 +977,8 @@
 ||targeting.unrulymedia.com^
 ||upravel.com^
 ||falcon.useinsider.com^
+||assets.api.useinsider.com^
+||eitri.api.useinsider.com^
 ||euronewsfr.api.useinsider.com^
 ||a.ussp.io^
 ||r.ussp.io^

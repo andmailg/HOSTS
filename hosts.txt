@@ -1,16 +1,3 @@
-0.0.0.0 cs.openwebmedia.org
-0.0.0.0 openwebmedia.org
-0.0.0.0 0.gown.woodfrost.info
-0.0.0.0 1.gown.woodfrost.info
-0.0.0.0 2.gown.woodfrost.info
-0.0.0.0 3.gown.woodfrost.info
-0.0.0.0 4.gown.woodfrost.info
-0.0.0.0 5.gown.woodfrost.info
-0.0.0.0 7.gown.woodfrost.info
-0.0.0.0 8.gown.woodfrost.info
-0.0.0.0 9.gown.woodfrost.info
-0.0.0.0 exch.quantserve.com
-0.0.0.0 gown.woodfrost.info
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -217,6 +204,7 @@
 0.0.0.0 adx.bid
 0.0.0.0 id.adx.bid
 0.0.0.0 afrdtech.com
+0.0.0.0 cs.afront.io
 0.0.0.0 cs.agency2.ru
 0.0.0.0 aa.agkn.com
 0.0.0.0 d.agkn.com
@@ -336,6 +324,7 @@
 0.0.0.0 gym.bonsaidahlia.com
 0.0.0.0 eads.brame-gamification.com
 0.0.0.0 brame-tracking.com
+0.0.0.0 seal.branchorchid.mobi
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 a.bringads.ru
@@ -446,6 +435,7 @@
 0.0.0.0 ads.creative-serving.com
 0.0.0.0 creativecdn.com
 0.0.0.0 ash.creativecdn.com
+0.0.0.0 invstatic101.creativecdn.com
 0.0.0.0 statics.creativecdn.com
 0.0.0.0 us.creativecdn.com
 0.0.0.0 jazz.cricketleaf.com
@@ -820,6 +810,7 @@
 0.0.0.0 in.ml314.com
 0.0.0.0 vi.ml314.com
 0.0.0.0 mn-tz.com
+0.0.0.0 z.moatads.com
 0.0.0.0 mfx.mobilefuse.com
 0.0.0.0 mobkoi.com
 0.0.0.0 pbjs.mobkoi.com
@@ -871,7 +862,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -921,6 +911,7 @@
 0.0.0.0 openssp.ru
 0.0.0.0 asr.openssp.ru
 0.0.0.0 realtime.openweb.com
+0.0.0.0 openwebmedia.org
 0.0.0.0 cs.openwebmedia.org
 0.0.0.0 cs.openwebmp.com
 0.0.0.0 eu-west-1-cs-rtb.openwebmp.com
@@ -928,6 +919,7 @@
 0.0.0.0 us-east-1-cs-rtb.openwebmp.com
 0.0.0.0 openx.net
 0.0.0.0 eu-u.openx.net
+0.0.0.0 google-bidout-d.openx.net
 0.0.0.0 pbs-us-east.openx.net
 0.0.0.0 rtb.openx.net
 0.0.0.0 tmn-d.openx.net
@@ -935,6 +927,7 @@
 0.0.0.0 us-u.openx.net
 0.0.0.0 yahoo-bidout-d.openx.net
 0.0.0.0 ziffdavis-d.openx.net
+0.0.0.0 oa.openxcdn.net
 0.0.0.0 t.adx.opera.com
 0.0.0.0 t.oa.opera.com
 0.0.0.0 opti-digital.com
@@ -1051,6 +1044,7 @@
 0.0.0.0 match.qtarget.tech
 0.0.0.0 rules.quantcount.com
 0.0.0.0 cms.quantserve.com
+0.0.0.0 exch.quantserve.com
 0.0.0.0 secure.quantserve.com
 0.0.0.0 quotiq.ru
 0.0.0.0 cdn-irec.r-99.com
@@ -1138,6 +1132,7 @@
 0.0.0.0 river-3-3119.rtbcdn.ru
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-3121.rtbcdn.ru
+0.0.0.0 river-3-3124.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
 0.0.0.0 river-3-317.rtbcdn.ru
 0.0.0.0 river-3-342.rtbcdn.ru
@@ -1225,6 +1220,7 @@
 0.0.0.0 setka.news
 0.0.0.0 cdn.setka.news
 0.0.0.0 match.sharethrough.com
+0.0.0.0 us.shb-sync.com
 0.0.0.0 us4.shb-sync.com
 0.0.0.0 shopnetic.com
 0.0.0.0 ck.silvermob.com
@@ -1279,6 +1275,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 static1.smi2cdn.ru
+0.0.0.0 static5.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 solfrin.com
@@ -1409,6 +1406,8 @@
 0.0.0.0 upravel.com
 0.0.0.0 sync.upravel.com
 0.0.0.0 falcon.useinsider.com
+0.0.0.0 assets.api.useinsider.com
+0.0.0.0 eitri.api.useinsider.com
 0.0.0.0 euronewsfr.api.useinsider.com
 0.0.0.0 a.ussp.io
 0.0.0.0 r.ussp.io
@@ -1500,6 +1499,15 @@
 0.0.0.0 adv.widdimo.com
 0.0.0.0 ads-media.wildberries.ru
 0.0.0.0 gown.woodfrost.info
+0.0.0.0 0.gown.woodfrost.info
+0.0.0.0 1.gown.woodfrost.info
+0.0.0.0 2.gown.woodfrost.info
+0.0.0.0 3.gown.woodfrost.info
+0.0.0.0 4.gown.woodfrost.info
+0.0.0.0 5.gown.woodfrost.info
+0.0.0.0 7.gown.woodfrost.info
+0.0.0.0 8.gown.woodfrost.info
+0.0.0.0 9.gown.woodfrost.info
 0.0.0.0 dead.woodsunset.com
 0.0.0.0 ssp.wp.pl
 0.0.0.0 dc.xoalt.com
