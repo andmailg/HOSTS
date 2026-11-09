@@ -586,6 +586,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -642,7 +643,9 @@
 ||outbrain.com^
 ||images.outbrainimg.com^
 ||log.outbrainimg.com^
+||mv.outbrainimg.com^
 ||tcheck.outbrainimg.com^
+||widget-pixels.outbrainimg.com^
 ||widgets.outbrainimg.com^
 ||cdn.p-n.io^
 ||k.p-n.io^
@@ -817,6 +820,7 @@
 ||api.searchbooster.net^
 ||cdn2.searchbooster.net^
 ||secretivesponge.com^
+||securedvisit.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
 ||px.segmel.com^
@@ -977,9 +981,19 @@
 ||targeting.unrulymedia.com^
 ||upravel.com^
 ||falcon.useinsider.com^
+||image.useinsider.com^
+||unification.useinsider.com^
+||web-image.useinsider.com^
 ||assets.api.useinsider.com^
 ||eitri.api.useinsider.com^
 ||euronewsfr.api.useinsider.com^
+||font.static.useinsider.com^
+||hit.api.useinsider.com^
+||inference.api.useinsider.com^
+||locationv2.api.useinsider.com^
+||log.api.useinsider.com^
+||segment.api.useinsider.com^
+||ucd-web.api.useinsider.com^
 ||a.ussp.io^
 ||r.ussp.io^
 ||sdk.ussp.io^
@@ -1010,6 +1024,7 @@
 ||vod-adaptive-ak.vimeocdn.com^
 ||viqeo.tv^
 ||ads.viralize.tv^
+||cs.visiblemeasures.com^
 ||cpm.vistarsagency.com^
 ||stats.vk-portal.net^
 ||rtb2-useast.voisetech.com^
@@ -1028,7 +1043,6 @@
 ||weborama.fr^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
-||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
