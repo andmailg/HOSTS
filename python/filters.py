@@ -257,7 +257,7 @@ PROTECTED_FAMILIES = [
     "tinkoff.ru", "tourdom.ru", "tvc.ru", "twitter.com",
 
     # === U ===
-    "userapi.com",
+    "userapi.com", "useinsider.com",
 
     # === V ===
     "vdmsti.ru", "vedomosti.ru",
