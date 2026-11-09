@@ -401,7 +401,7 @@ AD_APEX_BLACKLIST = [
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store", "vidoomy.com",
     "viisfxlg.com", "vigo.tech", "vindicosuite.com", "vistarsagency.com",
-    "viqeo.tv", "vk-analytics.ru", "voxexchange.io",
+    "viqeo.tv", "visiblemeasures.com", "vk-analytics.ru", "voxexchange.io",
 
     # === W ===
     "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru", "woodfrost.info",
