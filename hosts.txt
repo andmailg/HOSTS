@@ -95,6 +95,7 @@
 0.0.0.0 adiam.tech
 0.0.0.0 a.adiam.tech
 0.0.0.0 dsp-cookie.adfarm1.adition.com
+0.0.0.0 dsp.adfarm1.adition.com
 0.0.0.0 view.adjust.com
 0.0.0.0 dsp.adkernel.com
 0.0.0.0 sync.adkernel.com
@@ -287,6 +288,7 @@
 0.0.0.0 cdn.bazr.ru
 0.0.0.0 gnl-live.bbcverticals.com
 0.0.0.0 autocontext.begun.ru
+0.0.0.0 pear.bestangle.pro
 0.0.0.0 bestdahlia.com
 0.0.0.0 ssp.bestssp.com
 0.0.0.0 c.betrad.com
@@ -533,6 +535,7 @@
 0.0.0.0 tps.doubleverify.com
 0.0.0.0 tpsc-ew1.doubleverify.com
 0.0.0.0 tpsc-ue1.doubleverify.com
+0.0.0.0 tpsc-video-eu.doubleverify.com
 0.0.0.0 tpsc-video-ue.doubleverify.com
 0.0.0.0 vast.doubleverify.com
 0.0.0.0 sync.drift-pixel.ai
@@ -1140,6 +1143,7 @@
 0.0.0.0 rtbcdn.ru
 0.0.0.0 cdn-video-1.rtbcdn.ru
 0.0.0.0 pic.rtbcdn.ru
+0.0.0.0 river-3-3102.rtbcdn.ru
 0.0.0.0 river-3-3103.rtbcdn.ru
 0.0.0.0 river-3-311.rtbcdn.ru
 0.0.0.0 river-3-3119.rtbcdn.ru
@@ -1156,6 +1160,7 @@
 0.0.0.0 river-3-370.rtbcdn.ru
 0.0.0.0 river-3-384.rtbcdn.ru
 0.0.0.0 river-3-385.rtbcdn.ru
+0.0.0.0 river-3-387.rtbcdn.ru
 0.0.0.0 river-3-399.rtbcdn.ru
 0.0.0.0 river-4-415.rtbcdn.ru
 0.0.0.0 tracker-b.rtbpixelpluses.com
@@ -1290,6 +1295,9 @@
 0.0.0.0 exad.smi2.ru
 0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 static5.smi2cdn.ru
+0.0.0.0 static6.smi2cdn.ru
+0.0.0.0 static7.smi2cdn.ru
+0.0.0.0 static8.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
 0.0.0.0 solfrin.com
@@ -1520,6 +1528,7 @@
 0.0.0.0 wf-ru.frontend.weborama.fr
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
+0.0.0.0 s3.wi-fi.ru
 0.0.0.0 tms.dmp.wi-fi.ru
 0.0.0.0 adv.widdimo.com
 0.0.0.0 ads-media.wildberries.ru

@@ -59,6 +59,7 @@
 ||adhigh.net^
 ||adiam.tech^
 ||dsp-cookie.adfarm1.adition.com^
+||dsp.adfarm1.adition.com^
 ||view.adjust.com^
 ||dsp.adkernel.com^
 ||sync.adkernel.com^
@@ -190,6 +191,7 @@
 ||bazr.ru^
 ||gnl-live.bbcverticals.com^
 ||autocontext.begun.ru^
+||pear.bestangle.pro^
 ||bestdahlia.com^
 ||ssp.bestssp.com^
 ||c.betrad.com^
@@ -868,6 +870,9 @@
 ||smi2.ru^
 ||static1.smi2cdn.ru^
 ||static5.smi2cdn.ru^
+||static6.smi2cdn.ru^
+||static7.smi2cdn.ru^
+||static8.smi2cdn.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
 ||solfrin.com^
@@ -1043,6 +1048,7 @@
 ||weborama.fr^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
+||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
