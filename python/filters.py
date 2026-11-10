@@ -102,8 +102,8 @@ NEVER_BLOCK_DOMAINS = [
     "boltdns.net", "brightcove.com", "brightcove.net", "brightcovecdn.com",
 
     # === C ===
-    "cdn-vk.com", "cdninstagram.com", "cloudflare.com", "cloudflarestream.com",
-    "cloudflareinsights.com", "cloudfront.net", "createjs.com",
+    "cdn-vk.com", "cdninstagram.com", "cdnvideo.ru", "cloudflare.com",
+    "cloudflarestream.com", "cloudflareinsights.com", "cloudfront.net", "createjs.com",
     
     # === D ===
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com",
