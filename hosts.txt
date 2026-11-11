@@ -189,6 +189,7 @@
 0.0.0.0 dsp-service.adtarget.biz
 0.0.0.0 prebid.adtarget.biz
 0.0.0.0 s.console.adtarget.com.tr
+0.0.0.0 z.cdn.adtarget.market
 0.0.0.0 ads.adtec.ru
 0.0.0.0 cdn.adtec.ru
 0.0.0.0 sync.adtech.ink
@@ -436,6 +437,7 @@
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
 0.0.0.0 cdn.cookielaw.org
+0.0.0.0 oil.coolaspen.tech
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -870,6 +872,7 @@
 0.0.0.0 events.myweb3id.io
 0.0.0.0 cdn.nemedia.codes
 0.0.0.0 ep.nemedia.codes
+0.0.0.0 sync.nemedia.codes
 0.0.0.0 new-programmatic.com
 0.0.0.0 match.new-programmatic.com
 0.0.0.0 events.newsroom.bi
@@ -879,6 +882,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1020,7 +1024,6 @@
 0.0.0.0 live.primis.tech
 0.0.0.0 api.privacy-center.org
 0.0.0.0 sdk.privacy-center.org
-0.0.0.0 cdn.privacy-mgmt.com
 0.0.0.0 ats-wrapper.privacymanager.io
 0.0.0.0 geo.privacymanager.io
 0.0.0.0 prmutv.co
@@ -1459,6 +1462,7 @@
 0.0.0.0 ortb.vdo.ai
 0.0.0.0 st.ads.prod.vdsprts.ru
 0.0.0.0 st.sp.prod.vdsprts.ru
+0.0.0.0 ad-eu-bid.veonadx.com
 0.0.0.0 viadata.store
 0.0.0.0 bn.viadata.store
 0.0.0.0 devpl.viadata.store

@@ -118,6 +118,7 @@
 ||ad.adsrvx-targeting.com^
 ||adtarget.biz^
 ||s.console.adtarget.com.tr^
+||z.cdn.adtarget.market^
 ||ads.adtec.ru^
 ||cdn.adtec.ru^
 ||sync.adtech.ink^
@@ -289,6 +290,7 @@
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
+||oil.coolaspen.tech^
 ||prebid.cootlogix.com^
 ||prebidsrvr.cootlogix.com^
 ||sync.cootlogix.com^
@@ -584,6 +586,7 @@
 ||events.myweb3id.io^
 ||cdn.nemedia.codes^
 ||ep.nemedia.codes^
+||sync.nemedia.codes^
 ||new-programmatic.com^
 ||events.newsroom.bi^
 ||icu.newsroom.bi^
@@ -592,6 +595,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -682,7 +686,6 @@
 ||live.primis.tech^
 ||api.privacy-center.org^
 ||sdk.privacy-center.org^
-||cdn.privacy-mgmt.com^
 ||ats-wrapper.privacymanager.io^
 ||geo.privacymanager.io^
 ||prmutv.co^
@@ -1014,6 +1017,7 @@
 ||vdo.ai^
 ||st.ads.prod.vdsprts.ru^
 ||st.sp.prod.vdsprts.ru^
+||ad-eu-bid.veonadx.com^
 ||viadata.store^
 ||beacon.viafoura.io^
 ||ad.video-mech.ru^
