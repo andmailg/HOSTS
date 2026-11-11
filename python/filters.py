@@ -310,10 +310,11 @@ AD_APEX_BLACKLIST = [
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
-    "clickagy.com", "colossusssp.com", "connatix.com", "contentspread.net",
-    "contextweb.com", "cookielaw.org", "coolaspen.tech", "coolbonsai.com",
-    "cootlogix.com", "cpx.to", "creativecdn.com", "criteo.com",
-    "criteo.net", "crwdcntrl.net", "ctnsnet.com", "cxense.com",
+    "clickagy.com", "colossusssp.com", "connatix.com", "content-loader.com",
+    "contentspread.net", "contextweb.com", "cookielaw.org", "coolaspen.tech",
+    "coolbonsai.com", "cootlogix.com", "cpx.to", "creativecdn.com",
+    "criteo.com", "criteo.net", "crwdcntrl.net", "ctnsnet.com",
+    "cxense.com",
 
     # === D ===
     "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
