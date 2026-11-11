@@ -1615,3 +1615,13 @@
 0.0.0.0 7.oil.coolaspen.tech
 0.0.0.0 8.oil.coolaspen.tech
 0.0.0.0 9.oil.coolaspen.tech
+0.0.0.0 0.bend.mousestone.biz
+0.0.0.0 1.bend.mousestone.biz
+0.0.0.0 2.bend.mousestone.biz
+0.0.0.0 3.bend.mousestone.biz
+0.0.0.0 4.bend.mousestone.biz
+0.0.0.0 5.bend.mousestone.biz
+0.0.0.0 6.bend.mousestone.biz
+0.0.0.0 7.bend.mousestone.biz
+0.0.0.0 8.bend.mousestone.biz
+0.0.0.0 9.bend.mousestone.biz
