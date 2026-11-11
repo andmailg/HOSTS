@@ -1605,3 +1605,13 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 0.oil.coolaspen.tech
+0.0.0.0 1.oil.coolaspen.tech
+0.0.0.0 2.oil.coolaspen.tech
+0.0.0.0 3.oil.coolaspen.tech
+0.0.0.0 4.oil.coolaspen.tech
+0.0.0.0 5.oil.coolaspen.tech
+0.0.0.0 6.oil.coolaspen.tech
+0.0.0.0 7.oil.coolaspen.tech
+0.0.0.0 8.oil.coolaspen.tech
+0.0.0.0 9.oil.coolaspen.tech
