@@ -213,6 +213,8 @@
 0.0.0.0 x01.aidata.io
 0.0.0.0 aj3105.top
 0.0.0.0 cdn77.aj3105.top
+0.0.0.0 logo.ajaxfeed.com
+0.0.0.0 text.ajaxfeed.com
 0.0.0.0 ac.ajur.info
 0.0.0.0 cdn.al-adtech.com
 0.0.0.0 ssp.al-adtech.com
@@ -318,6 +320,7 @@
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 uid.ssp.bidvol.com
 0.0.0.0 c.bing.com
+0.0.0.0 line55w.bk6bba-resources.com
 0.0.0.0 fastviewdata.bk6bba-resources.ru
 0.0.0.0 tr.blismedia.com
 0.0.0.0 cm.bluevoox.com
@@ -837,6 +840,7 @@
 0.0.0.0 ib.mookie1.com
 0.0.0.0 odr.mookie1.com
 0.0.0.0 px.mountain.com
+0.0.0.0 bend.mousestone.biz
 0.0.0.0 code.moviead55.ru
 0.0.0.0 identity.mparticle.com
 0.0.0.0 jssdkcdns.mparticle.com
@@ -875,7 +879,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1158,6 +1161,7 @@
 0.0.0.0 river-3-358.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-3-370.rtbcdn.ru
+0.0.0.0 river-3-371.rtbcdn.ru
 0.0.0.0 river-3-384.rtbcdn.ru
 0.0.0.0 river-3-385.rtbcdn.ru
 0.0.0.0 river-3-387.rtbcdn.ru

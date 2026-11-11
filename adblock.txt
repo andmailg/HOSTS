@@ -140,6 +140,8 @@
 ||fid.agkn.com^
 ||x01.aidata.io^
 ||aj3105.top^
+||logo.ajaxfeed.com^
+||text.ajaxfeed.com^
 ||ac.ajur.info^
 ||cdn.al-adtech.com^
 ||ssp.al-adtech.com^
@@ -208,6 +210,7 @@
 ||match.adsby.bidtheatre.com^
 ||bidvol.com^
 ||c.bing.com^
+||line55w.bk6bba-resources.com^
 ||fastviewdata.bk6bba-resources.ru^
 ||tr.blismedia.com^
 ||cm.bluevoox.com^
@@ -560,6 +563,7 @@
 ||ib.mookie1.com^
 ||odr.mookie1.com^
 ||px.mountain.com^
+||bend.mousestone.biz^
 ||code.moviead55.ru^
 ||identity.mparticle.com^
 ||jssdkcdns.mparticle.com^
@@ -588,7 +592,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
