@@ -20,6 +20,11 @@ jobs:
       with:
         python-version: '3.11' # Рекомендуется зафиксировать стабильную версию вместо '3.x'
         cache: 'pip'          # Включает встроенное кэширование зависимостей для ускорения запуска
+    
+    - name: Fix DNS resolution
+      run: |
+        sudo rm -f /etc/resolv.conf
+        echo -e "nameserver 8.8.8.8\nnameserver 1.1.1.1" | sudo tee /etc/resolv.conf
 
     - name: Install dependencies
       run: |
