@@ -287,6 +287,7 @@
 ||sync-eu.connectad.io^
 ||sync.connectad.io^
 ||connexity.net^
+||content-loader.com^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
 ||cdn.cookielaw.org^
@@ -449,6 +450,7 @@
 ||id5-sync.com^
 ||cs.ifedata.ru^
 ||gurgle.ign.com^
+||s-assets.ign.com^
 ||kraken.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
@@ -525,9 +527,13 @@
 ||privacy-cs.mail.ru^
 ||rs.mail.ru^
 ||top-fwz1.mail.ru^
+||match.marketiq.com^
 ||rt.marphezis.com^
 ||pixel.mathtag.com^
 ||sync.mathtag.com^
+||api.mave.digital^
+||monitor.mave.digital^
+||player.mave.digital^
 ||trck.maxblue.de^
 ||measureadv.com^
 ||media.net^
@@ -595,7 +601,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -772,6 +777,7 @@
 ||rem-ads.tech^
 ||tag.researchnow.com^
 ||cdn.retailads.net^
+||live.rezync.com^
 ||a.rfihub.com^
 ||p.rfihub.com^
 ||a.ria.ru^
@@ -799,6 +805,7 @@
 ||sync.rtbplatform.ru^
 ||s3.rtbplatforma.ru^
 ||s3s.rtbplatforma.ru^
+||t.rtbscale.com^
 ||t.rtbwave.com^
 ||trace.us.rtbwise.com^
 ||rubiconproject.com^
@@ -1055,7 +1062,6 @@
 ||weborama.fr^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
-||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
