@@ -303,7 +303,7 @@ AD_APEX_BLACKLIST = [
     "atwola.com", "axis-marketplace.com",
 
     # === B ===
-    "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
+    "bamboolake.me", "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "blismedia.com", "branchorchid.mobi",
     "brandmetrics.com", "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com",
     "buzzoola.com", "bringads.ru", "btrll.com",
