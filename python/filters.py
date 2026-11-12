@@ -113,7 +113,7 @@ NEVER_BLOCK_DOMAINS = [
     "dzeninfra.ru",
 
     # === E ===
-    "eaglecdn.com", "euronews.com", "example.com",
+    "e-planning.net", "eaglecdn.com", "euronews.com", "example.com",
 
     # === F ===
     "flourish.studio",
@@ -138,8 +138,8 @@ NEVER_BLOCK_DOMAINS = [
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru",
-    "mtdata.ru", "mtml.ru", "mzstatic.com",
+    "mave.digital", "media-amazon.com", "mos.ru", "mycdn.me",
+    "mt.ru", "mtdata.ru", "mtml.ru", "mzstatic.com",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
@@ -405,8 +405,9 @@ AD_APEX_BLACKLIST = [
     "trustarc.com", "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
-    "uncn.jp", "undertone.com", "upravel.com", "useinsider.com",
-    "ussp.io", "utraff.com", "utraff.info", "uuidksinc.net",
+    "uncn.jp", "undertone.com", "upravel.com", "usbrowserspeed.com",
+    "useinsider.com", "ussp.io", "utraff.com", "utraff.info",
+    "uuidksinc.net",
 
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
