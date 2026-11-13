@@ -1675,3 +1675,4 @@
 0.0.0.0 bog.lovingflag.com
 0.0.0.0 catch6.crashguard.me
 0.0.0.0 cdn.binsiad.com
+0.0.0.0 l.euronews.com

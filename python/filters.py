@@ -113,7 +113,7 @@ NEVER_BLOCK_DOMAINS = [
     "dzeninfra.ru",
 
     # === E ===
-    "e-planning.net", "eaglecdn.com", "euronews.com", "example.com",
+    "e-planning.net", "eaglecdn.com", "example.com",
 
     # === F ===
     "flourish.studio",
@@ -211,7 +211,7 @@ PROTECTED_FAMILIES = [
     "directupload.eu", "disqus.com", "docuchat.io", "dzen.ru",
 
     # === E ===
-    "e1.ru", "eda.ru",
+    "e1.ru", "eda.ru", "euronews.com",
 
     # === F ===
     "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
@@ -443,6 +443,9 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === D ===
     r"^ssp\.disqus\.com$",
+
+    # === E ===
+    r"^l\.euronews\.com$",
 
     # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
