@@ -48,14 +48,16 @@ AD_TRACKER_PATTERNS = [
     r"\/banners\/",
 ]
 
+# 
 SYSTEM_ASSETS_PATTERNS = [
     r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
-    r"\.hsmedia\.ru", r"\.viqeo\.tv", r"\.bbci\.co\.uk", r"\.bbc\.co\.uk", r"\.thetruestory\.news", r"cdn.*iportal\.ru",
-    r"chat\.mirtesen\.ru",
+    r"\.hsmedia\.ru", r"\.viqeo\.tv",
+    r"\.bbci\.co\.uk", r"\.bbc\.co\.uk",
+    r"\.thetruestory\.news", r"cdn.*iportal\.ru",
     r"vtb\.ru",
     r"\.onesignal\.com", r"\.googleapis\.com", r"userapi\.com", r"x\.com",
-    r"yahoo\.[a-z]+", r"yahoofinance\.com",
-    r"ya\.ru", r"yandex\.[a-z]+", r"yastatic-net\.ru", r"yadro\.ru",
+    r"yahoo\.[a-z]+", r"yahoofinance\.[a-z]+",
+    r"ya\.[a-z]+", r"yandex\.[a-z]+", r"yastatic-net\.[a-z]+", r"yadro\.ru",
     r"chat\.mirtesen\.ru",
 ]
 
@@ -102,15 +104,16 @@ NEVER_BLOCK_DOMAINS = [
     "boltdns.net", "brightcove.com", "brightcove.net", "brightcovecdn.com",
 
     # === C ===
-    "cdn-vk.com", "cdninstagram.com", "cloudflare.com", "cloudflarestream.com",
-    "cloudflareinsights.com", "cloudfront.net", "createjs.com",
+    "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
+    "cloudflare.com", "cloudflarestream.com", "cloudflareinsights.com", "cloudfront.net",
+    "createjs.com",
     
     # === D ===
     "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com",
     "dzeninfra.ru",
 
     # === E ===
-    "eaglecdn.com", "euronews.com", "example.com",
+    "e-planning.net", "eaglecdn.com", "euronews.com", "example.com",
 
     # === F ===
     "flourish.studio",
@@ -128,14 +131,15 @@ NEVER_BLOCK_DOMAINS = [
 
     # === J ===
     "jivo.ru", "jivosite.com", "jquery.com", "jsdelivr.net",
-    "jwplayer.com", "jwplatform.com", "jwpcdn.com", "jwpltx.com", "jwpsrv.com",
+    "jwplayer.com", "jwplatform.com", "jwpcdn.com", "jwpltx.com",
+    "jwpsrv.com",
     
     # === K ===
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "media-amazon.com", "mos.ru", "mycdn.me", "mt.ru",
-    "mtdata.ru", "mtml.ru", "mzstatic.com",
+    "mave.digital", "media-amazon.com", "mos.ru", "mycdn.me",
+    "mt.ru", "mtdata.ru", "mtml.ru", "mzstatic.com",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
@@ -144,16 +148,16 @@ NEVER_BLOCK_DOMAINS = [
     "oauth.tg.dev", "okcdn.ru", "okko.tv", "openstreetmap.org",
     
     # === P ===
-    "pic4net.com", "plyr.io",
+    "pic4net.com", "plyr.io", "privacy-mgmt.com",
     
     # === R ===
     "rackcdn.com", "recaptcha.net", "rferl.org", "rbk.ru",
     "redditmedia.com", "rutubelist.ru",
     
     # === S ===
-    "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru", "sentry-saas.rambler-co.ru",
-    "sentry.io", "shazoo.ru", "sketchfab.com", "squarespace.com",
-    "squarespace-cdn.com", "sqspcdn.com",
+    "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru",
+    "sentry-saas.rambler-co.ru", "sentry.io", "shazoo.ru", "sketchfab.com",
+    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
     "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -269,9 +273,9 @@ PROTECTED_FAMILIES = [
     "x.com",
 
     # === Y ===
-    "yahoo.com", "yahoo.net", "yahoofinance.com",
-    "ya.ru", "yandex.net", "yandex.ru", "yastatic-net.ru",
-    "yap.ru", "yaplakal.com",
+    "yahoo.com", "yahoo.net", "yahoofinance.com", "ya.ru",
+    "yandex.net", "yandex.ru", "yastatic-net.ru", "yap.ru",
+    "yaplakal.com",
 ]
 
 # =============================================================================
@@ -280,21 +284,23 @@ PROTECTED_FAMILIES = [
 # =============================================================================
 AD_APEX_BLACKLIST = [
     # === Цифры / Прочее ===
-    "1dmp.io", "2mdn.net", "24smi.net", "24smi.info", "33across.com",
-    "3lift.com", "4dex.io", "360yield.com",
+    "1dmp.io", "2mdn.net", "24smi.net", "24smi.info",
+    "33across.com", "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
-    "adsboosters.xyz", "acast.com", "advideo.ru", "a-mo.net", "acuityplatform.com", "acint.net",
-    "addthis.com", "ad-delivery.net", "adentifi.com", "adform.net",
-    "adhaven.com", "adhigh.net", "adiam.tech", "adition.com", "adkernel.com",
-    "adlook.online", "adlook.tech", "admanmedia.com", "admaster.cc",
-    "admatic.com.tr", "admatic.de", "admixer.net", "adnxs.com",
-    "adseedtech.com", "adsafeprotected.com", "adspector.io", "adsource.pro",
-    "adsp.io", "adsrvr.org", "adtarget.biz", "advcake.ru", "adverticum.com",
-    "adfox.ru", "adx.com.ru", "agkn.com", "aidata.io", "alcmpn.com",
-    "alfasense.com", "amazon-adsystem.com", "amx1.net", "aniview.com",
-    "apester.com", "appier.net", "appsflyersdk.com", "apptracer.ru",
-    "applovin.com", "api-taboola.com", "arcspire.io", "atwola.com", "axis-marketplace.com",
+    "adsboosters.xyz", "acast.com", "advideo.ru", "a-mo.net",
+    "acuityplatform.com", "acint.net", "addthis.com", "ad-delivery.net",
+    "adentifi.com", "adform.net", "adhaven.com", "adhigh.net",
+    "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
+    "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.com.tr",
+    "admatic.de", "admixer.net", "adnxs.com", "adseedtech.com",
+    "adsafeprotected.com", "adspector.io", "adsource.pro", "adsp.io",
+    "adsrvr.org", "adtarget.biz", "advcake.ru", "adverticum.com",
+    "adfox.ru", "adx.com.ru", "agkn.com", "aidata.io",
+    "alcmpn.com", "alfasense.com", "amazon-adsystem.com", "amx1.net",
+    "aniview.com", "apester.com", "appier.net", "appsflyersdk.com",
+    "apptracer.ru", "applovin.com", "api-taboola.com", "arcspire.io",
+    "atwola.com", "axis-marketplace.com",
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
@@ -331,11 +337,13 @@ AD_APEX_BLACKLIST = [
 
     # === I ===
     "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com",
-    "indexww.com", "infolinks.com", "infox.sg", "injectoften.com", "inmobi.com",
-    "insiad.com", "intent.ai", "iqm.com", "iqzone.com",
+    "indexww.com", "infolinks.com", "infox.sg", "injectoften.com",
+    "inmobi.com", "insiad.com", "intent.ai", "iqm.com",
+    "iqzone.com",
 
     # === K ===
-    "kargo.com", "klkmdsync.site", "kombinat.digital", "kontext.so", "krushmedia.com", "krxd.net", "kueezrtb.com",
+    "kargo.com", "klkmdsync.site", "kombinat.digital", "kontext.so",
+    "krushmedia.com", "krxd.net", "kueezrtb.com",
 
     # === L ===
     "lentainform.ru", "liadm.com", "lijit.com", "linkssp.ru",
@@ -344,28 +352,29 @@ AD_APEX_BLACKLIST = [
     # === M ===
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
-    "mediaplex.com", "mediapunch.ru", "mediascope.net", "mediatoday.ru", "merequartz.com",
-    "mgid.com", "mindbox.ru", "ml314.com", "mobilefuse.com",
-    "moatads.com", "mobkoi.com", "moe.video", "mookie1.com", "moviead55.ru",
-    "mpartner.digital", "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
+    "mediaplex.com", "mediapunch.ru", "mediascope.net", "mediatoday.ru",
+    "merequartz.com", "mgid.com", "mindbox.ru", "ml314.com",
+    "mobilefuse.com", "moatads.com", "mobkoi.com", "moe.video",
+    "mookie1.com", "mousestone.biz", "moviead55.ru", "mpartner.digital",
+    "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
-    "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
-    "ninthdecimal.com", "nodals.io",
+    "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com", "ninthdecimal.com",
+    "nodals.io",
 
     # === O ===
-    "oath.com", "odsp.net", "ohmy.bid", "olanola.com", "omnitagjs.com",
-    "omtrdc.net", "onelink.me", "onetag-sys.com",
-    "openfpcdn.io", "openx.net", "openssp.ru", "openwebmp.com",
-    "opti-digital.com", "optidigital.com", "optimizely.com",
+    "oath.com", "odsp.net", "ohmy.bid", "olanola.com",
+    "omnitagjs.com", "omtrdc.net", "onelink.me", "onetag-sys.com",
+    "openfpcdn.io", "openx.net", "openssp.ru", "openwebmedia.org",
+    "openwebmp.com", "opti-digital.com", "optidigital.com", "optimizely.com",
     "orbitatech.io", "otm-r.com", "outbrain.com", "outbrainimg.com",
 
     # === P ===
     "pathtosuccess.global", "perfluence.net", "permutive.app", "permutive.com",
-    "piano.io", "pippio.com", "plusoneads.com", "polarcdn-terrax.com ", "postrelease.com",
-    "presage.io", "prmutv.co", "pro-market.net", "prodmp.ru",
-    "profilemkt.com", "programmatica.com", "programmaticx.ai", "pubmatic.com",
-    "punchmedia.ru", "push4site.com",
+    "piano.io", "pippio.com", "plusoneads.com", "polarcdn-terrax.com ",
+    "postrelease.com", "presage.io", "prmutv.co", "pro-market.net",
+    "prodmp.ru", "profilemkt.com", "programmatica.com", "programmaticx.ai",
+    "pubmatic.com", "punchmedia.ru", "push4site.com",
 
     # === Q ===
     "q-bid.ru", "qtarget.tech", "quantserve.com", "quotiq.ru",
@@ -377,15 +386,15 @@ AD_APEX_BLACKLIST = [
     "rutracker.cc", "r-99.com", "rtbplatforma.ru",
 
     # === S ===
-    "sape.ru", "sascdn.com", "scorecardresearch.com", "seedtag.com",
-    "semasio.net", "servenobid.com", "setka.news", "sharethrough.com",
-    "silvermob.com", "simpli.fi", "sitescout.com", "skimresources.com",
-    "skcrtxr.com", "smartadserver.com", "smartcallback.ru", "smartytech.io",
-    "smi2.ru", "smi2cdn.ru", "smi2.net", "smilewanted.com", "sonobi.com",
-    "sparrow.ru", "sportradarserving.com", "spot.im", "spotxchange.com",
-    "springserve.com", "srvsynd.com", "stbid.ru", "stickyadstv.com",
-    "sundaysky.com", "supercdn.ru", "suprion.ru", "svk-native.ru",
-    "syncingbridge.com",
+    "sape.ru", "sascdn.com", "scorecardresearch.com", "securedvisit.com",
+    "seedtag.com", "semasio.net", "servenobid.com", "setka.news",
+    "sharethrough.com", "silvermob.com", "simpli.fi", "sitescout.com",
+    "skimresources.com", "skcrtxr.com", "smartadserver.com", "smartcallback.ru",
+    "smartytech.io", "smi2.ru", "smi2cdn.ru", "smi2.net",
+    "smilewanted.com", "sonobi.com", "sparrow.ru", "sportradarserving.com",
+    "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com",
+    "stbid.ru", "stickyadstv.com", "sundaysky.com", "supercdn.ru",
+    "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
     "taboola.com", "tapad.com", "targetads.io", "targetrtb.com",
@@ -395,16 +404,18 @@ AD_APEX_BLACKLIST = [
     "trustarc.com", "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
-    "uncn.jp", "undertone.com", "upravel.com", "ussp.io",
-    "utraff.com", "utraff.info", "uuidksinc.net",
+    "uncn.jp", "undertone.com", "upravel.com", "usbrowserspeed.com",
+    "useinsider.com", "ussp.io", "utraff.com", "utraff.info",
+    "uuidksinc.net",
 
     # === V ===
-    "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store", "vidoomy.com",
-    "viisfxlg.com", "vigo.tech", "vindicosuite.com", "vistarsagency.com",
-    "viqeo.tv", "vk-analytics.ru", "voxexchange.io",
+    "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
+    "vidoomy.com", "viisfxlg.com", "vigo.tech", "vindicosuite.com",
+    "vistarsagency.com", "viqeo.tv", "visiblemeasures.com", "vk-analytics.ru",
+    "voxexchange.io",
 
     # === W ===
-    "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru",
+    "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru", "woodfrost.info",
 
     # === X ===
     "xoalt.com",
@@ -413,7 +424,8 @@ AD_APEX_BLACKLIST = [
     "yandexadexchange.net", "yellowblue.io", "yieldmo.com", "ymmobi.com",
 
     # === Z ===
-    "zdbb.net", "zemanta.com", "zeotap.com", "zeus.ad", "zucks.net",
+    "zdbb.net", "zemanta.com", "zeotap.com", "zeus.ad",
+    "zucks.net",
 ]
 
 # Дополнительные точечные правила для хостов внутри «защищённых» семейств
@@ -426,8 +438,11 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === B ===
     r"^(?:bat|c)\.bing.com$",
 
+    # === C ===
+    r"^cnb\.cnews\.ru$",
+
     # === D ===
-    r"^ssp.disqus.com$",
+    r"^ssp\.disqus\.com$",
 
     # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)
