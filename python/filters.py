@@ -298,7 +298,7 @@ AD_APEX_BLACKLIST = [
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
-    "bidswitch.net", "bidvol.com", "blismedia.com", "brandmetrics.com",
+    "bidswitch.net", "bidvol.com", "binsiad.com", "blismedia.com", "brandmetrics.com",
     "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
     "bringads.ru", "btrll.com",
 
@@ -307,7 +307,7 @@ AD_APEX_BLACKLIST = [
     "clickagy.com", "colossusssp.com", "connatix.com", "contentspread.net",
     "contextweb.com", "cookielaw.org", "coolbonsai.com", "cootlogix.com",
     "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
-    "crwdcntrl.net", "ctnsnet.com", "cxense.com",
+    "crashguard.me", "crwdcntrl.net", "ctnsnet.com", "cxense.com",
 
     # === D ===
     "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
@@ -339,7 +339,7 @@ AD_APEX_BLACKLIST = [
 
     # === L ===
     "lentainform.ru", "liadm.com", "lijit.com", "linkssp.ru",
-    "lkqd.net", "loopme.me", "lotus-dsp.ru",
+    "lkqd.net", "lovingflag.com", "loopme.me", "lotus-dsp.ru",
 
     # === M ===
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",

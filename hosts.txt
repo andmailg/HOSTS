@@ -1529,3 +1529,17 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 0.bog.lovingflag.com
+0.0.0.0 1.bog.lovingflag.com
+0.0.0.0 2.bog.lovingflag.com
+0.0.0.0 3.bog.lovingflag.com
+0.0.0.0 4.bog.lovingflag.com
+0.0.0.0 5.bog.lovingflag.com
+0.0.0.0 6.bog.lovingflag.com
+0.0.0.0 7.bog.lovingflag.com
+0.0.0.0 8.bog.lovingflag.com
+0.0.0.0 9.bog.lovingflag.com
+0.0.0.0 api.crashguard.me
+0.0.0.0 bog.lovingflag.com
+0.0.0.0 catch6.crashguard.me
+0.0.0.0 cdn.binsiad.com
