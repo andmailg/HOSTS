@@ -468,8 +468,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     (   # mail.ru
         r"^(?:"
         r"ad|reklama|rs|privacy-cs|"
-        r"media-(?:sensor|stat)|"
-        r"top(?:-[a-z0-9]+)?"
+        r"media-(?:sensor|stat)"
         r")\.mail\.ru$"
     ),
     r"(?:^|\.)a\.mts\.ru$",                              # МТС Реклама: cm.a.mts.ru, api.a.mts.ru, static.a.mts.ru
