@@ -18,6 +18,7 @@
 ||4dex.io^
 ||a-mo.net^
 ||id.a-mx.com^
+||s.a-traffic.net^
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
 ||aaakmnr.com^
 ||t.dsp.abdm.ru^
@@ -184,6 +185,7 @@
 ||api3.b2c.com^
 ||apix.b2c.com^
 ||tracker.ssp.balance-x.com^
+||jump.bamboolake.me^
 ||static2.banki.ru^
 ||static4.banki.ru^
 ||bankrate.com^
@@ -280,6 +282,7 @@
 ||s.company-target.com^
 ||cdn.confiant-integrations.net^
 ||capi.connatix.com^
+||cd.connatix.com^
 ||cds.connatix.com^
 ||cks.connatix.com^
 ||pl.connatix.com^
@@ -362,10 +365,6 @@
 ||maestro-ue1.tps.dv.tech^
 ||sync.dvgroup.com^
 ||dynotech.io^
-||s.e-planning.net^
-||sync.e-planning.net^
-||u-iad04.e-planning.net^
-||ads.us.e-planning.net^
 ||rim.eagerbrass.com^
 ||edigitalsurvey.com^
 ||emrld.cc^
@@ -450,7 +449,6 @@
 ||id5-sync.com^
 ||cs.ifedata.ru^
 ||gurgle.ign.com^
-||s-assets.ign.com^
 ||kraken.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
@@ -531,9 +529,6 @@
 ||rt.marphezis.com^
 ||pixel.mathtag.com^
 ||sync.mathtag.com^
-||api.mave.digital^
-||monitor.mave.digital^
-||player.mave.digital^
 ||trck.maxblue.de^
 ||measureadv.com^
 ||media.net^
@@ -998,6 +993,7 @@
 ||usr.undertone.com^
 ||targeting.unrulymedia.com^
 ||upravel.com^
+||a.usbrowserspeed.com^
 ||falcon.useinsider.com^
 ||image.useinsider.com^
 ||unification.useinsider.com^
@@ -1062,6 +1058,7 @@
 ||weborama.fr^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
+||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
 ||adv.widdimo.com^
 ||ads-media.wildberries.ru^
