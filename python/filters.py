@@ -257,7 +257,7 @@ PROTECTED_FAMILIES = [
     "sbrf.ru", "sports.ru", "spotify.com",
 
     # === T ===
-    "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
+    "tbank-online.com", "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
     "tinkoff.ru", "tourdom.ru", "tvc.ru", "twitter.com",
 
     # === U ===
@@ -498,6 +498,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === T ===
     r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
+    r"^as\.tbank-online\.com$",
 
     # === V ===
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
