@@ -156,8 +156,8 @@ NEVER_BLOCK_DOMAINS = [
     
     # === S ===
     "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru",
-    "sentry-saas.rambler-co.ru", "sentry.io", "shazoo.ru", "sketchfab.com",
-    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
+    "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io", "shazoo.ru",
+    "sketchfab.com", "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
     "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -257,8 +257,9 @@ PROTECTED_FAMILIES = [
     "sbrf.ru", "sports.ru", "spotify.com",
 
     # === T ===
-    "t-j.ru", "tbank-online.com", "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
-    "tinkoff.ru", "tourdom.ru", "tvc.ru", "twitter.com",
+    "t-j.ru", "tbank-online.com", "tchibo.de", "techradar.com",
+    "temu.com", "thetruestory.news", "tiktok.com", "tinkoff.ru",
+    "tourdom.ru", "tvc.ru", "twitter.com",
 
     # === U ===
     "userapi.com",
@@ -497,6 +498,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^(target|exad)\.smi2\.[a-z]+$",
 
     # === T ===
+    r"^tagm\.tchibo\.de$",
     r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
     r"^as\.tbank-online\.com$",
 
