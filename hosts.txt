@@ -1413,7 +1413,6 @@
 0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
 0.0.0.0 as.tbank-online.com
-0.0.0.0 id.tbank-online.com
 0.0.0.0 preidentity.tbank-online.com
 0.0.0.0 ads.tds.bid
 0.0.0.0 openrtb.tds.bid
