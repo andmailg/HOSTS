@@ -334,6 +334,7 @@
 0.0.0.0 ssp.bidvol.com
 0.0.0.0 uid.ssp.bidvol.com
 0.0.0.0 c.bing.com
+0.0.0.0 cdn.binsiad.com
 0.0.0.0 line55w.bk6bba-resources.com
 0.0.0.0 fastviewdata.bk6bba-resources.ru
 0.0.0.0 tr.blismedia.com
@@ -392,6 +393,7 @@
 0.0.0.0 ssum-sec.casalemedia.com
 0.0.0.0 ssum.casalemedia.com
 0.0.0.0 catsnetwork.ru
+0.0.0.0 i.cdnfimgs.com
 0.0.0.0 cdnrtbsape.ru
 0.0.0.0 bucket.cdnwebcloud.com
 0.0.0.0 cdn.celtra.com
@@ -496,6 +498,8 @@
 0.0.0.0 server.cpmstar.com
 0.0.0.0 p.cpx.to
 0.0.0.0 s.cpx.to
+0.0.0.0 api.crashguard.me
+0.0.0.0 catch6.crashguard.me
 0.0.0.0 ads.creative-serving.com
 0.0.0.0 creativecdn.com
 0.0.0.0 ash.creativecdn.com
@@ -618,6 +622,8 @@
 0.0.0.0 lb.eu-1-id5-sync.com
 0.0.0.0 lbs.eu-1-id5-sync.com
 0.0.0.0 cdn.prod.euid.eu
+0.0.0.0 l.euronews.com
+0.0.0.0 stat.tech.euronews.com
 0.0.0.0 cm.everesttech.net
 0.0.0.0 rtd-tm.everesttech.net
 0.0.0.0 sync-tm.everesttech.net
@@ -817,6 +823,17 @@
 0.0.0.0 lotus-dsp.ru
 0.0.0.0 a.lotus-dsp.ru
 0.0.0.0 cs.loudecho.ai
+0.0.0.0 bog.lovingflag.com
+0.0.0.0 0.bog.lovingflag.com
+0.0.0.0 1.bog.lovingflag.com
+0.0.0.0 2.bog.lovingflag.com
+0.0.0.0 3.bog.lovingflag.com
+0.0.0.0 4.bog.lovingflag.com
+0.0.0.0 5.bog.lovingflag.com
+0.0.0.0 6.bog.lovingflag.com
+0.0.0.0 7.bog.lovingflag.com
+0.0.0.0 8.bog.lovingflag.com
+0.0.0.0 9.bog.lovingflag.com
 0.0.0.0 sync.lunamedia.live
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
@@ -863,6 +880,7 @@
 0.0.0.0 api.mindbox.ru
 0.0.0.0 web-static.mindbox.ru
 0.0.0.0 api.b.mindbox.ru
+0.0.0.0 t-de.mindtake.com
 0.0.0.0 t.mindtake.com
 0.0.0.0 cs-rtb.minutemedia-prebid.com
 0.0.0.0 cs.minutemedia-prebid.com
@@ -935,6 +953,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1218,6 +1237,7 @@
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-3-370.rtbcdn.ru
 0.0.0.0 river-3-371.rtbcdn.ru
+0.0.0.0 river-3-375.rtbcdn.ru
 0.0.0.0 river-3-384.rtbcdn.ru
 0.0.0.0 river-3-385.rtbcdn.ru
 0.0.0.0 river-3-387.rtbcdn.ru
@@ -1413,7 +1433,6 @@
 0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
 0.0.0.0 as.tbank-online.com
-0.0.0.0 preidentity.tbank-online.com
 0.0.0.0 ads.tds.bid
 0.0.0.0 openrtb.tds.bid
 0.0.0.0 widgets.teads-xo.com
@@ -1542,6 +1561,7 @@
 0.0.0.0 vigo.tech
 0.0.0.0 api.vigo.tech
 0.0.0.0 cdn.vigo.tech
+0.0.0.0 s.viieqcjw.com
 0.0.0.0 s.viisfxlg.com
 0.0.0.0 vimeo.com
 0.0.0.0 arclight.vimeo.com
@@ -1659,18 +1679,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 0.bog.lovingflag.com
-0.0.0.0 1.bog.lovingflag.com
-0.0.0.0 2.bog.lovingflag.com
-0.0.0.0 3.bog.lovingflag.com
-0.0.0.0 4.bog.lovingflag.com
-0.0.0.0 5.bog.lovingflag.com
-0.0.0.0 6.bog.lovingflag.com
-0.0.0.0 7.bog.lovingflag.com
-0.0.0.0 8.bog.lovingflag.com
-0.0.0.0 9.bog.lovingflag.com
-0.0.0.0 api.crashguard.me
-0.0.0.0 bog.lovingflag.com
-0.0.0.0 catch6.crashguard.me
-0.0.0.0 cdn.binsiad.com
-0.0.0.0 l.euronews.com

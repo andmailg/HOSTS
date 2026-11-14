@@ -213,6 +213,7 @@
 ||match.adsby.bidtheatre.com^
 ||bidvol.com^
 ||c.bing.com^
+||cdn.binsiad.com^
 ||line55w.bk6bba-resources.com^
 ||fastviewdata.bk6bba-resources.ru^
 ||tr.blismedia.com^
@@ -241,6 +242,7 @@
 ||code.cake019.ru^
 ||casalemedia.com^
 ||catsnetwork.ru^
+||i.cdnfimgs.com^
 ||cdnrtbsape.ru^
 ||bucket.cdnwebcloud.com^
 ||cdn.celtra.com^
@@ -306,6 +308,8 @@
 ||server.cpmstar.com^
 ||p.cpx.to^
 ||s.cpx.to^
+||api.crashguard.me^
+||catch6.crashguard.me^
 ||ads.creative-serving.com^
 ||creativecdn.com^
 ||jazz.cricketleaf.com^
@@ -378,6 +382,8 @@
 ||lb.eu-1-id5-sync.com^
 ||lbs.eu-1-id5-sync.com^
 ||cdn.prod.euid.eu^
+||l.euronews.com^
+||stat.tech.euronews.com^
 ||cm.everesttech.net^
 ||rtd-tm.everesttech.net^
 ||sync-tm.everesttech.net^
@@ -517,6 +523,7 @@
 ||csync.loopme.me^
 ||lotus-dsp.ru^
 ||cs.loudecho.ai^
+||bog.lovingflag.com^
 ||sync.lunamedia.live^
 ||luxcdn.com^
 ||ad.mail.ru^
@@ -524,7 +531,6 @@
 ||media-stat.mail.ru^
 ||privacy-cs.mail.ru^
 ||rs.mail.ru^
-||top-fwz1.mail.ru^
 ||match.marketiq.com^
 ||rt.marphezis.com^
 ||pixel.mathtag.com^
@@ -550,6 +556,7 @@
 ||rtb.mfadsrvr.com^
 ||cm.mgid.com^
 ||mindbox.ru^
+||t-de.mindtake.com^
 ||t.mindtake.com^
 ||cs-rtb.minutemedia-prebid.com^
 ||cs.minutemedia-prebid.com^
@@ -596,6 +603,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -929,8 +937,6 @@
 ||eye.targetads.io^
 ||match.targetrtb.com^
 ||as.tbank-online.com^
-||id.tbank-online.com^
-||preidentity.tbank-online.com^
 ||ads.tds.bid^
 ||openrtb.tds.bid^
 ||widgets.teads-xo.com^
@@ -1031,6 +1037,7 @@
 ||sync.videonow.ru^
 ||a.vidoomy.com^
 ||vigo.tech^
+||s.viieqcjw.com^
 ||s.viisfxlg.com^
 ||vimeo.com^
 ||f.vimeocdn.com^
