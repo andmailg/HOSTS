@@ -257,7 +257,7 @@ PROTECTED_FAMILIES = [
     "sbrf.ru", "sports.ru", "spotify.com",
 
     # === T ===
-    "tbank-online.com", "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
+    "t-j.ru", "tbank-online.com", "techradar.com", "temu.com", "thetruestory.news", "tiktok.com",
     "tinkoff.ru", "tourdom.ru", "tvc.ru", "twitter.com",
 
     # === U ===
