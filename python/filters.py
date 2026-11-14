@@ -375,7 +375,7 @@ AD_APEX_BLACKLIST = [
     "piano.io", "pippio.com", "plusoneads.com", "polarcdn-terrax.com ",
     "postrelease.com", "presage.io", "prmutv.co", "pro-market.net",
     "prodmp.ru", "profilemkt.com", "programmatica.com", "programmaticx.ai",
-    "pubmatic.com", "punchmedia.ru", "push4site.com",
+    "pubmatic.com", "punchmedia.ru", "push4site.com", "positivecello.com",
 
     # === Q ===
     "q-bid.ru", "qtarget.tech", "quantserve.com", "quotiq.ru",
