@@ -331,7 +331,7 @@ AD_APEX_BLACKLIST = [
     # === G ===
     "gamoshi.io", "giraff.io", "giraff.media", "gnezdo.ru",
     "gonet-ads.com", "google-analytics.com", "googleadservices.com", "googleoptimize.com",
-    "googlesyndication.com", "googletagmanager.com", "googletagservices.com", "gumgum.com",
+    "googlesyndication.com", "googletagservices.com", "gumgum.com",
 
     # === H ===
     "hbrd.io", "html-load.com", "hybrid.ai",
