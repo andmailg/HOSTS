@@ -202,7 +202,7 @@ PROTECTED_FAMILIES = [
     "apple.com",
 
     # === B ===
-    "beeline.ru",
+    "bazr.ru", "beeline.ru",
 
     # === C ===
     "championat.com", "cnews.ru",
@@ -241,7 +241,7 @@ PROTECTED_FAMILIES = [
     "mts.ru", "mirtesen.ru",
 
     # === N ===
-    "ngs.ru",
+    "ngs.ru", "ntv.ru",
 
     # === O ===
     "odnoklassniki.ru", "ok.ru", "onesignal.com", "onetrust.com",
