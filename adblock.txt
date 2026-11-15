@@ -276,6 +276,7 @@
 ||www.clarity.ms^
 ||protected-by.clarium.io^
 ||i.clean.gg^
+||aorta.clickagy.com^
 ||c.clvrads.com^
 ||cnb.cnews.ru^
 ||beacon.lynx.cognitivlabs.com^
@@ -552,6 +553,7 @@
 ||req.mediapunch.ru^
 ||sys.mediapunch.ru^
 ||mediatoday.ru^
+||exchange.mediavine.com^
 ||darcs.meinungsplatz.ch^
 ||rtb.mfadsrvr.com^
 ||cm.mgid.com^
@@ -686,6 +688,7 @@
 ||polarcdn-pentos.com^
 ||polarcdn-terrax.com^
 ||static.polarcdn.com^
+||vein.positivecello.com^
 ||rainbet.post-view.com^
 ||trck.postbank.de^
 ||jadserve.postrelease.com^

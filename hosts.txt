@@ -1,4 +1,3 @@
-0.0.0.0 vein.positivecello.com
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -434,6 +433,7 @@
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
+0.0.0.0 aorta.clickagy.com
 0.0.0.0 c.clvrads.com
 0.0.0.0 cnb.cnews.ru
 0.0.0.0 beacon.lynx.cognitivlabs.com
@@ -521,6 +521,7 @@
 0.0.0.0 cat.us5.us.criteo.com
 0.0.0.0 rtb.da1.us.criteo.com
 0.0.0.0 rtb.fr3.eu.criteo.com
+0.0.0.0 rtb.us5.us.criteo.com
 0.0.0.0 criteo.net
 0.0.0.0 static.criteo.net
 0.0.0.0 imageproxy.eu.criteo.net
@@ -874,6 +875,7 @@
 0.0.0.0 req.mediapunch.ru
 0.0.0.0 sys.mediapunch.ru
 0.0.0.0 mediatoday.ru
+0.0.0.0 exchange.mediavine.com
 0.0.0.0 darcs.meinungsplatz.ch
 0.0.0.0 rtb.mfadsrvr.com
 0.0.0.0 cm.mgid.com
@@ -1085,6 +1087,8 @@
 0.0.0.0 polarcdn-pentos.com
 0.0.0.0 polarcdn-terrax.com
 0.0.0.0 static.polarcdn.com
+0.0.0.0 vein.positivecello.com
+0.0.0.0 0.vein.positivecello.com
 0.0.0.0 rainbet.post-view.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
@@ -1229,12 +1233,14 @@
 0.0.0.0 river-3-3120.rtbcdn.ru
 0.0.0.0 river-3-3121.rtbcdn.ru
 0.0.0.0 river-3-3124.rtbcdn.ru
+0.0.0.0 river-3-313.rtbcdn.ru
 0.0.0.0 river-3-316.rtbcdn.ru
 0.0.0.0 river-3-317.rtbcdn.ru
 0.0.0.0 river-3-342.rtbcdn.ru
 0.0.0.0 river-3-345.rtbcdn.ru
 0.0.0.0 river-3-349.rtbcdn.ru
 0.0.0.0 river-3-358.rtbcdn.ru
+0.0.0.0 river-3-367.rtbcdn.ru
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-3-370.rtbcdn.ru
 0.0.0.0 river-3-371.rtbcdn.ru
