@@ -237,8 +237,8 @@ PROTECTED_FAMILIES = [
     "lenta.ru", "linkedin.com",
 
     # === M ===
-    "mail.ru", "media-trend.mail.ru", "mk.ru", "mradx.net",
-    "mts.ru", "mirtesen.ru",
+    "mail.ru", "media-trend.mail.ru", "mk.ru", "mkb.ru",
+    "mradx.net", "mts.ru", "mirtesen.ru",
 
     # === N ===
     "ngs.ru", "ntv.ru",
@@ -353,11 +353,11 @@ AD_APEX_BLACKLIST = [
     # === M ===
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
-    "mediaplex.com", "mediapunch.ru", "mediascope.net", "mediatoday.ru",
-    "merequartz.com", "mgid.com", "mindbox.ru", "ml314.com",
-    "mobilefuse.com", "moatads.com", "mobkoi.com", "moe.video",
-    "mookie1.com", "mousestone.biz", "moviead55.ru", "mpartner.digital",
-    "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
+    "mediaintelligence.de", "mediaplex.com", "mediapunch.ru", "mediascope.net",
+    "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
+    "ml314.com", "mobilefuse.com", "moatads.com", "mobkoi.com",
+    "moe.video", "mookie1.com", "mousestone.biz", "moviead55.ru",
+    "mpartner.digital", "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
     "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com", "ninthdecimal.com",
@@ -416,7 +416,8 @@ AD_APEX_BLACKLIST = [
     "voxexchange.io",
 
     # === W ===
-    "weborama.fr", "weborama-tech.ru", "whiteboxdigital.ru", "woodfrost.info",
+    "weborama.fr", "weborama-tech.ru", "weborama.io", "whiteboxdigital.ru",
+    "woodfrost.info",
 
     # === X ===
     "xoalt.com",
@@ -446,7 +447,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^ssp\.disqus\.com$",
 
     # === E ===
-    r"^l\.euronews\.com$",
+    r"^l\.euronews\.com$", r"^stat\.tech\.euronews\.com$",
 
     # === G ===
     r"^fundingchoicesmessages\.google\.com$",          # Google Funding Choices (anti-adblock стена)

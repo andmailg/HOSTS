@@ -1699,3 +1699,6 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 calltouch.weborama.io
+0.0.0.0 data.mediaintelligence.de
+0.0.0.0 stat.tech.euronews.com
