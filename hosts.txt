@@ -1,3 +1,4 @@
+0.0.0.0 b24retailru.1c.ru
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -40,6 +41,7 @@
 0.0.0.0 u-las.4dex.io
 0.0.0.0 u.4dex.io
 0.0.0.0 usync.4dex.io
+0.0.0.0 5vobauua3ojpklx.icu
 0.0.0.0 a-mo.net
 0.0.0.0 1x1.a-mo.net
 0.0.0.0 euw2-sync.a-mo.net
@@ -62,6 +64,7 @@
 0.0.0.0 track.activemetering.com
 0.0.0.0 openx-ums.acuityplatform.com
 0.0.0.0 ums.acuityplatform.com
+0.0.0.0 sync.ad-cdek.ru
 0.0.0.0 ad-delivery.net
 0.0.0.0 at.ad-pixel.ru
 0.0.0.0 data.ad-score.com
@@ -135,6 +138,7 @@
 0.0.0.0 lax1-ib.adnxs.com
 0.0.0.0 secure.adnxs.com
 0.0.0.0 sync.adotmob.com
+0.0.0.0 cdn.adplay.ru
 0.0.0.0 cdn2.adplay.ru
 0.0.0.0 logs.adplay.ru
 0.0.0.0 rtb.adplay.ru
@@ -300,8 +304,7 @@
 0.0.0.0 icv.bannernow.com
 0.0.0.0 stats.bannernow.com
 0.0.0.0 storage.bannernow.com
-0.0.0.0 bazr.ru
-0.0.0.0 cdn.bazr.ru
+0.0.0.0 idcta.api.bbc.com
 0.0.0.0 gnl-live.bbcverticals.com
 0.0.0.0 autocontext.begun.ru
 0.0.0.0 pear.bestangle.pro
@@ -681,8 +684,10 @@
 0.0.0.0 rumcdn.geoedge.be
 0.0.0.0 wrappers.geoedge.be
 0.0.0.0 geoip-js.com
+0.0.0.0 pixel.getads.ru
 0.0.0.0 usersync.getpublica.com
 0.0.0.0 metrics.getrockerbox.com
+0.0.0.0 bls-report.getshop.tv
 0.0.0.0 lieu.giftedbelt.com
 0.0.0.0 a.giraff.io
 0.0.0.0 code.giraff.io
@@ -869,6 +874,8 @@
 0.0.0.0 trace-eu.mediago.io
 0.0.0.0 trace.mediago.io
 0.0.0.0 go.mediagotechnology.com
+0.0.0.0 mediaintelligence.de
+0.0.0.0 sku.mediaintelligence.de
 0.0.0.0 mediametrics.ru
 0.0.0.0 tpt.mediaplex.com
 0.0.0.0 req.mediapunch.ru
@@ -955,7 +962,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1419,6 +1425,10 @@
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
 0.0.0.0 t-static.ru
+0.0.0.0 cdn.t-static.ru
+0.0.0.0 polls-media.t-static.ru
+0.0.0.0 sso-forms-prod.t-static.ru
+0.0.0.0 tj-static2-origin.t-static.ru
 0.0.0.0 cdn.taboola-display.com
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
@@ -1462,6 +1472,8 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
+0.0.0.0 opis-cdn.tinkoffjournal.ru
+0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
@@ -1471,6 +1483,7 @@
 0.0.0.0 tracookiepixel.xyz
 0.0.0.0 traffaret.com
 0.0.0.0 cdn.traffaret.com
+0.0.0.0 fun.trailwind.biz
 0.0.0.0 yahoo2.global.transmit.live
 0.0.0.0 api-gateway.travelata.ru
 0.0.0.0 gateway.travelata.ru
@@ -1614,6 +1627,7 @@
 0.0.0.0 wam.solution.weborama.fr
 0.0.0.0 wcm-ru.frontend.weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
+0.0.0.0 webshell.lol
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru

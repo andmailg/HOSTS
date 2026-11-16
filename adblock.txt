@@ -1,5 +1,6 @@
 ! Title: HOSTS adblock (auto-generated)
 ! Каждое правило блокирует домен и ВСЕ его поддомены
+||b24retailru.1c.ru^
 ||1dmp.io^
 ||a-iad3.1rx.io^
 ||sync.1rx.io^
@@ -16,6 +17,7 @@
 ||img.3lift.com^
 ||tlx.3lift.com^
 ||4dex.io^
+||5vobauua3ojpklx.icu^
 ||a-mo.net^
 ||id.a-mx.com^
 ||s.a-traffic.net^
@@ -30,6 +32,7 @@
 ||track.activemetering.com^
 ||openx-ums.acuityplatform.com^
 ||ums.acuityplatform.com^
+||sync.ad-cdek.ru^
 ||ad-delivery.net^
 ||at.ad-pixel.ru^
 ||data.ad-score.com^
@@ -87,6 +90,7 @@
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
 ||sync.adotmob.com^
+||cdn.adplay.ru^
 ||cdn2.adplay.ru^
 ||logs.adplay.ru^
 ||rtb.adplay.ru^
@@ -193,7 +197,7 @@
 ||icv.bannernow.com^
 ||stats.bannernow.com^
 ||storage.bannernow.com^
-||bazr.ru^
+||idcta.api.bbc.com^
 ||gnl-live.bbcverticals.com^
 ||autocontext.begun.ru^
 ||pear.bestangle.pro^
@@ -425,8 +429,10 @@
 ||rumcdn.geoedge.be^
 ||wrappers.geoedge.be^
 ||geoip-js.com^
+||pixel.getads.ru^
 ||usersync.getpublica.com^
 ||metrics.getrockerbox.com^
+||bls-report.getshop.tv^
 ||lieu.giftedbelt.com^
 ||a.giraff.io^
 ||code.giraff.io^
@@ -441,7 +447,6 @@
 ||www.googleadservices.com^
 ||imasdk.googleapis.com^
 ||googlesyndication.com^
-||www.googletagmanager.com^
 ||www.googletagservices.com^
 ||ads.gpm-ssp.ru^
 ||jscdn.greeter.me^
@@ -548,6 +553,7 @@
 ||trace-eu.mediago.io^
 ||trace.mediago.io^
 ||go.mediagotechnology.com^
+||mediaintelligence.de^
 ||mediametrics.ru^
 ||tpt.mediaplex.com^
 ||req.mediapunch.ru^
@@ -605,7 +611,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -961,12 +966,15 @@
 ||analytics-ipv6.tiktokw.us^
 ||mcs.tiktokw.us^
 ||mssdk.tiktokw.us^
+||opis-cdn.tinkoffjournal.ru^
+||static2.tinkoffjournal.ru^
 ||cdn.tinypass.com^
 ||tns-counter.ru^
 ||st.top100.ru^
 ||www.btd-cmh.tq-tungsten.com^
 ||tracookiepixel.xyz^
 ||traffaret.com^
+||fun.trailwind.biz^
 ||yahoo2.global.transmit.live^
 ||api-gateway.travelata.ru^
 ||gateway.travelata.ru^
@@ -1066,6 +1074,7 @@
 ||api.webgains.io^
 ||weborama-tech.ru^
 ||weborama.fr^
+||webshell.lol^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
