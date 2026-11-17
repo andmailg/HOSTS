@@ -1422,11 +1422,6 @@
 0.0.0.0 x.surfy.space
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
-0.0.0.0 t-static.ru
-0.0.0.0 cdn.t-static.ru
-0.0.0.0 polls-media.t-static.ru
-0.0.0.0 sso-forms-prod.t-static.ru
-0.0.0.0 tj-static2-origin.t-static.ru
 0.0.0.0 cdn.taboola-display.com
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
@@ -1470,8 +1465,6 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
-0.0.0.0 opis-cdn.tinkoffjournal.ru
-0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
