@@ -1319,7 +1319,6 @@
 0.0.0.0 se.semasio.net
 0.0.0.0 su.semasio.net
 0.0.0.0 uipglob.semasio.net
-0.0.0.0 image.sendsay.ru
 0.0.0.0 ads.servebom.com
 0.0.0.0 pixel.servebom.com
 0.0.0.0 ads.servenobid.com
