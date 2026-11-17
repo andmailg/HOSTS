@@ -502,6 +502,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^tagm\.tchibo\.de$",
     r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
     r"^as\.tbank-online\.com$",
+    r"^static2\.tinkoffjournal\.ru$",
 
     # === V ===
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
