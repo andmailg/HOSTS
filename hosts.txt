@@ -1717,3 +1717,7 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 assets.nativetouch.io
+0.0.0.0 connect.blockboardtech.com
+0.0.0.0 go-us8.jumptrk.org
+0.0.0.0 gotrck.b-cdn.net

@@ -39,8 +39,9 @@ AD_TRACKER_PATTERNS = [
     r"\/metrika\/", r"\/hit;", r"tracker\.", r"header-bidding", r"\/ads\/system\/",
     r"sync-loader", r"analytics", r"counter", r"gnezdo\.ru", r"fundingchoices",
     r"\/cm\.", r"context\.js", r"telemetry", r"adriver", r"bs\.serving-sys", r"advert", r"adfox",
-    r"viqeo", r"vigo\.tech", r"embeds\.rambler",
+    r"embeds\.rambler",
     r"mc\.yandex\.[a-z]+/watch", r"/collect\b", r"clickstream",
+    r"gotrck",
 
     # --- Специфичные рекламные пути Росбалта/СМИ2 ---
     r"smi2\.ru\/newdata\/",
@@ -138,8 +139,9 @@ NEVER_BLOCK_DOMAINS = [
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "mave.digital", "media-amazon.com", "mos.ru", "mycdn.me",
-    "mt.ru", "mtdata.ru", "mtml.ru", "mzstatic.com",
+    "mapgenie.io", "mave.digital", "media-amazon.com", "mos.ru",
+    "mycdn.me", "mt.ru", "mtdata.ru", "mtml.ru",
+    "mzstatic.com",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
@@ -160,7 +162,7 @@ NEVER_BLOCK_DOMAINS = [
     "sketchfab.com", "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
-    "t.me", "t2.ru", "tbank.ru", "telegram.org",
+    "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
     "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com",
     "timepad.ru", "travelatacdn.ru", "truste.com", "twimg.com", "twitter.com",
     
@@ -257,7 +259,7 @@ PROTECTED_FAMILIES = [
     "sbrf.ru", "sendsay.ru", "sports.ru", "spotify.com",
 
     # === T ===
-    "t-j.ru", "tinkoffjournal.ru", "t-static.ru", "tbank-online.com", "tchibo.de", "techradar.com",
+    "t-j.ru", "tinkoffjournal.ru", "tbank-online.com", "tchibo.de", "techradar.com",
     "temu.com", "thetruestory.news", "tiktok.com", "tinkoff.ru",
     "tourdom.ru", "tvc.ru", "twitter.com",
 
@@ -305,9 +307,9 @@ AD_APEX_BLACKLIST = [
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
-    "bidswitch.net", "bidvol.com", "binsiad.com", "blismedia.com", "brandmetrics.com",
-    "bricks-co.com", "browser-intake-datadoghq.com", "bumlam.com", "buzzoola.com",
-    "bringads.ru", "btrll.com",
+    "bidswitch.net", "bidvol.com", "binsiad.com", "blismedia.com",
+    "blockboardtech.com", "brandmetrics.com", "bricks-co.com", "browser-intake-datadoghq.com",
+    "bumlam.com", "buzzoola.com", "bringads.ru", "btrll.com",
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
@@ -342,6 +344,9 @@ AD_APEX_BLACKLIST = [
     "inmobi.com", "insiad.com", "intent.ai", "iqm.com",
     "iqzone.com",
 
+    # === J ===
+    "jumptrk.org",
+
     # === K ===
     "kargo.com", "klkmdsync.site", "kombinat.digital", "kontext.so",
     "krushmedia.com", "krxd.net", "kueezrtb.com",
@@ -360,8 +365,8 @@ AD_APEX_BLACKLIST = [
     "mpartner.digital", "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
-    "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com", "ninthdecimal.com",
-    "nodals.io",
+    "nativetouch.io", "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
+    "ninthdecimal.com", "nodals.io",
 
     # === O ===
     "oath.com", "odsp.net", "ohmy.bid", "olanola.com",
@@ -412,7 +417,7 @@ AD_APEX_BLACKLIST = [
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
     "vidoomy.com", "viisfxlg.com", "vigo.tech", "vindicosuite.com",
-    "vistarsagency.com", "viqeo.tv", "visiblemeasures.com", "vk-analytics.ru",
+    "vistarsagency.com", "visiblemeasures.com", "vk-analytics.ru",
     "voxexchange.io",
 
     # === W ===
