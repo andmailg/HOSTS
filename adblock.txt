@@ -39,6 +39,10 @@
 ||js.ad-score.com^
 ||ad-server.eu^
 ||profile.ad-tech.ru^
+||a.ad.gt^
+||ids4.ad.gt^
+||p.ad.gt^
+||pixels.ad.gt^
 ||ad4m.at^
 ||rtb.adbustr.com^
 ||analytics.adcanvas.com^
@@ -83,6 +87,8 @@
 ||admatic.de^
 ||admixer.net^
 ||admon.pro^
+||assets.adnami.io^
+||directive.adnami.io^
 ||functions.adnami.io^
 ||macro.adnami.io^
 ||z.cdn.adnetwork.bet^
@@ -211,7 +217,10 @@
 ||track.bidgx.com^
 ||adapter.bidmatic.io^
 ||sync.bidmatic.io^
+||media.bidr.io^
 ||match.prod.bidr.io^
+||nativetouch.us-east-1.stinger-ad.bidr.io^
+||us-east-1.event.prod.bidr.io^
 ||ssp.bidster.net^
 ||bidswitch.net^
 ||match.adsby.bidtheatre.com^
@@ -229,6 +238,7 @@
 ||brame-tracking.com^
 ||seal.branchorchid.mobi^
 ||collector.brandmetrics.com^
+||lay.breezybamboo.com^
 ||pbsj.bricks-co.com^
 ||a.bringads.ru^
 ||browser-intake-datadoghq.com^
@@ -397,6 +407,7 @@
 ||seal.excellentrobin.com^
 ||load77.exelator.com^
 ||loadm.exelator.com^
+||loadus.exelator.com^
 ||ps.eyeota.net^
 ||chap.fabulousbridge.com^
 ||connect.facebook.net^
@@ -423,6 +434,8 @@
 ||cm-supply-web.gammaplatform.com^
 ||gamoshi.io^
 ||www.gazeta.press^
+||ids.api.gcprivacy.id^
+||s.cdn.gcprivacy.net^
 ||adserver.gear-hub.ru^
 ||gamd.hit.gemius.pl^
 ||ls.hit.gemius.pl^
@@ -451,6 +464,7 @@
 ||ads.gpm-ssp.ru^
 ||jscdn.greeter.me^
 ||gumgum.com^
+||cdn.hadronid.net^
 ||hbrd.io^
 ||luck.helpfulavenue.com^
 ||js.hostingradio.ru^
@@ -474,6 +488,7 @@
 ||indexww.com^
 ||resources.infolinks.com^
 ||router.infolinks.com^
+||rt3008.infolinks.com^
 ||rb.infox.ru^
 ||cis.infox.sg^
 ||rb.infox.sg^
@@ -490,7 +505,10 @@
 ||events.insiad.com^
 ||secure.insightexpressai.com^
 ||intent.ai^
+||agent.intentiq.com^
+||api.intentiq.com^
 ||sync.intentiq.com^
+||ipapi.co^
 ||sync.ipredictive.com^
 ||core.iprom.net^
 ||iqm.com^
@@ -515,6 +533,7 @@
 ||exchange.kueezrtb.com^
 ||sync.kueezrtb.com^
 ||kwizly.com^
+||d-code.liadm.com^
 ||i.liadm.com^
 ||i6.liadm.com^
 ||idx.liadm.com^
@@ -611,6 +630,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -635,6 +655,7 @@
 ||static7.olanola.com^
 ||static8.olanola.com^
 ||trk.olnl.net^
+||resources.omni-sync.io^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||on.aws^
@@ -644,6 +665,7 @@
 ||onetag-sys.com^
 ||pixel.dsp.onetarget.ru^
 ||geolocation.onetrust.com^
+||tracker.open-adsyield.com^
 ||sync.opendsp.ru^
 ||openfpcdn.io^
 ||openssp.ru^
@@ -854,7 +876,6 @@
 ||se.semasio.net^
 ||su.semasio.net^
 ||uipglob.semasio.net^
-||sendsay.ru^
 ||ads.servebom.com^
 ||pixel.servebom.com^
 ||ads.servenobid.com^
@@ -925,7 +946,6 @@
 ||x.surfy.space^
 ||widget.svk-native.ru^
 ||syncingbridge.com^
-||t-static.ru^
 ||cdn.taboola-display.com^
 ||api.taboola.com^
 ||cdn.taboola.com^
@@ -966,7 +986,6 @@
 ||analytics-ipv6.tiktokw.us^
 ||mcs.tiktokw.us^
 ||mssdk.tiktokw.us^
-||opis-cdn.tinkoffjournal.ru^
 ||static2.tinkoffjournal.ru^
 ||cdn.tinypass.com^
 ||tns-counter.ru^
@@ -1034,6 +1053,7 @@
 ||s.uuidksinc.net^
 ||cdn.uxfeedback.ru^
 ||widget-api.uxfeedback.ru^
+||engage.vanilla.tools^
 ||vdo.ai^
 ||st.ads.prod.vdsprts.ru^
 ||st.sp.prod.vdsprts.ru^
@@ -1074,7 +1094,9 @@
 ||api.webgains.io^
 ||weborama-tech.ru^
 ||weborama.fr^
+||calltouch.weborama.io^
 ||webshell.lol^
+||webtransit.live^
 ||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^

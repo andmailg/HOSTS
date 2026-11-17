@@ -1,4 +1,3 @@
-0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 b24retailru.1c.ru
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
@@ -72,6 +71,10 @@
 0.0.0.0 js.ad-score.com
 0.0.0.0 ad-server.eu
 0.0.0.0 profile.ad-tech.ru
+0.0.0.0 a.ad.gt
+0.0.0.0 ids4.ad.gt
+0.0.0.0 p.ad.gt
+0.0.0.0 pixels.ad.gt
 0.0.0.0 ad4m.at
 0.0.0.0 rtb.adbustr.com
 0.0.0.0 analytics.adcanvas.com
@@ -128,6 +131,8 @@
 0.0.0.0 eu-rtbstack-cm.admixer.net
 0.0.0.0 inv-nets.admixer.net
 0.0.0.0 admon.pro
+0.0.0.0 assets.adnami.io
+0.0.0.0 directive.adnami.io
 0.0.0.0 functions.adnami.io
 0.0.0.0 macro.adnami.io
 0.0.0.0 z.cdn.adnetwork.bet
@@ -327,7 +332,10 @@
 0.0.0.0 track.bidgx.com
 0.0.0.0 adapter.bidmatic.io
 0.0.0.0 sync.bidmatic.io
+0.0.0.0 media.bidr.io
 0.0.0.0 match.prod.bidr.io
+0.0.0.0 nativetouch.us-east-1.stinger-ad.bidr.io
+0.0.0.0 us-east-1.event.prod.bidr.io
 0.0.0.0 ssp.bidster.net
 0.0.0.0 bidswitch.net
 0.0.0.0 ghent-gce-sc.bidswitch.net
@@ -360,6 +368,7 @@
 0.0.0.0 8.seal.branchorchid.mobi
 0.0.0.0 9.seal.branchorchid.mobi
 0.0.0.0 collector.brandmetrics.com
+0.0.0.0 lay.breezybamboo.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 a.bringads.ru
 0.0.0.0 browser-intake-datadoghq.com
@@ -638,6 +647,7 @@
 0.0.0.0 seal.excellentrobin.com
 0.0.0.0 load77.exelator.com
 0.0.0.0 loadm.exelator.com
+0.0.0.0 loadus.exelator.com
 0.0.0.0 ps.eyeota.net
 0.0.0.0 chap.fabulousbridge.com
 0.0.0.0 connect.facebook.net
@@ -679,6 +689,8 @@
 0.0.0.0 gamoshi.io
 0.0.0.0 rtb.gamoshi.io
 0.0.0.0 www.gazeta.press
+0.0.0.0 ids.api.gcprivacy.id
+0.0.0.0 s.cdn.gcprivacy.net
 0.0.0.0 adserver.gear-hub.ru
 0.0.0.0 gamd.hit.gemius.pl
 0.0.0.0 ls.hit.gemius.pl
@@ -723,6 +735,7 @@
 0.0.0.0 usersync.gumgum.com
 0.0.0.0 usync.gumgum.com
 0.0.0.0 va-g2.gumgum.com
+0.0.0.0 cdn.hadronid.net
 0.0.0.0 hbrd.io
 0.0.0.0 ssp.hbrd.io
 0.0.0.0 st.hbrd.io
@@ -764,6 +777,7 @@
 0.0.0.0 js-sec.indexww.com
 0.0.0.0 resources.infolinks.com
 0.0.0.0 router.infolinks.com
+0.0.0.0 rt3008.infolinks.com
 0.0.0.0 rb.infox.ru
 0.0.0.0 cis.infox.sg
 0.0.0.0 rb.infox.sg
@@ -782,7 +796,10 @@
 0.0.0.0 secure.insightexpressai.com
 0.0.0.0 intent.ai
 0.0.0.0 rtb-eu-warsaw.intent.ai
+0.0.0.0 agent.intentiq.com
+0.0.0.0 api.intentiq.com
 0.0.0.0 sync.intentiq.com
+0.0.0.0 ipapi.co
 0.0.0.0 sync.ipredictive.com
 0.0.0.0 core.iprom.net
 0.0.0.0 iqm.com
@@ -808,6 +825,7 @@
 0.0.0.0 exchange.kueezrtb.com
 0.0.0.0 sync.kueezrtb.com
 0.0.0.0 kwizly.com
+0.0.0.0 d-code.liadm.com
 0.0.0.0 i.liadm.com
 0.0.0.0 i6.liadm.com
 0.0.0.0 idx.liadm.com
@@ -876,6 +894,7 @@
 0.0.0.0 trace.mediago.io
 0.0.0.0 go.mediagotechnology.com
 0.0.0.0 mediaintelligence.de
+0.0.0.0 data.mediaintelligence.de
 0.0.0.0 sku.mediaintelligence.de
 0.0.0.0 mediametrics.ru
 0.0.0.0 tpt.mediaplex.com
@@ -963,6 +982,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -991,6 +1011,7 @@
 0.0.0.0 static7.olanola.com
 0.0.0.0 static8.olanola.com
 0.0.0.0 trk.olnl.net
+0.0.0.0 resources.omni-sync.io
 0.0.0.0 omnitagjs.com
 0.0.0.0 visitor-iqzone.omnitagjs.com
 0.0.0.0 visitor-ow.omnitagjs.com
@@ -1007,6 +1028,7 @@
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
 0.0.0.0 geolocation.onetrust.com
+0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
 0.0.0.0 openssp.ru
@@ -1466,6 +1488,7 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
+0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
@@ -1542,6 +1565,7 @@
 0.0.0.0 s.uuidksinc.net
 0.0.0.0 cdn.uxfeedback.ru
 0.0.0.0 widget-api.uxfeedback.ru
+0.0.0.0 engage.vanilla.tools
 0.0.0.0 vdo.ai
 0.0.0.0 ortb.vdo.ai
 0.0.0.0 st.ads.prod.vdsprts.ru
@@ -1619,7 +1643,9 @@
 0.0.0.0 wam.solution.weborama.fr
 0.0.0.0 wcm-ru.frontend.weborama.fr
 0.0.0.0 wf-ru.frontend.weborama.fr
+0.0.0.0 calltouch.weborama.io
 0.0.0.0 webshell.lol
+0.0.0.0 webtransit.live
 0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
@@ -1691,6 +1717,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 calltouch.weborama.io
-0.0.0.0 data.mediaintelligence.de
-0.0.0.0 stat.tech.euronews.com
