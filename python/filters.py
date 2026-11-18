@@ -99,19 +99,20 @@ NEVER_BLOCK_DOMAINS = [
 
     # === A ===
     "adobedtm.com", "akamaized.net", "amazonaws.com", "ampproject.org",
+    "aspnetcdn.com", "awswaf.com",
     
     # === B ===
-    "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net",
+    "bbc.com", "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net",
     "boltdns.net", "brightcove.com", "brightcove.net", "brightcovecdn.com",
 
     # === C ===
     "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
     "cloudflare.com", "cloudflarestream.com", "cloudflareinsights.com", "cloudfront.net",
-    "createjs.com",
+    "content-loader.com", "cookielaw.org", "createjs.com",
     
     # === D ===
-    "dailymotion.com", "disquscdn.com", "dmcdn.net", "dropcatch.com",
-    "dzeninfra.ru",
+    "dailymotion.com", "ddos-guard.net", "disquscdn.com", "dmcdn.net",
+    "dropcatch.com", "dzeninfra.ru",
 
     # === E ===
     "e-planning.net", "eaglecdn.com", "example.com",
@@ -159,7 +160,8 @@ NEVER_BLOCK_DOMAINS = [
     # === S ===
     "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru",
     "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io", "shazoo.ru",
-    "sketchfab.com", "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
+    "sketchfab.com", "spotifycdn.com", "squarespace.com", "squarespace-cdn.com",
+    "sqspcdn.com",
 
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -170,10 +172,11 @@ NEVER_BLOCK_DOMAINS = [
     "unpkg.com",
     
     # === V ===
-    "viafoura.co", "viafoura.net", "vk-cdn.net", "vkcloud-storage.ru",
-    "vk-portal.net", "vk.ru", "vk.com", "vk.me",
-    "vk.team", "vkuser.net", "vkuseraudio.net", "vkuserphoto.ru",
-    "vkusernet.ru", "vkvideo.ru", "vkvd.net", "vtb.ru",
+    "viafoura.co", "viafoura.net", "vimeo.com", "vimeocdn.com",
+    "vk-cdn.net", "vkcloud-storage.ru", "vk-portal.net", "vk.ru",
+    "vk.com", "vk.me", "vk.team", "vkuser.net",
+    "vkuseraudio.net", "vkuserphoto.ru", "vkusernet.ru", "vkvideo.ru",
+    "vkvd.net", "vtb.ru",
 
     # === W ===
     "website-files.com", "withgoogle.com",
@@ -252,8 +255,8 @@ PROTECTED_FAMILIES = [
     "pikabu.ru",
 
     # === R ===
-    "rambler.ru", "rarus.ru", "rbc.ru", "retail.ru",
-    "ria.ru", "rosbalt.ru", "rutube.ru",
+    "rambler.ru", "rarus.ru", "rbc.ru", "reddit.com",
+    "retail.ru", "ria.ru", "rosbalt.ru", "rutube.ru",
 
     # === S ===
     "sbrf.ru", "sendsay.ru", "sports.ru", "spotify.com",
@@ -417,7 +420,7 @@ AD_APEX_BLACKLIST = [
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
     "vidoomy.com", "viisfxlg.com", "vigo.tech", "vindicosuite.com",
-    "vistarsagency.com", "visiblemeasures.com", "vk-analytics.ru",
+    "vistarsagency.com", "visiblemeasures.com", "viqeo.tv", "vk-analytics.ru",
     "voxexchange.io",
 
     # === W ===
