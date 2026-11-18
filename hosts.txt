@@ -287,6 +287,7 @@
 0.0.0.0 adsdkprod.azureedge.net
 0.0.0.0 z01.azurefd.net
 0.0.0.0 gogotracker.b-cdn.net
+0.0.0.0 gotrck.b-cdn.net
 0.0.0.0 api.b2c.com
 0.0.0.0 api2.b2c.com
 0.0.0.0 api3.b2c.com
@@ -350,6 +351,7 @@
 0.0.0.0 line55w.bk6bba-resources.com
 0.0.0.0 fastviewdata.bk6bba-resources.ru
 0.0.0.0 tr.blismedia.com
+0.0.0.0 connect.blockboardtech.com
 0.0.0.0 cm.bluevoox.com
 0.0.0.0 phx.bmtrcs.com
 0.0.0.0 backend.bobid.io
@@ -394,6 +396,7 @@
 0.0.0.0 js.ssp.cadent.com
 0.0.0.0 pcs.ssp.cadent.com
 0.0.0.0 code.cake019.ru
+0.0.0.0 hawk.caringdonut.com
 0.0.0.0 casalemedia.com
 0.0.0.0 a1746.casalemedia.com
 0.0.0.0 a2044.casalemedia.com
@@ -417,6 +420,7 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
+0.0.0.0 factors.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -806,6 +810,7 @@
 0.0.0.0 cs.iqzone.com
 0.0.0.0 sync.iqzonertb.live
 0.0.0.0 journeyswitch.work
+0.0.0.0 go-us8.jumptrk.org
 0.0.0.0 cdn.justpremium.com
 0.0.0.0 tracking.justpremium.com
 0.0.0.0 crb.kargo.com
@@ -970,6 +975,7 @@
 0.0.0.0 a.myfidevs.io
 0.0.0.0 static.myfinance.com
 0.0.0.0 events.myweb3id.io
+0.0.0.0 assets.nativetouch.io
 0.0.0.0 cdn.nemedia.codes
 0.0.0.0 ep.nemedia.codes
 0.0.0.0 sync.nemedia.codes
@@ -1445,6 +1451,7 @@
 0.0.0.0 x.surfy.space
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
+0.0.0.0 vp-content-api.t-pulse.ru
 0.0.0.0 cdn.taboola-display.com
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
@@ -1465,6 +1472,7 @@
 0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
 0.0.0.0 as.tbank-online.com
+0.0.0.0 rtb-adevents.tbank-online.com
 0.0.0.0 ads.tds.bid
 0.0.0.0 openrtb.tds.bid
 0.0.0.0 widgets.teads-xo.com
@@ -1488,6 +1496,7 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
+0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
@@ -1716,7 +1725,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 assets.nativetouch.io
-0.0.0.0 connect.blockboardtech.com
-0.0.0.0 go-us8.jumptrk.org
-0.0.0.0 gotrck.b-cdn.net

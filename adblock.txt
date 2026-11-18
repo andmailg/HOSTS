@@ -190,6 +190,7 @@
 ||adsdkprod.azureedge.net^
 ||z01.azurefd.net^
 ||gogotracker.b-cdn.net^
+||gotrck.b-cdn.net^
 ||api.b2c.com^
 ||api2.b2c.com^
 ||api3.b2c.com^
@@ -230,6 +231,7 @@
 ||line55w.bk6bba-resources.com^
 ||fastviewdata.bk6bba-resources.ru^
 ||tr.blismedia.com^
+||connect.blockboardtech.com^
 ||cm.bluevoox.com^
 ||phx.bmtrcs.com^
 ||backend.bobid.io^
@@ -254,6 +256,7 @@
 ||js.ssp.cadent.com^
 ||pcs.ssp.cadent.com^
 ||code.cake019.ru^
+||hawk.caringdonut.com^
 ||casalemedia.com^
 ||catsnetwork.ru^
 ||i.cdnfimgs.com^
@@ -262,6 +265,7 @@
 ||cdn.celtra.com^
 ||celtraidentity.com^
 ||ceros.com^
+||factors.championat.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -515,6 +519,7 @@
 ||cs.iqzone.com^
 ||sync.iqzonertb.live^
 ||journeyswitch.work^
+||go-us8.jumptrk.org^
 ||cdn.justpremium.com^
 ||tracking.justpremium.com^
 ||crb.kargo.com^
@@ -619,6 +624,7 @@
 ||a.myfidevs.io^
 ||static.myfinance.com^
 ||events.myweb3id.io^
+||assets.nativetouch.io^
 ||cdn.nemedia.codes^
 ||ep.nemedia.codes^
 ||sync.nemedia.codes^
@@ -946,6 +952,7 @@
 ||x.surfy.space^
 ||widget.svk-native.ru^
 ||syncingbridge.com^
+||vp-content-api.t-pulse.ru^
 ||cdn.taboola-display.com^
 ||api.taboola.com^
 ||cdn.taboola.com^
@@ -965,6 +972,7 @@
 ||eye.targetads.io^
 ||match.targetrtb.com^
 ||as.tbank-online.com^
+||rtb-adevents.tbank-online.com^
 ||ads.tds.bid^
 ||openrtb.tds.bid^
 ||widgets.teads-xo.com^
