@@ -94,6 +94,9 @@ _IS_HASH_PATTERNS = [
 # =============================================================================
 NEVER_BLOCK_DOMAINS = [
 
+    # === Ad-Shield ===
+    "content-loader.com", "html-load.com", 
+
     # === Цифры / Прочее ===
     "1c.ai",
 
@@ -108,7 +111,7 @@ NEVER_BLOCK_DOMAINS = [
     # === C ===
     "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
     "cloudflare.com", "cloudflarestream.com", "cloudflareinsights.com", "cloudfront.net",
-    "content-loader.com", "cookielaw.org", "createjs.com",
+    "cookielaw.org", "createjs.com",
     
     # === D ===
     "dailymotion.com", "ddos-guard.net", "disquscdn.com", "dmcdn.net",

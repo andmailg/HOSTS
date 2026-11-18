@@ -672,11 +672,6 @@
 0.0.0.0 st.hbrd.io
 0.0.0.0 js.hostingradio.ru
 0.0.0.0 meta.hostingradio.ru
-0.0.0.0 html-load.com
-0.0.0.0 fb.html-load.com
-0.0.0.0 stg.html-load.com
-0.0.0.0 0.stg.html-load.com
-0.0.0.0 fb.stg.html-load.com
 0.0.0.0 hybrid.ai
 0.0.0.0 bobid-ip.hybrid.ai
 0.0.0.0 dm-eu.hybrid.ai
