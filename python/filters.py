@@ -95,10 +95,10 @@ _IS_HASH_PATTERNS = [
 NEVER_BLOCK_DOMAINS = [
 
     # === Ad-Shield ===
-    "content-loader.com", "html-load.com", 
+    "content-loader.com", "html-load.com", "error-report.com",
 
     # === Цифры / Прочее ===
-    "1c.ai",
+    "1c.ai", "1c.ru", 
 
     # === A ===
     "adobedtm.com", "akamaized.net", "amazonaws.com", "ampproject.org",
@@ -151,7 +151,8 @@ NEVER_BLOCK_DOMAINS = [
     "net.ru", "nflximg.net", "nnmstatic.win",
     
     # === O ===
-    "oauth.tg.dev", "okcdn.ru", "okko.tv", "openstreetmap.org",
+    "oauth.tg.dev", "okcdn.ru", "okko.tv", "on.aws",
+    "openstreetmap.org",
     
     # === P ===
     "pic4net.com", "plyr.io", "privacy-mgmt.com",
@@ -162,9 +163,9 @@ NEVER_BLOCK_DOMAINS = [
     
     # === S ===
     "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru",
-    "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io", "shazoo.ru",
-    "sketchfab.com", "spotifycdn.com", "squarespace.com", "squarespace-cdn.com",
-    "sqspcdn.com",
+    "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io", "servicepipe.tech",
+    "shazoo.ru", "sketchfab.com", "spotifycdn.com", "squarespace.com",
+    "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -223,6 +224,7 @@ PROTECTED_FAMILIES = [
 
     # === F ===
     "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
+    "futurecdn.net",
 
     # === G ===
     "gazeta.ru", "gear-hub.ru", "googleapis.com",
@@ -259,7 +261,8 @@ PROTECTED_FAMILIES = [
 
     # === R ===
     "rambler.ru", "rarus.ru", "rbc.ru", "reddit.com",
-    "retail.ru", "ria.ru", "rosbalt.ru", "rutube.ru",
+    "retail.ru", "ria.ru", "rosbalt.ru", "rutracker.cc",
+    "rutube.ru",
 
     # === S ===
     "sbrf.ru", "sendsay.ru", "sports.ru", "spotify.com",
@@ -333,7 +336,7 @@ AD_APEX_BLACKLIST = [
     "eskimi.com", "everesttech.net", "exelator.com", "eyeota.net",
 
     # === F ===
-    "facecast.net", "flashtalking.com", "fpjscdn.net", "futurecdn.net",
+    "facecast.net", "flashtalking.com", "fpjscdn.net",
     "fwmrm.net", "ftd.agency",
 
     # === G ===
@@ -395,7 +398,7 @@ AD_APEX_BLACKLIST = [
     "rakuten.com", "relap.io", "rfihub.com", "rlcdn.com",
     "rmp.rakuten.com", "rqtrk.eu", "rtactivate.com", "rtbcdn.ru",
     "rtbwave.com", "rtbwise.com", "rubiconproject.com", "rutarget.ru",
-    "rutracker.cc", "r-99.com", "rtbplatforma.ru",
+    "r-99.com", "rtbplatforma.ru",
 
     # === S ===
     "sape.ru", "sascdn.com", "scorecardresearch.com", "securedvisit.com",
