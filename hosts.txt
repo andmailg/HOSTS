@@ -194,6 +194,7 @@
 0.0.0.0 openads.adsrvr.org
 0.0.0.0 v.adsrvr.org
 0.0.0.0 vam-bid.adsrvr.org
+0.0.0.0 vat-bid.adsrvr.org
 0.0.0.0 s.update.adsrvr.org
 0.0.0.0 ad.adsrvx-targeting.com
 0.0.0.0 adtarget.biz
@@ -247,12 +248,14 @@
 0.0.0.0 tk.amazon-adsystem.com
 0.0.0.0 ts.amazon-adsystem.com
 0.0.0.0 vfw.amazon-adsystem.com
+0.0.0.0 vfws.amazon-adsystem.com
 0.0.0.0 c.aps.amazon-adsystem.com
 0.0.0.0 client.aps.amazon-adsystem.com
 0.0.0.0 config.aps.amazon-adsystem.com
 0.0.0.0 web-banner.ads.aps.amazon-adsystem.com
 0.0.0.0 web-video.ads.aps.amazon-adsystem.com
 0.0.0.0 aes.us-east.3px.axp.amazon-adsystem.com
+0.0.0.0 unagi-na.amazon.com
 0.0.0.0 prod.us-east-1.cxm-bcn.publisher-services.amazon.dev
 0.0.0.0 tracker.exchange.amitydigital.io
 0.0.0.0 np1-cs.amx1.net
@@ -340,6 +343,7 @@
 0.0.0.0 backend.bobid.io
 0.0.0.0 eads.brame-gamification.com
 0.0.0.0 brame-tracking.com
+0.0.0.0 dmp.brand-display.com
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 a.bringads.ru
@@ -371,6 +375,7 @@
 0.0.0.0 a2044.casalemedia.com
 0.0.0.0 a2587.casalemedia.com
 0.0.0.0 a4123.casalemedia.com
+0.0.0.0 a6038.casalemedia.com
 0.0.0.0 a6288.casalemedia.com
 0.0.0.0 dsum-sec.casalemedia.com
 0.0.0.0 dsum.casalemedia.com
@@ -389,7 +394,6 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
-0.0.0.0 factors.championat.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -419,6 +423,7 @@
 0.0.0.0 www.clarity.ms
 0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
+0.0.0.0 sync.cleverwebdata.com
 0.0.0.0 aorta.clickagy.com
 0.0.0.0 c.clvrads.com
 0.0.0.0 cnb.cnews.ru
@@ -440,6 +445,7 @@
 0.0.0.0 connexity.net
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
+0.0.0.0 cdn.cookielaw.org
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -457,6 +463,7 @@
 0.0.0.0 creativecdn.com
 0.0.0.0 ash.creativecdn.com
 0.0.0.0 invstatic101.creativecdn.com
+0.0.0.0 phx.creativecdn.com
 0.0.0.0 statics.creativecdn.com
 0.0.0.0 us.creativecdn.com
 0.0.0.0 criteo.com
@@ -646,7 +653,9 @@
 0.0.0.0 tpc.googlesyndication.com
 0.0.0.0 www.googletagservices.com
 0.0.0.0 ads.gpm-ssp.ru
+0.0.0.0 hose.gratefulmeadow.info
 0.0.0.0 jscdn.greeter.me
+0.0.0.0 adx01.groovinads.com
 0.0.0.0 gumgum.com
 0.0.0.0 c.gumgum.com
 0.0.0.0 g2.gumgum.com
@@ -661,9 +670,12 @@
 0.0.0.0 st.hbrd.io
 0.0.0.0 js.hostingradio.ru
 0.0.0.0 meta.hostingradio.ru
+0.0.0.0 stg.html-load.com
+0.0.0.0 0.stg.html-load.com
 0.0.0.0 hybrid.ai
 0.0.0.0 bobid-ip.hybrid.ai
 0.0.0.0 dm-eu.hybrid.ai
+0.0.0.0 dm-us.hybrid.ai
 0.0.0.0 dm.hybrid.ai
 0.0.0.0 fp.hybrid.ai
 0.0.0.0 fpf.hybrid.ai
@@ -737,7 +749,10 @@
 0.0.0.0 usermatch.krxd.net
 0.0.0.0 sync.kueez.com
 0.0.0.0 exchange.kueezrtb.com
+0.0.0.0 prebidsrvr.kueezrtb.com
 0.0.0.0 sync.kueezrtb.com
+0.0.0.0 gtrack.kueezssp.com
+0.0.0.0 track.kueezssp.com
 0.0.0.0 kwizly.com
 0.0.0.0 d-code.liadm.com
 0.0.0.0 i.liadm.com
@@ -753,6 +768,7 @@
 0.0.0.0 ce.lijit.com
 0.0.0.0 red-n.stg-adv.lijit.com
 0.0.0.0 ruby-n.stg-adv.lijit.com
+0.0.0.0 rtb.linkedin.com
 0.0.0.0 px.ads.linkedin.com
 0.0.0.0 api.linkitbe.ru
 0.0.0.0 linkssp.ru
@@ -845,6 +861,7 @@
 0.0.0.0 ad1.mpsuadv.ru
 0.0.0.0 ad2.mpsuadv.ru
 0.0.0.0 dmp.mpsuadv.ru
+0.0.0.0 s2.mpsuadv.ru
 0.0.0.0 statika.mpsuadv.ru
 0.0.0.0 v1.mpsuadv.ru
 0.0.0.0 v2.mpsuadv.ru
@@ -918,6 +935,7 @@
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
+0.0.0.0 geolocation.onetrust.com
 0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
@@ -933,6 +951,7 @@
 0.0.0.0 openx.net
 0.0.0.0 eu-u.openx.net
 0.0.0.0 google-bidout-d.openx.net
+0.0.0.0 ox-rtb-us-west1.openx.net
 0.0.0.0 pbs-us-east.openx.net
 0.0.0.0 rtb.openx.net
 0.0.0.0 tmn-d.openx.net
@@ -994,7 +1013,9 @@
 0.0.0.0 cdn.permutive.app
 0.0.0.0 buy-eu.piano.io
 0.0.0.0 c2-eu.piano.io
+0.0.0.0 ct.pinterest.com
 0.0.0.0 pippio.com
+0.0.0.0 pix.pub
 0.0.0.0 dsp-service.pixad.com.tr
 0.0.0.0 prebid.pixad.com.tr
 0.0.0.0 plusoneads.com
@@ -1110,7 +1131,11 @@
 0.0.0.0 relap.io
 0.0.0.0 rem-ads.tech
 0.0.0.0 tag.researchnow.com
+0.0.0.0 sync.resetdigital.co
 0.0.0.0 cdn.retailads.net
+0.0.0.0 ads-yahoo.revjet.com
+0.0.0.0 cdn.revjet.com
+0.0.0.0 pix-yahoo.revjet.com
 0.0.0.0 live.rezync.com
 0.0.0.0 a.rfihub.com
 0.0.0.0 p.rfihub.com
@@ -1155,6 +1180,7 @@
 0.0.0.0 river-3-369.rtbcdn.ru
 0.0.0.0 river-3-370.rtbcdn.ru
 0.0.0.0 river-3-371.rtbcdn.ru
+0.0.0.0 river-3-373.rtbcdn.ru
 0.0.0.0 river-3-375.rtbcdn.ru
 0.0.0.0 river-3-384.rtbcdn.ru
 0.0.0.0 river-3-385.rtbcdn.ru
@@ -1211,6 +1237,7 @@
 0.0.0.0 sb.scorecardresearch.com
 0.0.0.0 cadmus.script.ac
 0.0.0.0 cadmus2.script.ac
+0.0.0.0 sonar-blank.script.ac
 0.0.0.0 sonar-xp.script.ac
 0.0.0.0 api4.searchbooster.io
 0.0.0.0 cdn.searchbooster.io
@@ -1226,6 +1253,7 @@
 0.0.0.0 uipglob.semasio.net
 0.0.0.0 ads.servebom.com
 0.0.0.0 pixel.servebom.com
+0.0.0.0 s.ads.servedbyopenx.org
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
 0.0.0.0 sync.serverbid.com
@@ -1234,6 +1262,8 @@
 0.0.0.0 setka.news
 0.0.0.0 cdn.setka.news
 0.0.0.0 match.sharethrough.com
+0.0.0.0 cdn.rendering.sharethrough.com
+0.0.0.0 eqt-gc.rendering.sharethrough.com
 0.0.0.0 us.shb-sync.com
 0.0.0.0 us4.shb-sync.com
 0.0.0.0 shopnetic.com
@@ -1266,6 +1296,7 @@
 0.0.0.0 ssbsync-us.smartadserver.com
 0.0.0.0 ssbsync.smartadserver.com
 0.0.0.0 sync.smartadserver.com
+0.0.0.0 tracking-api-use1.smartadserver.com
 0.0.0.0 www.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
@@ -1307,6 +1338,7 @@
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
+0.0.0.0 images-na.ssl-images-amazon.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
@@ -1326,6 +1358,7 @@
 0.0.0.0 widget.svk-native.ru
 0.0.0.0 syncingbridge.com
 0.0.0.0 vp-content-api.t-pulse.ru
+0.0.0.0 s2s.t13.io
 0.0.0.0 cdn.taboola-display.com
 0.0.0.0 api.taboola.com
 0.0.0.0 cdn.taboola.com
@@ -1342,6 +1375,7 @@
 0.0.0.0 tapad.com
 0.0.0.0 pixel.tapad.com
 0.0.0.0 ssp.api.tappx.com
+0.0.0.0 taptapnetworks.com
 0.0.0.0 cdn.targetads.io
 0.0.0.0 eye.targetads.io
 0.0.0.0 match.targetrtb.com
@@ -1467,7 +1501,12 @@
 0.0.0.0 rurtb.viadata.store
 0.0.0.0 tg.viadata.store
 0.0.0.0 beacon.viafoura.io
+0.0.0.0 bis2.vidazoo.com
+0.0.0.0 bis3.vidazoo.com
+0.0.0.0 bisrtb.vidazoo.com
+0.0.0.0 static.vidazoo.com
 0.0.0.0 ad.video-mech.ru
+0.0.0.0 b.videoamp.com
 0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru
 0.0.0.0 data.videonow.ru
@@ -1532,6 +1571,7 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1558,9 +1598,17 @@
 0.0.0.0 pbs-cs.yellowblue.io
 0.0.0.0 ad.yieldlab.net
 0.0.0.0 s2s.yieldlove-ad-serving.net
+0.0.0.0 yieldmo.com
 0.0.0.0 ads.yieldmo.com
+0.0.0.0 static.yieldmo.com
+0.0.0.0 sync-adform.ads.yieldmo.com
+0.0.0.0 sync-beeswax.ads.yieldmo.com
+0.0.0.0 sync-di.ads.yieldmo.com
+0.0.0.0 sync-iqzone.ads.yieldmo.com
 0.0.0.0 sync-km.ads.yieldmo.com
+0.0.0.0 sync-openx.ads.yieldmo.com
 0.0.0.0 sync-pm.ads.yieldmo.com
+0.0.0.0 sync-selectmedia.ads.yieldmo.com
 0.0.0.0 tag.yieldoptimizer.com
 0.0.0.0 ymmobi.com
 0.0.0.0 gw-iad-bid.ymmobi.com
