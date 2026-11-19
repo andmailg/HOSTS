@@ -40,7 +40,6 @@
 0.0.0.0 u-las.4dex.io
 0.0.0.0 u.4dex.io
 0.0.0.0 usync.4dex.io
-0.0.0.0 5vobauua3ojpklx.icu
 0.0.0.0 a-mo.net
 0.0.0.0 1x1.a-mo.net
 0.0.0.0 euw2-sync.a-mo.net
@@ -50,7 +49,6 @@
 0.0.0.0 id.a-mx.com
 0.0.0.0 s.a-traffic.net
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
-0.0.0.0 aaakmnr.com
 0.0.0.0 t.dsp.abdm.ru
 0.0.0.0 phoenix.prod.ateam.acast.cloud
 0.0.0.0 cdn.acast.com
@@ -293,7 +291,6 @@
 0.0.0.0 api3.b2c.com
 0.0.0.0 apix.b2c.com
 0.0.0.0 tracker.ssp.balance-x.com
-0.0.0.0 bankrate.com
 0.0.0.0 c.bannerflow.net
 0.0.0.0 icv.bannernow.com
 0.0.0.0 stats.bannernow.com
@@ -419,7 +416,6 @@
 0.0.0.0 t.clarity.ms
 0.0.0.0 u.clarity.ms
 0.0.0.0 www.clarity.ms
-0.0.0.0 protected-by.clarium.io
 0.0.0.0 i.clean.gg
 0.0.0.0 sync.cleverwebdata.com
 0.0.0.0 aorta.clickagy.com
@@ -443,7 +439,6 @@
 0.0.0.0 connexity.net
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
-0.0.0.0 cdn.cookielaw.org
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -601,7 +596,6 @@
 0.0.0.0 z.cdn.ftd.agency
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
-0.0.0.0 futalis.de
 0.0.0.0 prebid-cache.futurehybrid.tech
 0.0.0.0 sommelier.futurehybrid.tech
 0.0.0.0 bordeaux-gateway.futureplc.com
@@ -613,7 +607,6 @@
 0.0.0.0 cm-supply-web.gammaplatform.com
 0.0.0.0 gamoshi.io
 0.0.0.0 rtb.gamoshi.io
-0.0.0.0 www.gazeta.press
 0.0.0.0 ids.api.gcprivacy.id
 0.0.0.0 s.cdn.gcprivacy.net
 0.0.0.0 adserver.gear-hub.ru
@@ -640,7 +633,6 @@
 0.0.0.0 sync.gonet-ads.com
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 www.google-analytics.com
-0.0.0.0 fundingchoicesmessages.google.com
 0.0.0.0 partner.googleadservices.com
 0.0.0.0 www.googleadservices.com
 0.0.0.0 imasdk.googleapis.com
@@ -899,7 +891,6 @@
 0.0.0.0 pym.nprapps.org
 0.0.0.0 dsp.nrich.ai
 0.0.0.0 ssp-statistics.dsp.nt.technology
-0.0.0.0 consent.cmp.oath.com
 0.0.0.0 odsp.net
 0.0.0.0 adv.office-partner.de
 0.0.0.0 ohmy.bid
@@ -928,10 +919,8 @@
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
 0.0.0.0 impressions.onelink.me
-0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
-0.0.0.0 geolocation.onetrust.com
 0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
@@ -1024,14 +1013,11 @@
 0.0.0.0 rainbet.post-view.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
-0.0.0.0 service.pravo.ru
 0.0.0.0 presage.io
 0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
 0.0.0.0 mweb-hb.presage.io
 0.0.0.0 live.primis.tech
-0.0.0.0 api.privacy-center.org
-0.0.0.0 sdk.privacy-center.org
 0.0.0.0 ats-wrapper.privacymanager.io
 0.0.0.0 geo.privacymanager.io
 0.0.0.0 prmutv.co
@@ -1182,7 +1168,6 @@
 0.0.0.0 solta-sync.rutarget.ru
 0.0.0.0 yandex-dmp-sync.rutarget.ru
 0.0.0.0 yandex-sync.rutarget.ru
-0.0.0.0 rutracker.cc
 0.0.0.0 a.rutube.ru
 0.0.0.0 goya.rutube.ru
 0.0.0.0 log.rutube.ru
@@ -1304,7 +1289,6 @@
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
-0.0.0.0 images-na.ssl-images-amazon.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat.media
@@ -1370,7 +1354,6 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
-0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
@@ -1381,8 +1364,6 @@
 0.0.0.0 traffaret.com
 0.0.0.0 cdn.traffaret.com
 0.0.0.0 yahoo2.global.transmit.live
-0.0.0.0 api-gateway.travelata.ru
-0.0.0.0 gateway.travelata.ru
 0.0.0.0 sentry.travelata.ru
 0.0.0.0 ads.travelaudience.com
 0.0.0.0 www.travelpayouts.com
@@ -1394,8 +1375,6 @@
 0.0.0.0 b.trueanthem.com
 0.0.0.0 cdn.trust-id.ru
 0.0.0.0 id.trust-id.ru
-0.0.0.0 choices-or.trustarc.com
-0.0.0.0 choices.trustarc.com
 0.0.0.0 hb.trustedstack.com
 0.0.0.0 lg1.hb.trustedstack.com
 0.0.0.0 tsdtocl.com
@@ -1553,7 +1532,6 @@
 0.0.0.0 an.yandex.ru
 0.0.0.0 mc.yandex.ru
 0.0.0.0 uaas.yandex.ru
-0.0.0.0 aflt.market.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 yellowblue.io
 0.0.0.0 cs-ob.yellowblue.io

@@ -8,6 +8,7 @@ fishki.net
 fontanka.ru
 forbes.ru
 gazeta.ru
+gazeta.press
 ign.com
 infox.ru
 interfax.ru

@@ -106,14 +106,14 @@ NEVER_BLOCK_DOMAINS = [
     "aspnetcdn.com", "awswaf.com",
     
     # === B ===
-    "banki.ru", "bbc.com", "bbc.co.uk", "bbci.co.uk",
-    "backblazeb2.com", "bunny.net", "boltdns.net", "brightcove.com",
-    "brightcove.net", "brightcovecdn.com",
+    "banki.ru", "bankrate.com", "bbc.com", "bbc.co.uk",
+    "bbci.co.uk", "backblazeb2.com", "bunny.net", "boltdns.net",
+    "brightcove.com", "brightcove.net", "brightcovecdn.com",
 
     # === C ===
     "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
-    "cloudflare.com", "cloudflarestream.com", "cloudflareinsights.com", "cloudfront.net",
-    "cookielaw.org", "createjs.com",
+    "clarium.io", "cloudflare.com", "cloudflarestream.com", "cloudflareinsights.com",
+    "cloudfront.net", "cookielaw.org", "createjs.com",
     
     # === D ===
     "dailymotion.com", "ddos-guard.net", "disquscdn.com", "dmcdn.net",
@@ -123,7 +123,7 @@ NEVER_BLOCK_DOMAINS = [
     "e-planning.net", "eaglecdn.com", "example.com",
 
     # === F ===
-    "flourish.studio",
+    "flourish.studio", "futalis.de",
     
     # === G ===
     "google.com", "googlevideo.com", "googleusercontent.com", "gpmdata.ru",
@@ -154,10 +154,10 @@ NEVER_BLOCK_DOMAINS = [
     
     # === O ===
     "oauth.tg.dev", "okcdn.ru", "okko.tv", "on.aws",
-    "openstreetmap.org",
+    "onesignal.com", "onetrust.com", "openstreetmap.org",
     
     # === P ===
-    "pic4net.com", "plyr.io", "privacy-mgmt.com",
+    "pic4net.com", "plyr.io", "privacy-center.org", "privacy-mgmt.com",
     
     # === R ===
     "rackcdn.com", "recaptcha.net", "rferl.org", "rbk.ru",
@@ -167,12 +167,13 @@ NEVER_BLOCK_DOMAINS = [
     "sber.ru", "sberbank.ru", "sberdevices.ru", "scdn.co",
     "cdnjs.smi2.ru", "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io",
     "servicepipe.tech", "shazoo.ru", "sketchfab.com", "spotifycdn.com",
-    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
+    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com", "ssl-images-amazon.com",
 
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
     "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com",
-    "timepad.ru", "travelatacdn.ru", "truste.com", "twimg.com", "twitter.com",
+    "timepad.ru", "travelatacdn.ru", "trustarc.com", "truste.com",
+    "twimg.com", "twitter.com",
     
     # === U ===
     "unpkg.com",
@@ -229,7 +230,7 @@ PROTECTED_FAMILIES = [
     "fontanka.ru", "futurecdn.net",
 
     # === G ===
-    "gazeta.ru", "gear-hub.ru", "googleapis.com",
+    "gazeta.ru", "gazeta.press", "gear-hub.ru", "googleapis.com",
 
     # === J ===
     "justwatch.com",
@@ -256,10 +257,10 @@ PROTECTED_FAMILIES = [
     "ngs.ru", "ntv.ru",
 
     # === O ===
-    "odnoklassniki.ru", "ok.ru", "onesignal.com", "onetrust.com",
+    "oath.com", "odnoklassniki.ru", "ok.ru",
 
     # === P ===
-    "pikabu.ru",
+    "pikabu.ru", "pravo.ru", 
 
     # === R ===
     "rambler.ru", "rarus.ru", "rbc.ru", "reddit.com",
@@ -272,7 +273,7 @@ PROTECTED_FAMILIES = [
     # === T ===
     "t-j.ru", "tinkoffjournal.ru", "tbank-online.com", "tchibo.de", "techradar.com",
     "temu.com", "thetruestory.news", "tiktok.com", "tinkoff.ru",
-    "tourdom.ru", "tvc.ru", "twitter.com",
+    "tourdom.ru", "travelata.ru", "tvc.ru", "twitter.com",
 
     # === U ===
     "userapi.com",
@@ -380,7 +381,7 @@ AD_APEX_BLACKLIST = [
     "ninthdecimal.com", "nodals.io",
 
     # === O ===
-    "oath.com", "odsp.net", "ohmy.bid", "olanola.com",
+    "odsp.net", "ohmy.bid", "olanola.com",
     "omnitagjs.com", "omtrdc.net", "onelink.me", "onetag-sys.com",
     "openfpcdn.io", "openx.net", "openssp.ru", "openwebmedia.org",
     "openwebmp.com", "opti-digital.com", "optidigital.com", "optimizely.com",
@@ -519,6 +520,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^hawk\.techradar\.com$",                         # Телеметрия Future plc
     r"^as\.tbank-online\.com$",
     r"^static2\.tinkoffjournal\.ru$",
+    r"^sentry\.travelata\.ru$",
 
     # === V ===
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
@@ -533,7 +535,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     (
         r"(?:^|\.)(?:"
         r"an|mdd|mc|ads|awaps|bs|context|direct|pagead|uaas"
-        r"|abt\.s3|aflt\.market"
+        r"|abt\.s3"
         r")\.yandex\.[a-z]+$"
     ),
     r"(?:^|\.)log\.strm\.yandex\.[a-z]+$",
