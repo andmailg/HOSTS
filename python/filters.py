@@ -60,6 +60,7 @@ SYSTEM_ASSETS_PATTERNS = [
     r"yahoo\.[a-z]+", r"yahoofinance\.[a-z]+",
     r"ya\.[a-z]+", r"yandex\.[a-z]+", r"yastatic-net\.[a-z]+", r"yadro\.ru",
     r"chat\.mirtesen\.ru",
+    r"privacy-cs\.mail\.ru",
 ]
 
 _COMPILED_STRONG = [re.compile(p, re.IGNORECASE) for p in AD_STRONG_PATTERNS]
@@ -105,8 +106,9 @@ NEVER_BLOCK_DOMAINS = [
     "aspnetcdn.com", "awswaf.com",
     
     # === B ===
-    "bbc.com", "bbc.co.uk", "bbci.co.uk", "backblazeb2.com", "bunny.net",
-    "boltdns.net", "brightcove.com", "brightcove.net", "brightcovecdn.com",
+    "banki.ru", "bbc.com", "bbc.co.uk", "bbci.co.uk",
+    "backblazeb2.com", "bunny.net", "boltdns.net", "brightcove.com",
+    "brightcove.net", "brightcovecdn.com",
 
     # === C ===
     "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
@@ -159,13 +161,13 @@ NEVER_BLOCK_DOMAINS = [
     
     # === R ===
     "rackcdn.com", "recaptcha.net", "rferl.org", "rbk.ru",
-    "redditmedia.com", "rutubelist.ru",
+    "redditmedia.com", "rutubelist.ru", "rtbcdn.ru",
     
     # === S ===
-    "sber.ru", "sberbank.ru", "scdn.co", "cdnjs.smi2.ru",
-    "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io", "servicepipe.tech",
-    "shazoo.ru", "sketchfab.com", "spotifycdn.com", "squarespace.com",
-    "squarespace-cdn.com", "sqspcdn.com",
+    "sber.ru", "sberbank.ru", "sberdevices.ru", "scdn.co",
+    "cdnjs.smi2.ru", "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io",
+    "servicepipe.tech", "shazoo.ru", "sketchfab.com", "spotifycdn.com",
+    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
 
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -223,8 +225,8 @@ PROTECTED_FAMILIES = [
     "e1.ru", "eda.ru", "euronews.com",
 
     # === F ===
-    "facebook.com", "fastpic.org", "fishki.net", "fontanka.ru",
-    "futurecdn.net",
+    "facebook.net", "facebook.com", "fastpic.org", "fishki.net",
+    "fontanka.ru", "futurecdn.net",
 
     # === G ===
     "gazeta.ru", "gear-hub.ru", "googleapis.com",
@@ -396,7 +398,7 @@ AD_APEX_BLACKLIST = [
 
     # === R ===
     "rakuten.com", "relap.io", "rfihub.com", "rlcdn.com",
-    "rmp.rakuten.com", "rqtrk.eu", "rtactivate.com", "rtbcdn.ru",
+    "rmp.rakuten.com", "rqtrk.eu", "rtactivate.com",
     "rtbwave.com", "rtbwise.com", "rubiconproject.com", "rutarget.ru",
     "r-99.com", "rtbplatforma.ru",
 
