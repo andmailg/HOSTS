@@ -103,12 +103,12 @@ NEVER_BLOCK_DOMAINS = [
 
     # === A ===
     "adobedtm.com", "akamaized.net", "amazonaws.com", "ampproject.org",
-    "aspnetcdn.com", "awswaf.com",
+    "apptracer.ru", "aspnetcdn.com", "awswaf.com",
     
     # === B ===
     "banki.ru", "bankrate.com", "bbc.com", "bbc.co.uk",
     "bbci.co.uk", "backblazeb2.com", "bunny.net", "boltdns.net",
-    "brightcove.com", "brightcove.net", "brightcovecdn.com",
+    "brightcove.com", "brightcove.net", "brightcovecdn.com", "browser-intake-datadoghq.com",
 
     # === C ===
     "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
@@ -123,7 +123,7 @@ NEVER_BLOCK_DOMAINS = [
     "e-planning.net", "eaglecdn.com", "example.com",
 
     # === F ===
-    "flourish.studio", "futalis.de",
+    "flourish.studio", "futalis.de", "futurecdn.net",
     
     # === G ===
     "google.com", "googlevideo.com", "googleusercontent.com", "gpmdata.ru",
@@ -154,7 +154,7 @@ NEVER_BLOCK_DOMAINS = [
     
     # === O ===
     "oauth.tg.dev", "okcdn.ru", "okko.tv", "on.aws",
-    "onesignal.com", "onetrust.com", "openstreetmap.org",
+    "onelink.me", "onesignal.com", "onetrust.com", "openstreetmap.org",
     
     # === P ===
     "pic4net.com", "plyr.io", "privacy-center.org", "privacy-mgmt.com",
@@ -168,6 +168,7 @@ NEVER_BLOCK_DOMAINS = [
     "cdnjs.smi2.ru", "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io",
     "servicepipe.tech", "shazoo.ru", "sketchfab.com", "spotifycdn.com",
     "squarespace.com", "squarespace-cdn.com", "sqspcdn.com", "ssl-images-amazon.com",
+    "supercdn.ru",
 
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -227,7 +228,7 @@ PROTECTED_FAMILIES = [
 
     # === F ===
     "facebook.net", "facebook.com", "fastpic.org", "fishki.net",
-    "fontanka.ru", "futurecdn.net",
+    "fontanka.ru",
 
     # === G ===
     "gazeta.ru", "gazeta.press", "gear-hub.ru", "googleapis.com",
@@ -263,7 +264,7 @@ PROTECTED_FAMILIES = [
     "pikabu.ru", "pravo.ru", 
 
     # === R ===
-    "rambler.ru", "rarus.ru", "rbc.ru", "reddit.com",
+    "rambler.ru", "rakuten.com", "rarus.ru", "rbc.ru", "reddit.com",
     "retail.ru", "ria.ru", "rosbalt.ru", "rutracker.cc",
     "rutube.ru",
 
@@ -314,19 +315,19 @@ AD_APEX_BLACKLIST = [
     "adfox.ru", "adx.com.ru", "agkn.com", "aidata.io",
     "alcmpn.com", "alfasense.com", "amazon-adsystem.com", "amx1.net",
     "aniview.com", "apester.com", "appier.net", "appsflyersdk.com",
-    "apptracer.ru", "applovin.com", "api-taboola.com", "arcspire.io",
+    "applovin.com", "api-taboola.com", "arcspire.io",
     "atwola.com", "axis-marketplace.com",
 
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "binsiad.com", "blismedia.com",
-    "blockboardtech.com", "brandmetrics.com", "bricks-co.com", "browser-intake-datadoghq.com",
+    "blockboardtech.com", "brandmetrics.com", "bricks-co.com",
     "bumlam.com", "buzzoola.com", "bringads.ru", "btrll.com",
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
     "clickagy.com", "colossusssp.com", "connatix.com", "contentspread.net",
-    "contextweb.com", "cookielaw.org", "coolbonsai.com", "cootlogix.com",
+    "contextweb.com", "coolbonsai.com", "cootlogix.com",
     "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
     "crashguard.me", "crwdcntrl.net", "ctnsnet.com", "cxense.com",
 
@@ -382,7 +383,7 @@ AD_APEX_BLACKLIST = [
 
     # === O ===
     "odsp.net", "ohmy.bid", "olanola.com",
-    "omnitagjs.com", "omtrdc.net", "onelink.me", "onetag-sys.com",
+    "omnitagjs.com", "omtrdc.net", "onetag-sys.com",
     "openfpcdn.io", "openx.net", "openssp.ru", "openwebmedia.org",
     "openwebmp.com", "opti-digital.com", "optidigital.com", "optimizely.com",
     "orbitatech.io", "otm-r.com", "outbrain.com", "outbrainimg.com",
@@ -398,10 +399,9 @@ AD_APEX_BLACKLIST = [
     "q-bid.ru", "qtarget.tech", "quantserve.com", "quotiq.ru",
 
     # === R ===
-    "rakuten.com", "relap.io", "rfihub.com", "rlcdn.com",
-    "rmp.rakuten.com", "rqtrk.eu", "rtactivate.com",
-    "rtbwave.com", "rtbwise.com", "rubiconproject.com", "rutarget.ru",
-    "r-99.com", "rtbplatforma.ru",
+    "relap.io", "rfihub.com", "rlcdn.com", "rqtrk.eu",
+    "rtactivate.com", "rtbwave.com", "rtbwise.com", "rubiconproject.com",
+    "rutarget.ru", "r-99.com", "rtbplatforma.ru",
 
     # === S ===
     "sape.ru", "sascdn.com", "scorecardresearch.com", "securedvisit.com",
@@ -411,7 +411,7 @@ AD_APEX_BLACKLIST = [
     "smartytech.io", "smi2.ru", "smi2cdn.ru", "smi2.net",
     "smilewanted.com", "sonobi.com", "sparrow.ru", "sportradarserving.com",
     "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com",
-    "stbid.ru", "stickyadstv.com", "sundaysky.com", "supercdn.ru",
+    "stableid.online", "stbid.ru", "stickyadstv.com", "sundaysky.com",
     "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
@@ -419,7 +419,7 @@ AD_APEX_BLACKLIST = [
     "teads.tv", "teads-xo.com", "telecid.ru", "terratraf.com",
     "thrtle.com", "tinypass.com", "tns-counter.ru", "traffaret.com",
     "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com", "tremorhub.com",
-    "trustarc.com", "trustedstack.com", "turn.com", "tynt.com",
+    "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
     "uncn.jp", "undertone.com", "upravel.com", "usbrowserspeed.com",
@@ -510,6 +510,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"(?:^|\.)log\.rutube\.ru$",
     r"^yandex-(?:dmp-)?sync\.rutarget\.ru$",           # Синхронизация Яндекса на Rutarget
     r"^a\.ria\.ru$",
+    r"^rmp\.rakuten\.com$", 
 
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера

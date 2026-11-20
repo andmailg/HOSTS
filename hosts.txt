@@ -272,8 +272,6 @@
 0.0.0.0 daf.xp.apple.com
 0.0.0.0 b.applovin.com
 0.0.0.0 exchange.appnerve.net
-0.0.0.0 apptracer.ru
-0.0.0.0 sdk-api.apptracer.ru
 0.0.0.0 arcspire.io
 0.0.0.0 px.arcspire.io
 0.0.0.0 us1.atlas5.co
@@ -444,7 +442,6 @@
 0.0.0.0 connexity.net
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
-0.0.0.0 cdn.cookielaw.org
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -930,8 +927,6 @@
 0.0.0.0 visitor.us-east4.gcp.omnitagjs.com
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
-0.0.0.0 impressions.onelink.me
-0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
 0.0.0.0 geolocation.onetrust.com
