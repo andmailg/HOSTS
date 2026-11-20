@@ -92,6 +92,7 @@
 0.0.0.0 track.adform.net
 0.0.0.0 ads.adfox.ru
 0.0.0.0 banners.adfox.ru
+0.0.0.0 content.adfox.ru
 0.0.0.0 cm.adgrx.com
 0.0.0.0 adobe.adhaven.com
 0.0.0.0 adhigh.net
@@ -106,9 +107,12 @@
 0.0.0.0 sync.adkernel.com
 0.0.0.0 adkit-advertising.amazon
 0.0.0.0 adlook.online
+0.0.0.0 ssp-asr.adlook.online
 0.0.0.0 sync.adlook.online
 0.0.0.0 sync1.adlook.online
+0.0.0.0 sync2.adlook.online
 0.0.0.0 a.adlook.tech
+0.0.0.0 s.adlook.tv
 0.0.0.0 am.adlooxtracking.com
 0.0.0.0 j.adlooxtracking.com
 0.0.0.0 pixel.adlooxtracking.ru
@@ -370,6 +374,7 @@
 0.0.0.0 a2044.casalemedia.com
 0.0.0.0 a2587.casalemedia.com
 0.0.0.0 a4123.casalemedia.com
+0.0.0.0 a5057.casalemedia.com
 0.0.0.0 a6038.casalemedia.com
 0.0.0.0 a6288.casalemedia.com
 0.0.0.0 dsum-sec.casalemedia.com
@@ -439,6 +444,7 @@
 0.0.0.0 connexity.net
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
+0.0.0.0 cdn.cookielaw.org
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -484,6 +490,7 @@
 0.0.0.0 gcm.ctnsnet.com
 0.0.0.0 i.ctnsnet.com
 0.0.0.0 ipac.ctnsnet.com
+0.0.0.0 x.ctrltech.ai
 0.0.0.0 bid.ctv.house
 0.0.0.0 cxense.com
 0.0.0.0 cdn.cxense.com
@@ -601,6 +608,7 @@
 0.0.0.0 bordeaux-gateway.futureplc.com
 0.0.0.0 cache.pythia.futureplc.com
 0.0.0.0 eventsproxy.gargantuan.futureplc.com
+0.0.0.0 lobe.scv.public.sse-prod-eks-euw1.futureplc.engineering
 0.0.0.0 fwmrm.net
 0.0.0.0 user-sync.fwmrm.net
 0.0.0.0 trck.fyrst.de
@@ -633,6 +641,7 @@
 0.0.0.0 sync.gonet-ads.com
 0.0.0.0 region1.google-analytics.com
 0.0.0.0 www.google-analytics.com
+0.0.0.0 fundingchoicesmessages.google.com
 0.0.0.0 partner.googleadservices.com
 0.0.0.0 www.googleadservices.com
 0.0.0.0 imasdk.googleapis.com
@@ -659,6 +668,7 @@
 0.0.0.0 st.hbrd.io
 0.0.0.0 js.hostingradio.ru
 0.0.0.0 meta.hostingradio.ru
+0.0.0.0 html-load.com
 0.0.0.0 stg.html-load.com
 0.0.0.0 0.stg.html-load.com
 0.0.0.0 hybrid.ai
@@ -773,6 +783,7 @@
 0.0.0.0 ad.mail.ru
 0.0.0.0 media-sensor.mail.ru
 0.0.0.0 media-stat.mail.ru
+0.0.0.0 privacy-cs.mail.ru
 0.0.0.0 rs.mail.ru
 0.0.0.0 match.marketiq.com
 0.0.0.0 rt.marphezis.com
@@ -891,6 +902,7 @@
 0.0.0.0 pym.nprapps.org
 0.0.0.0 dsp.nrich.ai
 0.0.0.0 ssp-statistics.dsp.nt.technology
+0.0.0.0 ssp-statistics.ntsistema.ru
 0.0.0.0 odsp.net
 0.0.0.0 adv.office-partner.de
 0.0.0.0 ohmy.bid
@@ -919,8 +931,10 @@
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
 0.0.0.0 impressions.onelink.me
+0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
+0.0.0.0 geolocation.onetrust.com
 0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
@@ -1013,6 +1027,7 @@
 0.0.0.0 rainbet.post-view.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
+0.0.0.0 service.pravo.ru
 0.0.0.0 presage.io
 0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
@@ -1174,6 +1189,7 @@
 0.0.0.0 ssp.rutube.ru
 0.0.0.0 recs.s5o.ru
 0.0.0.0 pixel.mtrcs.samba.tv
+0.0.0.0 tracker.samplicio.us
 0.0.0.0 sape.ru
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 ssp-rtb.sape.ru
@@ -1197,6 +1213,7 @@
 0.0.0.0 securedvisit.com
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
+0.0.0.0 video.seenthis.se
 0.0.0.0 px.segmel.com
 0.0.0.0 sync.selfclick.pro
 0.0.0.0 se.semasio.net
@@ -1354,6 +1371,7 @@
 0.0.0.0 analytics-ipv6.tiktokw.us
 0.0.0.0 mcs.tiktokw.us
 0.0.0.0 mssdk.tiktokw.us
+0.0.0.0 static2.tinkoffjournal.ru
 0.0.0.0 cdn.tinypass.com
 0.0.0.0 tns-counter.ru
 0.0.0.0 cm.tns-counter.ru
@@ -1397,6 +1415,7 @@
 0.0.0.0 evt.undertone.com
 0.0.0.0 hb.undertone.com
 0.0.0.0 usr.undertone.com
+0.0.0.0 farm.uniquebranch.com
 0.0.0.0 targeting.unrulymedia.com
 0.0.0.0 sync.targeting.unrulymedia.com
 0.0.0.0 upravel.com
@@ -1516,7 +1535,6 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com

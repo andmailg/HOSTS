@@ -1,6 +1,5 @@
 ! Title: HOSTS adblock (auto-generated)
 ! Каждое правило блокирует домен и ВСЕ его поддомены
-||b24retailru.1c.ru^
 ||1dmp.io^
 ||a-iad3.1rx.io^
 ||sync.1rx.io^
@@ -17,12 +16,10 @@
 ||img.3lift.com^
 ||tlx.3lift.com^
 ||4dex.io^
-||5vobauua3ojpklx.icu^
 ||a-mo.net^
 ||id.a-mx.com^
 ||s.a-traffic.net^
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
-||aaakmnr.com^
 ||t.dsp.abdm.ru^
 ||phoenix.prod.ateam.acast.cloud^
 ||cdn.acast.com^
@@ -62,6 +59,7 @@
 ||track.adform.net^
 ||ads.adfox.ru^
 ||banners.adfox.ru^
+||content.adfox.ru^
 ||cm.adgrx.com^
 ||adobe.adhaven.com^
 ||adhigh.net^
@@ -74,6 +72,7 @@
 ||adkit-advertising.amazon^
 ||adlook.online^
 ||a.adlook.tech^
+||s.adlook.tv^
 ||am.adlooxtracking.com^
 ||j.adlooxtracking.com^
 ||pixel.adlooxtracking.ru^
@@ -195,9 +194,6 @@
 ||api3.b2c.com^
 ||apix.b2c.com^
 ||tracker.ssp.balance-x.com^
-||static2.banki.ru^
-||static4.banki.ru^
-||bankrate.com^
 ||c.bannerflow.net^
 ||icv.bannernow.com^
 ||stats.bannernow.com^
@@ -283,7 +279,6 @@
 ||t.clarity.ms^
 ||u.clarity.ms^
 ||www.clarity.ms^
-||protected-by.clarium.io^
 ||i.clean.gg^
 ||sync.cleverwebdata.com^
 ||aorta.clickagy.com^
@@ -330,6 +325,7 @@
 ||gcm.ctnsnet.com^
 ||i.ctnsnet.com^
 ||ipac.ctnsnet.com^
+||x.ctrltech.ai^
 ||bid.ctv.house^
 ||cxense.com^
 ||stream.datago.ru^
@@ -399,7 +395,6 @@
 ||loadm.exelator.com^
 ||loadus.exelator.com^
 ||ps.eyeota.net^
-||connect.facebook.net^
 ||ad-events.flashtalking.com^
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
@@ -410,18 +405,16 @@
 ||cdn.ftd.agency^
 ||agen-assets.ftstatic.com^
 ||ajs-assets.ftstatic.com^
-||futalis.de^
-||futurecdn.net^
 ||prebid-cache.futurehybrid.tech^
 ||sommelier.futurehybrid.tech^
 ||bordeaux-gateway.futureplc.com^
 ||cache.pythia.futureplc.com^
 ||eventsproxy.gargantuan.futureplc.com^
+||lobe.scv.public.sse-prod-eks-euw1.futureplc.engineering^
 ||fwmrm.net^
 ||trck.fyrst.de^
 ||cm-supply-web.gammaplatform.com^
 ||gamoshi.io^
-||www.gazeta.press^
 ||ids.api.gcprivacy.id^
 ||s.cdn.gcprivacy.net^
 ||adserver.gear-hub.ru^
@@ -457,7 +450,7 @@
 ||hbrd.io^
 ||js.hostingradio.ru^
 ||meta.hostingradio.ru^
-||stg.html-load.com^
+||html-load.com^
 ||hybrid.ai^
 ||ia.box^
 ||id5-sync.com^
@@ -631,7 +624,7 @@
 ||pym.nprapps.org^
 ||dsp.nrich.ai^
 ||ssp-statistics.dsp.nt.technology^
-||consent.cmp.oath.com^
+||ssp-statistics.ntsistema.ru^
 ||odsp.net^
 ||adv.office-partner.de^
 ||ohmy.bid^
@@ -650,7 +643,6 @@
 ||resources.omni-sync.io^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
-||on.aws^
 ||pixel.onaudience.com^
 ||impressions.onelink.me^
 ||cdn.onesignal.com^
@@ -714,8 +706,6 @@
 ||service.pravo.ru^
 ||presage.io^
 ||live.primis.tech^
-||api.privacy-center.org^
-||sdk.privacy-center.org^
 ||ats-wrapper.privacymanager.io^
 ||geo.privacymanager.io^
 ||prmutv.co^
@@ -825,7 +815,6 @@
 ||tracker.rtb-oveeo.com^
 ||tracker.rtb-stellormedia.com^
 ||id.rtb.mx^
-||rtbcdn.ru^
 ||tracker-b.rtbpixelpluses.com^
 ||sync.rtbplatform.ru^
 ||s3.rtbplatforma.ru^
@@ -837,17 +826,15 @@
 ||w.rulive.ru^
 ||match.rundsp.com^
 ||rutarget.ru^
-||rutracker.cc^
 ||a.rutube.ru^
 ||goya.rutube.ru^
 ||log.rutube.ru^
 ||ssp.rutube.ru^
 ||recs.s5o.ru^
 ||pixel.mtrcs.samba.tv^
+||tracker.samplicio.us^
 ||sape.ru^
 ||ced-ns.sascdn.com^
-||cdn-app.sberdevices.ru^
-||outstream.sberdevices.ru^
 ||sbermarketing.ru^
 ||ext.clickstream.sbrf.ru^
 ||srv.scalibur.io^
@@ -863,6 +850,7 @@
 ||securedvisit.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
+||video.seenthis.se^
 ||px.segmel.com^
 ||sync.selfclick.pro^
 ||se.semasio.net^
@@ -874,7 +862,6 @@
 ||ads.servenobid.com^
 ||public.servenobid.com^
 ||sync.serverbid.com^
-||servicepipe.tech^
 ||bs.serving-sys.ru^
 ||ds.serving-sys.ru^
 ||setka.news^
@@ -926,7 +913,6 @@
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
-||images-na.ssl-images-amazon.com^
 ||bid.sspnet.tech^
 ||sync.srv.stackadapt.com^
 ||stat.media^
@@ -994,8 +980,6 @@
 ||tracookiepixel.xyz^
 ||traffaret.com^
 ||yahoo2.global.transmit.live^
-||api-gateway.travelata.ru^
-||gateway.travelata.ru^
 ||sentry.travelata.ru^
 ||ads.travelaudience.com^
 ||www.travelpayouts.com^
@@ -1006,8 +990,6 @@
 ||b.trueanthem.com^
 ||cdn.trust-id.ru^
 ||id.trust-id.ru^
-||choices-or.trustarc.com^
-||choices.trustarc.com^
 ||hb.trustedstack.com^
 ||tsdtocl.com^
 ||tt.ttarget.ru^
@@ -1026,6 +1008,7 @@
 ||evt.undertone.com^
 ||hb.undertone.com^
 ||usr.undertone.com^
+||farm.uniquebranch.com^
 ||targeting.unrulymedia.com^
 ||upravel.com^
 ||a.usbrowserspeed.com^
@@ -1108,7 +1091,6 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||geo.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
@@ -1121,7 +1103,6 @@
 ||an.yandex.ru^
 ||mc.yandex.ru^
 ||uaas.yandex.ru^
-||aflt.market.yandex.ru^
 ||log.strm.yandex.ru^
 ||yellowblue.io^
 ||ad.yieldlab.net^
