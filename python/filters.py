@@ -52,7 +52,7 @@ AD_TRACKER_PATTERNS = [
 # 
 SYSTEM_ASSETS_PATTERNS = [
     r"\/dist\/client\/assets\/", r"\/dist\/client\/fonts\/", r"\/scrooge-client\/",
-    r"\.hsmedia\.ru", r"\.viqeo\.tv",
+    r"\.hsmedia\.ru",
     r"\.bbci\.co\.uk", r"\.bbc\.co\.uk",
     r"\.thetruestory\.news", r"cdn.*iportal\.ru",
     r"vtb\.ru",
@@ -280,7 +280,7 @@ PROTECTED_FAMILIES = [
     "userapi.com",
 
     # === V ===
-    "vdmsti.ru", "vedomosti.ru",
+    "vdmsti.ru", "vedomosti.ru", "viqeo.tv",
 
     # === W ===
     "wi-fi.ru", "wildberries.ru", "wistia.com",
@@ -429,7 +429,7 @@ AD_APEX_BLACKLIST = [
     # === V ===
     "vdo.ai", "videohead.tech", "videonow.ru", "viadata.store",
     "vidoomy.com", "viisfxlg.com", "vigo.tech", "vindicosuite.com",
-    "vistarsagency.com", "visiblemeasures.com", "viqeo.tv", "vk-analytics.ru",
+    "vistarsagency.com", "visiblemeasures.com", "vk-analytics.ru",
     "voxexchange.io",
 
     # === W ===
@@ -525,6 +525,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
 
     # === V ===
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
+    r"^(?:stats|metrics)\.viqeo\.tv$",
 
     # === Y ===
 
