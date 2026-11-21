@@ -1,3 +1,4 @@
+0.0.0.0 cs.152media-ssp.com
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
 0.0.0.0 a-iad3.1rx.io
@@ -213,6 +214,7 @@
 0.0.0.0 static.advcake.ru
 0.0.0.0 pixel.advertising.com
 0.0.0.0 cdn.advertronic.io
+0.0.0.0 ssp.advertronic.io
 0.0.0.0 cdn.advideo.ru
 0.0.0.0 faststat.advideo.ru
 0.0.0.0 stat.advideo.ru
@@ -336,6 +338,7 @@
 0.0.0.0 tr.blismedia.com
 0.0.0.0 connect.blockboardtech.com
 0.0.0.0 cm.bluevoox.com
+0.0.0.0 ogury.cm.bluevoox.com
 0.0.0.0 phx.bmtrcs.com
 0.0.0.0 backend.bobid.io
 0.0.0.0 eads.brame-gamification.com
@@ -344,7 +347,6 @@
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 a.bringads.ru
-0.0.0.0 browser-intake-datadoghq.com
 0.0.0.0 btloader.com
 0.0.0.0 api.btloader.com
 0.0.0.0 cdn.btloader.com
@@ -512,6 +514,7 @@
 0.0.0.0 dmxleo.com
 0.0.0.0 ae.dmxleo.com
 0.0.0.0 ab.dns-finder.com
+0.0.0.0 jsdata.do.am
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 33across-match.dotomi.com
@@ -681,6 +684,8 @@
 0.0.0.0 id5-sync.com
 0.0.0.0 api.id5-sync.com
 0.0.0.0 cdn.id5-sync.com
+0.0.0.0 analytics.id5-tech.io
+0.0.0.0 prebid.id5-tech.io
 0.0.0.0 cs.ifedata.ru
 0.0.0.0 gurgle.ign.com
 0.0.0.0 kraken.ignimgs.com
@@ -735,6 +740,7 @@
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
 0.0.0.0 klkmdsync.site
+0.0.0.0 cdn.knightlab.com
 0.0.0.0 m.kombinat.digital
 0.0.0.0 pixel.konnektu.ru
 0.0.0.0 assets.kontext.so
@@ -888,12 +894,12 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
 0.0.0.0 t.nodals.io
 0.0.0.0 ssp-statistics.dev.dsp1.nominaltechno.com
+0.0.0.0 pixel.nordicdataresources.net
 0.0.0.0 nowads.com
 0.0.0.0 nowaymail.com
 0.0.0.0 pym.nprapps.org
@@ -927,6 +933,7 @@
 0.0.0.0 visitor.us-east4.gcp.omnitagjs.com
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
+0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
 0.0.0.0 geolocation.onetrust.com
@@ -1012,6 +1019,7 @@
 0.0.0.0 pix.pub
 0.0.0.0 dsp-service.pixad.com.tr
 0.0.0.0 prebid.pixad.com.tr
+0.0.0.0 kick.pleasanttulip.com
 0.0.0.0 plusoneads.com
 0.0.0.0 sync.plusoneads.com
 0.0.0.0 sync.pmbmonetize.live
@@ -1075,7 +1083,6 @@
 0.0.0.0 quotiq.ru
 0.0.0.0 cdn-irec.r-99.com
 0.0.0.0 sst-irec.r-99.com
-0.0.0.0 s-cs.rmp.rakuten.com
 0.0.0.0 cs.rambler.ru
 0.0.0.0 embeds.rambler.ru
 0.0.0.0 imgserve.rambler.ru
@@ -1206,8 +1213,11 @@
 0.0.0.0 api.searchbooster.net
 0.0.0.0 cdn2.searchbooster.net
 0.0.0.0 securedvisit.com
+0.0.0.0 config.seedtag.com
+0.0.0.0 creatives.seedtag.com
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
+0.0.0.0 video.seedtag.com
 0.0.0.0 video.seenthis.se
 0.0.0.0 px.segmel.com
 0.0.0.0 sync.selfclick.pro
@@ -1261,6 +1271,8 @@
 0.0.0.0 sync.smartadserver.com
 0.0.0.0 tracking-api-use1.smartadserver.com
 0.0.0.0 www.smartadserver.com
+0.0.0.0 rtbvast.us-east1-1.smartadserver.com
+0.0.0.0 tracking.us-east1-1.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
 0.0.0.0 smartytech.io
@@ -1283,6 +1295,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 static1.smi2cdn.ru
+0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static5.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
 0.0.0.0 static7.smi2cdn.ru
@@ -1303,6 +1316,7 @@
 0.0.0.0 s.srvsynd.com
 0.0.0.0 bid.sspnet.tech
 0.0.0.0 sync.srv.stackadapt.com
+0.0.0.0 stat-sputnik.ru
 0.0.0.0 stat.media
 0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru

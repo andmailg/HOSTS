@@ -1,5 +1,6 @@
 ! Title: HOSTS adblock (auto-generated)
 ! Каждое правило блокирует домен и ВСЕ его поддомены
+||cs.152media-ssp.com^
 ||1dmp.io^
 ||a-iad3.1rx.io^
 ||sync.1rx.io^
@@ -138,6 +139,7 @@
 ||static.advcake.ru^
 ||pixel.advertising.com^
 ||cdn.advertronic.io^
+||ssp.advertronic.io^
 ||cdn.advideo.ru^
 ||faststat.advideo.ru^
 ||stat.advideo.ru^
@@ -176,7 +178,6 @@
 ||daf.xp.apple.com^
 ||b.applovin.com^
 ||exchange.appnerve.net^
-||apptracer.ru^
 ||arcspire.io^
 ||us1.atlas5.co^
 ||attentionxyz.com^
@@ -232,7 +233,6 @@
 ||collector.brandmetrics.com^
 ||pbsj.bricks-co.com^
 ||a.bringads.ru^
-||browser-intake-datadoghq.com^
 ||btloader.com^
 ||segs.btrll.com^
 ||bttrack.com^
@@ -300,7 +300,6 @@
 ||connexity.net^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
-||cdn.cookielaw.org^
 ||prebid.cootlogix.com^
 ||prebidsrvr.cootlogix.com^
 ||sync.cootlogix.com^
@@ -343,6 +342,7 @@
 ||pebed.dm-event.net^
 ||dmxleo.com^
 ||ab.dns-finder.com^
+||jsdata.do.am^
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
 ||33across-match.dotomi.com^
@@ -454,6 +454,8 @@
 ||hybrid.ai^
 ||ia.box^
 ||id5-sync.com^
+||analytics.id5-tech.io^
+||prebid.id5-tech.io^
 ||cs.ifedata.ru^
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
@@ -503,6 +505,7 @@
 ||krk2.kargo.com^
 ||kimberlite.io^
 ||klkmdsync.site^
+||cdn.knightlab.com^
 ||m.kombinat.digital^
 ||pixel.konnektu.ru^
 ||assets.kontext.so^
@@ -615,10 +618,10 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
+||pixel.nordicdataresources.net^
 ||nowads.com^
 ||nowaymail.com^
 ||pym.nprapps.org^
@@ -644,7 +647,6 @@
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||pixel.onaudience.com^
-||impressions.onelink.me^
 ||cdn.onesignal.com^
 ||onetag-sys.com^
 ||pixel.dsp.onetarget.ru^
@@ -694,6 +696,7 @@
 ||pix.pub^
 ||dsp-service.pixad.com.tr^
 ||prebid.pixad.com.tr^
+||kick.pleasanttulip.com^
 ||plusoneads.com^
 ||sync.pmbmonetize.live^
 ||polarcdn-engine.com^
@@ -740,7 +743,6 @@
 ||quotiq.ru^
 ||cdn-irec.r-99.com^
 ||sst-irec.r-99.com^
-||s-cs.rmp.rakuten.com^
 ||cs.rambler.ru^
 ||embeds.rambler.ru^
 ||imgserve.rambler.ru^
@@ -848,8 +850,11 @@
 ||api.searchbooster.net^
 ||cdn2.searchbooster.net^
 ||securedvisit.com^
+||config.seedtag.com^
+||creatives.seedtag.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
+||video.seedtag.com^
 ||video.seenthis.se^
 ||px.segmel.com^
 ||sync.selfclick.pro^
@@ -891,12 +896,15 @@
 ||sync.smartadserver.com^
 ||tracking-api-use1.smartadserver.com^
 ||www.smartadserver.com^
+||rtbvast.us-east1-1.smartadserver.com^
+||tracking.us-east1-1.smartadserver.com^
 ||smartcallback.ru^
 ||smartytech.io^
 ||bidder.smartytouch.co^
 ||smi2.net^
 ||smi2.ru^
 ||static1.smi2cdn.ru^
+||static4.smi2cdn.ru^
 ||static5.smi2cdn.ru^
 ||static6.smi2cdn.ru^
 ||static7.smi2cdn.ru^
@@ -915,6 +923,7 @@
 ||s.srvsynd.com^
 ||bid.sspnet.tech^
 ||sync.srv.stackadapt.com^
+||stat-sputnik.ru^
 ||stat.media^
 ||statmedia.ru^
 ||stbid.ru^
