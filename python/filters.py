@@ -96,7 +96,7 @@ _IS_HASH_PATTERNS = [
 NEVER_BLOCK_DOMAINS = [
 
     # === Ad-Shield ===
-    "content-loader.com", "html-load.com", "error-report.com",
+    "content-loader.com", "html-load.com", "error-report.com", "btloader.com",
 
     # === Цифры / Прочее ===
     "1c.ai", "1c.ru", 
@@ -349,7 +349,7 @@ AD_APEX_BLACKLIST = [
     "googlesyndication.com", "googletagservices.com", "gumgum.com",
 
     # === H ===
-    "hbrd.io", "html-load.com", "hybrid.ai",
+    "hbrd.io", "hybrid.ai",
 
     # === I ===
     "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com",
