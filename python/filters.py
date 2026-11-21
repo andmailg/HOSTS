@@ -245,7 +245,7 @@ PROTECTED_FAMILIES = [
     "iz.ru",
 
     # === K ===
-    "kp.ru",
+    "knightlab.com", "kp.ru",
 
     # === L ===
     "lenta.ru", "linkedin.com",
