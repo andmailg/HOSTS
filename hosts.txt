@@ -347,10 +347,6 @@
 0.0.0.0 collector.brandmetrics.com
 0.0.0.0 pbsj.bricks-co.com
 0.0.0.0 a.bringads.ru
-0.0.0.0 btloader.com
-0.0.0.0 api.btloader.com
-0.0.0.0 cdn.btloader.com
-0.0.0.0 cdn.api.btloader.com
 0.0.0.0 segs.btrll.com
 0.0.0.0 bttrack.com
 0.0.0.0 bumlam.com
@@ -668,9 +664,6 @@
 0.0.0.0 st.hbrd.io
 0.0.0.0 js.hostingradio.ru
 0.0.0.0 meta.hostingradio.ru
-0.0.0.0 html-load.com
-0.0.0.0 stg.html-load.com
-0.0.0.0 0.stg.html-load.com
 0.0.0.0 hybrid.ai
 0.0.0.0 bobid-ip.hybrid.ai
 0.0.0.0 dm-eu.hybrid.ai
