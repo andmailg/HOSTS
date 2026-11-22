@@ -113,7 +113,7 @@ NEVER_BLOCK_DOMAINS = [
     # === C ===
     "cdn-vk.com", "cdn-vk.ru", "cdninstagram.com", "cdnvideo.ru",
     "clarium.io", "cloudflare.com", "cloudflarestream.com", "cloudflareinsights.com",
-    "cloudfront.net", "cookielaw.org", "createjs.com",
+    "cloudfront.net", "cookielaw.org", "createjs.com", "cyllene.co",
     
     # === D ===
     "dailymotion.com", "ddos-guard.net", "disquscdn.com", "dmcdn.net",
