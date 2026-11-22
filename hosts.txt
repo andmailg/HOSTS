@@ -522,6 +522,7 @@
 0.0.0.0 medianet-match.dotomi.com
 0.0.0.0 ogury-match.dotomi.com
 0.0.0.0 openweb-match.dotomi.com
+0.0.0.0 openx2-match.dotomi.com
 0.0.0.0 prebid-match.dotomi.com
 0.0.0.0 pubmatic-match.dotomi.com
 0.0.0.0 stx-match.dotomi.com
@@ -733,7 +734,6 @@
 0.0.0.0 kimberlite.io
 0.0.0.0 static.kimberlite.io
 0.0.0.0 klkmdsync.site
-0.0.0.0 cdn.knightlab.com
 0.0.0.0 m.kombinat.digital
 0.0.0.0 pixel.konnektu.ru
 0.0.0.0 assets.kontext.so
@@ -817,6 +817,7 @@
 0.0.0.0 mediatoday.ru
 0.0.0.0 exchange.mediavine.com
 0.0.0.0 darcs.meinungsplatz.ch
+0.0.0.0 sync.dmp.melvad.com
 0.0.0.0 rtb.mfadsrvr.com
 0.0.0.0 cm.mgid.com
 0.0.0.0 mindbox.ru
@@ -887,6 +888,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -926,6 +928,7 @@
 0.0.0.0 visitor.us-east4.gcp.omnitagjs.com
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
+0.0.0.0 impressions.onelink.me
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
@@ -1013,6 +1016,7 @@
 0.0.0.0 dsp-service.pixad.com.tr
 0.0.0.0 prebid.pixad.com.tr
 0.0.0.0 kick.pleasanttulip.com
+0.0.0.0 0.kick.pleasanttulip.com
 0.0.0.0 plusoneads.com
 0.0.0.0 sync.plusoneads.com
 0.0.0.0 sync.pmbmonetize.live

@@ -233,7 +233,6 @@
 ||collector.brandmetrics.com^
 ||pbsj.bricks-co.com^
 ||a.bringads.ru^
-||btloader.com^
 ||segs.btrll.com^
 ||bttrack.com^
 ||bumlam.com^
@@ -354,6 +353,7 @@
 ||medianet-match.dotomi.com^
 ||ogury-match.dotomi.com^
 ||openweb-match.dotomi.com^
+||openx2-match.dotomi.com^
 ||prebid-match.dotomi.com^
 ||pubmatic-match.dotomi.com^
 ||stx-match.dotomi.com^
@@ -450,7 +450,6 @@
 ||hbrd.io^
 ||js.hostingradio.ru^
 ||meta.hostingradio.ru^
-||html-load.com^
 ||hybrid.ai^
 ||ia.box^
 ||id5-sync.com^
@@ -505,7 +504,6 @@
 ||krk2.kargo.com^
 ||kimberlite.io^
 ||klkmdsync.site^
-||cdn.knightlab.com^
 ||m.kombinat.digital^
 ||pixel.konnektu.ru^
 ||assets.kontext.so^
@@ -568,6 +566,7 @@
 ||mediatoday.ru^
 ||exchange.mediavine.com^
 ||darcs.meinungsplatz.ch^
+||sync.dmp.melvad.com^
 ||rtb.mfadsrvr.com^
 ||cm.mgid.com^
 ||mindbox.ru^
@@ -618,6 +617,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -647,6 +647,7 @@
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||pixel.onaudience.com^
+||impressions.onelink.me^
 ||cdn.onesignal.com^
 ||onetag-sys.com^
 ||pixel.dsp.onetarget.ru^
@@ -1066,7 +1067,8 @@
 ||vigo.tech^
 ||s.viieqcjw.com^
 ||s.viisfxlg.com^
-||viqeo.tv^
+||metrics.viqeo.tv^
+||stats.viqeo.tv^
 ||ads.viralize.tv^
 ||cs.visiblemeasures.com^
 ||cpm.vistarsagency.com^
