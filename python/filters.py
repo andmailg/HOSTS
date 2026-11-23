@@ -103,7 +103,7 @@ NEVER_BLOCK_DOMAINS = [
 
     # === A ===
     "adobedtm.com", "acast.com", "akamaized.net", "amazonaws.com", "ampproject.org",
-    "apptracer.ru", "aspnetcdn.com", "awswaf.com",
+    "apptracer.ru", "aspnetcdn.com", "awin1.com",  "awswaf.com",
     
     # === B ===
     "banki.ru", "bankrate.com", "bazr.ru", "bbc.com", "bbc.co.uk",
@@ -133,7 +133,7 @@ NEVER_BLOCK_DOMAINS = [
     "hsmedia.ru",
     
     # === I ===
-    "ignimgs.com", "imgchest.com", "imgsmail.ru", "infogram.com",
+    "imgchest.com", "imgsmail.ru", "infogram.com",
     "iportal.ru", "ixbt.site", "ixbt.video", "ixbt.online",
 
     # === J ===
@@ -143,6 +143,9 @@ NEVER_BLOCK_DOMAINS = [
     
     # === K ===
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
+
+    # === L ===
+    "licdn.com",
 
     # === M ===
     "mapgenie.io", "mave.digital", "media-amazon.com", "mindbox.ru",
@@ -154,7 +157,8 @@ NEVER_BLOCK_DOMAINS = [
     
     # === O ===
     "oauth.tg.dev", "okcdn.ru", "okko.tv", "on.aws",
-    "onelink.me", "onesignal.com", "onetrust.com", "openstreetmap.org",
+    "oncehuman.game", "onelink.me", "onesignal.com", "onetrust.com",
+    "openstreetmap.org",
     
     # === P ===
     "pic4net.com", "plyr.io", "privacy-center.org", "privacy-mgmt.com",
@@ -173,11 +177,11 @@ NEVER_BLOCK_DOMAINS = [
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
     "telesco.pe", "tiktokcdn-us.com", "tildaapi.com", "tildacdn.com",
-    "timepad.ru", "travelatacdn.ru", "trustarc.com", "truste.com",
-    "twimg.com", "twitter.com",
+    "timepad.ru", "travelatacdn.ru", "travelpayouts.com", "trustarc.com",
+    "truste.com", "twimg.com", "twitter.com",
     
     # === U ===
-    "unpkg.com", "uxfeedback.ru",
+    "u-login.com", "unpkg.com", "uxfeedback.ru",
     
     # === V ===
     "viafoura.co", "viafoura.net", "vimeo.com", "vimeocdn.com",
@@ -240,9 +244,9 @@ PROTECTED_FAMILIES = [
     "hostingkartinok.com", 
 
     # === I ===
-    "imageban.ru", "ign.com", "infox.ru", "insales.com",
-    "insales-shop.ru", "instagram.com", "interfax.ru", "ixbt.com",
-    "iz.ru",
+    "imageban.ru", "ign.com", "ignimgs.com", "infox.ru",
+    "insales.com", "insales-shop.ru", "instagram.com", "interfax.ru",
+    "ixbt.com", "iz.ru",
 
     # === K ===
     "knightlab.com", "kp.ru",
@@ -307,7 +311,7 @@ AD_APEX_BLACKLIST = [
     "33across.com", "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
-    "adsboosters.xyz", "advideo.ru", "a-mo.net",
+    "adkit-advertising.amazon", "adsboosters.xyz", "advideo.ru", "a-mo.net",
     "acuityplatform.com", "acint.net", "addthis.com", "ad-delivery.net",
     "adentifi.com", "adform.net", "adhaven.com", "adhigh.net",
     "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
@@ -421,8 +425,9 @@ AD_APEX_BLACKLIST = [
     "taboola.com", "tagsrvcs.com", "tapad.com", "targetads.io",
     "targetrtb.com", "teads.tv", "teads-xo.com", "telecid.ru",
     "terratraf.com", "thrtle.com", "tinypass.com", "tns-counter.ru",
-    "traffaret.com", "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com",
-    "tremorhub.com", "trustedstack.com", "turn.com", "tynt.com",
+    "traffaret.com", "trafmag.com", "tracookiepixel.xyz", "travelaudience.com",
+    "travelpayouts.com", "tremorhub.com", "trustedstack.com", "turn.com",
+    "tynt.com",
 
     # === U ===
     "uncn.jp", "undertone.com", "upravel.com", "usbrowserspeed.com",
@@ -519,6 +524,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
     r"^(target|exad)\.smi2\.[a-z]+$",
     r"^api-ssp\.spot\.im$",
+    r"^static2\.tinkoffjournal\.ru$",
 
     # === T ===
     r"^tagm\.tchibo\.de$",

@@ -279,7 +279,6 @@
 0.0.0.0 atwola.com
 0.0.0.0 tacoda.at.atwola.com
 0.0.0.0 ads.avads.net
-0.0.0.0 www.awin1.com
 0.0.0.0 cookiesync.axis-marketplace.com
 0.0.0.0 ay.delivery
 0.0.0.0 pbs-yahoo-us.ay.delivery
@@ -761,8 +760,6 @@
 0.0.0.0 idx.liadm.com
 0.0.0.0 rp.liadm.com
 0.0.0.0 rp4.liadm.com
-0.0.0.0 media.licdn.com
-0.0.0.0 static.licdn.com
 0.0.0.0 pool.liftdsp.com
 0.0.0.0 lijit.com
 0.0.0.0 ap.lijit.com
@@ -893,7 +890,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -933,11 +929,9 @@
 0.0.0.0 visitor.us-east4.gcp.omnitagjs.com
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
-0.0.0.0 g.oncehuman.game
 0.0.0.0 impressions.onelink.me
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
-0.0.0.0 geolocation.onetrust.com
 0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
@@ -1032,7 +1026,6 @@
 0.0.0.0 rainbet.post-view.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
-0.0.0.0 service.pravo.ru
 0.0.0.0 presage.io
 0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
@@ -1398,9 +1391,7 @@
 0.0.0.0 traffaret.com
 0.0.0.0 cdn.traffaret.com
 0.0.0.0 yahoo2.global.transmit.live
-0.0.0.0 sentry.travelata.ru
 0.0.0.0 ads.travelaudience.com
-0.0.0.0 www.travelpayouts.com
 0.0.0.0 partners.tremorhub.com
 0.0.0.0 a.tribalfusion.com
 0.0.0.0 s.tribalfusion.com
@@ -1422,7 +1413,6 @@
 0.0.0.0 collector-45958.tvsquared.com
 0.0.0.0 de.tynt.com
 0.0.0.0 hde.tynt.com
-0.0.0.0 u-login.com
 0.0.0.0 uncn.jp
 0.0.0.0 ds.uncn.jp
 0.0.0.0 ads.undertone.com
