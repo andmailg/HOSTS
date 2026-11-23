@@ -106,7 +106,7 @@ NEVER_BLOCK_DOMAINS = [
     "apptracer.ru", "aspnetcdn.com", "awswaf.com",
     
     # === B ===
-    "banki.ru", "bankrate.com", "bbc.com", "bbc.co.uk",
+    "banki.ru", "bankrate.com", "bazr.ru", "bbc.com", "bbc.co.uk",
     "bbci.co.uk", "backblazeb2.com", "bunny.net", "boltdns.net",
     "brightcove.com", "brightcove.net", "brightcovecdn.com", "browser-intake-datadoghq.com",
 
@@ -292,6 +292,9 @@ PROTECTED_FAMILIES = [
     "yahoo.com", "yahoo.net", "yahoofinance.com", "ya.ru",
     "yandex.net", "yandex.ru", "yastatic-net.ru", "yap.ru",
     "yaplakal.com",
+
+    # === Z ===
+    "zaymer.ru",
 ]
 
 # =============================================================================
@@ -326,8 +329,8 @@ AD_APEX_BLACKLIST = [
 
     # === C ===
     "casalemedia.com", "chartbeat.net", "chartbeat.org", "ck-ie.com",
-    "clickagy.com", "colossusssp.com", "connatix.com", "contentspread.net",
-    "contextweb.com", "coolbonsai.com", "cootlogix.com",
+    "clickagy.com", "colossusssp.com", "connatix.com", "connexity.net",
+    "contentspread.net", "contextweb.com", "coolbonsai.com", "cootlogix.com",
     "cpx.to", "creativecdn.com", "criteo.com", "criteo.net",
     "crashguard.me", "crwdcntrl.net", "ctnsnet.com", "cxense.com",
 
@@ -415,11 +418,11 @@ AD_APEX_BLACKLIST = [
     "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
-    "taboola.com", "tapad.com", "targetads.io", "targetrtb.com",
-    "teads.tv", "teads-xo.com", "telecid.ru", "terratraf.com",
-    "thrtle.com", "tinypass.com", "tns-counter.ru", "traffaret.com",
-    "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com", "tremorhub.com",
-    "trustedstack.com", "turn.com", "tynt.com",
+    "taboola.com", "tagsrvcs.com", "tapad.com", "targetads.io",
+    "targetrtb.com", "teads.tv", "teads-xo.com", "telecid.ru",
+    "terratraf.com", "thrtle.com", "tinypass.com", "tns-counter.ru",
+    "traffaret.com", "trafmag.com", "tracookiepixel.xyz", "travelpayouts.com",
+    "tremorhub.com", "trustedstack.com", "turn.com", "tynt.com",
 
     # === U ===
     "uncn.jp", "undertone.com", "upravel.com", "usbrowserspeed.com",
