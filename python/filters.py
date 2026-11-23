@@ -102,7 +102,7 @@ NEVER_BLOCK_DOMAINS = [
     "1c.ai", "1c.ru", 
 
     # === A ===
-    "adobedtm.com", "akamaized.net", "amazonaws.com", "ampproject.org",
+    "adobedtm.com", "acast.com", "akamaized.net", "amazonaws.com", "ampproject.org",
     "apptracer.ru", "aspnetcdn.com", "awswaf.com",
     
     # === B ===
@@ -145,9 +145,9 @@ NEVER_BLOCK_DOMAINS = [
     "cackle.me", "kinescope.io", "kinescopecdn.net", "kpcdn.net",
 
     # === M ===
-    "mapgenie.io", "mave.digital", "media-amazon.com", "mos.ru",
-    "mycdn.me", "mt.ru", "mtdata.ru", "mtml.ru",
-    "mzstatic.com",
+    "mapgenie.io", "mave.digital", "media-amazon.com", "mindbox.ru",
+    "mos.ru", "mt.ru", "mtdata.ru", "mtml.ru",
+    "mycdn.me", "mzstatic.com",
     
     # === N ===
     "net.ru", "nflximg.net", "nnmstatic.win",
@@ -167,8 +167,8 @@ NEVER_BLOCK_DOMAINS = [
     "sber.ru", "sberbank.ru", "sberdevices.ru", "scdn.co",
     "cdnjs.smi2.ru", "selcdn.ru", "sentry-saas.rambler-co.ru", "sentry.io",
     "servicepipe.tech", "shazoo.ru", "sketchfab.com", "spotifycdn.com",
-    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com", "ssl-images-amazon.com",
-    "supercdn.ru",
+    "squarespace.com", "squarespace-cdn.com", "sqspcdn.com",
+    "ssl-images-amazon.com", "supercdn.ru",
 
     # === T ===
     "t-static.ru", "t.me", "t2.ru", "tbank.ru", "telegram.org",
@@ -177,7 +177,7 @@ NEVER_BLOCK_DOMAINS = [
     "twimg.com", "twitter.com",
     
     # === U ===
-    "unpkg.com",
+    "unpkg.com", "uxfeedback.ru",
     
     # === V ===
     "viafoura.co", "viafoura.net", "vimeo.com", "vimeocdn.com",
@@ -269,7 +269,7 @@ PROTECTED_FAMILIES = [
     "rutube.ru",
 
     # === S ===
-    "sbrf.ru", "sendsay.ru", "sports.ru", "spotify.com",
+    "sbrf.ru", "sendsay.ru", "sports.ru", "spot.im", "spotify.com",
 
     # === T ===
     "t-j.ru", "tinkoffjournal.ru", "tbank-online.com", "tchibo.de", "techradar.com",
@@ -283,7 +283,7 @@ PROTECTED_FAMILIES = [
     "vdmsti.ru", "vedomosti.ru", "viqeo.tv",
 
     # === W ===
-    "wi-fi.ru", "wildberries.ru", "wistia.com",
+    "webvisor.org", "wi-fi.ru", "wildberries.ru", "wistia.com",
 
     # === X ===
     "x.com",
@@ -307,7 +307,7 @@ AD_APEX_BLACKLIST = [
     "33across.com", "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
-    "adsboosters.xyz", "acast.com", "advideo.ru", "a-mo.net",
+    "adsboosters.xyz", "advideo.ru", "a-mo.net",
     "acuityplatform.com", "acint.net", "addthis.com", "ad-delivery.net",
     "adentifi.com", "adform.net", "adhaven.com", "adhigh.net",
     "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
@@ -375,10 +375,10 @@ AD_APEX_BLACKLIST = [
     "marphezis.com", "marketgid.com", "measureadv.com", "media.net",
     "media6degrees.com", "mediadash.ru", "mediagotechnology.com", "mediago.io",
     "mediaintelligence.de", "mediaplex.com", "mediapunch.ru", "mediascope.net",
-    "mediatoday.ru", "merequartz.com", "mgid.com", "mindbox.ru",
-    "ml314.com", "mobilefuse.com", "moatads.com", "mobkoi.com",
-    "moe.video", "mookie1.com", "mousestone.biz", "moviead55.ru",
-    "mpartner.digital", "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
+    "mediatoday.ru", "merequartz.com", "mgid.com", "ml314.com",
+    "mobilefuse.com", "moatads.com", "mobkoi.com", "moe.video",
+    "mookie1.com", "mousestone.biz", "moviead55.ru", "mpartner.digital",
+    "mpsuadv.ru", "mrgcdn.ru", "myweb3id.io",
 
     # === N ===
     "nativetouch.io", "new-programmatic.com", "nextmillmedia.com", "nexus-network-systems.com",
@@ -413,7 +413,7 @@ AD_APEX_BLACKLIST = [
     "skimresources.com", "skcrtxr.com", "smartadserver.com", "smartcallback.ru",
     "smartytech.io", "smi2.ru", "smi2cdn.ru", "smi2.net",
     "smilewanted.com", "sonobi.com", "sparrow.ru", "sportradarserving.com",
-    "spot.im", "spotxchange.com", "springserve.com", "srvsynd.com",
+    "spotxchange.com", "springserve.com", "srvsynd.com",
     "stableid.online", "stbid.ru", "stickyadstv.com", "sundaysky.com",
     "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
@@ -518,6 +518,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === S ===
     r"^ext\.clickstream\.sbrf\.ru$",                   # Clickstream Сбера
     r"^(target|exad)\.smi2\.[a-z]+$",
+    r"^api-ssp\.spot\.im$",
 
     # === T ===
     r"^tagm\.tchibo\.de$",
@@ -530,6 +531,8 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     r"^stats?\.vk-portal\.net$",                       # Статистика VK
     r"^(?:stats|metrics)\.viqeo\.tv$",
 
+    # === W ===
+
     # === Y ===
 
     # === Yahoo ===
@@ -539,7 +542,7 @@ STRICT_SUBDOMAINS_BLACKLIST_PATTERNS = [
     # === Yandex ===
     (
         r"(?:^|\.)(?:"
-        r"an|mdd|mc|ads|awaps|bs|context|direct|pagead|uaas"
+        r"an|mdd|ads|awaps|bs|context|direct|pagead|uaas"
         r"|abt\.s3"
         r")\.yandex\.[a-z]+$"
     ),

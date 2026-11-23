@@ -53,9 +53,6 @@
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
 0.0.0.0 t.dsp.abdm.ru
 0.0.0.0 phoenix.prod.ateam.acast.cloud
-0.0.0.0 cdn.acast.com
-0.0.0.0 embed.acast.com
-0.0.0.0 thumborcdn.acast.com
 0.0.0.0 acint.net
 0.0.0.0 mc.acint.net
 0.0.0.0 rtbw.acint.net
@@ -832,10 +829,6 @@
 0.0.0.0 sync.dmp.melvad.com
 0.0.0.0 rtb.mfadsrvr.com
 0.0.0.0 cm.mgid.com
-0.0.0.0 mindbox.ru
-0.0.0.0 api.mindbox.ru
-0.0.0.0 web-static.mindbox.ru
-0.0.0.0 api.b.mindbox.ru
 0.0.0.0 t-de.mindtake.com
 0.0.0.0 t.mindtake.com
 0.0.0.0 cs-rtb.minutemedia-prebid.com
@@ -942,7 +935,6 @@
 0.0.0.0 pixel.onaudience.com
 0.0.0.0 g.oncehuman.game
 0.0.0.0 impressions.onelink.me
-0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
 0.0.0.0 geolocation.onetrust.com
@@ -1322,12 +1314,7 @@
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 use.sportradarserving.com
-0.0.0.0 spot.im
-0.0.0.0 api-2-0.spot.im
 0.0.0.0 api-ssp.spot.im
-0.0.0.0 launcher.spot.im
-0.0.0.0 publisher-assets.spot.im
-0.0.0.0 static-cdn.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
@@ -1471,8 +1458,6 @@
 0.0.0.0 r.utraff.com
 0.0.0.0 a.utraff.info
 0.0.0.0 s.uuidksinc.net
-0.0.0.0 cdn.uxfeedback.ru
-0.0.0.0 widget-api.uxfeedback.ru
 0.0.0.0 engage.vanilla.tools
 0.0.0.0 vdo.ai
 0.0.0.0 ortb.vdo.ai
@@ -1547,7 +1532,6 @@
 0.0.0.0 calltouch.weborama.io
 0.0.0.0 webshell.lol
 0.0.0.0 webtransit.live
-0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
 0.0.0.0 tms.dmp.wi-fi.ru
@@ -1573,7 +1557,6 @@
 0.0.0.0 mdd.yandex.net
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
-0.0.0.0 mc.yandex.ru
 0.0.0.0 uaas.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 yellowblue.io
