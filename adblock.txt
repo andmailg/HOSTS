@@ -20,6 +20,7 @@
 ||a-mo.net^
 ||id.a-mx.com^
 ||s.a-traffic.net^
+||s01.a-traffic.net^
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
 ||t.dsp.abdm.ru^
 ||phoenix.prod.ateam.acast.cloud^
@@ -237,6 +238,7 @@
 ||bttrack.com^
 ||bumlam.com^
 ||buzzoola.com^
+||adserver.cadent.app^
 ||cs.ssp.cadent.com^
 ||dcs.ssp.cadent.com^
 ||e1.ssp.cadent.com^
@@ -281,6 +283,7 @@
 ||i.clean.gg^
 ||sync.cleverwebdata.com^
 ||aorta.clickagy.com^
+||as.cluep.com^
 ||c.clvrads.com^
 ||cnb.cnews.ru^
 ||beacon.lynx.cognitivlabs.com^
@@ -391,6 +394,7 @@
 ||sync-tm.everesttech.net^
 ||c.evidon.com^
 ||l.evidon.com^
+||swim.excellentwave.me^
 ||load77.exelator.com^
 ||loadm.exelator.com^
 ||loadus.exelator.com^
@@ -400,6 +404,9 @@
 ||d9.flashtalking.com^
 ||secure.flashtalking.com^
 ||servedby.flashtalking.com^
+||p.flipp.com^
+||cdn-gateflipp.flippback.com^
+||frontend-logger.flippback.com^
 ||floxis.tech^
 ||analytics.fontanka.ru^
 ||cdn.ftd.agency^
@@ -475,6 +482,8 @@
 ||cis.infox.sg^
 ||rb.infox.sg^
 ||cs.ingage.tech^
+||i.ingage.tech^
+||sevents.ingage.tech^
 ||sync.ingage.tech^
 ||usync.ingage.tech^
 ||visit-server.inmobi-choice.io^
@@ -525,8 +534,11 @@
 ||idx.liadm.com^
 ||rp.liadm.com^
 ||rp4.liadm.com^
+||media.licdn.com^
+||static.licdn.com^
 ||pool.liftdsp.com^
 ||lijit.com^
+||rtb-us-east.linkedin.com^
 ||rtb.linkedin.com^
 ||px.ads.linkedin.com^
 ||api.linkitbe.ru^
@@ -647,6 +659,7 @@
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||pixel.onaudience.com^
+||g.oncehuman.game^
 ||impressions.onelink.me^
 ||cdn.onesignal.com^
 ||onetag-sys.com^
@@ -846,6 +859,7 @@
 ||cadmus2.script.ac^
 ||sonar-blank.script.ac^
 ||sonar-xp.script.ac^
+||sonar.script.ac^
 ||api4.searchbooster.io^
 ||cdn.searchbooster.io^
 ||api.searchbooster.net^
@@ -876,6 +890,7 @@
 ||eqt-gc.rendering.sharethrough.com^
 ||us.shb-sync.com^
 ||us4.shb-sync.com^
+||pro.services.external.data.shopfully.com^
 ||shopnetic.com^
 ||ck.silvermob.com^
 ||um.simpli.fi^
@@ -918,7 +933,7 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||use.sportradarserving.com^
-||api-ssp.spot.im^
+||spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
@@ -926,6 +941,7 @@
 ||sync.srv.stackadapt.com^
 ||stat-sputnik.ru^
 ||stat.media^
+||statad.ru^
 ||statmedia.ru^
 ||stbid.ru^
 ||ads.stickyadstv.com^
@@ -942,8 +958,10 @@
 ||s2s.t13.io^
 ||cdn.taboola-display.com^
 ||api.taboola.com^
+||beacon.taboola.com^
 ||cdn.taboola.com^
 ||cds.taboola.com^
+||ch-trc-events.taboola.com^
 ||images.taboola.com^
 ||pips.taboola.com^
 ||pm-widget.taboola.com^
@@ -1102,6 +1120,7 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||geo.yahoo.com^
+||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^

@@ -49,6 +49,7 @@
 0.0.0.0 use3-sync.a-mo.net
 0.0.0.0 id.a-mx.com
 0.0.0.0 s.a-traffic.net
+0.0.0.0 s01.a-traffic.net
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
 0.0.0.0 t.dsp.abdm.ru
 0.0.0.0 phoenix.prod.ateam.acast.cloud
@@ -358,6 +359,7 @@
 0.0.0.0 buzzoola.com
 0.0.0.0 exchange.buzzoola.com
 0.0.0.0 tube.buzzoola.com
+0.0.0.0 adserver.cadent.app
 0.0.0.0 cs.ssp.cadent.com
 0.0.0.0 dcs.ssp.cadent.com
 0.0.0.0 e1.ssp.cadent.com
@@ -420,6 +422,7 @@
 0.0.0.0 i.clean.gg
 0.0.0.0 sync.cleverwebdata.com
 0.0.0.0 aorta.clickagy.com
+0.0.0.0 as.cluep.com
 0.0.0.0 c.clvrads.com
 0.0.0.0 cnb.cnews.ru
 0.0.0.0 beacon.lynx.cognitivlabs.com
@@ -583,6 +586,7 @@
 0.0.0.0 sync-tm.everesttech.net
 0.0.0.0 c.evidon.com
 0.0.0.0 l.evidon.com
+0.0.0.0 swim.excellentwave.me
 0.0.0.0 load77.exelator.com
 0.0.0.0 loadm.exelator.com
 0.0.0.0 loadus.exelator.com
@@ -592,6 +596,9 @@
 0.0.0.0 d9.flashtalking.com
 0.0.0.0 secure.flashtalking.com
 0.0.0.0 servedby.flashtalking.com
+0.0.0.0 p.flipp.com
+0.0.0.0 cdn-gateflipp.flippback.com
+0.0.0.0 frontend-logger.flippback.com
 0.0.0.0 floxis.tech
 0.0.0.0 px-us-e.floxis.tech
 0.0.0.0 analytics.fontanka.ru
@@ -702,6 +709,8 @@
 0.0.0.0 cis.infox.sg
 0.0.0.0 rb.infox.sg
 0.0.0.0 cs.ingage.tech
+0.0.0.0 i.ingage.tech
+0.0.0.0 sevents.ingage.tech
 0.0.0.0 sync.ingage.tech
 0.0.0.0 usync.ingage.tech
 0.0.0.0 visit-server.inmobi-choice.io
@@ -755,6 +764,8 @@
 0.0.0.0 idx.liadm.com
 0.0.0.0 rp.liadm.com
 0.0.0.0 rp4.liadm.com
+0.0.0.0 media.licdn.com
+0.0.0.0 static.licdn.com
 0.0.0.0 pool.liftdsp.com
 0.0.0.0 lijit.com
 0.0.0.0 ap.lijit.com
@@ -763,6 +774,7 @@
 0.0.0.0 ce.lijit.com
 0.0.0.0 red-n.stg-adv.lijit.com
 0.0.0.0 ruby-n.stg-adv.lijit.com
+0.0.0.0 rtb-us-east.linkedin.com
 0.0.0.0 rtb.linkedin.com
 0.0.0.0 px.ads.linkedin.com
 0.0.0.0 api.linkitbe.ru
@@ -928,6 +940,7 @@
 0.0.0.0 visitor.us-east4.gcp.omnitagjs.com
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
+0.0.0.0 g.oncehuman.game
 0.0.0.0 impressions.onelink.me
 0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
@@ -1205,6 +1218,7 @@
 0.0.0.0 cadmus2.script.ac
 0.0.0.0 sonar-blank.script.ac
 0.0.0.0 sonar-xp.script.ac
+0.0.0.0 sonar.script.ac
 0.0.0.0 api4.searchbooster.io
 0.0.0.0 cdn.searchbooster.io
 0.0.0.0 api.searchbooster.net
@@ -1236,6 +1250,7 @@
 0.0.0.0 eqt-gc.rendering.sharethrough.com
 0.0.0.0 us.shb-sync.com
 0.0.0.0 us4.shb-sync.com
+0.0.0.0 pro.services.external.data.shopfully.com
 0.0.0.0 shopnetic.com
 0.0.0.0 ck.silvermob.com
 0.0.0.0 um.simpli.fi
@@ -1307,7 +1322,12 @@
 0.0.0.0 sync.sparteo.com
 0.0.0.0 cdn.speedcurve.com
 0.0.0.0 use.sportradarserving.com
+0.0.0.0 spot.im
+0.0.0.0 api-2-0.spot.im
 0.0.0.0 api-ssp.spot.im
+0.0.0.0 launcher.spot.im
+0.0.0.0 publisher-assets.spot.im
+0.0.0.0 static-cdn.spot.im
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
@@ -1315,6 +1335,7 @@
 0.0.0.0 sync.srv.stackadapt.com
 0.0.0.0 stat-sputnik.ru
 0.0.0.0 stat.media
+0.0.0.0 statad.ru
 0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 2002--slt.stbid.ru
@@ -1334,8 +1355,10 @@
 0.0.0.0 s2s.t13.io
 0.0.0.0 cdn.taboola-display.com
 0.0.0.0 api.taboola.com
+0.0.0.0 beacon.taboola.com
 0.0.0.0 cdn.taboola.com
 0.0.0.0 cds.taboola.com
+0.0.0.0 ch-trc-events.taboola.com
 0.0.0.0 images.taboola.com
 0.0.0.0 pips.taboola.com
 0.0.0.0 pm-widget.taboola.com
@@ -1536,6 +1559,7 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
