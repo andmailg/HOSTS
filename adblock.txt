@@ -24,9 +24,6 @@
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
 ||t.dsp.abdm.ru^
 ||phoenix.prod.ateam.acast.cloud^
-||cdn.acast.com^
-||embed.acast.com^
-||thumborcdn.acast.com^
 ||acint.net^
 ||track.activemetering.com^
 ||openx-ums.acuityplatform.com^
@@ -184,7 +181,6 @@
 ||attentionxyz.com^
 ||atwola.com^
 ||ads.avads.net^
-||www.awin1.com^
 ||cookiesync.axis-marketplace.com^
 ||ay.delivery^
 ||adsdkprod.azureedge.net^
@@ -534,8 +530,6 @@
 ||idx.liadm.com^
 ||rp.liadm.com^
 ||rp4.liadm.com^
-||media.licdn.com^
-||static.licdn.com^
 ||pool.liftdsp.com^
 ||lijit.com^
 ||rtb-us-east.linkedin.com^
@@ -581,7 +575,6 @@
 ||sync.dmp.melvad.com^
 ||rtb.mfadsrvr.com^
 ||cm.mgid.com^
-||mindbox.ru^
 ||t-de.mindtake.com^
 ||t.mindtake.com^
 ||cs-rtb.minutemedia-prebid.com^
@@ -629,7 +622,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -659,7 +651,6 @@
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
 ||pixel.onaudience.com^
-||g.oncehuman.game^
 ||impressions.onelink.me^
 ||cdn.onesignal.com^
 ||onetag-sys.com^
@@ -890,6 +881,7 @@
 ||eqt-gc.rendering.sharethrough.com^
 ||us.shb-sync.com^
 ||us4.shb-sync.com^
+||bar.shinysail.com^
 ||pro.services.external.data.shopfully.com^
 ||shopnetic.com^
 ||ck.silvermob.com^
@@ -920,6 +912,7 @@
 ||smi2.net^
 ||smi2.ru^
 ||static1.smi2cdn.ru^
+||static2.smi2cdn.ru^
 ||static4.smi2cdn.ru^
 ||static5.smi2cdn.ru^
 ||static6.smi2cdn.ru^
@@ -933,7 +926,7 @@
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
 ||use.sportradarserving.com^
-||spot.im^
+||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
@@ -1008,7 +1001,6 @@
 ||tracookiepixel.xyz^
 ||traffaret.com^
 ||yahoo2.global.transmit.live^
-||sentry.travelata.ru^
 ||ads.travelaudience.com^
 ||www.travelpayouts.com^
 ||partners.tremorhub.com^
@@ -1028,7 +1020,6 @@
 ||collector-45958.tvsquared.com^
 ||de.tynt.com^
 ||hde.tynt.com^
-||u-login.com^
 ||uncn.jp^
 ||ads.undertone.com^
 ||cdn.undertone.com^
@@ -1039,6 +1030,7 @@
 ||farm.uniquebranch.com^
 ||targeting.unrulymedia.com^
 ||upravel.com^
+||flo.uri.sh^
 ||a.usbrowserspeed.com^
 ||falcon.useinsider.com^
 ||image.useinsider.com^
@@ -1061,8 +1053,6 @@
 ||r.utraff.com^
 ||a.utraff.info^
 ||s.uuidksinc.net^
-||cdn.uxfeedback.ru^
-||widget-api.uxfeedback.ru^
 ||engage.vanilla.tools^
 ||vdo.ai^
 ||st.ads.prod.vdsprts.ru^
@@ -1108,7 +1098,6 @@
 ||calltouch.weborama.io^
 ||webshell.lol^
 ||webtransit.live^
-||mc.webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
@@ -1120,14 +1109,13 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||geo.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
-||mc.yandex.com^
+||video-api.yql.yahoo.com^
 ||mdd.yandex.net^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^

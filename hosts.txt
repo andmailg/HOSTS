@@ -930,8 +930,10 @@
 0.0.0.0 heartbeats.omtrdc.net
 0.0.0.0 pixel.onaudience.com
 0.0.0.0 impressions.onelink.me
+0.0.0.0 cdn.onesignal.com
 0.0.0.0 onetag-sys.com
 0.0.0.0 pixel.dsp.onetarget.ru
+0.0.0.0 geolocation.onetrust.com
 0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
@@ -1026,6 +1028,7 @@
 0.0.0.0 rainbet.post-view.com
 0.0.0.0 trck.postbank.de
 0.0.0.0 jadserve.postrelease.com
+0.0.0.0 service.pravo.ru
 0.0.0.0 presage.io
 0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
@@ -1235,6 +1238,7 @@
 0.0.0.0 eqt-gc.rendering.sharethrough.com
 0.0.0.0 us.shb-sync.com
 0.0.0.0 us4.shb-sync.com
+0.0.0.0 bar.shinysail.com
 0.0.0.0 pro.services.external.data.shopfully.com
 0.0.0.0 shopnetic.com
 0.0.0.0 ck.silvermob.com
@@ -1292,6 +1296,7 @@
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
 0.0.0.0 static1.smi2cdn.ru
+0.0.0.0 static2.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
 0.0.0.0 static5.smi2cdn.ru
 0.0.0.0 static6.smi2cdn.ru
@@ -1392,6 +1397,7 @@
 0.0.0.0 cdn.traffaret.com
 0.0.0.0 yahoo2.global.transmit.live
 0.0.0.0 ads.travelaudience.com
+0.0.0.0 www.travelpayouts.com
 0.0.0.0 partners.tremorhub.com
 0.0.0.0 a.tribalfusion.com
 0.0.0.0 s.tribalfusion.com
@@ -1426,6 +1432,7 @@
 0.0.0.0 sync.targeting.unrulymedia.com
 0.0.0.0 upravel.com
 0.0.0.0 sync.upravel.com
+0.0.0.0 flo.uri.sh
 0.0.0.0 a.usbrowserspeed.com
 0.0.0.0 falcon.useinsider.com
 0.0.0.0 image.useinsider.com
@@ -1533,7 +1540,6 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1543,10 +1549,11 @@
 0.0.0.0 signal-service.pbs.yahoo.com
 0.0.0.0 tb.pbs.yahoo.com
 0.0.0.0 ups.analytics.yahoo.com
-0.0.0.0 mc.yandex.com
+0.0.0.0 video-api.yql.yahoo.com
 0.0.0.0 mdd.yandex.net
 0.0.0.0 abt.s3.yandex.net
 0.0.0.0 an.yandex.ru
+0.0.0.0 mc.yandex.ru
 0.0.0.0 uaas.yandex.ru
 0.0.0.0 log.strm.yandex.ru
 0.0.0.0 yellowblue.io
@@ -1588,4 +1595,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 pxl.connexity.net
