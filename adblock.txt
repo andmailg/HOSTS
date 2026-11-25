@@ -250,6 +250,7 @@
 ||cdn.celtra.com^
 ||celtraidentity.com^
 ||ceros.com^
+||factors.championat.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -400,6 +401,7 @@
 ||d9.flashtalking.com^
 ||secure.flashtalking.com^
 ||servedby.flashtalking.com^
+||fetch.fleskoran.xyz^
 ||p.flipp.com^
 ||cdn-gateflipp.flippback.com^
 ||frontend-logger.flippback.com^
@@ -622,6 +624,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -741,9 +744,10 @@
 ||cm.pxltag.com^
 ||q-bid.ru^
 ||match.qtarget.tech^
-||rules.quantcount.com^
+||quantcount.com^
 ||cms.quantserve.com^
 ||exch.quantserve.com^
+||pixel.quantserve.com^
 ||secure.quantserve.com^
 ||quotiq.ru^
 ||cdn-irec.r-99.com^
@@ -906,6 +910,7 @@
 ||www.smartadserver.com^
 ||rtbvast.us-east1-1.smartadserver.com^
 ||tracking.us-east1-1.smartadserver.com^
+||tracking.us-west1-1.smartadserver.com^
 ||smartcallback.ru^
 ||smartytech.io^
 ||bidder.smartytouch.co^
@@ -925,7 +930,9 @@
 ||sparrow.ru^
 ||sync.sparteo.com^
 ||cdn.speedcurve.com^
+||ads.sportradar.com^
 ||use.sportradarserving.com^
+||usw.sportradarserving.com^
 ||api-ssp.spot.im^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
@@ -946,6 +953,7 @@
 ||ssp.surfy.space^
 ||x.surfy.space^
 ||widget.svk-native.ru^
+||lid.sweetlion.me^
 ||syncingbridge.com^
 ||vp-content-api.t-pulse.ru^
 ||s2s.t13.io^
@@ -1115,11 +1123,9 @@
 ||c2shb-oao.ssp.yahoo.com^
 ||opus.analytics.yahoo.com^
 ||ups.analytics.yahoo.com^
-||video-api.yql.yahoo.com^
 ||mdd.yandex.net^
 ||abt.s3.yandex.net^
 ||an.yandex.ru^
-||mc.yandex.ru^
 ||uaas.yandex.ru^
 ||log.strm.yandex.ru^
 ||yellowblue.io^
