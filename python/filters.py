@@ -287,7 +287,7 @@ PROTECTED_FAMILIES = [
     "vdmsti.ru", "vedomosti.ru", "viqeo.tv",
 
     # === W ===
-    "webvisor.org", "wi-fi.ru", "wildberries.ru", "wistia.com",
+    "wi-fi.ru", "wildberries.ru", "wistia.com",
 
     # === X ===
     "x.com",
@@ -311,18 +311,18 @@ AD_APEX_BLACKLIST = [
     "33across.com", "3lift.com", "4dex.io", "360yield.com",
 
     # === A ===
-    "adkit-advertising.amazon", "adsboosters.xyz", "advideo.ru", "a-mo.net",
-    "acuityplatform.com", "acint.net", "addthis.com", "ad-delivery.net",
-    "adentifi.com", "adform.net", "adhaven.com", "adhigh.net",
-    "adiam.tech", "adition.com", "adkernel.com", "adlook.online",
-    "adlook.tech", "admanmedia.com", "admaster.cc", "admatic.com.tr",
-    "admatic.de", "admixer.net", "adnxs.com", "adseedtech.com",
-    "adsafeprotected.com", "adspector.io", "adsource.pro", "adsp.io",
-    "adsrvr.org", "adtarget.biz", "advcake.ru", "adverticum.com",
-    "adfox.ru", "adx.com.ru", "agkn.com", "aidata.io",
-    "alcmpn.com", "alfasense.com", "amazon-adsystem.com", "amx1.net",
-    "aniview.com", "apester.com", "appier.net", "appsflyersdk.com",
-    "applovin.com", "api-taboola.com", "arcspire.io",
+    "a-traffic.net", "adkit-advertising.amazon", "adsboosters.xyz", "advideo.ru",
+    "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
+    "ad-delivery.net", "adentifi.com", "adform.net", "adhaven.com",
+    "adhigh.net", "adiam.tech", "adition.com", "adkernel.com",
+    "adlook.online", "adlook.tech", "admanmedia.com", "admaster.cc",
+    "admatic.com.tr", "admatic.de", "admixer.net", "adnxs.com",
+    "adseedtech.com", "adsafeprotected.com", "adspector.io", "adsource.pro",
+    "adsp.io", "adsrvr.org", "adtarget.biz", "advcake.ru",
+    "adverticum.com", "adfox.ru", "adx.com.ru", "agkn.com",
+    "aidata.io", "alcmpn.com", "alfasense.com", "amazon-adsystem.com",
+    "amx1.net", "aniview.com", "apester.com", "appier.net",
+    "appsflyersdk.com", "applovin.com", "api-taboola.com", "arcspire.io",
     "atwola.com", "axis-marketplace.com",
 
     # === B ===
@@ -422,7 +422,7 @@ AD_APEX_BLACKLIST = [
     "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
-    "taboola.com", "tagsrvcs.com", "tapad.com", "targetads.io",
+    "taboola.com", "tagsrvcs.com", "tapad.com", "tappx.com", "targetads.io",
     "targetrtb.com", "teads.tv", "teads-xo.com", "telecid.ru",
     "terratraf.com", "thrtle.com", "tinypass.com", "tns-counter.ru",
     "traffaret.com", "trafmag.com", "tracookiepixel.xyz", "travelaudience.com",
@@ -441,8 +441,8 @@ AD_APEX_BLACKLIST = [
     "voxexchange.io",
 
     # === W ===
-    "weborama.fr", "weborama-tech.ru", "weborama.io", "whiteboxdigital.ru",
-    "woodfrost.info",
+    "weborama.fr", "weborama-tech.ru", "weborama.io", "webvisor.org",
+    "whiteboxdigital.ru", "woodfrost.info",
 
     # === X ===
     "xoalt.com",

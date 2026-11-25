@@ -1607,3 +1607,9 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 mc.webvisor.org
+0.0.0.0 webvisor.org
+0.0.0.0 ssp.api.tappx.com
+0.0.0.0 tappx.com
+0.0.0.0 s.a-traffic.net
+0.0.0.0 a-traffic.net
