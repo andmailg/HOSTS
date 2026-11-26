@@ -309,16 +309,17 @@ AD_APEX_BLACKLIST = [
     # === Цифры / Прочее ===
     "1dmp.io", "2mdn.net", "24smi.net", "24smi.info",
     "33across.com", "3lift.com", "4dex.io", "360yield.com",
+    "360playvid.com",
 
     # === A ===
     "a-traffic.net", "adkit-advertising.amazon", "adsboosters.xyz", "advideo.ru",
     "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
-    "ad-delivery.net", "adentifi.com", "adform.net", "adhaven.com",
+    "ad-delivery.net", "addslice.com", "adentifi.com", "adform.net", "adhaven.com",
     "adhigh.net", "adiam.tech", "adition.com", "adkernel.com",
     "adlook.online", "adlook.tech", "admanmedia.com", "admaster.cc",
     "admatic.com.tr", "admatic.de", "admixer.net", "adnxs.com",
-    "adseedtech.com", "adsafeprotected.com", "adspector.io", "adsource.pro",
-    "adsp.io", "adsrvr.org", "adtarget.biz", "advcake.ru",
+    "adscale.de", "adseedtech.com", "adsafeprotected.com", "adspector.io", "adsource.pro",
+    "adsp.io", "adsrvr.org", "adswizz.com", "adtarget.biz", "advcake.ru",
     "adverticum.com", "adfox.ru", "adx.com.ru", "agkn.com",
     "aidata.io", "alcmpn.com", "alfasense.com", "amazon-adsystem.com",
     "amx1.net", "aniview.com", "apester.com", "appier.net",
@@ -328,7 +329,7 @@ AD_APEX_BLACKLIST = [
     # === B ===
     "bannernow.com", "bestdahlia.com", "betweendigital.com", "bidderstack.com",
     "bidswitch.net", "bidvol.com", "binsiad.com", "blismedia.com",
-    "blockboardtech.com", "brandmetrics.com", "bricks-co.com",
+    "blockboardtech.com", "bmtrcs.com", "brandmetrics.com", "bricks-co.com",
     "bumlam.com", "buzzoola.com", "bringads.ru", "btrll.com",
 
     # === C ===
@@ -339,7 +340,7 @@ AD_APEX_BLACKLIST = [
     "crashguard.me", "crwdcntrl.net", "ctnsnet.com", "cxense.com",
 
     # === D ===
-    "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
+    "datacygnal.io", "demdex.net", "digitaltarget.ru", "dmxleo.com", "dotmetrics.net",
     "dotomi.com", "doubleclick.net", "doubleverify.com", "dv.tech",
     "dynotech.io",
 
@@ -347,20 +348,20 @@ AD_APEX_BLACKLIST = [
     "eskimi.com", "everesttech.net", "exelator.com", "eyeota.net",
 
     # === F ===
-    "facecast.net", "flashtalking.com", "fpjscdn.net",
+    "facecast.net", "feedad.com", "fidelity-media.com", "flashtalking.com", "fpjscdn.net",
     "fwmrm.net", "ftd.agency",
 
     # === G ===
     "gamoshi.io", "giraff.io", "giraff.media", "gnezdo.ru",
     "gonet-ads.com", "google-analytics.com", "googleadservices.com", "googleoptimize.com",
-    "googlesyndication.com", "googletagservices.com", "gumgum.com",
+    "googlesyndication.com", "googletagservices.com", "gssprt.jp", "gumgum.com", "gwallet.com",
 
     # === H ===
     "hbrd.io", "hybrid.ai",
 
     # === I ===
     "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com",
-    "indexww.com", "infolinks.com", "infox.sg", "injectoften.com",
+    "indexww.com", "infolinks.com", "infox.sg", "ingage.tech", "injectoften.com",
     "inmobi.com", "insiad.com", "intent.ai", "iqm.com",
     "iqzone.com",
 
@@ -397,8 +398,8 @@ AD_APEX_BLACKLIST = [
 
     # === P ===
     "pathtosuccess.global", "perfluence.net", "permutive.app", "permutive.com",
-    "piano.io", "pippio.com", "plusoneads.com", "polarcdn-terrax.com ",
-    "postrelease.com", "presage.io", "prmutv.co", "pro-market.net",
+    "piano.io", "pippio.com", "playdigo.com", "plusoneads.com", "polarcdn-terrax.com ",
+    "postrelease.com", "presage.io", "primis.tech", "prmutv.co", "pro-market.net",
     "prodmp.ru", "profilemkt.com", "programmatica.com", "programmaticx.ai",
     "pubmatic.com", "punchmedia.ru", "push4site.com", "positivecello.com",
 
@@ -417,8 +418,8 @@ AD_APEX_BLACKLIST = [
     "skimresources.com", "skcrtxr.com", "smartadserver.com", "smartcallback.ru",
     "smartytech.io", "smi2.ru", "smi2cdn.ru", "smi2.net",
     "smilewanted.com", "sonobi.com", "sparrow.ru", "sportradarserving.com",
-    "spotxchange.com", "springserve.com", "srvsynd.com",
-    "stableid.online", "stbid.ru", "stickyadstv.com", "sundaysky.com",
+    "spotxchange.com", "springserve.com", "srvsynd.com", 
+    "stableid.online", "stellormedia.com", "stbid.ru", "stickyadstv.com", "sundaysky.com",
     "suprion.ru", "svk-native.ru", "syncingbridge.com",
 
     # === T ===
