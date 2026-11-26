@@ -1,6 +1,7 @@
 0.0.0.0 cs.152media-ssp.com
 0.0.0.0 1dmp.io
 0.0.0.0 sync.1dmp.io
+0.0.0.0 a-ams-new.1rx.io
 0.0.0.0 a-iad3.1rx.io
 0.0.0.0 sync.1rx.io
 0.0.0.0 24smi.info
@@ -48,6 +49,7 @@
 0.0.0.0 sync.a-mo.net
 0.0.0.0 use3-sync.a-mo.net
 0.0.0.0 id.a-mx.com
+0.0.0.0 a-traffic.net
 0.0.0.0 s.a-traffic.net
 0.0.0.0 s01.a-traffic.net
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
@@ -136,6 +138,7 @@
 0.0.0.0 functions.adnami.io
 0.0.0.0 macro.adnami.io
 0.0.0.0 z.cdn.adnetwork.bet
+0.0.0.0 sync.adnimation.com
 0.0.0.0 rb.adnxs-simple.com
 0.0.0.0 zne1-ib.adnxs-simple.com
 0.0.0.0 adnxs.com
@@ -201,7 +204,9 @@
 0.0.0.0 adtarget.biz
 0.0.0.0 dsp-service.adtarget.biz
 0.0.0.0 prebid.adtarget.biz
+0.0.0.0 ads21.console.adtarget.com.tr
 0.0.0.0 s.console.adtarget.com.tr
+0.0.0.0 sync.console.adtarget.com.tr
 0.0.0.0 z.cdn.adtarget.market
 0.0.0.0 ads.adtec.ru
 0.0.0.0 cdn.adtec.ru
@@ -321,6 +326,8 @@
 0.0.0.0 us-east-1.event.prod.bidr.io
 0.0.0.0 ssp.bidster.net
 0.0.0.0 bidswitch.net
+0.0.0.0 gce-nl-sync.bidswitch.net
+0.0.0.0 ghent-gce-nl.bidswitch.net
 0.0.0.0 ghent-gce-or.bidswitch.net
 0.0.0.0 ghent-gce-sc.bidswitch.net
 0.0.0.0 r.bidswitch.net
@@ -334,6 +341,7 @@
 0.0.0.0 cdn.binsiad.com
 0.0.0.0 line55w.bk6bba-resources.com
 0.0.0.0 fastviewdata.bk6bba-resources.ru
+0.0.0.0 cookiesync.api.bliink.io
 0.0.0.0 tr.blismedia.com
 0.0.0.0 connect.blockboardtech.com
 0.0.0.0 cm.bluevoox.com
@@ -390,7 +398,7 @@
 0.0.0.0 media-s3-us-east-1.ceros.com
 0.0.0.0 media.ceros.com
 0.0.0.0 view.ceros.com
-0.0.0.0 factors.championat.com
+0.0.0.0 rtb.channelexco.com
 0.0.0.0 mab.chartbeat.com
 0.0.0.0 static.chartbeat.com
 0.0.0.0 chartbeat.net
@@ -424,6 +432,7 @@
 0.0.0.0 as.cluep.com
 0.0.0.0 c.clvrads.com
 0.0.0.0 cnb.cnews.ru
+0.0.0.0 ssp.qc.coccoc.com
 0.0.0.0 beacon.lynx.cognitivlabs.com
 0.0.0.0 colossusssp.com
 0.0.0.0 sync.colossusssp.com
@@ -442,6 +451,7 @@
 0.0.0.0 connexity.net
 0.0.0.0 cdn.contentspread.net
 0.0.0.0 bh.contextweb.com
+0.0.0.0 openrtb.cootlogix.com
 0.0.0.0 prebid.cootlogix.com
 0.0.0.0 prebidsrvr.cootlogix.com
 0.0.0.0 sync.cootlogix.com
@@ -534,6 +544,7 @@
 0.0.0.0 doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 static.doubleclick.net
+0.0.0.0 adx.g.doubleclick.net
 0.0.0.0 bid.g.doubleclick.net
 0.0.0.0 cm.g.doubleclick.net
 0.0.0.0 googleads.g.doubleclick.net
@@ -641,6 +652,7 @@
 0.0.0.0 fcgi7.gnezdo.ru
 0.0.0.0 news.gnezdo.ru
 0.0.0.0 rtb-dsp.gnezdo.ru
+0.0.0.0 zn5.gnezdo.ru
 0.0.0.0 gonet-ads.com
 0.0.0.0 sync.gonet-ads.com
 0.0.0.0 region1.google-analytics.com
@@ -670,6 +682,7 @@
 0.0.0.0 hbrd.io
 0.0.0.0 ssp.hbrd.io
 0.0.0.0 st.hbrd.io
+0.0.0.0 rtb.hhkld.com
 0.0.0.0 js.hostingradio.ru
 0.0.0.0 meta.hostingradio.ru
 0.0.0.0 hybrid.ai
@@ -690,6 +703,7 @@
 0.0.0.0 cs.ifedata.ru
 0.0.0.0 gurgle.ign.com
 0.0.0.0 kraken.ignimgs.com
+0.0.0.0 pg.ignimgs.com
 0.0.0.0 assets.ikhnaie.link
 0.0.0.0 assets.ikhnaie.me
 0.0.0.0 d.illuma-tech.com
@@ -737,6 +751,7 @@
 0.0.0.0 journeyswitch.work
 0.0.0.0 go-us8.jumptrk.org
 0.0.0.0 cdn.justpremium.com
+0.0.0.0 match.justpremium.com
 0.0.0.0 tracking.justpremium.com
 0.0.0.0 crb.kargo.com
 0.0.0.0 krk2.kargo.com
@@ -758,6 +773,7 @@
 0.0.0.0 gtrack.kueezssp.com
 0.0.0.0 track.kueezssp.com
 0.0.0.0 kwizly.com
+0.0.0.0 sync.lemmadigital.com
 0.0.0.0 d-code.liadm.com
 0.0.0.0 i.liadm.com
 0.0.0.0 i6.liadm.com
@@ -783,6 +799,7 @@
 0.0.0.0 lotus-dsp.ru
 0.0.0.0 a.lotus-dsp.ru
 0.0.0.0 cs.loudecho.ai
+0.0.0.0 lady.lovingmetal.com
 0.0.0.0 sync.lunamedia.live
 0.0.0.0 luxcdn.com
 0.0.0.0 s.luxcdn.com
@@ -924,6 +941,7 @@
 0.0.0.0 static7.olanola.com
 0.0.0.0 static8.olanola.com
 0.0.0.0 trk.olnl.net
+0.0.0.0 sync.omni-dex.io
 0.0.0.0 resources.omni-sync.io
 0.0.0.0 omnitagjs.com
 0.0.0.0 visitor-iqzone.omnitagjs.com
@@ -973,11 +991,13 @@
 0.0.0.0 pbs.optidigital.com
 0.0.0.0 optimizely.com
 0.0.0.0 cdn.optimizely.com
+0.0.0.0 cdn3.optimizely.com
 0.0.0.0 logx.optimizely.com
 0.0.0.0 rum.optimizely.com
 0.0.0.0 a4621041136.cdn.optimizely.com
 0.0.0.0 statistics.orbitatech.io
 0.0.0.0 tracker-shr.ortb.net
+0.0.0.0 tracker-zmd.ortb.net
 0.0.0.0 otclick-adv.ru
 0.0.0.0 otm-r.com
 0.0.0.0 spx.otm-r.com
@@ -1038,6 +1058,7 @@
 0.0.0.0 dsp-2.presage.io
 0.0.0.0 ms-cookie-sync.presage.io
 0.0.0.0 mweb-hb.presage.io
+0.0.0.0 cs.primis-tech.org
 0.0.0.0 live.primis.tech
 0.0.0.0 ats-wrapper.privacymanager.io
 0.0.0.0 geo.privacymanager.io
@@ -1054,6 +1075,7 @@
 0.0.0.0 vast.programmatica.com
 0.0.0.0 vpaid.programmatica.com
 0.0.0.0 sync.programmaticx.ai
+0.0.0.0 sync.pubfuture-ad.com
 0.0.0.0 pubmatic.com
 0.0.0.0 ads.pubmatic.com
 0.0.0.0 hbopenbid.pubmatic.com
@@ -1066,6 +1088,7 @@
 0.0.0.0 st.pubmatic.com
 0.0.0.0 ut.pubmatic.com
 0.0.0.0 vid.pubmatic.com
+0.0.0.0 sync.pubwise.io
 0.0.0.0 cdn.punchmedia.ru
 0.0.0.0 data.punchmedia.ru
 0.0.0.0 sys.punchmedia.ru
@@ -1139,6 +1162,7 @@
 0.0.0.0 rem-ads.tech
 0.0.0.0 tag.researchnow.com
 0.0.0.0 sync.resetdigital.co
+0.0.0.0 sync2.resetdigital.co
 0.0.0.0 cdn.retailads.net
 0.0.0.0 ads-yahoo.revjet.com
 0.0.0.0 cdn.revjet.com
@@ -1226,7 +1250,9 @@
 0.0.0.0 creatives.seedtag.com
 0.0.0.0 cs.seedtag.com
 0.0.0.0 s.seedtag.com
+0.0.0.0 t.seedtag.com
 0.0.0.0 video.seedtag.com
+0.0.0.0 euw1.s.seedtag.com
 0.0.0.0 video.seenthis.se
 0.0.0.0 px.segmel.com
 0.0.0.0 sync.selfclick.pro
@@ -1238,6 +1264,7 @@
 0.0.0.0 s.ads.servedbyopenx.org
 0.0.0.0 ads.servenobid.com
 0.0.0.0 public.servenobid.com
+0.0.0.0 e.serverbid.com
 0.0.0.0 sync.serverbid.com
 0.0.0.0 bs.serving-sys.ru
 0.0.0.0 ds.serving-sys.ru
@@ -1256,6 +1283,7 @@
 0.0.0.0 sitescout.com
 0.0.0.0 pixel-sync.sitescout.com
 0.0.0.0 skcrtxr.com
+0.0.0.0 b.skcrtxr.com
 0.0.0.0 cdn-c.skcrtxr.com
 0.0.0.0 cdn-roxot-seller.skcrtxr.com
 0.0.0.0 cdn-v.skcrtxr.com
@@ -1287,6 +1315,7 @@
 0.0.0.0 tracking.us-west1-1.smartadserver.com
 0.0.0.0 smartcallback.ru
 0.0.0.0 tracker.smartcallback.ru
+0.0.0.0 ad.sxp.smartclip.net
 0.0.0.0 smartytech.io
 0.0.0.0 server.smartytech.io
 0.0.0.0 bidder.smartytouch.co
@@ -1315,6 +1344,7 @@
 0.0.0.0 static8.smi2cdn.ru
 0.0.0.0 csync-apac.smilewanted.com
 0.0.0.0 csync.smilewanted.com
+0.0.0.0 tg.socdm.com
 0.0.0.0 solfrin.com
 0.0.0.0 sync.go.sonobi.com
 0.0.0.0 sparrow.ru
@@ -1326,6 +1356,7 @@
 0.0.0.0 use.sportradarserving.com
 0.0.0.0 usw.sportradarserving.com
 0.0.0.0 api-ssp.spot.im
+0.0.0.0 sync.spotim.market
 0.0.0.0 sync.search.spotxchange.com
 0.0.0.0 sync.springserve.com
 0.0.0.0 s.srvsynd.com
@@ -1369,6 +1400,7 @@
 0.0.0.0 tagsrvcs.com
 0.0.0.0 tapad.com
 0.0.0.0 pixel.tapad.com
+0.0.0.0 tappx.com
 0.0.0.0 ssp.api.tappx.com
 0.0.0.0 taptapnetworks.com
 0.0.0.0 cdn.targetads.io
@@ -1496,12 +1528,14 @@
 0.0.0.0 static.vidazoo.com
 0.0.0.0 ad.video-mech.ru
 0.0.0.0 b.videoamp.com
+0.0.0.0 x.videobyte.com
 0.0.0.0 a.videohead.tech
 0.0.0.0 adx.videonow.ru
 0.0.0.0 data.videonow.ru
 0.0.0.0 static.videonow.ru
 0.0.0.0 sync.videonow.ru
 0.0.0.0 a.vidoomy.com
+0.0.0.0 sync.sync.viewdeos.com
 0.0.0.0 vigo.tech
 0.0.0.0 api.vigo.tech
 0.0.0.0 cdn.vigo.tech
@@ -1514,10 +1548,14 @@
 0.0.0.0 cpm.vistarsagency.com
 0.0.0.0 stats.vk-portal.net
 0.0.0.0 rtb2-useast.voisetech.com
+0.0.0.0 rtb.voltaxam.com
 0.0.0.0 voxexchange.io
 0.0.0.0 cm-ssp.voxexchange.io
 0.0.0.0 ads.vqserve.com
 0.0.0.0 cdn.vqserve.com
+0.0.0.0 tracker.pre.vr-tb.com
+0.0.0.0 rtb.vrtcal.com
+0.0.0.0 tracker.ortb.vuukle.com
 0.0.0.0 warp90.com
 0.0.0.0 watchfeed.tv
 0.0.0.0 api.wavesend.ru
@@ -1543,6 +1581,8 @@
 0.0.0.0 calltouch.weborama.io
 0.0.0.0 webshell.lol
 0.0.0.0 webtransit.live
+0.0.0.0 webvisor.org
+0.0.0.0 mc.webvisor.org
 0.0.0.0 mitdmp.whiteboxdigital.ru
 0.0.0.0 s3.wi-fi.ru
 0.0.0.0 tms.dmp.wi-fi.ru
@@ -1607,9 +1647,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 mc.webvisor.org
-0.0.0.0 webvisor.org
-0.0.0.0 ssp.api.tappx.com
-0.0.0.0 tappx.com
-0.0.0.0 s.a-traffic.net
-0.0.0.0 a-traffic.net

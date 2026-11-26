@@ -2,6 +2,7 @@
 ! Каждое правило блокирует домен и ВСЕ его поддомены
 ||cs.152media-ssp.com^
 ||1dmp.io^
+||a-ams-new.1rx.io^
 ||a-iad3.1rx.io^
 ||sync.1rx.io^
 ||24smi.info^
@@ -19,8 +20,7 @@
 ||4dex.io^
 ||a-mo.net^
 ||id.a-mx.com^
-||s.a-traffic.net^
-||s01.a-traffic.net^
+||a-traffic.net^
 ||prod.tahoe-analytics.publishers.advertising.a2z.com^
 ||t.dsp.abdm.ru^
 ||phoenix.prod.ateam.acast.cloud^
@@ -90,6 +90,7 @@
 ||functions.adnami.io^
 ||macro.adnami.io^
 ||z.cdn.adnetwork.bet^
+||sync.adnimation.com^
 ||rb.adnxs-simple.com^
 ||zne1-ib.adnxs-simple.com^
 ||adnxs.com^
@@ -126,7 +127,9 @@
 ||adsrvr.org^
 ||ad.adsrvx-targeting.com^
 ||adtarget.biz^
+||ads21.console.adtarget.com.tr^
 ||s.console.adtarget.com.tr^
+||sync.console.adtarget.com.tr^
 ||z.cdn.adtarget.market^
 ||ads.adtec.ru^
 ||cdn.adtec.ru^
@@ -219,6 +222,7 @@
 ||cdn.binsiad.com^
 ||line55w.bk6bba-resources.com^
 ||fastviewdata.bk6bba-resources.ru^
+||cookiesync.api.bliink.io^
 ||tr.blismedia.com^
 ||connect.blockboardtech.com^
 ||cm.bluevoox.com^
@@ -250,7 +254,7 @@
 ||cdn.celtra.com^
 ||celtraidentity.com^
 ||ceros.com^
-||factors.championat.com^
+||rtb.channelexco.com^
 ||mab.chartbeat.com^
 ||static.chartbeat.com^
 ||chartbeat.net^
@@ -283,6 +287,7 @@
 ||as.cluep.com^
 ||c.clvrads.com^
 ||cnb.cnews.ru^
+||ssp.qc.coccoc.com^
 ||beacon.lynx.cognitivlabs.com^
 ||colossusssp.com^
 ||adx.com.ru^
@@ -299,6 +304,7 @@
 ||connexity.net^
 ||cdn.contentspread.net^
 ||bh.contextweb.com^
+||openrtb.cootlogix.com^
 ||prebid.cootlogix.com^
 ||prebidsrvr.cootlogix.com^
 ||sync.cootlogix.com^
@@ -453,6 +459,7 @@
 ||gumgum.com^
 ||cdn.hadronid.net^
 ||hbrd.io^
+||rtb.hhkld.com^
 ||js.hostingradio.ru^
 ||meta.hostingradio.ru^
 ||hybrid.ai^
@@ -463,6 +470,7 @@
 ||cs.ifedata.ru^
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
+||pg.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
 ||d.illuma-tech.com^
@@ -506,6 +514,7 @@
 ||journeyswitch.work^
 ||go-us8.jumptrk.org^
 ||cdn.justpremium.com^
+||match.justpremium.com^
 ||tracking.justpremium.com^
 ||crb.kargo.com^
 ||krk2.kargo.com^
@@ -526,6 +535,7 @@
 ||gtrack.kueezssp.com^
 ||track.kueezssp.com^
 ||kwizly.com^
+||sync.lemmadigital.com^
 ||d-code.liadm.com^
 ||i.liadm.com^
 ||i6.liadm.com^
@@ -543,6 +553,7 @@
 ||csync.loopme.me^
 ||lotus-dsp.ru^
 ||cs.loudecho.ai^
+||lady.lovingmetal.com^
 ||sync.lunamedia.live^
 ||luxcdn.com^
 ||ad.mail.ru^
@@ -650,6 +661,7 @@
 ||static7.olanola.com^
 ||static8.olanola.com^
 ||trk.olnl.net^
+||sync.omni-dex.io^
 ||resources.omni-sync.io^
 ||omnitagjs.com^
 ||heartbeats.omtrdc.net^
@@ -678,6 +690,7 @@
 ||optimizely.com^
 ||statistics.orbitatech.io^
 ||tracker-shr.ortb.net^
+||tracker-zmd.ortb.net^
 ||otclick-adv.ru^
 ||otm-r.com^
 ||outbrain.com^
@@ -716,6 +729,7 @@
 ||jadserve.postrelease.com^
 ||service.pravo.ru^
 ||presage.io^
+||cs.primis-tech.org^
 ||live.primis.tech^
 ||ats-wrapper.privacymanager.io^
 ||geo.privacymanager.io^
@@ -732,7 +746,9 @@
 ||vast.programmatica.com^
 ||vpaid.programmatica.com^
 ||sync.programmaticx.ai^
+||sync.pubfuture-ad.com^
 ||pubmatic.com^
+||sync.pubwise.io^
 ||cdn.punchmedia.ru^
 ||data.punchmedia.ru^
 ||sys.punchmedia.ru^
@@ -799,6 +815,7 @@
 ||rem-ads.tech^
 ||tag.researchnow.com^
 ||sync.resetdigital.co^
+||sync2.resetdigital.co^
 ||cdn.retailads.net^
 ||ads-yahoo.revjet.com^
 ||cdn.revjet.com^
@@ -864,6 +881,7 @@
 ||creatives.seedtag.com^
 ||cs.seedtag.com^
 ||s.seedtag.com^
+||t.seedtag.com^
 ||video.seedtag.com^
 ||video.seenthis.se^
 ||px.segmel.com^
@@ -876,6 +894,7 @@
 ||s.ads.servedbyopenx.org^
 ||ads.servenobid.com^
 ||public.servenobid.com^
+||e.serverbid.com^
 ||sync.serverbid.com^
 ||bs.serving-sys.ru^
 ||ds.serving-sys.ru^
@@ -912,6 +931,7 @@
 ||tracking.us-east1-1.smartadserver.com^
 ||tracking.us-west1-1.smartadserver.com^
 ||smartcallback.ru^
+||ad.sxp.smartclip.net^
 ||smartytech.io^
 ||bidder.smartytouch.co^
 ||smi2.net^
@@ -925,6 +945,7 @@
 ||static8.smi2cdn.ru^
 ||csync-apac.smilewanted.com^
 ||csync.smilewanted.com^
+||tg.socdm.com^
 ||solfrin.com^
 ||sync.go.sonobi.com^
 ||sparrow.ru^
@@ -934,6 +955,7 @@
 ||use.sportradarserving.com^
 ||usw.sportradarserving.com^
 ||api-ssp.spot.im^
+||sync.spotim.market^
 ||sync.search.spotxchange.com^
 ||sync.springserve.com^
 ||s.srvsynd.com^
@@ -973,7 +995,7 @@
 ||display.bidder.taboola.com^
 ||tagsrvcs.com^
 ||tapad.com^
-||ssp.api.tappx.com^
+||tappx.com^
 ||taptapnetworks.com^
 ||cdn.targetads.io^
 ||eye.targetads.io^
@@ -1074,12 +1096,14 @@
 ||static.vidazoo.com^
 ||ad.video-mech.ru^
 ||b.videoamp.com^
+||x.videobyte.com^
 ||a.videohead.tech^
 ||adx.videonow.ru^
 ||data.videonow.ru^
 ||static.videonow.ru^
 ||sync.videonow.ru^
 ||a.vidoomy.com^
+||sync.sync.viewdeos.com^
 ||vigo.tech^
 ||s.viieqcjw.com^
 ||s.viisfxlg.com^
@@ -1090,9 +1114,13 @@
 ||cpm.vistarsagency.com^
 ||stats.vk-portal.net^
 ||rtb2-useast.voisetech.com^
+||rtb.voltaxam.com^
 ||voxexchange.io^
 ||ads.vqserve.com^
 ||cdn.vqserve.com^
+||tracker.pre.vr-tb.com^
+||rtb.vrtcal.com^
+||tracker.ortb.vuukle.com^
 ||warp90.com^
 ||watchfeed.tv^
 ||api.wavesend.ru^
@@ -1106,6 +1134,7 @@
 ||calltouch.weborama.io^
 ||webshell.lol^
 ||webtransit.live^
+||webvisor.org^
 ||mitdmp.whiteboxdigital.ru^
 ||s3.wi-fi.ru^
 ||tms.dmp.wi-fi.ru^
