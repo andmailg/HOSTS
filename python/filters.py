@@ -362,8 +362,8 @@ AD_APEX_BLACKLIST = [
     # === I ===
     "ia.box", "id5-sync.com", "ifedata.ru", "imrworldwide.com",
     "indexww.com", "infolinks.com", "infox.sg", "ingage.tech", "injectoften.com",
-    "inmobi.com", "insiad.com", "intent.ai", "iqm.com",
-    "iqzone.com",
+    "inmobi.com", "insiad.com", "intent.ai", "intentiq.com",
+    "iqm.com", "iqzone.com",
 
     # === J ===
     "jumptrk.org",
@@ -398,7 +398,7 @@ AD_APEX_BLACKLIST = [
 
     # === P ===
     "pathtosuccess.global", "perfluence.net", "permutive.app", "permutive.com",
-    "piano.io", "pippio.com", "playdigo.com", "plusoneads.com", "polarcdn-terrax.com ",
+    "piano.io", "pippio.com", "pix.pub", "playdigo.com", "plusoneads.com", "polarcdn-terrax.com ",
     "postrelease.com", "presage.io", "primis.tech", "prmutv.co", "pro-market.net",
     "prodmp.ru", "profilemkt.com", "programmatica.com", "programmaticx.ai",
     "pubmatic.com", "punchmedia.ru", "push4site.com", "positivecello.com",
