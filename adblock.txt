@@ -11,6 +11,7 @@
 ||news.2xclick.ru^
 ||news.2xclock.com^
 ||33across.com^
+||cookie.360playvid.com^
 ||360yield.com^
 ||eb2.3lift.com^
 ||ib.3lift.com^
@@ -43,10 +44,12 @@
 ||rtb.adbustr.com^
 ||analytics.adcanvas.com^
 ||media.adcanvas.com^
+||api.addslice.com^
 ||su.addthis.com^
 ||adentifi.com^
 ||analytics.aderserve.com^
 ||serve.aderserve.com^
+||tracker.adex-rtb.com^
 ||cdn.adfinity.pro^
 ||a2.adform.net^
 ||adx.adform.net^
@@ -117,6 +120,7 @@
 ||unified.adsafeprotected.com^
 ||ccads.adsboosters.xyz^
 ||uads.adsboosters.xyz^
+||ih.adscale.de^
 ||bid.adsensei.ai^
 ||us.adserv-us.com^
 ||cstb.adsinteractive.com^
@@ -126,6 +130,7 @@
 ||sync.adspend.space^
 ||adsrvr.org^
 ||ad.adsrvx-targeting.com^
+||synchroscript.deliveryengine.adswizz.com^
 ||adtarget.biz^
 ||ads21.console.adtarget.com.tr^
 ||s.console.adtarget.com.tr^
@@ -284,6 +289,7 @@
 ||i.clean.gg^
 ||sync.cleverwebdata.com^
 ||aorta.clickagy.com^
+||veto.cloudybamboo.com^
 ||as.cluep.com^
 ||c.clvrads.com^
 ||cnb.cnews.ru^
@@ -332,6 +338,7 @@
 ||x.ctrltech.ai^
 ||bid.ctv.house^
 ||cxense.com^
+||srv.datacygnal.io^
 ||stream.datago.ru^
 ||d5p.de17a.com^
 ||cdn.debugbear.com^
@@ -402,6 +409,8 @@
 ||loadm.exelator.com^
 ||loadus.exelator.com^
 ||ps.eyeota.net^
+||api.feedad.com^
+||x.fidelity-media.com^
 ||ad-events.flashtalking.com^
 ||cdn.flashtalking.com^
 ||d9.flashtalking.com^
@@ -456,7 +465,9 @@
 ||hose.gratefulmeadow.info^
 ||jscdn.greeter.me^
 ||adx01.groovinads.com^
+||cs.gssprt.jp^
 ||gumgum.com^
+||rp.gwallet.com^
 ||cdn.hadronid.net^
 ||hbrd.io^
 ||rtb.hhkld.com^
@@ -470,7 +481,6 @@
 ||cs.ifedata.ru^
 ||gurgle.ign.com^
 ||kraken.ignimgs.com^
-||pg.ignimgs.com^
 ||assets.ikhnaie.link^
 ||assets.ikhnaie.me^
 ||d.illuma-tech.com^
@@ -635,7 +645,6 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
-||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -717,6 +726,7 @@
 ||pix.pub^
 ||dsp-service.pixad.com.tr^
 ||prebid.pixad.com.tr^
+||cs.playdigo.com^
 ||kick.pleasanttulip.com^
 ||plusoneads.com^
 ||sync.pmbmonetize.live^
@@ -936,6 +946,7 @@
 ||bidder.smartytouch.co^
 ||smi2.net^
 ||smi2.ru^
+||static.smi2cdn.ru^
 ||static1.smi2cdn.ru^
 ||static2.smi2cdn.ru^
 ||static4.smi2cdn.ru^
@@ -966,6 +977,7 @@
 ||statad.ru^
 ||statmedia.ru^
 ||stbid.ru^
+||t.stellormedia.com^
 ||ads.stickyadstv.com^
 ||worker.sttsmntz.ru^
 ||sr.studiostack.com^
@@ -1008,6 +1020,7 @@
 ||at.teads.tv^
 ||sync.teads.tv^
 ||sync.techdsp.ru^
+||ad-cdn.technoratimedia.com^
 ||sync.technoratimedia.com^
 ||hawk.techradar.com^
 ||telecid.ru^
@@ -1092,6 +1105,7 @@
 ||beacon.viafoura.io^
 ||bis2.vidazoo.com^
 ||bis3.vidazoo.com^
+||bis6.vidazoo.com^
 ||bisrtb.vidazoo.com^
 ||static.vidazoo.com^
 ||ad.video-mech.ru^
@@ -1146,6 +1160,7 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||geo.yahoo.com^
+||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^

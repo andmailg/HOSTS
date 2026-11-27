@@ -26,6 +26,7 @@
 0.0.0.0 lexicon.33across.com
 0.0.0.0 pixel.33across.com
 0.0.0.0 ssc-cms.33across.com
+0.0.0.0 cookie.360playvid.com
 0.0.0.0 360yield.com
 0.0.0.0 ad.360yield.com
 0.0.0.0 dsp.360yield.com
@@ -77,11 +78,13 @@
 0.0.0.0 rtb.adbustr.com
 0.0.0.0 analytics.adcanvas.com
 0.0.0.0 media.adcanvas.com
+0.0.0.0 api.addslice.com
 0.0.0.0 su.addthis.com
 0.0.0.0 adentifi.com
 0.0.0.0 rtb.adentifi.com
 0.0.0.0 analytics.aderserve.com
 0.0.0.0 serve.aderserve.com
+0.0.0.0 tracker.adex-rtb.com
 0.0.0.0 cdn.adfinity.pro
 0.0.0.0 a2.adform.net
 0.0.0.0 adx.adform.net
@@ -174,6 +177,7 @@
 0.0.0.0 unified.adsafeprotected.com
 0.0.0.0 ccads.adsboosters.xyz
 0.0.0.0 uads.adsboosters.xyz
+0.0.0.0 ih.adscale.de
 0.0.0.0 bid.adsensei.ai
 0.0.0.0 us.adserv-us.com
 0.0.0.0 cstb.adsinteractive.com
@@ -201,6 +205,7 @@
 0.0.0.0 vat-bid.adsrvr.org
 0.0.0.0 s.update.adsrvr.org
 0.0.0.0 ad.adsrvx-targeting.com
+0.0.0.0 synchroscript.deliveryengine.adswizz.com
 0.0.0.0 adtarget.biz
 0.0.0.0 dsp-service.adtarget.biz
 0.0.0.0 prebid.adtarget.biz
@@ -377,6 +382,7 @@
 0.0.0.0 a1746.casalemedia.com
 0.0.0.0 a2044.casalemedia.com
 0.0.0.0 a2587.casalemedia.com
+0.0.0.0 a3619.casalemedia.com
 0.0.0.0 a4123.casalemedia.com
 0.0.0.0 a5057.casalemedia.com
 0.0.0.0 a6038.casalemedia.com
@@ -429,6 +435,7 @@
 0.0.0.0 i.clean.gg
 0.0.0.0 sync.cleverwebdata.com
 0.0.0.0 aorta.clickagy.com
+0.0.0.0 veto.cloudybamboo.com
 0.0.0.0 as.cluep.com
 0.0.0.0 c.clvrads.com
 0.0.0.0 cnb.cnews.ru
@@ -504,6 +511,7 @@
 0.0.0.0 comcluster.cxense.com
 0.0.0.0 id.cxense.com
 0.0.0.0 stats-collector.cxense.com
+0.0.0.0 srv.datacygnal.io
 0.0.0.0 stream.datago.ru
 0.0.0.0 d5p.de17a.com
 0.0.0.0 cdn.debugbear.com
@@ -549,6 +557,7 @@
 0.0.0.0 cm.g.doubleclick.net
 0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
+0.0.0.0 googleads6.g.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
 0.0.0.0 securepubads.g.doubleclick.net
 0.0.0.0 stats.g.doubleclick.net
@@ -601,6 +610,8 @@
 0.0.0.0 loadm.exelator.com
 0.0.0.0 loadus.exelator.com
 0.0.0.0 ps.eyeota.net
+0.0.0.0 api.feedad.com
+0.0.0.0 x.fidelity-media.com
 0.0.0.0 ad-events.flashtalking.com
 0.0.0.0 cdn.flashtalking.com
 0.0.0.0 d9.flashtalking.com
@@ -615,6 +626,7 @@
 0.0.0.0 analytics.fontanka.ru
 0.0.0.0 cdn.ftd.agency
 0.0.0.0 f6.cdn.ftd.agency
+0.0.0.0 f7.cdn.ftd.agency
 0.0.0.0 z.cdn.ftd.agency
 0.0.0.0 agen-assets.ftstatic.com
 0.0.0.0 ajs-assets.ftstatic.com
@@ -670,6 +682,7 @@
 0.0.0.0 hose.gratefulmeadow.info
 0.0.0.0 jscdn.greeter.me
 0.0.0.0 adx01.groovinads.com
+0.0.0.0 cs.gssprt.jp
 0.0.0.0 gumgum.com
 0.0.0.0 c.gumgum.com
 0.0.0.0 g2.gumgum.com
@@ -678,6 +691,7 @@
 0.0.0.0 usersync.gumgum.com
 0.0.0.0 usync.gumgum.com
 0.0.0.0 va-g2.gumgum.com
+0.0.0.0 rp.gwallet.com
 0.0.0.0 cdn.hadronid.net
 0.0.0.0 hbrd.io
 0.0.0.0 ssp.hbrd.io
@@ -703,7 +717,6 @@
 0.0.0.0 cs.ifedata.ru
 0.0.0.0 gurgle.ign.com
 0.0.0.0 kraken.ignimgs.com
-0.0.0.0 pg.ignimgs.com
 0.0.0.0 assets.ikhnaie.link
 0.0.0.0 assets.ikhnaie.me
 0.0.0.0 d.illuma-tech.com
@@ -911,7 +924,6 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
-0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -1041,6 +1053,7 @@
 0.0.0.0 pix.pub
 0.0.0.0 dsp-service.pixad.com.tr
 0.0.0.0 prebid.pixad.com.tr
+0.0.0.0 cs.playdigo.com
 0.0.0.0 kick.pleasanttulip.com
 0.0.0.0 0.kick.pleasanttulip.com
 0.0.0.0 plusoneads.com
@@ -1335,6 +1348,7 @@
 0.0.0.0 smi2.ru
 0.0.0.0 cdnjs.smi2.ru
 0.0.0.0 exad.smi2.ru
+0.0.0.0 static.smi2cdn.ru
 0.0.0.0 static1.smi2cdn.ru
 0.0.0.0 static2.smi2cdn.ru
 0.0.0.0 static4.smi2cdn.ru
@@ -1368,6 +1382,7 @@
 0.0.0.0 statmedia.ru
 0.0.0.0 stbid.ru
 0.0.0.0 2002--slt.stbid.ru
+0.0.0.0 t.stellormedia.com
 0.0.0.0 ads.stickyadstv.com
 0.0.0.0 worker.sttsmntz.ru
 0.0.0.0 sr.studiostack.com
@@ -1414,6 +1429,7 @@
 0.0.0.0 at.teads.tv
 0.0.0.0 sync.teads.tv
 0.0.0.0 sync.techdsp.ru
+0.0.0.0 ad-cdn.technoratimedia.com
 0.0.0.0 sync.technoratimedia.com
 0.0.0.0 hawk.techradar.com
 0.0.0.0 telecid.ru
@@ -1524,6 +1540,7 @@
 0.0.0.0 beacon.viafoura.io
 0.0.0.0 bis2.vidazoo.com
 0.0.0.0 bis3.vidazoo.com
+0.0.0.0 bis6.vidazoo.com
 0.0.0.0 bisrtb.vidazoo.com
 0.0.0.0 static.vidazoo.com
 0.0.0.0 ad.video-mech.ru
@@ -1594,6 +1611,7 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
+0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1647,17 +1665,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 api.addslice.com
-0.0.0.0 api.feedad.com
-0.0.0.0 cookie.360playvid.com
-0.0.0.0 cs.gssprt.jp
-0.0.0.0 cs.ingage.tech
-0.0.0.0 cs.playdigo.com
-0.0.0.0 ih.adscale.de
-0.0.0.0 live.primis.tech
-0.0.0.0 phx.bmtrcs.com
-0.0.0.0 rp.gwallet.com
-0.0.0.0 srv.datacygnal.io
-0.0.0.0 synchroscript.deliveryengine.adswizz.com
-0.0.0.0 t.stellormedia.com
-0.0.0.0 x.fidelity-media.com
