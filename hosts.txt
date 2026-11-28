@@ -1673,3 +1673,5 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
+0.0.0.0 id.a-mx.com
+0.0.0.0 a-mx.com

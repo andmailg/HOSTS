@@ -312,8 +312,8 @@ AD_APEX_BLACKLIST = [
     "360playvid.com",
 
     # === A ===
-    "a-traffic.net", "adkit-advertising.amazon", "adsboosters.xyz", "advideo.ru",
-    "a-mo.net", "acuityplatform.com", "acint.net", "addthis.com",
+    "a-mo.net", "a-mx.com", "a-traffic.net", "adkit-advertising.amazon", "adsboosters.xyz", "advideo.ru",
+    "acuityplatform.com", "acint.net", "addthis.com",
     "ad-delivery.net", "addslice.com", "adentifi.com", "adform.net", "adhaven.com",
     "adhigh.net", "adiam.tech", "adition.com", "adkernel.com",
     "adlook.online", "adlook.tech", "admanmedia.com", "admaster.cc",
