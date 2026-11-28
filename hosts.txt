@@ -21,6 +21,7 @@
 0.0.0.0 cdn-ima.33across.com
 0.0.0.0 cms-xch-chicago.33across.com
 0.0.0.0 cms-xch.33across.com
+0.0.0.0 dp1.33across.com
 0.0.0.0 dp2.33across.com
 0.0.0.0 et-c-ash.33across.com
 0.0.0.0 lexicon.33across.com
@@ -441,6 +442,7 @@
 0.0.0.0 cnb.cnews.ru
 0.0.0.0 ssp.qc.coccoc.com
 0.0.0.0 beacon.lynx.cognitivlabs.com
+0.0.0.0 gym.colorfulsunset.com
 0.0.0.0 colossusssp.com
 0.0.0.0 sync.colossusssp.com
 0.0.0.0 adx.com.ru
@@ -534,6 +536,7 @@
 0.0.0.0 rm-script.dotmetrics.net
 0.0.0.0 uk-script.dotmetrics.net
 0.0.0.0 33across-match.dotomi.com
+0.0.0.0 amazon-tam-match.dotomi.com
 0.0.0.0 casale-match.dotomi.com
 0.0.0.0 dclk-match.dotomi.com
 0.0.0.0 equativ-match.dotomi.com
@@ -752,6 +755,7 @@
 0.0.0.0 secure.insightexpressai.com
 0.0.0.0 intent.ai
 0.0.0.0 rtb-eu-warsaw.intent.ai
+0.0.0.0 intentiq.com
 0.0.0.0 agent.intentiq.com
 0.0.0.0 api.intentiq.com
 0.0.0.0 sync.intentiq.com
@@ -924,6 +928,7 @@
 0.0.0.0 cdn.nexus-network-systems.com
 0.0.0.0 rtb.nexverse.ai
 0.0.0.0 fast.nexx360.io
+0.0.0.0 cdn.ngs.ru
 0.0.0.0 lciapi.ninthdecimal.com
 0.0.0.0 nodals.io
 0.0.0.0 static.nodals.io
@@ -972,6 +977,7 @@
 0.0.0.0 tracker.open-adsyield.com
 0.0.0.0 sync.opendsp.ru
 0.0.0.0 openfpcdn.io
+0.0.0.0 as.openssp.net
 0.0.0.0 openssp.ru
 0.0.0.0 asr.openssp.ru
 0.0.0.0 realtime.openweb.com
@@ -1152,6 +1158,7 @@
 0.0.0.0 hal90001.redintelligence.net
 0.0.0.0 hal900010.redintelligence.net
 0.0.0.0 hal900011.redintelligence.net
+0.0.0.0 hal900013.redintelligence.net
 0.0.0.0 hal900014.redintelligence.net
 0.0.0.0 hal900015.redintelligence.net
 0.0.0.0 hal900016.redintelligence.net
@@ -1160,6 +1167,7 @@
 0.0.0.0 hal900020.redintelligence.net
 0.0.0.0 hal900021.redintelligence.net
 0.0.0.0 hal900022.redintelligence.net
+0.0.0.0 hal900024.redintelligence.net
 0.0.0.0 hal900025.redintelligence.net
 0.0.0.0 hal900026.redintelligence.net
 0.0.0.0 hal900027.redintelligence.net
@@ -1218,6 +1226,7 @@
 0.0.0.0 fastlane.rubiconproject.com
 0.0.0.0 pixel-eu.rubiconproject.com
 0.0.0.0 pixel-us-east.rubiconproject.com
+0.0.0.0 pixel-us-west.rubiconproject.com
 0.0.0.0 pixel.rubiconproject.com
 0.0.0.0 prebid-server.rubiconproject.com
 0.0.0.0 secure-assets.rubiconproject.com
@@ -1611,7 +1620,6 @@
 0.0.0.0 h.xoalt.com
 0.0.0.0 static.xoalt.com
 0.0.0.0 geo.yahoo.com
-0.0.0.0 noa.yahoo.com
 0.0.0.0 pbd.yahoo.com
 0.0.0.0 pbs.yahoo.com
 0.0.0.0 bats.video.yahoo.com
@@ -1665,6 +1673,3 @@
 0.0.0.0 cdn.ziffstatic.com
 0.0.0.0 pg.ziffstatic.com
 0.0.0.0 ksk.t.zucks.net
-0.0.0.0 intentiq.com
-0.0.0.0 api.intentiq.com
-0.0.0.0 pix.pub

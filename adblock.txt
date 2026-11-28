@@ -295,6 +295,7 @@
 ||cnb.cnews.ru^
 ||ssp.qc.coccoc.com^
 ||beacon.lynx.cognitivlabs.com^
+||gym.colorfulsunset.com^
 ||colossusssp.com^
 ||adx.com.ru^
 ||s.company-target.com^
@@ -358,6 +359,7 @@
 ||rm-script.dotmetrics.net^
 ||uk-script.dotmetrics.net^
 ||33across-match.dotomi.com^
+||amazon-tam-match.dotomi.com^
 ||casale-match.dotomi.com^
 ||dclk-match.dotomi.com^
 ||equativ-match.dotomi.com^
@@ -512,9 +514,7 @@
 ||events.insiad.com^
 ||secure.insightexpressai.com^
 ||intent.ai^
-||agent.intentiq.com^
-||api.intentiq.com^
-||sync.intentiq.com^
+||intentiq.com^
 ||ipapi.co^
 ||sync.ipredictive.com^
 ||core.iprom.net^
@@ -645,6 +645,7 @@
 ||cdn.nexus-network-systems.com^
 ||rtb.nexverse.ai^
 ||fast.nexx360.io^
+||cdn.ngs.ru^
 ||lciapi.ninthdecimal.com^
 ||nodals.io^
 ||ssp-statistics.dev.dsp1.nominaltechno.com^
@@ -683,6 +684,7 @@
 ||tracker.open-adsyield.com^
 ||sync.opendsp.ru^
 ||openfpcdn.io^
+||as.openssp.net^
 ||openssp.ru^
 ||realtime.openweb.com^
 ||openwebmedia.org^
@@ -802,6 +804,7 @@
 ||hal90001.redintelligence.net^
 ||hal900010.redintelligence.net^
 ||hal900011.redintelligence.net^
+||hal900013.redintelligence.net^
 ||hal900014.redintelligence.net^
 ||hal900015.redintelligence.net^
 ||hal900016.redintelligence.net^
@@ -810,6 +813,7 @@
 ||hal900020.redintelligence.net^
 ||hal900021.redintelligence.net^
 ||hal900022.redintelligence.net^
+||hal900024.redintelligence.net^
 ||hal900025.redintelligence.net^
 ||hal900026.redintelligence.net^
 ||hal900027.redintelligence.net^
@@ -1160,7 +1164,6 @@
 ||h.xoalt.com^
 ||static.xoalt.com^
 ||geo.yahoo.com^
-||noa.yahoo.com^
 ||pbd.yahoo.com^
 ||pbs.yahoo.com^
 ||bats.video.yahoo.com^
